@@ -32,17 +32,21 @@ jobs:
       - name: Validate packages
         run: |
           echo "=== Validating packages ==="
+          SKIP_DIRS="TEMPLATE"
           for pkg_dir in packages/*/; do
+            pkg_name=$(basename "$pkg_dir")
+            if echo "$SKIP_DIRS" | grep -qw "$pkg_name"; then
+              echo "⚠ Skipping template: ${pkg_dir}"
+              continue
+            fi
             if [ -f "${pkg_dir}/DEBIAN/control" ]; then
               echo "✓ Found: ${pkg_dir}"
-              # Check required fields
               for field in Package Version Architecture Maintainer Description; do
                 if ! grep -q "^${field}:" "${pkg_dir}/DEBIAN/control"; then
                   echo "✗ Missing field '${field}' in ${pkg_dir}/DEBIAN/control"
                   exit 1
                 fi
               done
-              # Validate package name uses com.uncode.ide namespace
               PKG_NAME=$(grep "^Package:" "${pkg_dir}/DEBIAN/control" | cut -d' ' -f2)
               echo "  Package: $PKG_NAME"
             else
@@ -55,11 +59,15 @@ jobs:
           echo "=== Building .deb packages ==="
           BUILT=0
           FAILED=0
+          SKIP_DIRS="TEMPLATE"
           for pkg_dir in packages/*/; do
+            pkg_name=$(basename "$pkg_dir")
+            if echo "$SKIP_DIRS" | grep -qw "$pkg_name"; then
+              continue
+            fi
             if [ -f "${pkg_dir}/DEBIAN/control" ]; then
               PKG_NAME=$(grep "^Package:" "${pkg_dir}/DEBIAN/control" | cut -d' ' -f2)
               echo "Building: $PKG_NAME"
-              # Fix permissions on DEBIAN scripts
               for script in preinst postinst prerm postrm; do
                 if [ -f "${pkg_dir}/DEBIAN/${script}" ]; then
                   chmod 755 "${pkg_dir}/DEBIAN/${script}"
@@ -97,6 +105,15 @@ jobs:
           echo "=== Repo structure ==="
           find repo/ -type f | sort
 
+      - name: Copy GPG public key into repo
+        run: |
+          echo "=== Adding GPG public key to repo ==="
+          mkdir -p repo/assets
+          gpg --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.gpg
+          gpg --armor --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.asc
+          echo "✓ GPG keys written:"
+          ls -lh repo/assets/
+
       - name: Verify GPG signature
         run: |
           echo "=== Verifying GPG signature ==="
@@ -108,8 +125,13 @@ jobs:
         run: |
           python3 scripts/gen_index.py
 
+      - name: Copy install script into repo
+        run: |
+          cp install.sh repo/install.sh
+          echo "✓ install.sh → repo/"
+
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
@@ -123,9 +145,11 @@ jobs:
           REPO_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
           echo ""
           echo "================================================================"
-          echo "  Repo deployed!"
-          echo "  URL: $REPO_URL"
+          echo "  ✓ Repo deployed!"
+          echo "  URL:      $REPO_URL"
+          echo "  GPG key:  $REPO_URL/assets/uncode.gpg"
+          echo "  Install:  curl -fsSL $REPO_URL/install.sh | bash"
           echo ""
-          echo "  Add to Uncode IDE sources.list:"
+          echo "  sources.list entry:"
           echo "  deb $REPO_URL uncode main"
           echo "================================================================"

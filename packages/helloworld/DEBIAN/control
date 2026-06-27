@@ -1,0 +1,11 @@
+Package: hello
+Version: 8.7.1-1
+Architecture: aarch64
+Maintainer: Uncode IDE <packages@uncode.ide>
+Installed-Size: 512
+Section: web
+Priority: optional
+Homepage: https://hello.world/
+Description: A Example package.
+ .
+ Repackaged for com.uncode.ide namespace.
