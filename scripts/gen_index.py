@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-gen_index.py — Generates a simple HTML index for the APT repo
-that gets deployed alongside the repo files on gh-pages.
-"""
+"""gen_index.py — Generates HTML index page for the APT repo (gh-pages)."""
 
 import os
 import subprocess
@@ -11,6 +8,7 @@ import glob
 
 REPO_ROOT = "repo"
 OUTPUT_FILE = os.path.join(REPO_ROOT, "index.html")
+REPO_URL = "https://uncode-ide.github.io/repo"
 
 def get_packages():
     packages = []
@@ -26,7 +24,6 @@ def get_packages():
                 if ": " in line:
                     k, v = line.split(": ", 1)
                     fields[k.strip()] = v.strip()
-            fields["_file"] = os.path.basename(deb)
             fields["_size"] = f"{os.path.getsize(deb) / 1024:.1f} KB"
             packages.append(fields)
         except Exception as e:
@@ -37,21 +34,38 @@ def main():
     packages = get_packages()
     now = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
-    rows = ""
+    pkg_rows = ""
     for p in packages:
         name = p.get("Package", "?")
         version = p.get("Version", "?")
         arch = p.get("Architecture", "?")
         desc = p.get("Description", "").split("\n")[0]
         size = p.get("_size", "?")
-        rows += f"""
-        <tr>
-          <td><code>{name}</code></td>
-          <td>{version}</td>
-          <td>{arch}</td>
-          <td>{desc}</td>
-          <td>{size}</td>
-        </tr>"""
+        pkg_rows += f"""
+            <tr>
+              <td><span class="pkg-name">{name}</span></td>
+              <td>{version}</td>
+              <td>{arch}</td>
+              <td class="desc">{desc}</td>
+              <td class="size">{size}</td>
+            </tr>"""
+
+    pkg_count = len(packages)
+    pkg_table = f"""
+        <table>
+          <thead>
+            <tr>
+              <th>Package</th>
+              <th>Version</th>
+              <th>Arch</th>
+              <th>Description</th>
+              <th>Size</th>
+            </tr>
+          </thead>
+          <tbody>{pkg_rows}
+          </tbody>
+        </table>""" if packages else """
+        <p class="empty">No packages available yet.</p>"""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -60,197 +74,271 @@ def main():
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uncode IDE — APT Repository</title>
   <style>
+    *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+
     :root {{
-      --bg: #0d1117;
-      --surface: #161b22;
-      --border: #30363d;
-      --accent: #58a6ff;
-      --accent2: #3fb950;
-      --text: #e6edf3;
-      --muted: #8b949e;
-      --code-bg: #1f2937;
+      --bg:       #0f0f0f;
+      --surface:  #1a1a1a;
+      --border:   #2a2a2a;
+      --text:     #e0e0e0;
+      --muted:    #666;
+      --green:    #4ade80;
+      --blue:     #60a5fa;
+      --mono:     'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+      --sans:     -apple-system, 'Segoe UI', sans-serif;
     }}
-    * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+
     body {{
       background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, 'Segoe UI', sans-serif;
+      font-family: var(--sans);
+      font-size: 14px;
       line-height: 1.6;
       min-height: 100vh;
     }}
+
+    /* ── Header ── */
     header {{
       border-bottom: 1px solid var(--border);
-      padding: 24px 48px;
+      padding: 20px 40px;
       display: flex;
       align-items: center;
-      gap: 16px;
+      justify-content: space-between;
     }}
-    .logo {{
-      width: 40px; height: 40px;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 800; font-size: 18px; color: #0d1117;
+    .header-left {{ display: flex; align-items: center; gap: 12px; }}
+    .header-left h1 {{
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.01em;
     }}
-    h1 {{ font-size: 1.4rem; font-weight: 700; }}
-    h1 span {{ color: var(--muted); font-weight: 400; font-size: 0.9rem; }}
-    main {{ max-width: 1000px; margin: 0 auto; padding: 48px 24px; }}
-    .badge {{
-      display: inline-block;
-      background: var(--accent2);
-      color: #0d1117;
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 20px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-left: 8px;
+    .header-left span {{
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 400;
     }}
-    .section-title {{
-      font-size: 1rem;
+    .dot {{
+      width: 8px; height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }}
+    .built-at {{
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--mono);
+    }}
+
+    /* ── Main layout ── */
+    main {{
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 40px;
+    }}
+
+    section {{ margin-bottom: 48px; }}
+
+    h2 {{
+      font-size: 12px;
       font-weight: 600;
       color: var(--muted);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 12px;
-      margin-top: 40px;
-    }}
-    .install-box {{
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 24px;
-      margin-bottom: 40px;
-    }}
-    .install-box h2 {{
-      font-size: 1rem;
-      color: var(--accent);
+      letter-spacing: 0.1em;
       margin-bottom: 16px;
     }}
-    code {{
-      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-      font-size: 0.9rem;
-    }}
-    .cmd {{
-      background: var(--code-bg);
+
+    /* ── Code blocks ── */
+    .code-block {{
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 6px;
-      padding: 10px 16px;
-      margin: 8px 0;
-      color: var(--accent2);
-      display: block;
+      padding: 14px 18px;
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--green);
       overflow-x: auto;
+      margin-bottom: 8px;
+      white-space: pre;
     }}
-    .cmd .prompt {{ color: var(--muted); user-select: none; }}
+    .code-block .dim {{ color: var(--muted); }}
+
+    /* ── Steps ── */
+    .steps {{ display: flex; flex-direction: column; gap: 20px; }}
+    .step {{ display: flex; gap: 16px; align-items: flex-start; }}
+    .step-num {{
+      width: 22px; height: 22px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px;
+      color: var(--muted);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }}
+    .step-body {{ flex: 1; }}
+    .step-label {{
+      font-size: 13px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }}
+
+    /* ── Key-value info ── */
+    .info-grid {{
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }}
+    .info-grid .k, .info-grid .v {{
+      padding: 10px 16px;
+      font-size: 13px;
+      border-bottom: 1px solid var(--border);
+    }}
+    .info-grid .k:last-of-type,
+    .info-grid .v:last-of-type {{ border-bottom: none; }}
+    .info-grid .k {{ color: var(--muted); }}
+    .info-grid .v {{ font-family: var(--mono); color: var(--text); }}
+
+    /* ── Package table ── */
     table {{
       width: 100%;
       border-collapse: collapse;
       background: var(--surface);
-      border-radius: 10px;
-      overflow: hidden;
       border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
     }}
-    thead {{ background: #21262d; }}
     th {{
-      padding: 12px 16px;
       text-align: left;
-      font-size: 0.8rem;
+      padding: 10px 16px;
+      font-size: 11px;
       font-weight: 600;
-      color: var(--muted);
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
+      color: var(--muted);
       border-bottom: 1px solid var(--border);
+      background: #111;
     }}
     td {{
-      padding: 12px 16px;
-      font-size: 0.88rem;
+      padding: 11px 16px;
+      font-size: 13px;
       border-bottom: 1px solid var(--border);
       vertical-align: top;
     }}
     tr:last-child td {{ border-bottom: none; }}
-    tr:hover td {{ background: rgba(88,166,255,0.04); }}
-    td code {{ color: var(--accent); }}
-    .footer {{
-      text-align: center;
-      padding: 32px;
-      color: var(--muted);
-      font-size: 0.8rem;
-      border-top: 1px solid var(--border);
-      margin-top: 64px;
+    tr:hover td {{ background: rgba(255,255,255,0.02); }}
+    .pkg-name {{
+      font-family: var(--mono);
+      color: var(--blue);
     }}
-    .empty {{ color: var(--muted); text-align: center; padding: 40px; }}
+    td.desc {{ color: var(--muted); }}
+    td.size {{ color: var(--muted); font-family: var(--mono); font-size: 12px; }}
+
+    .pkg-count {{
+      font-size: 12px;
+      color: var(--muted);
+      font-family: var(--mono);
+      margin-bottom: 12px;
+    }}
+    .empty {{
+      color: var(--muted);
+      font-size: 13px;
+      padding: 24px 0;
+    }}
+
+    /* ── Footer ── */
+    footer {{
+      border-top: 1px solid var(--border);
+      padding: 20px 40px;
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }}
+
+    @media (max-width: 600px) {{
+      header, footer {{ padding: 16px 20px; flex-direction: column; align-items: flex-start; gap: 8px; }}
+      main {{ padding: 32px 20px; }}
+      td.desc, th:nth-child(4), td:nth-child(4) {{ display: none; }}
+    }}
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">U</div>
-    <div>
-      <h1>Uncode IDE APT Repository <span>· com.uncode.ide</span></h1>
+    <div class="header-left">
+      <div class="dot"></div>
+      <h1>Uncode IDE APT Repository <span>/ com.uncode.ide</span></h1>
     </div>
+    <span class="built-at">built {now}</span>
   </header>
+
   <main>
-    <div class="install-box">
-      <h2>⚡ Setup Instructions</h2>
-      <p style="color:var(--muted); margin-bottom:14px; font-size:0.9rem;">
-        Add this repository to your Uncode IDE terminal:
-      </p>
-      <code class="cmd">
-        <span class="prompt">$ </span>echo "deb [trusted=yes] https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME uncode-stable main" &gt; $PREFIX/etc/apt/sources.list.d/uncode.list
-      </code>
-      <code class="cmd"><span class="prompt">$ </span>pkg update</code>
-      <code class="cmd"><span class="prompt">$ </span>pkg install bash curl python vim</code>
-      <p style="color:var(--muted); font-size:0.8rem; margin-top:12px;">
-        Replace <code style="color:var(--accent)">YOUR_GITHUB_USERNAME</code> and <code style="color:var(--accent)">YOUR_REPO_NAME</code> with your actual GitHub details.
-      </p>
-    </div>
 
-    <div class="section-title">Available Packages <span class="badge">{len(packages)} total</span></div>
+    <section>
+      <h2>Quick Install</h2>
+      <div class="code-block"><span class="dim">$</span> curl -fsSL {REPO_URL}/install.sh | bash</div>
+    </section>
 
-    {"<p class='empty'>No packages built yet. Add a package to the packages/ directory and push.</p>" if not packages else f"""
-    <table>
-      <thead>
-        <tr>
-          <th>Package</th>
-          <th>Version</th>
-          <th>Arch</th>
-          <th>Description</th>
-          <th>Size</th>
-        </tr>
-      </thead>
-      <tbody>{rows}
-      </tbody>
-    </table>"""}
+    <section>
+      <h2>Manual Setup</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <div class="step-label">Add the repository source</div>
+            <div class="code-block"><span class="dim">$</span> echo "deb [arch=aarch64] {REPO_URL} uncode main" \\
+    &gt; $PREFIX/etc/apt/sources.list.d/uncode.list</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <div class="step-label">Install the GPG signing key</div>
+            <div class="code-block"><span class="dim">$</span> curl -fsSL {REPO_URL}/assets/uncode.gpg \\
+    -o $PREFIX/etc/apt/trusted.gpg.d/uncode.gpg</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <div class="step-label">Update and install packages</div>
+            <div class="code-block"><span class="dim">$</span> pkg update
+<span class="dim">$</span> pkg install &lt;package-name&gt;</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="section-title" style="margin-top:48px;">Repository Info</div>
-    <div class="install-box">
-      <table style="border:none; background:transparent;">
-        <tr>
-          <td style="color:var(--muted); width:160px; border:none; padding: 6px 0;">Distribution</td>
-          <td style="border:none; padding: 6px 0;"><code>uncode-stable</code></td>
-        </tr>
-        <tr>
-          <td style="color:var(--muted); border:none; padding: 6px 0;">Component</td>
-          <td style="border:none; padding: 6px 0;"><code>main</code></td>
-        </tr>
-        <tr>
-          <td style="color:var(--muted); border:none; padding: 6px 0;">Architecture</td>
-          <td style="border:none; padding: 6px 0;"><code>aarch64</code></td>
-        </tr>
-        <tr>
-          <td style="color:var(--muted); border:none; padding: 6px 0;">Target App</td>
-          <td style="border:none; padding: 6px 0;"><code>com.uncode.ide</code></td>
-        </tr>
-        <tr>
-          <td style="color:var(--muted); border:none; padding: 6px 0;">Last Built</td>
-          <td style="border:none; padding: 6px 0;"><code>{now}</code></td>
-        </tr>
-      </table>
-    </div>
+    <section>
+      <h2>Packages <span class="pkg-count">({pkg_count} available)</span></h2>
+      {pkg_table}
+    </section>
+
+    <section>
+      <h2>Repository Info</h2>
+      <div class="info-grid">
+        <div class="k">URL</div>          <div class="v">{REPO_URL}</div>
+        <div class="k">Distribution</div> <div class="v">uncode</div>
+        <div class="k">Component</div>    <div class="v">main</div>
+        <div class="k">Architecture</div> <div class="v">aarch64</div>
+        <div class="k">Target</div>       <div class="v">com.uncode.ide</div>
+        <div class="k">GPG Key</div>      <div class="v">{REPO_URL}/assets/uncode.gpg</div>
+        <div class="k">Last built</div>   <div class="v">{now}</div>
+      </div>
+    </section>
+
   </main>
-  <div class="footer">
-    Uncode IDE APT Repository · Built automatically by GitHub Actions · {now}
-  </div>
+
+  <footer>
+    <span>Uncode IDE APT Repository</span>
+    <span>Built by GitHub Actions on push to main</span>
+  </footer>
+
 </body>
 </html>"""
 
