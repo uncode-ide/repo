@@ -1,0 +1,4 @@
+debs/
+repo/
+*.pyc
+__pycache__/

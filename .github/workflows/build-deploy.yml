@@ -1,0 +1,131 @@
+name: Build and Deploy APT Repo to gh-pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev gnupg file
+          pip3 install termux-apt-repo
+
+      - name: Create directories
+        run: |
+          mkdir -p debs repo
+          rm -rf debs/* repo/*
+
+      - name: Validate packages
+        run: |
+          echo "=== Validating packages ==="
+          for pkg_dir in packages/*/; do
+            if [ -f "${pkg_dir}/DEBIAN/control" ]; then
+              echo "✓ Found: ${pkg_dir}"
+              # Check required fields
+              for field in Package Version Architecture Maintainer Description; do
+                if ! grep -q "^${field}:" "${pkg_dir}/DEBIAN/control"; then
+                  echo "✗ Missing field '${field}' in ${pkg_dir}/DEBIAN/control"
+                  exit 1
+                fi
+              done
+              # Validate package name uses com.uncode.ide namespace
+              PKG_NAME=$(grep "^Package:" "${pkg_dir}/DEBIAN/control" | cut -d' ' -f2)
+              echo "  Package: $PKG_NAME"
+            else
+              echo "⚠ Skipping ${pkg_dir} — no DEBIAN/control found"
+            fi
+          done
+
+      - name: Build .deb packages
+        run: |
+          echo "=== Building .deb packages ==="
+          BUILT=0
+          FAILED=0
+          for pkg_dir in packages/*/; do
+            if [ -f "${pkg_dir}/DEBIAN/control" ]; then
+              PKG_NAME=$(grep "^Package:" "${pkg_dir}/DEBIAN/control" | cut -d' ' -f2)
+              echo "Building: $PKG_NAME"
+              # Fix permissions on DEBIAN scripts
+              for script in preinst postinst prerm postrm; do
+                if [ -f "${pkg_dir}/DEBIAN/${script}" ]; then
+                  chmod 755 "${pkg_dir}/DEBIAN/${script}"
+                fi
+              done
+              if dpkg-deb -b -Zxz "${pkg_dir}" debs/ 2>&1; then
+                echo "✓ Built: $PKG_NAME"
+                BUILT=$((BUILT+1))
+              else
+                echo "✗ Failed: $PKG_NAME"
+                FAILED=$((FAILED+1))
+              fi
+            fi
+          done
+          echo ""
+          echo "=== Build Summary ==="
+          echo "Built:  $BUILT"
+          echo "Failed: $FAILED"
+          ls -lh debs/
+          if [ "$BUILT" -eq 0 ]; then
+            echo "No packages built — aborting."
+            exit 1
+          fi
+
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.PRIVATE_GPG_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Generate APT repository
+        run: |
+          echo "=== Generating APT repo ==="
+          termux-apt-repo debs repo uncode main -s
+          echo "=== Repo structure ==="
+          find repo/ -type f | sort
+
+      - name: Verify GPG signature
+        run: |
+          echo "=== Verifying GPG signature ==="
+          gpg --list-keys
+          gpg --verify repo/dists/uncode/InRelease
+          echo "✓ Signature OK"
+
+      - name: Generate repo index page
+        run: |
+          python3 scripts/gen_index.py
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./repo
+          keep_files: false
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+
+      - name: Print install instructions
+        run: |
+          REPO_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          echo ""
+          echo "================================================================"
+          echo "  Repo deployed!"
+          echo "  URL: $REPO_URL"
+          echo ""
+          echo "  Add to Uncode IDE sources.list:"
+          echo "  deb $REPO_URL uncode main"
+          echo "================================================================"

@@ -1,0 +1,2 @@
+#!/data/data/com.uncode.ide/files/usr/bin/sh
+echo "curl placeholder from uncode-apt-repo"
