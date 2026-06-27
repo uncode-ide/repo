@@ -73,6 +73,7 @@ jobs:
                   chmod 755 "${pkg_dir}/DEBIAN/${script}"
                 fi
               done
+              chmod +x "${pkg_dir}"/data/data/com.uncode.ide/files/usr/bin/* 2>/dev/null || true
               if dpkg-deb -b -Zxz "${pkg_dir}" debs/ 2>&1; then
                 echo "✓ Built: $PKG_NAME"
                 BUILT=$((BUILT+1))
