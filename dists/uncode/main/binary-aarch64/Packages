@@ -1,89 +1,18 @@
-Package: bash
-Version: 5.2.21-1
-Architecture: aarch64
-Maintainer: Uncode IDE <packages@uncode.ide>
-Installed-Size: 2048
-Depends: libc (>= 2.17)
-Section: shells
-Priority: required
-Homepage: https://www.gnu.org/software/bash/
-Description: GNU Bourne Again SHell
- Bash is an sh-compatible command language interpreter that executes
- commands read from standard input or from a file. Bash implements
- the IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard.
- .
- Repackaged for com.uncode.ide namespace.
-Filename: dists/uncode/main/binary-aarch64/bash_5.2.21-1_aarch64.deb
-Size: 1452
-MD5Sum: 7793fe63aa99f560546569ad0e3deeb6
-SHA1: 58aef65cc10a1e4613f7ad561bb91fb12cfabc2e
-SHA256: 25121fb052778ecb755a107cde343474e35dbc5acc8403acfdf213d4d36c91a7
-SHA512: fe17daca59a1dae29b123fcd19125448e93709a1c2a954b633fc1a47827025f2c4724ef8f2e6bc272d3463dea917504832e98a34ed05f170417a96e9ce93443d
-
-Package: curl
+Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
 Maintainer: Uncode IDE <packages@uncode.ide>
 Installed-Size: 512
-Depends: libcurl (>= 8.7.1), libc (>= 2.17)
 Section: web
 Priority: optional
-Homepage: https://curl.se/
-Description: Command line tool for transferring data with URL syntax
- curl is a command line tool for transferring data with URL syntax,
- supporting HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, DICT, TELNET,
- LDAP or FILE.
+Homepage: https://hello.world/
+Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
-Filename: dists/uncode/main/binary-aarch64/curl_8.7.1-1_aarch64.deb
-Size: 1036
-MD5Sum: cdf64bb57d21025d10a7f82264ffd8e4
-SHA1: 83f117fd70f3c0ba73036e7a1af2a50f14b277d8
-SHA256: d2ce7e1a58e6f7f8213aa1bb42bcb34ff3334d5bb0e53767858af730db1fa871
-SHA512: 6a5a636c9f56f2c71127ab2d00f151649f0faef68717a8f31d234712eae5f8489932e3edd6661b95579bd3625f12bff2758872d304617e2529722d1b1781897b
-
-Package: python
-Version: 3.11.9-1
-Architecture: aarch64
-Maintainer: Uncode IDE <packages@uncode.ide>
-Installed-Size: 40960
-Depends: libpython3.11, libc (>= 2.17), libssl (>= 1.1)
-Recommends: python-pip
-Section: science
-Priority: optional
-Homepage: https://www.python.org/
-Description: Python 3 interpreter (v3.11)
- Python is a dynamic object-oriented programming language that can be
- used for many kinds of software development.
- .
- Repackaged for com.uncode.ide namespace.
-Filename: dists/uncode/main/binary-aarch64/python_3.11.9-1_aarch64.deb
-Size: 908
-MD5Sum: 232acc0a8e73dcbccc8798afceb3b622
-SHA1: 9e5f9a87d36692f100df0996b71f2ea556f0bf9a
-SHA256: b6ef2ae1b4d1697d6892183d6c8f57f62e6b2498d48ad428510c25f432649e03
-SHA512: c65e9d2c845301a14f0d5da6e64b6ec646cd740a707326502207f4935928f65c9994abb4caf8c664ed385df8c725d2b6da801620625266b6a64d68042257dd7d
-
-Package: vim
-Version: 9.1.0-1
-Architecture: aarch64
-Maintainer: Uncode IDE <packages@uncode.ide>
-Installed-Size: 8192
-Depends: libc (>= 2.17), libncurses (>= 6.0)
-Section: editors
-Priority: optional
-Homepage: https://www.vim.org/
-Description: Vi IMproved - enhanced vi editor
- Vim is an almost compatible version of the UNIX editor Vi. Many new
- features have been added: multi level undo, syntax highlighting,
- command line history, online help, spell checking, filename completion,
- block operations, folding, Unicode support, etc.
- .
- Repackaged for com.uncode.ide namespace.
-Filename: dists/uncode/main/binary-aarch64/vim_9.1.0-1_aarch64.deb
-Size: 984
-MD5Sum: 9bb5f4c7fa920d2c2ebfb7d8f0f828da
-SHA1: fa6a3d3418aa367b5a9b2a404485f8f0ddb5cca4
-SHA256: 7d7b227e632c57a1297a9c5221598954364474ba0b6c378518ca8e8ea09596c5
-SHA512: 86188240ca7ad813747d03fb9869086e548a633d5ee84be4fede6d6de8f093ff56ce491db264189a577f66182975b79eed893c7e05329fa3ccf6f14be53634c2
+Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
+Size: 896
+MD5Sum: 9a4cf2b564465c92a05ebdb5376b1696
+SHA1: bfb905ce1459fcc358bc5978bcae201457d1dc1a
+SHA256: ba9bba55d65652b6f6f4bb1259029507577fecb0fcba19b8f63f06ed3fc83269
+SHA512: e0c71d4cac5bf13e8174cf7c87fd3c4668e677adaf2623523737beaa3099640810f0f2c76b91de70e462d303267d59287d9861c3e7edaf7eb3ebf51ea915e0f7
 
