@@ -1,23 +1,3 @@
-Package: fastfetch
-Version: 2.65.1-1
-Architecture: aarch64
-Maintainer: Uncode IDE <packages@uncode.ide>
-Installed-Size: 4096
-Section: utils
-Priority: optional
-Homepage: https://github.com/fastfetch-cli/fastfetch
-Description: Fast, feature-rich neofetch-like system information tool
- A maintained, feature-rich and performance oriented, neofetch like
- system information tool written in C.
- .
- Repackaged for com.uncode.ide namespace.
-Filename: dists/uncode/main/binary-aarch64/fastfetch_2.65.1-1_aarch64.deb
-Size: 620836
-MD5Sum: 08ded696d896e74e717b2fc86659484f
-SHA1: cb3e1a3d490f3e3871af3e773b318206ae9eb3e2
-SHA256: 7570acaee0633defdf82f03ec6ca450ded66f79c4c73d47cc7a9a1c192e947a7
-SHA512: 3aaa852b0fb0b1af2301c35c4ce292e3524d49bbb9cdba543dd5ae7045db4d62d01d00aa3b7cdabab4ea67193a3baa175bb3b8925a6740df5e590f56e46b2785
-
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -30,9 +10,9 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 888
-MD5Sum: 806be89b2f41d5948a677cc6bf3db059
-SHA1: bdc173c60c4b7f1f0406820f2a1ba9aa04cdfff0
-SHA256: 5272037344952d6ca04d3ada3a7b6909634301a369a985e910617855fb64ecd7
-SHA512: bae78d72a4dc195fbdf5d13c4dc83942493c96d3f4e8b7da0c25f23d660f5d1b58d7fdbb97c45ba5e9eabe00890b40372dcdb1239e475bad34d51ada8a0f691a
+Size: 892
+MD5Sum: a6cb36bcdaf94faee97c37c9702c34d6
+SHA1: ed96c768f2850e6f1f6382ecf204683a32533242
+SHA256: ff3037a479ef8e4943278f6b0f020e7455c9dab0cb5b4184b389d37abbe77904
+SHA512: 7cd56f9cbbf9ccf76374a173f89ae8940b98bf44dd8db7002221542f4fa5c35b3292a23bf9c2463ee9cd4ac45a525c292a166d91163a333a4d7cf7e341ff2878
 
