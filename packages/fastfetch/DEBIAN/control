@@ -1,0 +1,13 @@
+Package: fastfetch
+Version: 2.65.1-1
+Architecture: aarch64
+Maintainer: Uncode IDE <packages@uncode.ide>
+Installed-Size: 4096
+Section: utils
+Priority: optional
+Homepage: https://github.com/fastfetch-cli/fastfetch
+Description: Fast, feature-rich neofetch-like system information tool
+ A maintained, feature-rich and performance oriented, neofetch like
+ system information tool written in C.
+ .
+ Repackaged for com.uncode.ide namespace.

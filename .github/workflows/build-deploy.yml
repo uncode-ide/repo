@@ -18,10 +18,14 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y dpkg-dev gnupg file
+          sudo apt-get install -y \
+            dpkg-dev gnupg file curl \
+            cmake ninja-build \
+            gcc-aarch64-linux-gnu g++-aarch64-linux-gnu \
+            golang-go
           pip3 install termux-apt-repo
 
       - name: Create directories
@@ -29,78 +33,287 @@ jobs:
           mkdir -p debs repo
           rm -rf debs/* repo/*
 
-      - name: Validate packages
+      - name: Build all packages
         run: |
-          echo "=== Validating packages ==="
-          SKIP_DIRS="TEMPLATE"
-          for pkg_dir in packages/*/; do
-            pkg_name=$(basename "$pkg_dir")
-            if echo "$SKIP_DIRS" | grep -qw "$pkg_name"; then
-              echo "⚠ Skipping template: ${pkg_dir}"
-              continue
-            fi
-            if [ -f "${pkg_dir}/DEBIAN/control" ]; then
-              echo "✓ Found: ${pkg_dir}"
-              for field in Package Version Architecture Maintainer Description; do
-                if ! grep -q "^${field}:" "${pkg_dir}/DEBIAN/control"; then
-                  echo "✗ Missing field '${field}' in ${pkg_dir}/DEBIAN/control"
-                  exit 1
-                fi
-              done
-              PKG_NAME=$(grep "^Package:" "${pkg_dir}/DEBIAN/control" | cut -d' ' -f2)
-              echo "  Package: $PKG_NAME"
-            else
-              echo "⚠ Skipping ${pkg_dir} — no DEBIAN/control found"
-            fi
-          done
-
-      - name: Fix executable permissions
-        run: |
-          echo "=== Fixing executable permissions ==="
-          for pkg_dir in packages/*/; do
-            for bin_dir in \
-              "${pkg_dir}data/data/com.uncode.ide/files/usr/bin" \
-              "${pkg_dir}data/data/com.uncode.ide/files/usr/sbin" \
-              "${pkg_dir}data/data/com.uncode.ide/files/usr/lib"; do
-              if [ -d "$bin_dir" ]; then
-                find "$bin_dir" -type f | while read -r f; do
-                  chmod +x "$f"
-                  echo "  chmod +x $f"
-                done
-              fi
-            done
-          done
-
-      - name: Build .deb packages
-        run: |
-          echo "=== Building .deb packages ==="
+          set -e
+          TARGET_PREFIX="data/data/com.uncode.ide/files/usr"
           BUILT=0
           FAILED=0
           SKIP_DIRS="TEMPLATE"
+
           for pkg_dir in packages/*/; do
             pkg_name=$(basename "$pkg_dir")
+
+            # Skip templates
             if echo "$SKIP_DIRS" | grep -qw "$pkg_name"; then
+              echo "⚠ Skipping template: $pkg_name"
               continue
             fi
-            if [ -f "${pkg_dir}/DEBIAN/control" ]; then
-              PKG_NAME=$(grep "^Package:" "${pkg_dir}/DEBIAN/control" | cut -d' ' -f2)
-              echo "Building: $PKG_NAME"
 
+            # Must have DEBIAN/control
+            if [ ! -f "${pkg_dir}/DEBIAN/control" ]; then
+              echo "⚠ Skipping $pkg_name — no DEBIAN/control"
+              continue
+            fi
 
-              if dpkg-deb -b -Zxz "${pkg_dir}" debs/ 2>&1; then
-                echo "✓ Built: $PKG_NAME"
-                BUILT=$((BUILT+1))
-              else
-                echo "✗ Failed: $PKG_NAME"
-                FAILED=$((FAILED+1))
+            echo ""
+            echo "════════════════════════════════════════"
+            echo "  Building: $pkg_name"
+            echo "════════════════════════════════════════"
+
+            # ── Has a build.sh recipe? ────────────────────────────────────────
+            if [ -f "${pkg_dir}/build.sh" ]; then
+              echo "→ Recipe-based build"
+
+              # Source the recipe to load variables
+              # shellcheck disable=SC1090
+              source "${pkg_dir}/build.sh"
+
+              PKG_STAGING="${pkg_dir}"
+              BIN_DEST="${PKG_STAGING}/${TARGET_PREFIX}/bin"
+              LIB_DEST="${PKG_STAGING}/${TARGET_PREFIX}/lib"
+              SHARE_DEST="${PKG_STAGING}/${TARGET_PREFIX}/share"
+
+              # Update control file from recipe variables if set
+              if [ -n "${PKG_VERSION:-}" ]; then
+                sed -i "s/^Version:.*/Version: ${PKG_VERSION}-1/" "${pkg_dir}/DEBIAN/control" 2>/dev/null || true
               fi
+
+              if [ "${BUILD_TYPE}" = "prebuilt" ]; then
+                # ── MODE 1: Prebuilt binary ─────────────────────────────────
+                echo "  Mode: prebuilt"
+                echo "  URL:  ${PREBUILT_URL}"
+
+                TMPDIR_PKG=$(mktemp -d)
+                PREBUILT_FILE="${TMPDIR_PKG}/upstream.deb"
+
+                # Download
+                if ! curl -fsSL "${PREBUILT_URL}" -o "${PREBUILT_FILE}"; then
+                  echo "✗ Failed to download ${PREBUILT_URL}"
+                  FAILED=$((FAILED+1))
+                  continue
+                fi
+
+                # Verify SHA256 if provided
+                if [ -n "${PREBUILT_SHA256:-}" ]; then
+                  ACTUAL_SHA=$(sha256sum "${PREBUILT_FILE}" | awk '{print $1}')
+                  if [ "${ACTUAL_SHA}" != "${PREBUILT_SHA256}" ]; then
+                    echo "✗ SHA256 mismatch!"
+                    echo "  Expected: ${PREBUILT_SHA256}"
+                    echo "  Actual:   ${ACTUAL_SHA}"
+                    FAILED=$((FAILED+1))
+                    continue
+                  fi
+                  echo "✓ SHA256 verified"
+                fi
+
+                # Detect if it's a .deb or raw binary
+                FILETYPE=$(file --brief "${PREBUILT_FILE}")
+                if echo "${FILETYPE}" | grep -q "Debian binary package"; then
+                  # Extract upstream deb
+                  EXTRACT_DIR="${TMPDIR_PKG}/extract"
+                  mkdir -p "${EXTRACT_DIR}"
+                  dpkg-deb -x "${PREBUILT_FILE}" "${EXTRACT_DIR}"
+
+                  echo "  Upstream file tree:"
+                  find "${EXTRACT_DIR}" -type f | sort | sed 's/^/    /'
+
+                  # Copy specified bins
+                  for bin_path in ${PREBUILT_BIN_PATHS:-}; do
+                    if [ -f "${EXTRACT_DIR}/${bin_path}" ]; then
+                      mkdir -p "${BIN_DEST}"
+                      cp "${EXTRACT_DIR}/${bin_path}" "${BIN_DEST}/$(basename ${bin_path})"
+                      echo "✓ Copied bin: ${bin_path}"
+                    else
+                      # Try to find it anywhere in extract
+                      FOUND=$(find "${EXTRACT_DIR}" -name "$(basename ${bin_path})" -type f | head -1)
+                      if [ -n "${FOUND}" ]; then
+                        mkdir -p "${BIN_DEST}"
+                        cp "${FOUND}" "${BIN_DEST}/$(basename ${bin_path})"
+                        echo "✓ Found and copied: $(basename ${bin_path}) (from ${FOUND})"
+                      else
+                        echo "⚠ Bin not found: ${bin_path}"
+                      fi
+                    fi
+                  done
+
+                  # Copy share data
+                  for share_path in ${PREBUILT_SHARE_PATHS:-}; do
+                    if [ -d "${EXTRACT_DIR}/${share_path}" ]; then
+                      mkdir -p "${SHARE_DEST}/$(basename ${share_path})"
+                      cp -r "${EXTRACT_DIR}/${share_path}/." "${SHARE_DEST}/$(basename ${share_path})/"
+                      echo "✓ Copied share: ${share_path}"
+                    fi
+                  done
+
+                else
+                  # It's a raw binary — put it directly in bin/
+                  mkdir -p "${BIN_DEST}"
+                  cp "${PREBUILT_FILE}" "${BIN_DEST}/${pkg_name}"
+                  echo "✓ Copied raw binary: ${pkg_name}"
+                fi
+
+                rm -rf "${TMPDIR_PKG}"
+
+              elif [ "${BUILD_TYPE}" = "source" ]; then
+                # ── MODE 2: Source build ──────────────────────────────────────
+                echo "  Mode: source"
+                echo "  URL:  ${SRC_URL}"
+                echo "  System: ${BUILD_SYSTEM:-cmake}"
+
+                # Install any extra build deps
+                if [ -n "${BUILD_DEPS:-}" ]; then
+                  echo "  Installing build deps: ${BUILD_DEPS}"
+                  sudo apt-get install -y ${BUILD_DEPS}
+                fi
+
+                TMPDIR_SRC=$(mktemp -d)
+                SRC_ARCHIVE="${TMPDIR_SRC}/src.tar.gz"
+
+                # Download source
+                curl -fsSL "${SRC_URL}" -o "${SRC_ARCHIVE}"
+
+                # Verify SHA256
+                if [ -n "${SRC_SHA256:-}" ]; then
+                  ACTUAL_SHA=$(sha256sum "${SRC_ARCHIVE}" | awk '{print $1}')
+                  if [ "${ACTUAL_SHA}" != "${SRC_SHA256}" ]; then
+                    echo "✗ Source SHA256 mismatch!"
+                    echo "  Expected: ${SRC_SHA256}"
+                    echo "  Actual:   ${ACTUAL_SHA}"
+                    FAILED=$((FAILED+1))
+                    continue
+                  fi
+                  echo "✓ Source SHA256 verified"
+                fi
+
+                # Extract
+                mkdir -p "${TMPDIR_SRC}/src"
+                tar -xf "${SRC_ARCHIVE}" -C "${TMPDIR_SRC}/src" --strip-components=1
+
+                INSTALL_DIR="${TMPDIR_SRC}/install"
+                mkdir -p "${INSTALL_DIR}"
+
+                case "${BUILD_SYSTEM:-cmake}" in
+                  cmake)
+                    mkdir -p "${TMPDIR_SRC}/build"
+                    cmake -S "${TMPDIR_SRC}/src" \
+                          -B "${TMPDIR_SRC}/build" \
+                          -G Ninja \
+                          -DCMAKE_INSTALL_PREFIX="${INSTALL_DIR}/usr" \
+                          -DCMAKE_SYSTEM_NAME=Linux \
+                          -DCMAKE_SYSTEM_PROCESSOR=aarch64 \
+                          -DCMAKE_C_COMPILER=aarch64-linux-gnu-gcc \
+                          -DCMAKE_CXX_COMPILER=aarch64-linux-gnu-g++ \
+                          ${CMAKE_ARGS:-}
+                    cmake --build "${TMPDIR_SRC}/build" --parallel $(nproc)
+                    cmake --install "${TMPDIR_SRC}/build"
+                    ;;
+                  make)
+                    cd "${TMPDIR_SRC}/src"
+                    make CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ \
+                         PREFIX="${INSTALL_DIR}/usr" \
+                         ${MAKE_ARGS:-} -j$(nproc)
+                    make install PREFIX="${INSTALL_DIR}/usr"
+                    cd -
+                    ;;
+                  go)
+                    cd "${TMPDIR_SRC}/src"
+                    GOARCH=arm64 GOOS=linux CGO_ENABLED=0 \
+                      go build ${GO_BUILD_ARGS:--ldflags="-s -w"} \
+                      -o "${INSTALL_DIR}/usr/bin/${pkg_name}" \
+                      ${GO_MAIN:-./...}
+                    cd -
+                    ;;
+                  python)
+                    # Python: install into staging, then copy site-packages
+                    pip3 install "${TMPDIR_SRC}/src" \
+                         --target="${INSTALL_DIR}/usr/lib/python3/dist-packages" \
+                         --no-deps \
+                         ${PIP_ARGS:-}
+                    ;;
+                esac
+
+                # Copy built bins to package staging
+                for bin_rel in ${INSTALL_BINS:-}; do
+                  src_file="${INSTALL_DIR}/${bin_rel}"
+                  if [ -f "${src_file}" ]; then
+                    mkdir -p "${BIN_DEST}"
+                    cp "${src_file}" "${BIN_DEST}/$(basename ${bin_rel})"
+                    echo "✓ Installed: $(basename ${bin_rel})"
+                  fi
+                done
+
+                # Copy libs
+                for lib_rel in ${INSTALL_LIBS:-}; do
+                  src_file="${INSTALL_DIR}/${lib_rel}"
+                  if [ -f "${src_file}" ]; then
+                    mkdir -p "${LIB_DEST}"
+                    cp "${src_file}" "${LIB_DEST}/$(basename ${lib_rel})"
+                    echo "✓ Installed lib: $(basename ${lib_rel})"
+                  fi
+                done
+
+                # Copy share
+                for share_rel in ${INSTALL_SHARE:-}; do
+                  src_dir="${INSTALL_DIR}/${share_rel}"
+                  if [ -d "${src_dir}" ]; then
+                    mkdir -p "${SHARE_DEST}/$(basename ${share_rel})"
+                    cp -r "${src_dir}/." "${SHARE_DEST}/$(basename ${share_rel})/"
+                    echo "✓ Installed share: $(basename ${share_rel})"
+                  fi
+                done
+
+                rm -rf "${TMPDIR_SRC}"
+
+              else
+                echo "✗ Unknown BUILD_TYPE='${BUILD_TYPE}' in ${pkg_dir}/build.sh"
+                FAILED=$((FAILED+1))
+                continue
+              fi
+
+              # Reset sourced variables to avoid leaking into next package
+              unset PKG_NAME PKG_VERSION PKG_HOMEPAGE PKG_DESCRIPTION \
+                    PKG_LICENSE PKG_ARCH PKG_MAINTAINER PKG_INSTALLED_SIZE \
+                    PKG_SECTION PKG_PRIORITY BUILD_TYPE \
+                    PREBUILT_URL PREBUILT_SHA256 PREBUILT_BIN_PATHS PREBUILT_SHARE_PATHS \
+                    SRC_URL SRC_SHA256 BUILD_SYSTEM BUILD_DEPS \
+                    CMAKE_ARGS MAKE_ARGS GO_BUILD_ARGS GO_MAIN PIP_ARGS \
+                    INSTALL_BINS INSTALL_LIBS INSTALL_SHARE
+
+            else
+              # ── No build.sh: static package (files already in tree) ──────────
+              echo "→ Static package (pre-staged files)"
+            fi
+
+            # ── Fix executable permissions ──────────────────────────────────────
+            for exec_dir in \
+              "${pkg_dir}${TARGET_PREFIX}/bin" \
+              "${pkg_dir}${TARGET_PREFIX}/sbin" \
+              "${pkg_dir}${TARGET_PREFIX}/lib"; do
+              if [ -d "${exec_dir}" ]; then
+                find "${exec_dir}" -type f -exec chmod +x {} \;
+              fi
+            done
+
+            # ── Build the .deb ────────────────────────────────────────────────
+            PKG_LABEL=$(grep "^Package:" "${pkg_dir}/DEBIAN/control" | cut -d' ' -f2)
+            if dpkg-deb -b -Zxz "${pkg_dir}" debs/ 2>&1; then
+              echo "✓ Built: ${PKG_LABEL}"
+              BUILT=$((BUILT+1))
+            else
+              echo "✗ dpkg-deb failed: ${PKG_LABEL}"
+              FAILED=$((FAILED+1))
             fi
           done
+
           echo ""
-          echo "=== Build Summary ==="
-          echo "Built:  $BUILT"
-          echo "Failed: $FAILED"
+          echo "════════════════════════════════════════"
+          echo "  Build Summary"
+          echo "  Built:  $BUILT"
+          echo "  Failed: $FAILED"
+          echo "════════════════════════════════════════"
           ls -lh debs/
+
           if [ "$BUILT" -eq 0 ]; then
             echo "No packages built — aborting."
             exit 1
@@ -125,7 +338,6 @@ jobs:
           gpg --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.gpg
           gpg --armor --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.asc
           echo "✓ GPG keys written"
-          ls -lh repo/assets/
 
       - name: Verify GPG signature
         run: |
@@ -133,8 +345,7 @@ jobs:
           echo "✓ Signature OK"
 
       - name: Generate repo index page
-        run: |
-          python3 scripts/gen_index.py
+        run: python3 scripts/gen_index.py
 
       - name: Copy install script into repo
         run: |
