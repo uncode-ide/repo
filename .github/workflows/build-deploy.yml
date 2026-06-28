@@ -54,6 +54,23 @@ jobs:
             fi
           done
 
+      - name: Fix executable permissions
+        run: |
+          echo "=== Fixing executable permissions ==="
+          for pkg_dir in packages/*/; do
+            for bin_dir in \
+              "${pkg_dir}data/data/com.uncode.ide/files/usr/bin" \
+              "${pkg_dir}data/data/com.uncode.ide/files/usr/sbin" \
+              "${pkg_dir}data/data/com.uncode.ide/files/usr/lib"; do
+              if [ -d "$bin_dir" ]; then
+                find "$bin_dir" -type f | while read -r f; do
+                  chmod +x "$f"
+                  echo "  chmod +x $f"
+                done
+              fi
+            done
+          done
+
       - name: Build .deb packages
         run: |
           echo "=== Building .deb packages ==="
