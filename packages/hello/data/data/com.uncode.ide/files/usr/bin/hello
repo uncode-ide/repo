@@ -1,2 +1,2 @@
-#!/data/data/com.uncode.ide/files/usr/bin/bash
+#!/system/bin/sh
 echo "Hello, World!"
