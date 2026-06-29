@@ -75,6 +75,8 @@ jobs:
           rm patch_repo.py
 
       - name: Build Bootstrap inside Docker
+        env:
+          TERMUX_DOCKER_RUN_EXTRA_ARGS: "--security-opt apparmor=unconfined --privileged"
         run: |
           cd termux-packages
           # Build arguments
