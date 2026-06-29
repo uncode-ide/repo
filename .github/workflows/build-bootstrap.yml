@@ -1,0 +1,99 @@
+name: Build Custom Bootstrap
+
+on:
+  workflow_dispatch:
+    inputs:
+      architectures:
+        description: 'Architectures to build (comma-separated, e.g., aarch64,arm)'
+        required: true
+        default: 'aarch64'
+      additional_packages:
+        description: 'Additional packages to include (comma-separated, e.g., openssh,git)'
+        required: false
+        default: ''
+
+jobs:
+  build-bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Clone termux-packages
+        run: |
+          git clone --depth 1 https://github.com/termux/termux-packages.git termux-packages
+
+      - name: Copy GPG Key
+        run: |
+          cp assets/uncode.gpg termux-packages/uncode.gpg
+
+      - name: Patch termux-packages
+        run: |
+          cat << 'EOF' > patch_repo.py
+          import os
+
+          # 1. Patch package name / prefix
+          properties_path = 'termux-packages/scripts/properties.sh'
+          with open(properties_path, 'r') as f:
+              content = f.read()
+          content = content.replace('TERMUX_APP__PACKAGE_NAME="com.termux"', 'TERMUX_APP__PACKAGE_NAME="com.uncode.ide"')
+          with open(properties_path, 'w') as f:
+              f.write(content)
+          print("✓ Patched properties.sh with package name: com.uncode.ide")
+
+          # 2. Patch build-bootstraps.sh to copy custom GPG key and setup custom sources.list
+          build_bootstraps_path = 'termux-packages/scripts/build-bootstraps.sh'
+          with open(build_bootstraps_path, 'r') as f:
+              content = f.read()
+
+          target = 'create_bootstrap_archive "$TERMUX_ARCH" || return $?'
+          replacement = """# Configure custom sources.list and GPG key
+          		mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt/trusted.gpg.d"
+          		cp "${TERMUX_PACKAGES_DIRECTORY}/uncode.gpg" "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt/trusted.gpg.d/uncode.gpg"
+          		mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt"
+          		echo "deb https://uncode-ide.github.io/repo uncode main" > "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt/sources.list"
+
+          		create_bootstrap_archive "$TERMUX_ARCH" || return $?"""
+
+          content = content.replace(target, replacement)
+          with open(build_bootstraps_path, 'w') as f:
+              f.write(content)
+          print("✓ Patched build-bootstraps.sh with custom sources and keyring")
+
+          # 3. Patch apt/build.sh to point to custom repo instead of termux mirrors
+          apt_build_path = 'termux-packages/packages/apt/build.sh'
+          if os.path.exists(apt_build_path):
+              with open(apt_build_path, 'r') as f:
+                  content = f.read()
+              content = content.replace('deb https://packages-cf.termux.dev/apt/termux-main/ stable main', 'deb https://uncode-ide.github.io/repo uncode main')
+              content = content.replace('deb https://packages.termux.dev/apt/termux-main/ stable main', 'deb https://uncode-ide.github.io/repo uncode main')
+              with open(apt_build_path, 'w') as f:
+                  f.write(content)
+              print("✓ Patched packages/apt/build.sh with custom repo URLs")
+          EOF
+          python3 patch_repo.py
+          rm patch_repo.py
+
+      - name: Build Bootstrap inside Docker
+        run: |
+          cd termux-packages
+          # Build arguments
+          BUILD_ARGS="--architectures ${{ github.event.inputs.architectures }}"
+          if [ -n "${{ github.event.inputs.additional_packages }}" ]; then
+            BUILD_ARGS="$BUILD_ARGS --add ${{ github.event.inputs.additional_packages }}"
+          fi
+          
+          # Run build using the official Termux Docker wrapper
+          ./scripts/run-docker.sh ./scripts/build-bootstraps.sh $BUILD_ARGS
+
+      - name: Prepare Artifacts
+        run: |
+          mkdir -p output-bootstraps
+          cp termux-packages/bootstrap-*.zip output-bootstraps/ || true
+          ls -lh output-bootstraps/
+
+      - name: Upload Bootstrap Archives
+        uses: actions/upload-artifact@v4
+        with:
+          name: custom-bootstraps
+          path: output-bootstraps/bootstrap-*.zip
