@@ -29,6 +29,7 @@ jobs:
 
       - name: Patch termux-packages
         run: |
+          cp filter_debs.py termux-packages/filter_debs.py
           cat << 'EOF' > patch_repo.py
           import os
 
@@ -41,13 +42,16 @@ jobs:
               f.write(content)
           print("✓ Patched properties.sh with package name: com.uncode.ide")
 
-          # 2. Patch build-bootstraps.sh to copy custom GPG key and setup custom sources.list
+          # 2. Patch build-bootstraps.sh to copy custom GPG key, setup custom sources.list, and run filter_debs.py
           build_bootstraps_path = 'termux-packages/scripts/build-bootstraps.sh'
           with open(build_bootstraps_path, 'r') as f:
               content = f.read()
 
           # Replace bzip2 with libbz2
           content = content.replace('PACKAGES+=("bzip2")', 'PACKAGES+=("libbz2")')
+
+          # Patch extract_debs to call filter_debs.py first
+          content = content.replace('extract_debs "$TERMUX_ARCH" || return $?', 'python3 "${TERMUX_SCRIPTDIR}/filter_debs.py"\n\t\textract_debs "$TERMUX_ARCH" || return $?')
 
           target = 'create_bootstrap_archive "$TERMUX_ARCH" || return $?'
           replacement = """# Configure custom sources.list and GPG key
@@ -61,7 +65,7 @@ jobs:
           content = content.replace(target, replacement)
           with open(build_bootstraps_path, 'w') as f:
               f.write(content)
-          print("✓ Patched build-bootstraps.sh with custom sources and keyring")
+          print("✓ Patched build-bootstraps.sh with custom sources, keyring, and filter_debs")
 
           # 3. Patch apt/build.sh to point to custom repo instead of termux mirrors
           apt_build_path = 'termux-packages/packages/apt/build.sh'
