@@ -29,7 +29,6 @@ jobs:
 
       - name: Patch termux-packages
         run: |
-          cp filter_debs.py termux-packages/filter_debs.py
           cat << 'EOF' > patch_repo.py
           import os
 
@@ -42,16 +41,13 @@ jobs:
               f.write(content)
           print("✓ Patched properties.sh with package name: com.uncode.ide")
 
-          # 2. Patch build-bootstraps.sh to copy custom GPG key, setup custom sources.list, and run filter_debs.py
+          # 2. Patch build-bootstraps.sh to copy custom GPG key and setup custom sources.list
           build_bootstraps_path = 'termux-packages/scripts/build-bootstraps.sh'
           with open(build_bootstraps_path, 'r') as f:
               content = f.read()
 
           # Replace bzip2 with libbz2
           content = content.replace('PACKAGES+=("bzip2")', 'PACKAGES+=("libbz2")')
-
-          # Patch extract_debs to call filter_debs.py first
-          content = content.replace('extract_debs "$TERMUX_ARCH" || return $?', 'python3 "${TERMUX_SCRIPTDIR}/filter_debs.py"\n\t\textract_debs "$TERMUX_ARCH" || return $?')
 
           target = 'create_bootstrap_archive "$TERMUX_ARCH" || return $?'
           replacement = """# Configure custom sources.list and GPG key
@@ -65,7 +61,7 @@ jobs:
           content = content.replace(target, replacement)
           with open(build_bootstraps_path, 'w') as f:
               f.write(content)
-          print("✓ Patched build-bootstraps.sh with custom sources, keyring, and filter_debs")
+          print("✓ Patched build-bootstraps.sh with custom sources and keyring")
 
           # 3. Patch apt/build.sh to point to custom repo instead of termux mirrors
           apt_build_path = 'termux-packages/packages/apt/build.sh'
@@ -83,10 +79,20 @@ jobs:
           if os.path.exists(build_package_path):
               with open(build_package_path, 'r') as f:
                   content = f.read()
-              content = content.replace('TERMUX_INSTALL_DEPS=false', '# TERMUX_INSTALL_DEPS=false # Bypassed prefix match safety check')
+              content = content.replace('if [[ "$TERMUX_REPO_APP__PACKAGE_NAME" != "$TERMUX_APP_PACKAGE" ]]; then', 'if false; then')
               with open(build_package_path, 'w') as f:
                   f.write(content)
               print("✓ Bypassed prefix mismatch check in build-package.sh")
+
+          # 5. Patch termux_download_deb_pac.sh to bypass prefix check and allow downloading prebuilt dependencies
+          download_deb_path = 'termux-packages/scripts/build/termux_download_deb_pac.sh'
+          if os.path.exists(download_deb_path):
+              with open(download_deb_path, 'r') as f:
+                  content = f.read()
+              content = content.replace('if [ "$TERMUX_REPO_APP__PACKAGE_NAME" != "$TERMUX_APP_PACKAGE" ]; then', 'if false; then')
+              with open(download_deb_path, 'w') as f:
+                  f.write(content)
+              print("✓ Bypassed prefix mismatch check in termux_download_deb_pac.sh")
           EOF
           python3 patch_repo.py
           rm patch_repo.py
