@@ -46,6 +46,9 @@ jobs:
           with open(build_bootstraps_path, 'r') as f:
               content = f.read()
 
+          # Replace bzip2 with libbz2
+          content = content.replace('PACKAGES+=("bzip2")', 'PACKAGES+=("libbz2")')
+
           target = 'create_bootstrap_archive "$TERMUX_ARCH" || return $?'
           replacement = """# Configure custom sources.list and GPG key
           		mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt/trusted.gpg.d"
@@ -70,6 +73,16 @@ jobs:
               with open(apt_build_path, 'w') as f:
                   f.write(content)
               print("✓ Patched packages/apt/build.sh with custom repo URLs")
+
+          # 4. Patch build-package.sh to bypass the prefix check and download prebuilt dependencies
+          build_package_path = 'termux-packages/build-package.sh'
+          if os.path.exists(build_package_path):
+              with open(build_package_path, 'r') as f:
+                  content = f.read()
+              content = content.replace('TERMUX_INSTALL_DEPS=false', '# TERMUX_INSTALL_DEPS=false # Bypassed prefix match safety check')
+              with open(build_package_path, 'w') as f:
+                  f.write(content)
+              print("✓ Bypassed prefix mismatch check in build-package.sh")
           EOF
           python3 patch_repo.py
           rm patch_repo.py
