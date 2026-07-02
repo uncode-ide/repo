@@ -24,27 +24,59 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 892
-MD5Sum: cf3019a81882312b4040983808cfb9c0
-SHA1: e27bd91fa32e26757c7074c1c5dee505cffd9294
-SHA256: ce21073c282a4c4e459570574b76805cea1e5380def50bacfb923bbe3bbfa699
-SHA512: 0d7f559bf684d1a3b27b1396cf2660473af900b0358bda8f0fdd9c61b010a66ca71bde5b6502304876d351a22ee58922787255027307a715ad90a5be9951e92b
+Size: 896
+MD5Sum: b3d4b1a0de6d77f8b6ac2ffdedeea6c6
+SHA1: 387c5ff8e863f4e8ea1b7488e8e953607ad8a9f9
+SHA256: 0d946c8002d2be3b5142647e4fd1411c67d698f74bb0ea82eff75ca18c48d640
+SHA512: f2a25065db2cc521741c35665db627b78b216b30f3daba4e75ba33d86688c8018cab95352caea7f92a6bfeca5a63dcd0ae873340b2505fe735836558d1d3ed1d
 
-Package: libltdl
+Package: libevent
 Architecture: aarch64
-Installed-Size: 96
+Installed-Size: 1168
 Maintainer: @termux
-Version: 2.5.4-2
-Homepage: https://www.gnu.org/software/libtool/
-Breaks: libtool (<< 2.4.7-2)
-Replaces: libtool (<< 2.4.7-2)
-Description: Library for dlopening libraries
-Filename: dists/uncode/main/binary-aarch64/libltdl_2.5.4-2_aarch64.deb
-Size: 17992
-MD5Sum: 64eb2092bb35bcd163bd7dff375194e8
-SHA1: a9ffc0df69c9a3d7f6c6c0502620d28e898428ac
-SHA256: 62f1a4cebb2b5d6cbdb94f40438c48e4135e83fd376d6a70d004b2c91b2b2b67
-SHA512: 5e24a60fa5eecc2a1eadc0650c71a264f1e6bdc39212f1fa50c3947c07be94be2f9e3cccc0ee70d3c25f1ce74fd3f86806356d9a5b27fca03437968fb956a1ae
+Version: 2.1.13
+Homepage: https://libevent.org/
+Breaks: libevent-dev
+Replaces: libevent-dev
+Description: Library that provides asynchronous event notification
+Filename: dists/uncode/main/binary-aarch64/libevent_2.1.13_aarch64.deb
+Size: 202688
+MD5Sum: 0056ebc2306024be22fa642aef215399
+SHA1: f0eb1caa4f97472c4781b58719bd72b1a62fef1e
+SHA256: 45219d34c1f66b892aa756ce09a679f9b6bb035f91ee76de010045f8427c8b9d
+SHA512: 1f4814b0ddb580767bdc2ba3ebffa4669a4cdd42285f5db83a43058a188bb4b102ad280d260120e69b871bccec6a48666f9bb410f70e43a4b932d0e0a62c3775
+
+Package: libgmp-static
+Architecture: aarch64
+Installed-Size: 1276
+Maintainer: @termux
+Version: 6.3.0-2
+Homepage: https://gmplib.org/
+Depends: libgmp (= 6.3.0-2)
+Description: Static libraries for libgmp
+Filename: dists/uncode/main/binary-aarch64/libgmp-static_6.3.0-2_aarch64.deb
+Size: 226460
+MD5Sum: 9dea8dcb29489151a6b78e8e44de261c
+SHA1: f19e235a8a62340643f1a574e7851455234f2bc6
+SHA256: 89878629cb25a50c545abd8384899a1a18e765461d9bb47a1791c6d5a8c4b095
+SHA512: 47e0ce8f4f21d5779673f74ba804b455a918cb970839eff13709f346a192e92ff14042f6cd9008e2ecc9a3d02d4c425e29479cc7e76fb879829a07f4bf3110ab
+
+Package: libgmp
+Architecture: aarch64
+Installed-Size: 1240
+Maintainer: @termux
+Version: 6.3.0-2
+Homepage: https://gmplib.org/
+Breaks: libgmp-dev
+Depends: libc++
+Replaces: libgmp-dev
+Description: Library for arbitrary precision arithmetic
+Filename: dists/uncode/main/binary-aarch64/libgmp_6.3.0-2_aarch64.deb
+Size: 328544
+MD5Sum: a90e9eae13af6ad452c18c0ad526de14
+SHA1: 7704ec0bf0b4b0eb638fd1a755e478e6a19578e8
+SHA256: 1bc662567cd3f666bf84a5a09c78e72132c2990e4a9568fccc122c0d55bcc444
+SHA512: 947bd04eb36209e86c364003e3472d0b50b9d12ef0a716ecc623937afbbdcd96f61d63b79822c0d6be47480d80c3b50ab07a6d183575b2e7b764c41b1b544a10
 
 Package: liblz4
 Architecture: aarch64
@@ -62,22 +94,37 @@ SHA1: 30ac79958b8563ee9d4c66147f807e0a1756921f
 SHA256: bf28c915afe642a04c0bee07a44bee101c9677dd02a49c66b12cc9e04d22d8d4
 SHA512: 8fa0af20c45c92df18bfcb6407663376ae0f41f4391ef6cfb0bcc663619f2eadabb31ade54cbcfff158e5cc202b485af1ef854862cd0d5cdb471ee6318693d9f
 
-Package: libtool
+Package: libmpfr-static
 Architecture: aarch64
-Installed-Size: 2788
+Installed-Size: 1120
 Maintainer: @termux
-Version: 2.5.4-2
-Homepage: https://www.gnu.org/software/libtool/
-Depends: bash, grep, sed, libltdl
-Conflicts: libtool-dev, libtool-static
-Replaces: libtool-dev, libtool-static
-Description: Generic library support script hiding the complexity of using shared libraries behind a consistent, portable interface
-Filename: dists/uncode/main/binary-aarch64/libtool_2.5.4-2_aarch64.deb
-Size: 391932
-MD5Sum: 452c7e9780532603c24cc8ce4601c004
-SHA1: 738a325dde233a45dc0e790f6f6c94670ab0e8b4
-SHA256: 6de3dc902ddc82787f3a7d984585938cd6943f3f2f2e7545d861038d916895cb
-SHA512: 139b29dcab0101e251e25c284e615eddb8c28cc5a77e1ae03656a2db7724a395c40b047e631b3af6d792dedaff91153d618d35557d79f23eb40d50c4ebc6d5a8
+Version: 4.2.1-1
+Homepage: https://www.mpfr.org/
+Depends: libmpfr (= 4.2.1-1)
+Description: Static libraries for libmpfr
+Filename: dists/uncode/main/binary-aarch64/libmpfr-static_4.2.1-1_aarch64.deb
+Size: 207936
+MD5Sum: 40fe2bc460b9140902b6bf455373ea19
+SHA1: 85ccc7e2be77e69c2fc0a7297d0151a80952a09e
+SHA256: a34d526da99c59f763b413346df679979c3f576e3ae1b86794d635f9d4a1479f
+SHA512: 6d3c8581a727afde844cb8cb98610f17a17cdffcd4d9b93a9e7de31f0cd231c1b6d2ec979eaaa440e2f6d68f6135a01c965c9293fcb9609d633f2d7d882158f3
+
+Package: libmpfr
+Architecture: aarch64
+Installed-Size: 1000
+Maintainer: @termux
+Version: 4.2.1-1
+Homepage: https://www.mpfr.org/
+Breaks: libmpfr-dev
+Depends: libgmp
+Replaces: libmpfr-dev
+Description: C library for multiple-precision floating-point computations with correct rounding
+Filename: dists/uncode/main/binary-aarch64/libmpfr_4.2.1-1_aarch64.deb
+Size: 272820
+MD5Sum: 0235c0fb836a2883353b6240a07da7a2
+SHA1: 9ddf0e737974f12832278f34a74900efc62dda2e
+SHA256: 03173cb750356700f3190fa8e44ee6b86d2fe665993df86a1019e26602e725aa
+SHA512: eb094e45e8d3ab4d515e82f96f29efc59e919354d1254b43950325d4651672503baa6874c13d2512473218ab8b48ee3f75b24d3d37b3966bba587f7b8a899214
 
 Package: lz4
 Architecture: aarch64
@@ -93,53 +140,4 @@ MD5Sum: c3a6d8804e029fd28631f838ddd28921
 SHA1: d9d7bcf0bfff33bfa01d2aea20b98a90a21156c3
 SHA256: 8b06aaa99096c7abcfd889c7b44521db802bc35decadc34263c0e6f591691a98
 SHA512: cb87438f3b8cb95822a4e52ab81441370ec2d0aa479b7f3f7de0dabb9743a09d3e95b92fb34ca9faae16f97af8a52566886b525a4b190f0a28b8c22725f6ed40
-
-Package: make
-Architecture: aarch64
-Installed-Size: 944
-Maintainer: @termux
-Version: 4.4.1-1
-Homepage: https://www.gnu.org/software/make/
-Breaks: make-dev
-Conflicts: make-guile
-Replaces: make-dev
-Description: Tool to control the generation of non-source files from source files
-Filename: dists/uncode/main/binary-aarch64/make_4.4.1-1_aarch64.deb
-Size: 240928
-MD5Sum: 7feb6592f7f3e120b9247b8a9fe22457
-SHA1: 00ccf9b37ace384381caa3c151598a534e5d66d1
-SHA256: 6045d29ef494ae5499496b22326f9c992760e7374ddf67eaaf00b92e22e61808
-SHA512: 63e9405531e61346420e7f30b31610581c3c0fb7f5b3ceec2b5910fbe2e65fd60c2a37ff8487f74f44bde3b206016deb8ab5ad1ae4aaed34bc0a6b86604c2f54
-
-Package: ndk-sysroot
-Architecture: aarch64
-Installed-Size: 31264
-Maintainer: @termux
-Version: 29-2
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-Conflicts: libutil-dev, libgcc, libandroid-support-dev
-Replaces: libutil-dev, libgcc, libandroid-support-dev, ndk-stl
-Description: System header and library files from the Android NDK needed for compiling C programs
-Filename: dists/uncode/main/binary-aarch64/ndk-sysroot_29-2_aarch64.deb
-Size: 1974504
-MD5Sum: 66916d92259bac1a0121806f25dd7999
-SHA1: debd9d6fb2786d9969e859bef487b4e8bf6e014e
-SHA256: fcdb944aa273a5fb801d396e3a152a81feb3a872c3ee4c767f1ba2325d651547
-SHA512: 7c2ab647cdde548fd7394ab89d6e724790fdbe0a667ea37c9f970d5a4a2abff5fcbe446a6f54bd2a82fdadd38d82bfba70beb04f7f19aa12becc7f6b7e6ab2a8
-
-Package: texinfo
-Architecture: aarch64
-Installed-Size: 10540
-Maintainer: @termux
-Version: 7.3
-Homepage: https://www.gnu.org/software/texinfo/
-Depends: gawk, libiconv, ncurses, perl
-Recommends: update-info-dir
-Description: Documentation system for on-line information and printed output
-Filename: dists/uncode/main/binary-aarch64/texinfo_7.3_aarch64.deb
-Size: 1080096
-MD5Sum: b7d861655e89f127640ad4bd62286ba7
-SHA1: bf7fbf431076ee23984fce9e19c913fbf8bb7e06
-SHA256: d48284140f340b1b5556d5cc1b53c094a5dfe9d5f55fbd33cbdc106754fa6093
-SHA512: 13c5f0c53921bccaba3ac8908932f5a979c8cbfe5b2d0ec7cd9266d076fb12e6e2462febd05cd98b3cabe1d1e61d515c4979f25baf04184c89d7564d17fcaf42
 
