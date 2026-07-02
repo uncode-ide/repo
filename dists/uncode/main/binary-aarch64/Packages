@@ -24,59 +24,11 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 896
-MD5Sum: b3d4b1a0de6d77f8b6ac2ffdedeea6c6
-SHA1: 387c5ff8e863f4e8ea1b7488e8e953607ad8a9f9
-SHA256: 0d946c8002d2be3b5142647e4fd1411c67d698f74bb0ea82eff75ca18c48d640
-SHA512: f2a25065db2cc521741c35665db627b78b216b30f3daba4e75ba33d86688c8018cab95352caea7f92a6bfeca5a63dcd0ae873340b2505fe735836558d1d3ed1d
-
-Package: libevent
-Architecture: aarch64
-Installed-Size: 1168
-Maintainer: @termux
-Version: 2.1.13
-Homepage: https://libevent.org/
-Breaks: libevent-dev
-Replaces: libevent-dev
-Description: Library that provides asynchronous event notification
-Filename: dists/uncode/main/binary-aarch64/libevent_2.1.13_aarch64.deb
-Size: 202688
-MD5Sum: 0056ebc2306024be22fa642aef215399
-SHA1: f0eb1caa4f97472c4781b58719bd72b1a62fef1e
-SHA256: 45219d34c1f66b892aa756ce09a679f9b6bb035f91ee76de010045f8427c8b9d
-SHA512: 1f4814b0ddb580767bdc2ba3ebffa4669a4cdd42285f5db83a43058a188bb4b102ad280d260120e69b871bccec6a48666f9bb410f70e43a4b932d0e0a62c3775
-
-Package: libgmp-static
-Architecture: aarch64
-Installed-Size: 1276
-Maintainer: @termux
-Version: 6.3.0-2
-Homepage: https://gmplib.org/
-Depends: libgmp (= 6.3.0-2)
-Description: Static libraries for libgmp
-Filename: dists/uncode/main/binary-aarch64/libgmp-static_6.3.0-2_aarch64.deb
-Size: 226460
-MD5Sum: 9dea8dcb29489151a6b78e8e44de261c
-SHA1: f19e235a8a62340643f1a574e7851455234f2bc6
-SHA256: 89878629cb25a50c545abd8384899a1a18e765461d9bb47a1791c6d5a8c4b095
-SHA512: 47e0ce8f4f21d5779673f74ba804b455a918cb970839eff13709f346a192e92ff14042f6cd9008e2ecc9a3d02d4c425e29479cc7e76fb879829a07f4bf3110ab
-
-Package: libgmp
-Architecture: aarch64
-Installed-Size: 1240
-Maintainer: @termux
-Version: 6.3.0-2
-Homepage: https://gmplib.org/
-Breaks: libgmp-dev
-Depends: libc++
-Replaces: libgmp-dev
-Description: Library for arbitrary precision arithmetic
-Filename: dists/uncode/main/binary-aarch64/libgmp_6.3.0-2_aarch64.deb
-Size: 328544
-MD5Sum: a90e9eae13af6ad452c18c0ad526de14
-SHA1: 7704ec0bf0b4b0eb638fd1a755e478e6a19578e8
-SHA256: 1bc662567cd3f666bf84a5a09c78e72132c2990e4a9568fccc122c0d55bcc444
-SHA512: 947bd04eb36209e86c364003e3472d0b50b9d12ef0a716ecc623937afbbdcd96f61d63b79822c0d6be47480d80c3b50ab07a6d183575b2e7b764c41b1b544a10
+Size: 892
+MD5Sum: f9548ca6d35c5b0334fbfe25ffd02bb0
+SHA1: 35db7ecb7c70d7276f517938fce61294eaf1796b
+SHA256: 4255afbc01f5952a55e96c410cc5db2fdfaef05acdbeb191fff25eab48645f97
+SHA512: 1fd1d1d3815d0ec1fb3a9a48c9cd686d3a838a637fc3f0e19358bef74fe19e560f16b4a124e56eba96b5c990d919aa296f5b5032d9795d9cc25bb85bf9b61a73
 
 Package: liblz4
 Architecture: aarch64
@@ -93,38 +45,6 @@ MD5Sum: f98a8f1ddd98c61d778010e6d164a78f
 SHA1: 30ac79958b8563ee9d4c66147f807e0a1756921f
 SHA256: bf28c915afe642a04c0bee07a44bee101c9677dd02a49c66b12cc9e04d22d8d4
 SHA512: 8fa0af20c45c92df18bfcb6407663376ae0f41f4391ef6cfb0bcc663619f2eadabb31ade54cbcfff158e5cc202b485af1ef854862cd0d5cdb471ee6318693d9f
-
-Package: libmpfr-static
-Architecture: aarch64
-Installed-Size: 1120
-Maintainer: @termux
-Version: 4.2.1-1
-Homepage: https://www.mpfr.org/
-Depends: libmpfr (= 4.2.1-1)
-Description: Static libraries for libmpfr
-Filename: dists/uncode/main/binary-aarch64/libmpfr-static_4.2.1-1_aarch64.deb
-Size: 207936
-MD5Sum: 40fe2bc460b9140902b6bf455373ea19
-SHA1: 85ccc7e2be77e69c2fc0a7297d0151a80952a09e
-SHA256: a34d526da99c59f763b413346df679979c3f576e3ae1b86794d635f9d4a1479f
-SHA512: 6d3c8581a727afde844cb8cb98610f17a17cdffcd4d9b93a9e7de31f0cd231c1b6d2ec979eaaa440e2f6d68f6135a01c965c9293fcb9609d633f2d7d882158f3
-
-Package: libmpfr
-Architecture: aarch64
-Installed-Size: 1000
-Maintainer: @termux
-Version: 4.2.1-1
-Homepage: https://www.mpfr.org/
-Breaks: libmpfr-dev
-Depends: libgmp
-Replaces: libmpfr-dev
-Description: C library for multiple-precision floating-point computations with correct rounding
-Filename: dists/uncode/main/binary-aarch64/libmpfr_4.2.1-1_aarch64.deb
-Size: 272820
-MD5Sum: 0235c0fb836a2883353b6240a07da7a2
-SHA1: 9ddf0e737974f12832278f34a74900efc62dda2e
-SHA256: 03173cb750356700f3190fa8e44ee6b86d2fe665993df86a1019e26602e725aa
-SHA512: eb094e45e8d3ab4d515e82f96f29efc59e919354d1254b43950325d4651672503baa6874c13d2512473218ab8b48ee3f75b24d3d37b3966bba587f7b8a899214
 
 Package: lz4
 Architecture: aarch64
