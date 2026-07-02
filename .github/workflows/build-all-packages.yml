@@ -162,12 +162,12 @@ jobs:
         run: |
           mkdir -p debs
           # Pull existing .deb files from the repo pool
-          if ls repo/pool/main/*/*.deb 2>/dev/null | head -1; then
+          if [ -d "repo/pool" ]; then
             echo "[*] Collecting existing debs from gh-pages..."
             find repo/pool -name '*.deb' -exec cp {} debs/ \;
-            echo "  Collected: $(ls debs/*.deb | wc -l) deb(s) from existing repo"
+            echo "  Collected: $(ls debs/*.deb 2>/dev/null | wc -l) deb(s) from existing repo"
           else
-            echo "[*] No existing debs in gh-pages (first run)"
+            echo "[*] No existing debs in gh-pages (first run or empty pool)"
           fi
 
       - name: Generate APT repository
