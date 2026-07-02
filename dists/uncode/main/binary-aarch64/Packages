@@ -10,9 +10,9 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 892
-MD5Sum: 9c59a0fc1173610cc52640cb10c36dce
-SHA1: 5f8afe37b6421e5bc47fb87efee92532cba2d729
-SHA256: 5194327614b5e721bbfbc130fa0d45b7fbfb2c53fc0f93b631d8f673829a9dd1
-SHA512: 50e1cde4496d847518055e33225029851242861263778b4067d4aff02b0fa3a3f23de7a064510a4cbf53cfa6fac918799836b3bca7aabd814ceea0dac411ed19
+Size: 896
+MD5Sum: 1bb8dca1b09556363ef37efdb65e332d
+SHA1: 7304faf8133f0daa12b6aa7d2a3a630eb57bf194
+SHA256: 3c606acb471b670507ca89bd631e069dc8e2a490a411e5bd5f75b4163999f3ad
+SHA512: e32ac5db89df89c270bcec3253b7845248baac7d25544619683dfbca37b50b98e9f1d3c47b15ecad9de6c4ffe5e6ffb0f6dcd524f74de96095eb3582bac6ab67
 
