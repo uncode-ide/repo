@@ -1,3 +1,33 @@
+Package: autoconf
+Architecture: all
+Installed-Size: 3680
+Maintainer: @termux
+Version: 2.73
+Homepage: https://www.gnu.org/software/autoconf/autoconf.html
+Depends: m4, make, perl
+Description: Creator of shell scripts to configure source code packages
+Filename: dists/uncode/main/binary-all/autoconf_2.73_all.deb
+Size: 624792
+MD5Sum: e4fcd85510a3ad6463fef6e000ad3986
+SHA1: 215cf0884256cc909e9df4eed32275daa925c63b
+SHA256: 06092f3c42180b71dde294ffed09a7b2288ae22ef716d31258cff1a76bded40d
+SHA512: e24251265ce46461c53f19dcc3446d0a437ccf2af4db262490b325bdfa106849c354b0f822c6113f76da9b7fdfad1c920b963d8686e9c18cab3bf15230461b34
+
+Package: automake
+Architecture: all
+Installed-Size: 2860
+Maintainer: @termux
+Version: 1.18.1
+Homepage: https://www.gnu.org/software/automake/
+Depends: autoconf
+Description: Tool for automatically generating Makefile.in files
+Filename: dists/uncode/main/binary-all/automake_1.18.1_all.deb
+Size: 576636
+MD5Sum: cc138cf3d726f8eaeae692e35f1c1c9c
+SHA1: 40ce0461a770bb0c7f303bf9b9fa15f66c62543c
+SHA256: 5ee370307bb6fb4505f1a08a5efa9c13fc5eb3cd38a0538355b904bea748b8ae
+SHA512: a6a31068a99cb7ed1204a721517a27264ebfe0b227d2a2a2bcb94ddddb5ed567102d36c37f9c3527d402f22c389f2a0dd1f44f719b6f9210d555aa867c4c21bc
+
 Package: termux-licenses
 Architecture: all
 Installed-Size: 612
@@ -12,4 +42,19 @@ MD5Sum: 035b702650524199129249a95416e381
 SHA1: 3ad7f39e1ba9fa99e1773c5e945a1f9dcfd9bd22
 SHA256: 7a0658c7445ea526b46238b9ccfdec2432108c443e52de31b1abedca904bcfc9
 SHA512: 2154c795673ef7c5095bcc90dfdf0afa1b9676e1d17e1dc880c7ce6aae9bb1dfbdbcdf03a9a0fb10f8d9a130b1d1eb42e7a78b88d48de0c84840e3bb526cb957
+
+Package: update-info-dir
+Architecture: all
+Installed-Size: 48
+Maintainer: @termux
+Version: 7.3
+Homepage: https://www.gnu.org/software/texinfo/
+Depends: texinfo (= 7.3)
+Description: Update or create index file from all installed info files in directory
+Filename: dists/uncode/main/binary-all/update-info-dir_7.3_all.deb
+Size: 2480
+MD5Sum: c15efa0fbfeecf749d71b7f0462adddb
+SHA1: 1a3f2854d4b2653318d633ed95d865a62734fd39
+SHA256: 15f80167c53b6eacf368c055c83c7da1afb8e488fe33c07bb149a74977032a5f
+SHA512: 085ba4a6d6530b1ab3d93ac2af836e3d80515de0529ebb93d870ed160149ae9b9b42fafff92e10bb18604ac7bc44eebde3a59e3d9dee537637108030a461a698
 
