@@ -25,10 +25,10 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 892
-MD5Sum: ef1132a7bf5052c660e9a91c2c4ff18a
-SHA1: b34f2eac51e684b1c543b1b91142c763baf9492e
-SHA256: 6f73559cc7f850939848ebdfaa5c62f0ba2d86f0b37386346cc3150fd77e7cab
-SHA512: 3b94935da02ba8e76043ae4693bdb0664e80f351ad83cf028c0da92a3547c15dc3a51fba120796b1e15733dea9939b0a4a8d0bedf415247a430f11367c00114c
+MD5Sum: f3ba3feb8a0f5c88cf2344a61db96d1f
+SHA1: d8c7dcc70e3c2f9d36fd96bed089dc1a2a7cf710
+SHA256: a93035d1da9f485ccb5553942e51e6172222e4bbec4abcec9251a5322207742d
+SHA512: 8e94c6eec2f7b999bffab9c5a863e50e9dcb109b9b9e2fba4342b334aff2b750040c8921c2812364231ad93a64ac5a8569555c076bf909fce5cb595adf668b0e
 
 Package: liblz4
 Architecture: aarch64
