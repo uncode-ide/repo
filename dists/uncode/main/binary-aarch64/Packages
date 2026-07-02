@@ -12,6 +12,51 @@ SHA1: 7dde5e7820da9790809e6a22dca85a838c7c4edd
 SHA256: 912833ca313e66d98d8141865f8a9a17f0cbcb29837a1da339e27ffd38370488
 SHA512: ea1d8fe7df3b68552856f567b36605f3f841c0399b129044aa5395293cbd446763140fd42a07d84a34b775369a6c73704a773176fa08c2af7253c59bc49a9dd6
 
+Package: diffutils
+Architecture: aarch64
+Installed-Size: 668
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 3.12-2
+Homepage: https://www.gnu.org/software/diffutils/
+Depends: libiconv
+Essential: yes
+Description: Programs (cmp, diff, diff3 and sdiff) related to finding differences between files
+Filename: dists/uncode/main/binary-aarch64/diffutils_3.12-2_aarch64.deb
+Size: 162880
+MD5Sum: cafb2e21e23d2d8daf0bb6c664f8c830
+SHA1: 144d41900a5849a97290d0a003b1788e2b142123
+SHA256: da5df76911abfb081f457b9adb113c2a3240cbeddafc8b9b7b160bf08e18cf6a
+SHA512: a4bbdc0a9e7b38a50f690f67dbdfd8d9e69f803c8e80c5b4649f2780a76ba53440fdce0f4abaff6bfdb9ecfba168e60a0fc9a1b29fa273efeaf4c3162e6a484a
+
+Package: ed
+Architecture: aarch64
+Installed-Size: 180
+Maintainer: Oliver Schmidhauser @Neo-Oli
+Version: 1.22.5
+Homepage: https://www.gnu.org/software/ed/
+Description: Classic UNIX line editor
+Filename: dists/uncode/main/binary-aarch64/ed_1.22.5_aarch64.deb
+Size: 42908
+MD5Sum: 977d588ee13b40f7eb48163d35f6ab56
+SHA1: e370bd708a547b5db9faf72ae9102faa9f59b86a
+SHA256: a793bdce8d40d3a5f2e5e5cf674bcbe80e4b540734750c28229ef2f855af8e31
+SHA512: 8207eccdd427d53832b4942b68de4fb714faabd74f71bec9c0bbb6059fc937ba419810e09e89e6b6a8ccfd3283d28018a48d5c4ed000003948c6d367d8921081
+
+Package: gzip
+Architecture: aarch64
+Installed-Size: 324
+Maintainer: @termux
+Version: 1.14-1
+Homepage: https://www.gnu.org/software/gzip/
+Essential: yes
+Description: Standard GNU file compression utilities
+Filename: dists/uncode/main/binary-aarch64/gzip_1.14-1_aarch64.deb
+Size: 87680
+MD5Sum: 945029929e0d700455c8186002b575b8
+SHA1: 5672fbef08856435ee335c4673b49a663ddff915
+SHA256: 9558a18839351313288bc3487f68ece55c50d012dd079cad75fd83954d74c2ec
+SHA512: 0cd0012f541de85aef6b7c9e3fa963e5a500ad84bbeb0efec13e5543dc44a82544408b0f776d4c0cb2d3c6da85bb7b3da5b63f61bac300c17d1f2cc569d0f9c6
+
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -25,10 +70,10 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 892
-MD5Sum: f3ba3feb8a0f5c88cf2344a61db96d1f
-SHA1: d8c7dcc70e3c2f9d36fd96bed089dc1a2a7cf710
-SHA256: a93035d1da9f485ccb5553942e51e6172222e4bbec4abcec9251a5322207742d
-SHA512: 8e94c6eec2f7b999bffab9c5a863e50e9dcb109b9b9e2fba4342b334aff2b750040c8921c2812364231ad93a64ac5a8569555c076bf909fce5cb595adf668b0e
+MD5Sum: aeaf091496541539529aecaa3182ccea
+SHA1: 9840ccd523bb2d2986a7ae246c2d43b508b34e26
+SHA256: 344aa1b3b8eb5c7f60c6867c507db0e20b047cb42731b428a06e03c609c47081
+SHA512: 2d80ddbac70acc41c5e0f7bc32bb1e5ea4846a0df4affdfb1b4be93956605a4f88a6093c50bb7a73c4d6199c54f3b8b90a6bde5ad9792da93bc1c314d3869ccc
 
 Package: liblz4
 Architecture: aarch64
@@ -46,6 +91,35 @@ SHA1: 30ac79958b8563ee9d4c66147f807e0a1756921f
 SHA256: bf28c915afe642a04c0bee07a44bee101c9677dd02a49c66b12cc9e04d22d8d4
 SHA512: 8fa0af20c45c92df18bfcb6407663376ae0f41f4391ef6cfb0bcc663619f2eadabb31ade54cbcfff158e5cc202b485af1ef854862cd0d5cdb471ee6318693d9f
 
+Package: libmd-static
+Architecture: aarch64
+Installed-Size: 104
+Maintainer: @termux
+Version: 1.1.0-1
+Homepage: https://www.hadrons.org/software/libmd/
+Depends: libmd (= 1.1.0-1)
+Description: Static libraries for libmd
+Filename: dists/uncode/main/binary-aarch64/libmd-static_1.1.0-1_aarch64.deb
+Size: 17872
+MD5Sum: 2b970a2ae10614145d7389bf84316df0
+SHA1: 310a8f4dc481dcf2e6d57c8612f386c60fc2e9a2
+SHA256: 81eee6b6eed90dff0acd8faec0f57a07c214d4e2086e144e878c02f17a3bd11e
+SHA512: 8a3590a849c877841c23f8aaf1eb2c314e484fe6c4f509db823c9788cc066d9f956e140d6029fbc5eb9e31b6ae84cf8d59fa8513e51e51f9ee41ba8cf9782eb1
+
+Package: libmd
+Architecture: aarch64
+Installed-Size: 188
+Maintainer: @termux
+Version: 1.1.0-1
+Homepage: https://www.hadrons.org/software/libmd/
+Description: Message Digest functions from BSD systems
+Filename: dists/uncode/main/binary-aarch64/libmd_1.1.0-1_aarch64.deb
+Size: 40644
+MD5Sum: d791880af785ea80f3ad3a572bf247f4
+SHA1: a4b7a21034f133a73b6f932549282b47ad677a96
+SHA256: 1df577565dff564d226289d7ecb2a0c2260a30eb1de46ba673ffa8d7ecc10f00
+SHA512: eca45c170e229ed2cb5be2f0229b39ed619e0ee9edb8f6eb1091597cac3b5dc2d6fb532c1c0d81e1546f562265165f1217b1a5c52ed947bbf54d0334e5a09fd7
+
 Package: lz4
 Architecture: aarch64
 Installed-Size: 284
@@ -60,4 +134,76 @@ MD5Sum: c3a6d8804e029fd28631f838ddd28921
 SHA1: d9d7bcf0bfff33bfa01d2aea20b98a90a21156c3
 SHA256: 8b06aaa99096c7abcfd889c7b44521db802bc35decadc34263c0e6f591691a98
 SHA512: cb87438f3b8cb95822a4e52ab81441370ec2d0aa479b7f3f7de0dabb9743a09d3e95b92fb34ca9faae16f97af8a52566886b525a4b190f0a28b8c22725f6ed40
+
+Package: net-tools
+Architecture: aarch64
+Installed-Size: 564
+Maintainer: @termux
+Version: 2.10.0-1
+Homepage: http://net-tools.sourceforge.net/
+Description: Configuration tools for Linux networking
+Filename: dists/uncode/main/binary-aarch64/net-tools_2.10.0-1_aarch64.deb
+Size: 118348
+MD5Sum: fbbab61c0746ae388b52db6b3773fc36
+SHA1: acc3774abfc1a18801f73983aca7cec2ae35b584
+SHA256: 822d061d5a33bf73ba1822b77d1d5081a562152f8dee85e73d512a6ea390ef8c
+SHA512: ac59072a05d060b3bdfa3cb8c1ef9339c31663fae7f8624bda43f52f02334afdf6d75abe8b58b65239190913c10dbddf46d7280c766dbc81ce148764a31b4916
+
+Package: patch
+Architecture: aarch64
+Installed-Size: 216
+Maintainer: @termux
+Version: 2.8-1
+Homepage: https://savannah.gnu.org/projects/patch/
+Description: GNU patch which applies diff files to create patched files
+Filename: dists/uncode/main/binary-aarch64/patch_2.8-1_aarch64.deb
+Size: 74008
+MD5Sum: ab3c05cb1f3a7ce14be0b9f5be3c1450
+SHA1: 9639634f593083a62b36f5c089cf1884fdd58479
+SHA256: dbb3824d32fe21766655901570a162e2b91d1e9391e005fa5c8b893a083b0742
+SHA512: 06c43b2baeb0f4ae4e5de78e2af7461a0b94a96ccf83a42288288556e67015e6cf21e5d1a6908e3ad7e25e1aacfec4f0bec9c89ea4408a1cb5f7f989e2879b84
+
+Package: sed
+Architecture: aarch64
+Installed-Size: 412
+Maintainer: @termux
+Version: 4.9-2
+Homepage: https://www.gnu.org/software/sed/
+Essential: yes
+Description: GNU stream editor for filtering/transforming text
+Filename: dists/uncode/main/binary-aarch64/sed_4.9-2_aarch64.deb
+Size: 117772
+MD5Sum: 1bb153b2e3b2cb6f6236509f76438f36
+SHA1: b10c2913987602d4839724f69170cd84230cf204
+SHA256: 2991bbe81f75ccf43b555c3bc67f7f8f94d2982f55f5e9667549c22b9850188f
+SHA512: 95d603ab44b5fbda00e44f67f6c5aa87623957d4fb414dd97da2dbcc1d743bd187b15c5c37e2ba80a111f16039afabc122d8af94a0d9ede0fbf3243eaf3b30de
+
+Package: xxhash-static
+Architecture: aarch64
+Installed-Size: 52
+Maintainer: @termux
+Version: 0.8.3-1
+Homepage: https://cyan4973.github.io/xxHash/
+Depends: xxhash (= 0.8.3-1)
+Description: Static libraries for xxhash
+Filename: dists/uncode/main/binary-aarch64/xxhash-static_0.8.3-1_aarch64.deb
+Size: 8532
+MD5Sum: 01957014b77f271e1a7545d30b441622
+SHA1: 4b76512a75d684d0304968360405eed1ba513625
+SHA256: ff489f9572e6b7d461c785c9f372f1d53d9201ba16ec7f27c97c2690b090a84c
+SHA512: c6c669f25e6a1daf33d111c2449248d4f654efa2457bf58a38d99a2b39fc16316db82e162dcc46d6258257072012f46f92060d2bf437fa7fe55372c597a560ca
+
+Package: xxhash
+Architecture: aarch64
+Installed-Size: 408
+Maintainer: @termux
+Version: 0.8.3-1
+Homepage: https://cyan4973.github.io/xxHash/
+Description: Extremely fast non-cryptographic hash algorithm
+Filename: dists/uncode/main/binary-aarch64/xxhash_0.8.3-1_aarch64.deb
+Size: 76612
+MD5Sum: ec58d8d0f0e5a3bd9d0fedacb85d29cf
+SHA1: 7a0aac3c07a8b845431e084b36efba9c303826e3
+SHA256: d3687c28d000a66f75f8ce9695ada11592ea8c1298f2a887d8ae376c60eaa37a
+SHA512: eff81dfc18edc7163bea6fc004e3961d0187228132b6e91264cdacc595e3f9ec8891b66bada11542f6d23f712cc13f38918085ed74a4334272c5ca35a00bc865
 
