@@ -1,0 +1,170 @@
+{
+  "tiers": {
+    "tier-1": {
+      "description": "Core bootstrap packages (must be built first)",
+      "packages": [
+        "bash",
+        "dash",
+        "readline",
+        "ncurses",
+        "zlib",
+        "liblz4",
+        "liblzma",
+        "libzstd",
+        "libandroid-support",
+        "libandroid-selinux",
+        "libandroid-posix-semaphore",
+        "termux-exec",
+        "termux-am",
+        "termux-tools",
+        "termux-core",
+        "termux-licenses",
+        "coreutils",
+        "debianutils",
+        "dpkg",
+        "ca-certificates",
+        "openssl",
+        "libgcrypt",
+        "libgpg-error"
+      ]
+    },
+    "tier-2": {
+      "description": "APT and networking stack",
+      "packages": [
+        "apt",
+        "gpgv",
+        "gnupg",
+        "libassuan",
+        "libnpth",
+        "curl",
+        "libcurl",
+        "libssh2",
+        "libidn2",
+        "libnghttp2",
+        "libnghttp3",
+        "libngtcp2",
+        "libgnutls",
+        "libunistring",
+        "libunbound",
+        "resolv-conf"
+      ]
+    },
+    "tier-3": {
+      "description": "Essential CLI tools",
+      "packages": [
+        "grep",
+        "sed",
+        "gawk",
+        "findutils",
+        "diffutils",
+        "tar",
+        "gzip",
+        "bzip2",
+        "xz-utils",
+        "patch",
+        "less",
+        "ed",
+        "nano",
+        "inetutils",
+        "net-tools",
+        "procps",
+        "psmisc",
+        "util-linux",
+        "lsof",
+        "dos2unix",
+        "unzip",
+        "attr",
+        "libacl",
+        "libcap-ng",
+        "libsmartcols",
+        "libtirpc",
+        "libmd",
+        "dialog",
+        "xxhash"
+      ]
+    },
+    "tier-4": {
+      "description": "Development tools - compilers and build systems",
+      "packages": [
+        "make",
+        "cmake",
+        "ninja",
+        "binutils",
+        "binutils-libs",
+        "ndk-sysroot",
+        "clang",
+        "libllvm",
+        "pkg-config",
+        "autoconf",
+        "automake",
+        "libtool",
+        "m4",
+        "texinfo",
+        "perl"
+      ]
+    },
+    "tier-5": {
+      "description": "Version control and scripting",
+      "packages": [
+        "git",
+        "openssh",
+        "libgmp",
+        "libmpfr",
+        "libevent",
+        "pcre2",
+        "xkeyboard-config"
+      ]
+    },
+    "tier-6": {
+      "description": "Python runtime (heavy - builds alone)",
+      "packages": [
+        "python",
+        "python-pip",
+        "python-setuptools"
+      ]
+    },
+    "tier-7": {
+      "description": "Node.js and Go runtimes (heavy - each alone)",
+      "packages": [
+        "nodejs"
+      ]
+    },
+    "tier-8": {
+      "description": "Go runtime",
+      "packages": [
+        "golang"
+      ]
+    },
+    "tier-9": {
+      "description": "Extra developer tools",
+      "packages": [
+        "vim",
+        "neovim",
+        "tmux",
+        "screen",
+        "rsync",
+        "wget",
+        "htop",
+        "tree",
+        "jq",
+        "fzf",
+        "ripgrep",
+        "fd",
+        "bat",
+        "hexyl",
+        "dust",
+        "ncdu",
+        "zip",
+        "p7zip",
+        "sqlite",
+        "strace"
+      ]
+    },
+    "tier-10": {
+      "description": "Custom packages from /packages dir",
+      "packages": [
+        "hello"
+      ]
+    }
+  }
+}

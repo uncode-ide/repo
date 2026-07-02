@@ -1,0 +1,214 @@
+name: Build Packages (Chunked)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: "Package tier to build (e.g. tier-1, tier-2, ..., tier-10, or 'all')"
+        required: true
+        default: "tier-1"
+        type: choice
+        options:
+          - tier-1
+          - tier-2
+          - tier-3
+          - tier-4
+          - tier-5
+          - tier-6
+          - tier-7
+          - tier-8
+          - tier-9
+          - tier-10
+          - custom-only
+      packages:
+        description: "Override: comma-separated list of specific packages to build (ignores tier)"
+        required: false
+      arch:
+        description: "Target architecture"
+        required: false
+        default: "aarch64"
+        type: choice
+        options:
+          - aarch64
+          - arm
+          - x86_64
+          - i686
+      skip_check:
+        description: "Skip check for already-published packages (force rebuild)"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: build-packages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: "Build ${{ inputs.tier }} | ${{ inputs.arch }}"
+    runs-on: ubuntu-latest
+    timeout-minutes: 300  # 5 hour limit per job
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install host dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y dpkg-dev gnupg file curl tar xz-utils
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Pre-pull Docker build image
+        run: |
+          docker pull ghcr.io/termux/package-builder:latest || true
+
+      # ── Restore cached termux-packages clone ─────────────────────────────
+      - name: Cache termux-packages clone
+        uses: actions/cache@v4
+        id: cache-tp
+        with:
+          path: termux-packages-main
+          key: termux-packages-${{ hashFiles('scripts/package_tiers.json') }}-v1
+
+      - name: Clone & patch termux-packages (if cache miss)
+        if: steps.cache-tp.outputs.cache-hit != 'true'
+        run: |
+          git clone --depth=1 https://github.com/termux/termux-packages.git termux-packages-main
+          echo "[*] Patching com.termux → com.uncode.ide ..."
+          find termux-packages-main -type f ! -path '*/.git/*' \
+            -not -name '*.png' -not -name '*.jpg' -not -name '*.so' \
+            -not -name '*.a' -not -name '*.deb' -not -name '*.zip' \
+            -exec grep -lI 'com\.termux' {} \; | \
+            xargs -I{} sed -i 's/com\.termux/com.uncode.ide/g' {}
+          echo "✓ Patch applied"
+
+      # ── Restore previously built .deb packages from cache ─────────────────
+      - name: Restore accumulated debs from cache
+        uses: actions/cache@v4
+        id: cache-debs
+        with:
+          path: debs/
+          key: accumulated-debs-${{ inputs.arch }}-v1
+          restore-keys: |
+            accumulated-debs-${{ inputs.arch }}-
+
+      - name: Create debs directory
+        run: mkdir -p debs
+
+      # ── Build ──────────────────────────────────────────────────────────────
+      - name: Build packages
+        env:
+          TIER: ${{ inputs.tier }}
+          PACKAGES: ${{ inputs.packages }}
+          ARCH: ${{ inputs.arch }}
+          SKIP_CHECK: ${{ inputs.skip_check }}
+        run: |
+          ARGS=""
+
+          if [ "$TIER" = "custom-only" ]; then
+            ARGS="--custom-only"
+          elif [ -n "$PACKAGES" ]; then
+            ARGS="--packages $PACKAGES --arch $ARCH"
+          else
+            ARGS="--tier $TIER --arch $ARCH"
+          fi
+
+          if [ "$SKIP_CHECK" = "true" ]; then
+            ARGS="$ARGS --skip-check"
+          fi
+
+          echo "[*] Running: python3 scripts/build_chunk.py $ARGS"
+          python3 scripts/build_chunk.py $ARGS
+
+      - name: List built packages
+        run: |
+          echo "=== Built .deb files ==="
+          ls -lh debs/*.deb 2>/dev/null || echo "No .deb files found"
+          echo "Total: $(ls debs/*.deb 2>/dev/null | wc -l) package(s)"
+
+      # ── Sign & publish to gh-pages ─────────────────────────────────────────
+      - name: Install termux-apt-repo
+        run: pip3 install termux-apt-repo
+
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.PRIVATE_GPG_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Checkout gh-pages into repo/
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: repo
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Copy existing debs from gh-pages (if any)
+        run: |
+          mkdir -p debs
+          # Pull existing .deb files from the repo pool
+          if ls repo/pool/main/*/*.deb 2>/dev/null | head -1; then
+            echo "[*] Collecting existing debs from gh-pages..."
+            find repo/pool -name '*.deb' -exec cp {} debs/ \;
+            echo "  Collected: $(ls debs/*.deb | wc -l) deb(s) from existing repo"
+          else
+            echo "[*] No existing debs in gh-pages (first run)"
+          fi
+
+      - name: Generate APT repository
+        run: |
+          mkdir -p repo
+          rm -rf repo/dists repo/pool
+          echo "=== Generating APT repo from $(ls debs/*.deb 2>/dev/null | wc -l) package(s) ==="
+          termux-apt-repo debs repo uncode main -s
+          echo "=== Repo structure ==="
+          find repo/ -type f | sort
+
+      - name: Copy GPG public key into repo
+        run: |
+          mkdir -p repo/assets
+          gpg --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.gpg
+          gpg --armor --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.asc
+          echo "✓ GPG keys written"
+
+      - name: Verify GPG signature
+        run: |
+          gpg --verify repo/dists/uncode/InRelease
+          echo "✓ Signature verified"
+
+      - name: Copy install script and generate index
+        run: |
+          cp install.sh repo/install.sh
+          python3 scripts/gen_index.py
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./repo
+          keep_files: false
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "pkg: add ${{ inputs.tier }} packages [${{ inputs.arch }}]"
+
+      - name: Summary
+        run: |
+          REPO_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          echo ""
+          echo "================================================================"
+          echo "  ✓ Packages published!"
+          echo "  Tier:     ${{ inputs.tier }}"
+          echo "  Arch:     ${{ inputs.arch }}"
+          echo "  Debs:     $(ls debs/*.deb 2>/dev/null | wc -l) package(s)"
+          echo "  URL:      $REPO_URL"
+          echo "  Install:  curl -fsSL $REPO_URL/install.sh | bash"
+          echo "================================================================"

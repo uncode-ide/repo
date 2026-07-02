@@ -27,7 +27,28 @@ jobs:
       - name: Create directories
         run: |
           mkdir -p debs repo
-          rm -rf debs/* repo/*
+          rm -rf repo/*
+
+      - name: Restore previously built packages from gh-pages
+        run: |
+          # Fetch existing .deb packages already in gh-pages to preserve them
+          GH_PAGES_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          echo "[*] Attempting to fetch existing packages from: $GH_PAGES_URL"
+
+          # Try to get Packages index to know what's published
+          if curl -fsSL "$GH_PAGES_URL/dists/uncode/main/binary-aarch64/Packages" -o /tmp/existing_packages.txt 2>/dev/null; then
+            echo "[*] Found existing published packages index"
+            # Extract .deb filenames from the Packages index
+            grep "^Filename:" /tmp/existing_packages.txt | awk '{print $2}' | while read filepath; do
+              fname=$(basename "$filepath")
+              echo "  → Downloading: $fname"
+              curl -fsSL "$GH_PAGES_URL/$filepath" -o "debs/$fname" || echo "  ✗ Could not download: $fname"
+            done
+            echo "  Collected: $(ls debs/*.deb 2>/dev/null | wc -l) existing deb(s)"
+          else
+            echo "[*] No existing packages found (first run or empty repo)"
+          fi
+
 
       - name: Validate packages
         run: |
