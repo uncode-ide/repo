@@ -160,11 +160,13 @@ jobs:
 
       - name: Verify we have debs to publish
         if: steps.check-work.outputs.no_work != 'true'
+        env:
+          CMD: ${{ inputs.command || 'next' }}
         run: |
           DEB_COUNT=$(ls debs/*.deb 2>/dev/null | wc -l)
           echo "Total .deb files: $DEB_COUNT"
           ls -lh debs/*.deb 2>/dev/null | tail -20
-          if [ "$DEB_COUNT" -eq 0 ]; then
+          if [ "$DEB_COUNT" -eq 0 ] && [ "$CMD" != "init" ]; then
             echo "[!] No debs to publish — skipping deploy"
             exit 1
           fi
@@ -178,7 +180,7 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: Generate APT repository
-        if: steps.check-work.outputs.no_work != 'true'
+        if: steps.check-work.outputs.no_work != 'true' && (inputs.command != 'init')
         run: |
           mkdir -p repo
           echo "[*] Generating APT repo from $(ls debs/*.deb | wc -l) package(s)..."
@@ -187,7 +189,7 @@ jobs:
           find repo/ -type f | sort
 
       - name: Copy GPG key and install script into repo
-        if: steps.check-work.outputs.no_work != 'true'
+        if: steps.check-work.outputs.no_work != 'true' && (inputs.command != 'init')
         run: |
           mkdir -p repo/assets
           gpg --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.gpg
@@ -197,7 +199,7 @@ jobs:
           echo "✓ Assets copied"
 
       - name: Verify GPG signature
-        if: steps.check-work.outputs.no_work != 'true'
+        if: steps.check-work.outputs.no_work != 'true' && (inputs.command != 'init')
         run: |
           gpg --verify repo/dists/uncode/InRelease
           echo "✓ Signature verified"
@@ -205,6 +207,7 @@ jobs:
       - name: Copy build state into repo for gh-pages
         if: steps.check-work.outputs.no_work != 'true'
         run: |
+          mkdir -p repo
           if [ -f "build-state.json" ]; then
             cp build-state.json repo/build-state.json
             echo "✓ build-state.json included in deploy"
@@ -217,7 +220,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./repo
-          keep_files: false   # Always clean deploy — debs are re-collected each run
+          keep_files: ${{ inputs.command == 'init' }}
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: >-
