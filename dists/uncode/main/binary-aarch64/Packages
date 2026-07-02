@@ -1,3 +1,17 @@
+Package: debianutils
+Architecture: aarch64
+Installed-Size: 116
+Maintainer: @termux
+Version: 5.23.2-1
+Homepage: https://packages.debian.org/debianutils
+Description: Small utilities which are used primarily by the installation scripts of Debian packages
+Filename: dists/uncode/main/binary-aarch64/debianutils_5.23.2-1_aarch64.deb
+Size: 16744
+MD5Sum: 639a87dcad903211d9e34012ea95e132
+SHA1: 7dde5e7820da9790809e6a22dca85a838c7c4edd
+SHA256: 912833ca313e66d98d8141865f8a9a17f0cbcb29837a1da339e27ffd38370488
+SHA512: ea1d8fe7df3b68552856f567b36605f3f841c0399b129044aa5395293cbd446763140fd42a07d84a34b775369a6c73704a773176fa08c2af7253c59bc49a9dd6
+
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -10,9 +24,40 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 888
-MD5Sum: c3b919e63747b602d92a311192ddbd1e
-SHA1: a2d603bf8036d8d44d7706727ae2171247b784f7
-SHA256: 30d6d2bb4745746bdf006e0bb8c7f8c8435815e7e81b8bc9e2a5391540b22aad
-SHA512: dbe3e841d66adb393064bef9493db9391d7702df24847d218438232ea3aac68aae02a2f3afd0c67681a4a3ee7b70c666c1f6f7a5aad52025159ee0a2018df0d8
+Size: 896
+MD5Sum: 031ce2887d148a99b22731249cdd6574
+SHA1: e4e0d26347cee53f7a020cde36ad3a62d6917892
+SHA256: 00e4815c7c683d45729aa00c5d7d9faea4b88497fe06be77ce8a91b864d5b59b
+SHA512: b0ec1f3a4e8655c146944280540308af820fb71ce753a5f31f3d1306a639f8e8f8f06626adf57082c612683078ca40b6c6da78ba4a07aa6aaa1fede585940069
+
+Package: liblz4
+Architecture: aarch64
+Installed-Size: 340
+Maintainer: @termux
+Version: 1.10.0-1
+Homepage: https://lz4.github.io/lz4/
+Breaks: liblz4-dev
+Replaces: liblz4-dev
+Description: Fast LZ compression algorithm library
+Filename: dists/uncode/main/binary-aarch64/liblz4_1.10.0-1_aarch64.deb
+Size: 86360
+MD5Sum: f98a8f1ddd98c61d778010e6d164a78f
+SHA1: 30ac79958b8563ee9d4c66147f807e0a1756921f
+SHA256: bf28c915afe642a04c0bee07a44bee101c9677dd02a49c66b12cc9e04d22d8d4
+SHA512: 8fa0af20c45c92df18bfcb6407663376ae0f41f4391ef6cfb0bcc663619f2eadabb31ade54cbcfff158e5cc202b485af1ef854862cd0d5cdb471ee6318693d9f
+
+Package: lz4
+Architecture: aarch64
+Installed-Size: 284
+Maintainer: @termux
+Version: 1.10.0-1
+Homepage: https://lz4.github.io/lz4/
+Depends: liblz4 (= 1.10.0-1)
+Description: Fast LZ compression algorithm tool
+Filename: dists/uncode/main/binary-aarch64/lz4_1.10.0-1_aarch64.deb
+Size: 92488
+MD5Sum: c3a6d8804e029fd28631f838ddd28921
+SHA1: d9d7bcf0bfff33bfa01d2aea20b98a90a21156c3
+SHA256: 8b06aaa99096c7abcfd889c7b44521db802bc35decadc34263c0e6f591691a98
+SHA512: cb87438f3b8cb95822a4e52ab81441370ec2d0aa479b7f3f7de0dabb9743a09d3e95b92fb34ca9faae16f97af8a52566886b525a4b190f0a28b8c22725f6ed40
 
