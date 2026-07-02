@@ -159,21 +159,43 @@ def build_packages_in_docker(packages, arch="aarch64"):
 
 
 def collect_debs():
-    """Move built .deb files from termux-packages output to our debs/ directory."""
-    tp_output = os.path.join(TERMUX_PACKAGES_DIR, "output")
-    if not os.path.isdir(tp_output):
-        print("[!] No output directory found in termux-packages")
-        return 0
-
+    """Move built .deb files from termux-packages output dirs to our debs/ directory."""
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     count = 0
-    for fname in os.listdir(tp_output):
-        if fname.endswith(".deb"):
-            src = os.path.join(tp_output, fname)
-            dst = os.path.join(OUTPUT_DIR, fname)
-            os.rename(src, dst)
-            print(f"  ✓ Collected: {fname}")
-            count += 1
+
+    # Search in multiple possible output locations
+    search_dirs = [
+        os.path.join(TERMUX_PACKAGES_DIR, "output"),
+        os.path.join(TERMUX_PACKAGES_DIR, "debs"),
+        "/data/data/.built-packages",  # Docker internal output
+    ]
+
+    for search_dir in search_dirs:
+        if not os.path.isdir(search_dir):
+            continue
+        # Walk recursively to catch nested arch subdirs
+        for root, dirs, files in os.walk(search_dir):
+            for fname in files:
+                if fname.endswith(".deb"):
+                    src = os.path.join(root, fname)
+                    dst = os.path.join(OUTPUT_DIR, fname)
+                    if os.path.abspath(src) == os.path.abspath(dst):
+                        continue  # Already in place
+                    try:
+                        os.rename(src, dst)
+                        print(f"  ✓ Collected: {fname}")
+                        count += 1
+                    except OSError:
+                        import shutil
+                        shutil.copy2(src, dst)
+                        print(f"  ✓ Copied: {fname}")
+                        count += 1
+
+    # Also count any debs already in OUTPUT_DIR (placed directly by Docker)
+    existing = sum(1 for f in os.listdir(OUTPUT_DIR) if f.endswith(".deb"))
+    if existing > count:
+        print(f"  ✓ {existing - count} deb(s) already in debs/ directory")
+        count = existing
 
     return count
 
@@ -306,11 +328,18 @@ def main():
     print(f"  Custom:    {custom_built}")
     print(f"  Collected: {collected} .deb file(s)")
     if results["failed"]:
-        print(f"\n  Failed packages: {', '.join(results['failed'])}")
+        print(f"\n  ⚠ Failed packages: {', '.join(results['failed'])}")
+        print("    These can be retried with: --packages " + ",".join(results["failed"]))
     print("=" * 60 + "\n")
 
-    if results["failed"]:
+    # Only fail hard if NOTHING was built at all (not even partial success)
+    total_built = len(results["built"]) + (custom_built or 0)
+    if total_built == 0 and collected == 0:
+        print("[!] Nothing built — aborting")
         sys.exit(1)
+    # Partial failures = warning only, publish what we have
+    if results["failed"]:
+        print(f"[!] WARNING: {len(results['failed'])} package(s) failed — but publishing {collected} successful deb(s)")
 
 
 if __name__ == "__main__":

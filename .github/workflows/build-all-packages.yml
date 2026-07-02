@@ -105,6 +105,8 @@ jobs:
 
       # ── Build ──────────────────────────────────────────────────────────────
       - name: Build packages
+        id: build
+        continue-on-error: true  # Partial failures should still publish what was built
         env:
           TIER: ${{ inputs.tier }}
           PACKAGES: ${{ inputs.packages }}
@@ -132,7 +134,12 @@ jobs:
         run: |
           echo "=== Built .deb files ==="
           ls -lh debs/*.deb 2>/dev/null || echo "No .deb files found"
-          echo "Total: $(ls debs/*.deb 2>/dev/null | wc -l) package(s)"
+          DEB_COUNT=$(ls debs/*.deb 2>/dev/null | wc -l)
+          echo "Total: $DEB_COUNT package(s)"
+          if [ "$DEB_COUNT" -eq 0 ]; then
+            echo "[!] No .deb files built — aborting publish"
+            exit 1
+          fi
 
       # ── Sign & publish to gh-pages ─────────────────────────────────────────
       - name: Install termux-apt-repo
