@@ -1,0 +1,238 @@
+name: Automated Package Build Pipeline
+
+# Runs automatically every 30 minutes — picks up next chunk and builds it.
+# No manual triggering needed (after first init).
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # Every 30 minutes
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "Pipeline command"
+        required: false
+        default: "next"
+        type: choice
+        options:
+          - next        # Build next chunk (default)
+          - init        # Initialize/reset build state
+          - retry       # Retry all failed packages
+          - status      # Show status only (no build)
+      chunk_size:
+        description: "Packages per chunk (default: 40)"
+        required: false
+        default: "40"
+      arch:
+        description: "Target architecture"
+        required: false
+        default: "aarch64"
+        type: choice
+        options:
+          - aarch64
+          - arm
+          - x86_64
+          - i686
+
+concurrency:
+  group: build-pipeline
+  cancel-in-progress: false   # Never cancel a running build
+
+jobs:
+  build:
+    name: "Build Pipeline (${{ inputs.command || 'next' }})"
+    runs-on: ubuntu-24.04
+    timeout-minutes: 290
+
+    steps:
+      # ── Setup ─────────────────────────────────────────────────────────────
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Free disk space
+        run: |
+          echo "[*] Freeing disk space..."
+          sudo rm -rf \
+            /usr/local/share/boost \
+            /usr/share/dotnet \
+            /usr/local/lib/android \
+            /opt/ghc \
+            /opt/hostedtoolcache/CodeQL \
+            "$AGENT_TOOLSDIRECTORY" 2>/dev/null || true
+          df -h /
+
+      - name: Install host dependencies
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y dpkg-dev gnupg file curl xz-utils
+          pip3 install -q termux-apt-repo
+
+      # ── Cache termux-packages clone ────────────────────────────────────────
+      - name: Cache termux-packages clone
+        uses: actions/cache@v4
+        id: cache-tp
+        with:
+          path: termux-packages-main
+          key: termux-pkg-clone-${{ hashFiles('scripts/build_chunk.py') }}-v3
+
+      # ── Restore build state from gh-pages ─────────────────────────────────
+      - name: Checkout gh-pages (for state + existing debs)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-checkout
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Restore build state
+        run: |
+          if [ -f "gh-pages-checkout/build-state.json" ]; then
+            cp gh-pages-checkout/build-state.json build-state.json
+            echo "✓ Restored build-state.json"
+            python3 scripts/build_chunk.py status
+          else
+            echo "[*] No state file found — will initialize"
+          fi
+
+      - name: Check if there is work to do
+        id: check-work
+        run: |
+          CMD="${{ inputs.command || 'next' }}"
+          if [ "$CMD" = "status" ]; then
+            echo "no_work=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          if [ -f "build-state.json" ]; then
+            PENDING=$(python3 -c "
+          import json
+          with open('build-state.json') as f: s = json.load(f)
+          print(len(s.get('pending', [])))
+            ")
+            echo "pending=$PENDING" >> $GITHUB_OUTPUT
+            if [ "$PENDING" -eq 0 ] && [ "$CMD" = "next" ]; then
+              echo "[*] All packages built — nothing to do"
+              echo "no_work=true" >> $GITHUB_OUTPUT
+            else
+              echo "no_work=false" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "no_work=false" >> $GITHUB_OUTPUT
+            echo "pending=999" >> $GITHUB_OUTPUT
+          fi
+
+      # ── Pull existing debs from gh-pages ──────────────────────────────────
+      - name: Collect existing published debs
+        if: steps.check-work.outputs.no_work != 'true'
+        run: |
+          mkdir -p debs
+          if [ -d "gh-pages-checkout/pool" ]; then
+            echo "[*] Collecting existing debs from gh-pages pool..."
+            find gh-pages-checkout/pool -name '*.deb' -exec cp {} debs/ \;
+            echo "  Collected: $(ls debs/*.deb 2>/dev/null | wc -l) deb(s)"
+          else
+            echo "[*] No existing pool in gh-pages (first run)"
+          fi
+
+      # ── Execute pipeline command ───────────────────────────────────────────
+      - name: Run pipeline
+        if: steps.check-work.outputs.no_work != 'true'
+        env:
+          CMD: ${{ inputs.command || 'next' }}
+          CHUNK_SIZE: ${{ inputs.chunk_size || '40' }}
+          ARCH: ${{ inputs.arch || 'aarch64' }}
+        run: |
+          case "$CMD" in
+            init)
+              python3 scripts/build_chunk.py init --chunk-size "$CHUNK_SIZE"
+              ;;
+            retry)
+              python3 scripts/build_chunk.py retry-failed
+              python3 scripts/build_chunk.py next "$CHUNK_SIZE" --arch "$ARCH"
+              ;;
+            next|*)
+              python3 scripts/build_chunk.py next "$CHUNK_SIZE" --arch "$ARCH"
+              ;;
+          esac
+
+      - name: Verify we have debs to publish
+        if: steps.check-work.outputs.no_work != 'true'
+        run: |
+          DEB_COUNT=$(ls debs/*.deb 2>/dev/null | wc -l)
+          echo "Total .deb files: $DEB_COUNT"
+          ls -lh debs/*.deb 2>/dev/null | tail -20
+          if [ "$DEB_COUNT" -eq 0 ]; then
+            echo "[!] No debs to publish — skipping deploy"
+            exit 1
+          fi
+
+      # ── Sign & publish ─────────────────────────────────────────────────────
+      - name: Import GPG key
+        if: steps.check-work.outputs.no_work != 'true'
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.PRIVATE_GPG_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+
+      - name: Generate APT repository
+        if: steps.check-work.outputs.no_work != 'true'
+        run: |
+          mkdir -p repo
+          echo "[*] Generating APT repo from $(ls debs/*.deb | wc -l) package(s)..."
+          termux-apt-repo debs repo uncode main -s
+          echo "[*] Repo structure:"
+          find repo/ -type f | sort
+
+      - name: Copy GPG key and install script into repo
+        if: steps.check-work.outputs.no_work != 'true'
+        run: |
+          mkdir -p repo/assets
+          gpg --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.gpg
+          gpg --armor --export "1A667B2A5E7FFC5642A27D6B8AC53265FB7C2ABC" > repo/assets/uncode.asc
+          cp install.sh repo/install.sh
+          python3 scripts/gen_index.py || true  # index gen is optional
+          echo "✓ Assets copied"
+
+      - name: Verify GPG signature
+        if: steps.check-work.outputs.no_work != 'true'
+        run: |
+          gpg --verify repo/dists/uncode/InRelease
+          echo "✓ Signature verified"
+
+      - name: Copy build state into repo for gh-pages
+        if: steps.check-work.outputs.no_work != 'true'
+        run: |
+          if [ -f "build-state.json" ]; then
+            cp build-state.json repo/build-state.json
+            echo "✓ build-state.json included in deploy"
+          fi
+
+      - name: Deploy to gh-pages
+        if: steps.check-work.outputs.no_work != 'true'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./repo
+          keep_files: false   # Always clean deploy — debs are re-collected each run
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: >-
+            pkg: auto build run #${{ github.run_number }} [${{ inputs.arch || 'aarch64' }}]
+
+      # ── Summary ────────────────────────────────────────────────────────────
+      - name: Print summary
+        if: always()
+        run: |
+          REPO_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          echo ""
+          echo "================================================================"
+          if [ -f "build-state.json" ]; then
+            python3 scripts/build_chunk.py status
+          fi
+          echo "  Repo URL: $REPO_URL"
+          echo "  Debs published: $(ls debs/*.deb 2>/dev/null | wc -l)"
+          echo "================================================================"

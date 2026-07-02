@@ -202,7 +202,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./repo
-          keep_files: false
+          keep_files: true
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: "pkg: add ${{ inputs.tier }} packages [${{ inputs.arch }}]"
