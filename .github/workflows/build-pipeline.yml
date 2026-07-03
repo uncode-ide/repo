@@ -1,11 +1,11 @@
 name: Automated Package Build Pipeline
 
-# Runs automatically every 4 hours — picks up next chunk and builds it.
+# Runs automatically — picks up next chunk and builds it.
 # No manual triggering needed (after first init).
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Runs every 4 hours
+    - cron: '53 1,13 * * *'
   workflow_dispatch:
     inputs:
       command:
