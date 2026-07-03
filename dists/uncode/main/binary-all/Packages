@@ -1,88 +1,153 @@
-Package: ack-grep
+Package: ant
 Architecture: all
-Installed-Size: 208
+Installed-Size: 3996
 Maintainer: @termux
-Version: 3.9.0-1
-Homepage: https://beyondgrep.com/
-Depends: perl
-Description: Tool like grep optimized for programmers
-Filename: dists/uncode/main/binary-all/ack-grep_3.9.0-1_all.deb
-Size: 42040
-MD5Sum: 16e99cf068078bf184d46444db7a8236
-SHA1: bc34a8abcac479515f55cb4bc60a8eea746bf153
-SHA256: a2542cc0c633711c9e5aaa3168e0ad6068ae6cc7568bd2dde34f0fa27f2b8a9d
-SHA512: e0de547e759980b29350eb3a5810b78eb956eebd205973cfaaa8905cfdcc0b97fe3c50f68767df6943ecbe1eaa8fff59a76b13f9ce93e240e2ce83f88bc25209
+Version: 1.10.17
+Homepage: https://ant.apache.org/
+Depends: openjdk-21
+Description: Java based build tool like make
+Filename: dists/uncode/main/binary-all/ant_1.10.17_all.deb
+Size: 2775216
+MD5Sum: 509ce505aedea1fd00fd76a5cf9cee9a
+SHA1: 51428972b58001edab4b427b84f024c1d58153d8
+SHA256: 02d43facff038a3a48c76d395503358f24d03924b62c0ba29008eba6347af2a8
+SHA512: e2353067a7fe67b2721cb7d302fcfc3d2b14183b373058c0df70193db4e7ce9b5f0cb3ee142c57d22f8e743e8fc2e8124a5f49446fca499e642b73996d6e1a1c
 
-Package: ani-cli
+Package: apksigner
 Architecture: all
-Installed-Size: 88
+Installed-Size: 1036
 Maintainer: @termux
-Version: 4.14
-Homepage: https://github.com/pystardust/ani-cli
-Depends: aria2, ffmpeg, fzf, grep, sed, wget
-Description: A cli to browse and watch anime
-Filename: dists/uncode/main/binary-all/ani-cli_4.14_all.deb
-Size: 10252
-MD5Sum: 02bb4faea16c89f4a5e08a6530b047c0
-SHA1: 29f03a0f340b2ca5e5d1b3ea0c2d5bd56a6d92bf
-SHA256: 8f761993b236340b759c9099b07fcc51a23b6c6ad3dafba743ce6128e4eee648
-SHA512: 846b480571e7532fc9ec079e510aaf2193bb42655da1c4af8db25195b8bd714ffc34df3b63f4daeffb0e5fa807a82bbdbea8908aa397ae95948ce138b4c712e5
+Version: 33.0.1-1
+Homepage: https://developer.android.com/studio/command-line/apksigner
+Depends: openjdk-21
+Description: APK signing tool from Android SDK
+Filename: dists/uncode/main/binary-all/apksigner_33.0.1-1_all.deb
+Size: 913312
+MD5Sum: eb6f34ea1d547a59d63f1ca1c81cee6d
+SHA1: d1ebbe6ab147557f0f24a98fcb5644cf94c46f87
+SHA256: 4b75ac855826eb32c4a89c11b870393d21aa64194618508519e862b1b975dd07
+SHA512: 0635c766a23a457391859cd7157107351578d52efdede444c63f8fbd6cef54758fd348c8fa3f08d82a4c951724fc92ba13e24b88020215ab7c7cb08d1b9d5afc
 
-Package: ca-certificates-java
+Package: apt-file
+Architecture: all
+Installed-Size: 112
+Maintainer: @termux
+Version: 3.3
+Homepage: https://wiki.debian.org/apt-file
+Depends: apt, libapt-pkg-perl, libregexp-assemble-perl, perl
+Replaces: whatprovides
+Description: search for files within packages
+Filename: dists/uncode/main/binary-all/apt-file_3.3_all.deb
+Size: 17104
+MD5Sum: af99de7eb47851b915982557c97e47b2
+SHA1: 6d183e415ac625d05ba9712b01dc0c2fd5270338
+SHA256: 3d8cebe320c28d1f42c6598d283850c0a7552dcc4482b473de9f86f03d11eee5
+SHA512: 226ba66337ba717d72b762abe110cba7d03b2a647a3b5e63c763e5c1871788cf9490732952854bdd3215335e14afe6bb7013aa4ea9128b08ca1d998632926649
+
+Package: apt-show-versions
+Architecture: all
+Installed-Size: 116
+Maintainer: @termux
+Version: 0.22.16
+Homepage: https://salsa.debian.org/debian/apt-show-versions
+Depends: apt, libapt-pkg-perl, perl
+Description: Lists available package versions with distribution
+Filename: dists/uncode/main/binary-all/apt-show-versions_0.22.16_all.deb
+Size: 13400
+MD5Sum: 34355858398e5d802d59411ba0cebea3
+SHA1: f241903fa467869bfcdacabacd2b6364f07b423c
+SHA256: 51b2513e6dbbf1c2765358539a75caeb71e7fab15c17ee7de69cc8f47aea8a1a
+SHA512: 7dfb144985b8a7616e6ee5500e1d2d7636b14ed1fc484adacb4880921f0d1d0ac9cb6f9e84ecfc5417c17f5e22a3ad45520386be79cc2ba8a87ecb5a0747be00
+
+Package: asciidoctor
+Architecture: all
+Installed-Size: 6464
+Maintainer: @termux
+Version: 2.0.26
+Homepage: https://asciidoctor.org/
+Depends: ruby
+Description: An implementation of AsciiDoc in Ruby
+Filename: dists/uncode/main/binary-all/asciidoctor_2.0.26_all.deb
+Size: 599620
+MD5Sum: a5dd29bce4c23cf92de916e3982390f1
+SHA1: 19a27082e3c6cd39da1dcaa255aa31b6c07d3a78
+SHA256: 75dbff0dba3b9c3035d15fe18c62ea882d243fed115928745e6e45c4e60f8437
+SHA512: 5a1473add2ffca65eaadbc27e4f0b1e8da3f9aa291038906f02d8d13594e697653e53e3dfa626b7a668af39dfeb4249fd2b56b2b5ce1b8d51a58b5b9441f38c9
+
+Package: aspell-de
+Architecture: all
+Installed-Size: 2160
+Maintainer: @termux
+Version: 1:20161207.7.0
+Homepage: http://aspell.net/
+Depends: aspell
+Description: German dictionary for aspell
+Filename: dists/uncode/main/binary-all/aspell-de_1:20161207.7.0_all.deb
+Size: 749124
+MD5Sum: e1795e533aa1791f8b754fb438e3a761
+SHA1: 151f92739a0a080180e3fe8a1f47dd63e4fe9f52
+SHA256: 1955af6a024fece98731777dc0d904070df9daadc60a35e7ae2a74953e699686
+SHA512: e812b5069c89bd0f7e410dab61a1d4426e0a4c31a0fef8d04b3d2b191b0247367b62fc374060444d71f55ceed6ce3c2621d8e627fd700c94cd499343f291ad97
+
+Package: aspell-en
+Architecture: all
+Installed-Size: 4556
+Maintainer: @termux
+Version: 1:2020.12.07
+Homepage: http://aspell.net/
+Depends: aspell
+Description: English dictionary for aspell
+Filename: dists/uncode/main/binary-all/aspell-en_1:2020.12.07_all.deb
+Size: 1124136
+MD5Sum: d53ff7039e58a176605323c024c9e1f2
+SHA1: e2f915e385ee7b964a913cf3952fb94621ef9cee
+SHA256: 8b6e32510c00a25727e4472d0964cc0a19d79fbf8983780fe6a78fa3af18e9d1
+SHA512: 16ed980e98460cd61b00fde7ea3533609b0ff0241bb6cac8e9962dc2dd75569938bddd1aff4e2de473fd1fdd883e80f3f2e41bfc30639f7559ed3b39a1b2db09
+
+Package: aspell-es
+Architecture: all
+Installed-Size: 1504
+Maintainer: @termux
+Version: 2:1.11-2-0
+Homepage: http://aspell.net/
+Depends: aspell
+Description: Spanish dictionary for aspell
+Filename: dists/uncode/main/binary-all/aspell-es_2:1.11-2-0_all.deb
+Size: 452364
+MD5Sum: 0d57f3def479ef6683486b1aa4d705ff
+SHA1: d720bff9200354736f9d05cfea713b135edbce4d
+SHA256: cfffef90c65be130acbc046d38baca49396b8c341794f01bb953a82aae840504
+SHA512: d754799b01df58c859c985d67a68513ed282422f1354d0441e807a2df7cbac012392428a7c5b5aaba2b4d4933cc9f3c35dd87576dcd41aa8743ded45750e037d
+
+Package: aspell-fr
+Architecture: all
+Installed-Size: 17564
+Maintainer: @termux
+Version: 2:0.50-3-1
+Homepage: http://aspell.net/
+Depends: aspell
+Description: French dictionary for aspell
+Filename: dists/uncode/main/binary-all/aspell-fr_2:0.50-3-1_all.deb
+Size: 4369392
+MD5Sum: af86a917f86407360e91b27e037ccd6e
+SHA1: a19593977f56491ab50277b0f4fd9a453e684670
+SHA256: 068452647db5c7eb9ad231be2b9095d8f689cee0b035ce13fea6662f7d10d441
+SHA512: 12295a88f0b6894c30feecf770d09a7a6ee3158ea84e8d46bc264314dc7753b636eb4a21a14614e07ed068d4fd49fd0b0b6b8068894a9702171b62f67ada21ea
+
+Package: atool
 Architecture: all
 Installed-Size: 184
 Maintainer: @termux
-Version: 1:2026.05.14
-Homepage: https://curl.se/docs/caextract.html
-Depends: ca-certificates (= 1:2026.05.14)
-Description: Common CA certificates (java keystore format)
-Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96488
-MD5Sum: de4d0c87f596809c4c185bb7da83511a
-SHA1: d1f38380ce53921195b051e32e9ccca1801e18ef
-SHA256: 782bdbf02a7fbb8e45ff168cafdc79b7dc6a3f8f619389e1520b67634382fa7d
-SHA512: 59ee549cab268ed5b409a9042b3eff4d1fa620851dcb8ee383822c03298782c07b29b4a5cbe735cf1c44c971ec4395430d75656b1b7decff932824036a5ec1b8
-
-Package: ca-certificates
-Architecture: all
-Installed-Size: 232
-Maintainer: @termux
-Version: 1:2026.05.14
-Homepage: https://curl.se/docs/caextract.html
-Description: Common CA certificates
-Filename: dists/uncode/main/binary-all/ca-certificates_1:2026.05.14_all.deb
-Size: 105752
-MD5Sum: 5a97e6c7c515b3e4a1c918d377bdbe2a
-SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
-SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
-SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
-
-Package: termux-licenses
-Architecture: all
-Installed-Size: 612
-Maintainer: @termux
-Version: 2.1
-Homepage: https://termux.dev
-Essential: yes
-Description: Contains LICENSE files for common licenses
-Filename: dists/uncode/main/binary-all/termux-licenses_2.1_all.deb
-Size: 52588
-MD5Sum: c419802cd86f7d156f07bbeb89dc8170
-SHA1: 42916f6fc86ebd2a5c0cf49fa52c65f34e98e533
-SHA256: 1aaaa3965833452704cbf6ace99cb19ab7be5842ceb5a47cb835b941b0a581ac
-SHA512: 00c3eb7d60f470fc21c46e6cdedeefa10d40f07c0cd138463f545eea656e59b41bbea39b4aa2f7ebb30b6d05cb5924cb0730c4784403837ba7f57f4ed3d4e3ee
-
-Package: vulkan-headers
-Architecture: all
-Installed-Size: 40812
-Maintainer: @termux
-Version: 1.4.355
-Homepage: https://github.com/KhronosGroup/Vulkan-Headers
-Description: Vulkan Header files and API registry
-Filename: dists/uncode/main/binary-all/vulkan-headers_1.4.355_all.deb
-Size: 1900448
-MD5Sum: dd0715670c91273a893aa334b836ba26
-SHA1: 4d88260a28284c3f1a57f73af03f6c8608df6576
-SHA256: fda072120d444bbed904827cad6c1f0bb891538ffc92a5e73fbfc3386886462f
-SHA512: 6f489e276990a51af1e63d899323b64c067b11d5a49dd72bb717d2a81df33932777b75457c20fe5f4b2d8eec8137eafcecc231a98edaec4e6a69ff0f53f57154
+Version: 0.39.0-2
+Homepage: https://www.nongnu.org/atool
+Depends: perl
+Recommends: arj, llvm, bzip2, cpio, file, gzip, lhasa, lzip, lzop, p7zip, tar, unrar, unzip, xz-utils, zip
+Suggests: bash-completion
+Description: tool for managing file archives of various types
+Filename: dists/uncode/main/binary-all/atool_0.39.0-2_all.deb
+Size: 34740
+MD5Sum: 9c8535e588e34dd9ac8a0a2e1417b91e
+SHA1: f113886b524687f08fd08744a2f6880f4c036c5b
+SHA256: a6d5e2f3e43a72016f1ef9b75b245111d4f5093a5ec73b7bcaa597da5b0da55d
+SHA512: 2a3670f983c320e12c988b70e79e0c830734aee2f8131a6073ec760f850073981a8ffd163de63813825596be8ed2ac51b589fe37a0999621a62f437ca39fc9e3
 
