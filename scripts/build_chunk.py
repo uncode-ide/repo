@@ -199,9 +199,9 @@ def _bypass_prefix_guard():
     guard_patterns = [
         # The actual guard check pattern (various forms)
         ('if [[ "$TERMUX_REPO_APP__PACKAGE_NAME" != "$TERMUX_APP_PACKAGE" ]]',
-         'if false  # bypassed for custom fork'),
+         'if false; then'),
         ('if [ "$TERMUX_REPO_APP__PACKAGE_NAME" != "$TERMUX_APP_PACKAGE" ]',
-         'if false  # bypassed for custom fork'),
+         'if false; then'),
         # Repo URL hardcoded to termux.dev — force it to still work
         ('packages.termux.dev/apt/termux-main',
          'packages.termux.dev/apt/termux-main'),  # keep same, deps download works
