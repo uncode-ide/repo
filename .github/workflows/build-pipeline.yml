@@ -82,6 +82,7 @@ jobs:
       # ── Restore build state from gh-pages ─────────────────────────────────
       - name: Checkout gh-pages (for state + existing debs)
         uses: actions/checkout@v4
+        continue-on-error: true
         with:
           ref: gh-pages
           path: gh-pages-checkout
@@ -220,7 +221,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./repo
-          keep_files: ${{ inputs.command == 'init' }}
+          keep_files: true
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: >-
