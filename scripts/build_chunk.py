@@ -193,6 +193,8 @@ def _bypass_prefix_guard():
                      "termux_download_deb_pac.sh"),
         os.path.join(TERMUX_PACKAGES_DIR, "scripts",
                      "build-bootstraps.sh"),
+        os.path.join(TERMUX_PACKAGES_DIR, "scripts", "build",
+                     "termux_step_get_dependencies.sh"),
     ]
     guard_patterns = [
         # The actual guard check pattern (various forms)
@@ -203,6 +205,9 @@ def _bypass_prefix_guard():
         # Repo URL hardcoded to termux.dev — force it to still work
         ('packages.termux.dev/apt/termux-main',
          'packages.termux.dev/apt/termux-main'),  # keep same, deps download works
+        # Prevent target package from being downloaded when -I is used
+        ('done < <(./scripts/buildorder.py $([[ "${TERMUX_INSTALL_DEPS}" == "true" ]] && echo "-i") "$TERMUX_PKG_BUILDER_DIR" $TERMUX_PACKAGES_DIRECTORIES || echo "ERROR")',
+         'done < <(./scripts/buildorder.py "$TERMUX_PKG_BUILDER_DIR" $TERMUX_PACKAGES_DIRECTORIES || echo "ERROR")'),
     ]
     for fpath in targets:
         if not os.path.exists(fpath):
