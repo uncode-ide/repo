@@ -1,124 +1,44 @@
-name: Build Custom Bootstrap
+name: Build Minimal Bootstrap ZIP
 
 on:
   workflow_dispatch:
     inputs:
-      architectures:
-        description: 'Architectures to build (comma-separated, e.g., aarch64,arm)'
-        required: true
-        default: 'aarch64'
-      additional_packages:
-        description: 'Additional packages to include (comma-separated, e.g., openssh,git)'
+      arch:
+        description: "Target architecture (default: aarch64)"
         required: false
-        default: ''
+        default: "aarch64"
+        type: choice
+        options:
+          - aarch64
+          - arm
+          - x86_64
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   build-bootstrap:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - name: Checkout repository
+      - name: Checkout main repository
         uses: actions/checkout@v4
 
-      - name: Clone termux-packages
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Free disk space
         run: |
-          git clone --depth 1 https://github.com/termux/termux-packages.git termux-packages
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/share/powershell
 
-      - name: Copy GPG Key
+      - name: Build Minimal Bootstrap ZIP (~25MB)
         run: |
-          cp assets/uncode.gpg termux-packages/uncode.gpg
+          python3 scripts/build_bootstrap_zip.py
 
-      - name: Patch termux-packages
-        run: |
-          cat << 'EOF' > patch_repo.py
-          import os
-
-          # 1. Patch package name / prefix
-          properties_path = 'termux-packages/scripts/properties.sh'
-          with open(properties_path, 'r') as f:
-              content = f.read()
-          content = content.replace('TERMUX_APP__PACKAGE_NAME="com.termux"', 'TERMUX_APP__PACKAGE_NAME="com.uncode.ide"')
-          with open(properties_path, 'w') as f:
-              f.write(content)
-          print("✓ Patched properties.sh with package name: com.uncode.ide")
-
-          # 2. Patch build-bootstraps.sh to copy custom GPG key and setup custom sources.list
-          build_bootstraps_path = 'termux-packages/scripts/build-bootstraps.sh'
-          with open(build_bootstraps_path, 'r') as f:
-              content = f.read()
-
-          # Replace bzip2 with libbz2
-          content = content.replace('PACKAGES+=("bzip2")', 'PACKAGES+=("libbz2")')
-
-          target = 'create_bootstrap_archive "$TERMUX_ARCH" || return $?'
-          replacement = """# Configure custom sources.list and GPG key
-          		mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt/trusted.gpg.d"
-          		cp "${TERMUX_PACKAGES_DIRECTORY}/uncode.gpg" "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt/trusted.gpg.d/uncode.gpg"
-          		mkdir -p "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt"
-          		echo "deb https://uncode-ide.github.io/repo uncode main" > "${BOOTSTRAP_ROOTFS}/${TERMUX_PREFIX}/etc/apt/sources.list"
-
-          		create_bootstrap_archive "$TERMUX_ARCH" || return $?"""
-
-          content = content.replace(target, replacement)
-          with open(build_bootstraps_path, 'w') as f:
-              f.write(content)
-          print("✓ Patched build-bootstraps.sh with custom sources and keyring")
-
-          # 3. Patch apt/build.sh to point to custom repo instead of termux mirrors
-          apt_build_path = 'termux-packages/packages/apt/build.sh'
-          if os.path.exists(apt_build_path):
-              with open(apt_build_path, 'r') as f:
-                  content = f.read()
-              content = content.replace('deb https://packages-cf.termux.dev/apt/termux-main/ stable main', 'deb https://uncode-ide.github.io/repo uncode main')
-              content = content.replace('deb https://packages.termux.dev/apt/termux-main/ stable main', 'deb https://uncode-ide.github.io/repo uncode main')
-              with open(apt_build_path, 'w') as f:
-                  f.write(content)
-              print("✓ Patched packages/apt/build.sh with custom repo URLs")
-
-          # 4. Patch build-package.sh to bypass the prefix check and download prebuilt dependencies
-          build_package_path = 'termux-packages/build-package.sh'
-          if os.path.exists(build_package_path):
-              with open(build_package_path, 'r') as f:
-                  content = f.read()
-              content = content.replace('if [[ "$TERMUX_REPO_APP__PACKAGE_NAME" != "$TERMUX_APP_PACKAGE" ]]; then', 'if false; then')
-              with open(build_package_path, 'w') as f:
-                  f.write(content)
-              print("✓ Bypassed prefix mismatch check in build-package.sh")
-
-          # 5. Patch termux_download_deb_pac.sh to bypass prefix check and allow downloading prebuilt dependencies
-          download_deb_path = 'termux-packages/scripts/build/termux_download_deb_pac.sh'
-          if os.path.exists(download_deb_path):
-              with open(download_deb_path, 'r') as f:
-                  content = f.read()
-              content = content.replace('if [ "$TERMUX_REPO_APP__PACKAGE_NAME" != "$TERMUX_APP_PACKAGE" ]; then', 'if false; then')
-              with open(download_deb_path, 'w') as f:
-                  f.write(content)
-              print("✓ Bypassed prefix mismatch check in termux_download_deb_pac.sh")
-          EOF
-          python3 patch_repo.py
-          rm patch_repo.py
-
-      - name: Build Bootstrap inside Docker
-        env:
-          TERMUX_DOCKER_RUN_EXTRA_ARGS: "--security-opt apparmor=unconfined --privileged"
-        run: |
-          cd termux-packages
-          # Build arguments
-          BUILD_ARGS="--architectures ${{ github.event.inputs.architectures }}"
-          if [ -n "${{ github.event.inputs.additional_packages }}" ]; then
-            BUILD_ARGS="$BUILD_ARGS --add ${{ github.event.inputs.additional_packages }}"
-          fi
-          
-          # Run build using the official Termux Docker wrapper
-          ./scripts/run-docker.sh ./scripts/build-bootstraps.sh $BUILD_ARGS
-
-      - name: Prepare Artifacts
-        run: |
-          mkdir -p output-bootstraps
-          cp termux-packages/bootstrap-*.zip output-bootstraps/ || true
-          ls -lh output-bootstraps/
-
-      - name: Upload Bootstrap Archives
+      - name: Upload Bootstrap Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: custom-bootstraps
-          path: output-bootstraps/bootstrap-*.zip
+          name: uncode-bootstrap-${{ inputs.arch || 'aarch64' }}
+          path: dist/*.zip
+          retention-days: 90
