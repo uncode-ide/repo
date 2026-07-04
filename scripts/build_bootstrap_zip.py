@@ -42,17 +42,28 @@ def patch_package_name():
             f.write(content)
         print("  ✓ Updated properties.sh")
 
-    # Add APT post-invoke hook for on-the-fly patching of official Termux debs
+    # 1. APT Pinning Hook: Prevent 'pkg upgrade' from overwriting our compiled dpkg/apt with upstream com.termux binaries
+    apt_pref_dir = os.path.join(TERMUX_PACKAGES_DIR, "packages", "apt", "etc-apt-preferences.d")
+    os.makedirs(apt_pref_dir, exist_ok=True)
+    pin_file = os.path.join(apt_pref_dir, "uncode-pin-dpkg")
+    with open(pin_file, "w") as f:
+        f.write('''Package: dpkg apt termux-exec termux-keyring termux-tools
+Pin: release *
+Pin-Priority: 1001
+''')
+    print("  ✓ Added APT pin preference to lock dpkg/apt against upstream overwrite")
+
+    # 2. APT Post-Invoke Hook: On-the-fly patching of maintainer scripts & status DB for upstream debs
     apt_hook_dir = os.path.join(TERMUX_PACKAGES_DIR, "packages", "apt", "etc-apt-apt.conf.d")
     os.makedirs(apt_hook_dir, exist_ok=True)
-    hook_file = os.path.join(apt_hook_dir, "99uncode-patch-hook")
+    hook_file = os.path.join(apt_hook_dir, "99uncode-rewrite-postinst")
     with open(hook_file, "w") as f:
         f.write(f'''// On-the-fly patching hook for com.uncode
 DPkg::Post-Invoke {{
     "if [ -d /data/data/{CUSTOM_PACKAGE_NAME}/files/usr/var/lib/dpkg/info ]; then sed -i 's|/data/data/{OFFICIAL_PACKAGE_NAME}/|/data/data/{CUSTOM_PACKAGE_NAME}/|g' /data/data/{CUSTOM_PACKAGE_NAME}/files/usr/var/lib/dpkg/info/* /data/data/{CUSTOM_PACKAGE_NAME}/files/usr/var/lib/dpkg/status 2>/dev/null || true; fi";
 }};
 ''')
-    print("  ✓ Added APT post-invoke hook for on-the-fly package patching")
+    print("  ✓ Added APT post-invoke hook for on-the-fly maintainer script patching")
 
 def build_bootstrap(arch="aarch64"):
     print(f"[*] Building minimal bootstrap zip for {arch}...")
