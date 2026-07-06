@@ -1,166 +1,32 @@
-Package: asciidoctor
+Package: build-essential
 Architecture: all
-Installed-Size: 6464
+Installed-Size: 4
 Maintainer: @termux
-Version: 2.0.26
-Homepage: https://asciidoctor.org/
-Depends: ruby
-Description: An implementation of AsciiDoc in Ruby
-Filename: dists/uncode/main/binary-all/asciidoctor_2.0.26_all.deb
-Size: 599620
-MD5Sum: a5dd29bce4c23cf92de916e3982390f1
-SHA1: 19a27082e3c6cd39da1dcaa255aa31b6c07d3a78
-SHA256: 75dbff0dba3b9c3035d15fe18c62ea882d243fed115928745e6e45c4e60f8437
-SHA512: 5a1473add2ffca65eaadbc27e4f0b1e8da3f9aa291038906f02d8d13594e697653e53e3dfa626b7a668af39dfeb4249fd2b56b2b5ce1b8d51a58b5b9441f38c9
+Version: 4.1
+Homepage: https://github.com/termux/termux-packages
+Depends: clang, make, pkg-config
+Recommends: autoconf, automake, bc, bison, cmake, flex, gperf, libtool, m4
+Suggests: git, golang, nodejs, patchelf, proot, python, ruby, rust, subversion
+Description: A metapackage that installs essential development tools
+Filename: dists/uncode/main/binary-all/build-essential_4.1_all.deb
+Size: 824
+MD5Sum: 531e54c626e0e025fa7c48455f31dd6c
+SHA1: aedbfd0deb5f88f5fb2b3ac063692089e2be0d02
+SHA256: 6c08097950535945d17b76a14521cb41df1a2d90c4faeed6bd0f91b5991b1495
+SHA512: 55d82834619c9b954d30e2e0e3a7a984d7af938b1534abe4321ab1e15f18c712ecb3a45319a0ea0594b4c3441758ee54a32c5687890710eb9db87d861a8325af
 
-Package: aspell-de
+Package: byobu
 Architecture: all
-Installed-Size: 2160
+Installed-Size: 1476
 Maintainer: @termux
-Version: 1:20161207.7.0
-Homepage: http://aspell.net/
-Depends: aspell
-Description: German dictionary for aspell
-Filename: dists/uncode/main/binary-all/aspell-de_1:20161207.7.0_all.deb
-Size: 749124
-MD5Sum: e1795e533aa1791f8b754fb438e3a761
-SHA1: 151f92739a0a080180e3fe8a1f47dd63e4fe9f52
-SHA256: 1955af6a024fece98731777dc0d904070df9daadc60a35e7ae2a74953e699686
-SHA512: e812b5069c89bd0f7e410dab61a1d4426e0a4c31a0fef8d04b3d2b191b0247367b62fc374060444d71f55ceed6ce3c2621d8e627fd700c94cd499343f291ad97
-
-Package: aspell-en
-Architecture: all
-Installed-Size: 4556
-Maintainer: @termux
-Version: 1:2020.12.07
-Homepage: http://aspell.net/
-Depends: aspell
-Description: English dictionary for aspell
-Filename: dists/uncode/main/binary-all/aspell-en_1:2020.12.07_all.deb
-Size: 1124136
-MD5Sum: d53ff7039e58a176605323c024c9e1f2
-SHA1: e2f915e385ee7b964a913cf3952fb94621ef9cee
-SHA256: 8b6e32510c00a25727e4472d0964cc0a19d79fbf8983780fe6a78fa3af18e9d1
-SHA512: 16ed980e98460cd61b00fde7ea3533609b0ff0241bb6cac8e9962dc2dd75569938bddd1aff4e2de473fd1fdd883e80f3f2e41bfc30639f7559ed3b39a1b2db09
-
-Package: aspell-es
-Architecture: all
-Installed-Size: 1504
-Maintainer: @termux
-Version: 2:1.11-2-0
-Homepage: http://aspell.net/
-Depends: aspell
-Description: Spanish dictionary for aspell
-Filename: dists/uncode/main/binary-all/aspell-es_2:1.11-2-0_all.deb
-Size: 452364
-MD5Sum: 0d57f3def479ef6683486b1aa4d705ff
-SHA1: d720bff9200354736f9d05cfea713b135edbce4d
-SHA256: cfffef90c65be130acbc046d38baca49396b8c341794f01bb953a82aae840504
-SHA512: d754799b01df58c859c985d67a68513ed282422f1354d0441e807a2df7cbac012392428a7c5b5aaba2b4d4933cc9f3c35dd87576dcd41aa8743ded45750e037d
-
-Package: aspell-fr
-Architecture: all
-Installed-Size: 17564
-Maintainer: @termux
-Version: 2:0.50-3-1
-Homepage: http://aspell.net/
-Depends: aspell
-Description: French dictionary for aspell
-Filename: dists/uncode/main/binary-all/aspell-fr_2:0.50-3-1_all.deb
-Size: 4369392
-MD5Sum: af86a917f86407360e91b27e037ccd6e
-SHA1: a19593977f56491ab50277b0f4fd9a453e684670
-SHA256: 068452647db5c7eb9ad231be2b9095d8f689cee0b035ce13fea6662f7d10d441
-SHA512: 12295a88f0b6894c30feecf770d09a7a6ee3158ea84e8d46bc264314dc7753b636eb4a21a14614e07ed068d4fd49fd0b0b6b8068894a9702171b62f67ada21ea
-
-Package: atool
-Architecture: all
-Installed-Size: 184
-Maintainer: @termux
-Version: 0.39.0-2
-Homepage: https://www.nongnu.org/atool
-Depends: perl
-Recommends: arj, llvm, bzip2, cpio, file, gzip, lhasa, lzip, lzop, p7zip, tar, unrar, unzip, xz-utils, zip
-Suggests: bash-completion
-Description: tool for managing file archives of various types
-Filename: dists/uncode/main/binary-all/atool_0.39.0-2_all.deb
-Size: 34740
-MD5Sum: 9c8535e588e34dd9ac8a0a2e1417b91e
-SHA1: f113886b524687f08fd08744a2f6880f4c036c5b
-SHA256: a6d5e2f3e43a72016f1ef9b75b245111d4f5093a5ec73b7bcaa597da5b0da55d
-SHA512: 2a3670f983c320e12c988b70e79e0c830734aee2f8131a6073ec760f850073981a8ffd163de63813825596be8ed2ac51b589fe37a0999621a62f437ca39fc9e3
-
-Package: autoconf-archive
-Architecture: all
-Installed-Size: 4620
-Maintainer: @termux
-Version: 2024.10.16
-Homepage: https://www.gnu.org/software/autoconf-archive/
-Description: A collection of freely re-usable Autoconf macros
-Filename: dists/uncode/main/binary-all/autoconf-archive_2024.10.16_all.deb
-Size: 402448
-MD5Sum: 484923c17ad24f7f3e1f96634e5f51c6
-SHA1: 44a8e264160470daf5859e55d6e4cedb7327c1c5
-SHA256: af86ced90b391033cc50337de6057de464cff115edbe1e613b068bd49265aac0
-SHA512: 5859a64656e802728c8338b94558f58d4f4da072036b13c2acebdd7a6e9915274ed15df9dc735fe1374bfea65d43f06374447cc94d6db5a8c6aa86d325f01e05
-
-Package: autoconf
-Architecture: all
-Installed-Size: 3680
-Maintainer: @termux
-Version: 2.73
-Homepage: https://www.gnu.org/software/autoconf/autoconf.html
-Depends: m4, make, perl
-Description: Creator of shell scripts to configure source code packages
-Filename: dists/uncode/main/binary-all/autoconf_2.73_all.deb
-Size: 624836
-MD5Sum: 81ff5f396dd0dc739765bacf995e563e
-SHA1: e8345f7f3e4a7eeb5359fab849d5a8065816b63c
-SHA256: 1ec9fb78fffe611e54659aec39948c2198d645379fe752ac05b147149f7b932c
-SHA512: 32286043522741dbd24d9a28c8ebe6e8d8d9eb1c262230bf505e45891662eecbaa5c8e77f7ddabf7928d160f7f386b0967f481b57759e4eb8942753d05f6d712
-
-Package: automake
-Architecture: all
-Installed-Size: 2860
-Maintainer: @termux
-Version: 1.18.1
-Homepage: https://www.gnu.org/software/automake/
-Depends: autoconf
-Description: Tool for automatically generating Makefile.in files
-Filename: dists/uncode/main/binary-all/automake_1.18.1_all.deb
-Size: 576588
-MD5Sum: 21d00a2b9b96cd60ff5859fa4c7f86a8
-SHA1: 0667289a407249555abc1d5fbb17f4a6e6e5d65f
-SHA256: e44d6319a95a3d7abec771535d9da2073de4f7bb834fe1584e40677e2b74ca64
-SHA512: 5bf81e709368ab5d6d3c98d4614f4f1f02648d3939fa7e0c9ed92e32379165e3cd1f0349cb18bbf92e0394e5642dee64561f2c6034216ce51764a71177899d24
-
-Package: bash-completion
-Architecture: all
-Installed-Size: 2640
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 2.17.0-2
-Homepage: https://github.com/scop/bash-completion
-Depends: bash
-Description: Programmable completion for the bash shell
-Filename: dists/uncode/main/binary-all/bash-completion_2.17.0-2_all.deb
-Size: 188344
-MD5Sum: df1ccf3fc1fbe0fe34727459c14a218a
-SHA1: 482b76b56a12ccf4ca1ad6455cfff48149e5ec80
-SHA256: aec8f1f06dc08f3fda178ad0353f7a46e2152193b13632a87c9e4705b30fd180
-SHA512: f274a60e42d968eb9be39a578444478b8f2bb491e29f41f7b9b1e88a6148de2de8f492a87f2b0cee2bf714e84771fefb8b18966e68fb329df0c126c7d1ab6c52
-
-Package: beanshell
-Architecture: all
-Installed-Size: 228
-Maintainer: @termux
-Version: 2.1.1-1
-Homepage: https://github.com/beanshell/beanshell
-Depends: dash, termux-tools
-Description: Small, free, embeddable, source level Java interpreter with object based scripting language features written in Java
-Filename: dists/uncode/main/binary-all/beanshell_2.1.1-1_all.deb
-Size: 185332
-MD5Sum: 996f007e426b795b7fac33fb80819d0c
-SHA1: 9a8476ea085c8c4db9cf6e9e44c3c6e5c4bda919
-SHA256: 3b95e0821b2a91b62c3fb5dfc42cd8c23cfba8ace441be010648f79d29b9944f
-SHA512: 5c06aafbdcbebfb7420231450bfc153ba4a7c5b396bdcf31f9fc819432e2103ee13bc6fee248e8a97e1514c1bee7e0a34adc6ed61466183ebe6f99e2969a8451
+Version: 7.12
+Homepage: https://www.byobu.org/
+Depends: gawk, tmux
+Description: Byobu is a GPLv3 open source text-based window manager and terminal multiplexer
+Filename: dists/uncode/main/binary-all/byobu_7.12_all.deb
+Size: 347900
+MD5Sum: fce47d77a13c021e0aa4d35a0df34206
+SHA1: 354e1bc6534fe0b4cdc7ed512cb0d505699053db
+SHA256: 7e0f1bb12fb72d469956111cd5cab37c62fb5721217d0643307f2d2ac9e85273
+SHA512: dd36be812facc36f6926f2d375cc81e7dc015fcda3f3108788c37bd77a5ce18a5ebee5ef96fee9152df1de5e1fcbe9ab4270f633a468fc1b58c17e2cb107dea0
 

@@ -1,178 +1,177 @@
-Package: argp-static
+Package: black-hole-solver
 Architecture: aarch64
-Installed-Size: 200
-Maintainer: @termux
-Version: 1.5.0-1
-Homepage: https://github.com/argp-standalone/argp-standalone
-Depends: argp (= 1.5.0-1)
-Description: Static libraries for argp
-Filename: dists/uncode/main/binary-aarch64/argp-static_1.5.0-1_aarch64.deb
-Size: 42164
-MD5Sum: e6de444cf881330367551429fbb4852c
-SHA1: 5a8f169ce2a903ad1f90cfa77363a6a379f9a89a
-SHA256: 287f623fb1c22e5d3099c9b5c2f2d4a3e18a621a1354690fb2238cc65c1ddf37
-SHA512: 8df8f868145e3c24f2193d9df80f5676b9cace875f533d4c0a0fc493b6c18c13c8542a17cbf572aea2555f0d6f9ea67280104d32fea150204bd7bb2461aadd02
+Installed-Size: 116
+Maintainer: 3ls-it <3ls-it@pm.me>
+Version: 1.14.0
+Homepage: https://fc-solve.shlomifish.org/
+Description: Black Hole Solver is a solitaire solver for 'Golf', 'Black Hole' and 'All in a Row'.
+Filename: dists/uncode/main/binary-aarch64/black-hole-solver_1.14.0_aarch64.deb
+Size: 14516
+MD5Sum: c55874b630f0022d6562600c236948f5
+SHA1: b0285d09d66f6eaa62de1105c6ae9f0be88d9a08
+SHA256: 328b785ce703e66dd24b53ad2563a28d3d1dc61e65084382430b20818a209b71
+SHA512: 5794becc9273b3eed9caa6c3da5380a3c1843d5d38c2638e744c35b818c902dd7dca9dd25683b307aacfa992a12999aaf552ea625d7e589f181484092d1d3352
 
-Package: argp
+Package: blink
 Architecture: aarch64
-Installed-Size: 108
+Installed-Size: 1232
 Maintainer: @termux
-Version: 1.5.0-1
-Homepage: https://github.com/argp-standalone/argp-standalone
-Description: Standalone version of arguments parsing functions from GLIBC
-Filename: dists/uncode/main/binary-aarch64/argp_1.5.0-1_aarch64.deb
-Size: 21332
-MD5Sum: 6776106779cecb92c0e729118e05ef64
-SHA1: 0df55d8139124614d87df65b47e8a5a019e2c771
-SHA256: 76422ba2351aef2631b3dffc18704034ba32cbdb729459b3ba23c089e4b087d7
-SHA512: cf21a24e066caef7dfedaf8f81b2b36e6430a04c757f82325987dbd5586b181ca79d3ed92768a9fbcc2f74511fef84b9a091ebcebc50075125f94e92326e1f50
+Version: 1:1.1.0-1
+Homepage: https://justine.lol/blinkenlights/
+Description: Tiny x86-64 Linux emulator
+Filename: dists/uncode/main/binary-aarch64/blink_1:1.1.0-1_aarch64.deb
+Size: 295244
+MD5Sum: 2d165fd930664e266c792d09f49fbb37
+SHA1: 34bc3e8eb89ad2f7148d55037f73c1ea017c78ab
+SHA256: e404c6227ce56c6e789dbe9e23c55a95804a3f44ad57105b76c35c8bae1fe5d9
+SHA512: 48d67555eb270e53db7d3a3b2ad8f5d27876c4555f6d5175b8a1c53eb3860d074aef03a9564a1c4c267223d86faf707c444c1b06e0a1d9e43b910f4a44f7d7aa
 
-Package: arj
+Package: blogc
 Architecture: aarch64
-Installed-Size: 384
+Installed-Size: 236
 Maintainer: @termux
-Version: 3.10.22-6
-Homepage: https://arj.sourceforge.net/
-Description: Open-source version of arj archiver
-Filename: dists/uncode/main/binary-aarch64/arj_3.10.22-6_aarch64.deb
-Size: 118284
-MD5Sum: cb12c0f8a5794939736c3168e2bb078d
-SHA1: 5a8e75949bb526e1cfd7534a3625c9c434219c74
-SHA256: 4b6813447a6ece31bc999f34d26584f37d75f572456f3d128a57b2b79272ee84
-SHA512: ba4946c6f8ec278a79b4e2c5c55ebbc4bafe64482768aa4163b380a7baa4c77e9007b7e9f93c8247404eba424093e6de16505640c8322ed3612af8d1425666fd
+Version: 0.20.1-1
+Homepage: https://blogc.rgm.io/
+Description: A blog compiler
+Filename: dists/uncode/main/binary-aarch64/blogc_0.20.1-1_aarch64.deb
+Size: 60292
+MD5Sum: 0387f00175c69f3e1509002f4a9886ac
+SHA1: 05c21eb12e75170010d7c688278dfb0aa4b54d34
+SHA256: 2ccc06e9caf110aa8dd57fa64db00570c1ee33bb65a81040a14ee94fc04d6069
+SHA512: 828a74ea3db8a9f7ba6c655c1f37a0689421ea52910eaf374976c05dc65c61b93b3321990bd8ab2bccef713214dd5bfd503e765554173f50ed553c1e65f838a5
 
-Package: artalk
+Package: bombadillo
 Architecture: aarch64
-Installed-Size: 50392
-Maintainer: Moraxyc <termux@qaq.li>
-Version: 2.9.1-1
-Homepage: https://artalk.js.org/
-Description: A self-hosted comment system
-Filename: dists/uncode/main/binary-aarch64/artalk_2.9.1-1_aarch64.deb
-Size: 10323528
-MD5Sum: 89f61e3ad52d45cd512ec3534cff87d6
-SHA1: 661e9269a8efcba2dadc8e52e23ca033c29d426c
-SHA256: daa937cc64464ab398f57e3945e7d6ff9f65c1260205f9bfaca9d4d9a6bb78b0
-SHA512: 2c178c56a1b66f36b419dba41fb0c0b475215adb8f09d3eb27f397221f93325c220b21fc730d9078363eae774f575cbb14a734a4f7cb583c6970c779c1a4a788
-
-Package: ascii
-Architecture: aarch64
-Installed-Size: 108
+Installed-Size: 6768
 Maintainer: @termux
-Version: 3.32
-Homepage: http://www.catb.org/~esr/ascii/
-Description: List ASCII idiomatic names and octal/decimal code-point forms
-Filename: dists/uncode/main/binary-aarch64/ascii_3.32_aarch64.deb
-Size: 14072
-MD5Sum: 7c04febd64d3d1dfefe704581da47258
-SHA1: e18ae53504373aa22ce4b30d511d153ccd3ea7aa
-SHA256: db02a8a6015b36ad8cbfc12062c41c8fa477d29c49f7ba9bbf05863802de6e1c
-SHA512: de1676717407aed03db9f5be51cda5bb91fa470a3f1fb4d692d58561809296dfe87b8bb47a383dfdbea745b226a78c950981edfe913fd410495f996b0a11e8a7
+Version: 2.4.0-3
+Homepage: https://bombadillo.colorfield.space/
+Description: A non-web client for the terminal, supporting Gopher, Gemini and much more
+Filename: dists/uncode/main/binary-aarch64/bombadillo_2.4.0-3_aarch64.deb
+Size: 1965692
+MD5Sum: 78879bbb19a74e72779623ace9a161be
+SHA1: f8c16c199b49902c66c466c26ddc1f314f91e0b0
+SHA256: a2a3351883bd35b966b571f9ea95613b3cf29d5f82fd4a4ed22347641ca374e4
+SHA512: 18c7e2347a03aa87c517f6e758e1eac57f819f13c04ddb02eb5d8fb26d82552461947ece49284ab15154587a74f8c76ef9b74146e91d62db1f840fab8905d5b1
 
-Package: asciinema
+Package: bore
 Architecture: aarch64
-Installed-Size: 7076
+Installed-Size: 1812
 Maintainer: @termux
-Version: 1:3.2.1
-Homepage: https://asciinema.org/
-Description: Record and share your terminal sessions, the right way
-Filename: dists/uncode/main/binary-aarch64/asciinema_1:3.2.1_aarch64.deb
-Size: 3131512
-MD5Sum: 80a65ea93fb00b15b6dbaa4ef0c97e44
-SHA1: 319daacecc0f853b1fe368ab3320344346486897
-SHA256: 434a28f425b3ff37db6098bda85db822ae2bc9276336d9f7068c6a79a84ad638
-SHA512: aebb1ab8b006f812ed76a0b04249b9b943322a7a0ed2f14d35b8a76bf6b709d3981b0930fb384987fc4b52c4c48530d7f8e40dedc53d6656e82d69b398f8b2ef
+Version: 0.6.0-1
+Homepage: https://github.com/ekzhang/bore
+Description: Bore is a simple CLI tool for making tunnels to localhost
+Filename: dists/uncode/main/binary-aarch64/bore_0.6.0-1_aarch64.deb
+Size: 569064
+MD5Sum: 9c9feefcd6aa82341f67770f8adbf6c7
+SHA1: 88b2d2951fecc5f32d39895f2287e1c339d03e73
+SHA256: ff3303a7b4a894465d1e92d5495b0778df37d132904f5633b9a6b422e1b68db4
+SHA512: 1bcaa00bfa59deeddff7b3daa783327326d718b0624032e39124eec6f4643228e22a31565717de7d0ebb7a1b7071eb9525a26972bbfc930078fa5494dbddd03d
 
-Package: aspell-static
+Package: brook
 Architecture: aarch64
-Installed-Size: 3180
-Maintainer: @termux
-Version: 0.60.8.2
-Homepage: http://aspell.net
-Depends: aspell (= 0.60.8.2)
-Description: Static libraries for aspell
-Filename: dists/uncode/main/binary-aarch64/aspell-static_0.60.8.2_aarch64.deb
-Size: 327056
-MD5Sum: b4c0120d25cff818086ef0247e5ac7db
-SHA1: df7e0d29bb245d00fb6a45dcb27f3680686180f2
-SHA256: 90715904e8b8f7684821a88d79987e2ac4f465547ef6843ea0e26aeedec7daf1
-SHA512: ee9d70d0570499d220ed555672c66206334d89ee68f976da56c4e5834c51a484428921fda7c532f0d11772ac612c14ed82bd9e85bce843f98fd87cd13fad4196
+Installed-Size: 24828
+Maintainer: Krishna kanhaiya @kcubeterm
+Version: 20260101.0
+Homepage: https://github.com/txthinking/brook
+Description: A cross-platform strong encryption and not detectable proxy. Zero-Configuration.
+Filename: dists/uncode/main/binary-aarch64/brook_20260101.0_aarch64.deb
+Size: 6366960
+MD5Sum: 20802b0290122c838e5714dc9d2b9759
+SHA1: e5ef9b9459804ace046dfb3898b4cf420c57c96a
+SHA256: a2f667993b99d1e739b805b1432c7d655f67e3e056c7ffdeedcbaa74b00910c5
+SHA512: 9f4537c2dfbf9029b2c1ddb4509c4d6ef5158fa39ef3e6bc0c2cc2bd77b280d49b5c5f4ed58129f5829956c336232f4ff608a6ab01bb76503819611ffe23acbc
 
-Package: aspell
+Package: bsd-finger
 Architecture: aarch64
-Installed-Size: 2616
+Installed-Size: 100
 Maintainer: @termux
-Version: 0.60.8.2
-Homepage: http://aspell.net
+Version: 0.17-3
+Homepage: https://packages.debian.org/sid/source/bsd-finger
+Description: User information lookup program
+Filename: dists/uncode/main/binary-aarch64/bsd-finger_0.17-3_aarch64.deb
+Size: 17204
+MD5Sum: 1fd63098ba09067c8c361c22b6dfb982
+SHA1: 94464cd6e5aba8e75560a9980b3b8b9950ad0fd3
+SHA256: ff69e4ae7aa0115f4af7cacbcb3810ed498122c86deb1b4ba856718430ed2203
+SHA512: f1b5633689437a741d58e59e86bfcb5116e919872a06866056c38de989b979e13a66a974d9b76852e8fa08f7aec4f1848784c5524af4e6d06132c57b73e882cb
+
+Package: btfs2
+Architecture: aarch64
+Installed-Size: 82508
+Maintainer: @termux
+Version: 4.1.0
+Homepage: https://www.bittorrent.com/btfs/
 Depends: libc++
-Description: A free and open source spell checker designed to replace Ispell
-Filename: dists/uncode/main/binary-aarch64/aspell_0.60.8.2_aarch64.deb
-Size: 348456
-MD5Sum: 497441a8674eeb122d996037a0add72a
-SHA1: 5a5cfc53fc5c2cfddf0e5ee17176ed211ac05d7f
-SHA256: 983dc8ab636e453a48ab5a19bedcd59c283e8ffc1dc05ae91c363377b95ab8d2
-SHA512: 203521fe4fe31f2849689dcb2a3631f1baa2c3be43f58e8e27ffc09812488d7a0f0ab0959b6f48eb95191f7b0f5e85924cef06bc4c655febeadb0f585e617d03
+Conflicts: btfs
+Replaces: btfs
+Description: Decentralized file system integrating with TRON network and Bittorrent network
+Filename: dists/uncode/main/binary-aarch64/btfs2_4.1.0_aarch64.deb
+Size: 23254420
+MD5Sum: fe6632847861ce41a73f90346c6ab68d
+SHA1: bfe4cf12b794395c9ac943a693c99352fd445cc6
+SHA256: 2b2f8891880ab33155bed78894ffe8ec60e70aed5c40410c594ba894c6322a3a
+SHA512: de36185362702919b413218116b5d3d83b2a3fb57fad25b0ac51d9f220f2eaca54495551a603f3841a514ae72d73775558782225bddd525ab2f0764705ed5c97
 
-Package: at
+Package: buf
 Architecture: aarch64
-Installed-Size: 208
+Installed-Size: 56316
 Maintainer: @termux
-Version: 3.2.5-2
-Homepage: https://salsa.debian.org/debian/at
-Suggests: termux-services
-Description: AT and batch delayed command scheduling utility and daemon
-Filename: dists/uncode/main/binary-aarch64/at_3.2.5-2_aarch64.deb
-Size: 31784
-MD5Sum: caaa8e57ac3526d851d84b64dd6c7ee5
-SHA1: 769afbfb7083d4eba99a6cd46e1ed2c01eb2dc37
-SHA256: 65250e6bdc45d551f11d8f404a93f06b165705e869ec6532741026245666c49b
-SHA512: c64532331eabe848c01b68996e73ade1f49f0b1dce145989c8173be326531f7ce1320c9292e6400039fa8a13e1d9e057b8124aede2ec56092a1c70d77c49aa18
+Version: 1.71.0
+Homepage: https://buf.build
+Description: A new way of working with Protocol Buffers
+Filename: dists/uncode/main/binary-aarch64/buf_1.71.0_aarch64.deb
+Size: 10407544
+MD5Sum: af75550a50d00f823e26ff6f850b5f3b
+SHA1: 58154476a28552207a1a029e64427756ff823728
+SHA256: b618ecc9a68525eb60bd36b5aee24dfa97f96917fd8264b69c3dc28326da0c37
+SHA512: 4b9fc19d1cb1785094adf2d4a2b078acd85b64306f62e80af81a12f68033e4fa70934ead9f61869ff437193785b293470404d0698942be6c78870d8b279e139d
 
-Package: atomicparsley
+Package: byacc
 Architecture: aarch64
-Installed-Size: 380
+Installed-Size: 216
 Maintainer: @termux
-Version: 1:20240608.083822.1ed9031-1
-Homepage: https://github.com/wez/atomicparsley
-Depends: libc++, zlib
-Description: Read, parse and set metadata of MPEG-4 and 3gp files
-Filename: dists/uncode/main/binary-aarch64/atomicparsley_1:20240608.083822.1ed9031-1_aarch64.deb
-Size: 107576
-MD5Sum: 2da9962e87a8d0bd23f369b8f7149c9a
-SHA1: 301c1d32b1aa28e2367c0d011611ad72b4c0d55e
-SHA256: 200a9eef24b1bd755e4252911d60871ab51bd5eb69c25685008f6efded06473a
-SHA512: e0803993ffe74e97f3dad730b6b3432e09daca05aac01e931b962ae334fef6679d2b4fcd9459a26cda094b5daf592cc4036e67163c8ac27492c07511acf1b2ea
+Version: 20260126
+Homepage: https://invisible-island.net/byacc/
+Conflicts: bison
+Description: byacc is generally conceded to be the best yacc variant available
+Filename: dists/uncode/main/binary-aarch64/byacc_20260126_aarch64.deb
+Size: 55148
+MD5Sum: 921ac8dbc05d3ddf9f1bf7c58966756f
+SHA1: 751a4e0c21a2d2531800d44be4e7d9e5813985f2
+SHA256: 82af38b9cd2100488322521c29f0a2e8367f147d39afed71276f37b55eb94c80
+SHA512: e6178fce587db179df72e92a34749ab5b268434c25efbc4014bb1e60bd2a25775a32bdd66fd257e355e238a4991122f165ce6d57670f315d844f083f3ca24870
 
-Package: attr-static
+Package: c-ares
 Architecture: aarch64
-Installed-Size: 60
+Installed-Size: 1100
 Maintainer: @termux
-Version: 2.5.2-1
-Homepage: http://savannah.nongnu.org/projects/attr/
-Depends: attr (= 2.5.2-1)
-Description: Static libraries for attr
-Filename: dists/uncode/main/binary-aarch64/attr-static_2.5.2-1_aarch64.deb
-Size: 7048
-MD5Sum: 3244c9f27d52dba80799d8a71563af14
-SHA1: 46e0daf92db2792674523505db94c5ad29dbf15f
-SHA256: 0c77ec1816b47e116f09b5c229ddeda3a716a8408e41d64efb0d1fe885651283
-SHA512: 83c231b3ec4a25b90305080566be9f79cdc2e7296a45132e05cb5c05f69b64d738d5e671d3a1ba782ae10eaf964743ed28dde1a2871100fe8b9fe1c025837414
+Version: 1.34.6
+Homepage: https://c-ares.org/
+Breaks: c-ares-dev
+Depends: resolv-conf
+Replaces: c-ares-dev
+Description: Library for asynchronous DNS requests (including name resolves)
+Filename: dists/uncode/main/binary-aarch64/c-ares_1.34.6_aarch64.deb
+Size: 192452
+MD5Sum: 8bdf24d283f4f276fc12478b9a0b89a3
+SHA1: 60c6a183d0dc6aa6eb4f93229a7175c87512f9ae
+SHA256: 6cd16a7496b1a237184cbe4ef048db07529e481e837780c84b964b3d12dbe8b9
+SHA512: ea51626f16891611cd6e24763ad4139df918ad4dfa692f1c285d364bda4b143c90a5cb737992a881c8f4ce8dd51c929b36971735355cdcadbd330529c6847509
 
-Package: attr
+Package: cabextract
 Architecture: aarch64
-Installed-Size: 256
+Installed-Size: 108
 Maintainer: @termux
-Version: 2.5.2-1
-Homepage: http://savannah.nongnu.org/projects/attr/
-Breaks: attr-dev
-Replaces: attr-dev
-Description: Utilities for manipulating filesystem extended attributes
-Filename: dists/uncode/main/binary-aarch64/attr_2.5.2-1_aarch64.deb
-Size: 52596
-MD5Sum: 265997b78a18d59188ee87bd64deb119
-SHA1: 942ad7339edf15700a6711cb236b991504cd831a
-SHA256: 2b5fa0e544617855c21534d6b4139c85bf3afed275e976b571fdb75324b20fd9
-SHA512: e21f5ef7dabcfddcd59831ab2f20f447835d43515f21b1f22aca9dd03ef1123a752b34197cf3aa3e99bcdb64e9eb317763947b353b7c534526eb3796f55d5f09
+Version: 1.11-1
+Homepage: https://www.cabextract.org.uk/
+Description: A program to extract Microsoft cabinet (.CAB) files
+Filename: dists/uncode/main/binary-aarch64/cabextract_1.11-1_aarch64.deb
+Size: 27224
+MD5Sum: 05f7f46732236d08a8f7ed0adcbc2f86
+SHA1: 8d3c777b9ada75b0330beba897e22638ae7cac92
+SHA256: c6e53feda86828af73a322b73704483bc99413cc0e697ba82b0eae9f6dca6393
+SHA512: 063b66813a135f8158af5d346abe91caa0f75932fdb36fc648301595814c9180b5df062faf6c2cec812b5294ee377f6ecd75becbbdc504e7a8438c3e1774b410
 
 Package: hello
 Version: 8.7.1-1
@@ -187,8 +186,8 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: 3289c3fdfdebcf46c1289c1f417908e8
-SHA1: 28da409efd31c2590aecab9afd17644c1b2e1d3c
-SHA256: 9ec5065b56f19775127874a43d6f409e233d6bc4a30b215d6c1f96562e3ceac8
-SHA512: 2a6a5cef376efebea0cd80971778f05f1bb6d11d6749b165a4ce8e91a51a4da3c6269899a9c638f2e1c1565deb94c93bfdc7996ddc5efe465ce8acf7ca0f3579
+MD5Sum: 4049a8f3412dba60f1c3fdbdec9cbc54
+SHA1: 9d338f1c67cea27e780da779adb6e298b50fb534
+SHA256: 2e3fdfb35f81e92e77fca3c81b4f1c1515739a1af43c2905bd88ff9f4cd3cd0a
+SHA512: 3bef30254908a04965b4eaa21821e83c13c91fd122e6b103ba7b8d7c193fceb8231bdb2fb914238dc174efe30635a86805246965bd665c86252465fd71880262
 
