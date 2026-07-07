@@ -1,32 +1,14 @@
-Package: build-essential
+Package: cgal
 Architecture: all
-Installed-Size: 4
+Installed-Size: 52564
 Maintainer: @termux
-Version: 4.1
-Homepage: https://github.com/termux/termux-packages
-Depends: clang, make, pkg-config
-Recommends: autoconf, automake, bc, bison, cmake, flex, gperf, libtool, m4
-Suggests: git, golang, nodejs, patchelf, proot, python, ruby, rust, subversion
-Description: A metapackage that installs essential development tools
-Filename: dists/uncode/main/binary-all/build-essential_4.1_all.deb
-Size: 824
-MD5Sum: 531e54c626e0e025fa7c48455f31dd6c
-SHA1: aedbfd0deb5f88f5fb2b3ac063692089e2be0d02
-SHA256: 6c08097950535945d17b76a14521cb41df1a2d90c4faeed6bd0f91b5991b1495
-SHA512: 55d82834619c9b954d30e2e0e3a7a984d7af938b1534abe4321ab1e15f18c712ecb3a45319a0ea0594b4c3441758ee54a32c5687890710eb9db87d861a8325af
-
-Package: byobu
-Architecture: all
-Installed-Size: 1476
-Maintainer: @termux
-Version: 7.12
-Homepage: https://www.byobu.org/
-Depends: gawk, tmux
-Description: Byobu is a GPLv3 open source text-based window manager and terminal multiplexer
-Filename: dists/uncode/main/binary-all/byobu_7.12_all.deb
-Size: 347900
-MD5Sum: fce47d77a13c021e0aa4d35a0df34206
-SHA1: 354e1bc6534fe0b4cdc7ed512cb0d505699053db
-SHA256: 7e0f1bb12fb72d469956111cd5cab37c62fb5721217d0643307f2d2ac9e85273
-SHA512: dd36be812facc36f6926f2d375cc81e7dc015fcda3f3108788c37bd77a5ce18a5ebee5ef96fee9152df1de5e1fcbe9ab4270f633a468fc1b58c17e2cb107dea0
+Version: 6.2
+Homepage: https://www.cgal.org/
+Description: Computational Geometry Algorithms Library
+Filename: dists/uncode/main/binary-all/cgal_6.2_all.deb
+Size: 5416840
+MD5Sum: ec0b591408f990125761e5f1ac62f5b8
+SHA1: 6123cb6c605f0aa0bf5c8a89cb24c842732123ce
+SHA256: af795931bfaf0ee3759a065e316204ac8bfcc08088ef08250a8b0d215ddb4dfd
+SHA512: 5ba89f05398b820121fb666e7933695d54bb67b20956d3b51fb0b205f32f4bcbfb8fa04090111106cf2cf2fc8b7f24c94ce40c51616e8e08a862588f8a214f53
 
