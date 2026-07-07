@@ -1,263 +1,281 @@
-Package: caddy
+Package: cjson
 Architecture: aarch64
-Installed-Size: 55656
+Installed-Size: 180
 Maintainer: @termux
-Version: 2.11.4
-Homepage: https://caddyserver.com/
-Description: Fast, cross-platform HTTP/2 web server
-Filename: dists/uncode/main/binary-aarch64/caddy_2.11.4_aarch64.deb
-Size: 12119176
-MD5Sum: 2d0143fcb1a3b0db48153054b19289c1
-SHA1: a825fa428ed7a600a09c67d19226d4c9f4a977d4
-SHA256: 2520246362133d1374ff7600b6913349a2159875dd067f71cbdc5293adb1e1a0
-SHA512: 8d453f3b05a1df647af44027138b27e7d6afbaa16f01ffa351625bde5a338d0c637032fc84e108af05ce763696929985af6922bbc9b785742abea2a2efa08edf
+Version: 1.7.19
+Homepage: https://github.com/DaveGamble/cJSON
+Description: Ultralightweight JSON parser in ANSI C
+Filename: dists/uncode/main/binary-aarch64/cjson_1.7.19_aarch64.deb
+Size: 25400
+MD5Sum: aa2e38fe584fa95d13109134ea03bc75
+SHA1: 077aae7d2042efd6c9df03b08c3c90cc136b247e
+SHA256: 65de1176d9949a95adc0d9e267009a7f3134c31308331c8222c5c52bc128b2ed
+SHA512: 2e7e7fe8120332d45ee234629d998beb522515aebc096720c1b67a88088eebe0bcc872c3c684c3ff51647136d191fdca8141f0fa2a7cdf29bdbbb26d91cb1427
 
-Package: capnproto
+Package: cli11
 Architecture: aarch64
-Installed-Size: 8680
+Installed-Size: 624
 Maintainer: @termux
-Version: 1.4.0
-Homepage: https://capnproto.org/
+Version: 2.6.2
+Homepage: https://github.com/CLIUtils/CLI11
 Depends: libc++
-Description: Data interchange format and capability-based RPC system
-Filename: dists/uncode/main/binary-aarch64/capnproto_1.4.0_aarch64.deb
-Size: 1626012
-MD5Sum: ad836a04bb71ad688b677e0f7e5af2a1
-SHA1: 8c626e02ea2d6697387e1049213c89b50db058ef
-SHA256: e8824b97e89964f683c29089891e07b5dcf1c7d7a8c903acf365fc7ccc08ecb2
-SHA512: b91b5255ba48b81d94bc88ffb66a6abc40b8111fa4ccec573e1011c21dedde5629a2c5ce07bd019271e2a18403df3cd0a285c29dde431a3f442ac0f2a62aaf96
+Description: Command line parser for C++11
+Filename: dists/uncode/main/binary-aarch64/cli11_2.6.2_aarch64.deb
+Size: 82556
+MD5Sum: 3b7dc3285c8df75e6b6ff67263d864be
+SHA1: 1a9fef6308c295f40e254bd32ffaa84b694152b4
+SHA256: 2ad27e3d55f62dac531e2db7ec61793c8f4deddd509dc4536447ee2fe80812ef
+SHA512: 1bc827cf93fd7c43ab63a0e13ca2b8296c6252161e79d752268c6f8d3741947c7267b932e16ab3f1ee0ae3845baa630723a74cfb4265516ae5073c071d3d3b41
 
-Package: capstone-static
+Package: cloudflared
 Architecture: aarch64
-Installed-Size: 10188
+Installed-Size: 28132
 Maintainer: @termux
-Version: 5.0.9
-Homepage: https://www.capstone-engine.org/
-Depends: capstone (= 5.0.9)
-Description: Static libraries for capstone
-Filename: dists/uncode/main/binary-aarch64/capstone-static_5.0.9_aarch64.deb
-Size: 732644
-MD5Sum: e33e4edbb9e36d9d7c237ff59997e515
-SHA1: db9f60bb12e38d3b028f587c5435d84b56ff699e
-SHA256: cbc6f4e15611da1f47895808de781b958671f7e67736740b5615d59c4f60f49e
-SHA512: d732c706c047b3d585ec7d16f8cdbd6ffb95e65227f7310a8e22f75fde84230bad7c8b42680dececec0dd981d8ca41b760d404531f46fed53d4ebd4de3f19c71
+Version: 2026.6.1
+Homepage: https://github.com/cloudflare/cloudflared
+Description: A tunneling daemon that proxies traffic from the Cloudflare network to your origins
+Filename: dists/uncode/main/binary-aarch64/cloudflared_2026.6.1_aarch64.deb
+Size: 6476596
+MD5Sum: 340495c79a89833717b4eab285ca4bcd
+SHA1: e4f43f983564f3e9c73a01f9b3f37a889f8e20b3
+SHA256: 703eb711ca3d99ebbb8e791012d4d54870360f61dfb6cb4d8c5dd1bd2a6de7d9
+SHA512: 95cd313c28d764f8361d41b1c6b93111d24c9c0f551bca3732586e4979cd79c7cbfee81f4f7d16be9611d6bc56f2f2f41ab3193d5c16f4ec187c70402f16e154
 
-Package: capstone
+Package: cmark-static
 Architecture: aarch64
-Installed-Size: 18528
+Installed-Size: 256
 Maintainer: @termux
-Version: 5.0.9
-Homepage: https://www.capstone-engine.org/
-Breaks: capstone-dev
-Replaces: capstone-dev
-Description: Lightweight multi-platform, multi-architecture disassembly framework
-Filename: dists/uncode/main/binary-aarch64/capstone_5.0.9_aarch64.deb
-Size: 1475016
-MD5Sum: b501e7765e89b3006124b0578eb9c286
-SHA1: 4e80ff6ff96241b203856b58dde2180e7b7f0aad
-SHA256: a844e524feccc848f897d61045824622647836b8f831d85bb8d0bf00e8df2cfa
-SHA512: e8d955f631de2bc49510fe3a2eb63fabe83a220051bf7c5a74164761f606e8d7bb4f9c986b9d560f7b99ecd9648861f9012e69b9b5cb3e96d52390b689ab7073
+Version: 0.31.2
+Homepage: https://github.com/commonmark/cmark
+Depends: cmark (= 0.31.2)
+Description: Static libraries for cmark
+Filename: dists/uncode/main/binary-aarch64/cmark-static_0.31.2_aarch64.deb
+Size: 67156
+MD5Sum: aee493d28412b4fe4c27d6585c00ea56
+SHA1: 7479720747ae38aeccc5314dc97eabd462baf08c
+SHA256: 0d45d05a428739104190db25c11a3dd43877c1e96206fb9da83c5f99376e8dc2
+SHA512: 455dbd71afa0600d8b48de7bc7982c6cc931cf93bd1fb90c453d4332957d3b1954c8f4dbe02003ae2220689eba1050798b347b4014c8b5eee002aefccd2082a9
 
-Package: carapace
+Package: cmark
 Architecture: aarch64
-Installed-Size: 74708
+Installed-Size: 296
 Maintainer: @termux
-Version: 1.7.3
-Homepage: https://carapace.sh/
-Description: Multi-shell multi-command argument completer
-Filename: dists/uncode/main/binary-aarch64/carapace_1.7.3_aarch64.deb
-Size: 8697172
-MD5Sum: 3cd1be22e8eb95276bd7c24ed1065fcf
-SHA1: 5dd28e2d8aa9c412a436866b3ed7f2ffbce112ff
-SHA256: 04047c9cdd4654a3b56758c93c4b749fa5a333b843cd50b9b69843f950ee56b5
-SHA512: 8e53e6f011b75329d1e5f27111f35d4d4549bc70ae5f17f84568afe1d89c32a01fef4a95aaecd80d5d9edd0e1672139c1bf35d91786b715b9adc3aa13b6a6a93
+Version: 0.31.2
+Homepage: https://github.com/commonmark/cmark
+Breaks: cmark-dev
+Replaces: cmark-dev
+Description: CommonMark parsing and rendering program
+Filename: dists/uncode/main/binary-aarch64/cmark_0.31.2_aarch64.deb
+Size: 76576
+MD5Sum: 3f4199f43e0fa45e753133534315a953
+SHA1: db79f7555c0803b6ad6bcca444bd67f1003bd0e2
+SHA256: c80c33aa97fe8b97ee01d0434e38ef9f70327c38442509cba790516096a13c1f
+SHA512: 27381e7b8c114a2fa59a9f3b2c1e41d017e25de1c28cacf825dd371523139b98b694d2ba3dd929522cd0599e23ab1271c4660ecba50819c28f70bb1f6838604b
 
-Package: cargo-binstall
+Package: cmocka
 Architecture: aarch64
-Installed-Size: 16088
+Installed-Size: 392
 Maintainer: @termux
-Version: 1.20.1
-Homepage: https://github.com/cargo-bins/cargo-binstall
-Depends: resolv-conf
-Description: Tool to fetch and install precompiled musl-based static binaries from the Rust ecosystem
-Filename: dists/uncode/main/binary-aarch64/cargo-binstall_1.20.1_aarch64.deb
-Size: 4933852
-MD5Sum: 2aa6b80a84593f99291561e7122545e5
-SHA1: 585d9b72611c59f046caf90c7aa788a46ecb1ded
-SHA256: 1319d2752ba13509d8de5bc815548907ee2bde07a540246f0938da0ec068327f
-SHA512: b302e6a1455af34834ad420fb57d67f3088ab165033a35bca718d1649e35e0fb84db00dba04635b7bd0838fc0e5c57ea992aa4925b82e3e16541e9ff1525f4d3
+Version: 2.0.2
+Homepage: https://cmocka.org/
+Description: cmocka is an unit testing framework for C
+Filename: dists/uncode/main/binary-aarch64/cmocka_2.0.2_aarch64.deb
+Size: 48512
+MD5Sum: 92d5890a475eab2da767b7d037e9758b
+SHA1: 3da432e307e921868da68b9072029a6a6285cdb4
+SHA256: a18c7154f784e088483ea448fc800225a49bd2d5170dd17a408ff0dc9618791d
+SHA512: f8f978f4f4d0733f69a3c0ba7e72aa65c66d251237c4450cef39ce4e0b99857adb232ec8bb1c1c0b219f16a95507882aea91478be69bfbe576cbc5e4015226a6
 
-Package: catimg
+Package: cointop
+Architecture: aarch64
+Installed-Size: 12688
+Maintainer: @termux
+Version: 1.6.10-3
+Homepage: https://cointop.sh/
+Description: A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies
+Filename: dists/uncode/main/binary-aarch64/cointop_1.6.10-3_aarch64.deb
+Size: 3300528
+MD5Sum: 16c14633eb7e0b39b5dc4945becfc9d0
+SHA1: 03ac3016015d709c9b70ede102563d719bf1b18f
+SHA256: 8ac97a7f5d4a56682a3d38a51f6d0e7a9ad0ea010740082df7043f23331b4273
+SHA512: c71ea14ad760632e3c7caea2e4fc67960eb5c55abee8c1f2ff42a5da57f4e306dd8f28a0079153df74e93f061da05958bc69021489a02812f2128ae3fb709901
+
+Package: colm-static
+Architecture: aarch64
+Installed-Size: 3972
+Maintainer: @termux
+Version: 0.14.7-2
+Homepage: https://www.colm.net/open-source/colm/
+Depends: colm (= 0.14.7-2)
+Description: Static libraries for colm
+Filename: dists/uncode/main/binary-aarch64/colm-static_0.14.7-2_aarch64.deb
+Size: 378996
+MD5Sum: b5cc23be2d1d6f314b6e2ab3fe0443f1
+SHA1: 6767830abca21227e4dc3fb22fbf17c0f78078b1
+SHA256: e5258344924c3edc9a8aa3d93b26c7a0ae6884d69064b3b3e0e3ee3713efaa69
+SHA512: 136313c231d0fb00b9ae98de954f19728d80f091bfe2f21f75ff3ce2fb9c054a54e8f3e8eed472b80f36c3688183197c8b0400620d0b3272b6ad260e5e90c15e
+
+Package: colm
+Architecture: aarch64
+Installed-Size: 3624
+Maintainer: @termux
+Version: 0.14.7-2
+Homepage: https://www.colm.net/open-source/colm/
+Depends: libc++
+Description: COmputer Language Machinery
+Filename: dists/uncode/main/binary-aarch64/colm_0.14.7-2_aarch64.deb
+Size: 569124
+MD5Sum: 48347e34dc9539180a39d98c69c7b8ec
+SHA1: f59b1c52605f2e074e8d87b973e7e5eae3c17388
+SHA256: 5a67dfee750855cea84556857fd68ccfcb58b4cce5df539ba95799e9fa7f021e
+SHA512: 0828e826fc9b1f8e8df4c257c14f66d1797bd03c2e829d1e46f68e2a68b81ba93778eecb4359bb5575db301dfd2ef833eae43174bcde0c0d546a5fc9c54e9c0d
+
+Package: command-not-found
+Architecture: aarch64
+Installed-Size: 88
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Version: 3.4.1-16
+Homepage: https://github.com/termux/command-not-found
+Depends: libc++
+Description: Suggest installation of packages in interactive shell sessions
+Filename: dists/uncode/main/binary-aarch64/command-not-found_3.4.1-16_aarch64.deb
+Size: 16980
+MD5Sum: be4d24d3ea187cfe93ec9b3e87f240ec
+SHA1: 9c301fc280aef6259694260b498fa8a1d928d868
+SHA256: 2d26d58cbe5ee13610f55689bc8d068790a3bb7a63d8d5f070d7fa7af6372ee9
+SHA512: d9fa4ad8d39560b82a7e1ddf13ea8d6038a7494ccc5078609183ffd277270d16573b424aeb1f1f0d6f14526aaff60deb0afd6f564d94d902c6cd373eeb4ef2a1
+
+Package: console-bridge
 Architecture: aarch64
 Installed-Size: 140
+Maintainer: Pooya Moradi <pvonmoradi@gmail.com>
+Version: 1.0.2-1
+Homepage: https://github.com/ros/console_bridge
+Depends: libc++
+Description: A ROS-independent package for logging that seamlessly pipes into rosconsole/rosout for ROS-dependent packages
+Filename: dists/uncode/main/binary-aarch64/console-bridge_1.0.2-1_aarch64.deb
+Size: 21160
+MD5Sum: 94e28225dde50931d5708079276aa0e2
+SHA1: 2457eea11d41d576b9c008301cc1b3331eb6b770
+SHA256: af1228c61c226a410af6eed8b08765492605717bb59a7384a8fb24431da73e0e
+SHA512: e8c54c714268df36df28660d6d2a78ccdec29815fc51366a555c0c8a247b7fab088c3d8ea52a3878980b917ffd4a3c368793494c1b2ab032d01437228f11abef
+
+Package: cookcli
+Architecture: aarch64
+Installed-Size: 17932
 Maintainer: @termux
-Version: 2.8.0
-Homepage: https://posva.net/shell/retro/bash/2013/05/27/catimg
-Description: Renders images in the terminal
-Filename: dists/uncode/main/binary-aarch64/catimg_2.8.0_aarch64.deb
-Size: 38724
-MD5Sum: 60aa0e1afe70297ca01dc5efa9a2c694
-SHA1: 1e3dc4ffdb4166da379fa25e2a3e6fa94b2eccce
-SHA256: 5fe1215698913a10547b1ab4fe647760c9cfb9a9dbb73e9337d298f6a4b86511
-SHA512: a68a9b2a7de6a7447aa65449f2634b6428f6c84ab325178863f2b6e061c893d5767246f6e9c26042700dd8c1f18cf8302aebf7cc5f291faa76c72acce6e6664e
+Version: 0.32.1
+Homepage: https://cooklang.org
+Depends: openssl
+Description: A suite of tools to create shopping lists and maintain food recipes
+Filename: dists/uncode/main/binary-aarch64/cookcli_0.32.1_aarch64.deb
+Size: 6800840
+MD5Sum: 92645b5bb10944bfc9d34725570fb84f
+SHA1: 341cbcc8500df602a158313ad2966493a1ffbdb1
+SHA256: 974e1f787e974fbc8ec0b4fc1d7fdc3a54edcf87710f5c406678b7a16176b685
+SHA512: 460c8e0dbdce1004bd23ebea0e6de7a0c8f9f22f857af2d4aa174286fc251f7903edd507b7256af73286c6a0ee20694839de057c5fbbf71c07901eae9ccb342e
 
-Package: cavif
+Package: corgi
 Architecture: aarch64
-Installed-Size: 3584
+Installed-Size: 3536
 Maintainer: @termux
-Version: 1.6.0
-Homepage: https://lib.rs/cavif
-Breaks: cavif-rs
-Replaces: cavif-rs
-Description: AVIF image creator in pure Rust
-Filename: dists/uncode/main/binary-aarch64/cavif_1.6.0_aarch64.deb
-Size: 1272296
-MD5Sum: a6a73aadd4d10d3f828714ac815938b1
-SHA1: 9586a2e199c2ea87158e987daea1f8b2276273ed
-SHA256: c6c34ef72178cf8bbd9b3c510e45c20ab66956355c65511a4b57ff68d9371e37
-SHA512: 64f319619a297122333043e729e14f3f3cc2473b45aa69a79aab867c70bd8107cf4ea31dbce9eab0637d058d69f9937e06f66d08ca8136c5f25e510aab9f56ba
+Version: 0.2.4-6
+Homepage: https://github.com/DrakeW/corgi
+Recommends: fzf
+Suggests: peco
+Description: CLI workflow manager
+Filename: dists/uncode/main/binary-aarch64/corgi_0.2.4-6_aarch64.deb
+Size: 1014760
+MD5Sum: 28f07742d10ea178b1c072135aa7010b
+SHA1: 726a152c584f7ef16fe0549fe5d3bd70f052c6b2
+SHA256: d4bcb1d6426d18d3a7a971c47aa796fa5b30c309506fc11349eef37301007324
+SHA512: 45f5c1d78e9fc1ddd600cb7ba4d0dbc7fbc75fcdb58132c8e9c1385b05401b81fd887c62a72b50e5df07809c36c2142b90367a17e4eb0e6852b386db67431c3d
 
-Package: cc65
+Package: cpio
 Architecture: aarch64
-Installed-Size: 33192
+Installed-Size: 240
 Maintainer: @termux
-Version: 2.19-1
-Homepage: https://cc65.github.io/
-Description: A free compiler for 6502 based system
-Filename: dists/uncode/main/binary-aarch64/cc65_2.19-1_aarch64.deb
-Size: 2115756
-MD5Sum: 42a661c78818e8d39be9d9ccf305edb4
-SHA1: 29b2d5443bd97b62a646b4e89af1409196933c26
-SHA256: 6e79d9f71b99b49a77a00a71c8370b94cf9f24733d0664b5ff7eee93d0752848
-SHA512: 657ee0b247d89049736acb1f9394cd0691751b48b86cca0cadb8c9675a59b4654e60a4f360523ce5bc9ff22454ce4227b05670bf20ea72b505e161652aef2d87
+Version: 2.15-1
+Homepage: https://www.gnu.org/software/cpio/
+Depends: tar
+Description: CPIO implementation from the GNU project
+Filename: dists/uncode/main/binary-aarch64/cpio_2.15-1_aarch64.deb
+Size: 66252
+MD5Sum: 712dd3d24dac1d01804d58a662ca5962
+SHA1: 65c992e8b9db1af0f6ba2e745834401bf8499ef0
+SHA256: 9f0bc48334938dfa238781cc7c2743287e6ff590fc1c4c10344d85c6992b3e38
+SHA512: 6bfd984c18ae50e0d4164ae213106890d345cade0944e0eb47aafd4e1a400ea969e854b1e77733135c97b7cd46c1ea46428a694a091fe9c553cfa37f7866d722
 
-Package: ccrypt
+Package: cppi
 Architecture: aarch64
-Installed-Size: 152
+Installed-Size: 108
 Maintainer: @termux
-Version: 1.11-1
-Homepage: https://ccrypt.sourceforge.net/
-Depends: libcrypt
-Description: Secure encryption and decryption of files and streams utility
-Filename: dists/uncode/main/binary-aarch64/ccrypt_1.11-1_aarch64.deb
-Size: 40340
-MD5Sum: 587c70b8706e1fe631d297d33f7c825a
-SHA1: 44131623c7730bfd8a74f4b70f1e044f4990bda5
-SHA256: 8f2b312e96589a476c42a58461424a25129fc6e81b23c2bc8465e515b71d252b
-SHA512: af27e8b50000884ff608e27aac1a000236a21746d0a871cbb5ba8cb6fe39c80c173a6d80bc8860b079b1e9726ff639caa94f69afa3389e902111b62cd031a799
+Version: 1.18-2
+Homepage: https://www.gnu.org/software/cppi/
+Description: Indents C preprocessor directives to reflect their nesting, among other regularizations
+Filename: dists/uncode/main/binary-aarch64/cppi_1.18-2_aarch64.deb
+Size: 19404
+MD5Sum: 46aad833c25fb54718bfacb521b10029
+SHA1: a4583439438563d43281701fb666fe922d99045c
+SHA256: 581f0bbaad5bcd29cbc4d0efdeeaf51cbb4dcf359391e56a836938e0ee33422c
+SHA512: 5663e96c80fb387f3e4207048abe7a58149e26434301cb18dc4d977134e801dcf28317fa81f3c504174610e4df33315f237bd33948d83dfce1c139b835a8c889
 
-Package: cfm
+Package: cppunit-static
 Architecture: aarch64
-Installed-Size: 3064
+Installed-Size: 1076
 Maintainer: @termux
-Version: 1.2.0-3
-Homepage: https://github.com/0l1v3rr/cli-file-manager
-Description: A basic file manager that runs inside a terminal, designed for Linux. It's fully responsive and incredibly fast.
-Filename: dists/uncode/main/binary-aarch64/cfm_1.2.0-3_aarch64.deb
-Size: 865816
-MD5Sum: 7b79f6fdc1a486b07e56420dc81856a1
-SHA1: 958d67c2c6c15557b3a40a3ee5e924c3a9b7d886
-SHA256: 44d78a465f93744ac4a8fea0993d276d9efc1abdaebe6104d4fe0a348d652505
-SHA512: 9b96051ca5ad3d16243f7c1aaacb2ccf1c9f77240c1b10c8327822f5f60b2f2beb7b234562f6822dc6146a64a25f31765f4984b2cb83ff9990a69ee95ab0faff
+Version: 1.15.1-2
+Homepage: https://www.freedesktop.org/wiki/Software/cppunit
+Depends: cppunit (= 1.15.1-2)
+Description: Static libraries for cppunit
+Filename: dists/uncode/main/binary-aarch64/cppunit-static_1.15.1-2_aarch64.deb
+Size: 108196
+MD5Sum: b01c798349ec9dab39ba304f4ad69039
+SHA1: b8c7655b75e909826e533162bfe7d3271f322dd1
+SHA256: 2e72bf30174dd55d56b01444ca84b715c8cd4cb8fd1e4a82b11c2d91bf56596f
+SHA512: c28707a177e0bd26d9eaa30c6bb1a174f905fc5b6c04366ca10f06ac51c836bf1137cb92ff577c2bc51bae811150efa10a29ae907861fc33e89421e2ea28cd2f
 
-Package: cgif
+Package: cppunit
 Architecture: aarch64
-Installed-Size: 76
+Installed-Size: 908
 Maintainer: @termux
-Version: 0.5.3
-Homepage: https://github.com/dloebl/cgif
-Description: A fast and lightweight GIF encoding library
-Filename: dists/uncode/main/binary-aarch64/cgif_0.5.3_aarch64.deb
-Size: 8916
-MD5Sum: b89f89ee287110295852a24e7b38ed87
-SHA1: d41b27596d056670ac68a6aa69f7fe6c38c59410
-SHA256: e791ef367317ae3a5f1988c655c49e02523e370b84376893997460295fad24da
-SHA512: 9f164edc0d7e6b967d3957032427c264d59f05bb5b06ecf2ee6994ac749d28184c9c70e34f55c9058ad4c483c0e301ef2bc4403a1af71a999e7b889f8a5d7edd
+Version: 1.15.1-2
+Homepage: https://www.freedesktop.org/wiki/Software/cppunit
+Description: A C++ unit testing framework
+Filename: dists/uncode/main/binary-aarch64/cppunit_1.15.1-2_aarch64.deb
+Size: 128880
+MD5Sum: eb66041f38c6e6921eed776eb361c24a
+SHA1: c377080f032c8c47916a9bc860a439da39ef161d
+SHA256: 7a7afd9cc8803bd6aefd20d3dc86ee3fce805e219865fd014611b5f1a9ad0761
+SHA512: bab8e92c3e24111b1b4d80e1cbdd0c612cef4f7d41736a5b9ffafb9f4758e36dc45084af09279f5d847bea1d6ef864e6e74c25c0927f1b22c2c268110aae4541
 
-Package: chezmoi
+Package: cpufetch
 Architecture: aarch64
-Installed-Size: 47808
-Maintainer: Henrik Grimler @Grimler91
-Version: 2.70.5
-Homepage: https://chezmoi.io
-Description: Manage your dotfiles across multiple machines
-Filename: dists/uncode/main/binary-aarch64/chezmoi_2.70.5_aarch64.deb
-Size: 11318432
-MD5Sum: 834e74e46552a074744e7be6d243b7b5
-SHA1: 61e1076345eaed32e1db3e9f69bcfbbac7df16b5
-SHA256: b7cdd2ecd7b48fe7253d0fc90d585446bae3f69f18d74561510c5f0bd936f4e0
-SHA512: a1924979fe2d16d9b0a0d44b71d258bef9be0229fe59ea40789dde9e9c71cd21d1e67b443f2f8d56a2610f37c40969665e141bc68d471dbca4ecbcade51fd29b
-
-Package: chicken-static
-Architecture: aarch64
-Installed-Size: 7908
+Installed-Size: 240
 Maintainer: @termux
-Version: 5.4.0-2
-Homepage: https://www.call-cc.org
-Depends: chicken (= 5.4.0-2)
-Description: Static libraries for chicken
-Filename: dists/uncode/main/binary-aarch64/chicken-static_5.4.0-2_aarch64.deb
-Size: 1033332
-MD5Sum: 76f86dd999c60e12883e00197b4428fb
-SHA1: 3b17c8f5565556812b4ac9bdef195c12a31d1de7
-SHA256: 56a39735f6f3c51ed0d412bbc0dc68101302837619c3e9fa6c0597b00f60167f
-SHA512: c83f8832cfaa6a76a1f8c2c66887cdc4d96499d9a429d21e29cc19f151d344d102be82c393795ddc407d8cd223758aa857d4e716e260a0277bd01e07c8066b58
+Version: 1.07-1
+Homepage: https://github.com/Dr-Noob/cpufetch
+Description: Simple yet fancy CPU architecture fetching tool
+Filename: dists/uncode/main/binary-aarch64/cpufetch_1.07-1_aarch64.deb
+Size: 45420
+MD5Sum: 3be4e128d63349aa136635ea1b046ffc
+SHA1: 8928dc0cea482acdb3c02f9905d52a9ea4cc1b1d
+SHA256: 4278ffb6ef692789df399416ee7907572a331c5940a6b15521aefca08f3954f4
+SHA512: 02b6d2367b7aa3517102c0a761cbc6173e6bfcd6285c94ee1792a306c99edb1d4198f1ecd00b524099eafe3e30cc5efd4a865dcb3ed1a96af2b3606131eb5236
 
-Package: chicken
+Package: cpulimit
 Architecture: aarch64
-Installed-Size: 10460
+Installed-Size: 60
 Maintainer: @termux
-Version: 5.4.0-2
-Homepage: https://www.call-cc.org
-Description: A feature rich Scheme compiler and interpreter
-Filename: dists/uncode/main/binary-aarch64/chicken_5.4.0-2_aarch64.deb
-Size: 1903852
-MD5Sum: 89947cfae35a53840d5e571d7f67f57d
-SHA1: 1699bf0a0308756d8714ef17fa495702c6625d03
-SHA256: ababb1e4d0659714018e035ae9a70dccd74b2ec40720c4a6dc79dd85d4403a35
-SHA512: 5ddfe293f4b89e5893d9cf76ecc250e30775f42e7f921cf0395d67bc07aa24ec6e4bacff233c80fc6f5f1f9d6a27a92b60895b532cb43440e3ee8bcb11a64df2
-
-Package: chntpw
-Architecture: aarch64
-Installed-Size: 696
-Maintainer: @xingguangcuican6666
-Version: 140201
-Homepage: https://pogostick.net/~pnh/ntpasswd/
-Description: Offline Windows NT Password & Registry Editor
-Filename: dists/uncode/main/binary-aarch64/chntpw_140201_aarch64.deb
-Size: 97060
-MD5Sum: f060b7a73fef2a7dc405d9d87145374c
-SHA1: 30ab49ec28f7d281f9697d443af1040fd498b029
-SHA256: a78d8576bfd7a9fd5497954ab5821695312cabcda841c4a2a860f6f1d627467c
-SHA512: f527820f3441204c8ce3665e6bb835f911e647690537b3e430b74028c620f583e4229b79a76ce4993fc4f2293b10464f0b1c01866252f64258e3b124884272db
-
-Package: choose
-Architecture: aarch64
-Installed-Size: 2292
-Maintainer: @termux
-Version: 1.3.7
-Homepage: https://github.com/theryangeary/choose
-Description: A human-friendly and fast alternative to cut and (sometimes) awk
-Filename: dists/uncode/main/binary-aarch64/choose_1.3.7_aarch64.deb
-Size: 609128
-MD5Sum: aa61f26bec644ee52a789003697f0aca
-SHA1: 49ffd85ae2a16411d821919cd956fb2590e97396
-SHA256: 2cce494fe7c46f1bee39ec14ddd9262e8493131014f270970f2c33d4778d3209
-SHA512: 3400c067204b86206b417a2a0069bc143e8911ab7c813407eae0efd9c546dd730d769d80cf9711d3549643eb14cb34d5138b1ab612f320d6c33692948ac7b166
-
-Package: cicada
-Architecture: aarch64
-Installed-Size: 4420
-Maintainer: @termux
-Version: 1.2.2
-Homepage: https://github.com/mitnk/cicada
-Description: A bash like Unix shell
-Filename: dists/uncode/main/binary-aarch64/cicada_1.2.2_aarch64.deb
-Size: 1484040
-MD5Sum: e1b7f3e77e8b2268240745f185f6fd16
-SHA1: 49ca668983ada5a39d8c6dfb28ce9506f3fc592a
-SHA256: fc54bbe5df696b786f04444b6451e1d94e23d66dc3f451b1838ff7f8cc6d894d
-SHA512: 1092262c442fbcac8a1238582a606f11377ee5b57b21c0a3d4942d94c39ff1f61813270e40a4234311182efef35158e4a9c73016d251ab5265e20c37a5fb3097
+Version: 0.2-2
+Homepage: https://github.com/opsengine/cpulimit
+Description: CPU usage limiter
+Filename: dists/uncode/main/binary-aarch64/cpulimit_0.2-2_aarch64.deb
+Size: 7764
+MD5Sum: 6760774947df7c7729313d83759bc90d
+SHA1: 9f69aa2d0ce04b7731fa30076b892100d0f8cf33
+SHA256: 649e22fad12a06a62a6370ee1f290ebe595d8af94170cb882ab53a04a6f005f7
+SHA512: ee8dae4ccb961d2e0cbeeea84ba93b3128d0adbda4836a37e15f8a0c033bc638a2063692b82d54abb9d93393d06a620d08a1cbc0d74a884fac729644089de32a
 
 Package: hello
 Version: 8.7.1-1
@@ -272,8 +290,72 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: 0513b19897c826f8350740747e411252
-SHA1: b35d5c8c11eef08c86237f13a767b35a8c6a3407
-SHA256: 05120be745e77fefd48a25e2ec150b0f5d968d2a77367882b16a3213a190c86a
-SHA512: 01b8fb27b82a2c2683c0b89b53d178e4e26fac7921f3036cc2a794ad31fec5c8827e8b1c93c3ce78b4e42bbeae5f4dcd9199a0437b18215702cf57bbe9e8f3a6
+MD5Sum: 48eca8a52213a2a6a203c094a476c661
+SHA1: 7ce35f462fd4542b934d7a3af16f21aaaff1c6c6
+SHA256: 43a7c30f7179fc5b8cb06d19739621b96ab20e17597bf284a32e5b36193b5ff7
+SHA512: e7a31e942f4df937549abdbc36d3a0c779c4d83486f0da649c815433ebd71767e05f6898ca248430167f65ae8c5b99226cce2d4abcb7feac30c43ee29ccf8850
+
+Package: libtiff-static
+Architecture: aarch64
+Installed-Size: 696
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Static libraries for libtiff
+Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
+Size: 135260
+MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
+SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
+SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
+SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+
+Package: libtiff-utils
+Architecture: aarch64
+Installed-Size: 800
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Tools for working with tiff files
+Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
+Size: 255964
+MD5Sum: a0a56110c08879f75be05ad601a6e6cc
+SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
+SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
+SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+
+Package: libtiff
+Architecture: aarch64
+Installed-Size: 6416
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Breaks: libtiff-dev
+Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
+Replaces: libtiff-dev
+Description: Support for the Tag Image File Format (TIFF) for storing image data
+Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
+Size: 821104
+MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
+SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
+SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
+SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+
+Package: libwebp
+Architecture: aarch64
+Installed-Size: 1204
+Maintainer: @termux
+Version: 1.6.0-1
+Homepage: https://github.com/webmproject/libwebp
+Breaks: libwebp-dev
+Depends: giflib, libjpeg-turbo, libpng, libtiff, zlib
+Replaces: libwebp-dev
+Description: Library to encode and decode images in WebP format
+Filename: dists/uncode/main/binary-aarch64/libwebp_1.6.0-1_aarch64.deb
+Size: 316332
+MD5Sum: 9b9fcbd86892116bcb2e21849f8cd812
+SHA1: c03562f9e4f332cf3535a514889582843cca2c43
+SHA256: 71c73669a5a814785cecbb4fc72dffe3d56c4827b227ce4fb2d53258f65b679b
+SHA512: 07e27f3e843886792fdc6597817f5bc284fa0d1b0c6dfdc16e8c2eb090130a351b1de3a1efb090cc904c9dd09012c47e6e05448f0c0e5b2bf20d5010772a1c88
 
