@@ -1,74 +1,16 @@
-Package: clipp
+Package: diff-so-fancy
 Architecture: all
-Installed-Size: 256
+Installed-Size: 108
 Maintainer: @termux
-Version: 1.2.3-1
-Homepage: https://github.com/muellan/clipp
-Description: Command line interfaces for modern C++
-Filename: dists/uncode/main/binary-all/clipp_1.2.3-1_all.deb
-Size: 30808
-MD5Sum: 4a447540ff361c2e7c288459f70726b9
-SHA1: 29bb860f5523e1ebd1450c50e8cdff1cb705131b
-SHA256: 43ac223082b3e3e7986d43371ba93c7abac2cf0db3f0a380991aa9733dac9c07
-SHA512: f3c9c48f1f85dc62989165f6fa114ad27afdd603fb8d18b10f39387b21412cfd9c770c81e6163d238f3d767bbcaec2c2c0beab59960f9fc4e397cc46a5aff453
-
-Package: colordiff
-Architecture: all
-Installed-Size: 92
-Maintainer: Oliver Schmidhauser @Neo-Oli
-Version: 1.0.22
-Homepage: https://www.colordiff.org/
+Version: 1.4.10
+Homepage: https://github.com/so-fancy/diff-so-fancy
 Depends: perl
-Description: Tool to colorize 'diff' output
-Filename: dists/uncode/main/binary-all/colordiff_1.0.22_all.deb
-Size: 10912
-MD5Sum: 4155ac15cf52961a1ad993957b0d2eb1
-SHA1: 6ba9769dcaf117330ff251a6c67e68453bcf76d6
-SHA256: cf78313c589461170e10869997295ab7f2f1dab87d30d274f497dbd6dbf69bf8
-SHA512: 963321f814af6da1fb99288e50718327e6d6315ae07650392f967a718a83355e41b0ffac7c60f402801f13e8eb8678058ca4828f74c247e0cdb5a50a1bf92c17
-
-Package: corrosion
-Architecture: all
-Installed-Size: 232
-Maintainer: @termux
-Version: 0.6.1
-Homepage: https://github.com/corrosion-rs/corrosion
-Depends: libc++
-Recommends: cmake, rust
-Description: Tool for integrating Rust into an existing CMake project
-Filename: dists/uncode/main/binary-all/corrosion_0.6.1_all.deb
-Size: 35200
-MD5Sum: f76c17b0edfe6ffd306dafc011f837d2
-SHA1: 00ef585fe7ce665505fee8ee4fc136689dd3bd39
-SHA256: 55bafcb6d3644d6243085d8961862adf460c9c9ce7f2ec03af5fbe96bef1259d
-SHA512: ad9859002ea2b9d3bf5c1ab68baa0d13d48427fda2e120c15b4f5380ee333e322767a369f5a0e53afeb3eb859fa4b8b3a4bdfed25bea9be70597f8bee78ca0d5
-
-Package: cowsay
-Architecture: all
-Installed-Size: 276
-Maintainer: @termux
-Version: 3.8.4
-Homepage: https://cowsay.diamonds/
-Depends: perl
-Description: Program which generates ASCII pictures of a cow with a message
-Filename: dists/uncode/main/binary-all/cowsay_3.8.4_all.deb
-Size: 15084
-MD5Sum: 0f8529b59b498b0ef92f93386b7488de
-SHA1: f5adaab8c624d5c2762609ae2cb99859e89a866e
-SHA256: e75b2de9a7f39c36739537d69bd4642b1a03ede6dfd9a8d24759af47659211c7
-SHA512: 50927dee9b9d05933bfe37fbbe3816f950c1c1712c16f6093c6b4adcb1e5e0474b8ff79432586f517f5b902356d5fb87872dfdaf8b8956a153fee666e17f1759
-
-Package: vulkan-headers
-Architecture: all
-Installed-Size: 40812
-Maintainer: @termux
-Version: 1.4.355
-Homepage: https://github.com/KhronosGroup/Vulkan-Headers
-Description: Vulkan Header files and API registry
-Filename: dists/uncode/main/binary-all/vulkan-headers_1.4.355_all.deb
-Size: 1900448
-MD5Sum: dd0715670c91273a893aa334b836ba26
-SHA1: 4d88260a28284c3f1a57f73af03f6c8608df6576
-SHA256: fda072120d444bbed904827cad6c1f0bb891538ffc92a5e73fbfc3386886462f
-SHA512: 6f489e276990a51af1e63d899323b64c067b11d5a49dd72bb717d2a81df33932777b75457c20fe5f4b2d8eec8137eafcecc231a98edaec4e6a69ff0f53f57154
+Recommends: git
+Description: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
+Filename: dists/uncode/main/binary-all/diff-so-fancy_1.4.10_all.deb
+Size: 17580
+MD5Sum: 572214027d3cd0127ea96db587dadaf2
+SHA1: c414c02af2821bbc3045e5732615ec0278164992
+SHA256: 1ebeb3aff9031ed3982f2584c63dcaef49eaf7048fb5530a2b1a239cc16e585e
+SHA512: a15e1a3c72dd7f2b555783e24297a91f710dcbbd25afa446ea893071c86cf1c3c69ff2145ea20b2df1a08f44fb9393f6e8bbc447380f5571866fe5b4f8d8be96
 
