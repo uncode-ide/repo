@@ -1,234 +1,313 @@
-Package: draco-static
+Package: abseil-cpp
 Architecture: aarch64
-Installed-Size: 4216
+Installed-Size: 8776
 Maintainer: @termux
-Version: 1.5.7-1
-Homepage: https://google.github.io/draco/
-Depends: draco (= 1.5.7-1)
-Description: Static libraries for draco
-Filename: dists/uncode/main/binary-aarch64/draco-static_1.5.7-1_aarch64.deb
-Size: 405036
-MD5Sum: 7694554d8043ea175cf23939a7f03d22
-SHA1: e254e0386b9343348d4542a2db5e75fb707ee1a3
-SHA256: f52bd0cfa17b9c18ba239552eb16f89320065782a7a490c331cdb238a270943f
-SHA512: 05978ed13e0a7596f03bb153056459197c5925387e1faa1f8235b693e212174f5ac7d6185ea030665433e001495d67b065d4a737645167e2c1955b8fd2054707
-
-Package: draco
-Architecture: aarch64
-Installed-Size: 3516
-Maintainer: @termux
-Version: 1.5.7-1
-Homepage: https://google.github.io/draco/
+Version: 20250814.1
+Homepage: https://abseil.io/
 Depends: libc++
-Description: Library for compressing and decompressing 3D geometric meshes and point clouds
-Filename: dists/uncode/main/binary-aarch64/draco_1.5.7-1_aarch64.deb
-Size: 470544
-MD5Sum: acabfe7699bf5aa8e9a3a8d91a185cd8
-SHA1: 2873a86bcd9e4614f3d085c8275ec13be330397b
-SHA256: da7c9e0ed792e419f15f0ae1db372f14ff3c35f33ec0dac9e8c75d2e505e2dbf
-SHA512: ffe15e71ca5dedcc28206d7ea6213206390ae663592090a0ac9be2b7102558c3da5edd98a44dc85a6522c0d287f33c440c6656329d3d316dc715e32a9ba6648e
+Conflicts: libgrpc (<< 1.52.0-1)
+Description: Abseil C++ Common Libraries
+Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
+Size: 1117052
+MD5Sum: a99612704b914c5ac9e7827a865c1741
+SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
+SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
+SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
 
-Package: dtach
+Package: etsh
 Architecture: aarch64
-Installed-Size: 72
+Installed-Size: 312
 Maintainer: @termux
-Version: 0.9-2
-Homepage: https://dtach.sourceforge.net/
-Description: Emulates the detach feature of screen
-Filename: dists/uncode/main/binary-aarch64/dtach_0.9-2_aarch64.deb
-Size: 9388
-MD5Sum: 672737b4201bdec86f952219152fb1d7
-SHA1: 6760565390f882298384e817d0433e612f82327c
-SHA256: 87c28817ceb9d6d05dc6a13d6ec0b03923117385d7401a428b6267d0447ebc1f
-SHA512: d087eb2e9e059d178ffbbb21c20e4592d87562424b6ac3d9b44265d05de00a2325b5ad5ab70ba27fe8a47aa59040f3ff82c8ed4a5d64228c3523d8fd8f68a0ac
+Version: 5.4.0-1
+Homepage: https://etsh.nl
+Description: An enhanced, backward-compatible port of Thompson Shell
+Filename: dists/uncode/main/binary-aarch64/etsh_5.4.0-1_aarch64.deb
+Size: 76768
+MD5Sum: 03fab8ae5ff93ba55f06145dc3f85245
+SHA1: b860207f62c08cbffa61149d23d79e93534ac079
+SHA256: ba7f70ba30cdbed271e1f9ee4995ee16f4cdaccffd6353f2f5bbf6c32f48f45d
+SHA512: 5ad70a8d24e243a4ce0c6f0129487df829a4abceef19d215b534fee983a4e3e0db1c93f01b0480cf92a4af950f5734fd173263dfaece4bf90e04f9c55d38589b
 
-Package: dtc-static
+Package: exercism
 Architecture: aarch64
-Installed-Size: 304
+Installed-Size: 11492
 Maintainer: @termux
-Version: 1.8.1
-Homepage: https://git.kernel.org/pub/scm/utils/dtc/dtc
-Depends: dtc (= 1.8.1)
-Description: Static libraries for dtc
-Filename: dists/uncode/main/binary-aarch64/dtc-static_1.8.1_aarch64.deb
-Size: 57832
-MD5Sum: 65ecdc7ed32742675f8edca53d786293
-SHA1: 41f0635fcf0bdeeb3940104fa90542e85d4da7a1
-SHA256: d35bc629a51df7007d8c3e9a2c8fd4689a8ae55b991194eaef7b3fe6f147d39b
-SHA512: ef6f17a64f5cd6c16026c8623494bb9564f6b7a5dbdaea335c8be4794ff9ed391d9e9aceef3fb3c41d64c78c47c36cb01cad731528bd6dac6013118807f7d0d3
+Version: 3.5.8
+Homepage: https://github.com/exercism/cli/
+Description: A Go based command line tool for exercism.io
+Filename: dists/uncode/main/binary-aarch64/exercism_3.5.8_aarch64.deb
+Size: 3194704
+MD5Sum: 3a077a78829376557d63ec1d8e634c5b
+SHA1: 54ea4737a6fb6528935f552f235a64eb2fc40b23
+SHA256: 9d433167eb2ae3aadd9648f44915fabfa363feb9901580ee06a271a211c57a03
+SHA512: 9153af8e43a4dc11c9ea959a74100168ca396aabddf645e3591ca5d980f80ccedfde6d201c24752b3fea88a94210370d341a879631d45d7aac35ec2aa73756f8
 
-Package: dtc
+Package: exhale
 Architecture: aarch64
-Installed-Size: 416
+Installed-Size: 336
 Maintainer: @termux
-Version: 1.8.1
-Homepage: https://git.kernel.org/pub/scm/utils/dtc/dtc
-Breaks: dtc-dev, qemu-common (<< 1:8.2.5-2), qemu-system-x86-64 (<< 1:8.2.5-3)
-Replaces: dtc-dev, qemu-common (<< 1:8.2.5-2), qemu-system-x86-64 (<< 1:8.2.5-3)
-Description: Device Tree Compiler
-Filename: dists/uncode/main/binary-aarch64/dtc_1.8.1_aarch64.deb
-Size: 85744
-MD5Sum: 30732d3d7474e8700671b5b8613cebe8
-SHA1: 48c5132e0af4f8460fea49812cccdf7e807ccce0
-SHA256: 8151d65dd845231b076c36d637adbfae48e789af8b42bf2a6d85e47e66ff00a9
-SHA512: 9d0ed32ca9e3b40ffda930627b2ab361a8368f524d831c9b4a4a77b3e0059f28b7d83d247f83077bac4c966c0f2288e8ba502f85fa157dcd674b509fd600189b
+Version: 1.2.2RC+really1.2.2
+Homepage: https://gitlab.com/ecodis/exhale
+Depends: libc++
+Description: Open source xHE-AAC encoder
+Filename: dists/uncode/main/binary-aarch64/exhale_1.2.2RC+really1.2.2_aarch64.deb
+Size: 123716
+MD5Sum: 686002498fd79564452a1f5b2c5ccdc0
+SHA1: 082f6c4970e4a4ad4add4a01296a5a1c3e00b938
+SHA256: 58d0da830fde5822cc9f0457396ccc46ad1ed427daa28ba766fe91f62c55a4cb
+SHA512: 6f92134fc7884a650eb00965925a07d4426cde267dc44614f329e7c9a20f7034110fd55f96dce0491503cb2ceeb41fb46e3e59b684a5f55fdd90950912471705
 
-Package: dua
+Package: faad2
 Architecture: aarch64
-Installed-Size: 3432
+Installed-Size: 712
 Maintainer: @termux
-Version: 2.37.1
-Homepage: https://github.com/Byron/dua-cli
-Description: View disk space usage and delete unwanted data, fast
-Filename: dists/uncode/main/binary-aarch64/dua_2.37.1_aarch64.deb
-Size: 1165296
-MD5Sum: 5db1c89623497e27e9ae7b4082442ccc
-SHA1: f7c624a2c4b20a6f8cd62e1167bad0d10bb17561
-SHA256: 34fc00b05746fde7b7d12a51ae75c51590b9ead1f2d503a712f7b3f0f68073e7
-SHA512: 6cef1d17a345f096662eba7c694cde7707fef6d080289abe40eb80f9ae0db9ac98f99078417a920f6b3fab41d433e7368618f572f9bb8a2640c9fa7ccf0cd398
+Version: 2.11.2
+Homepage: https://github.com/knik0/faad2
+Description: Freeware Advanced Audio (AAC) Decoder
+Filename: dists/uncode/main/binary-aarch64/faad2_2.11.2_aarch64.deb
+Size: 183512
+MD5Sum: 94fc6bf10598a6262e2b039e7b23a82f
+SHA1: 598ada6e1283370b5b2e602a7b85c585b54528da
+SHA256: aaf4fa7acec9bb845675fa835fee5d9b9f452f807fd56ac5ccc39e5d1f3e04fc
+SHA512: 48834cc2008ad02a8b39ef94df5db690be4a9d295b1f711ac7769b9f0e071ddbb5c732abaa8e31b9a46f2443a4bf8aece4beea767e86f652bb2cff67ed58dc9c
 
-Package: duf
+Package: fact++
 Architecture: aarch64
-Installed-Size: 3668
-Maintainer: Krishna kanhaiya @kcubeterm
-Version: 0.9.1
-Homepage: https://github.com/muesli/duf
-Description: Disk usage/free utility
-Filename: dists/uncode/main/binary-aarch64/duf_0.9.1_aarch64.deb
-Size: 951520
-MD5Sum: 6b0a1414bd2f8c7f3c553afb5fbb1774
-SHA1: 1d92996166f13c75727456609c7b2e15e7c29dc2
-SHA256: ed6762cd1c24d551fc0ba92b70843481d07a2199d1bf4e388e50f0fab61b59d9
-SHA512: f93033453ef23a7490a8f6b4e704e90c2397bc9b4627f9ba6086f4903a1b8f12bf722ddc9de71ac580ea3ff328cd51453594048912f7a074488e6616bee723f7
-
-Package: dufs
-Architecture: aarch64
-Installed-Size: 4964
+Installed-Size: 1416
 Maintainer: @termux
-Version: 0.46.0
-Homepage: https://github.com/sigoden/dufs
-Description: A file server that supports static serving, uploading, searching, accessing control, webdav...
-Filename: dists/uncode/main/binary-aarch64/dufs_0.46.0_aarch64.deb
-Size: 1807852
-MD5Sum: 5fbd9f3a68d525cbb5e91c8677d934c9
-SHA1: 67dd05766fbf7aad78faea8b42e62fa820230a0a
-SHA256: efa428215b19c30f079925fd4a7c2c6c05a08392d24d17442cd6d02461d74a0b
-SHA512: 9b42e90e06a989ef06015ba99b576a2130ac34caef142762fba915fb65135d4a2222202debf3dc5ae34494942980b04a64e0e612c9b5b80e6e800aee56bd7995
+Version: 1.6.5-3
+Homepage: https://bitbucket.org/dtsarkov/factplusplus
+Depends: libc++
+Description: Re-implementation of the well-known FaCT Description Logic (DL) Reasoner
+Filename: dists/uncode/main/binary-aarch64/fact++_1.6.5-3_aarch64.deb
+Size: 315588
+MD5Sum: b37f432399f0e5f0d605f9ed1d52c338
+SHA1: b5a1cc1df037ce32cda6fb896cf53a360b2a8cfe
+SHA256: 259c8aa215d85d119f4458aabada93e7faf9f681cf6fb75fde5176bd3641f6f7
+SHA512: 4be4fc0d92a1aba49929800e182f0dc52634219573b377b42ec8cee9211a89217bbee1154acac52a679255135407572ff996fe3c16dd9b27c403957db815eb7a
 
-Package: dust
+Package: fasd
 Architecture: aarch64
-Installed-Size: 2628
+Installed-Size: 68
 Maintainer: @termux
-Version: 1.2.4
-Homepage: https://github.com/bootandy/dust
-Description: A more intuitive version of du in rust
-Filename: dists/uncode/main/binary-aarch64/dust_1.2.4_aarch64.deb
-Size: 788696
-MD5Sum: d7ef66a77ce408f1db320177052023c1
-SHA1: 7229e01843736a1d967c5c2ebdebd2cddb4ea0e0
-SHA256: 9dffe2a04dfbe48dbc64cb19c20d981815ea08d9f85896519606e6f779205f12
-SHA512: 28b465d234b8cff82a9530787f48e925c1c09e01b8c636b5f548c7406b68421e0b0111c1a394ac3805d47b2473728e7f08d10316a26058cf0bc45e3ec56aa7a4
+Version: 2.0.0
+Homepage: https://github.com/whjvenyl/fasd
+Description: To fastly access files and folders
+Filename: dists/uncode/main/binary-aarch64/fasd_2.0.0_aarch64.deb
+Size: 7440
+MD5Sum: 3921a3f1a7c27bb131dc5611ed705a28
+SHA1: 86af26eae643afcb48bd29138be01663323ed418
+SHA256: 6f6e84bb9c2364500c11fb536206edab2e994a64d6fb2a2360c7ea1afbd2c3c6
+SHA512: 5a8be99ea116af6e8c33f95a2cc98c01ed7061e8b12ac69d2665b8d7def44c60295e7b005fe42bce8b9cb7a571434c1295fc621d7fe4bc6bf0080eb56a73860c
 
-Package: ed
+Package: fastmod
 Architecture: aarch64
-Installed-Size: 180
-Maintainer: Oliver Schmidhauser @Neo-Oli
-Version: 1.22.5
-Homepage: https://www.gnu.org/software/ed/
-Description: Classic UNIX line editor
-Filename: dists/uncode/main/binary-aarch64/ed_1.22.5_aarch64.deb
-Size: 42912
-MD5Sum: 4871ef305e74d74c40453897d6e86ab7
-SHA1: 5b2dc9d1a75c4f55be98fcefdfc0fee3d5b5036d
-SHA256: 67fc7225ceadd1ea67bae883c432e95932342fa3a229e4fe42cc1c7c1ac2359b
-SHA512: 9586b6a9cb524e7b99b6158fd57989de694966c513bae8df1ce59a110bf60f82e1b2a5cec30fc7e7e3b1512f78f823631d0176ca714defbc2f12c34e9592aea3
-
-Package: eigen
-Architecture: aarch64
-Installed-Size: 10000
+Installed-Size: 3180
 Maintainer: @termux
-Version: 3.4.0
-Homepage: http://eigen.tuxfamily.org
-Breaks: eigen-dev
-Replaces: eigen-dev
-Description: Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms
-Filename: dists/uncode/main/binary-aarch64/eigen_3.4.0_aarch64.deb
-Size: 1015472
-MD5Sum: 980753cbc02efff88fefcddd8f689c09
-SHA1: 876a39b7699b4826020dedd0dbaa2fe8997b96b6
-SHA256: 6756272aa0b4c582f69f34138342390540dab805446079ba11bef5ec156c8287
-SHA512: 1e38eb9676efb7c1f97451a3d88e3568c8c1f131cd1afca31c0f90f551fa6e443b650eea8f239699d36c2013283f9c86966c79bc8799e2046165f7c2c1796881
+Version: 0.4.4-1
+Homepage: https://github.com/facebookincubator/fastmod
+Description: Regex-based code refactoring utility
+Filename: dists/uncode/main/binary-aarch64/fastmod_0.4.4-1_aarch64.deb
+Size: 933600
+MD5Sum: 306a00e4f8bcf436fe25f0d04bc956ab
+SHA1: c3fcb47e9bfee3c228a24b6564723e6392f04807
+SHA256: 4145ad995bd19e9ea09821bbaae89094b9e3fa73265935d0d3ff5fc7c4e124bd
+SHA512: 391f2ed06b03817d0c67df21e86760fb41ea20e0dd1b9cf2d4310c8adcee3035ab6cad9152a54d051ad2e9d15e2996cf73a67053efee9411bca0871ac3b373a1
 
-Package: eja
+Package: faust-static
 Architecture: aarch64
-Installed-Size: 476
+Installed-Size: 37164
 Maintainer: @termux
-Version: 18.4.19-1
-Homepage: https://github.com/eja/eja
-Description: eja micro web server
-Filename: dists/uncode/main/binary-aarch64/eja_18.4.19-1_aarch64.deb
-Size: 116572
-MD5Sum: 25c7f8598b93297690931d2f695beccd
-SHA1: 03392e0a47bdc9e94470b90df0ba0d2eb8534035
-SHA256: 56d20a8b2401019e557aed661abecc0bd99e9c0cc82bebb9ca1cce97a3eb1f42
-SHA512: e9f8da8ccebb1851a8a3fd2be9ea9e37b8af0286b9ea9aeef03bc9cd30c4bd2940b087045439acdb67f6cff74337ebba342b11d6f419545cdebffc22e61f0c19
+Version: 2.85.9
+Homepage: https://github.com/grame-cncm/faust
+Depends: faust (= 2.85.9)
+Description: Static libraries for faust
+Filename: dists/uncode/main/binary-aarch64/faust-static_2.85.9_aarch64.deb
+Size: 4536420
+MD5Sum: 828f98098ada661891eb4b9e1da3bcd7
+SHA1: 83644a538f367270c7e2a0d1e4d41717b6670625
+SHA256: 54e6244fecafe96f0d2df829ded565dfb620456316b1a5a0757a478c75bd8745
+SHA512: 3f682bd96170b4f79e0289f8f20c0f1647b04c51365500fba6c1fc2d32e0475855bd307b4dbd3ad0d0a406ce6f7bbc3f17f14c087f606883dfb0a2a8349f42bc
 
-Package: electric-fence-static
+Package: faust
 Architecture: aarch64
-Installed-Size: 84
+Installed-Size: 65376
 Maintainer: @termux
-Version: 2.2.7-1
-Homepage: https://elinux.org/Electric_Fence
-Depends: electric-fence (= 2.2.7-1)
-Description: Static libraries for electric-fence
-Filename: dists/uncode/main/binary-aarch64/electric-fence-static_2.2.7-1_aarch64.deb
-Size: 14364
-MD5Sum: 8f157ecb4ee4e910f886de3930ff5b52
-SHA1: 4fbff4c73e78548dd73d73d50ef1effac51eba2a
-SHA256: e7fcaa0d60fa2ab39fb63b61a8dfa2bd476313f5f8b6c98d1a5219b5aee28f14
-SHA512: 4517e210ee8e2bffa4c08b06faea944b5b3b73b8aca1f416877f976925b1f185a47527fa245846b734e17c3306422c8378f00525509d95217113fe2ab5ede23e
+Version: 2.85.9
+Homepage: https://github.com/grame-cncm/faust
+Depends: libc++
+Description: A functional programming language for signal processing and sound synthesis
+Filename: dists/uncode/main/binary-aarch64/faust_2.85.9_aarch64.deb
+Size: 25705660
+MD5Sum: a3de88b14c1513344c85e086acbb735f
+SHA1: 2cb6b2a192d4da0d16855c546e1e15d9503217f8
+SHA256: 4cc5f0f5c81decbf705a6f929590c559c27d755df66485e3673b1ea4a9e4aef4
+SHA512: 0253c1633618cdc2190574a9bc343b8f7f61dbed12cd347824002490c16e00baca7b998d05e154c963d50f20e555e3a4466a115316576dc31a56ffef84d603a3
 
-Package: electric-fence
+Package: fcgi-static
 Architecture: aarch64
-Installed-Size: 80
+Installed-Size: 120
 Maintainer: @termux
-Version: 2.2.7-1
-Homepage: https://elinux.org/Electric_Fence
-Description: Electric Fence (eFence) malloc memory debugger
-Filename: dists/uncode/main/binary-aarch64/electric-fence_2.2.7-1_aarch64.deb
-Size: 12124
-MD5Sum: 821414222a17249a82520d848eb04837
-SHA1: 6341c0428818ad6ca9012c603f1ae609175d0de5
-SHA256: abe23a916e7524a55a82c40250034c90339664b627a3ff6bc8249edbb3b42e3b
-SHA512: 95268035889ad37a44c6f7afe87c641afeda85dbefe250b9ad1d43b7a718ec3c61b8b3b95b4aae4f33a0500f0ecc9dca94b68227b9ae8d3833e4491e0008637a
+Version: 2.4.7
+Homepage: https://fastcgi-archives.github.io/
+Depends: fcgi (= 2.4.7)
+Description: Static libraries for fcgi
+Filename: dists/uncode/main/binary-aarch64/fcgi-static_2.4.7_aarch64.deb
+Size: 19948
+MD5Sum: f48156334ae5191518178b4d30261029
+SHA1: aa47a2d47f698f7b75f2553b1a240a82803498e0
+SHA256: dc702950d8aaeeb6405a65a628dd89f8170c7b284e4086e7b1cd4ae4ab650e17
+SHA512: 4d26edc5fde74d35c9e9f892d65896b1a5d918c47cf73efbc093d036178ca8960772c34fa1b1f1c0dead181bf0db37f45742193131391fd7541682a0677d0a8f
 
-Package: elvish
+Package: fcgi
 Architecture: aarch64
-Installed-Size: 7812
+Installed-Size: 248
 Maintainer: @termux
-Version: 0.21.0-1
-Homepage: https://github.com/elves/elvish
-Description: A friendly and expressive Unix shell
-Filename: dists/uncode/main/binary-aarch64/elvish_0.21.0-1_aarch64.deb
-Size: 2063616
-MD5Sum: 8d0911da872089be7619b33e07d4927c
-SHA1: f3ba6553a45d5e9e9f42f1f48695c77211049525
-SHA256: 797a638c750d8d461f321268436b863e25051b99938928edf5292a9a6f607cb3
-SHA512: c900c60f1a4de4f6dc8a9dc7502c3caaa16901964fd9caabf82a66279e57375610af8e948c7a43de65ec16c440fb35b0eeccf577b821157c4b7700e6b6f3eb16
+Version: 2.4.7
+Homepage: https://fastcgi-archives.github.io/
+Breaks: fcgi-dev
+Replaces: fcgi-dev
+Description: A language independent, high performant extension to CGI
+Filename: dists/uncode/main/binary-aarch64/fcgi_2.4.7_aarch64.deb
+Size: 49612
+MD5Sum: e3761fa0b919ff6121cb8436443f7d18
+SHA1: c7006918c25585d463d85f91a71fcfad896344a5
+SHA256: 82dbe3e1b91baa047432748af98e289b4ea91f27c88caac41c517225b7af8cfa
+SHA512: f2b51f87ebdae170f5f0518630262fabba0c35a0bde6b1e2558aef0afbb6e364e82822ad068ce5dd9b0c0457955704de6285f1d4bfd6fae90e98c50fdd6b7d5f
 
-Package: emmylua-ls
+Package: fcgiwrap
 Architecture: aarch64
-Installed-Size: 47664
-Maintainer: Steven Xu @stevenxxiu
-Version: 0.23.2
-Homepage: https://github.com/EmmyLuaLs/emmylua-analyzer-rust
-Description: Emmy Lua Language Server coded in Rust
-Filename: dists/uncode/main/binary-aarch64/emmylua-ls_0.23.2_aarch64.deb
-Size: 13552912
-MD5Sum: 3d7225a8bc5dd47986cb71bf9147d31e
-SHA1: 6870f3fc327ee5d40c22ad10e07553788b023855
-SHA256: f4c3e61c2282be893c0ac8df907ddca68e1b69d01199131488d7c88343c223ab
-SHA512: 4c9ead75a0a21fa336ac260329eb55bfe7c374a12af25c9a17d660c9792be2ba24ff0b87ba9844ab3ff54b5280682206db7907fc3007e3d554c9f538eb234ab8
+Installed-Size: 76
+Maintainer: @termux
+Version: 1.1.0+g99c942c
+Homepage: https://github.com/gnosek/fcgiwrap
+Depends: fcgi
+Description: A simple server for running CGI applications over FastCGI
+Filename: dists/uncode/main/binary-aarch64/fcgiwrap_1.1.0+g99c942c_aarch64.deb
+Size: 9496
+MD5Sum: 60239d0e2595df85f1e2b88b29b7d436
+SHA1: daa43fe914cd88260a598cf222207fac9575b105
+SHA256: d8d2898d0e7db1a0bbc6938ca8514db04042e3097b87672ce163b79ecfb6b293
+SHA512: 04191995540ca2f42505c424f4516d91f4e87cc8973b05eb7f96880fa84cab3f79b2a5decb340021110d18e78dde7171758b4614b7776e4033ec8a8e9aeaeb46
+
+Package: fclones
+Architecture: aarch64
+Installed-Size: 3948
+Maintainer: @termux
+Version: 0.35.0-1
+Homepage: https://github.com/pkolaczk/fclones
+Description: Efficient Duplicate File Finder
+Filename: dists/uncode/main/binary-aarch64/fclones_0.35.0-1_aarch64.deb
+Size: 1235172
+MD5Sum: 6f4ab8f270bfbe2a4168ae8d4054e7ad
+SHA1: 24c428ef7e8995bdf2edae9b36d62a2cd87a7345
+SHA256: 2405ed0f3db1d6a32b1d9db8f53d814813097582962c6136cdc1cb8b131c493f
+SHA512: 1c095fff5e8e410ab9f73c004bfe595411467393b4f24237b199ce84c88a8b40df60c4a092b4747a414795a753c48dd8341db8601c0110a9a725ba767f6933dd
+
+Package: fcp
+Architecture: aarch64
+Installed-Size: 540
+Maintainer: @termux
+Version: 0.2.2
+Homepage: https://github.com/Svetlitski/fcp
+Description: A significantly faster alternative to the classic Unix cp(1) command
+Filename: dists/uncode/main/binary-aarch64/fcp_0.2.2_aarch64.deb
+Size: 185424
+MD5Sum: 08854ae1edba9c295f0ebdad306c7580
+SHA1: 0e852ba714c1b731aa1bc53ed9c2eb6cbe6c6a31
+SHA256: 01976c50d77a9edfbefbeae08e13d8f6bfacd9ffe19a37a3ff957d69f1ced1cb
+SHA512: e477ceca905e8edea7866999180eae675e1d2e21af1a64f3b3cf7dc244151508cd5e3a33d5d192fa93688aaa01d6727c8b88c93d2aa726d8ea37e1b74d22548f
+
+Package: fd
+Architecture: aarch64
+Installed-Size: 3228
+Maintainer: @termux
+Version: 10.4.2
+Homepage: https://github.com/sharkdp/fd
+Description: Simple, fast and user-friendly alternative to find
+Filename: dists/uncode/main/binary-aarch64/fd_10.4.2_aarch64.deb
+Size: 949332
+MD5Sum: fe8848b24a59e9a8f12d81b7653b2ce6
+SHA1: 49307a80c24e4a1942676cc5d777369da96f1ad3
+SHA256: 411a1d67b831849bc35edf59eefeb4f4c8d1c05ca50aeb1ebc59fafbf6a7b4cf
+SHA512: 92b3e7031491c86031cc5f6086aab1046acfb433cc9de1f6401040b5a3f841e20753fcb28184ea4d4a1c82b8e08f1ff0aa854525b8f42a060fcfb26b0aa835cf
+
+Package: fftw-static
+Architecture: aarch64
+Installed-Size: 6920
+Maintainer: @termux
+Version: 3.3.11
+Homepage: http://www.fftw.org/
+Depends: fftw (= 3.3.11)
+Description: Static libraries for fftw
+Filename: dists/uncode/main/binary-aarch64/fftw-static_3.3.11_aarch64.deb
+Size: 993724
+MD5Sum: b36e8f040511af86b86c9f817733340d
+SHA1: 168543102230468426ab5988dc293bff0d6a8310
+SHA256: 3ae1ea84c0ae09e2510b0b2c9073449aa4a10e6cb17855415ae123cdb6fd0536
+SHA512: b62ce1088ccd4a81002fa84db50a2714b899215889c190df17a7e4a12bf41ec471e6491846c87f214c07911e8ee086b2caf5e70b4d9f7410ee4d1a0b2ebba948
+
+Package: fftw
+Architecture: aarch64
+Installed-Size: 3412
+Maintainer: @termux
+Version: 3.3.11
+Homepage: http://www.fftw.org/
+Breaks: fftw-dev
+Replaces: fftw-dev
+Description: Library for computing the Discrete Fourier Transform (DFT) in one or more dimensions
+Filename: dists/uncode/main/binary-aarch64/fftw_3.3.11_aarch64.deb
+Size: 1006300
+MD5Sum: 1e0c49939e454ec53b7c95fe3f25d302
+SHA1: 4b6b3358c8a4f2a940a5094c9d7ee4ad2bb0761b
+SHA256: 8fd17dfc1927fae67c818f8314802274f33b153d92550840f12d3376644def13
+SHA512: f7ba2a7f70ab5c11ee9008fe90ce28479919f98961696e780915470c492bce4884be543ff1418fb2c9421be11b86539360d33773fdac1532d3c8cd1205ba83ac
+
+Package: figlet
+Architecture: aarch64
+Installed-Size: 832
+Maintainer: @termux
+Version: 2.2.5-3
+Homepage: http://www.figlet.org/
+Description: Program for making large letters out of ordinary text
+Filename: dists/uncode/main/binary-aarch64/figlet_2.2.5-3_aarch64.deb
+Size: 89664
+MD5Sum: 4bcd8d45863641831379793b3cb2c93a
+SHA1: 799fb09f764477ef62fb676f380d988a75611c71
+SHA256: e1e67a113deec7cd88b34b9c812bc62405b4a840e2e7cacc37a666fda028c5a9
+SHA512: 172ca822ccd2d4d3f58264fac6b609d6ecfd472138b6ffd801a9d0f6ff2c59d253661e66991bfc9dfdf2eb8a5d30199a64a9b94a80cb694be4d965ae607aa3a6
+
+Package: file-static
+Architecture: aarch64
+Installed-Size: 280
+Maintainer: @termux
+Version: 5.48-1
+Homepage: https://darwinsys.com/file/
+Depends: file (= 5.48-1)
+Description: Static libraries for file
+Filename: dists/uncode/main/binary-aarch64/file-static_5.48-1_aarch64.deb
+Size: 68256
+MD5Sum: d954830dd45049923ceffdd9738fe4a1
+SHA1: 02dd2ee2dd6041a92341f9a2a1bbb926ab07fa67
+SHA256: 1382017a23f3ab4c9addae3757d4b4105c3aa7006ec88212cebf5fa42911e75b
+SHA512: bab5a7ddb6bb3a3cd2b3d83ebfd0f3f14a4ef592d37483a8cc40dcb805ab9cd74e93cb822c8b4185cb1dcdb3a09d2471e922fc8161ecd2cf357b782cd6539597
+
+Package: file
+Architecture: aarch64
+Installed-Size: 10820
+Maintainer: @termux
+Version: 5.48-1
+Homepage: https://darwinsys.com/file/
+Breaks: file-dev
+Depends: zlib
+Replaces: file-dev
+Description: Command-line tool that tells you in words what kind of data a file contains
+Filename: dists/uncode/main/binary-aarch64/file_5.48-1_aarch64.deb
+Size: 410888
+MD5Sum: 81b966f4fd185decc5ed2146110457a0
+SHA1: 55ffd64de531705c4a2a9fce39215862aaf51087
+SHA256: 6c020300819b055ed3de059b6346788a1a004bdd24a4d3e43e0c6a4e83f095d1
+SHA512: 280cff42c72a028572b9144a4f6f4eac519a32452e88b8525518b55dfe55e287f15318dd5a5f1039e70f4ee2810fd1a9110f74fa636439f71c68b8b9604cbe47
 
 Package: hello
 Version: 8.7.1-1
@@ -243,8 +322,41 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 892
-MD5Sum: c1e16146a08ade0115a93f32a7955f25
-SHA1: 8bd285b22bf4b76e8b34f3b2573e33c2a46ec179
-SHA256: 1cc52734fa41bdc1cddec449ab466138322a30e1d95414e2079031e9369e8134
-SHA512: ac142ed16567b0bce010a52257711bfc9d8e90757defe5595d8a71d47206ce37a95228519ea5b68ff48ab798c0bc9f35fea994f3e943797849507bc3b60be77c
+MD5Sum: 21b92c1d49278bab9e510e06f000c51e
+SHA1: f5a9fad60e7a8a4921d821198a4863be93d6d09f
+SHA256: d33d705056272c79f2842f09551dd2816aadba406744673fd53941cdad160c55
+SHA512: 4511064bccc8a9c941dad272176495488e0adafddd79970b11f9e46838d6a9688d81145eef7e4e484074cef725cbec815594456818fc04f489c4ed29ef898b69
+
+Package: libprotobuf
+Architecture: aarch64
+Installed-Size: 8840
+Maintainer: @termux
+Version: 2:33.1-1
+Homepage: https://github.com/protocolbuffers/protobuf
+Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Depends: abseil-cpp, libc++, zlib
+Conflicts: protobuf-static
+Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Description: Protocol buffers C++ library
+Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
+Size: 1337056
+MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
+SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
+SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
+SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
+
+Package: protobuf
+Architecture: aarch64
+Installed-Size: 5748
+Maintainer: @termux
+Version: 2:33.1-1
+Homepage: https://github.com/protocolbuffers/protobuf
+Depends: libprotobuf (= 2:33.1-1)
+Description: Compiler for protocol buffer definition files
+Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
+Size: 1154160
+MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
+SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
+SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
+SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
 

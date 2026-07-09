@@ -1,30 +1,46 @@
-Package: dx
+Package: faustlibraries
 Architecture: all
-Installed-Size: 1472
+Installed-Size: 2328
 Maintainer: @termux
-Version: 1:1.16-7
-Homepage: http://developer.android.com/tools/help/index.html
-Description: Command which takes in Java class files and converts them to format executable by Dalvik VM
-Filename: dists/uncode/main/binary-all/dx_1:1.16-7_all.deb
-Size: 1433612
-MD5Sum: af2eae5c42bc3bdc0c4ddfe4a9a49a8c
-SHA1: b62db9bc9a9077fcd97f81e1594dbd7c9dd986a4
-SHA256: 9eb8ebc8a36a419de2bbd1927ea8ba65a5f489b53293dc5c02a980f79e88ab70
-SHA512: d5b00de5e4c57045775e431cc3e095f83ec4f38663b2f9e11a3e1327611bf4ae6331b97bb20206a19e137c8ee52929e2d7b3d0c571942451605668a5aa016917
+Version: 2.85.9
+Homepage: https://github.com/grame-cncm/faust
+Depends: faust
+Description: Faust DSP libraries
+Filename: dists/uncode/main/binary-all/faustlibraries_2.85.9_all.deb
+Size: 404608
+MD5Sum: 84729ecd25da418beb7706f889fb235b
+SHA1: d6b58546e729d72d44f2961baa02c8aef3557203
+SHA256: ecbe1df9c5235a929c464e0e90e568158ac52f35bcde429ebddff234a1e193ea
+SHA512: 700690bbdf811c835093849d93004435a3df188ff467d3c57a783fca220ab4dacb18a8a68be439b491de6a703b69e5e429de6e177715809f62a514432b673ae5
 
-Package: elixir
+Package: fennel
 Architecture: all
-Installed-Size: 16972
+Installed-Size: 748
 Maintainer: @termux
-Version: 1.20.2
-Homepage: https://elixir-lang.org/
-Depends: dash, erlang
-Suggests: clang, make
-Description: Elixir is a dynamic, functional language designed for building scalable and maintainable applications
-Filename: dists/uncode/main/binary-all/elixir_1.20.2_all.deb
-Size: 6812388
-MD5Sum: e47c86e9d38e8a9e0734291106120b1f
-SHA1: 604c5a522cc405c032e7e8f8afe7ffb46b39eee0
-SHA256: 252fd7d2cb8c478e6d8ffb5c1c5431792211a20e4dffa1fb6fbaf2a068402bc8
-SHA512: 9de9699b337264624a94066191510d0ccf8cefc0f250234abe439bbac69b1d903552485ff2a251982660f98a77fd4db5fde284287c4da51f1e6646a6ce74e442
+Version: 1.6.1
+Homepage: https://fennel-lang.org
+Depends: lua54
+Description: A Lisp that compiles to Lua
+Filename: dists/uncode/main/binary-all/fennel_1.6.1_all.deb
+Size: 112100
+MD5Sum: b062d6b07b7de11f6be8ff275cc0bf03
+SHA1: efaa3cd6b25682d67f7537649365bd813b17a145
+SHA256: eee543bc4e136591bb96e1813863a1f66edd05e7e8569172e45ea212205c124f
+SHA512: 599b9793a451338eaec22034fa18a7db28dca0d20fea16b01df16352b5f540badc475a76b2045222e2399725fc727a6b997e79e39dec67aa94bae90dbbf37f92
+
+Package: fff
+Architecture: all
+Installed-Size: 104
+Maintainer: @termux
+Version: 2.2
+Homepage: https://github.com/dylanaraps/fff
+Depends: bash
+Suggests: w3m-img, xdotool
+Description: A simple file manager written in bash
+Filename: dists/uncode/main/binary-all/fff_2.2_all.deb
+Size: 16220
+MD5Sum: 817d287aa1a70db8c3ff202a83eea8e9
+SHA1: fb7519fff06b6025657858afafd7cbf4e7e3e179
+SHA256: 561682829bef7b8ea8c782a697a102c3a35f902f9d4ef95e4eb271721b64e363
+SHA512: 932bd167e89563504e1aed0d0a0c451663811fcb6e416fea359108f34a294b7067645a8c0129a36ebc874b5e1e5953e3293e411196ccd385ea235bb92d773c65
 
