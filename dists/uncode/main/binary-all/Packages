@@ -1,16 +1,30 @@
-Package: diff-so-fancy
+Package: dx
 Architecture: all
-Installed-Size: 108
+Installed-Size: 1472
 Maintainer: @termux
-Version: 1.4.10
-Homepage: https://github.com/so-fancy/diff-so-fancy
-Depends: perl
-Recommends: git
-Description: Good-lookin' diffs. Actually... nah... The best-lookin' diffs
-Filename: dists/uncode/main/binary-all/diff-so-fancy_1.4.10_all.deb
-Size: 17580
-MD5Sum: 572214027d3cd0127ea96db587dadaf2
-SHA1: c414c02af2821bbc3045e5732615ec0278164992
-SHA256: 1ebeb3aff9031ed3982f2584c63dcaef49eaf7048fb5530a2b1a239cc16e585e
-SHA512: a15e1a3c72dd7f2b555783e24297a91f710dcbbd25afa446ea893071c86cf1c3c69ff2145ea20b2df1a08f44fb9393f6e8bbc447380f5571866fe5b4f8d8be96
+Version: 1:1.16-7
+Homepage: http://developer.android.com/tools/help/index.html
+Description: Command which takes in Java class files and converts them to format executable by Dalvik VM
+Filename: dists/uncode/main/binary-all/dx_1:1.16-7_all.deb
+Size: 1433612
+MD5Sum: af2eae5c42bc3bdc0c4ddfe4a9a49a8c
+SHA1: b62db9bc9a9077fcd97f81e1594dbd7c9dd986a4
+SHA256: 9eb8ebc8a36a419de2bbd1927ea8ba65a5f489b53293dc5c02a980f79e88ab70
+SHA512: d5b00de5e4c57045775e431cc3e095f83ec4f38663b2f9e11a3e1327611bf4ae6331b97bb20206a19e137c8ee52929e2d7b3d0c571942451605668a5aa016917
+
+Package: elixir
+Architecture: all
+Installed-Size: 16972
+Maintainer: @termux
+Version: 1.20.2
+Homepage: https://elixir-lang.org/
+Depends: dash, erlang
+Suggests: clang, make
+Description: Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+Filename: dists/uncode/main/binary-all/elixir_1.20.2_all.deb
+Size: 6812388
+MD5Sum: e47c86e9d38e8a9e0734291106120b1f
+SHA1: 604c5a522cc405c032e7e8f8afe7ffb46b39eee0
+SHA256: 252fd7d2cb8c478e6d8ffb5c1c5431792211a20e4dffa1fb6fbaf2a068402bc8
+SHA512: 9de9699b337264624a94066191510d0ccf8cefc0f250234abe439bbac69b1d903552485ff2a251982660f98a77fd4db5fde284287c4da51f1e6646a6ce74e442
 

@@ -1,369 +1,234 @@
-Package: diffstat
+Package: draco-static
 Architecture: aarch64
-Installed-Size: 96
+Installed-Size: 4216
 Maintainer: @termux
-Version: 1.69
-Homepage: https://invisible-island.net/diffstat/diffstat.html
-Description: Displays a histogram of changes to a file
-Filename: dists/uncode/main/binary-aarch64/diffstat_1.69_aarch64.deb
-Size: 22032
-MD5Sum: 203866be94cc5bf7a09932b49387557b
-SHA1: d9cd6c72c9543253418e3c76bd57697ff3262eac
-SHA256: b8c47d7ee223457870dc77ea28a0262b9ae0827c7a8cc1459225194065d74c3d
-SHA512: 12c64028495ee4354a5403fa666e1ca44c0d70a596846a7252b85fb9f6eafca8f4c04e9d4c9a4e18b3c44b24cc8384bd7d8c6d1557014f59f87a271fd0a2cd64
+Version: 1.5.7-1
+Homepage: https://google.github.io/draco/
+Depends: draco (= 1.5.7-1)
+Description: Static libraries for draco
+Filename: dists/uncode/main/binary-aarch64/draco-static_1.5.7-1_aarch64.deb
+Size: 405036
+MD5Sum: 7694554d8043ea175cf23939a7f03d22
+SHA1: e254e0386b9343348d4542a2db5e75fb707ee1a3
+SHA256: f52bd0cfa17b9c18ba239552eb16f89320065782a7a490c331cdb238a270943f
+SHA512: 05978ed13e0a7596f03bb153056459197c5925387e1faa1f8235b693e212174f5ac7d6185ea030665433e001495d67b065d4a737645167e2c1955b8fd2054707
 
-Package: difftastic
+Package: draco
 Architecture: aarch64
-Installed-Size: 120716
+Installed-Size: 3516
 Maintainer: @termux
-Version: 0.69.0
-Homepage: https://github.com/Wilfred/difftastic
+Version: 1.5.7-1
+Homepage: https://google.github.io/draco/
 Depends: libc++
-Recommends: file
-Description: difft: A structural diff that understands syntax
-Filename: dists/uncode/main/binary-aarch64/difftastic_0.69.0_aarch64.deb
-Size: 6584024
-MD5Sum: d37a637c5db7ffc4b12c50e3018468f2
-SHA1: d49200040bfd8a1c5c4a44358ceb2efb75a3ad46
-SHA256: ca72e0deeb32eeff36ee151530d8f13418bc534d5195103d4526c70cf352d9e7
-SHA512: b3036f6830c811c8ba99888e4192f831770777bcc632a45d68cda68d3d354cdeddd7c31ff28056c55cca40e6cfab93ec5c487b18cf6158ee48321aa2422ead72
+Description: Library for compressing and decompressing 3D geometric meshes and point clouds
+Filename: dists/uncode/main/binary-aarch64/draco_1.5.7-1_aarch64.deb
+Size: 470544
+MD5Sum: acabfe7699bf5aa8e9a3a8d91a185cd8
+SHA1: 2873a86bcd9e4614f3d085c8275ec13be330397b
+SHA256: da7c9e0ed792e419f15f0ae1db372f14ff3c35f33ec0dac9e8c75d2e505e2dbf
+SHA512: ffe15e71ca5dedcc28206d7ea6213206390ae663592090a0ac9be2b7102558c3da5edd98a44dc85a6522c0d287f33c440c6656329d3d316dc715e32a9ba6648e
 
-Package: diffutils
+Package: dtach
 Architecture: aarch64
-Installed-Size: 668
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 3.12-2
-Homepage: https://www.gnu.org/software/diffutils/
-Depends: libiconv
-Essential: yes
-Description: Programs (cmp, diff, diff3 and sdiff) related to finding differences between files
-Filename: dists/uncode/main/binary-aarch64/diffutils_3.12-2_aarch64.deb
-Size: 162816
-MD5Sum: cf2ee46b9c1da86fe5b89b370074e84b
-SHA1: d96f64734a6126a550e689d7d04e34338dbfda44
-SHA256: 0b2067d03008c3826c846b46809dd0107acff0bf331ffdd3f671d7ab0c273a2b
-SHA512: 95802a2427648f5cf64edf3e8c1231b7e0fd4dfab1c7e7985edb30ccb7fecb67e0bb25fc620f622ea157e00caaae690fa8cd0617fef00e2f2aa0d1147430bfcc
-
-Package: direnv
-Architecture: aarch64
-Installed-Size: 8580
+Installed-Size: 72
 Maintainer: @termux
-Version: 2.37.1-1
-Homepage: https://github.com/direnv/direnv
-Description: Environment switcher for shell
-Filename: dists/uncode/main/binary-aarch64/direnv_2.37.1-1_aarch64.deb
-Size: 2398288
-MD5Sum: 72f51b31977e55f81fab5da899838195
-SHA1: f5550c19e24a75480a7379125a8b542da2edf217
-SHA256: 49d4b2257df031de10a34573eb575af62932e80cf02b4b3abe4a0c97a95cd6ed
-SHA512: 0ca984fb9a9f1fa7d661e4f9f3e79e7fe3d27667774bc2587faecdb27c787ba9a510a3fc49d5541584f2f07b74e9330be665d1ddfd595fbd8e96e20aa6eb8067
+Version: 0.9-2
+Homepage: https://dtach.sourceforge.net/
+Description: Emulates the detach feature of screen
+Filename: dists/uncode/main/binary-aarch64/dtach_0.9-2_aarch64.deb
+Size: 9388
+MD5Sum: 672737b4201bdec86f952219152fb1d7
+SHA1: 6760565390f882298384e817d0433e612f82327c
+SHA256: 87c28817ceb9d6d05dc6a13d6ec0b03923117385d7401a428b6267d0447ebc1f
+SHA512: d087eb2e9e059d178ffbbb21c20e4592d87562424b6ac3d9b44265d05de00a2325b5ad5ab70ba27fe8a47aa59040f3ff82c8ed4a5d64228c3523d8fd8f68a0ac
 
-Package: discount
+Package: dtc-static
 Architecture: aarch64
-Installed-Size: 204
+Installed-Size: 304
 Maintainer: @termux
-Version: 3.0.1.3
-Homepage: https://www.pell.portland.or.us/~orc/Code/discount/
-Description: Markdown implementation written in C
-Filename: dists/uncode/main/binary-aarch64/discount_3.0.1.3_aarch64.deb
-Size: 43728
-MD5Sum: 38d45ca43c3865414662f5c7df7801e0
-SHA1: 11429ce6df10a3c19aedb2c62db8c2dea6185d23
-SHA256: 394b9ad43d4c0dfb19a203c18ca39bc4637f70182c2397d60f9cea6b6291d488
-SHA512: 4a6458ceecdd0e89ec875f7fdb30636544c3a1ad3891a6844dd00d1fd18e19a306dc582f5a9a5d261bfea54a628bd9059df92b26e2ad19c7217e92dd7b86eed5
+Version: 1.8.1
+Homepage: https://git.kernel.org/pub/scm/utils/dtc/dtc
+Depends: dtc (= 1.8.1)
+Description: Static libraries for dtc
+Filename: dists/uncode/main/binary-aarch64/dtc-static_1.8.1_aarch64.deb
+Size: 57832
+MD5Sum: 65ecdc7ed32742675f8edca53d786293
+SHA1: 41f0635fcf0bdeeb3940104fa90542e85d4da7a1
+SHA256: d35bc629a51df7007d8c3e9a2c8fd4689a8ae55b991194eaef7b3fe6f147d39b
+SHA512: ef6f17a64f5cd6c16026c8623494bb9564f6b7a5dbdaea335c8be4794ff9ed391d9e9aceef3fb3c41d64c78c47c36cb01cad731528bd6dac6013118807f7d0d3
 
-Package: diskus
+Package: dtc
 Architecture: aarch64
-Installed-Size: 772
+Installed-Size: 416
 Maintainer: @termux
-Version: 0.9.0
-Homepage: https://github.com/sharkdp/diskus
-Description: A minimal, fast alternative to 'du -sh'
-Filename: dists/uncode/main/binary-aarch64/diskus_0.9.0_aarch64.deb
-Size: 287176
-MD5Sum: 755ac4af464808be96290728ef7095a0
-SHA1: c25d2dd5036ab934d652cbbd4510ff654878a5a0
-SHA256: 747ea05bb769df733e5c7508b442af92549e9d1c8804d44c85481593735cbdf9
-SHA512: c2a3edafe57afb0104325444f822cf6aa3c3b4623d68d58f27dc6c9cba0877fcfd0a12586c1b5bba285ec08e115789b38d7cc5928d8454df6b64b6fdf520d95a
+Version: 1.8.1
+Homepage: https://git.kernel.org/pub/scm/utils/dtc/dtc
+Breaks: dtc-dev, qemu-common (<< 1:8.2.5-2), qemu-system-x86-64 (<< 1:8.2.5-3)
+Replaces: dtc-dev, qemu-common (<< 1:8.2.5-2), qemu-system-x86-64 (<< 1:8.2.5-3)
+Description: Device Tree Compiler
+Filename: dists/uncode/main/binary-aarch64/dtc_1.8.1_aarch64.deb
+Size: 85744
+MD5Sum: 30732d3d7474e8700671b5b8613cebe8
+SHA1: 48c5132e0af4f8460fea49812cccdf7e807ccce0
+SHA256: 8151d65dd845231b076c36d637adbfae48e789af8b42bf2a6d85e47e66ff00a9
+SHA512: 9d0ed32ca9e3b40ffda930627b2ab361a8368f524d831c9b4a4a77b3e0059f28b7d83d247f83077bac4c966c0f2288e8ba502f85fa157dcd674b509fd600189b
 
-Package: distcc
+Package: dua
 Architecture: aarch64
-Installed-Size: 676
+Installed-Size: 3432
 Maintainer: @termux
-Version: 3.4-4
-Homepage: http://distcc.org/
-Depends: libpopt
-Description: Distributed C/C++ compiler
-Filename: dists/uncode/main/binary-aarch64/distcc_3.4-4_aarch64.deb
-Size: 169548
-MD5Sum: 1377ab90502b8ce862cceacb3e8fea91
-SHA1: 666e5f2d3c743226d66d18451460cc854c3bf0e0
-SHA256: 6a928b30fd8bb9f8eb5cafbfc4ec66bcc6a9d1e87fcdc0a56afc38256afdac21
-SHA512: 29c35eac216961631be46aa5d5a1de7b17bbab032269ea99c1112cdfd00f366fb3302d11860fcffcc77f344944c00212cc7cef703fe5d824d38c5cadf44c8d9f
+Version: 2.37.1
+Homepage: https://github.com/Byron/dua-cli
+Description: View disk space usage and delete unwanted data, fast
+Filename: dists/uncode/main/binary-aarch64/dua_2.37.1_aarch64.deb
+Size: 1165296
+MD5Sum: 5db1c89623497e27e9ae7b4082442ccc
+SHA1: f7c624a2c4b20a6f8cd62e1167bad0d10bb17561
+SHA256: 34fc00b05746fde7b7d12a51ae75c51590b9ead1f2d503a712f7b3f0f68073e7
+SHA512: 6cef1d17a345f096662eba7c694cde7707fef6d080289abe40eb80f9ae0db9ac98f99078417a920f6b3fab41d433e7368618f572f9bb8a2640c9fa7ccf0cd398
 
-Package: djvulibre-static
+Package: duf
 Architecture: aarch64
-Installed-Size: 3768
+Installed-Size: 3668
+Maintainer: Krishna kanhaiya @kcubeterm
+Version: 0.9.1
+Homepage: https://github.com/muesli/duf
+Description: Disk usage/free utility
+Filename: dists/uncode/main/binary-aarch64/duf_0.9.1_aarch64.deb
+Size: 951520
+MD5Sum: 6b0a1414bd2f8c7f3c553afb5fbb1774
+SHA1: 1d92996166f13c75727456609c7b2e15e7c29dc2
+SHA256: ed6762cd1c24d551fc0ba92b70843481d07a2199d1bf4e388e50f0fab61b59d9
+SHA512: f93033453ef23a7490a8f6b4e704e90c2397bc9b4627f9ba6086f4903a1b8f12bf722ddc9de71ac580ea3ff328cd51453594048912f7a074488e6616bee723f7
+
+Package: dufs
+Architecture: aarch64
+Installed-Size: 4964
 Maintainer: @termux
-Version: 3.5.30
-Homepage: https://djvu.sourceforge.net/
-Depends: djvulibre (= 3.5.30)
-Description: Static libraries for djvulibre
-Filename: dists/uncode/main/binary-aarch64/djvulibre-static_3.5.30_aarch64.deb
-Size: 583348
-MD5Sum: b708f74c75e7d4cf4c8e131fa71cdc3e
-SHA1: 230567ad428b4c5f747ead008388d48dfeab54d7
-SHA256: 8db2b37b15340bea943ee11989a4bf2e90e8ee8008547ebedeb5349f129dd087
-SHA512: f55e3f511fd5d778dbd2962a310b66e6895b38827d523c7e9bc64fa2c15b9dda500bf21d8fa9a5063f4868713aa82b26f580db899be0a98227ca016e95508ddb
+Version: 0.46.0
+Homepage: https://github.com/sigoden/dufs
+Description: A file server that supports static serving, uploading, searching, accessing control, webdav...
+Filename: dists/uncode/main/binary-aarch64/dufs_0.46.0_aarch64.deb
+Size: 1807852
+MD5Sum: 5fbd9f3a68d525cbb5e91c8677d934c9
+SHA1: 67dd05766fbf7aad78faea8b42e62fa820230a0a
+SHA256: efa428215b19c30f079925fd4a7c2c6c05a08392d24d17442cd6d02461d74a0b
+SHA512: 9b42e90e06a989ef06015ba99b576a2130ac34caef142762fba915fb65135d4a2222202debf3dc5ae34494942980b04a64e0e612c9b5b80e6e800aee56bd7995
 
-Package: djvulibre
+Package: dust
 Architecture: aarch64
-Installed-Size: 3572
+Installed-Size: 2628
 Maintainer: @termux
-Version: 3.5.30
-Homepage: https://djvu.sourceforge.net/
-Depends: libc++, libjpeg-turbo, libtiff
-Description: Suite to create, manipulate and view DjVu ('déjà vu') documents
-Filename: dists/uncode/main/binary-aarch64/djvulibre_3.5.30_aarch64.deb
-Size: 876836
-MD5Sum: debb553a569cbcb7075c6bdb2a50e0b8
-SHA1: 1d4b0dfa9f43ebc3230eb3b49266af7c4b8d5c84
-SHA256: c5308c7348c43f16a12389e71ef4025e3d41bf56b86452a55cf8704483a8fd50
-SHA512: 74641e0ea9da1a0450ab280556bd510ca35c5958c0ba471467ecdc03ea14502d1a660509677d2cff631b5d75cbf92f122a2cea77af2b20ea635673af49991e46
+Version: 1.2.4
+Homepage: https://github.com/bootandy/dust
+Description: A more intuitive version of du in rust
+Filename: dists/uncode/main/binary-aarch64/dust_1.2.4_aarch64.deb
+Size: 788696
+MD5Sum: d7ef66a77ce408f1db320177052023c1
+SHA1: 7229e01843736a1d967c5c2ebdebd2cddb4ea0e0
+SHA256: 9dffe2a04dfbe48dbc64cb19c20d981815ea08d9f85896519606e6f779205f12
+SHA512: 28b465d234b8cff82a9530787f48e925c1c09e01b8c636b5f548c7406b68421e0b0111c1a394ac3805d47b2473728e7f08d10316a26058cf0bc45e3ec56aa7a4
 
-Package: dmagnetic
+Package: ed
 Architecture: aarch64
-Installed-Size: 196
-Maintainer: @termux
-Version: 0.37-1
-Homepage: https://dettus.net/dMagnetic
-Description: Interpreter for classic text adventure games and interactive fiction
-Filename: dists/uncode/main/binary-aarch64/dmagnetic_0.37-1_aarch64.deb
-Size: 61472
-MD5Sum: bcc2680cc90c175873848808ec877199
-SHA1: 905201eb706947f2111592d6678e56d5bd2473c3
-SHA256: cbef5a854e8d65849cbe9ca0ead0d108ef66cd96979c4ede4fc422d06184807a
-SHA512: a42d553cd3f62aee0389ba7a724950be2de53f12b3883eca92ebe782a9c801bdb72a343bf2548e3ef6fa285f3467ab39890ebd445143d5c0e988ff13d9a8eeb1
+Installed-Size: 180
+Maintainer: Oliver Schmidhauser @Neo-Oli
+Version: 1.22.5
+Homepage: https://www.gnu.org/software/ed/
+Description: Classic UNIX line editor
+Filename: dists/uncode/main/binary-aarch64/ed_1.22.5_aarch64.deb
+Size: 42912
+MD5Sum: 4871ef305e74d74c40453897d6e86ab7
+SHA1: 5b2dc9d1a75c4f55be98fcefdfc0fee3d5b5036d
+SHA256: 67fc7225ceadd1ea67bae883c432e95932342fa3a229e4fe42cc1c7c1ac2359b
+SHA512: 9586b6a9cb524e7b99b6158fd57989de694966c513bae8df1ce59a110bf60f82e1b2a5cec30fc7e7e3b1512f78f823631d0176ca714defbc2f12c34e9592aea3
 
-Package: dnglab
+Package: eigen
 Architecture: aarch64
-Installed-Size: 10400
-Maintainer: Florian Wagner <florian@wagner-flo.de>
-Version: 0.7.2
-Homepage: https://github.com/dnglab/dnglab
-Description: Camera RAW to DNG file format converter
-Filename: dists/uncode/main/binary-aarch64/dnglab_0.7.2_aarch64.deb
-Size: 2697564
-MD5Sum: 7a9823f06193d925e685f6016e8eecfa
-SHA1: d67e29f4457e3fb908979b18dd3f2dae821f46e6
-SHA256: 6c4eeb5a5a6bf6290e6288fccff640ccc0e4f7abee0e7581144c179f87924a0f
-SHA512: 45d213df8c835abf978b9144f9deacd1cd6c9c67341b08046496816764a8c9c8704082c2563452311d3e3cdb005860aa501e2bb3246798edbe148b7dc63d7c6b
-
-Package: dnote-server
-Architecture: aarch64
-Installed-Size: 13124
-Maintainer: Ravener <ravener.anime@gmail.com>
-Version: 3.0.0
-Homepage: https://www.getdnote.com/
-Suggests: postgresql
-Description: This package contains the Dnote server. It comprises of the web interface, the web API, and the background jobs.
-Filename: dists/uncode/main/binary-aarch64/dnote-server_3.0.0_aarch64.deb
-Size: 3552864
-MD5Sum: b98ac60e9deb90d4dc9d4ec8f05dc008
-SHA1: 89e43347ca58bf2c72e60a5905bb3b105a6be89a
-SHA256: 6692df492aad6965ea95ebb8fe7c9545e691d260ce584cc7bcd09b642991f7ad
-SHA512: 056a893dc2c4d761e53d1ff1a5a61887c86dce32338dc19390b606062335fb9f44c17acba3c7914f275cb0e732b0663a3152200e378cf174716fa989cec6bc16
-
-Package: dnote
-Architecture: aarch64
-Installed-Size: 10040
-Maintainer: Ravener <ravener.anime@gmail.com>
-Version: 1:0.16.0
-Homepage: https://www.getdnote.com/
-Breaks: dnote-client
-Replaces: dnote-client
-Description: A simple command line notebook for programmers
-Filename: dists/uncode/main/binary-aarch64/dnote_1:0.16.0_aarch64.deb
-Size: 2817076
-MD5Sum: 323830db216547472bcfabbe24343b8f
-SHA1: 8141622a7e1624521d64d8d8f94e7290c7ba4715
-SHA256: 04670397046a2e77c5ad96dc0d88c8d6ba2b2a75617ed66e0efd679a53149541
-SHA512: 755c6c18ce5c0181acef0a701c79ee5ca118c4e91594c44b99afad61a2fe3750ec0b188e4075c5af7f42050cd430b7002f1837213fa365fefb96dc5936aceab8
-
-Package: dns2tcp
-Architecture: aarch64
-Installed-Size: 144
-Maintainer: @termux
-Version: 0.5.2-2
-Homepage: https://github.com/alex-sector/dns2tcp
-Description: dns2tcp is a tool for relaying TCP connections over DNS
-Filename: dists/uncode/main/binary-aarch64/dns2tcp_0.5.2-2_aarch64.deb
-Size: 33008
-MD5Sum: a48734314cc02545987e20665c0bf415
-SHA1: 6da2c2e5f64b8f977837cb567c96c341bcb6c162
-SHA256: f98946add325961e17a3fcc56a2ccd72ddb6c9ca17a4e5fe2ea70f08c4d51679
-SHA512: 11b1ac9ea506cfe4973ca3ce4abb541226a5040a53cfc3c64edcc90d9e7fd44f06c3e68cbc5144488b15f05ff826530c54e8aaf292652fa3e81794d12baee154
-
-Package: dnscontrol
-Architecture: aarch64
-Installed-Size: 70764
-Maintainer: Izumi Sena Sora <info@unordinary.eu.org>
-Version: 4.42.0
-Homepage: https://github.com/StackExchange/dnscontrol
-Description: Infrastructure as code for DNS!
-Filename: dists/uncode/main/binary-aarch64/dnscontrol_4.42.0_aarch64.deb
-Size: 12513624
-MD5Sum: f2a0ba93d9edab33e6086a9f1943b01e
-SHA1: 52916e4bbf1805d9874fd64552db0e4e60646c1c
-SHA256: bd281339283647edaf0377cc7f512fa8a3ffaa6fef8bbe25ff8f55a23ed69f46
-SHA512: ed1e32ac9084839267d662b7be8cf8228d5188eb34c169f19cafe1192ebe5b874737fd2ca63a211b091d261de6c4b8f0c03abeba7f812765b31425ec6a8980bc
-
-Package: dnslookup
-Architecture: aarch64
-Installed-Size: 9276
-Maintainer: CHIZI-0618 <kay9925@outlook.com>
-Version: 1.12.0
-Homepage: https://github.com/ameshkov/dnslookup
-Description: Simple command line utility to make DNS lookups. Supports all known DNS protocols: plain DNS, DoH, DoT, DoQ, DNSCrypt.
-Filename: dists/uncode/main/binary-aarch64/dnslookup_1.12.0_aarch64.deb
-Size: 2465268
-MD5Sum: 441815c7855aaea13b605f0de65d1e82
-SHA1: 26dc0fc80181efff87cb7d5e188cdf4d4c592f75
-SHA256: 313cfe0e67caa1e51912bf5710be446acf5ae506701b51948c784daed1a58acf
-SHA512: e60ecf80c53a9eb25a71420d8e12347ffe1b78c0480e97ba781bc18360ebddd5c5857d6fcc05f584cf84db974989fbd2d58be1fc7dbac3e0b7d39fb4eff0deb3
-
-Package: dnsmap
-Architecture: aarch64
-Installed-Size: 176
-Maintainer: @termux
-Version: 0.36-3
-Homepage: https://github.com/resurrecting-open-source-projects/dnsmap
-Description: Subdomain Bruteforcing Tool
-Filename: dists/uncode/main/binary-aarch64/dnsmap_0.36-3_aarch64.deb
-Size: 13272
-MD5Sum: 3484204710c13daab1805ba32ed9f8df
-SHA1: 4694410d87d51b09c9cd63cc068c81014c93ad75
-SHA256: 10f5d3881a26a7f7f56db276d8dc239265bfb23e7c89d811202a13a2026e94a7
-SHA512: 5c600c4ce33976449e4f0b89cc71e04b977f8fc90c84f708ccff2a35daed4c7c16a3fd47ced72fc46908bce68eaec4c17ba4dcf0e4b76c492bf7bdd80182e3eb
-
-Package: docopt-static
-Architecture: aarch64
-Installed-Size: 588
-Maintainer: Henrik Grimler @Grimler91
-Version: 0.6.3-4
-Homepage: http://docopt.org
-Depends: docopt (= 0.6.3-4)
-Description: Static libraries for docopt
-Filename: dists/uncode/main/binary-aarch64/docopt-static_0.6.3-4_aarch64.deb
-Size: 86932
-MD5Sum: 8eae0efd4beca70301f2932b9d566c6f
-SHA1: 3174560f11fb9044d0bff95a66b328d868daf6d1
-SHA256: 4913d832861607067766e0e906dfc68c286deab06c3327d771f3ab3d38f2c04a
-SHA512: c45c4147c8716cbafd0b25bd6a6a19e9a4f2095988fbaec783251a421b0f907bad7e30e659939e19135a127caa663be01750b0ddbf0341cbe33c92475aad410a
-
-Package: docopt
-Architecture: aarch64
-Installed-Size: 408
-Maintainer: Henrik Grimler @Grimler91
-Version: 0.6.3-4
-Homepage: http://docopt.org
-Depends: libc++
-Description: Command line arguments parser for C++11 and later
-Filename: dists/uncode/main/binary-aarch64/docopt_0.6.3-4_aarch64.deb
-Size: 96124
-MD5Sum: afd691f37cca635e44494618672c9b5b
-SHA1: dbcc5bee3580ec4fa08ab6873762106629f9bd7f
-SHA256: 8177a7b3170fc1594008ce8ddcd0bd84c844e9e0273eb0e7a99cf706cbf31ccb
-SHA512: 8124efb2f3fe30484a9576adfe699b0d5d0bea75b0228eddc813b30b6c9e0cf9799c886d692ecb79424f54589464fdc24d9ba83d7a749a9c14ec8de131d3ccde
-
-Package: doctest
-Architecture: aarch64
-Installed-Size: 488
-Maintainer: @termux
-Version: 2.5.2
-Homepage: https://github.com/doctest/doctest
-Depends: libc++
-Description: The fastest feature-rich C++11/14/17/20 single-header testing framework
-Filename: dists/uncode/main/binary-aarch64/doctest_2.5.2_aarch64.deb
-Size: 64272
-MD5Sum: 1dc98fc90fbb91c71b82dc1954322877
-SHA1: aec28539c001ac0dc5e3520966585d3bf7c69cc1
-SHA256: 1599587e8745f5a8d36d3f5478c7413b2085bbb5d13461368d1c138911d1c0f9
-SHA512: abee0fa063fbea9ed9ea652a7a21f4433ed4d7c99e4f57d8b4aefb2297c8a5cc00759fdd96c77eeee0ecb5338dc595809a4c288e43757fcb5997734f4d9a58b9
-
-Package: dosfstools
-Architecture: aarch64
-Installed-Size: 480
-Maintainer: @termux
-Version: 4.2-1
-Homepage: https://github.com/dosfstools/dosfstools
-Depends: libiconv
-Description: DOS file system utilities
-Filename: dists/uncode/main/binary-aarch64/dosfstools_4.2-1_aarch64.deb
-Size: 120196
-MD5Sum: dd85b17a89e47f6ca529ef0149c8457c
-SHA1: ab933ccad69f2abd7822041264af3f50279e74df
-SHA256: 22eb4e888f8a19a295e675dc7bb146985d02cc594581dbd50ea2be182fd3ba7e
-SHA512: 061ef55937b1e99680a223aa57bef64cd4b7335070b1dedd7be7b31d27cafec6713555390c64b0ec283fcb2c1e8449961a9edb2ca5e46e9bc56f3e4f69ac26df
-
-Package: dotconf-static
-Architecture: aarch64
-Installed-Size: 60
-Maintainer: @termux
-Version: 1.4.1-1
-Homepage: https://github.com/williamh/dotconf
-Depends: dotconf (= 1.4.1-1)
-Description: Static libraries for dotconf
-Filename: dists/uncode/main/binary-aarch64/dotconf-static_1.4.1-1_aarch64.deb
-Size: 8892
-MD5Sum: a662432964f2747ede2accd12782d578
-SHA1: 651617e016128f8b17b274007396abd52edfa36f
-SHA256: f80efcd3644149095e8d7a382f2d9b2f09c28094122191de3efde569a2f998d8
-SHA512: 7b8effc09a209e5a42764ccd5cfb6b29958b82c2f0246785540a3b5918bce14a69e4faac706426ef1e957fd763b12111a6579afe7a1440e3daf4a93d695679c2
-
-Package: dotconf
-Architecture: aarch64
-Installed-Size: 356
-Maintainer: @termux
-Version: 1.4.1-1
-Homepage: https://github.com/williamh/dotconf
-Description: dot.conf configuration file parser
-Filename: dists/uncode/main/binary-aarch64/dotconf_1.4.1-1_aarch64.deb
-Size: 26812
-MD5Sum: 65ff60be4d90310212891331eb742350
-SHA1: 8cc1dc9136ff759b01946390a42ecd3396db4b1b
-SHA256: 4f204081ac846bebe9b5ee3127d4695c915fa4511130cdadb141760c944c4937
-SHA512: acbcdb8717e730751eb6cd84b631b8d29b711454211a53509efdefa8523df9777fedb30275e82e9e0d6c3ccfd9c014ddb2bd192da54b49e1bce57a39d0b8ae76
-
-Package: dotnet-host
-Architecture: aarch64
-Installed-Size: 4
-Maintainer: @truboxl
-Version: 10.0
-Homepage: https://dotnet.microsoft.com/en-us/
-Depends: dotnet-host-10.0 | dotnet-host-9.0 | dotnet-host-8.0
-Description: A metapackage for .NET Host
-Filename: dists/uncode/main/binary-aarch64/dotnet-host_10.0_aarch64.deb
-Size: 716
-MD5Sum: 54a5f131c8ed8f93984d97d1b253b328
-SHA1: 457d76afd6dbda1c8802614f8cdead5473b4e617
-SHA256: f3634f1742f6facf69c736d1d1d0d0a8ab3ca99817c3c3ee66df6e271ddf5f6b
-SHA512: 5af821787a46994c80df1e4d9d94f58b90f5ec05da0223c19686f3853a15530b92590e7da891287745f22a03051f8e31973225d273ef5667033f688b533ffbf0
-
-Package: double-conversion
-Architecture: aarch64
-Installed-Size: 288
+Installed-Size: 10000
 Maintainer: @termux
 Version: 3.4.0
-Homepage: https://github.com/google/double-conversion
-Depends: libc++
-Description: Binary-decimal and decimal-binary routines for IEEE doubles
-Filename: dists/uncode/main/binary-aarch64/double-conversion_3.4.0_aarch64.deb
-Size: 55376
-MD5Sum: 5d20bc508ca77b49dd673dbbc02783e9
-SHA1: e49f574f04003aa2133756cbde72fb8f2d0ee8d2
-SHA256: cb5326819f8894963a9bc1dbb1307a9204c2e1a4b7d3e713558d10561546f323
-SHA512: 3dd9ff77124530bc4049ba9aaa14c572cb51108102bf97705d646272a5f2f372c17c9a23c88ed466df64b13c4a8a5483260a8250fb5ea13ecd6a0f84c9120498
+Homepage: http://eigen.tuxfamily.org
+Breaks: eigen-dev
+Replaces: eigen-dev
+Description: Eigen is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms
+Filename: dists/uncode/main/binary-aarch64/eigen_3.4.0_aarch64.deb
+Size: 1015472
+MD5Sum: 980753cbc02efff88fefcddd8f689c09
+SHA1: 876a39b7699b4826020dedd0dbaa2fe8997b96b6
+SHA256: 6756272aa0b4c582f69f34138342390540dab805446079ba11bef5ec156c8287
+SHA512: 1e38eb9676efb7c1f97451a3d88e3568c8c1f131cd1afca31c0f90f551fa6e443b650eea8f239699d36c2013283f9c86966c79bc8799e2046165f7c2c1796881
+
+Package: eja
+Architecture: aarch64
+Installed-Size: 476
+Maintainer: @termux
+Version: 18.4.19-1
+Homepage: https://github.com/eja/eja
+Description: eja micro web server
+Filename: dists/uncode/main/binary-aarch64/eja_18.4.19-1_aarch64.deb
+Size: 116572
+MD5Sum: 25c7f8598b93297690931d2f695beccd
+SHA1: 03392e0a47bdc9e94470b90df0ba0d2eb8534035
+SHA256: 56d20a8b2401019e557aed661abecc0bd99e9c0cc82bebb9ca1cce97a3eb1f42
+SHA512: e9f8da8ccebb1851a8a3fd2be9ea9e37b8af0286b9ea9aeef03bc9cd30c4bd2940b087045439acdb67f6cff74337ebba342b11d6f419545cdebffc22e61f0c19
+
+Package: electric-fence-static
+Architecture: aarch64
+Installed-Size: 84
+Maintainer: @termux
+Version: 2.2.7-1
+Homepage: https://elinux.org/Electric_Fence
+Depends: electric-fence (= 2.2.7-1)
+Description: Static libraries for electric-fence
+Filename: dists/uncode/main/binary-aarch64/electric-fence-static_2.2.7-1_aarch64.deb
+Size: 14364
+MD5Sum: 8f157ecb4ee4e910f886de3930ff5b52
+SHA1: 4fbff4c73e78548dd73d73d50ef1effac51eba2a
+SHA256: e7fcaa0d60fa2ab39fb63b61a8dfa2bd476313f5f8b6c98d1a5219b5aee28f14
+SHA512: 4517e210ee8e2bffa4c08b06faea944b5b3b73b8aca1f416877f976925b1f185a47527fa245846b734e17c3306422c8378f00525509d95217113fe2ab5ede23e
+
+Package: electric-fence
+Architecture: aarch64
+Installed-Size: 80
+Maintainer: @termux
+Version: 2.2.7-1
+Homepage: https://elinux.org/Electric_Fence
+Description: Electric Fence (eFence) malloc memory debugger
+Filename: dists/uncode/main/binary-aarch64/electric-fence_2.2.7-1_aarch64.deb
+Size: 12124
+MD5Sum: 821414222a17249a82520d848eb04837
+SHA1: 6341c0428818ad6ca9012c603f1ae609175d0de5
+SHA256: abe23a916e7524a55a82c40250034c90339664b627a3ff6bc8249edbb3b42e3b
+SHA512: 95268035889ad37a44c6f7afe87c641afeda85dbefe250b9ad1d43b7a718ec3c61b8b3b95b4aae4f33a0500f0ecc9dca94b68227b9ae8d3833e4491e0008637a
+
+Package: elvish
+Architecture: aarch64
+Installed-Size: 7812
+Maintainer: @termux
+Version: 0.21.0-1
+Homepage: https://github.com/elves/elvish
+Description: A friendly and expressive Unix shell
+Filename: dists/uncode/main/binary-aarch64/elvish_0.21.0-1_aarch64.deb
+Size: 2063616
+MD5Sum: 8d0911da872089be7619b33e07d4927c
+SHA1: f3ba6553a45d5e9e9f42f1f48695c77211049525
+SHA256: 797a638c750d8d461f321268436b863e25051b99938928edf5292a9a6f607cb3
+SHA512: c900c60f1a4de4f6dc8a9dc7502c3caaa16901964fd9caabf82a66279e57375610af8e948c7a43de65ec16c440fb35b0eeccf577b821157c4b7700e6b6f3eb16
+
+Package: emmylua-ls
+Architecture: aarch64
+Installed-Size: 47664
+Maintainer: Steven Xu @stevenxxiu
+Version: 0.23.2
+Homepage: https://github.com/EmmyLuaLs/emmylua-analyzer-rust
+Description: Emmy Lua Language Server coded in Rust
+Filename: dists/uncode/main/binary-aarch64/emmylua-ls_0.23.2_aarch64.deb
+Size: 13552912
+MD5Sum: 3d7225a8bc5dd47986cb71bf9147d31e
+SHA1: 6870f3fc327ee5d40c22ad10e07553788b023855
+SHA256: f4c3e61c2282be893c0ac8df907ddca68e1b69d01199131488d7c88343c223ab
+SHA512: 4c9ead75a0a21fa336ac260329eb55bfe7c374a12af25c9a17d660c9792be2ba24ff0b87ba9844ab3ff54b5280682206db7907fc3007e3d554c9f538eb234ab8
 
 Package: hello
 Version: 8.7.1-1
@@ -377,56 +242,9 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 896
-MD5Sum: b0f4087f3935f42d6a8228d03888fd93
-SHA1: a975ed993556ed67e8e0832b3042ad524e5fa99f
-SHA256: 960c9a900cb9011d93e634552c10554d072ed747e714e9c95a8afbc9ee2055c6
-SHA512: 11abf2cc9d1e03f7f4673e9b1c0bdfa9f1948e37a52a4491a5a1c2e4208a79872398a5042aae2fcce2b099decb228e3cb737b9d7dd051d268a04d70af807fb44
-
-Package: libtiff-static
-Architecture: aarch64
-Installed-Size: 696
-Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Static libraries for libtiff
-Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
-Size: 135260
-MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
-SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
-SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
-SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
-
-Package: libtiff-utils
-Architecture: aarch64
-Installed-Size: 800
-Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Tools for working with tiff files
-Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
-Size: 255964
-MD5Sum: a0a56110c08879f75be05ad601a6e6cc
-SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
-SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
-SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
-
-Package: libtiff
-Architecture: aarch64
-Installed-Size: 6416
-Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Breaks: libtiff-dev
-Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
-Replaces: libtiff-dev
-Description: Support for the Tag Image File Format (TIFF) for storing image data
-Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
-Size: 821104
-MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
-SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
-SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
-SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+Size: 892
+MD5Sum: c1e16146a08ade0115a93f32a7955f25
+SHA1: 8bd285b22bf4b76e8b34f3b2573e33c2a46ec179
+SHA256: 1cc52734fa41bdc1cddec449ab466138322a30e1d95414e2079031e9369e8134
+SHA512: ac142ed16567b0bce010a52257711bfc9d8e90757defe5595d8a71d47206ce37a95228519ea5b68ff48ab798c0bc9f35fea994f3e943797849507bc3b60be77c
 
