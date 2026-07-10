@@ -1,310 +1,406 @@
-Package: flatbuffers-static
+Package: gdbm-static
 Architecture: aarch64
-Installed-Size: 1180
+Installed-Size: 188
 Maintainer: @termux
-Version: 25.12.19-2026-02-06-03fffb2-1
-Homepage: https://github.com/google/flatbuffers
-Depends: flatbuffers (= 25.12.19-2026-02-06-03fffb2-1)
-Description: Static libraries for flatbuffers
-Filename: dists/uncode/main/binary-aarch64/flatbuffers-static_25.12.19-2026-02-06-03fffb2-1_aarch64.deb
-Size: 172972
-MD5Sum: a46cec618a489666acc5237d893eacb3
-SHA1: d9f6d383d41d0b50bce5c3561f1c3c27b2c1e4e4
-SHA256: 6258069a58979174a4378cfc6830a334768b8f98b25da338ffc7602b36da798a
-SHA512: 001916dda0245d6c56751cecb6d055e0054ce7deabc71fd28caeeb2949ce6d8b3a9f63ba7f3afa24d8c8ed0c26836911442579978cd8656dddb540175e8a29a9
+Version: 1.26-1
+Homepage: https://www.gnu.org.ua/software/gdbm/
+Depends: gdbm (= 1.26-1)
+Description: Static libraries for gdbm
+Filename: dists/uncode/main/binary-aarch64/gdbm-static_1.26-1_aarch64.deb
+Size: 32016
+MD5Sum: 6fcdf704b6aebee868df7a14bd821962
+SHA1: 40ac6bc63080f445958c5931218e93b37f2806d1
+SHA256: ab6aea4ca878b542f274737a05718c0737e5d809b4cd568aa8f30cd84249125b
+SHA512: e3f6ae75c14e56c7a33118805299d56ddac7fc253083e38a07adb35f8cbaad6be0e4f00ee158a55391669ec11eb15a6c6a4e2658b7679f934f3f54ebf72f4781
 
-Package: flatbuffers
+Package: gdbm
 Architecture: aarch64
-Installed-Size: 4632
+Installed-Size: 584
 Maintainer: @termux
-Version: 25.12.19-2026-02-06-03fffb2-1
-Homepage: https://github.com/google/flatbuffers
+Version: 1.26-1
+Homepage: https://www.gnu.org.ua/software/gdbm/
+Breaks: gdbm-dev
+Depends: readline
+Replaces: gdbm-dev
+Description: Library of database functions that use extensible hashing
+Filename: dists/uncode/main/binary-aarch64/gdbm_1.26-1_aarch64.deb
+Size: 149208
+MD5Sum: 966fbb2dc4743739076a892f9928eac2
+SHA1: b1ee777204171f9008c8f65df14a4467a67739a9
+SHA256: 917c36ea62c060796224d45c4f06e99f0d885852e8b45c9fe0f320502462d5f5
+SHA512: 75d77accba4dfd7714dda12e53bf74eef0e027719f3b575a21b26d0f0a347d24d7a9ab19ece7f64f72eb86fb78a287929eb52438c54e3913143a6a02f8a4cc3e
+
+Package: gdu
+Architecture: aarch64
+Installed-Size: 21800
+Maintainer: @termux
+Version: 5.36.1
+Homepage: https://github.com/dundee/gdu
+Description: Fast disk usage analyzer with console interface written in Go
+Filename: dists/uncode/main/binary-aarch64/gdu_5.36.1_aarch64.deb
+Size: 5717940
+MD5Sum: 50115ca3e9f1595e1f4842ebabe28e6e
+SHA1: 40d05d8c4a10f578c42e07020b08e190a95da2bd
+SHA256: 9a12164ca61477a76b248e2ccfaac8c6855b71aa983bfe57af36949abe835684
+SHA512: d7b199cfd1fa05445fad069f8fd7c6f7c7ea9af5d3a8ba342cc5f503e917083ed7913f6cbc76669495e7cd19cdd33328b5c3500ab1d0a5a8c5f579a3ceb7cb37
+
+Package: geckodriver
+Architecture: aarch64
+Installed-Size: 4756
+Maintainer: @termux
+Version: 0.37.0
+Homepage: https://github.com/mozilla/geckodriver
+Recommends: firefox
+Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
+Filename: dists/uncode/main/binary-aarch64/geckodriver_0.37.0_aarch64.deb
+Size: 1432564
+MD5Sum: 117c231a94ecb2bd8b58248d72096a57
+SHA1: ca30b0d15823d37eab2b6db45633bcaeea5a6105
+SHA256: 46bc719e9df06f0c890bd8e9f10a1f6cafa59bd1f347cfa45c290846e8e52410
+SHA512: dd875af1bf9c289f5121c47238d505b3f3bbb62875a2ac812da121dbc1d2253cccd4e1102fea1ff6e8c04db6b06d84cb54eddcc36fb7d58ba69758558c701b8f
+
+Package: gecode-static
+Architecture: aarch64
+Installed-Size: 35976
+Maintainer: @termux
+Version: 6.2.0-1
+Homepage: https://github.com/Gecode/gecode
+Depends: gecode (= 6.2.0-1)
+Description: Static libraries for gecode
+Filename: dists/uncode/main/binary-aarch64/gecode-static_6.2.0-1_aarch64.deb
+Size: 2928680
+MD5Sum: ba52479aa6fbf11ed6d71023039afc9d
+SHA1: 12df74e3fe010a730b601b09d669f5f6ddadfb34
+SHA256: 0325e88044cb202c40bb68ac67a936fb10993a5a4ac2122d0b112cb004ab3209
+SHA512: 40ef9f43214c643383caf7ba3b6d2892e5875ef2f2dd1150bef363daf4c93e95eb0aafdf5226ae5820132e85cb0e6e8751679262789221b6d7c9652dc630b488
+
+Package: gecode
+Architecture: aarch64
+Installed-Size: 18024
+Maintainer: @termux
+Version: 6.2.0-1
+Homepage: https://github.com/Gecode/gecode
 Depends: libc++
-Description: Memory Efficient Serialization Library
-Filename: dists/uncode/main/binary-aarch64/flatbuffers_25.12.19-2026-02-06-03fffb2-1_aarch64.deb
-Size: 1053772
-MD5Sum: 2826c73f1e2443399dd71b20e4ed11a9
-SHA1: a218c98cb18a120e6b5d4410f5c64dc7e7d41cb7
-SHA256: 2416dc23c9c488934f19e516c06299409dd6a8e2f03caae8dcda6805c5be64e7
-SHA512: b40fa73f0f511a6312568d8ca1fc2af1519da0cca4840a582f1af4dc6aed56e2c41ac9d45b356e9a1c508d00f92546c4d4d9e787c273e67a16e2d4ac9a15a805
+Description: Generic Constraint Development Environment
+Filename: dists/uncode/main/binary-aarch64/gecode_6.2.0-1_aarch64.deb
+Size: 2163584
+MD5Sum: eedb67078351ae4246120039b7650bcd
+SHA1: 16457b7e54800d9e0813755142422b2f3ce4e785
+SHA256: 3278d54f313c8681cd86b9157b63c7ae5edb2ba1de5c2108bdcbb38b3dc6a2ef
+SHA512: 7cd84f15c64627b376e24d5768a3fd2cc57959e087aed0d217c33cc57bb36431baae58f8bdacd6ee44204f56301ba3a972982bafc7eb4e04e78d86b6a47dab28
 
-Package: flyctl
+Package: gengetopt
 Architecture: aarch64
-Installed-Size: 81608
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Version: 0.4.66
-Homepage: https://fly.io
-Description: Command line tools for fly.io services
-Filename: dists/uncode/main/binary-aarch64/flyctl_0.4.66_aarch64.deb
-Size: 17013708
-MD5Sum: e897be9f5ee8e56bdd101e13522d7f92
-SHA1: 16103ecde4a48b019c86f9446497d6fb42aa9c60
-SHA256: 04173cb26751719c69666c796f4bde94d14381f9a1cbeee81c1a15783870e2cf
-SHA512: 73f79bb656c20b136eb0584887b575f7495365fd77edc6ae00b2954ba26ab3795e0401c1b5c9b61839994c78a5aaa1dd7c522916b59026d895a9a814e69183d8
-
-Package: fm
-Architecture: aarch64
-Installed-Size: 13108
+Installed-Size: 988
 Maintainer: @termux
-Version: 1.2.0
-Homepage: https://github.com/knipferrc/fm
-Description: A terminal based file manager
-Filename: dists/uncode/main/binary-aarch64/fm_1.2.0_aarch64.deb
-Size: 3046448
-MD5Sum: ed111737f50d46d673b1bc9d44b44d0e
-SHA1: 460a8a009021765f98bc1cda5743dbda7591ca5b
-SHA256: 45fa7189112242d041c0ba9c1ad238767b4ed37876fe615a24f35eb901e08f9a
-SHA512: a79ca17c72dd26c6d0a851cba86c2e0d60c7fe535fcd73f2312212dfcb9c87bb51402f61036f0fcf0635e1b929c48984d15c21292309c8955c6baf7f7a726e18
-
-Package: fmt
-Architecture: aarch64
-Installed-Size: 824
-Maintainer: @termux
-Version: 1:11.2.0
-Homepage: https://fmt.dev/latest/index.html
+Version: 2.23-4
+Homepage: https://www.gnu.org/software/gengetopt/
 Depends: libc++
-Description: Open-source formatting library for C++
-Filename: dists/uncode/main/binary-aarch64/fmt_1:11.2.0_aarch64.deb
-Size: 168396
-MD5Sum: 0b9bc45de936b22c71184dee0959d7e7
-SHA1: f48aaf1d43b465793d5ca8a7ecf68a5ed19cdf3c
-SHA256: 735519ed25562992ad0240af470611d0a7f06e9cd6116c2803e3ac426e1b85ff
-SHA512: fd55203c212c6526ab152029cacac6233632eccd242564068633e046eaffb5a24198e338af3b0fe8978a4b40388d748d0dc07c75510194fbcab33658f5b83b1a
+Description: gengetopt is a tool to write command line option parsing code for C programs
+Filename: dists/uncode/main/binary-aarch64/gengetopt_2.23-4_aarch64.deb
+Size: 190100
+MD5Sum: 28dbc064edd57ddbb4a376df4ecad37a
+SHA1: dcd943e5b3d9a9ba19dbdbc277b892fbbddd88f4
+SHA256: 5c46d3ff1ff17edc399a57dd11e26001705e01602098be31b99e5a3f745df9c4
+SHA512: ef6cb5a11984816c234afe6f70a8b85032301e6b246fc0969a45dd16101edd9f4c3cd24f67c49bdf5ee43fd6331b277e2393cf6a009a027ddfd8da6baf9c2eed
 
-Package: fortune
+Package: geographiclib
 Architecture: aarch64
-Installed-Size: 2600
+Installed-Size: 3476
 Maintainer: @termux
-Version: 1.2-2
-Homepage: https://www.fefe.de/fortune/
-Description: Revealer of fortunes
-Filename: dists/uncode/main/binary-aarch64/fortune_1.2-2_aarch64.deb
-Size: 817728
-MD5Sum: 995b440c3ccbfe369a947a28d3048818
-SHA1: 61d20a15ad7ebabefe722ab0c2040faa4fc9b0da
-SHA256: 83386c8846b4f13b56f44b47949f2a7c656a522a25212b5c1744102b7de32fd4
-SHA512: 6ae32b9a1e63a4a559496a2924134fab0bdef7c9c42c1dced57c34eba3bafd852deca8516e4229048965257378657680ccad471dceaeef2d1e760b4a9f5199e3
-
-Package: foundry
-Architecture: aarch64
-Installed-Size: 177068
-Maintainer: @termux
-Version: 1.7.1-1
-Homepage: https://github.com/foundry-rs/foundry
-Depends: libiconv, ca-certificates, zlib, openssl, libssh2, pcre2, libgit2
-Description: A blazing fast, portable and modular toolkit for Ethereum application development
-Filename: dists/uncode/main/binary-aarch64/foundry_1.7.1-1_aarch64.deb
-Size: 49357640
-MD5Sum: ee762d4adeb1cf8b7d9f79bab9bc7454
-SHA1: bf3ccfd10ad178b505b349649ff0a2ed81fff3b0
-SHA256: 5bc165b44b900ea66f0d55f9efaa9012e9a52ab032fb323bfc07bfce17861a3f
-SHA512: 91593d0f1e4bcb85d0cebe43ec7f0690f91d73fb878fff921e9603115c579be4fe44ab97e0084f70ae60fb42d80e0a71f9756527474e34190eb3b868c6a67b73
-
-Package: freecolor
-Architecture: aarch64
-Installed-Size: 68
-Maintainer: @termux
-Version: 0.9.3-1
-Homepage: http://rkeene.org/oss/freecolor/
-Description: Freecolor is a replacement for Linux that displays free memory graphically
-Filename: dists/uncode/main/binary-aarch64/freecolor_0.9.3-1_aarch64.deb
-Size: 5632
-MD5Sum: c0e8d229ca97db972bd3fc7515fda38e
-SHA1: f137dcee2dae06992b2a3d85de5ac89af9a1d170
-SHA256: b99c6de592f01f90ca3cd4bfbba87b8f699b2d2b4867a083ae651caa7b16c30f
-SHA512: 1dc53e77cd808372c8fa6363c5ba833cc99ca7320a6dcc365947f8b1291488a06daaf1dc2334023067f6a7d0c4025cff287163e6658dbde8e2085adcbf3f4ad3
-
-Package: freeimage-static
-Architecture: aarch64
-Installed-Size: 11628
-Maintainer: @termux
-Version: 3.18.0-7
-Homepage: https://freeimage.sourceforge.io
-Depends: freeimage (= 3.18.0-7)
-Description: Static libraries for freeimage
-Filename: dists/uncode/main/binary-aarch64/freeimage-static_3.18.0-7_aarch64.deb
-Size: 2168816
-MD5Sum: c1b2fed434c1ce56a078475bccc1ca5f
-SHA1: b56da4a78b5764817edde006db35073127a26215
-SHA256: 73bc2816111bc2d8ee4730641f218c76b120fb77a06aa6ef12d1b13b64cf5d6f
-SHA512: d3f5b2d65cc3a51e9ec19528e3b1b4e1bffc931c7ac494db96d3ff3d4fda9885b15d55cf7e40b5cfd528ffe60fc623e334476d6030e78fabf095ceaa905802d7
-
-Package: freeimage
-Architecture: aarch64
-Installed-Size: 7060
-Maintainer: @termux
-Version: 3.18.0-7
-Homepage: https://freeimage.sourceforge.io
+Version: 2.7
+Homepage: https://geographiclib.sourceforge.io
 Depends: libc++
-Description: The library project for developers who would like to support popular graphics image formats
-Filename: dists/uncode/main/binary-aarch64/freeimage_3.18.0-7_aarch64.deb
-Size: 1836744
-MD5Sum: aa7bfd30038a6755c442ece26ac532d0
-SHA1: 79997ad3f784a69106d1d96318c843e2b26b1798
-SHA256: ce7d1b05a35038593d179ca35a72f6125abffca3df8db76dc1e80185ffd125e8
-SHA512: d46b3f7fd7f0e24a28e877d66686cb85d3f49497ff3796401584620e6237e94d3a83a6e1dc5c2436e3b3462c336d2aa4a6bea4869265a4ba290790ca81f45c9e
+Description: Utilities and C++ library to solve some geodesic problems
+Filename: dists/uncode/main/binary-aarch64/geographiclib_2.7_aarch64.deb
+Size: 619000
+MD5Sum: f93020343b417e9ab34f0f799570e7e8
+SHA1: a603fb38a56cf9feded01ea8257e2307411b8c60
+SHA256: 47b5c34ee96c75b948d52a857e1ea48f5b33630e970f3a22d1219948ab93f303
+SHA512: 2ccc0bdef10603d577e120bed731522bbe1f3e102997cd090351b7bf78698e176b36d1f2f4fa59c9db7958f52079ceb084703e9863f4bd59307a1e3d4edf8f1d
 
-Package: fresh-editor
+Package: germanium
 Architecture: aarch64
-Installed-Size: 37376
+Installed-Size: 7124
 Maintainer: @termux
-Version: 0.4.2
-Homepage: https://getfresh.dev/
-Description: Text editor for your terminal: easy, powerful and fast
-Filename: dists/uncode/main/binary-aarch64/fresh-editor_0.4.2_aarch64.deb
-Size: 9527632
-MD5Sum: 467ef8d57eaf07d22e9390116f68710a
-SHA1: 5383a54b658eb1b5e6983556de751b20599f8194
-SHA256: 03f53040f664665f78f7c65d351f97d0a2994c0d3755d6ae44b720d54da8d479
-SHA512: ea4cb665556d10c68d65866f8fbfe793d25f060b6e32d1018a72adc8327366fe448620053c47e72803ef22e940261d453853f1bef3b4a54a548dc8a3bd6afe13
+Version: 1.2.3-3
+Homepage: https://github.com/matsuyoshi30/germanium
+Description: Generate image from source code
+Filename: dists/uncode/main/binary-aarch64/germanium_1.2.3-3_aarch64.deb
+Size: 1882940
+MD5Sum: 0badc6fc7b1d5fe32f48e288dfe80c82
+SHA1: 7caa2c7668a8dbadc4d9e2abd0ac2ea9a493105b
+SHA256: 4a09428a9250d678be0d73c9ec453843e11b0f1e02e3ee3f7e95b9e78f84e51b
+SHA512: 83eede3f93793fc920ec4c5277beceff8be912a8b3cda99b205a09f96fab94a2a70f192d9ea9eaba170fba5e01e7016e5e133a74dda1aa077d7adf1f6bf619d7
 
-Package: frp
+Package: getconf
 Architecture: aarch64
-Installed-Size: 37312
-Maintainer: 2096779623 <admin@utermux.dev>
-Version: 0.69.1
-Homepage: https://github.com/fatedier/frp
-Breaks: frpc, frps
-Replaces: frpc, frps
-Description: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet
-Filename: dists/uncode/main/binary-aarch64/frp_0.69.1_aarch64.deb
-Size: 9535472
-MD5Sum: a6939cb42d04ffbe565a3719760b7bd5
-SHA1: 8a7607fc90806cb66fd9fda54ce383aaa8e2d730
-SHA256: 15986575bbf070d5830c21e0dfe15738c9a6de21547b20eecb3f7097b7de4861
-SHA512: fcb85c97046f89e15c2fecae2d01c2e710c30505887f4d153c6d5af84853393e0a8f39db264ff0a459f4a3f0a8040311a0703e50c00a6bc46945bf7940a9d84d
-
-Package: fsmon
-Architecture: aarch64
-Installed-Size: 84
+Installed-Size: 72
 Maintainer: @termux
-Version: 1.8.8-1
-Homepage: https://github.com/nowsecure/fsmon
-Description: Filesystem monitor with fanotify and inotify backends
-Filename: dists/uncode/main/binary-aarch64/fsmon_1.8.8-1_aarch64.deb
-Size: 10216
-MD5Sum: a2cdd40113f18feefb379cf5fb046f3f
-SHA1: b854a36a1d318fd9e56f5dbdab901ddd4b772857
-SHA256: ad700fd989e379bd0fd2646abd0e68ddf3632dbddb2046b12fc8f10191bce292
-SHA512: 5c02c7b039cd174ce865f35d8bafff9b9c4932a37fd3bcc97ea4ad25ffdefbe7b2fae9bf1252d52966edec76b66ebe62797ac3c51ad4988ae647159eb895b350
+Version: 0.6-1
+Homepage: https://github.com/termux/getconf
+Description: Utility to print configuration values
+Filename: dists/uncode/main/binary-aarch64/getconf_0.6-1_aarch64.deb
+Size: 6588
+MD5Sum: 680c6def44aead27900ccc1588f8da27
+SHA1: b2bb7c9fbd64409b8974f9e3ed20210e28cd028e
+SHA256: 926c4448a9319448240c67d9038c0fd4d8938d7e3c57d3d219422f706e4cbc94
+SHA512: 80403e98d4eefbc02eb7c4e30b4d63c8e831922915d9751721796a6d68c4cfd9759838c303efdbdffbdf9f32f1bc4d1ff17268d7b826ca190fea334df99c0e50
 
-Package: fx
+Package: geth-utils
 Architecture: aarch64
-Installed-Size: 13212
-Maintainer: @flosnvjx
-Version: 39.2.0
-Homepage: https://github.com/antonmedv/fx
-Description: Interactive JSON viewer on your terminal
-Filename: dists/uncode/main/binary-aarch64/fx_39.2.0_aarch64.deb
-Size: 3115000
-MD5Sum: 1a9e4303f40892e3cf2fb550be65ec81
-SHA1: 7db0e0ec59c7c46ee4d21691636f38be76dab72f
-SHA256: 908f75b8199ea5b0fa6495f4d14b1044b8a424301f66c2e390d1097aefdcfca9
-SHA512: a9b2da5ddee206f81e806388dcd3aebdfa78ca73475e36e46e9294d9bde77f1751debb901a6ca49362b7fcf19813890e190044627455bf98cb0cd10eb9c78fb1
-
-Package: fzf
-Architecture: aarch64
-Installed-Size: 5196
+Installed-Size: 173732
 Maintainer: @termux
-Version: 0.73.1
-Homepage: https://junegunn.github.io/fzf/
-Depends: bash, findutils, ncurses-utils
-Suggests: tmux
-Description: Command-line fuzzy finder
-Filename: dists/uncode/main/binary-aarch64/fzf_0.73.1_aarch64.deb
-Size: 1391616
-MD5Sum: 62ac047adfc03e435af8ae700a905dbd
-SHA1: 33b50aa5bfcd45f42489ae048220ef285c983598
-SHA256: 5b2ab13e1f4abffb25491a3770eab216f63a4e3bcf6df15e8509bb1528a75717
-SHA512: ee93bd2c4d40cd7b67e39baaca07403de57bd894347f25a6871ed9ef993a078e0a027045e408b7175fae6f846d840cd2d14c13064b12fdd18d8f46cf5c06f504
+Version: 1.17.4
+Homepage: https://geth.ethereum.org/
+Depends: geth (= 1.17.4)
+Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
+Filename: dists/uncode/main/binary-aarch64/geth-utils_1.17.4_aarch64.deb
+Size: 49505264
+MD5Sum: a5814bff9f27a8d52398047f8ddeca52
+SHA1: 80e0722398295900e1b7b72b245579c3f0017880
+SHA256: dae746aa4225595bb19f58e7ce00f0f041bb5d1c524d9c4e96c796df1482c813
+SHA512: b81bc484a866c985c14c1e6f483c466b3e0ad28db8acd1416e6e1159d4757bb294450bb8b5d6aaf4e56d43841e723b5b6eb18d3eccecf1c0ed3738ff9c33cc24
 
-Package: fzy
+Package: geth
 Architecture: aarch64
-Installed-Size: 92
-Maintainer: Krishna Kanhaiya @kcubeterm
-Version: 1.1-1
-Homepage: https://github.com/jhawthorn/fzy
-Description: A simple, fast fuzzy finder for the terminal
-Filename: dists/uncode/main/binary-aarch64/fzy_1.1-1_aarch64.deb
-Size: 12768
-MD5Sum: 366dfc417db95160728d8e34cff18b2e
-SHA1: e6eb4059c4998abe5e2d686097deabb1e5651747
-SHA256: 9cf4aadea450f6eb52ce1791cbf91cec62f0e75340bd9ac0a6b337b868de2ead
-SHA512: 9be78f1f61a7234b45c7f6c65991b918dea32cb2cec7c2ef4eb5c050ff4280dc7a4aeb580a9447bf442c85fabd13675eacac9eb1344492e7b85ea80cc8112cf5
-
-Package: game-music-emu-static
-Architecture: aarch64
-Installed-Size: 652
+Installed-Size: 55936
 Maintainer: @termux
-Version: 0.6.5
-Homepage: https://bitbucket.org/mpyne/game-music-emu/wiki/Home
-Depends: game-music-emu (= 0.6.5)
-Description: Static libraries for game-music-emu
-Filename: dists/uncode/main/binary-aarch64/game-music-emu-static_0.6.5_aarch64.deb
-Size: 156000
-MD5Sum: cf74a7eca5f59924738f93b2d42e5373
-SHA1: 1b24b5b05883ec4c52a647304acbc1cc92657cc0
-SHA256: 29c935eb0d81983176b35a97c7e6d9289f8789d49318d3875c942109ee96abc7
-SHA512: 41f5404585e36b3279f524fe4cd58c18d6efd3ebb0ac27c770df56c5f8b12d8d96edef2e9c43ff91a4c2bc0e068e191100cfdb3544da4074ef3e14345fe3f510
+Version: 1.17.4
+Homepage: https://geth.ethereum.org/
+Suggests: geth-utils
+Description: Go implementation of the Ethereum protocol
+Filename: dists/uncode/main/binary-aarch64/geth_1.17.4_aarch64.deb
+Size: 14058184
+MD5Sum: eb61406f28f327492f361d8c37ec788b
+SHA1: e757d73db70ae742fc8eb4a563c563da424d8405
+SHA256: 45336b1181f28696782d7a788019718c7631a04ab4c01328320083953b64ffd0
+SHA512: bb18fa463ce5f0f9f862c20a8d2ff9f949aae69aa01116cc8d1ba80f7755811858ad2b0be1f4c12ab9f67d4f767c03fd555497e7f15d774201fbdb6b8adaa7de
 
-Package: game-music-emu
+Package: gflags-static
 Architecture: aarch64
-Installed-Size: 380
-Maintainer: @termux
-Version: 0.6.5
-Homepage: https://bitbucket.org/mpyne/game-music-emu/wiki/Home
-Depends: libc++, zlib
-Description: A collection of video game music file emulators
-Filename: dists/uncode/main/binary-aarch64/game-music-emu_0.6.5_aarch64.deb
-Size: 127320
-MD5Sum: af966912ac767af738449de3f55df82b
-SHA1: aa527cbcf7ef0ab63c99bc7b45d32d79dea2c787
-SHA256: 01b80d328c7660649b8092782a666c126b0284d88c577e3081228c3643f4f2f0
-SHA512: a793f44d2615e8c185233ca60818023609cca43a109ec669408fcde74734a09804d2fe941edc32a98071836042c4dde760fb5c9f62bf426ddff6b1a4a34fd0c7
-
-Package: garage
-Architecture: aarch64
-Installed-Size: 38908
+Installed-Size: 520
 Maintainer: @termux
 Version: 2.3.0
-Homepage: https://garagehq.deuxfleurs.fr/
-Depends: openssl-tool
-Description: S3-compatible object store for small self-hosted geo-distributed deployments
-Filename: dists/uncode/main/binary-aarch64/garage_2.3.0_aarch64.deb
-Size: 8464548
-MD5Sum: 18d5f5a732ce96140e288a6d32d5f754
-SHA1: b464d068019708fd43bd317a3ae16a09018db173
-SHA256: a7e115097a6bd1bf89a86837c34c6753077faf1d32d7e350d4c8d4a0ae2e1fb9
-SHA512: b7b0cb0c6f8ba05daaa7b5e7f39a653a75424c6bc574ac5bc317ad4b5b2d21067a3074a0a43ead7b63a867ae7906da4344e08dd093fb4cea44d4f64fe5f5a55f
+Homepage: https://github.com/gflags/gflags
+Depends: gflags (= 2.3.0)
+Description: Static libraries for gflags
+Filename: dists/uncode/main/binary-aarch64/gflags-static_2.3.0_aarch64.deb
+Size: 60008
+MD5Sum: cfabb7f4594ba3244ab6b62adfc077a3
+SHA1: 77fefaa1fda9830b99012ac67856dc1d46260efa
+SHA256: e1ad5a1c77ace45309d23ce7645fd857a044e0d21fcfcc40b346a280f2192295
+SHA512: 5453f8b63bc3fb1cfbdc6f88b9b5fb93baeda073c831011dc5210b5647c729b989971bafca12b50b34bd4e2a7ccc448938445967438e6e6a2e5bbf0b7193d1b9
 
-Package: gbt
+Package: gflags
 Architecture: aarch64
-Installed-Size: 2992
+Installed-Size: 448
 Maintainer: @termux
-Version: 2.0.0-6
-Homepage: https://github.com/jtyr/gbt
-Description: Highly configurable prompt builder for Bash and ZSH written in Go
-Filename: dists/uncode/main/binary-aarch64/gbt_2.0.0-6_aarch64.deb
-Size: 784604
-MD5Sum: 408d837f2923c800f2bd0ad65cd6e673
-SHA1: 83cc68ef0d545b88f67318cd9b72b935ffcb5866
-SHA256: 78a87cc71096145e92d97b2c58a610f1f042bf7a96acb299a84d6e98d90d3d95
-SHA512: cf7af2aa75df9c0e6728db06896784cd7edda52a935687079d84816bf4ddb6af08f479ea0f175b8f84dc12dbb3fc79b9d6ca66a08f271c424882b71be550c115
+Version: 2.3.0
+Homepage: https://github.com/gflags/gflags
+Breaks: gflags-dev
+Depends: libc++
+Replaces: gflags-dev
+Description: A C++ library that implements commandline flags processing
+Filename: dists/uncode/main/binary-aarch64/gflags_2.3.0_aarch64.deb
+Size: 79416
+MD5Sum: 6ac64c7eb7ef19f4cfb0aa8b99aeb25f
+SHA1: 17b1a51d8594fa7fb8ff140cb81750b385f0c4a1
+SHA256: 91deea43f60bf48fbac6afd0f8a216544bb6a71b92f30374d0eaa09a251d4f23
+SHA512: 017bd43a9a100e52de7a69f7e14ea3b4d6132307a5fdac2b5366495f13db5e114ff71b3bae9d076e36986bee67e6f479ed9d1ebafddcc1b2bc7092313d7d268f
 
-Package: gcal
+Package: gh
 Architecture: aarch64
-Installed-Size: 2788
+Installed-Size: 41848
+Maintainer: Krishna kanhaiya @kcubeterm
+Version: 2.96.0
+Homepage: https://cli.github.com/
+Recommends: openssh
+Description: GitHub’s official command line tool
+Filename: dists/uncode/main/binary-aarch64/gh_2.96.0_aarch64.deb
+Size: 9652888
+MD5Sum: 55500fd6a374d578c88f3c9f0fed19c7
+SHA1: e149a96c1844ced33eaf961992ec783b17410977
+SHA256: 2426e6b74d599a770dfbefd58ba333bcade25e4319487c1324de5d399d4bd7d6
+SHA512: 3b8037df209664f9a9905252e6a3d448f5273c67d8ed7be60574b7d3ade513237258ebc87125cbad8e7491979e5df18427433d6c0ef3c4f252a7daef30da606b
+
+Package: giflib-static
+Architecture: aarch64
+Installed-Size: 76
 Maintainer: @termux
-Version: 4.1-4
-Homepage: https://www.gnu.org/software/gcal/
-Depends: ncurses
-Description: Program for calculating and printing calendars
-Filename: dists/uncode/main/binary-aarch64/gcal_4.1-4_aarch64.deb
-Size: 548276
-MD5Sum: 8d846a936b5e64a7762436d7ee871fc9
-SHA1: adf592309d9b7a2246834a13e8eb4e417b472494
-SHA256: 7a15abbca03b0db1fe2fb4e4b90ea3fc473b2aac6d5e53aefaa02bd32e6e2a01
-SHA512: 56431d0471e01ae344cff0270035baa38f73409e1a17db64c86e742dddc7a1b4ac445c9256dc500ef9f7e44e1995d25d9c0da9b191a6cec4cfb84c5fbaa237f2
+Version: 5.2.2-2
+Homepage: https://giflib.sourceforge.net/
+Depends: giflib (= 5.2.2-2)
+Description: Static libraries for giflib
+Filename: dists/uncode/main/binary-aarch64/giflib-static_5.2.2-2_aarch64.deb
+Size: 15020
+MD5Sum: 59b75aad344479c34ddc978f2bae6024
+SHA1: 95a0d56345f8384a5f3a60944cdac5ef63eb5f3e
+SHA256: 235589333eefda812aaac2e194d3b5c2e92edb874e1cd18fed5054e102580ffc
+SHA512: 0dbb13d6fba6eb0a3c8f5f9502c87fd145c924424d19ea7b16e0b541bd93b6129af62e7a4fc0635ddc82184547c0a0d7ae6329fa0c0ac7c7a575c6043733bc4c
+
+Package: giflib-utils
+Architecture: aarch64
+Installed-Size: 296
+Maintainer: @termux
+Version: 5.2.2-2
+Homepage: https://giflib.sourceforge.net/
+Depends: giflib (= 5.2.2-2)
+Conflicts: giflib (<< 5.1.4-4)
+Description: A set of utilities that comes with giflib package
+Filename: dists/uncode/main/binary-aarch64/giflib-utils_5.2.2-2_aarch64.deb
+Size: 50556
+MD5Sum: d2cfab540b0101101f78a346e5e10183
+SHA1: 3295b9baaa7400b5293bcddee5324d731e791cd4
+SHA256: dd0dec0c01678dbd9f6af44e372dcb63e99844982409f6399b684e406556db70
+SHA512: ce9694f415a43a33623002a37e821e2354633bf0ca918e3bb4ca3995f12807625b81fb7969892d347d3989e74c47d3e1d8b43c34a877a529c7f534617cfd37b1
+
+Package: giflib
+Architecture: aarch64
+Installed-Size: 100
+Maintainer: @termux
+Version: 5.2.2-2
+Homepage: https://giflib.sourceforge.net/
+Breaks: giflib-dev
+Replaces: giflib-dev
+Description: A library for reading and writing gif images
+Filename: dists/uncode/main/binary-aarch64/giflib_5.2.2-2_aarch64.deb
+Size: 18252
+MD5Sum: 19ee933210d5eef5e383a6c883f03d6d
+SHA1: c8df4552b2240f2bfdd4f154fc3503061f30bab6
+SHA256: 937387a9173ec2e8136f6109cb67f922e7a57e9651c4b8430dd7559c72e96b89
+SHA512: be4ef50dd0b252f9ace24af047896342fac01010930772122e3321a06d14137abeb1d21280564d1134369ddb8e2750469dd95d490d48ef8f7d5c22eae99f73a3
+
+Package: gifsicle
+Architecture: aarch64
+Installed-Size: 284
+Maintainer: @termux
+Version: 1.96-1
+Homepage: https://www.lcdf.org/gifsicle/
+Suggests: libx11
+Description: Tool for creating, editing, and getting information about GIF images and animations
+Filename: dists/uncode/main/binary-aarch64/gifsicle_1.96-1_aarch64.deb
+Size: 97028
+MD5Sum: eae097af91af998530d17847fbfb3f4e
+SHA1: ae0cb7636f277c84ff994c92a22d21696668704b
+SHA256: ae017fb4e07a516688b5bcd2ce928e347db72ae37b6e952204e607ee9b9d2d9a
+SHA512: 9429a604880cc87c82e7caa28c7558b31a1b0685e63b0a8cd1e341ebbe70c162d7e84f05322758b3502c1a24fb03e459f7cb090269f5e2ddcbc6d487ceaa4ae8
+
+Package: gifski
+Architecture: aarch64
+Installed-Size: 1316
+Maintainer: @termux
+Version: 1.34.0-1
+Homepage: https://gif.ski/
+Description: GIF encoder based on libimagequant
+Filename: dists/uncode/main/binary-aarch64/gifski_1.34.0-1_aarch64.deb
+Size: 502712
+MD5Sum: 67aba00050d12c1b39b32a7ac09af60b
+SHA1: a952273caadbf197b335cb0c4c62200ccafb5f03
+SHA256: d11eeb230e03a9adf99e815353d948d4e197376a1b3b685256c094981c0d4e18
+SHA512: 519c5e2e2600a39a999457fcae2b8cdeda158129f4713a7d706ad3c6d8d5fb8f66b2cdc35db641c4e506394fe297322ade72572458100a42b4987b1149300d9e
+
+Package: git-credential-manager
+Architecture: aarch64
+Installed-Size: 19040
+Maintainer: @termux
+Version: 2.8.0
+Homepage: https://aka.ms/gcm
+Depends: dotnet-host, dotnet-runtime-10.0
+Description: Cross-platform Git credential storage for multiple hosting providers
+Filename: dists/uncode/main/binary-aarch64/git-credential-manager_2.8.0_aarch64.deb
+Size: 5526872
+MD5Sum: 8f18a18df763b4280721fe0b56747aec
+SHA1: c7b76f7abc3f4c80d63daae839dbc7f7f85d7fac
+SHA256: 7cedba14359b84651a7fe5ebab66a93706dd951ee5afe13dea819e9197985dce
+SHA512: ec57254182840225071dc0b17e3beee5e17a1993dfc3c19e52482b319a38e7ee0c5f71a1e71d2d81734a4e5f1e962a0a1b2fc3b85d2436356cea1a01bb33d3e1
+
+Package: git-lfs
+Architecture: aarch64
+Installed-Size: 13448
+Maintainer: @termux
+Version: 3.7.1
+Homepage: https://git-lfs.github.com/
+Description: Git extension for versioning large files
+Filename: dists/uncode/main/binary-aarch64/git-lfs_3.7.1_aarch64.deb
+Size: 3537660
+MD5Sum: 6cd8bec5419af3c55a155514903cd46f
+SHA1: 39ca3787147351bf22d7ae214ee9a812a8b2988e
+SHA256: c8a8292931f1a1cdadb10614492b9535953a3a87cf748820b4488064f4af9db6
+SHA512: a8d6a75957cf0c4b60ea0489e7a5b5f597b1fe820fd0be8cc4435db8d69d5d443702d2286932cf33bf8fe0640c41ddc3b1c71551710d2ea6101721996e14ade5
+
+Package: git-town
+Architecture: aarch64
+Installed-Size: 23956
+Maintainer: @termux
+Version: 23.0.3
+Homepage: https://www.git-town.com
+Description: Git branches made easy
+Filename: dists/uncode/main/binary-aarch64/git-town_23.0.3_aarch64.deb
+Size: 4710816
+MD5Sum: 999e5a74353467bf3735d638e4cfb2d7
+SHA1: e9e2904bcf9da1679b093de14aeb82de66c97650
+SHA256: 2d757f7740d10d5cf96ddbf3053bfc732d3909113cd18233d2995bd86f94cf06
+SHA512: 2581affe161b897dc64cf5237151b1c48238000341fed081963aa9c9b0b0d3d7fc26a8bf87a14cc9950a40fd35067dd1b29ee1dec231e8c3f03332d2230b98e8
+
+Package: gitoxide
+Architecture: aarch64
+Installed-Size: 27372
+Maintainer: @termux
+Version: 0.55.0
+Homepage: https://github.com/GitoxideLabs/gitoxide
+Depends: resolv-conf
+Description: Rust implementation of Git
+Filename: dists/uncode/main/binary-aarch64/gitoxide_0.55.0_aarch64.deb
+Size: 7112736
+MD5Sum: 2fb878d21d976d7a9f9375524aa29395
+SHA1: ecfd1857f1b60c1411f4be72d089e564e812a84e
+SHA256: 24ecf031ecc21adfd2a1565241211bddd3b25d8f2b52ab1ea12dddc3955c4fcf
+SHA512: ae8b4164bcd8db3c41df73f10fdb4bc33abd7276a4fe52a0e6882ce65618cdfb1df2fed3fe03ee59c3ad3f065a569a22b2f9b1849eaa19d72c3c19f3b75b4066
+
+Package: glab-cli
+Architecture: aarch64
+Installed-Size: 51596
+Maintainer: @termux
+Version: 1.106.0
+Homepage: https://gitlab.com/gitlab-org/cli
+Description: A GitLab CLI tool bringing GitLab to your command line
+Filename: dists/uncode/main/binary-aarch64/glab-cli_1.106.0_aarch64.deb
+Size: 11718352
+MD5Sum: e9b2856329cde3049d4a9fae152848d8
+SHA1: 3df9077cc9a84b2e08e3375914579859b99876cc
+SHA256: f21914a60115a961e93a94e2a671705549e0f0b9e59ea3a284749de3c2b74d0e
+SHA512: e548d0ac41280b4b1228fef20bdf819d158d3e54be32a890b16a34d4e4d9ccf23e71a092b46ef129dde0f0951e387945a74cc0d2e012e9562089fb79a66a7a25
+
+Package: gleam
+Architecture: aarch64
+Installed-Size: 19456
+Maintainer: @termux
+Version: 1.17.0
+Homepage: https://gleam.run
+Depends: erlang
+Suggests: nodejs | nodejs-lts
+Description: A friendly language for building type-safe, scalable systems!
+Filename: dists/uncode/main/binary-aarch64/gleam_1.17.0_aarch64.deb
+Size: 5412912
+MD5Sum: 68e2c5dd158d2eb09fa01445fd2fde11
+SHA1: 596f57853ae228429f0c385484223acaec5fae76
+SHA256: 08b44a58b0266d35ccc08954a7336c45b43b1cec935d2573410fd2270589d8dc
+SHA512: 4068ad10729671f79402a425ec1372aaf68b5836fed491f88a3d5bcbe9194a4ec1daeb8f3f1e8f6c33f57d39bc42fb0e6d699e032a5cd006f0daa270460ad9b0
+
+Package: glm
+Architecture: aarch64
+Installed-Size: 24468
+Maintainer: @termux
+Version: 1.0.3
+Homepage: https://glm.g-truc.net/
+Description: C++ mathematics library for graphics programming
+Filename: dists/uncode/main/binary-aarch64/glm_1.0.3_aarch64.deb
+Size: 3554316
+MD5Sum: 50f2ca82af0c2fbf7530a99a942769e9
+SHA1: 5d29e7a5476cb4d331fcbd78e2407503a69cfe88
+SHA256: 413ac770659f54c1fd98850b1d1cf384a3ef0726ef910b140b67689fa193a03d
+SHA512: b8c9e38babb47b166057262bcd1235d28cdd2f0db9f3020efdd8f13975be622504958fccf898b300fc7e9636ce2b5e55dce669d40c0f711b92f31b6772a6385a
 
 Package: hello
 Version: 8.7.1-1
@@ -319,8 +415,8 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: bbbeb14de6b23d255c66f8093abebee5
-SHA1: 0ee3f9717f92c6ea1d576c28d9668b0f4d699533
-SHA256: 70da6f849cf2eb6d5ba9e0327782a4bf212f25a5872aee420d246cfafe7a2461
-SHA512: 076b3cd319eae05f508f35065271bfde07df6859a3db94e8d561608401531134b0991398ad2efa509769319c7e6c075490065d7fccaf3df77e3610ac383b4d64
+MD5Sum: ec5dcf65bc0593f94ecd15ac8582cf84
+SHA1: 882b6f90ab6b35659be950aaa37a6a87259dc60a
+SHA256: 21a1654a4a027952b727d4e7e243c2675b3b1bc423c625ac53838628ddffabb3
+SHA512: db50b93bfb33807c004c991586b338bc7bdd4529e94e04127735a06820fd18af1efd7fdd9f3a4c0391b671ea432e4696210b1ee055a3ab98352305b085981eee
 
