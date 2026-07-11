@@ -1,406 +1,303 @@
-Package: gdbm-static
+Package: glow
 Architecture: aarch64
-Installed-Size: 188
+Installed-Size: 18168
 Maintainer: @termux
-Version: 1.26-1
-Homepage: https://www.gnu.org.ua/software/gdbm/
-Depends: gdbm (= 1.26-1)
-Description: Static libraries for gdbm
-Filename: dists/uncode/main/binary-aarch64/gdbm-static_1.26-1_aarch64.deb
-Size: 32016
-MD5Sum: 6fcdf704b6aebee868df7a14bd821962
-SHA1: 40ac6bc63080f445958c5931218e93b37f2806d1
-SHA256: ab6aea4ca878b542f274737a05718c0737e5d809b4cd568aa8f30cd84249125b
-SHA512: e3f6ae75c14e56c7a33118805299d56ddac7fc253083e38a07adb35f8cbaad6be0e4f00ee158a55391669ec11eb15a6c6a4e2658b7679f934f3f54ebf72f4781
+Version: 2.1.2
+Homepage: https://github.com/charmbracelet/glow
+Suggests: git
+Description: Render markdown on the CLI, with pizzazz!
+Filename: dists/uncode/main/binary-aarch64/glow_2.1.2_aarch64.deb
+Size: 4388700
+MD5Sum: b1b75e6f8ee735eee619f5a93ef94001
+SHA1: 801ac9745907563d3f6d189b87d7344c325ce6d8
+SHA256: 128efd692aa987401c2b7bdfe371d044677cafa7057432f085c6c0df73c9760c
+SHA512: 03bbb322c589b254e80c07541cc57d1e873890bb678df3c2e0b8ec26cdcdc089b6483f0a17cc032e1c1197cbfdcde02deca67814912d5e640b8de390efecda56
 
-Package: gdbm
+Package: glpk-static
 Architecture: aarch64
-Installed-Size: 584
+Installed-Size: 1772
 Maintainer: @termux
-Version: 1.26-1
-Homepage: https://www.gnu.org.ua/software/gdbm/
-Breaks: gdbm-dev
+Version: 5.0-2
+Homepage: https://www.gnu.org/software/glpk/
+Depends: glpk (= 5.0-2)
+Description: Static libraries for glpk
+Filename: dists/uncode/main/binary-aarch64/glpk-static_5.0-2_aarch64.deb
+Size: 379776
+MD5Sum: cbec0fb46d5c6eabae1a3964bcf62eaa
+SHA1: dec8b4c9e2fb3103380abd2a6ac0a926b41bccea
+SHA256: 7804505d07476d5ccf9475921f9a71c8d93a6f6adefc1abb40a2496ee3d9cb45
+SHA512: 35d173b5ed13cb902b8e7c6be21e3930eb16263768d2666dd3b3a0fca6556565935211e8722050c90868ce0f49925e83ea5690924ce7afb2c3437f7628833f5b
+
+Package: glpk
+Architecture: aarch64
+Installed-Size: 880
+Maintainer: @termux
+Version: 5.0-2
+Homepage: https://www.gnu.org/software/glpk/
+Depends: libgmp
+Description: GNU Linear Programming Kit: solve LP, MIP and other problems
+Filename: dists/uncode/main/binary-aarch64/glpk_5.0-2_aarch64.deb
+Size: 317680
+MD5Sum: 5dca5b346b41c02aff87c1c4d03156cb
+SHA1: 598a523eda1e08628e67fde19ca1923020439d70
+SHA256: 8fae4f4d0f73f3f11e3aeb5e0fde6a2863838eba5c0920f772d07499aed8b817
+SHA512: a2b38a5c497dd4b333e042c4a06999e3d5d9d43ab2857824823ca478a0711fe68ce522be18202adfa024bd897c9051a1b021ed745ee4544d7e0a1e0a2321a75f
+
+Package: gluelang
+Architecture: aarch64
+Installed-Size: 172
+Maintainer: @termux
+Version: 0.2.0-2
+Homepage: https://ryuichiueda.github.io/GlueLang/
+Depends: libc++
+Description: A programming language that has a strong nature to be a glue of commands
+Filename: dists/uncode/main/binary-aarch64/gluelang_0.2.0-2_aarch64.deb
+Size: 41936
+MD5Sum: 58917685518ae32945177962be792a52
+SHA1: d5c253baf3fc004a9913f34f669854fadcb9f36e
+SHA256: e16d16dc8765aa0edb32b591994cdd4bbfe0f381104f237390736a0c9b5fdc1d
+SHA512: 18d8dae1cd134cd8cf6dea68696a0c1b981d334b4169094b47cd5a86969c153790eeb394cf362cdb4b248be103cb17d366d8c6784b8770330e4e6543d87af634
+
+Package: gn
+Architecture: aarch64
+Installed-Size: 2172
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Version: 20260521
+Homepage: https://gn.googlesource.com/gn
+Depends: libc++
+Recommends: ninja
+Description: Meta-build system that generates build files for Ninja
+Filename: dists/uncode/main/binary-aarch64/gn_20260521_aarch64.deb
+Size: 619260
+MD5Sum: 79784d2a4e6803ddd9c5a9e6c57fa00f
+SHA1: 4ba65ea8a2a3b5e1d971eeeef2ba0d923eef76f4
+SHA256: 7f04c275f62e7d1c4d2db8d3d088c82f08062760cbb40723ad098af2a2984959
+SHA512: c9927057dcbba88a11a9970abff05f1fcc04c7e37dc577a22cb40f65a64f32629ca60f7f0dbe051772ee1ee0720b001cf745a27acf10bb6650bde7797e8128ab
+
+Package: gnucap
+Architecture: aarch64
+Installed-Size: 2544
+Maintainer: Henrik Grimler @Grimler91
+Version: 20210107-4
+Homepage: https://www.gnu.org/software/gnucap/gnucap.html
+Breaks: gnucap-dev
+Depends: libc++, readline
+Replaces: gnucap-dev
+Description: The Gnu Circuit Analysis Package
+Filename: dists/uncode/main/binary-aarch64/gnucap_20210107-4_aarch64.deb
+Size: 547280
+MD5Sum: 8dc748f2e0969794dda7c2ef00e03cc5
+SHA1: ebef06ec1b1aa78fa392dce933e6eaadb8a39b2a
+SHA256: 656e46d6aa43e4c0bb3ea1eb87c6f97ea01ecefb4239fa2d043865de379f521a
+SHA512: 1f98843e5bd68ab8419e25dae0f935f13ad8134b45d7d2bb2b57dbab927e0e7f36cc166b053081f9b54da75030f3dfd6837c1d372ae4061e66a66df59627464e
+
+Package: gnuchess
+Architecture: aarch64
+Installed-Size: 480
+Maintainer: @termux
+Version: 6.3.0
+Homepage: https://www.gnu.org/software/chess/
 Depends: readline
-Replaces: gdbm-dev
-Description: Library of database functions that use extensible hashing
-Filename: dists/uncode/main/binary-aarch64/gdbm_1.26-1_aarch64.deb
-Size: 149208
-MD5Sum: 966fbb2dc4743739076a892f9928eac2
-SHA1: b1ee777204171f9008c8f65df14a4467a67739a9
-SHA256: 917c36ea62c060796224d45c4f06e99f0d885852e8b45c9fe0f320502462d5f5
-SHA512: 75d77accba4dfd7714dda12e53bf74eef0e027719f3b575a21b26d0f0a347d24d7a9ab19ece7f64f72eb86fb78a287929eb52438c54e3913143a6a02f8a4cc3e
+Description: Chess-playing program
+Filename: dists/uncode/main/binary-aarch64/gnuchess_6.3.0_aarch64.deb
+Size: 150232
+MD5Sum: 92ef03b50a40cec620fb28abc2a6a11a
+SHA1: 0f775321fcd311ec538bdba12df0a73cb85393dd
+SHA256: c9731f4eb19e0f3389d4963f76cef8c1529eb6da738dded2413076e44b532fe9
+SHA512: c565546e0e289324f4a03222d57b9267a7712d25e9b9da9c6dfccd9726db7f4b33c09b9499c1e85d506fa4c1ec9a2c95360999490064e59fc978c1e1f38f7c26
 
-Package: gdu
+Package: gnugo
 Architecture: aarch64
-Installed-Size: 21800
+Installed-Size: 8356
 Maintainer: @termux
-Version: 5.36.1
-Homepage: https://github.com/dundee/gdu
-Description: Fast disk usage analyzer with console interface written in Go
-Filename: dists/uncode/main/binary-aarch64/gdu_5.36.1_aarch64.deb
-Size: 5717940
-MD5Sum: 50115ca3e9f1595e1f4842ebabe28e6e
-SHA1: 40d05d8c4a10f578c42e07020b08e190a95da2bd
-SHA256: 9a12164ca61477a76b248e2ccfaac8c6855b71aa983bfe57af36949abe835684
-SHA512: d7b199cfd1fa05445fad069f8fd7c6f7c7ea9af5d3a8ba342cc5f503e917083ed7913f6cbc76669495e7cd19cdd33328b5c3500ab1d0a5a8c5f579a3ceb7cb37
+Version: 3.8-6
+Homepage: https://www.gnu.org/software/gnugo/
+Depends: ncurses, readline
+Description: Program that plays the game of Go
+Filename: dists/uncode/main/binary-aarch64/gnugo_3.8-6_aarch64.deb
+Size: 1039328
+MD5Sum: 6539fd78d3998638d97e9e8f0f2a303f
+SHA1: 0172a0ce32ab9f0e27c6e6377fccfbb6b9f20948
+SHA256: 3cdb1dd628c26d4a7a72f2c2685979edb339ea3fc57baf1d54f29fca9fc1bc14
+SHA512: 929a959359b7b79fb7004b979066b0f72e25ac286e7bd389e619a51760e5fdc53e43975c497950a5bdce3922a867d98e5f744170540776bef3de6b4835ecee40
 
-Package: geckodriver
+Package: gnustep-make
 Architecture: aarch64
-Installed-Size: 4756
+Installed-Size: 1296
 Maintainer: @termux
-Version: 0.37.0
-Homepage: https://github.com/mozilla/geckodriver
-Recommends: firefox
-Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
-Filename: dists/uncode/main/binary-aarch64/geckodriver_0.37.0_aarch64.deb
-Size: 1432564
-MD5Sum: 117c231a94ecb2bd8b58248d72096a57
-SHA1: ca30b0d15823d37eab2b6db45633bcaeea5a6105
-SHA256: 46bc719e9df06f0c890bd8e9f10a1f6cafa59bd1f347cfa45c290846e8e52410
-SHA512: dd875af1bf9c289f5121c47238d505b3f3bbb62875a2ac812da121dbc1d2253cccd4e1102fea1ff6e8c04db6b06d84cb54eddcc36fb7d58ba69758558c701b8f
+Version: 2.9.3-1
+Homepage: https://www.gnustep.org
+Depends: libobjc2
+Description: The GNUstep makefile package
+Filename: dists/uncode/main/binary-aarch64/gnustep-make_2.9.3-1_aarch64.deb
+Size: 168012
+MD5Sum: 26e66d44e468651959d9f2d71823977d
+SHA1: d6e433ffd478795b518ff6097dc36fb9fcdff914
+SHA256: f93c569fe7ad8d4d0f3c186eb4b61891151f7506c99dba493c69513311117b03
+SHA512: e5425231adbb207632cb502e644d9685b3cb9dc98b686cdf30421b7f60e935fb8f99d2f6172b2c89e9aef68924b3042709bfce94c1b32d7874964b5ab36c332f
 
-Package: gecode-static
+Package: gobang
 Architecture: aarch64
-Installed-Size: 35976
+Installed-Size: 6208
 Maintainer: @termux
-Version: 6.2.0-1
-Homepage: https://github.com/Gecode/gecode
-Depends: gecode (= 6.2.0-1)
-Description: Static libraries for gecode
-Filename: dists/uncode/main/binary-aarch64/gecode-static_6.2.0-1_aarch64.deb
-Size: 2928680
-MD5Sum: ba52479aa6fbf11ed6d71023039afc9d
-SHA1: 12df74e3fe010a730b601b09d669f5f6ddadfb34
-SHA256: 0325e88044cb202c40bb68ac67a936fb10993a5a4ac2122d0b112cb004ab3209
-SHA512: 40ef9f43214c643383caf7ba3b6d2892e5875ef2f2dd1150bef363daf4c93e95eb0aafdf5226ae5820132e85cb0e6e8751679262789221b6d7c9652dc630b488
+Version: 0.1.0-alpha.5-4
+Homepage: https://github.com/TaKO8Ki/gobang
+Description: A cross-platform TUI database management tool written in Rust
+Filename: dists/uncode/main/binary-aarch64/gobang_0.1.0-alpha.5-4_aarch64.deb
+Size: 2094072
+MD5Sum: 3c0db89624c5eda46fedf75184581819
+SHA1: 4c769ca6c5a4967fe01bf8fc3caa348d6ccae3a8
+SHA256: d2fa1563287279134a5c81948366a31d55deda961f60b4a6b3690d92a568bea6
+SHA512: ed1a1369ff57849399cdcff257bf1afb1b66fbcf1286b5a978bd66dd8d169f3ef84850610e823a6a7b43928fad9f2abccc8d8942b8809c32b1eb5ef4d72ee627
 
-Package: gecode
+Package: gojq
 Architecture: aarch64
-Installed-Size: 18024
+Installed-Size: 4308
 Maintainer: @termux
-Version: 6.2.0-1
-Homepage: https://github.com/Gecode/gecode
+Version: 0.12.19
+Homepage: https://github.com/itchyny/gojq
+Description: Pure Go implementation of jq
+Filename: dists/uncode/main/binary-aarch64/gojq_0.12.19_aarch64.deb
+Size: 1200204
+MD5Sum: a7365982e8f94cc59531260f5378487c
+SHA1: 629ad63191bbf13478fd5cd9fa38f1632aef4cc2
+SHA256: ecaea61e541813cc32eeb16387fdc67e04a203f63295f319ae8df4b8cdb3e28b
+SHA512: 711e08117c0240534c96d5055ba3a0c593137afd67fcff77a71e97e0aebe075f30f67f3eee08f98042fe8d096f1055e9b488a115cf55a75739ae1e47f32f1f16
+
+Package: golang-doc
+Architecture: aarch64
+Installed-Size: 472
+Maintainer: @termux
+Version: 3:1.26.3
+Homepage: https://go.dev/
+Depends: golang (= 3:1.26.3)
+Description: Go programming language - documentation
+Filename: dists/uncode/main/binary-aarch64/golang-doc_3:1.26.3_aarch64.deb
+Size: 93696
+MD5Sum: 8aea9705fc346cadd4998cf33b6ec19c
+SHA1: 3bdc5baf98cf9b19b6bd9c2fbbfaeb1891f09b39
+SHA256: d703b8c89d9f53a76cc5aaee808f29183df1bb80dcd2a9815ba5f51eb02a39d4
+SHA512: 15610b4947077d2236a38cac8844c06c3bc278d34ed355e7d8b7a0ebdcaa9dc0ef5f66a823c44b483e69e79547764be0cfe887eef5fffcabaa7f93f8642807c6
+
+Package: golang
+Architecture: aarch64
+Installed-Size: 213492
+Maintainer: @termux
+Version: 3:1.26.3
+Homepage: https://go.dev/
+Depends: clang
+Recommends: resolv-conf
+Description: Go programming language compiler
+Filename: dists/uncode/main/binary-aarch64/golang_3:1.26.3_aarch64.deb
+Size: 35402856
+MD5Sum: fa38c86308895a261e60f7f87957eeaf
+SHA1: 76e9b8a44ffdacd73d9b6ee0d236ffaf2cf069f0
+SHA256: 04fdf0672ab346d688a0a7946b38267e3a3dcaaf00c607b5a73697e99b1c9b13
+SHA512: 92ef92361b4f9927fd806db6d06880b688881685d24bdca9898a737ee8133d26a2e9f1f765f83281dab962c9cc7bc5c17058d92c2cf45d427652565c8be08cea
+
+Package: google-glog
+Architecture: aarch64
+Installed-Size: 444
+Maintainer: @termux
+Version: 0.7.1-2
+Homepage: https://github.com/google/glog
+Breaks: google-glog-dev
+Depends: gflags, libc++
+Replaces: google-glog-dev
+Description: Logging library for C++
+Filename: dists/uncode/main/binary-aarch64/google-glog_0.7.1-2_aarch64.deb
+Size: 102168
+MD5Sum: d9774975a4d0ce4e0fa54d77804d9519
+SHA1: 74669b677d2db166b6eb01969717b988cd4a7f83
+SHA256: e62406e50bafa42f68c338c3e1986c1203f844f83c39b8bce5c653f4e71b613c
+SHA512: 4ed1841a90a57ae5ef4e93f39f5e3c3def3e098365c11636f922b686e00446f7014eb6095c7bcbe11ee7feca52a4ab504a90096745614eac39d00594a621783d
+
+Package: googletest
+Architecture: aarch64
+Installed-Size: 1932
+Maintainer: @termux
+Version: 1.17.0-1
+Homepage: https://github.com/google/googletest
 Depends: libc++
-Description: Generic Constraint Development Environment
-Filename: dists/uncode/main/binary-aarch64/gecode_6.2.0-1_aarch64.deb
-Size: 2163584
-MD5Sum: eedb67078351ae4246120039b7650bcd
-SHA1: 16457b7e54800d9e0813755142422b2f3ce4e785
-SHA256: 3278d54f313c8681cd86b9157b63c7ae5edb2ba1de5c2108bdcbb38b3dc6a2ef
-SHA512: 7cd84f15c64627b376e24d5768a3fd2cc57959e087aed0d217c33cc57bb36431baae58f8bdacd6ee44204f56301ba3a972982bafc7eb4e04e78d86b6a47dab28
+Conflicts: libgtest
+Replaces: libgtest
+Description: Google C++ testing framework
+Filename: dists/uncode/main/binary-aarch64/googletest_1.17.0-1_aarch64.deb
+Size: 354568
+MD5Sum: 2c3978fc2150bb87b5a5acf76a65e834
+SHA1: a1fe1f587030cf8a862eba151e4c69d34a7fa497
+SHA256: b9cd651939a99f63fd2e0d601f9a2055b4eef22bf6df5059ed6bfef0a01f0e9e
+SHA512: 8c88947dbb276cb6817958124bc6693fe9e43e331f585790d8aba42abb81206d095e5bab9a0aab9838ea15fbae9d55655a69d97581112b934de321227eaee421
 
-Package: gengetopt
+Package: goose
 Architecture: aarch64
-Installed-Size: 988
+Installed-Size: 41592
 Maintainer: @termux
-Version: 2.23-4
-Homepage: https://www.gnu.org/software/gengetopt/
-Depends: libc++
-Description: gengetopt is a tool to write command line option parsing code for C programs
-Filename: dists/uncode/main/binary-aarch64/gengetopt_2.23-4_aarch64.deb
-Size: 190100
-MD5Sum: 28dbc064edd57ddbb4a376df4ecad37a
-SHA1: dcd943e5b3d9a9ba19dbdbc277b892fbbddd88f4
-SHA256: 5c46d3ff1ff17edc399a57dd11e26001705e01602098be31b99e5a3f745df9c4
-SHA512: ef6cb5a11984816c234afe6f70a8b85032301e6b246fc0969a45dd16101edd9f4c3cd24f67c49bdf5ee43fd6331b277e2393cf6a009a027ddfd8da6baf9c2eed
+Version: 3.27.2
+Homepage: https://pressly.github.io/goose
+Description: A database migration tool. Supports SQL migrations and Go functions.
+Filename: dists/uncode/main/binary-aarch64/goose_3.27.2_aarch64.deb
+Size: 9028412
+MD5Sum: 88505897ea6629d5bd22c0a2bacf5874
+SHA1: 516c08283931df2713fce84d1dcd7bc5aaf421fc
+SHA256: 4e4d48025f2b4eabf47667d61aedf1f6609aa1f9726c2fa62f738f1d85b2dd05
+SHA512: 0291f76eb73e894597ff7d75cc07c97c0f5198a95771d56582a0b5b14263b4a12bc8ccf4081643b931f7e224198bf53c8f00f4680afe4c7694b0f520b5d65f63
 
-Package: geographiclib
+Package: gopls
 Architecture: aarch64
-Installed-Size: 3476
+Installed-Size: 31312
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.22.0
+Homepage: https://github.com/golang/tools
+Description: The official Go language server
+Filename: dists/uncode/main/binary-aarch64/gopls_0.22.0_aarch64.deb
+Size: 7527084
+MD5Sum: 46738a084cefc845a6a508f014a8f837
+SHA1: 24cac0b4222b937a8dec4d0258148bad005c1196
+SHA256: 1fdf375dc2bfc09e55229b11abd3afa246632a59514dd04cf549ad8dd537c35f
+SHA512: 30b24c12c6e183ff405914360107f57cf683ec70898de8ebcc2b372af16d348b2e0a675f27421914a45b1c96641376006b1d3e781f4429af7669acce2a251818
+
+Package: goresym
+Architecture: aarch64
+Installed-Size: 4096
 Maintainer: @termux
-Version: 2.7
-Homepage: https://geographiclib.sourceforge.io
-Depends: libc++
-Description: Utilities and C++ library to solve some geodesic problems
-Filename: dists/uncode/main/binary-aarch64/geographiclib_2.7_aarch64.deb
-Size: 619000
-MD5Sum: f93020343b417e9ab34f0f799570e7e8
-SHA1: a603fb38a56cf9feded01ea8257e2307411b8c60
-SHA256: 47b5c34ee96c75b948d52a857e1ea48f5b33630e970f3a22d1219948ab93f303
-SHA512: 2ccc0bdef10603d577e120bed731522bbe1f3e102997cd090351b7bf78698e176b36d1f2f4fa59c9db7958f52079ceb084703e9863f4bd59307a1e3d4edf8f1d
+Version: 3.4
+Homepage: https://github.com/mandiant/GoReSym
+Description: Go symbol recovery tool
+Filename: dists/uncode/main/binary-aarch64/goresym_3.4_aarch64.deb
+Size: 1051396
+MD5Sum: fce8c1e8e023f621c8a8bfbd8a986e2d
+SHA1: ac6e1f3a13a8d0be2a06a66a71c8f2bc963d659b
+SHA256: 6464b634ca0ea2ae39e1ce1fd39bdc1796934340049e8500dcb89825c35006df
+SHA512: 0351cc2705c961e5fcd47602c172f6c6cb792e942cba0179cdbdacd015aaf2b1582cca060ad846c421430b998e46e4106aa6814339877febcc36b5d37862ef7e
 
-Package: germanium
+Package: gost
 Architecture: aarch64
-Installed-Size: 7124
+Installed-Size: 15640
+Maintainer: @ian4hu
+Version: 2.12.0
+Homepage: https://github.com/ginuerzh/gost
+Description: GO Simple Tunnel - a simple tunnel written in golang
+Filename: dists/uncode/main/binary-aarch64/gost_2.12.0_aarch64.deb
+Size: 3997324
+MD5Sum: 58beb88a7346e3301b26378793186b46
+SHA1: ffb005823866bca42d2a5cfc2c8a3f99c714ea1e
+SHA256: fa468825ca4db1839524be6f89bf60ecea17d08f02b655c96848b1ef58934329
+SHA512: 603e57f6f3f53b76181cb062ff609920d92a9cb176257a80a30cfe154c5540ed11a13cc766d37ae905b9d6972bd5375cdf00daf654f4bed1fc436b244a51f876
+
+Package: gotop
+Architecture: aarch64
+Installed-Size: 8664
 Maintainer: @termux
-Version: 1.2.3-3
-Homepage: https://github.com/matsuyoshi30/germanium
-Description: Generate image from source code
-Filename: dists/uncode/main/binary-aarch64/germanium_1.2.3-3_aarch64.deb
-Size: 1882940
-MD5Sum: 0badc6fc7b1d5fe32f48e288dfe80c82
-SHA1: 7caa2c7668a8dbadc4d9e2abd0ac2ea9a493105b
-SHA256: 4a09428a9250d678be0d73c9ec453843e11b0f1e02e3ee3f7e95b9e78f84e51b
-SHA512: 83eede3f93793fc920ec4c5277beceff8be912a8b3cda99b205a09f96fab94a2a70f192d9ea9eaba170fba5e01e7016e5e133a74dda1aa077d7adf1f6bf619d7
-
-Package: getconf
-Architecture: aarch64
-Installed-Size: 72
-Maintainer: @termux
-Version: 0.6-1
-Homepage: https://github.com/termux/getconf
-Description: Utility to print configuration values
-Filename: dists/uncode/main/binary-aarch64/getconf_0.6-1_aarch64.deb
-Size: 6588
-MD5Sum: 680c6def44aead27900ccc1588f8da27
-SHA1: b2bb7c9fbd64409b8974f9e3ed20210e28cd028e
-SHA256: 926c4448a9319448240c67d9038c0fd4d8938d7e3c57d3d219422f706e4cbc94
-SHA512: 80403e98d4eefbc02eb7c4e30b4d63c8e831922915d9751721796a6d68c4cfd9759838c303efdbdffbdf9f32f1bc4d1ff17268d7b826ca190fea334df99c0e50
-
-Package: geth-utils
-Architecture: aarch64
-Installed-Size: 173732
-Maintainer: @termux
-Version: 1.17.4
-Homepage: https://geth.ethereum.org/
-Depends: geth (= 1.17.4)
-Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
-Filename: dists/uncode/main/binary-aarch64/geth-utils_1.17.4_aarch64.deb
-Size: 49505264
-MD5Sum: a5814bff9f27a8d52398047f8ddeca52
-SHA1: 80e0722398295900e1b7b72b245579c3f0017880
-SHA256: dae746aa4225595bb19f58e7ce00f0f041bb5d1c524d9c4e96c796df1482c813
-SHA512: b81bc484a866c985c14c1e6f483c466b3e0ad28db8acd1416e6e1159d4757bb294450bb8b5d6aaf4e56d43841e723b5b6eb18d3eccecf1c0ed3738ff9c33cc24
-
-Package: geth
-Architecture: aarch64
-Installed-Size: 55936
-Maintainer: @termux
-Version: 1.17.4
-Homepage: https://geth.ethereum.org/
-Suggests: geth-utils
-Description: Go implementation of the Ethereum protocol
-Filename: dists/uncode/main/binary-aarch64/geth_1.17.4_aarch64.deb
-Size: 14058184
-MD5Sum: eb61406f28f327492f361d8c37ec788b
-SHA1: e757d73db70ae742fc8eb4a563c563da424d8405
-SHA256: 45336b1181f28696782d7a788019718c7631a04ab4c01328320083953b64ffd0
-SHA512: bb18fa463ce5f0f9f862c20a8d2ff9f949aae69aa01116cc8d1ba80f7755811858ad2b0be1f4c12ab9f67d4f767c03fd555497e7f15d774201fbdb6b8adaa7de
-
-Package: gflags-static
-Architecture: aarch64
-Installed-Size: 520
-Maintainer: @termux
-Version: 2.3.0
-Homepage: https://github.com/gflags/gflags
-Depends: gflags (= 2.3.0)
-Description: Static libraries for gflags
-Filename: dists/uncode/main/binary-aarch64/gflags-static_2.3.0_aarch64.deb
-Size: 60008
-MD5Sum: cfabb7f4594ba3244ab6b62adfc077a3
-SHA1: 77fefaa1fda9830b99012ac67856dc1d46260efa
-SHA256: e1ad5a1c77ace45309d23ce7645fd857a044e0d21fcfcc40b346a280f2192295
-SHA512: 5453f8b63bc3fb1cfbdc6f88b9b5fb93baeda073c831011dc5210b5647c729b989971bafca12b50b34bd4e2a7ccc448938445967438e6e6a2e5bbf0b7193d1b9
-
-Package: gflags
-Architecture: aarch64
-Installed-Size: 448
-Maintainer: @termux
-Version: 2.3.0
-Homepage: https://github.com/gflags/gflags
-Breaks: gflags-dev
-Depends: libc++
-Replaces: gflags-dev
-Description: A C++ library that implements commandline flags processing
-Filename: dists/uncode/main/binary-aarch64/gflags_2.3.0_aarch64.deb
-Size: 79416
-MD5Sum: 6ac64c7eb7ef19f4cfb0aa8b99aeb25f
-SHA1: 17b1a51d8594fa7fb8ff140cb81750b385f0c4a1
-SHA256: 91deea43f60bf48fbac6afd0f8a216544bb6a71b92f30374d0eaa09a251d4f23
-SHA512: 017bd43a9a100e52de7a69f7e14ea3b4d6132307a5fdac2b5366495f13db5e114ff71b3bae9d076e36986bee67e6f479ed9d1ebafddcc1b2bc7092313d7d268f
-
-Package: gh
-Architecture: aarch64
-Installed-Size: 41848
-Maintainer: Krishna kanhaiya @kcubeterm
-Version: 2.96.0
-Homepage: https://cli.github.com/
-Recommends: openssh
-Description: GitHub’s official command line tool
-Filename: dists/uncode/main/binary-aarch64/gh_2.96.0_aarch64.deb
-Size: 9652888
-MD5Sum: 55500fd6a374d578c88f3c9f0fed19c7
-SHA1: e149a96c1844ced33eaf961992ec783b17410977
-SHA256: 2426e6b74d599a770dfbefd58ba333bcade25e4319487c1324de5d399d4bd7d6
-SHA512: 3b8037df209664f9a9905252e6a3d448f5273c67d8ed7be60574b7d3ade513237258ebc87125cbad8e7491979e5df18427433d6c0ef3c4f252a7daef30da606b
-
-Package: giflib-static
-Architecture: aarch64
-Installed-Size: 76
-Maintainer: @termux
-Version: 5.2.2-2
-Homepage: https://giflib.sourceforge.net/
-Depends: giflib (= 5.2.2-2)
-Description: Static libraries for giflib
-Filename: dists/uncode/main/binary-aarch64/giflib-static_5.2.2-2_aarch64.deb
-Size: 15020
-MD5Sum: 59b75aad344479c34ddc978f2bae6024
-SHA1: 95a0d56345f8384a5f3a60944cdac5ef63eb5f3e
-SHA256: 235589333eefda812aaac2e194d3b5c2e92edb874e1cd18fed5054e102580ffc
-SHA512: 0dbb13d6fba6eb0a3c8f5f9502c87fd145c924424d19ea7b16e0b541bd93b6129af62e7a4fc0635ddc82184547c0a0d7ae6329fa0c0ac7c7a575c6043733bc4c
-
-Package: giflib-utils
-Architecture: aarch64
-Installed-Size: 296
-Maintainer: @termux
-Version: 5.2.2-2
-Homepage: https://giflib.sourceforge.net/
-Depends: giflib (= 5.2.2-2)
-Conflicts: giflib (<< 5.1.4-4)
-Description: A set of utilities that comes with giflib package
-Filename: dists/uncode/main/binary-aarch64/giflib-utils_5.2.2-2_aarch64.deb
-Size: 50556
-MD5Sum: d2cfab540b0101101f78a346e5e10183
-SHA1: 3295b9baaa7400b5293bcddee5324d731e791cd4
-SHA256: dd0dec0c01678dbd9f6af44e372dcb63e99844982409f6399b684e406556db70
-SHA512: ce9694f415a43a33623002a37e821e2354633bf0ca918e3bb4ca3995f12807625b81fb7969892d347d3989e74c47d3e1d8b43c34a877a529c7f534617cfd37b1
-
-Package: giflib
-Architecture: aarch64
-Installed-Size: 100
-Maintainer: @termux
-Version: 5.2.2-2
-Homepage: https://giflib.sourceforge.net/
-Breaks: giflib-dev
-Replaces: giflib-dev
-Description: A library for reading and writing gif images
-Filename: dists/uncode/main/binary-aarch64/giflib_5.2.2-2_aarch64.deb
-Size: 18252
-MD5Sum: 19ee933210d5eef5e383a6c883f03d6d
-SHA1: c8df4552b2240f2bfdd4f154fc3503061f30bab6
-SHA256: 937387a9173ec2e8136f6109cb67f922e7a57e9651c4b8430dd7559c72e96b89
-SHA512: be4ef50dd0b252f9ace24af047896342fac01010930772122e3321a06d14137abeb1d21280564d1134369ddb8e2750469dd95d490d48ef8f7d5c22eae99f73a3
-
-Package: gifsicle
-Architecture: aarch64
-Installed-Size: 284
-Maintainer: @termux
-Version: 1.96-1
-Homepage: https://www.lcdf.org/gifsicle/
-Suggests: libx11
-Description: Tool for creating, editing, and getting information about GIF images and animations
-Filename: dists/uncode/main/binary-aarch64/gifsicle_1.96-1_aarch64.deb
-Size: 97028
-MD5Sum: eae097af91af998530d17847fbfb3f4e
-SHA1: ae0cb7636f277c84ff994c92a22d21696668704b
-SHA256: ae017fb4e07a516688b5bcd2ce928e347db72ae37b6e952204e607ee9b9d2d9a
-SHA512: 9429a604880cc87c82e7caa28c7558b31a1b0685e63b0a8cd1e341ebbe70c162d7e84f05322758b3502c1a24fb03e459f7cb090269f5e2ddcbc6d487ceaa4ae8
-
-Package: gifski
-Architecture: aarch64
-Installed-Size: 1316
-Maintainer: @termux
-Version: 1.34.0-1
-Homepage: https://gif.ski/
-Description: GIF encoder based on libimagequant
-Filename: dists/uncode/main/binary-aarch64/gifski_1.34.0-1_aarch64.deb
-Size: 502712
-MD5Sum: 67aba00050d12c1b39b32a7ac09af60b
-SHA1: a952273caadbf197b335cb0c4c62200ccafb5f03
-SHA256: d11eeb230e03a9adf99e815353d948d4e197376a1b3b685256c094981c0d4e18
-SHA512: 519c5e2e2600a39a999457fcae2b8cdeda158129f4713a7d706ad3c6d8d5fb8f66b2cdc35db641c4e506394fe297322ade72572458100a42b4987b1149300d9e
-
-Package: git-credential-manager
-Architecture: aarch64
-Installed-Size: 19040
-Maintainer: @termux
-Version: 2.8.0
-Homepage: https://aka.ms/gcm
-Depends: dotnet-host, dotnet-runtime-10.0
-Description: Cross-platform Git credential storage for multiple hosting providers
-Filename: dists/uncode/main/binary-aarch64/git-credential-manager_2.8.0_aarch64.deb
-Size: 5526872
-MD5Sum: 8f18a18df763b4280721fe0b56747aec
-SHA1: c7b76f7abc3f4c80d63daae839dbc7f7f85d7fac
-SHA256: 7cedba14359b84651a7fe5ebab66a93706dd951ee5afe13dea819e9197985dce
-SHA512: ec57254182840225071dc0b17e3beee5e17a1993dfc3c19e52482b319a38e7ee0c5f71a1e71d2d81734a4e5f1e962a0a1b2fc3b85d2436356cea1a01bb33d3e1
-
-Package: git-lfs
-Architecture: aarch64
-Installed-Size: 13448
-Maintainer: @termux
-Version: 3.7.1
-Homepage: https://git-lfs.github.com/
-Description: Git extension for versioning large files
-Filename: dists/uncode/main/binary-aarch64/git-lfs_3.7.1_aarch64.deb
-Size: 3537660
-MD5Sum: 6cd8bec5419af3c55a155514903cd46f
-SHA1: 39ca3787147351bf22d7ae214ee9a812a8b2988e
-SHA256: c8a8292931f1a1cdadb10614492b9535953a3a87cf748820b4488064f4af9db6
-SHA512: a8d6a75957cf0c4b60ea0489e7a5b5f597b1fe820fd0be8cc4435db8d69d5d443702d2286932cf33bf8fe0640c41ddc3b1c71551710d2ea6101721996e14ade5
-
-Package: git-town
-Architecture: aarch64
-Installed-Size: 23956
-Maintainer: @termux
-Version: 23.0.3
-Homepage: https://www.git-town.com
-Description: Git branches made easy
-Filename: dists/uncode/main/binary-aarch64/git-town_23.0.3_aarch64.deb
-Size: 4710816
-MD5Sum: 999e5a74353467bf3735d638e4cfb2d7
-SHA1: e9e2904bcf9da1679b093de14aeb82de66c97650
-SHA256: 2d757f7740d10d5cf96ddbf3053bfc732d3909113cd18233d2995bd86f94cf06
-SHA512: 2581affe161b897dc64cf5237151b1c48238000341fed081963aa9c9b0b0d3d7fc26a8bf87a14cc9950a40fd35067dd1b29ee1dec231e8c3f03332d2230b98e8
-
-Package: gitoxide
-Architecture: aarch64
-Installed-Size: 27372
-Maintainer: @termux
-Version: 0.55.0
-Homepage: https://github.com/GitoxideLabs/gitoxide
-Depends: resolv-conf
-Description: Rust implementation of Git
-Filename: dists/uncode/main/binary-aarch64/gitoxide_0.55.0_aarch64.deb
-Size: 7112736
-MD5Sum: 2fb878d21d976d7a9f9375524aa29395
-SHA1: ecfd1857f1b60c1411f4be72d089e564e812a84e
-SHA256: 24ecf031ecc21adfd2a1565241211bddd3b25d8f2b52ab1ea12dddc3955c4fcf
-SHA512: ae8b4164bcd8db3c41df73f10fdb4bc33abd7276a4fe52a0e6882ce65618cdfb1df2fed3fe03ee59c3ad3f065a569a22b2f9b1849eaa19d72c3c19f3b75b4066
-
-Package: glab-cli
-Architecture: aarch64
-Installed-Size: 51596
-Maintainer: @termux
-Version: 1.106.0
-Homepage: https://gitlab.com/gitlab-org/cli
-Description: A GitLab CLI tool bringing GitLab to your command line
-Filename: dists/uncode/main/binary-aarch64/glab-cli_1.106.0_aarch64.deb
-Size: 11718352
-MD5Sum: e9b2856329cde3049d4a9fae152848d8
-SHA1: 3df9077cc9a84b2e08e3375914579859b99876cc
-SHA256: f21914a60115a961e93a94e2a671705549e0f0b9e59ea3a284749de3c2b74d0e
-SHA512: e548d0ac41280b4b1228fef20bdf819d158d3e54be32a890b16a34d4e4d9ccf23e71a092b46ef129dde0f0951e387945a74cc0d2e012e9562089fb79a66a7a25
-
-Package: gleam
-Architecture: aarch64
-Installed-Size: 19456
-Maintainer: @termux
-Version: 1.17.0
-Homepage: https://gleam.run
-Depends: erlang
-Suggests: nodejs | nodejs-lts
-Description: A friendly language for building type-safe, scalable systems!
-Filename: dists/uncode/main/binary-aarch64/gleam_1.17.0_aarch64.deb
-Size: 5412912
-MD5Sum: 68e2c5dd158d2eb09fa01445fd2fde11
-SHA1: 596f57853ae228429f0c385484223acaec5fae76
-SHA256: 08b44a58b0266d35ccc08954a7336c45b43b1cec935d2573410fd2270589d8dc
-SHA512: 4068ad10729671f79402a425ec1372aaf68b5836fed491f88a3d5bcbe9194a4ec1daeb8f3f1e8f6c33f57d39bc42fb0e6d699e032a5cd006f0daa270460ad9b0
-
-Package: glm
-Architecture: aarch64
-Installed-Size: 24468
-Maintainer: @termux
-Version: 1.0.3
-Homepage: https://glm.g-truc.net/
-Description: C++ mathematics library for graphics programming
-Filename: dists/uncode/main/binary-aarch64/glm_1.0.3_aarch64.deb
-Size: 3554316
-MD5Sum: 50f2ca82af0c2fbf7530a99a942769e9
-SHA1: 5d29e7a5476cb4d331fcbd78e2407503a69cfe88
-SHA256: 413ac770659f54c1fd98850b1d1cf384a3ef0726ef910b140b67689fa193a03d
-SHA512: b8c9e38babb47b166057262bcd1235d28cdd2f0db9f3020efdd8f13975be622504958fccf898b300fc7e9636ce2b5e55dce669d40c0f711b92f31b6772a6385a
+Version: 4.2.0-4
+Homepage: https://github.com/xxxserxxx/gotop
+Description: A terminal based graphical activity monitor inspired by gtop and vtop
+Filename: dists/uncode/main/binary-aarch64/gotop_4.2.0-4_aarch64.deb
+Size: 2405512
+MD5Sum: 8615609c4196937ccd26ebe3a76ca8f9
+SHA1: c1cf23bd980e0b096d66fdcc3e7a7479e68b0dbf
+SHA256: d1fd6981b3a56c64e404d238e5c3c3503cc3e1367532c45e887688b547a38bf2
+SHA512: 88b373efb0a0c149720bdd0344d368f85ef991aed02e31b295aaa4d635809311c95a6aabc41b0b8edc00206b15f474f575cbbf7ab74fe106ef74b961728a3293
 
 Package: hello
 Version: 8.7.1-1
@@ -415,8 +312,8 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: ec5dcf65bc0593f94ecd15ac8582cf84
-SHA1: 882b6f90ab6b35659be950aaa37a6a87259dc60a
-SHA256: 21a1654a4a027952b727d4e7e243c2675b3b1bc423c625ac53838628ddffabb3
-SHA512: db50b93bfb33807c004c991586b338bc7bdd4529e94e04127735a06820fd18af1efd7fdd9f3a4c0391b671ea432e4696210b1ee055a3ab98352305b085981eee
+MD5Sum: 627a8a9e662404fef849dfe6055643e4
+SHA1: 376041ef776602474a81fbd844bb19a656afd782
+SHA256: 642cb365192ff5f698eccb1fbddf3e076fc2c653fc4166c468abab11ea33220a
+SHA512: e11c8d35ecf412c8204a2b3f87d805f194aba7420f9a860c942eec652252020cf2fcae76f3dbeedc8aa95d38ab52bf05a1c35480a521883f5ca213deff7ad40b
 
