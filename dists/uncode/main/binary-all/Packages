@@ -1,44 +1,30 @@
-Package: byobu
+Package: icon-naming-utils
 Architecture: all
-Installed-Size: 1476
+Installed-Size: 100
 Maintainer: @termux
-Version: 7.12
-Homepage: https://www.byobu.org/
-Depends: gawk, tmux
-Description: Byobu is a GPLv3 open source text-based window manager and terminal multiplexer
-Filename: dists/uncode/main/binary-all/byobu_7.12_all.deb
-Size: 347900
-MD5Sum: fce47d77a13c021e0aa4d35a0df34206
-SHA1: 354e1bc6534fe0b4cdc7ed512cb0d505699053db
-SHA256: 7e0f1bb12fb72d469956111cd5cab37c62fb5721217d0643307f2d2ac9e85273
-SHA512: dd36be812facc36f6926f2d375cc81e7dc015fcda3f3108788c37bd77a5ce18a5ebee5ef96fee9152df1de5e1fcbe9ab4270f633a468fc1b58c17e2cb107dea0
-
-Package: help2man
-Architecture: all
-Installed-Size: 96
-Maintainer: @termux
-Version: 1.49.3
-Homepage: https://www.gnu.org/software/help2man/
+Version: 0.8.90
+Homepage: http://tango.freedesktop.org/
 Depends: perl
-Description: Conversion tool to create man files
-Filename: dists/uncode/main/binary-all/help2man_1.49.3_all.deb
-Size: 15648
-MD5Sum: b4777ec38c14a300fff4b70aab00e968
-SHA1: aedc3392798ed09e078c6d9c54cdf78adc8878e8
-SHA256: de800446e84552663e0dbf3b0a862275ade44f5ddb9987dbe00d13f353c8b133
-SHA512: 551698bdb4e907f77ad3b01c89bc401dd1e65797e2335d90f8fda413d2c126691db81656208b1af2756140615b478991ee47ba2491dbf33c7072630516b9b03c
+Description: Maps the new names of icons for Tango to the legacy names used by the GNOME and KDE desktops
+Filename: dists/uncode/main/binary-all/icon-naming-utils_0.8.90_all.deb
+Size: 7444
+MD5Sum: 2ea71da5fafe997ca771cb8bb5fb8292
+SHA1: e41282143e21a561e7d603f7dd88d0f1786e1e3f
+SHA256: 32fe5185f20bd71f3a461ce5ac3bfbc0ff68fbd7982fa8981b7290e05332a5e7
+SHA512: 4489bba312be7b4c0e5807d59e55564478ad41584b4f09205f4810feef5cf32c37aa174e48609e050c813caa5eefb508f1bdd7f534f1cb484427d036f2bea946
 
-Package: hunspell-ru
+Package: jack
 Architecture: all
-Installed-Size: 3504
+Installed-Size: 4
 Maintainer: @termux
-Version: 20210731
-Homepage: https://hunspell.github.io
-Description: Russian dictionary for hunspell
-Filename: dists/uncode/main/binary-all/hunspell-ru_20210731_all.deb
-Size: 462320
-MD5Sum: c7743c7526a57c3541deff2fae9701fc
-SHA1: add57c138ef683ac858bb9d0cf7bfdb657331b53
-SHA256: 055cb4e73357a01373d4ae0de6ccf05c8651fa46afd82cb41cb0ac01412a37ce
-SHA512: 150b1e7d6913223a8824ce5cd091dde3835e8d0223cdc3010e83c4eed84be730a936923380cf9a36f1f8636a7843558ba2d1e199044f83d354958eeb6be21237
+Version: 0.0.1
+Homepage: https://github.com/termux/termux-packages
+Depends: jack2
+Description: A metapackage that provides JACK Audio Connection Kit
+Filename: dists/uncode/main/binary-all/jack_0.0.1_all.deb
+Size: 712
+MD5Sum: bd5d890ad9bcabab5ed43a5a90959296
+SHA1: cd0bcc126bc8d5f37f67243923e2e2f0d22d57de
+SHA256: 9bfa0223864c0a77737eaf6e26016b5c524c5a7581e55181273bf5580bbb0fb5
+SHA512: 82b62d0ddcbe54a2ff70f07e2c2e3cd369425883b3dcd7b3771ab3188cbc7b9b85cdb43d3b21317062ebc346d2874d25a2ee05ae86d82eb779aa9e0170835800
 

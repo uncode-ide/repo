@@ -1,62 +1,3 @@
-Package: hcl
-Architecture: aarch64
-Installed-Size: 14880
-Maintainer: @termux
-Version: 2.24.0-1
-Homepage: https://github.com/hashicorp/hcl
-Description: A toolkit for creating structured configuration languages
-Filename: dists/uncode/main/binary-aarch64/hcl_2.24.0-1_aarch64.deb
-Size: 2440736
-MD5Sum: 361c382d34a5db4df37a4c57f8ce5096
-SHA1: 0d93c68bf4cc23b27acf9cd0c9d9e470bc3202c9
-SHA256: 1515b289de15812b0082d03d518a039406926af7565c6879a442ca2fdcfaa7cd
-SHA512: ce3be1535b26781682e1c95a73fb5ab9fb3c5b4bfd97c29d47c49031c118961763cee04aba8099694e9a2249a5f70e22af9b68e31a18f00957e9a102f91125d6
-
-Package: hcloud
-Architecture: aarch64
-Installed-Size: 19668
-Maintainer: @termux
-Version: 1.66.0
-Homepage: https://github.com/hetznercloud/cli
-Depends: resolv-conf
-Description: Hetzner Cloud command line client
-Filename: dists/uncode/main/binary-aarch64/hcloud_1.66.0_aarch64.deb
-Size: 4495248
-MD5Sum: e89d47c1f41808f8ce891f08cba04e05
-SHA1: f914326a85c9131cd94c9630a0bae0547ba74d15
-SHA256: 7b39f3a0690f50a30d43674b4e7671ce46cc2d6957ed8d8dddb819e2868ae83a
-SHA512: 5c60eea472fdafc3d404012632d12aba6256ee5140b6f3343bebb3d18449549bd38ee36414c481796e28a784d914b4c56ea6da08a4bd91b557d1cdd9e22ebed8
-
-Package: helix-grammars
-Architecture: aarch64
-Installed-Size: 189528
-Maintainer: @termux
-Version: 25.07.1-2
-Homepage: https://helix-editor.com/
-Depends: libc++, helix (= 25.07.1-2)
-Description: Helix grammars
-Filename: dists/uncode/main/binary-aarch64/helix-grammars_25.07.1-2_aarch64.deb
-Size: 10788848
-MD5Sum: ab8f4b55c2530d91f5a0ad378cb76827
-SHA1: f210eaff53469006419512f9a33f8733c870b7de
-SHA256: eee98f4dcae92ed7dbc4920f627322f3e2acb7237f17fe942f1fe6eb89735776
-SHA512: a2b1eb316a770426442626a51cb7e4c73b8e03f25affba0be5cd686dd6d1f07ea027da7e262f14ad36df01d37c7de05c852f1bea696b1f5eed66d68965606f97
-
-Package: helix
-Architecture: aarch64
-Installed-Size: 36748
-Maintainer: @termux
-Version: 25.07.1-2
-Homepage: https://helix-editor.com/
-Suggests: helix-grammars, bash-completion, clang, delve, elvish, gopls, lldb, nodejs | nodejs-lts
-Description: A post-modern modal text editor written in rust
-Filename: dists/uncode/main/binary-aarch64/helix_25.07.1-2_aarch64.deb
-Size: 6541048
-MD5Sum: e800a2acd10423060b08316341c20470
-SHA1: 212f169892bd0454020af562e8d40d2b9f83439c
-SHA256: d46a9c5efbdf9a6c48c997738cba02342019aeb25cbb13764bee86aaf6d903cc
-SHA512: 8786ba635987c304de6dfa1aee38def83dc23b2eef9a74f3e96bba52d364bb507447797ca68eca58629af0e8fab6199fdccd98c0d749a97194e08d069a5629e7
-
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -69,224 +10,315 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 892
-MD5Sum: 035e8ffe1e770fd669cf26dfab43a33c
-SHA1: e069c2b57c14d3bb3b9be47f58561a1e99120853
-SHA256: 57fc5c31a3450267fcfa9f1f60c83450a317f99869859baef81950aefa1493c6
-SHA512: 5fa6753939fee18d7914401935739586c765e0cf932b89cf43ef482e95a29211e12ca84838443d82addfe2d1f07fa8dfb9529731881199efc666593634c73224
+Size: 900
+MD5Sum: 5f5f6fc33abc3bdafe1a2216439bd604
+SHA1: 742e6ffbb89f034bad82c0ff30f04cfaf486e67b
+SHA256: c3f84480988a5016fbf33dfd4c0ac23cad392ec7df0b1e078399ed31d107550f
+SHA512: 755d845d4641c96de1c5c78c49559af7482c011a404b88be473af0060bd798d15308108f1b49fb293cccf678164a5779b0d930d0c5a6a897837140e7c592e00a
 
-Package: helm-ls
+Package: iat
 Architecture: aarch64
-Installed-Size: 45304
+Installed-Size: 188
 Maintainer: @termux
-Version: 0.5.4
-Homepage: https://github.com/mrjosh/helm-ls
-Description: Language server for Helm
-Filename: dists/uncode/main/binary-aarch64/helm-ls_0.5.4_aarch64.deb
-Size: 8854896
-MD5Sum: dde6f4fef4bb108197d299f7a65af696
-SHA1: b98fd5e8d73c3ef87ad204d46a41404c3b9a24dd
-SHA256: c1b5a136746fc9e03c4067c0434695db3e7bcca77a4c905154b9668a1fe21839
-SHA512: 35c47a93f8075c9a1996819e1d40311411a8e3e20a9228ef83a136532c467f9a127c57de60cdf4cbee8af4abe4565612825d649da4f678b54cd5ec172a9a8bcf
+Version: 0.1.7
+Homepage: http://iat.berlios.de/
+Description: Iso9660 Analyzer Tool
+Filename: dists/uncode/main/binary-aarch64/iat_0.1.7_aarch64.deb
+Size: 24284
+MD5Sum: 81447cdfded50c7411d178434c7af2e0
+SHA1: a1ed5f3993d46f07741d0013db2ea6b397ee5720
+SHA256: d7323a87cedb3a4c6c36f8b4b8fbb62aeaf4a4637568f159e3e2b1fc6fd8ca47
+SHA512: 352b039bb8a48006d5bc076b3036ab1f2ef0802ba7f28c21d7bcb700b68eec8ad851988a16212cc1dfd091300abde81ba10039e00175194c97ade94c73a006b2
 
-Package: helm
+Package: imath
 Architecture: aarch64
-Installed-Size: 64188
+Installed-Size: 1028
 Maintainer: @termux
-Version: 4.2.2
-Homepage: https://helm.sh
-Description: Helm helps you manage Kubernetes applications
-Filename: dists/uncode/main/binary-aarch64/helm_4.2.2_aarch64.deb
-Size: 11731268
-MD5Sum: 2de78716d8ef50ad4266032b17ea0147
-SHA1: 5ab6f200cd25218d2a2ba413ae4172372022d113
-SHA256: d5e31a5f516dd998ae7a0d81550ac6067261025c8bddc702836d0466a65f442d
-SHA512: ac50ef03b449d4587e7e30377f764ae5138c9e71877a0216858324635936fb0f7c66567a351efa90d6de0ce7007414c5ac25c6bede6481499dc51589947a9895
-
-Package: hexyl
-Architecture: aarch64
-Installed-Size: 992
-Maintainer: @termux
-Version: 0.17.0
-Homepage: https://github.com/sharkdp/hexyl
-Description: A command-line hex viewer
-Filename: dists/uncode/main/binary-aarch64/hexyl_0.17.0_aarch64.deb
-Size: 341848
-MD5Sum: 0439720b46d3303ef3482c199a0ad07c
-SHA1: 848a4ec167e674ce42a28ff23043a54752846a37
-SHA256: fa7483f28f33a820d73c304fd6f04833d50412097a82fd24cd6c3d38b308586f
-SHA512: 163a439fce123f55973d9809a6b628b4872560381985e2fcec927aa8ea8f2673ad7841199e73847b86cac0fe17d178f8e6a4523819be42ef76b5d4e1f4635db8
-
-Package: heyu
-Architecture: aarch64
-Installed-Size: 868
-Maintainer: @termux
-Version: 1:2.10.3-2
-Homepage: https://www.heyu.org/
-Description: Program for remotely controlling lights and appliances
-Filename: dists/uncode/main/binary-aarch64/heyu_1:2.10.3-2_aarch64.deb
-Size: 372244
-MD5Sum: 3853950a07f418d7ce1d98f2cfe01d39
-SHA1: 52c09c2f9303a8a779f100d67253800ae10f7178
-SHA256: 0c38fcb9a1bbf8126c8eb3881940edfdfa188925dfbecdc7c1d32f1755963ba6
-SHA512: ba0314e386db28ce31770cb5b6c76a87e8a9e787077568ef877e57ba5863bbe1a265c0542f1e7a6def9559a7d0bde60b55afcc2cfd665e791c1830c37bce10aa
-
-Package: hilbish
-Architecture: aarch64
-Installed-Size: 7720
-Maintainer: @termux
-Version: 1:2.3.4-1
-Homepage: https://rosettea.github.io/Hilbish/
-Description: The Moon-powered shell! A comfy and extensible shell for Lua fans!
-Filename: dists/uncode/main/binary-aarch64/hilbish_1:2.3.4-1_aarch64.deb
-Size: 1954256
-MD5Sum: d74647f82979eddaf4ee4def24ea7b3e
-SHA1: 2ee2ffd164ad360778e6087bdca7af95f358cfad
-SHA256: 120e7e20dafee85f3f09608cb383e096e9c762a80308e386e7c7aa82411e8d64
-SHA512: 5205f8363e6caaccb99a670f260bcc8990727bac3f45648bdfc8596353964758a69f7c094a97238bba65d3961bdcc9d0ecdc1c82a8bd2c7ac97d76a59d894037
-
-Package: hors
-Architecture: aarch64
-Installed-Size: 7668
-Maintainer: Krishna Kanhaiya @kcubeterm
-Version: 0.8.2-3
-Homepage: https://github.com/WindSoilder/hors
-Description: Instant coding answers via the command line (howdoi in rust)
-Filename: dists/uncode/main/binary-aarch64/hors_0.8.2-3_aarch64.deb
-Size: 2402024
-MD5Sum: ab72a4a60ca81fe5355e71ee843abb38
-SHA1: 725aa53a98540647450274dcf6aef3821286860a
-SHA256: 110cc197ff7ede510b80d6a06e1a47bc4bf5ec848e134facc36503b5d4c4eb8f
-SHA512: f95968284dc60dbec9828d89c7d25cc0336541625959e378c4bd18f5e02cae45f347b35f4f64326b90dff9bce879cd2dfdea8c76b1c766d963212d6825eaccbb
-
-Package: hugo
-Architecture: aarch64
-Installed-Size: 66544
-Maintainer: @termux
-Version: 0.163.3
-Homepage: https://gohugo.io/
+Version: 3.2.2
+Homepage: https://imath.readthedocs.io/
 Depends: libc++
-Description: A fast and flexible static site generator
-Filename: dists/uncode/main/binary-aarch64/hugo_0.163.3_aarch64.deb
-Size: 14066332
-MD5Sum: 21e150e69e8469c381be68f85d7676a9
-SHA1: 392e3b1601f36c96e2250d9bd064a9557407ccd5
-SHA256: a3376d88e7c6de4f2809f708a10c19cf002b2748c7e365289fa35ae5bb4b4f0b
-SHA512: b9eba1763d3468df052207ef40a566bcca7dd989381f6175189d467da146aa745a7765e47e0d02861782935d14f69b79e3aa3c11c2628337bce06a9cf490c553
+Conflicts: openexr2
+Replaces: openexr2
+Description: Library for vector/matrix and math operations, plus the half type
+Filename: dists/uncode/main/binary-aarch64/imath_3.2.2_aarch64.deb
+Size: 113312
+MD5Sum: 0b3d178c0a66722defe6f490d98dd54a
+SHA1: f806cd433900a7c6d9960042ace795c1f5c2534e
+SHA256: 3fddcf23219d940fc40da2217735136024ed89668176f3669f447624ca2bca63
+SHA512: 085bb040bec6c79d418cc6e2a6ae68634b272b4765e0ecc4dd4ae14b6c9d0fb67cd7cadb646037a44a74f731e91f4ebb0dc536f27914b251af1d8d87481f5283
 
-Package: hummin
+Package: influxdb
 Architecture: aarch64
-Installed-Size: 7248
+Installed-Size: 163712
 Maintainer: @termux
-Version: 2021.05.18-4
-Homepage: https://trantor.is/
-Description: Command line client for the imperial library of trantor
-Filename: dists/uncode/main/binary-aarch64/hummin_2021.05.18-4_aarch64.deb
-Size: 2075852
-MD5Sum: 8acdbc6a6d6dc47e88877ec91d54574a
-SHA1: eab4e0a3096a66afd96facd1138f611c214c6bdd
-SHA256: 5684681352ec5ca3c6769d9fc43bad6eb6e10dd9ec86b3f483231d6f8fea2470
-SHA512: afa0a3d60cf6864bd6e7607f77dc5518314558167224a9e1f903693d3bf9f5e9f272f63726ee5c45f1660417ff49a1c6a2afa038ca8a94af4d210f13a53d3d1a
+Version: 1.8.10-4
+Homepage: https://www.influxdata.com/
+Description: An open source time series database with no external dependencies
+Filename: dists/uncode/main/binary-aarch64/influxdb_1.8.10-4_aarch64.deb
+Size: 25445004
+MD5Sum: 6713c5d689f79f21e6b4e864a3300777
+SHA1: 416501411208e49f545ce3a392a89ec603b1d4dd
+SHA256: ae55ebe537863bfca372d5ddcbec2ec4643e3629a6d18a554fb2e886cf9e0fd3
+SHA512: cfc3149fd36c83c20e7131e265e86d124847209e0cfbc4120f0fbfb1bfd6efa4575a5c52291b08a135b2845920aa9908f719d9b66615e1868c66436500692c8a
 
-Package: hunspell-static
+Package: inotify-tools-static
 Architecture: aarch64
-Installed-Size: 1920
+Installed-Size: 92
 Maintainer: @termux
-Version: 1.7.3
-Homepage: https://hunspell.github.io
-Depends: hunspell (= 1.7.3)
-Description: Static libraries for hunspell
-Filename: dists/uncode/main/binary-aarch64/hunspell-static_1.7.3_aarch64.deb
-Size: 235308
-MD5Sum: 6b17cc0f4f4290f2212c73beb43a4e39
-SHA1: f7ea6d58be25be5519b18b1b9a518f869eded3aa
-SHA256: cf4deec1666bf0a81fe63b6f370de931733ee040d654f350cfb2a1815ec61243
-SHA512: 590ae2f3b5c8c1db4a94b0017c18b325e49e633871c36f0f7aca6da0ced22cf3760161d4616dfbf6e674769d5d1a34ac970a9eb6d05ae4a703d0b078643407b2
+Version: 4.25.9.0
+Homepage: https://github.com/rvoicilas/inotify-tools/wiki
+Depends: inotify-tools (= 4.25.9.0)
+Description: Static libraries for inotify-tools
+Filename: dists/uncode/main/binary-aarch64/inotify-tools-static_4.25.9.0_aarch64.deb
+Size: 14764
+MD5Sum: 6bfb72ed73e802ac00808567f6ba2b53
+SHA1: 50626ee66e5a10ce6bbd9ba15414b394b777cf5e
+SHA256: 7bad0a1fd10cb9843ec549adbac22d6dbd2aca74f040cec343997ddbf0616490
+SHA512: fd43da0ce39d87dd8a703e28d3fb88680341fda6bb5e12cb0f472e1c921bd03ec0725e6ba67d2ed8a366e9a0b143cb9acc0b26d7700ae5f6dbec5c1345b726f1
 
-Package: hunspell
+Package: inotify-tools
 Architecture: aarch64
-Installed-Size: 1228
+Installed-Size: 192
 Maintainer: @termux
-Version: 1.7.3
-Homepage: https://hunspell.github.io
-Breaks: hunspell-dev
-Depends: libc++, libiconv, ncurses, readline, hunspell-en-us
-Replaces: hunspell-dev
-Description: Spell checker
-Filename: dists/uncode/main/binary-aarch64/hunspell_1.7.3_aarch64.deb
-Size: 236500
-MD5Sum: 346d0c7a22b8159805418876977ad948
-SHA1: 884969cc73e34e4b57930cbaf2e806b936a9bebc
-SHA256: 585e4e320d11257bb2e51d6cec143a7c5259af70172170a57aad08bbc6eb8521
-SHA512: fa7e1a7b5d46668f0fc6e13883fb2b935f73751cc4dd67e669b4a1d306b121bde449c2a37a7d78398a323867bacadd8fa6c254cfaffd111a5caf92929064bf86
+Version: 4.25.9.0
+Homepage: https://github.com/rvoicilas/inotify-tools/wiki
+Breaks: inotify-tools-dev
+Replaces: inotify-tools-dev
+Description: Programs providing a simple interface to inotify
+Filename: dists/uncode/main/binary-aarch64/inotify-tools_4.25.9.0_aarch64.deb
+Size: 36400
+MD5Sum: f4cba2410df615122731b08834b8baa7
+SHA1: 64a22767a1183738880c65a256e7d0df08457816
+SHA256: e61e7652681e554dddd7a1e76d55abbd41a1f6fe357e4ab350e28385de19ab80
+SHA512: 4d17d5294a4ec7919aa351238d5b63bf2b392eb509f3bbd4abd2da67dfefdb99a01505a35b92fa64a7046ede9aab9f1fa0163d5f9e5a4afcdadbc695b20abe43
 
-Package: hut
+Package: ipcalc
 Architecture: aarch64
-Installed-Size: 8556
+Installed-Size: 72
 Maintainer: @termux
-Version: 0.8.0
-Homepage: https://git.sr.ht/~xenrox/hut
-Description: A CLI tool for sr.ht
-Filename: dists/uncode/main/binary-aarch64/hut_0.8.0_aarch64.deb
-Size: 2344680
-MD5Sum: dfc6b8c5faf6b80b6ed49f61e203823c
-SHA1: be374d42cf0f8e62509e43c7b17935a0051b561a
-SHA256: 2881b7dea0d16ebe35aa37328883dff38c03f57a55ad5a53a54b7c2738af63cd
-SHA512: d3063ae5bee633c8cd4eb32fcd8b5d88ef9ebfde6e797d29f07dbf4892444c891ab3a7a63fc792414da7f04b606c751de8f401792cb268909a673ecdc72cd5a2
+Version: 0.51
+Homepage: http://jodies.de/ipcalc
+Depends: perl
+Description: Calculates IP broadcast, network, Cisco wildcard mask, and host ranges
+Filename: dists/uncode/main/binary-aarch64/ipcalc_0.51_aarch64.deb
+Size: 10012
+MD5Sum: c25f9e201b5efca28f60b17a1b33309a
+SHA1: 17920bb4038c349588cc2a03269b5797f0c20aff
+SHA256: 910128294f80e5a357f1770a1150350a14026eb62ba66a1c9efda03543442e11
+SHA512: 2dcf579776297e2a157e3b793638bfd15b54725da246376041f2e0c223180f83efffa34e0670a1870cbb3110c7eae0f1ddfafea0f82630e222e57b3a60607d34
 
-Package: hwdata
+Package: iperf3-static
 Architecture: aarch64
-Installed-Size: 10240
+Installed-Size: 324
 Maintainer: @termux
-Version: 0.408
-Homepage: https://github.com/vcrhonek/hwdata
-Description: Database of hardware identification and configuration data
-Filename: dists/uncode/main/binary-aarch64/hwdata_0.408_aarch64.deb
-Size: 1685644
-MD5Sum: ffe40c3cb97e2d9b460d850b9edc8766
-SHA1: 28ee647444789e2dc101f9e7272f2649c175c02f
-SHA256: 02209c3423232c722a9e087bb0b11b237c8af969cc768dd525867a1f33442a81
-SHA512: 1a0fd396133447e327cd44fe5447f0966bfc887add0ec52a94d0694e62713a98fbe546cc7b045e612f13f648cdccee3636011923fc4ee1c6e8a38969eb8eb376
+Version: 3.21
+Homepage: https://github.com/esnet/iperf
+Depends: iperf3 (= 3.21)
+Description: Static libraries for iperf3
+Filename: dists/uncode/main/binary-aarch64/iperf3-static_3.21_aarch64.deb
+Size: 67436
+MD5Sum: 4407e4916cafebd51126fed098a0843f
+SHA1: 570f43fc9439b1ba2f4b9bee629c14029de052ea
+SHA256: be4e93f11f7654422c2870cd72273d9652b8438207f87ab8bad9611e2348cc0c
+SHA512: 54aedc9d430223bfe682337301f483602c86c6333887b87feb7da5cc4d2543781b01080ec19be9e8a8c66c66748f92ff93d2975239052b6d387e5eaf41dc1682
 
-Package: hydroxide
+Package: iperf3
 Architecture: aarch64
-Installed-Size: 10108
+Installed-Size: 296
 Maintainer: @termux
-Version: 0.2.32
-Homepage: https://github.com/emersion/hydroxide
-Description: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
-Filename: dists/uncode/main/binary-aarch64/hydroxide_0.2.32_aarch64.deb
-Size: 2853812
-MD5Sum: 737d6f863f543463b9f8271373636e09
-SHA1: 2add2fb2cbd3a346fe7a18fe3aac6549cda22c6d
-SHA256: 5ed14d81e4a4a88e26ac65fe397ca67b6fc8e9068d60ba5f6d55f26aa61fcbb9
-SHA512: 62695a97aa1f6fa2d3569507918ccc38fab2d917d70d1e25f400624f602b54001ea70d0862b743bff419c3f2ca3169f2021b6f8e26afbda2cc8615ba9fff5d2d
+Version: 3.21
+Homepage: https://github.com/esnet/iperf
+Breaks: iperf3-dev
+Depends: openssl
+Replaces: iperf3-dev
+Description: TCP, UDP, and SCTP network bandwidth measurement tool
+Filename: dists/uncode/main/binary-aarch64/iperf3_3.21_aarch64.deb
+Size: 79724
+MD5Sum: 5d679f9277a7131a96a4e0e7dbc05c02
+SHA1: f35152f02ff21a859174d975c1a8079109f5cf49
+SHA256: 0bd05495b1ec1838d13901bda7bfcaf4c5fb6586972f7915806d28f6d0210b2e
+SHA512: 4481d324e59478156797889620501760cb6b829ee5500627eaf39e5fceb502ae53144ecc422ba3e46257c4c0b64b4b7937cfd55db4544b42277f3a9f09ab8ff7
 
-Package: hyperfine
+Package: ired
 Architecture: aarch64
-Installed-Size: 1208
+Installed-Size: 96
 Maintainer: @termux
-Version: 1.20.0
-Homepage: https://github.com/sharkdp/hyperfine
-Description: A command-line benchmarking tool
-Filename: dists/uncode/main/binary-aarch64/hyperfine_1.20.0_aarch64.deb
-Size: 439172
-MD5Sum: 519903d026a5ba89937d7748b570929e
-SHA1: dc359dc68c9425568be43a7bac2e199e3284e6bb
-SHA256: c1d9ff52d02aad51bb9332d8750b3f44ceb38b6a26c88ea5e8ef4cd738bf921d
-SHA512: 2a99f4f8aceae8a8f1e4d6c9b31c18f34589f072cacf2ca1cd012eca591f006be1c07a7ac8e0ddffdb54bd382ccae09ea488cae47d64494d962fbd3aac23a1d1
+Version: 0.6-3
+Homepage: https://github.com/radare/ired
+Description: Minimalist hexadecimal editor
+Filename: dists/uncode/main/binary-aarch64/ired_0.6-3_aarch64.deb
+Size: 15104
+MD5Sum: 7afa9987ce941b9a4c9018822db4770e
+SHA1: 3659405493bd6c68d846c32ccd5369604a9fcefd
+SHA256: 73610959c4753f667a93321ebcc3a88ac5b3f99fc7ed29ef9472b9d02cbbd887
+SHA512: 05e99eba5d4ccb710055e43efe69575e1ed5213da511977d586bdb7f14eaca6a129833f405c8971cc988dbc5102aa42a6d89bbe9f77a641c55a232c1cf80f5cb
 
-Package: hz
+Package: isync
 Architecture: aarch64
-Installed-Size: 13808
+Installed-Size: 284
 Maintainer: @termux
-Version: 0.10.5
-Homepage: https://www.cloudwego.io
-Description: A high-performance and strong-extensibility Go HTTP framework that helps developers build microservices
-Filename: dists/uncode/main/binary-aarch64/hz_0.10.5_aarch64.deb
-Size: 3594108
-MD5Sum: 26090641f5cafae422905cd4d8a96db8
-SHA1: 90451d4a665519a57eadceef415a5e39937540cf
-SHA256: e8c87cbe36ece0920cb31cd5d55dbe2af03103fd55ce97bcd585b694fd85cf12
-SHA512: 74637bfbf252b90df24b260200425bfea99466d44bf27ac4f05bda79ff1de1dfb887e0c37eb836a8a474cfe06906a554d11162954a66f8096e215f106840111d
+Version: 1.5.1-1
+Homepage: http://isync.sourceforge.net
+Depends: openssl, zlib
+Description: IMAP and MailDir mailbox synchronizer
+Filename: dists/uncode/main/binary-aarch64/isync_1.5.1-1_aarch64.deb
+Size: 97472
+MD5Sum: 3ea02f13f3056bf95e138df631a18675
+SHA1: 421fee4c0295ba572faf7c613d4e6e3eabaeaaf1
+SHA256: cd9abde39f9c1ec57ea2f17eaf7dd89d0af65f7a59062ff12cb01d50a38225fc
+SHA512: 874cdcff41ec4f494281d8fd87b894597261e38623e53b75db021ae4a9193c8e268aa624920760c934e2dea6db76f5e0266f3356b61944e11e7be1959127ac27
+
+Package: jackett
+Architecture: aarch64
+Installed-Size: 14712
+Maintainer: @termux
+Version: 0.24.2126
+Homepage: https://github.com/jackett/jackett
+Depends: aspnetcore-runtime-9.0, dotnet-host, dotnet-runtime-9.0
+Description: API Support for your favorite torrent trackers
+Filename: dists/uncode/main/binary-aarch64/jackett_0.24.2126_aarch64.deb
+Size: 3197996
+MD5Sum: 6155992297babda8dfb920b0d962fbc3
+SHA1: 351a94c846e8111cc2718d85bbb8aa8d5aa0cf80
+SHA256: 55874c1dfab3102eb610889087fdadd46b63c6009fff6ceadede9090c000bff8
+SHA512: 57483c51125a32616f315f184d0a88835a07a209c24411bcfd811ada9dba27fe9167f5ba845a8c2ee53d151c588f404fccfc65f174a1665f352a7f43b57c9858
+
+Package: jbig2dec-static
+Architecture: aarch64
+Installed-Size: 212
+Maintainer: @termux
+Version: 0.20-1
+Homepage: https://jbig2dec.com/
+Depends: jbig2dec (= 0.20-1)
+Description: Static libraries for jbig2dec
+Filename: dists/uncode/main/binary-aarch64/jbig2dec-static_0.20-1_aarch64.deb
+Size: 44412
+MD5Sum: 46f0b527c5f47cfb0931a4a7b86d829d
+SHA1: 692576511754a5e8e6048d3036724f8ff25163fb
+SHA256: 7d2a1999038828b4bfc641861c0cf2e956b1346b5feee1db4bb978b4e0600a6a
+SHA512: b0bc73c96f710bac915cc3168e5d9153a9dffa5c1270283b5d369c84e8ec0feecdd563e50cb340ac0ff55988e4b7730361e574f36dc00285aa745c4c8dedba02
+
+Package: jbig2dec
+Architecture: aarch64
+Installed-Size: 192
+Maintainer: @termux
+Version: 0.20-1
+Homepage: https://jbig2dec.com/
+Breaks: jbig2dec-dev
+Depends: libpng
+Replaces: jbig2dec-dev
+Description: Decoder implementation of the JBIG2 image compression format
+Filename: dists/uncode/main/binary-aarch64/jbig2dec_0.20-1_aarch64.deb
+Size: 48172
+MD5Sum: 88a1109e889388b5ce1b70e91812dd59
+SHA1: f3940b2e7ae29be7cc1eb17633d052a174176023
+SHA256: 709d7601b67b28a77caec71c46fd01157a71b205a5dc90fc3094ce2a25634fea
+SHA512: d1d687a9c16a71955ce9c1b3e0f796e61207b6daaf306ed8da6ada4b07f7480715fb0f68fb5603d4777af0fc74c7fa19b6334b9dbffbfd9f9022ab6043eba9b1
+
+Package: jcal-static
+Architecture: aarch64
+Installed-Size: 60
+Maintainer: @termux
+Version: 0.5.1-1
+Homepage: http://nongnu.org/jcal
+Depends: jcal (= 0.5.1-1)
+Description: Static libraries for jcal
+Filename: dists/uncode/main/binary-aarch64/jcal-static_0.5.1-1_aarch64.deb
+Size: 8424
+MD5Sum: e30a181723506dbaf0e8ad09d1152998
+SHA1: 5c937a189104c23c2d144bca75d1ce51fb780902
+SHA256: 174b8cec251c074b977ee99a0061b863c1f1307d43b708b2bed14d4ea90fec74
+SHA512: a97ccc055658a53a45244ff965c26d91fa53add77bf11f7c1e4847c6f94597fc30baedd5babb1e54420511c1ae5d2a20081aff2eb30c03be9ffe668f47e485a2
+
+Package: jcal
+Architecture: aarch64
+Installed-Size: 224
+Maintainer: @termux
+Version: 0.5.1-1
+Homepage: http://nongnu.org/jcal
+Description: UNIX-cal-like tool to display Jalali (Persian/Iranian) calendar
+Filename: dists/uncode/main/binary-aarch64/jcal_0.5.1-1_aarch64.deb
+Size: 39240
+MD5Sum: 04d9b128d733fb4fcdaee112e748f295
+SHA1: d07e7289274944bf82c569d30c91251a4887ad0d
+SHA256: 04fea8dfa57efe2b8715e747722ed8143b4b91665f77f80b482138fcd194562b
+SHA512: 4a56048c777d7b56ffdb6c1b59fd29303b34df46b9ad4b2b5d151bea129e13a10ec199a37fcd2f9fa4f75d63becbedbc53505b0efd26951fac2879744bd2fb21
+
+Package: jfrog-cli
+Architecture: aarch64
+Installed-Size: 63580
+Maintainer: @termux
+Version: 2.109.0
+Homepage: https://jfrog.com/getcli
+Description: A CLI for JFrog products
+Filename: dists/uncode/main/binary-aarch64/jfrog-cli_2.109.0_aarch64.deb
+Size: 18554696
+MD5Sum: 7cb67f2683ec3aafa7c853fa32fba241
+SHA1: 44b7f6483de3bf977ad38915694a68e4f579e33c
+SHA256: e0db906b253fe783a717c93667d67a0b218b6a314eac5984b92202e958fc76c5
+SHA512: b0d8cfabb9e5ee01e7b4b495f6efc8b677384a75183d621acde9266589ab0e8312d3314bd0b1d15d26536237063ba5de5a869f803b8ee112c1eefbdc7967975c
+
+Package: libtiff-static
+Architecture: aarch64
+Installed-Size: 696
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Static libraries for libtiff
+Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
+Size: 135260
+MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
+SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
+SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
+SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+
+Package: libtiff-utils
+Architecture: aarch64
+Installed-Size: 800
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Tools for working with tiff files
+Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
+Size: 255964
+MD5Sum: a0a56110c08879f75be05ad601a6e6cc
+SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
+SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
+SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+
+Package: libtiff
+Architecture: aarch64
+Installed-Size: 6416
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Breaks: libtiff-dev
+Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
+Replaces: libtiff-dev
+Description: Support for the Tag Image File Format (TIFF) for storing image data
+Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
+Size: 821104
+MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
+SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
+SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
+SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+
+Package: libwebp
+Architecture: aarch64
+Installed-Size: 1204
+Maintainer: @termux
+Version: 1.6.0-1
+Homepage: https://github.com/webmproject/libwebp
+Breaks: libwebp-dev
+Depends: giflib, libjpeg-turbo, libpng, libtiff, zlib
+Replaces: libwebp-dev
+Description: Library to encode and decode images in WebP format
+Filename: dists/uncode/main/binary-aarch64/libwebp_1.6.0-1_aarch64.deb
+Size: 316332
+MD5Sum: 9b9fcbd86892116bcb2e21849f8cd812
+SHA1: c03562f9e4f332cf3535a514889582843cca2c43
+SHA256: 71c73669a5a814785cecbb4fc72dffe3d56c4827b227ce4fb2d53258f65b679b
+SHA512: 07e27f3e843886792fdc6597817f5bc284fa0d1b0c6dfdc16e8c2eb090130a351b1de3a1efb090cc904c9dd09012c47e6e05448f0c0e5b2bf20d5010772a1c88
 
