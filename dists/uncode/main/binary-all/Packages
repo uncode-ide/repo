@@ -1,28 +1,44 @@
-Package: geoip2-database
+Package: byobu
 Architecture: all
-Installed-Size: 71700
+Installed-Size: 1476
 Maintainer: @termux
-Version: 20191221-2
-Homepage: https://dev.maxmind.com/geoip/geoip2/geolite2/
-Description: GeoLite2 IP geolocation databases compiled by MaxMind
-Filename: dists/uncode/main/binary-all/geoip2-database_20191221-2_all.deb
-Size: 23384764
-MD5Sum: d40dd8d881da931729f8a8bc999ef8b0
-SHA1: b21b3c16635c46b42e1c8e67ae1c20a60d186c2d
-SHA256: 63e5ef8051a1d04e369bdb3d545722cb96eb71a5e4bd04db09b9e014b83350f7
-SHA512: 2ca972d4af45ec92c173fb3bd0b5a3821592a69a6ab0ef35f43988dee92e2ab49a1f6307ad7a38dec1c71014eecc5e08e3ce3b1af101cb100260dee8b8d4c586
+Version: 7.12
+Homepage: https://www.byobu.org/
+Depends: gawk, tmux
+Description: Byobu is a GPLv3 open source text-based window manager and terminal multiplexer
+Filename: dists/uncode/main/binary-all/byobu_7.12_all.deb
+Size: 347900
+MD5Sum: fce47d77a13c021e0aa4d35a0df34206
+SHA1: 354e1bc6534fe0b4cdc7ed512cb0d505699053db
+SHA256: 7e0f1bb12fb72d469956111cd5cab37c62fb5721217d0643307f2d2ac9e85273
+SHA512: dd36be812facc36f6926f2d375cc81e7dc015fcda3f3108788c37bd77a5ce18a5ebee5ef96fee9152df1de5e1fcbe9ab4270f633a468fc1b58c17e2cb107dea0
 
-Package: glibc-repo
+Package: help2man
 Architecture: all
-Installed-Size: 52
-Maintainer: @termux-pacman
-Version: 1.0
-Homepage: https://github.com/termux/glibc-packages
-Description: A package repository containing glibc-based programs and libraries
-Filename: dists/uncode/main/binary-all/glibc-repo_1.0_all.deb
-Size: 1140
-MD5Sum: 4146e4682d7c673610180b4d70e15ab5
-SHA1: 94c658a86fba769f5840bfea6f4b93a2bd5e70a8
-SHA256: 67231711097beedc4cffcfff809f2cbe20766b18a97329babffe96fbab4d0daf
-SHA512: 8c079157c50118ac41c298a63f1b59a5b56e7f7e4e526b5daaded9bc75e9d86ae3bf35b9c12621368770cfb403b33a7a3a5b4b63896faa79285e7ce38cc659b5
+Installed-Size: 96
+Maintainer: @termux
+Version: 1.49.3
+Homepage: https://www.gnu.org/software/help2man/
+Depends: perl
+Description: Conversion tool to create man files
+Filename: dists/uncode/main/binary-all/help2man_1.49.3_all.deb
+Size: 15648
+MD5Sum: b4777ec38c14a300fff4b70aab00e968
+SHA1: aedc3392798ed09e078c6d9c54cdf78adc8878e8
+SHA256: de800446e84552663e0dbf3b0a862275ade44f5ddb9987dbe00d13f353c8b133
+SHA512: 551698bdb4e907f77ad3b01c89bc401dd1e65797e2335d90f8fda413d2c126691db81656208b1af2756140615b478991ee47ba2491dbf33c7072630516b9b03c
+
+Package: hunspell-ru
+Architecture: all
+Installed-Size: 3504
+Maintainer: @termux
+Version: 20210731
+Homepage: https://hunspell.github.io
+Description: Russian dictionary for hunspell
+Filename: dists/uncode/main/binary-all/hunspell-ru_20210731_all.deb
+Size: 462320
+MD5Sum: c7743c7526a57c3541deff2fae9701fc
+SHA1: add57c138ef683ac858bb9d0cf7bfdb657331b53
+SHA256: 055cb4e73357a01373d4ae0de6ccf05c8651fa46afd82cb41cb0ac01412a37ce
+SHA512: 150b1e7d6913223a8824ce5cd091dde3835e8d0223cdc3010e83c4eed84be730a936923380cf9a36f1f8636a7843558ba2d1e199044f83d354958eeb6be21237
 

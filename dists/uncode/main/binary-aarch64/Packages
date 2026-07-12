@@ -1,250 +1,61 @@
-Package: abseil-cpp
+Package: hcl
 Architecture: aarch64
-Installed-Size: 8776
+Installed-Size: 14880
 Maintainer: @termux
-Version: 20250814.1
-Homepage: https://abseil.io/
-Depends: libc++
-Conflicts: libgrpc (<< 1.52.0-1)
-Description: Abseil C++ Common Libraries
-Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
-Size: 1117052
-MD5Sum: a99612704b914c5ac9e7827a865c1741
-SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
-SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
-SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
+Version: 2.24.0-1
+Homepage: https://github.com/hashicorp/hcl
+Description: A toolkit for creating structured configuration languages
+Filename: dists/uncode/main/binary-aarch64/hcl_2.24.0-1_aarch64.deb
+Size: 2440736
+MD5Sum: 361c382d34a5db4df37a4c57f8ce5096
+SHA1: 0d93c68bf4cc23b27acf9cd0c9d9e470bc3202c9
+SHA256: 1515b289de15812b0082d03d518a039406926af7565c6879a442ca2fdcfaa7cd
+SHA512: ce3be1535b26781682e1c95a73fb5ab9fb3c5b4bfd97c29d47c49031c118961763cee04aba8099694e9a2249a5f70e22af9b68e31a18f00957e9a102f91125d6
 
-Package: gotorrent
+Package: hcloud
 Architecture: aarch64
-Installed-Size: 10444
+Installed-Size: 19668
 Maintainer: @termux
-Version: 0.1.2
-Homepage: https://github.com/ismaelpadilla/gotorrent
-Description: TUI for searching torrents
-Filename: dists/uncode/main/binary-aarch64/gotorrent_0.1.2_aarch64.deb
-Size: 2826692
-MD5Sum: f922121bb0546f40ec06ee674e25a783
-SHA1: 2578f8aaa0afa1e204074089daebe07e4f2a410d
-SHA256: f85df6f71f99e75700156493dbd971666cba8840c0a27c1c8b83ac4123878bf7
-SHA512: ec867e1550c0f89dcbb797a75a9e40fffd660dd0ac2279a1269b9866b1698756b520822609bbed2c8ad5bfb812e2ab4f891b5ae919dd6b193bae304bd6b78403
+Version: 1.66.0
+Homepage: https://github.com/hetznercloud/cli
+Depends: resolv-conf
+Description: Hetzner Cloud command line client
+Filename: dists/uncode/main/binary-aarch64/hcloud_1.66.0_aarch64.deb
+Size: 4495248
+MD5Sum: e89d47c1f41808f8ce891f08cba04e05
+SHA1: f914326a85c9131cd94c9630a0bae0547ba74d15
+SHA256: 7b39f3a0690f50a30d43674b4e7671ce46cc2d6957ed8d8dddb819e2868ae83a
+SHA512: 5c60eea472fdafc3d404012632d12aba6256ee5140b6f3343bebb3d18449549bd38ee36414c481796e28a784d914b4c56ea6da08a4bd91b557d1cdd9e22ebed8
 
-Package: gotty
+Package: helix-grammars
 Architecture: aarch64
-Installed-Size: 12928
+Installed-Size: 189528
 Maintainer: @termux
-Version: 1.8.0
-Homepage: https://github.com/sorenisanerd/gotty
-Description: Share your terminal as a web application
-Filename: dists/uncode/main/binary-aarch64/gotty_1.8.0_aarch64.deb
-Size: 3240180
-MD5Sum: 127a9087712a3342576ca04387d7b20d
-SHA1: f31ffb4f43e1c6cceb3de9546885ab333d24138e
-SHA256: 6088be1c2e299078455d47ce6815d44f5c6d744523aad7332c3c3ab61ef4b46f
-SHA512: c279efee731029b108971fa2a47770347eed73fa953384e56e5f69d6b2ec0a76d615c58ab11fea43e46ab7ee1dd3455c46de6870b9ea826957ed4b2cd225058a
+Version: 25.07.1-2
+Homepage: https://helix-editor.com/
+Depends: libc++, helix (= 25.07.1-2)
+Description: Helix grammars
+Filename: dists/uncode/main/binary-aarch64/helix-grammars_25.07.1-2_aarch64.deb
+Size: 10788848
+MD5Sum: ab8f4b55c2530d91f5a0ad378cb76827
+SHA1: f210eaff53469006419512f9a33f8733c870b7de
+SHA256: eee98f4dcae92ed7dbc4920f627322f3e2acb7237f17fe942f1fe6eb89735776
+SHA512: a2b1eb316a770426442626a51cb7e4c73b8e03f25affba0be5cd686dd6d1f07ea027da7e262f14ad36df01d37c7de05c852f1bea696b1f5eed66d68965606f97
 
-Package: gperf
+Package: helix
 Architecture: aarch64
-Installed-Size: 384
+Installed-Size: 36748
 Maintainer: @termux
-Version: 3.3-1
-Homepage: https://www.gnu.org/software/gperf
-Depends: libc++
-Description: A perfect hash function generator
-Filename: dists/uncode/main/binary-aarch64/gperf_3.3-1_aarch64.deb
-Size: 87176
-MD5Sum: 451d6efdbe9668c1ceb43ad812da9e08
-SHA1: c90fcb76ead8a71369cd5bfe1c4f57a290b65c53
-SHA256: 197ae5a01e882c175c13851e15f85dccf28327e036d8206cda5e7f533073e1dc
-SHA512: c0427a0ca046e4a60909de18ca77b117db0bb1a5a1ca798a518044ac86b699b6de42861733c2c0a6ae9315ed445e2f093d26f45511d294fb929bc28b6542a9a7
-
-Package: gping
-Architecture: aarch64
-Installed-Size: 2692
-Maintainer: Krishna kanhaiya @kcubeterm
-Version: 1.20.4
-Homepage: https://github.com/orf/gping
-Description: Ping, but with a graph
-Filename: dists/uncode/main/binary-aarch64/gping_1.20.4_aarch64.deb
-Size: 819040
-MD5Sum: 667970109a04e66e18032f66cda79f90
-SHA1: 79bc68b13a3f0a8f7c979042fc0ef5e6cca6d482
-SHA256: 0353342d6d924035b19141e46a2e5367bcbd35ad682ab5ed4d9515a165195936
-SHA512: 12bbd2473992cd4ba3390f43b6c4e39d47ca48fd2a849d423859a70b302bf8c11d6d8829e0d84ea374660c283748e5c4507fc737f3e917ab5193d366e6c42a31
-
-Package: grap
-Architecture: aarch64
-Installed-Size: 432
-Maintainer: @xingguangcuican6666 <xingguangcuican666@foxmail.com>
-Version: 1.49
-Homepage: https://www.lunabase.org/~faber/Vault/software/grap/
-Description: Language for typesetting graphs
-Filename: dists/uncode/main/binary-aarch64/grap_1.49_aarch64.deb
-Size: 104516
-MD5Sum: cb636922128e428fd2dc2cacac2d5432
-SHA1: d6d95077b91c7203c030858ba7765022bd2f4fd5
-SHA256: b8e01184772ea28ea75cc0b50d62b5aced6d8d1ce1543cf7a227859adcdb9bf7
-SHA512: fd5d179ba7b66f9cb227951ee273606a7a72feee3c68c698d2c38b6952275230e6680d6efe0aba3495af50c85253e1bb647439a0fafd9ec92a44a5959d4415fc
-
-Package: greed
-Architecture: aarch64
-Installed-Size: 556
-Maintainer: @termux
-Version: 5.0
-Homepage: http://www.catb.org/~esr/greed/
-Depends: ncurses
-Description: Game where you try to eat as much as possible of the board before munching yourself into a corner
-Filename: dists/uncode/main/binary-aarch64/greed_5.0_aarch64.deb
-Size: 188508
-MD5Sum: 2254984726e929005542e46d1baa41b4
-SHA1: e5ffafd1be57aeffedd83a99cee9234cdef39b92
-SHA256: 6ebc790ba9e0ee6530055113ae3033b0ea8f54eaf16348c4d36ef36960c97ad4
-SHA512: 0a6e269fc705e67df09101a0f71b27d9f702cfd94fc7418508d6f9d7fe66b5099ff619dfd68d799d82db1d5bb16c621382b8f3e8d55830cddc17c5808d9862e5
-
-Package: grex
-Architecture: aarch64
-Installed-Size: 2640
-Maintainer: @termux
-Version: 1.4.6-1
-Homepage: https://github.com/pemistahl/grex
-Description: Simplifies the task of creating regular expressions
-Filename: dists/uncode/main/binary-aarch64/grex_1.4.6-1_aarch64.deb
-Size: 688500
-MD5Sum: 31d8fa9d13229e7314d847dac7163d94
-SHA1: 580ea08eb9966e7556d497c7550ed269d1e06114
-SHA256: c5b677e1364d6a1c8a6f81b55e31ddb01fb9dcad4f356d94f249dbbc864e8799
-SHA512: c7c36edc8da2cbe6557552e9aca4fe77f6a8274c9dcc8ad06d55d9faa0440a6eb14526388c88cd4abec9d16c549309024127afd1cd05b54b13f748843a074466
-
-Package: groff
-Architecture: aarch64
-Installed-Size: 35500
-Maintainer: @termux
-Version: 1.23.0-2
-Homepage: https://www.gnu.org/software/groff/
-Depends: libc++, perl, mandoc
-Description: typesetting system that reads plain text mixed with formatting commands and produces formatted output
-Filename: dists/uncode/main/binary-aarch64/groff_1.23.0-2_aarch64.deb
-Size: 9741012
-MD5Sum: 7c1168c04cd86515f5ae6f4b1ad3b538
-SHA1: b2fb203b4248bd6a66c4226937c627e7302b1517
-SHA256: a23f089b998540aa172f058ba4690deb14943467e2c5114b798300929f285f93
-SHA512: 3d69aef27b171bde8d883b9d8ffc730c9933cb158ad90c2c5af8a86d04a5889e039450f35ed0cbfdf285387301e76d759937bc49791baabff6bda3d845fc43b8
-
-Package: gron
-Architecture: aarch64
-Installed-Size: 6620
-Maintainer: @termux
-Version: 0.7.1-4
-Homepage: https://github.com/tomnomnom/gron
-Description: Transforms JSON into discrete assignments
-Filename: dists/uncode/main/binary-aarch64/gron_0.7.1-4_aarch64.deb
-Size: 1911428
-MD5Sum: 46ee51a89d1b3b34ea5b821951fbb9dd
-SHA1: bd274ed6e68047d7b805a56257df0a7d3f58df6a
-SHA256: d704008d9a2505fb99fc87191cc46deff929de1faa8c932335c1f755066456de
-SHA512: 04987e980e0b3b30bb745167ca3ef59feb331269c4285157536f67c13736bfb80b1e6d67d71ec3eeb2122190c2fc5031f1507ea401200f50fcd5d294ec7dce9c
-
-Package: grpcurl
-Architecture: aarch64
-Installed-Size: 27940
-Maintainer: @termux
-Version: 1.9.3
-Homepage: https://github.com/fullstorydev/grpcurl
-Description: Like cURL, but for gRPC: Command-line tool for interacting with gRPC servers
-Filename: dists/uncode/main/binary-aarch64/grpcurl_1.9.3_aarch64.deb
-Size: 5648928
-MD5Sum: 3ebf55841755d68107c8c674cdbfbe5e
-SHA1: 431059d1abe5e052289e9efedb8cde4a5577f3cf
-SHA256: 4253d6f6a5cd4a1016565a34aeadb21f6a4b5969ae2cbb17e3145aa9cea6a91f
-SHA512: f9680dd3b1c85199a03732cf0685c2e8cbde550c08314413ad74dafd3f7df95d72fc2805e30412247b0cadd53847f06e0700b45ed147235105936bbf4dae4f33
-
-Package: gsl-static
-Architecture: aarch64
-Installed-Size: 5108
-Maintainer: @termux
-Version: 2.8-1
-Homepage: https://www.gnu.org/software/gsl/
-Depends: gsl (= 2.8-1)
-Description: Static libraries for gsl
-Filename: dists/uncode/main/binary-aarch64/gsl-static_2.8-1_aarch64.deb
-Size: 908680
-MD5Sum: b12d3825146ca1b8a3178ad52f6b4844
-SHA1: e221d81e62a81cd392eabff05036f8fbbf47f4d4
-SHA256: 79b5e60fc8ac759b0cd955a40bc2ee1b435fd76a56dedb385f36237a48103cf1
-SHA512: 97be953a5c3db4d1c0a2300e03eb42cac3dfadc1f8c8edee499d7c895621f4220fbe51d1cf235f6177b84b27f12069a4ff6f1b5246f41d51e96209d36b200bc2
-
-Package: gsl
-Architecture: aarch64
-Installed-Size: 6736
-Maintainer: @termux
-Version: 2.8-1
-Homepage: https://www.gnu.org/software/gsl/
-Breaks: gsl-dev
-Replaces: gsl-dev
-Description: GNU Scientific Library (GSL) providing a wide range of mathematical routines
-Filename: dists/uncode/main/binary-aarch64/gsl_2.8-1_aarch64.deb
-Size: 1237472
-MD5Sum: 3567d6856d9f5469a2b3973901a7e84a
-SHA1: f08439d6b289f6232d07b928ce0b5ce189b700ef
-SHA256: bbc3070235014ad2fb72c8db9183f38e8a11b038ea2e22e7abcad659b0c24cdb
-SHA512: d2a09c5394cf893fab209cdb01c9e7b70d2d99240bc779ba052b5e02dc11c55f6f4e8a2de03ad73b3e250fcc9ee543bf08508dc9022c710450393b0936d31bb7
-
-Package: gum
-Architecture: aarch64
-Installed-Size: 14164
-Maintainer: @termux
-Version: 0.17.0
-Homepage: https://github.com/charmbracelet/gum
-Description: A tool for creating minimal interactive TUIs for shell scripts
-Filename: dists/uncode/main/binary-aarch64/gum_0.17.0_aarch64.deb
-Size: 3127048
-MD5Sum: 7b7f29e8092f1bdec990a7712f04073a
-SHA1: facd6b83079459a80e67091cc6b57329ddcf888c
-SHA256: ae62f47855a94f2332eae8f2145dc19a24e68895c595111b00645016dd2b9ce5
-SHA512: f6e62d254c5251d4e48164722a5c41f41ce1d2b04832e86a0b441e7eefd05431edaa91c96d67e5e0d83b20b2bc9b5346e445f28fd8c23b05d8f8f58f9264387e
-
-Package: gumbo-parser-static
-Architecture: aarch64
-Installed-Size: 440
-Maintainer: @termux
-Version: 0.10.1-1
-Homepage: https://github.com/google/gumbo-parser
-Depends: gumbo-parser (= 0.10.1-1)
-Description: Static libraries for gumbo-parser
-Filename: dists/uncode/main/binary-aarch64/gumbo-parser-static_0.10.1-1_aarch64.deb
-Size: 100956
-MD5Sum: c4334f8f505cb3b87eb71db897b8c51d
-SHA1: 3724a10e6b245d2092d1c5f3dde30144b8af2887
-SHA256: 2c5fd15870fd904fe7711b4f0b5074a0b7a50382c5bf6121486740f68edcfa68
-SHA512: fbc930a8b0869e6ce258544c2f422ace913444aaf9fb893579f694537c2fcbedab66a7d81a1190aaa303c242c66c738fcf14fca37ebc79d00376e573ec19f14e
-
-Package: gumbo-parser
-Architecture: aarch64
-Installed-Size: 404
-Maintainer: @termux
-Version: 0.10.1-1
-Homepage: https://github.com/google/gumbo-parser
-Description: An HTML5 parsing library
-Filename: dists/uncode/main/binary-aarch64/gumbo-parser_0.10.1-1_aarch64.deb
-Size: 102588
-MD5Sum: 334e865d8c743d2e1fd3c45167527b94
-SHA1: 74d4464c475d3742e2584aad2018f27d7851a15e
-SHA256: 482e0b48dd8b74774e43e23a0618684af2b985a7dd3c44110ddafc207b59776c
-SHA512: a23a63266c507f1e6167f916e035f659b86098dd95db78d41dc22359228ef92a72c378e3d94e7c577f67a4666c059b9314c70f1682587c0273b711f443d40ed1
-
-Package: hashdeep
-Architecture: aarch64
-Installed-Size: 1320
-Maintainer: @termux
-Version: 4.4-9
-Homepage: https://md5deep.sourceforge.net/
-Depends: libc++
-Description: Programs to compute hashsums of arbitrary number of files recursively
-Filename: dists/uncode/main/binary-aarch64/hashdeep_4.4-9_aarch64.deb
-Size: 90484
-MD5Sum: 54c3cb3df0547ead0ecd1dc07b99b22b
-SHA1: 4cb8dbfb9276a6c052c37168e80d4ebd88f7287b
-SHA256: 9ab62c4087f78609a0d371f2da89c2f6905abd3f22e01becdb37072954a7c452
-SHA512: 670cadfa6647601cef38448238242ea4798d75034576672cf38b97fb9f6acf9c43b6425b024d1836b596fdd24803529f7fd160e2fcd663099f268bcafdcd87b9
+Version: 25.07.1-2
+Homepage: https://helix-editor.com/
+Suggests: helix-grammars, bash-completion, clang, delve, elvish, gopls, lldb, nodejs | nodejs-lts
+Description: A post-modern modal text editor written in rust
+Filename: dists/uncode/main/binary-aarch64/helix_25.07.1-2_aarch64.deb
+Size: 6541048
+MD5Sum: e800a2acd10423060b08316341c20470
+SHA1: 212f169892bd0454020af562e8d40d2b9f83439c
+SHA256: d46a9c5efbdf9a6c48c997738cba02342019aeb25cbb13764bee86aaf6d903cc
+SHA512: 8786ba635987c304de6dfa1aee38def83dc23b2eef9a74f3e96bba52d364bb507447797ca68eca58629af0e8fab6199fdccd98c0d749a97194e08d069a5629e7
 
 Package: hello
 Version: 8.7.1-1
@@ -258,42 +69,224 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 896
-MD5Sum: 9c0218cef084b88aa205b54ca45abff9
-SHA1: b884c84db62e92c9d3526c3fb7d3cf811ae1b3a1
-SHA256: 3c2a50bf06b5153af8c9ce56469a33fbbbdbc046ed712fab8fffff217c211797
-SHA512: 184fe2cce7231d0b0e33322afe1a60102196c01012d3a46e14b4de958fd9a66a8d8eb4001cb070ddf5e20af372b1e82d4fe7888bc94600e4f0e5a777b8700549
+Size: 892
+MD5Sum: 035e8ffe1e770fd669cf26dfab43a33c
+SHA1: e069c2b57c14d3bb3b9be47f58561a1e99120853
+SHA256: 57fc5c31a3450267fcfa9f1f60c83450a317f99869859baef81950aefa1493c6
+SHA512: 5fa6753939fee18d7914401935739586c765e0cf932b89cf43ef482e95a29211e12ca84838443d82addfe2d1f07fa8dfb9529731881199efc666593634c73224
 
-Package: libprotobuf
+Package: helm-ls
 Architecture: aarch64
-Installed-Size: 8840
+Installed-Size: 45304
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Depends: abseil-cpp, libc++, zlib
-Conflicts: protobuf-static
-Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Description: Protocol buffers C++ library
-Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
-Size: 1337056
-MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
-SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
-SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
-SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
+Version: 0.5.4
+Homepage: https://github.com/mrjosh/helm-ls
+Description: Language server for Helm
+Filename: dists/uncode/main/binary-aarch64/helm-ls_0.5.4_aarch64.deb
+Size: 8854896
+MD5Sum: dde6f4fef4bb108197d299f7a65af696
+SHA1: b98fd5e8d73c3ef87ad204d46a41404c3b9a24dd
+SHA256: c1b5a136746fc9e03c4067c0434695db3e7bcca77a4c905154b9668a1fe21839
+SHA512: 35c47a93f8075c9a1996819e1d40311411a8e3e20a9228ef83a136532c467f9a127c57de60cdf4cbee8af4abe4565612825d649da4f678b54cd5ec172a9a8bcf
 
-Package: protobuf
+Package: helm
 Architecture: aarch64
-Installed-Size: 5748
+Installed-Size: 64188
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Depends: libprotobuf (= 2:33.1-1)
-Description: Compiler for protocol buffer definition files
-Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
-Size: 1154160
-MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
-SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
-SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
-SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
+Version: 4.2.2
+Homepage: https://helm.sh
+Description: Helm helps you manage Kubernetes applications
+Filename: dists/uncode/main/binary-aarch64/helm_4.2.2_aarch64.deb
+Size: 11731268
+MD5Sum: 2de78716d8ef50ad4266032b17ea0147
+SHA1: 5ab6f200cd25218d2a2ba413ae4172372022d113
+SHA256: d5e31a5f516dd998ae7a0d81550ac6067261025c8bddc702836d0466a65f442d
+SHA512: ac50ef03b449d4587e7e30377f764ae5138c9e71877a0216858324635936fb0f7c66567a351efa90d6de0ce7007414c5ac25c6bede6481499dc51589947a9895
+
+Package: hexyl
+Architecture: aarch64
+Installed-Size: 992
+Maintainer: @termux
+Version: 0.17.0
+Homepage: https://github.com/sharkdp/hexyl
+Description: A command-line hex viewer
+Filename: dists/uncode/main/binary-aarch64/hexyl_0.17.0_aarch64.deb
+Size: 341848
+MD5Sum: 0439720b46d3303ef3482c199a0ad07c
+SHA1: 848a4ec167e674ce42a28ff23043a54752846a37
+SHA256: fa7483f28f33a820d73c304fd6f04833d50412097a82fd24cd6c3d38b308586f
+SHA512: 163a439fce123f55973d9809a6b628b4872560381985e2fcec927aa8ea8f2673ad7841199e73847b86cac0fe17d178f8e6a4523819be42ef76b5d4e1f4635db8
+
+Package: heyu
+Architecture: aarch64
+Installed-Size: 868
+Maintainer: @termux
+Version: 1:2.10.3-2
+Homepage: https://www.heyu.org/
+Description: Program for remotely controlling lights and appliances
+Filename: dists/uncode/main/binary-aarch64/heyu_1:2.10.3-2_aarch64.deb
+Size: 372244
+MD5Sum: 3853950a07f418d7ce1d98f2cfe01d39
+SHA1: 52c09c2f9303a8a779f100d67253800ae10f7178
+SHA256: 0c38fcb9a1bbf8126c8eb3881940edfdfa188925dfbecdc7c1d32f1755963ba6
+SHA512: ba0314e386db28ce31770cb5b6c76a87e8a9e787077568ef877e57ba5863bbe1a265c0542f1e7a6def9559a7d0bde60b55afcc2cfd665e791c1830c37bce10aa
+
+Package: hilbish
+Architecture: aarch64
+Installed-Size: 7720
+Maintainer: @termux
+Version: 1:2.3.4-1
+Homepage: https://rosettea.github.io/Hilbish/
+Description: The Moon-powered shell! A comfy and extensible shell for Lua fans!
+Filename: dists/uncode/main/binary-aarch64/hilbish_1:2.3.4-1_aarch64.deb
+Size: 1954256
+MD5Sum: d74647f82979eddaf4ee4def24ea7b3e
+SHA1: 2ee2ffd164ad360778e6087bdca7af95f358cfad
+SHA256: 120e7e20dafee85f3f09608cb383e096e9c762a80308e386e7c7aa82411e8d64
+SHA512: 5205f8363e6caaccb99a670f260bcc8990727bac3f45648bdfc8596353964758a69f7c094a97238bba65d3961bdcc9d0ecdc1c82a8bd2c7ac97d76a59d894037
+
+Package: hors
+Architecture: aarch64
+Installed-Size: 7668
+Maintainer: Krishna Kanhaiya @kcubeterm
+Version: 0.8.2-3
+Homepage: https://github.com/WindSoilder/hors
+Description: Instant coding answers via the command line (howdoi in rust)
+Filename: dists/uncode/main/binary-aarch64/hors_0.8.2-3_aarch64.deb
+Size: 2402024
+MD5Sum: ab72a4a60ca81fe5355e71ee843abb38
+SHA1: 725aa53a98540647450274dcf6aef3821286860a
+SHA256: 110cc197ff7ede510b80d6a06e1a47bc4bf5ec848e134facc36503b5d4c4eb8f
+SHA512: f95968284dc60dbec9828d89c7d25cc0336541625959e378c4bd18f5e02cae45f347b35f4f64326b90dff9bce879cd2dfdea8c76b1c766d963212d6825eaccbb
+
+Package: hugo
+Architecture: aarch64
+Installed-Size: 66544
+Maintainer: @termux
+Version: 0.163.3
+Homepage: https://gohugo.io/
+Depends: libc++
+Description: A fast and flexible static site generator
+Filename: dists/uncode/main/binary-aarch64/hugo_0.163.3_aarch64.deb
+Size: 14066332
+MD5Sum: 21e150e69e8469c381be68f85d7676a9
+SHA1: 392e3b1601f36c96e2250d9bd064a9557407ccd5
+SHA256: a3376d88e7c6de4f2809f708a10c19cf002b2748c7e365289fa35ae5bb4b4f0b
+SHA512: b9eba1763d3468df052207ef40a566bcca7dd989381f6175189d467da146aa745a7765e47e0d02861782935d14f69b79e3aa3c11c2628337bce06a9cf490c553
+
+Package: hummin
+Architecture: aarch64
+Installed-Size: 7248
+Maintainer: @termux
+Version: 2021.05.18-4
+Homepage: https://trantor.is/
+Description: Command line client for the imperial library of trantor
+Filename: dists/uncode/main/binary-aarch64/hummin_2021.05.18-4_aarch64.deb
+Size: 2075852
+MD5Sum: 8acdbc6a6d6dc47e88877ec91d54574a
+SHA1: eab4e0a3096a66afd96facd1138f611c214c6bdd
+SHA256: 5684681352ec5ca3c6769d9fc43bad6eb6e10dd9ec86b3f483231d6f8fea2470
+SHA512: afa0a3d60cf6864bd6e7607f77dc5518314558167224a9e1f903693d3bf9f5e9f272f63726ee5c45f1660417ff49a1c6a2afa038ca8a94af4d210f13a53d3d1a
+
+Package: hunspell-static
+Architecture: aarch64
+Installed-Size: 1920
+Maintainer: @termux
+Version: 1.7.3
+Homepage: https://hunspell.github.io
+Depends: hunspell (= 1.7.3)
+Description: Static libraries for hunspell
+Filename: dists/uncode/main/binary-aarch64/hunspell-static_1.7.3_aarch64.deb
+Size: 235308
+MD5Sum: 6b17cc0f4f4290f2212c73beb43a4e39
+SHA1: f7ea6d58be25be5519b18b1b9a518f869eded3aa
+SHA256: cf4deec1666bf0a81fe63b6f370de931733ee040d654f350cfb2a1815ec61243
+SHA512: 590ae2f3b5c8c1db4a94b0017c18b325e49e633871c36f0f7aca6da0ced22cf3760161d4616dfbf6e674769d5d1a34ac970a9eb6d05ae4a703d0b078643407b2
+
+Package: hunspell
+Architecture: aarch64
+Installed-Size: 1228
+Maintainer: @termux
+Version: 1.7.3
+Homepage: https://hunspell.github.io
+Breaks: hunspell-dev
+Depends: libc++, libiconv, ncurses, readline, hunspell-en-us
+Replaces: hunspell-dev
+Description: Spell checker
+Filename: dists/uncode/main/binary-aarch64/hunspell_1.7.3_aarch64.deb
+Size: 236500
+MD5Sum: 346d0c7a22b8159805418876977ad948
+SHA1: 884969cc73e34e4b57930cbaf2e806b936a9bebc
+SHA256: 585e4e320d11257bb2e51d6cec143a7c5259af70172170a57aad08bbc6eb8521
+SHA512: fa7e1a7b5d46668f0fc6e13883fb2b935f73751cc4dd67e669b4a1d306b121bde449c2a37a7d78398a323867bacadd8fa6c254cfaffd111a5caf92929064bf86
+
+Package: hut
+Architecture: aarch64
+Installed-Size: 8556
+Maintainer: @termux
+Version: 0.8.0
+Homepage: https://git.sr.ht/~xenrox/hut
+Description: A CLI tool for sr.ht
+Filename: dists/uncode/main/binary-aarch64/hut_0.8.0_aarch64.deb
+Size: 2344680
+MD5Sum: dfc6b8c5faf6b80b6ed49f61e203823c
+SHA1: be374d42cf0f8e62509e43c7b17935a0051b561a
+SHA256: 2881b7dea0d16ebe35aa37328883dff38c03f57a55ad5a53a54b7c2738af63cd
+SHA512: d3063ae5bee633c8cd4eb32fcd8b5d88ef9ebfde6e797d29f07dbf4892444c891ab3a7a63fc792414da7f04b606c751de8f401792cb268909a673ecdc72cd5a2
+
+Package: hwdata
+Architecture: aarch64
+Installed-Size: 10240
+Maintainer: @termux
+Version: 0.408
+Homepage: https://github.com/vcrhonek/hwdata
+Description: Database of hardware identification and configuration data
+Filename: dists/uncode/main/binary-aarch64/hwdata_0.408_aarch64.deb
+Size: 1685644
+MD5Sum: ffe40c3cb97e2d9b460d850b9edc8766
+SHA1: 28ee647444789e2dc101f9e7272f2649c175c02f
+SHA256: 02209c3423232c722a9e087bb0b11b237c8af969cc768dd525867a1f33442a81
+SHA512: 1a0fd396133447e327cd44fe5447f0966bfc887add0ec52a94d0694e62713a98fbe546cc7b045e612f13f648cdccee3636011923fc4ee1c6e8a38969eb8eb376
+
+Package: hydroxide
+Architecture: aarch64
+Installed-Size: 10108
+Maintainer: @termux
+Version: 0.2.32
+Homepage: https://github.com/emersion/hydroxide
+Description: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
+Filename: dists/uncode/main/binary-aarch64/hydroxide_0.2.32_aarch64.deb
+Size: 2853812
+MD5Sum: 737d6f863f543463b9f8271373636e09
+SHA1: 2add2fb2cbd3a346fe7a18fe3aac6549cda22c6d
+SHA256: 5ed14d81e4a4a88e26ac65fe397ca67b6fc8e9068d60ba5f6d55f26aa61fcbb9
+SHA512: 62695a97aa1f6fa2d3569507918ccc38fab2d917d70d1e25f400624f602b54001ea70d0862b743bff419c3f2ca3169f2021b6f8e26afbda2cc8615ba9fff5d2d
+
+Package: hyperfine
+Architecture: aarch64
+Installed-Size: 1208
+Maintainer: @termux
+Version: 1.20.0
+Homepage: https://github.com/sharkdp/hyperfine
+Description: A command-line benchmarking tool
+Filename: dists/uncode/main/binary-aarch64/hyperfine_1.20.0_aarch64.deb
+Size: 439172
+MD5Sum: 519903d026a5ba89937d7748b570929e
+SHA1: dc359dc68c9425568be43a7bac2e199e3284e6bb
+SHA256: c1d9ff52d02aad51bb9332d8750b3f44ceb38b6a26c88ea5e8ef4cd738bf921d
+SHA512: 2a99f4f8aceae8a8f1e4d6c9b31c18f34589f072cacf2ca1cd012eca591f006be1c07a7ac8e0ddffdb54bd382ccae09ea488cae47d64494d962fbd3aac23a1d1
+
+Package: hz
+Architecture: aarch64
+Installed-Size: 13808
+Maintainer: @termux
+Version: 0.10.5
+Homepage: https://www.cloudwego.io
+Description: A high-performance and strong-extensibility Go HTTP framework that helps developers build microservices
+Filename: dists/uncode/main/binary-aarch64/hz_0.10.5_aarch64.deb
+Size: 3594108
+MD5Sum: 26090641f5cafae422905cd4d8a96db8
+SHA1: 90451d4a665519a57eadceef415a5e39937540cf
+SHA256: e8c87cbe36ece0920cb31cd5d55dbe2af03103fd55ce97bcd585b694fd85cf12
+SHA512: 74637bfbf252b90df24b260200425bfea99466d44bf27ac4f05bda79ff1de1dfb887e0c37eb836a8a474cfe06906a554d11162954a66f8096e215f106840111d
 
