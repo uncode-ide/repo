@@ -1,5 +1,2 @@
-data/data/com.uncode.ide/files/usr/libexec/icon-name-mapping                     icon-naming-utils
-data/data/com.uncode.ide/files/usr/share/doc/icon-naming-utils/copyright         icon-naming-utils
-data/data/com.uncode.ide/files/usr/share/dtds/legacy-icon-mapping.dtd            icon-naming-utils
-data/data/com.uncode.ide/files/usr/share/icon-naming-utils/legacy-icon-mapping.xml icon-naming-utils
-data/data/com.uncode.ide/files/usr/share/pkgconfig/icon-naming-utils.pc          icon-naming-utils
+data/data/com.uncode.ide/files/usr/include/mustache.hpp                          kainjow-mustache
+data/data/com.uncode.ide/files/usr/share/doc/kainjow-mustache/LICENSE            kainjow-mustache
