@@ -1,3 +1,49 @@
+Package: a52dec
+Architecture: aarch64
+Installed-Size: 88
+Maintainer: @termux
+Version: 0.8.0-3
+Homepage: http://liba52.sourceforge.net/
+Depends: liba52 (= 0.8.0-3)
+Description: A test program for liba52
+Filename: dists/uncode/main/binary-aarch64/a52dec_0.8.0-3_aarch64.deb
+Size: 14316
+MD5Sum: 033d4edc568f67114168174b08bffe89
+SHA1: b1e62d504c022d9df327cbeb68f0df3f0c4a2050
+SHA256: 7a5bf1412e61d5175e041883e1d69825d5223a501b39915c8f065c65253e5b89
+SHA512: b0572df9d50d0fdc2134de7bdd33dbbd446986aca22a71c74b0b0caf260443bca37eb3c8e5a75b5274f0c087005724e643425011c935c33a9056f58da782f1c9
+
+Package: abseil-cpp
+Architecture: aarch64
+Installed-Size: 8776
+Maintainer: @termux
+Version: 20250814.1
+Homepage: https://abseil.io/
+Depends: libc++
+Conflicts: libgrpc (<< 1.52.0-1)
+Description: Abseil C++ Common Libraries
+Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
+Size: 1117064
+MD5Sum: 359041ccd86e576d3142412029d6f837
+SHA1: 7d19cde26d527d0b7692addef783329aa87a0507
+SHA256: b4aafb8f7c73397bfdc4832a2712ce20306c5194ef4f4891f632d0e1b4fe66ae
+SHA512: 8c96168e9989c9385723e1376ea9846f0964180a7444770e18cecb7e22378158af61f6a102671ede9108f7c2ce728840afe75e7369d6a0c297808ec054c61b9a
+
+Package: aom-tools
+Architecture: aarch64
+Installed-Size: 860
+Maintainer: @termux
+Version: 3.14.1
+Homepage: https://aomedia.org/
+Depends: libc++, libaom (= 3.14.1)
+Description: Command-line tools using AOMedia library
+Filename: dists/uncode/main/binary-aarch64/aom-tools_3.14.1_aarch64.deb
+Size: 202452
+MD5Sum: 861f5f342b4d118b154fb86cba8fd901
+SHA1: 5e8eab5ee429e101bc2fd0db9ae437aed8af6555
+SHA256: 371eef21cadc45d0460d08f62c8614d35f5b515a6b52b586e01f1df2b40c8be4
+SHA512: 153c79dcca0c6457501db2cdebf06102bfb9764072b9d8c449d98ae949e48761be6e011dce2a594ec9c26547c7c7ae4835c9f4edd18c3b730c6f8fabaca7e06b
+
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -11,399 +57,446 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: 496ae456dd8da74b6117eb7d2af42643
-SHA1: 3a744b70b9e22fb1c635bd3a89a8e39e8baa90a6
-SHA256: a8e35d1c2ef0065088e48da2ccfecbb59d60cb506ed60a4ed54a386e6eab0d9c
-SHA512: 5e3214458c177a63f9475a386109b21cf407a31ca31845c0dc100c9d3d00ec6f57e59912e5d69f7dbbeae7bbf1cc2081b19e4357831a03465d0b054d2749e3e4
+MD5Sum: b34b5aeba71e953a645c3ae038d1fc00
+SHA1: a5c1e21712106b116b0c4edcfced3d34948ce21d
+SHA256: 872edd535803e9ad3a2466fb94f4f8a8596343b97b7d8b73a404e04dfe3462de
+SHA512: 51d8b8df3a6e221848f65ae460d257c8001fbf8358646a7b4e3859ef285134104214791fc765dad7d40ee735316f85d4079de38148b9fb0a9bc0c3a38ddf46c0
 
-Package: jhead
+Package: lazygit
 Architecture: aarch64
-Installed-Size: 148
-Maintainer: @termux
-Version: 3.08-1
-Homepage: http://www.sentex.net/~mwandel/jhead/
-Description: Exif Jpeg header manipulation tool
-Filename: dists/uncode/main/binary-aarch64/jhead_3.08-1_aarch64.deb
-Size: 42232
-MD5Sum: 68a07c37ba328870b1d9a8bf1735ac5c
-SHA1: edd649527d7052f130255cb240d94508fa12ec99
-SHA256: b74a21510c99bddb4e9546c96a9c954576cf531f44aafffb751f60830c738df6
-SHA512: 00d105070ae293692e69285d5f7c09f3a3808050972f395152c3cea1d6441b58dc21f8f7520c3770934e314681f8874bf107e5dda425ac848d3c889959f36cdb
+Installed-Size: 20048
+Maintainer: Krishna kanhaiya @kcubeterm
+Version: 0.62.2
+Homepage: https://github.com/jesseduffield/lazygit
+Recommends: git
+Suggests: diff-so-fancy
+Description: Simple terminal UI for git commands
+Filename: dists/uncode/main/binary-aarch64/lazygit_0.62.2_aarch64.deb
+Size: 4577344
+MD5Sum: 13ddd16d6c840b1d33255e3bc46d4f0f
+SHA1: 5ce4176ac64c1cb8eaa210af862809eedbdd655c
+SHA256: a472775fd894b1a5e00d0119040ba8286f91a7b16d68a5d5b6e30c67858ca98a
+SHA512: bccd0337ff028f730fe8654b9005f000d119f6661024374beb2c66ad423a45f5f6c9d9aca33bc671becc566668fb6e39cd1d2afb81134f39665cfe0bbbd5ebf6
 
-Package: jira-go
-Architecture: aarch64
-Installed-Size: 11156
-Maintainer: @termux
-Version: 1.0.28-3
-Homepage: https://github.com/go-jira/jira
-Description: Simple jira command line client written in Go
-Filename: dists/uncode/main/binary-aarch64/jira-go_1.0.28-3_aarch64.deb
-Size: 2960480
-MD5Sum: 9d692e76bb88b1eb6e9a4d44ec612c57
-SHA1: d300d983e968d0f87958f666794ca45c0631b755
-SHA256: c54f4a2ac3bb5a2cefb5cbc681f6fe630c6c1d4d5f022b834e45be9c04c9947c
-SHA512: 53be1a2c6f6543e5c1150e6b3925b1c4a387489b87776f1953141159164fbd2ecf05db0456735092d79abd211f941979b742db2e7bd0368986a85f779abb2d6e
-
-Package: jless
-Architecture: aarch64
-Installed-Size: 2428
-Maintainer: @termux
-Version: 0.9.0-1
-Homepage: https://jless.io
-Description: A command-line JSON viewer designed for reading, exploring, and searching through JSON data.
-Filename: dists/uncode/main/binary-aarch64/jless_0.9.0-1_aarch64.deb
-Size: 682792
-MD5Sum: aca0622df2efd61ca4a1ecd0c4f9195b
-SHA1: 6b12c42b0e9f7feddc58b6c6fc001611b83e4bda
-SHA256: 88af265f5bace26b9d0eb2015abd22e44ce498bae0ff9920c8778d9372c88d54
-SHA512: 2d192612ef636b5d8a7f1956a61d4abd4c5f51fc6bc4d89bb04e6249702d837015b7c06f4e5c39ae7576213bd70ad3f9e3f78fe31f15eba8aefc4599ed3ef57f
-
-Package: jo
+Package: lcal
 Architecture: aarch64
 Installed-Size: 108
 Maintainer: @termux
-Version: 1.9-1
-Homepage: https://jpmens.net/2016/03/05/a-shell-command-to-create-json-jo/
-Description: JSON output from a shell
-Filename: dists/uncode/main/binary-aarch64/jo_1.9-1_aarch64.deb
-Size: 17184
-MD5Sum: 363f0e2dc479b57aee0cec66300f94e5
-SHA1: b67f2d6e121a7da3bdbf7a44410051cc4cf30991
-SHA256: 70333c518c97f26d05c46f1a4842b062701f46ce7b67c6b9b4479ed8d33e3c4a
-SHA512: 47484a0541e893939505b332775bb67c7bbbeb25247577a80130ca6c7e35726e84e8fc315d79a6f64e3a2bd8c94c9f4be14d76c7eb15112d280496db3601264c
+Version: 2.1.0-1
+Homepage: https://pcal.sourceforge.net/
+Description: A multi-platform program which generates PostScript lunar calendars in a yearly format
+Filename: dists/uncode/main/binary-aarch64/lcal_2.1.0-1_aarch64.deb
+Size: 22196
+MD5Sum: cd0373b9e14cea7ef823cca9006ddf8f
+SHA1: ad2e7720669fa4ce4529389d6a5758e36d869466
+SHA256: 68ef64355feff233551127a866284d84f20247d4022f20d267f4cba909e023b8
+SHA512: 01c2e17ff677634b65930d98f0f66257e498d27bad565242cea8e8bf21797e87ebb89faae4303ca0791d64026a22cbec6a615613092b6fd2d3e1e076f8f5c2f0
 
-Package: joe
+Package: lego
 Architecture: aarch64
-Installed-Size: 2252
+Installed-Size: 71396
+Maintainer: Izumi Sena Sora <info@unordinary.eu.org>
+Version: 5.2.2
+Homepage: https://github.com/go-acme/lego
+Description: Let's Encrypt/ACME client and library written in Go
+Filename: dists/uncode/main/binary-aarch64/lego_5.2.2_aarch64.deb
+Size: 13065440
+MD5Sum: 5bfa28969701f66b23fa3002b7612e9b
+SHA1: b8dee980434a1dfdb4f02b2cf87b536b2fc2a42e
+SHA256: 39017c3cd0a8f418db32c91fc688aaaa8b42afc5b90c143829987ed7ac8a7b6b
+SHA512: 65f804009e43cb69d027825bc35a9ea2c4b0e56a3c0410de411a5a5ea54f40d793b6d4167044199ecfd90cb8d64a33d21f33bfb88175d17bab6cb9f1907fbdb6
+
+Package: leptonica-static
+Architecture: aarch64
+Installed-Size: 4392
 Maintainer: @termux
-Version: 4.6-5
-Homepage: http://joe-editor.sourceforge.net
-Depends: ncurses
-Conflicts: jupp
-Description: Wordstar like text editor
-Filename: dists/uncode/main/binary-aarch64/joe_4.6-5_aarch64.deb
-Size: 447820
-MD5Sum: 9a4ba9df847d117d540e8a1b5439e54d
-SHA1: d3e79889b9782ad7319770e0e6a44e3d8738204b
-SHA256: b2710caab0447fc851d276bf8898092d05c4c9a2137094533de9b72bec557ce5
-SHA512: 7ce52dbbb149d41c6b9d3e2fcbadc5a4814b80b4a5d6671bec7c5ade18884caa5cc7665aa787968e8fed37cd483e048325b7d3333aca7c601ebbd1d61eb5eb3e
+Version: 1.87.0
+Homepage: http://www.leptonica.com/
+Depends: leptonica (= 1.87.0)
+Description: Static libraries for leptonica
+Filename: dists/uncode/main/binary-aarch64/leptonica-static_1.87.0_aarch64.deb
+Size: 963304
+MD5Sum: 1ed4704787c45782a21e80e06964123b
+SHA1: 35f9b67da1f98e4247f00559253c318f1a5aa8c5
+SHA256: 5a691216eff167e28ea6de916da3fc202bd687c04417b005495701dc0265ca00
+SHA512: cb731f775a8adf0d224e907c565d60218d258dd3330d6789053f57296766001c98b1a25cf50e9a5b65f236204acc39e70251cc92af414c8937483987ab767519
 
-Package: jq-lsp
+Package: leptonica
 Architecture: aarch64
-Installed-Size: 4408
+Installed-Size: 3020
 Maintainer: @termux
-Version: 0.1.17
-Homepage: https://github.com/wader/jq-lsp
-Description: jq language server
-Filename: dists/uncode/main/binary-aarch64/jq-lsp_0.1.17_aarch64.deb
-Size: 1166572
-MD5Sum: 101d273a7df80e9e96fc47a32708debe
-SHA1: e2c88424a5e7c20d807f57093e64c0ccb0b511ac
-SHA256: 50f8161199292c0823368b45bfea90c06b5dfbcc1f71eba646535488d806b823
-SHA512: 5b4674980dee4775090d54b65068c3b6e5b6745c37e4c08663ab4d872dc8b98379caddfb3957a88768b4c8d5638f84ebbb59ded0a19df86fbe525063be383c5a
+Version: 1.87.0
+Homepage: http://www.leptonica.com/
+Breaks: leptonica-dev
+Depends: giflib, libjpeg-turbo, libpng, libtiff, libwebp, openjpeg, zlib
+Replaces: leptonica-dev
+Description: Library for image processing and image analysis
+Filename: dists/uncode/main/binary-aarch64/leptonica_1.87.0_aarch64.deb
+Size: 911736
+MD5Sum: f596d5526dfed95e7692c239f3d304fb
+SHA1: 95e3b86c7a814b5b25fc9a204a2742c6fdf392b9
+SHA256: f4fea38f569150a31e2bdc14d4e21e6c400115ddccbc666a0c48595eaa09a9e6
+SHA512: bf8ac174650692c5607ae88a3316196c233a89ec330206312c101f9aee8af33782eb1155fa66b276c1a228649fa08bf2689b62a7d56e6f77a7847e7200a99cfb
 
-Package: jq-static
+Package: leveldb
 Architecture: aarch64
-Installed-Size: 1416
+Installed-Size: 420
 Maintainer: @termux
-Version: 1.8.2
-Homepage: https://jqlang.org/
-Depends: jq (= 1.8.2)
-Description: Static libraries for jq
-Filename: dists/uncode/main/binary-aarch64/jq-static_1.8.2_aarch64.deb
-Size: 281512
-MD5Sum: 46bd941dc76490e2866c7e638e568db9
-SHA1: b0e99f16c1376a4248f27a383f70cad4653a38e6
-SHA256: 01f34ede51fcd5db31207cb24f5922f8d609d5a52af5acf9129a6e99118836b6
-SHA512: bf04caf22e12fc914928072f1129402291941b5636b7ef908283caf882a0e57dff22a9a8555e0ad9adcf3af3346d2b1ed221f54b884c78e258dcbbae30fd075d
+Version: 1.23-4
+Homepage: https://github.com/google/leveldb
+Breaks: leveldb-dev
+Depends: libc++, libsnappy
+Replaces: leveldb-dev
+Description: Fast key-value storage library
+Filename: dists/uncode/main/binary-aarch64/leveldb_1.23-4_aarch64.deb
+Size: 109808
+MD5Sum: 3dd39fbc7a1cbf4a6a9f6e895be8964b
+SHA1: 588adb74c5a99fb24c9ee4af7edda56d1375a18d
+SHA256: 056aa6aea5b518bc8461669141a649064727287614d9038ff01edcc13ac4b533
+SHA512: 932009e7c08b2e2e21825cdc61e2e22ff429416992524fba5fa8f51cac8c38c9a044d53b063c4de475a49dffea6372afa097ca9036f1d87a034c6d60a4c9c6f3
 
-Package: jq
+Package: lexbor
 Architecture: aarch64
-Installed-Size: 1156
+Installed-Size: 12332
 Maintainer: @termux
-Version: 1.8.2
-Homepage: https://jqlang.org/
-Breaks: jq-dev
-Depends: oniguruma
-Replaces: jq-dev
-Description: Command-line JSON processor
-Filename: dists/uncode/main/binary-aarch64/jq_1.8.2_aarch64.deb
-Size: 315804
-MD5Sum: 90902b99430e793bed49c1f1c16a0309
-SHA1: 3023cad073fa7fb54c9c0dfe96f49e709587cd4f
-SHA256: 8809537cadea4f455abc73af59bae74809c1013302bd708dd0f5333497b718e3
-SHA512: 4d14bdf6f65fb26481d3cc0676278a40a8d388724a6ff9400a581b3351767b6cf6ec7348954f1c978c72b464b0a32e42ff441a7912afba585edf335f30507813
+Version: 3.0.0
+Homepage: https://lexbor.com
+Description: Fast embeddable web browser engine written in C with no dependencies
+Filename: dists/uncode/main/binary-aarch64/lexbor_3.0.0_aarch64.deb
+Size: 959232
+MD5Sum: 7675c746a8cb3a69abf7bd328971d8dd
+SHA1: 8f44630e52e79815f33edaab491d0240743036be
+SHA256: 768f13f607a3485d1e9b08e8f5030eaf41a2770435fb9382c8d4322fadfa468c
+SHA512: 3a2c284b555167ea2877801d2de5ea828566459891c7e9232f572177cf1cb5778fac89182ece655249556a20ea043573c5d2a3e787b8591e34e4ee296d4c0115
 
-Package: jql
+Package: lf
 Architecture: aarch64
-Installed-Size: 952
+Installed-Size: 6124
 Maintainer: @termux
-Version: 8.1.2
-Homepage: https://github.com/yamafaktory/jql
-Description: A JSON Query Language CLI tool
-Filename: dists/uncode/main/binary-aarch64/jql_8.1.2_aarch64.deb
-Size: 358348
-MD5Sum: 43ef265a4b330e93c86cd911427bd7c1
-SHA1: f7c51d6a373638f6b8f1b7bc30ac56c53fefe6d1
-SHA256: 421ad99359a0a4dbc56a0dd8d9bcf9bb11214154dc730c032094157fa4406f17
-SHA512: b219604d6dafc18b164f4719980a048a99e497556a1817b23b04514e64d08245c54bfb990027fb306a392ce511cccacccbbc31f2d9f788b113d015b8466e3d13
+Version: 41
+Homepage: https://github.com/gokcehan/lf
+Description: Terminal file manager
+Filename: dists/uncode/main/binary-aarch64/lf_41_aarch64.deb
+Size: 1683720
+MD5Sum: dfd5e54377d600685524eefc25186d94
+SHA1: a7f822225976ada1955d8655ff814030930cb924
+SHA256: 60578a75cef6932efcefae66b48b118dcc9c0e07513c2662648203612469b007
+SHA512: b1b0a7a84e2bd8d03a7e941e293ef0fb34c84e1c62dee47e5349c24e29d1e1fbc9cc5dc2376e0d867adf6a1e2b5204455aee9824d9394a9dbca14f2c561e2ce0
 
-Package: json-c-static
+Package: lhasa-static
 Architecture: aarch64
-Installed-Size: 180
+Installed-Size: 124
 Maintainer: @termux
-Version: 0.19
-Homepage: https://github.com/json-c/json-c/wiki
-Depends: json-c (= 0.19)
-Description: Static libraries for json-c
-Filename: dists/uncode/main/binary-aarch64/json-c-static_0.19_aarch64.deb
-Size: 31096
-MD5Sum: 016e66628e7c9289e6bf8943ad02f65d
-SHA1: dc13cd1864b1a1fdd781c9211fc5648c66f719a6
-SHA256: a930a76bdd0bf53da2b53d6df23ac20b9568577c660b5cdd7228c8c824537a2e
-SHA512: 5e799f6fe901cabb37823be54451f16761bd366a8028e2b5809e3b3a4f9456ecc386d03d376652373e19e70605c44776542f1208d3e89cdd60ab15c1214461c4
+Version: 0.6.0
+Homepage: https://lhasa.soulsphere.org/
+Depends: lhasa (= 0.6.0)
+Description: Static libraries for lhasa
+Filename: dists/uncode/main/binary-aarch64/lhasa-static_0.6.0_aarch64.deb
+Size: 20092
+MD5Sum: ee82446ccb3dcb34ede4e237c3281dea
+SHA1: 2dfd978dd084d520b7a30b2032127732aedee170
+SHA256: 827b138c9efa03c5c632db1a37bbe21008d017aa3645718afa7968b663f1bd47
+SHA512: 9d6c29bcbaf147bc69838842cbeb95936ae7f1d25cbfba59c967d8c418d185f1e97dbafdc5df779b805e5353d5c1702161cb46dcfea02b1bc4f894dba1fd45d0
 
-Package: json-c
+Package: lhasa
 Architecture: aarch64
-Installed-Size: 296
+Installed-Size: 188
 Maintainer: @termux
-Version: 0.19
-Homepage: https://github.com/json-c/json-c/wiki
-Breaks: json-c-dev
-Replaces: json-c-dev
-Description: A JSON implementation in C
-Filename: dists/uncode/main/binary-aarch64/json-c_0.19_aarch64.deb
-Size: 51976
-MD5Sum: 02c488e6dc3d41600c60ee19962a654b
-SHA1: f5ee7ed56c1540f4995cd98d9eaa7d9f5295d786
-SHA256: 48710bf284fe7c19348e43d1577802ce62c02940c9ff85f9172668c7346a2a61
-SHA512: d7d2cf1f004527a00c6ce37cabbeb792cc3301e3d400ee2ff3a7371559be56236620892516a8e2bd7433729039750b24e770f7e75e46b47c130db54727249190
+Version: 0.6.0
+Homepage: https://lhasa.soulsphere.org/
+Breaks: lhasa-dev
+Replaces: lhasa-dev
+Description: LHA compressor/decompressor
+Filename: dists/uncode/main/binary-aarch64/lhasa_0.6.0_aarch64.deb
+Size: 34528
+MD5Sum: 8c7c36bf4492b45c2b1133091770d467
+SHA1: 79302f3b4189df1ca6f5f2b4c59a6a023883069d
+SHA256: 1fd7f4c36dd2253b948bb24f5608be6d80d751bed19a2d40b68edb4582f6d855
+SHA512: 20db239409fab6a243c17708b9da0e9a8b2d40fcd1ceb57a4216305b22f145006097aae58dcaa036c7d421b9b3b0d407becb9fd49a34147c29e700cdf79e9255
 
-Package: jsoncpp-static
+Package: liba52-static
 Architecture: aarch64
-Installed-Size: 472
+Installed-Size: 76
 Maintainer: @termux
-Version: 1.9.8
-Homepage: https://github.com/open-source-parsers/jsoncpp
-Depends: jsoncpp (= 1.9.8)
-Description: Static libraries for jsoncpp
-Filename: dists/uncode/main/binary-aarch64/jsoncpp-static_1.9.8_aarch64.deb
-Size: 73052
-MD5Sum: 14196fa3fa0a4f0727fe751b5aa425d2
-SHA1: 772fd115d34cac3e4e4cf0f21274cdd4de17d4d4
-SHA256: 6e4ea18162d775239a2265946e9b8c95d798b89c317144855dbc33d94b7387cc
-SHA512: 6b26845d527c40f3bf4f4966cd83f79dcc6b2b3c3894c4ae61bf7931ceb5a251197893de7cb12abd02e8bcc9273fa2a432cd79d184c91ce8170557daa816bd6e
+Version: 0.8.0-3
+Homepage: http://liba52.sourceforge.net/
+Depends: liba52 (= 0.8.0-3)
+Description: Static libraries for liba52
+Filename: dists/uncode/main/binary-aarch64/liba52-static_0.8.0-3_aarch64.deb
+Size: 15532
+MD5Sum: 3fe1e67708d6ce26be5223e1d01dc72d
+SHA1: b56c1c66a3ff8628a8bc14ef851dcb2e04764c16
+SHA256: 43dc8c47a2767d2478d3fadcf0f1f58d9b73e2118c1f97ef0a0d1afdedc9ec4e
+SHA512: f2127698e1046cce5e44fb0bd02e8c170478decf8c529839e90cc4e288e2655ace0b3a2c6f285b61e8f45c467c2488f8225ddf1de3a506e2a5f6d59625f1c9d9
 
-Package: jsoncpp
+Package: liba52
 Architecture: aarch64
-Installed-Size: 452
+Installed-Size: 104
 Maintainer: @termux
-Version: 1.9.8
-Homepage: https://github.com/open-source-parsers/jsoncpp
-Breaks: jsoncpp-dev
-Depends: libc++
-Replaces: jsoncpp-dev
-Description: C++ library for interacting with JSON
-Filename: dists/uncode/main/binary-aarch64/jsoncpp_1.9.8_aarch64.deb
-Size: 96332
-MD5Sum: d6deddee874abddd6a4e1316f1b5a59a
-SHA1: f9caeb21ce71502d72b5bf9415919c0fd92a66b7
-SHA256: 26d2c64d1bbd06c116c3fbacf25243114d37b4026007eaa445ac788739f03937
-SHA512: 770ce3f8f6d83a738e3a34b6027f7c67d50cdda7e1265a8998af878b525252166e9df9f3bffa9143eb95ebb764e53c6d8a1e9d1c8dff194c579de451180f2cfd
+Version: 0.8.0-3
+Homepage: http://liba52.sourceforge.net/
+Description: A free library for decoding ATSC A/52 streams
+Filename: dists/uncode/main/binary-aarch64/liba52_0.8.0-3_aarch64.deb
+Size: 15420
+MD5Sum: 6dddb6c5a830c41b1743ae76854c9416
+SHA1: 6d9c579d8512f7d47daa30a23973f2f093671e71
+SHA256: 48e4c50a80bf4c8284c7ffe25b4429d2bc946501c871a1b65171359b0d0c8177
+SHA512: 62ee997bc5703b1609df65c01dab0516c7af3e4e5f9eca9a1dfe4766efa492021a47fb1c5c00efdc72ea2cf77b86cc64403e4b0ef2c39f21b290e0a5b65b1948
 
-Package: jump
+Package: libaml
 Architecture: aarch64
-Installed-Size: 3508
+Installed-Size: 100
 Maintainer: @termux
-Version: 0.51.0-3
-Homepage: https://github.com/gsamokovarov/jump
-Description: Jump helps you navigate in shell faster by learning your habits
-Filename: dists/uncode/main/binary-aarch64/jump_0.51.0-3_aarch64.deb
-Size: 959060
-MD5Sum: 43d16962fb5a374739c5f2abee066d9b
-SHA1: 4cf9cb133c5850431827a665cdea79f325011ef2
-SHA256: 2fba8ff1013fb2a05a4453ffaf71832c365b00e25ed55c32efdbd152c19960ff
-SHA512: a973b20c4488ce0ad92bc2c6fd027245ead6308d8f44bc3886b2c37b0f195aff769ae3b0c920df1eac7bdb0df9d45e452728bf4d840d2e2d3f4263d7b1846a66
+Version: 1.0.0-1
+Homepage: https://github.com/any1/aml
+Description: Andri's Main Loop library
+Filename: dists/uncode/main/binary-aarch64/libaml_1.0.0-1_aarch64.deb
+Size: 11628
+MD5Sum: f0b0cd2b9572862237340c853a2d4c37
+SHA1: 5f1264933e03a4ba8b98f793e7b81e3f82d25565
+SHA256: d03c59390f32da7aff4bf50f3c403768fbe5a434ccb07a0a1aafcef21bdf22dc
+SHA512: 06209791d5926d288e1ea805b3a00151a695824d3a775201c9c00f02f24f9a6d7e706b791672e41be96cdba073a6779abcbaf897ab3ff238900c87ebdb6fe359
 
-Package: jupp
+Package: libandroid-complex-math-static
 Architecture: aarch64
-Installed-Size: 748
+Installed-Size: 76
 Maintainer: @termux
-Version: 3.1jupp41-4
-Homepage: http://www.mirbsd.org/jupp.htm
-Depends: ncurses
-Conflicts: joe
-Description: User friendly full screen text editor
-Filename: dists/uncode/main/binary-aarch64/jupp_3.1jupp41-4_aarch64.deb
-Size: 162872
-MD5Sum: 125f492f270d2f05ac52479e0a55c8ef
-SHA1: 181d3c9bfa55ea84b46c158ce082011b9c3c86ce
-SHA256: f5fede8a2ed43a5a57604fd5ded0873aaefc2ffb45a5feea65578f4b3fd09568
-SHA512: 9f4e8e6000f91c3232b8eca2bcf221bd2dc6791f0a9aabc0c627c96c27f0bb81c3694d92365bea87b1cd94a4da648d9a765fb915b32c24f33ec628d00c4c297a
+Version: 0.2
+Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libm/upstream-netbsd/lib/libm/complex
+Depends: libandroid-complex-math (= 0.2)
+Description: Static libraries for libandroid-complex-math
+Filename: dists/uncode/main/binary-aarch64/libandroid-complex-math-static_0.2_aarch64.deb
+Size: 6008
+MD5Sum: 0e9811cc4fdae5587014d5e3fde32e61
+SHA1: e90f85f6a56e94a29638728dc53fc9238507b3dd
+SHA256: c8807a400ba443c3e63a5f0df65feec714e7bb521b28b57dfd35f440d025a00f
+SHA512: 03a0d7eab783883765940b819b4fcc99fef94a98c8a480b809db094ce218f82072b19f22ff44bb0beacd6c276168fea4ac7e0f3c4f2f864e4302faa68a8fa0fe
 
-Package: just
-Architecture: aarch64
-Installed-Size: 4628
-Maintainer: @flipee
-Version: 1.55.1
-Homepage: https://just.systems
-Description: A handy way to save and run project-specific commands
-Filename: dists/uncode/main/binary-aarch64/just_1.55.1_aarch64.deb
-Size: 1387116
-MD5Sum: c50d79d9d4da983b45038cf0f5a96ba3
-SHA1: ab1e4d68062c149d856d46911a4a88af799ba358
-SHA256: a1ef2ecd34edbdc94ba069abeff667494b2e7c4419c9420281e4c53b7d9d6781
-SHA512: dc8372cb3ac0ad05da6ac52a4a4adfc18e36648a3c22ba08cc5ad6d298c2f988db08cace5fda0025a82145aba61b60df0da742ad06c147d4f2544d995afa0bbd
-
-Package: k9s
-Architecture: aarch64
-Installed-Size: 135160
-Maintainer: Krishna Kanhaiya @kcubeterm
-Version: 0.51.0
-Homepage: https://k9scli.io
-Description: Kubernetes CLI To Manage Your Clusters In Style!
-Filename: dists/uncode/main/binary-aarch64/k9s_0.51.0_aarch64.deb
-Size: 24955524
-MD5Sum: b7e44dbd08db378cc1d40395dea53b3e
-SHA1: 95083d606b3cd2923f9a87d6861f476be96e353c
-SHA256: ffba6e2d9ceac1a9765e01b5e8d629922f51b47317f81e142a654978f0a096f6
-SHA512: e76b6debdf6a5b45b589fdcadb7868cba0b221aece652831a165b36cb66c4c1cc442d0d7efcd81f5ad4318b8369b6693153d7557a67918ba876eb19a3fc566e1
-
-Package: kakoune-lsp
-Architecture: aarch64
-Installed-Size: 7036
-Maintainer: @termux
-Version: 21.0.1
-Homepage: https://github.com/kakoune-lsp/kakoune-lsp
-Conflicts: kak-lsp
-Replaces: kak-lsp
-Description: Language Server Protocol Client for the Kakoune editor
-Filename: dists/uncode/main/binary-aarch64/kakoune-lsp_21.0.1_aarch64.deb
-Size: 2114148
-MD5Sum: 369294aba396953b62fd574b5d86d73c
-SHA1: 7d73309820fc7189b96990a350020c1679399c97
-SHA256: a285a00884607fb5d4a9c2a1220b3df67beeb5f9ab280c2c599f61f151c2ca53
-SHA512: 5596a9aaceb35cddca43d3b65de64f6e7935a2592f51aee8398379053142d4cdc33031941d6a8a40dd29723e7742f22171153fcdb7c9881018bcdb837d8c52fc
-
-Package: kakoune
-Architecture: aarch64
-Installed-Size: 3532
-Maintainer: @termux
-Version: 2026.05.21-1
-Homepage: https://kakoune.org/
-Depends: libc++
-Description: Code editor heavily inspired by Vim
-Filename: dists/uncode/main/binary-aarch64/kakoune_2026.05.21-1_aarch64.deb
-Size: 717324
-MD5Sum: c2f68a8d8343b158a771d82fa79c24c2
-SHA1: d47f1cb2b7e85ef43b1f9b40887fd9f6e8df5645
-SHA256: 3ccef8f2185f111b2db51e37499479433bc7238c054f5a8b404ba9e5a5b4c2cd
-SHA512: 37b5217a6cd23a8361d363d536bbb5ab835c639425e1525f736a93c967adba5e46802f2db76a7e06e16f86c4b8433d25ed92db013666e2da656ff747276fe996
-
-Package: kbd
+Package: libandroid-complex-math
 Architecture: aarch64
 Installed-Size: 64
 Maintainer: @termux
-Version: 2.10.0
-Homepage: https://kbd-project.org/
-Description: KBD's showkey utility for examining keycodes
-Filename: dists/uncode/main/binary-aarch64/kbd_2.10.0_aarch64.deb
-Size: 7060
-MD5Sum: c1bb590e1bb1fec3adbb72d0105ec32a
-SHA1: 540f2d19108758dcd8a962cdd4585e76f95f7dbe
-SHA256: 21df0ee277c679d71aa7943e75810fa3c451ed305f2436dd5155d374f6756651
-SHA512: 0481c722228d3cf9a3045ce8daa29f9f0e886e0b7b01d3e97d9f171096b7d1899cac2d0650ca9d70e95dc569ac8a26628bf835ba224ae769281a685f62a26bcd
+Version: 0.2
+Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libm/upstream-netbsd/lib/libm/complex
+Description: A shared library providing libm complex math functions
+Filename: dists/uncode/main/binary-aarch64/libandroid-complex-math_0.2_aarch64.deb
+Size: 9688
+MD5Sum: 218acc66ab0400a2d788acfb8d124c66
+SHA1: 822a4fa0fd22039698e6cd72cdbd2b8c14dd1313
+SHA256: 508956fb2bd7c85556af9e5e592b89980fd38c974e86834447fae1f6e84b3ba4
+SHA512: 403d7b8a8da6e796a4410c3c0eaedb732e20cea09675fc435f04d736d860efe33216ab75555f08474c82d11ad3478e58cd970dae972bd452191a8295dec49c07
 
-Package: keybase
+Package: libandroid-execinfo-static
 Architecture: aarch64
-Installed-Size: 135920
+Installed-Size: 36
 Maintainer: @termux
-Version: 6.6.3
-Homepage: https://keybase.io
-Conflicts: kbfs
-Replaces: kbfs
-Description: Key directory that maps social media identities to encryption keys
-Filename: dists/uncode/main/binary-aarch64/keybase_6.6.3_aarch64.deb
-Size: 30723524
-MD5Sum: 028f92fc3ffef14605b3d619424359a2
-SHA1: 55cfb1e905929dae7feb159eb58bf88ae9468723
-SHA256: cffb55749a24602ef556e3619660a632628f244be469ce902cd15d2abfd2a808
-SHA512: 8a2eab3e41271068962ec16dbdb6b0b9305096ef14cc17437f2983f1447dc25a767d447a91ebaaea20a8c96ce746af3be451ba872547255d952866d473606c95
+Version: 0.1-3
+Homepage: https://man7.org/linux/man-pages/man3/backtrace.3.html
+Depends: libandroid-execinfo (= 0.1-3)
+Description: Static libraries for libandroid-execinfo
+Filename: dists/uncode/main/binary-aarch64/libandroid-execinfo-static_0.1-3_aarch64.deb
+Size: 2400
+MD5Sum: fd1374249c617d8002e02332d4571f30
+SHA1: 78dc0cb236584b5606c3235de41a0fc97797b509
+SHA256: 81f805446986b6339bf88e84080eed031699878846c0db5721d6a2df7788cfb3
+SHA512: ae35677f650f72cf17d26b6b49e4ba924132b3987b994da0be47c897f1dcad46d15af3288bbbf8f149d4cd38d7025a8aabfc099390012dc9dea7b4c48973c172
 
-Package: kibi
+Package: libandroid-execinfo
 Architecture: aarch64
-Installed-Size: 704
+Installed-Size: 88
 Maintainer: @termux
-Version: 0.3.3-1
-Homepage: https://github.com/ilai-deutel/kibi
-Description: A tiny terminal text editor, written in Rust
-Filename: dists/uncode/main/binary-aarch64/kibi_0.3.3-1_aarch64.deb
-Size: 193996
-MD5Sum: 50be9ddeaca6d8b6162d44f15fa7856c
-SHA1: 24ec005037e89086b8e6a01267ec8d944383c087
-SHA256: 34c9e4969a105d1de24106bbd6eedcce16372edd4cc62f33edfdf52936199500
-SHA512: 51e74824fe56c1f54a94f9d54d6bdbff4b8bec6746deb18544732746f3b945d79da1f8e87e13a64a174934f6ff550d7ad2ee0d08a358aa41ed2b0e14ffe4bcfa
+Version: 0.1-3
+Homepage: https://man7.org/linux/man-pages/man3/backtrace.3.html
+Conflicts: libexecinfo
+Provides: libexecinfo
+Description: Shared library for the backtrace system function
+Filename: dists/uncode/main/binary-aarch64/libandroid-execinfo_0.1-3_aarch64.deb
+Size: 15220
+MD5Sum: 1d39e515203ffa280ab2bf5d04e1db8f
+SHA1: 5d1aaf348c12ad44c8b6f2579e72e650404011bf
+SHA256: 1551fa4cded01d43ba7d28b202ba08c8ff6924bea9dea29e5b0826120ea06f12
+SHA512: 58e9c982ae5b6766168592784021f35cebe2d3c28345f4eeddef7281ae548b1ff6bd99bdc2e1f688f9d0ae45229646f193620beb977dfe12a967a5a75d585bda
 
-Package: kona
+Package: libandroid-shmem-static
 Architecture: aarch64
-Installed-Size: 260
+Installed-Size: 48
 Maintainer: @termux
-Version: 20211225-1
-Homepage: https://github.com/kevinlawler/kona
-Description: Open-source implementation of the APL-like K programming language
-Filename: dists/uncode/main/binary-aarch64/kona_20211225-1_aarch64.deb
-Size: 85560
-MD5Sum: 15e61a3ec650515253a7cb82c86d910b
-SHA1: e778c44f4b0ff1c434893c40c57fa1680cb1cfcb
-SHA256: c434b4610e96d2b3571e95b7b46cc8b9a36d36f7e450e61300b051abaa866399
-SHA512: 76a5d6392afd7fc0f4535b379aefe289c4fb1f3621c9c9ace8d6bab506962e9a861e1ce57bf100469ce9bde137130bca6d50d7f03add30b8a034b1ccb809e993
+Version: 0.7
+Homepage: https://github.com/termux/libandroid-shmem
+Depends: libandroid-shmem (= 0.7)
+Description: Static libraries for libandroid-shmem
+Filename: dists/uncode/main/binary-aarch64/libandroid-shmem-static_0.7_aarch64.deb
+Size: 6044
+MD5Sum: 76a0a8abc7e4addcd1152db361eb3169
+SHA1: d177e4229386c007d69fe93410c1c56582d20fed
+SHA256: 1fcaaaab23a6f970cd79087d61a8841e20bc84d657367330e32884f860224dc6
+SHA512: 200329484ed392d1f07bc0d6c0732c3612969426273945e109a158bd5eb154a8ad6a342909237f7c5c2e257abbe4c8e59c96f0a2b4a44ae56510f7a9e0fbbca4
 
-Package: kubecolor
+Package: libandroid-shmem
 Architecture: aarch64
-Installed-Size: 6584
-Maintainer: Kalle Fagerberg @applejag
-Version: 0.6.0
-Homepage: https://github.com/kubecolor/kubecolor
-Depends: kubectl
-Description: Colorize your kubectl output
-Filename: dists/uncode/main/binary-aarch64/kubecolor_0.6.0_aarch64.deb
-Size: 1852256
-MD5Sum: 9fb8ef921e2d997971ec8948fff40325
-SHA1: 8d1352ab6e84985d7304849955823c7436056605
-SHA256: e704a3902f090b946b59ab7ae0f387300f9045e1edf5c90667e86ba6de615cc6
-SHA512: 0d217033b83fc0f839bf5fe58d0cf446ea8343f22a37d501ea5e8da0e3f10844fc02b133ed726fea3c9e5191cbe01830104cb00202a234674bae5140c751cc46
-
-Package: kubelogin
-Architecture: aarch64
-Installed-Size: 15804
+Installed-Size: 72
 Maintainer: @termux
-Version: 1.36.2
-Homepage: https://github.com/int128/kubelogin
-Description: A kubectl plugin for Kubernetes OpenID Connect (OIDC) authentication
-Filename: dists/uncode/main/binary-aarch64/kubelogin_1.36.2_aarch64.deb
-Size: 3953284
-MD5Sum: 58bc5d452aec27d3a96d8dae90dfe5a5
-SHA1: b45d90a925f1ad1b9a5d14b3ca920b8333d400b8
-SHA256: db447521ac457aac5898dec839bea0144e4baffe853fbf2de37e1de3829e320c
-SHA512: cf9aa303435055ac55c934a86eb6683ba3807b4d11c4cdbfb09b8114b66987e9476b73df40db8b1bef22361859aa6e9ad4f911c921f7fd58c8a9f1be5efecccf
+Version: 0.7
+Homepage: https://github.com/termux/libandroid-shmem
+Breaks: libandroid-shmem-dev
+Replaces: libandroid-shmem-dev
+Description: System V shared memory emulation on Android using ashmem
+Filename: dists/uncode/main/binary-aarch64/libandroid-shmem_0.7_aarch64.deb
+Size: 7220
+MD5Sum: 1b8dbb30af608a746b3c6b362a7a5850
+SHA1: c2acf6a032bb660e20068ca3eedfc34b8418d737
+SHA256: b8120673e719cee6f47498a90c8194fc39fcb13be7a2fd89802cbba3dfbed80c
+SHA512: 5dc8696e8f1575ae378d2e596ba4cfa5ccff9b3d0881c6084ba4bbf0e86711c033bf16cf2873ca2fe93669f599a26f43c95793d32298ced3acadb456fe0d7942
 
-Package: kubo
+Package: libandroid-stub
 Architecture: aarch64
-Installed-Size: 65304
+Installed-Size: 120
 Maintainer: @termux
-Version: 0.42.0
-Homepage: https://ipfs.io/
-Conflicts: ipfs
-Replaces: ipfs
-Provides: ipfs
-Suggests: termux-services
-Description: A peer-to-peer hypermedia distribution protocol
-Filename: dists/uncode/main/binary-aarch64/kubo_0.42.0_aarch64.deb
-Size: 14757540
-MD5Sum: 31a74b21ad7dcef48b26967c0963e06a
-SHA1: 7cc2af941d9e067fd1939c1b8ed450bfbd5634f9
-SHA256: 5eb5e5c81511fbab9587f724e16c09adee736fe837e52a7fba86f2752ef42acf
-SHA512: e707da0cdfda5ac43bb861dfa71af53fd2cbd6df2da350495601a01cca8e71e985edda835c4bd5d31e71db80cb5f02cfb856a7efda1e3fd5aa98e9a9db0702de
+Version: 29-1
+Homepage: https://android.googlesource.com/platform/frameworks/base/+/main/native/android
+Conflicts: libandroid
+Replaces: libandroid
+Description: Stub libandroid.so for non-Android certified environment
+Filename: dists/uncode/main/binary-aarch64/libandroid-stub_29-1_aarch64.deb
+Size: 16244
+MD5Sum: c51441907669307294c7ed80abdb77f6
+SHA1: 02c954f382d09ac8cb7b9302a08c5b7ebfedf395
+SHA256: 9753562d256df42455392aa053b2d7f4017972c9c0dbd9fffb39c0e0522d97ab
+SHA512: 21b9734fee20d151c48be8aeb0a93e3e8c7bbcfaa0b7e57ecfbe3df19f64a1414f6063fb18541abfc6b8e44eb6a86198b27bb674993e924172eed32865b67ac9
+
+Package: libandroid-sysv-semaphore-static
+Architecture: aarch64
+Installed-Size: 32
+Maintainer: @termux
+Version: 0.1-1
+Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libc/bionic/sys_sem.cpp
+Depends: libandroid-sysv-semaphore (= 0.1-1)
+Description: Static libraries for libandroid-sysv-semaphore
+Filename: dists/uncode/main/binary-aarch64/libandroid-sysv-semaphore-static_0.1-1_aarch64.deb
+Size: 1712
+MD5Sum: c8935351b2acbc6460cad3ee94652b3e
+SHA1: 7566253c4bde70820fe1b32ae792fc0d4fff75b6
+SHA256: 9a7be8fe837efd4d46c80c7d91cec7d7e7e7c9d109bcce03d600fbf8b6e3e195
+SHA512: 7c33b9b139738e5d4e4b02be18e258645786c2a610f0c95ca3fa0eb8afc1689f7636488134d3400b1dfb16d4639e64e646f2475e71f332fe3181851770924cb7
+
+Package: libandroid-sysv-semaphore
+Architecture: aarch64
+Installed-Size: 64
+Maintainer: @termux
+Version: 0.1-1
+Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libc/bionic/sys_sem.cpp
+Description: A shared library providing System V semaphores
+Filename: dists/uncode/main/binary-aarch64/libandroid-sysv-semaphore_0.1-1_aarch64.deb
+Size: 3620
+MD5Sum: 47c06c92d4942b1a64bff6791ce26870
+SHA1: d05e9dbd960711930c8d2972bfd897c3d72ad88e
+SHA256: 9c6f9bf8c1b88e5124ec9913cbc115071f56e3f54093fb98aca2a3d9f3fd224c
+SHA512: 595b9004cb3aa010813c51e66001f1045a7ac14cc52dfdf6dd0c2195b28f7627fa3e90a364d039b9d53a95e751a245b53fc86d7cba4a60795230f6df3631acbc
+
+Package: libandroid-utimes-static
+Architecture: aarch64
+Installed-Size: 32
+Maintainer: @termux
+Version: 0.4
+Homepage: https://github.com/termux/libandroid-utimes
+Depends: libandroid-utimes (= 0.4)
+Description: Static libraries for libandroid-utimes
+Filename: dists/uncode/main/binary-aarch64/libandroid-utimes-static_0.4_aarch64.deb
+Size: 1700
+MD5Sum: 5c0d806096b0f7bdcac9f97ec1165a15
+SHA1: 1ae1c61a03d35765b6c455fe8e81202e5f0d8a57
+SHA256: 613cdaff3445cc4b2ecf8c9a695859d3583ea75d5fc493828b3a26fc9a86db48
+SHA512: 56c82d9f58ea003f760482121774d34b2febd82e72c8af8f4d1ebd8b5473694c4ae7f013908d850f5a2362a9169d91c6ed334be31d4f9d44c19d56a1248ec770
+
+Package: libandroid-utimes
+Architecture: aarch64
+Installed-Size: 52
+Maintainer: @termux
+Version: 0.4
+Homepage: https://github.com/termux/libandroid-utimes
+Description: futimes, futimesat and lutimes from bionic
+Filename: dists/uncode/main/binary-aarch64/libandroid-utimes_0.4_aarch64.deb
+Size: 3136
+MD5Sum: 8d1e98f02cb6c13a9c193bd11780af18
+SHA1: 7bec9d189352a4bca98968d2866552a6708f9b19
+SHA256: 57c83043ec2ee3a477b7294e76da5fea2b9305e941581d87b631bc4c931dd8a9
+SHA512: dfd5cae09f6b7b61a9e87903e9d3c03aab1ef82e96c2ab804fd66a3a99a3010cfb8ecfbafdb5980729f594e5205a61a360b49bab7632be3d7769cb4c9ad651cb
+
+Package: libaom-static
+Architecture: aarch64
+Installed-Size: 8908
+Maintainer: @termux
+Version: 3.14.1
+Homepage: https://aomedia.org/
+Depends: libaom (= 3.14.1)
+Description: Static libraries for libaom
+Filename: dists/uncode/main/binary-aarch64/libaom-static_3.14.1_aarch64.deb
+Size: 2209320
+MD5Sum: b5ecef0a58ac31c403cc8fcca0133d07
+SHA1: 4316208e0f9fd8d8f82955dd0eebc1a211593aca
+SHA256: bb54341494d1a6374a1986f5e31584b4efbbbfbf04cb1a423f066293142f2cd4
+SHA512: 0432a8cda0ee235d1773b78359e3c452f71958e83d43becb594bb1b10151ee60bc335bb9d6b57182fefd318352982c4d9ee5721d131e36e5cc5c3f39dbe7bccb
+
+Package: libaom
+Architecture: aarch64
+Installed-Size: 7120
+Maintainer: @termux
+Version: 3.14.1
+Homepage: https://aomedia.org/
+Description: AV1 Video Codec Library
+Filename: dists/uncode/main/binary-aarch64/libaom_3.14.1_aarch64.deb
+Size: 2069092
+MD5Sum: eeda40487373caf8ff22a3d27def9d98
+SHA1: f7abaabdec5b9711c1105ae6f2ae4c578147ccd1
+SHA256: 0a81a0fec3b37e3d85f17430e81dc0c1735189046ec2ec695b115eb87dc21fb6
+SHA512: fee09af214837d3981fbfe3506ad66d14a80472b3abef4807f3b25cfc38ae6ba768eacbe8eb1aaf9f9cf9b1f2149efdd45d20dbefaf642ced0947ec94bf052b7
+
+Package: libatomic-ops-static
+Architecture: aarch64
+Installed-Size: 48
+Maintainer: @termux
+Version: 7.10.0
+Homepage: https://github.com/bdwgc/libatomic_ops
+Depends: libatomic-ops (= 7.10.0)
+Description: Static libraries for libatomic-ops
+Filename: dists/uncode/main/binary-aarch64/libatomic-ops-static_7.10.0_aarch64.deb
+Size: 4200
+MD5Sum: 575c15d82c8aceb6f55647272f30e5e3
+SHA1: 2dd10e162360eeda1335a28967270b9f4b04b624
+SHA256: c042a53bc018dcc43ee876c4578568ec4129d85b2c51767a495c372a5a533d09
+SHA512: 4226446807272594cd9eb831edfb84db74b1cfa2cd5d1368cccd74198c0913c4b93d82f8e136abba20fa212c7dcebeae49a07db8c498bcd772b4f53d9674a867
+
+Package: libatomic-ops
+Architecture: aarch64
+Installed-Size: 1032
+Maintainer: @termux
+Version: 7.10.0
+Homepage: https://github.com/bdwgc/libatomic_ops
+Description: Provides semi-portable access to hardware-provided atomic memory update operations
+Filename: dists/uncode/main/binary-aarch64/libatomic-ops_7.10.0_aarch64.deb
+Size: 89344
+MD5Sum: 727dbd0ac32604235eddaa7ad1e44a1a
+SHA1: f0e84f5cb1719e73ab86fca532585ba2f14c33b9
+SHA256: 2d4f241ba39474e73e1f20228e2c6774428b8dc5ce36c02497ac0325b3482d2c
+SHA512: c6126d567d0cbe17918e853688b41b968a239b6889067a1b0a7942c6c254a727c67729d015feaedb820987e1106db7cde342ad9a2f3295b783ee1ddb90209705
+
+Package: libprotobuf
+Architecture: aarch64
+Installed-Size: 8840
+Maintainer: @termux
+Version: 2:33.1-1
+Homepage: https://github.com/protocolbuffers/protobuf
+Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Depends: abseil-cpp, libc++, zlib
+Conflicts: protobuf-static
+Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Description: Protocol buffers C++ library
+Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
+Size: 1337056
+MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
+SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
+SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
+SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
 
 Package: libtiff-static
 Architecture: aarch64
@@ -468,4 +561,19 @@ MD5Sum: 9b9fcbd86892116bcb2e21849f8cd812
 SHA1: c03562f9e4f332cf3535a514889582843cca2c43
 SHA256: 71c73669a5a814785cecbb4fc72dffe3d56c4827b227ce4fb2d53258f65b679b
 SHA512: 07e27f3e843886792fdc6597817f5bc284fa0d1b0c6dfdc16e8c2eb090130a351b1de3a1efb090cc904c9dd09012c47e6e05448f0c0e5b2bf20d5010772a1c88
+
+Package: protobuf
+Architecture: aarch64
+Installed-Size: 5748
+Maintainer: @termux
+Version: 2:33.1-1
+Homepage: https://github.com/protocolbuffers/protobuf
+Depends: libprotobuf (= 2:33.1-1)
+Description: Compiler for protocol buffer definition files
+Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
+Size: 1154160
+MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
+SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
+SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
+SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
 
