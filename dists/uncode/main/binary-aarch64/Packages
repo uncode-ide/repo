@@ -1,49 +1,3 @@
-Package: a52dec
-Architecture: aarch64
-Installed-Size: 88
-Maintainer: @termux
-Version: 0.8.0-3
-Homepage: http://liba52.sourceforge.net/
-Depends: liba52 (= 0.8.0-3)
-Description: A test program for liba52
-Filename: dists/uncode/main/binary-aarch64/a52dec_0.8.0-3_aarch64.deb
-Size: 14316
-MD5Sum: 033d4edc568f67114168174b08bffe89
-SHA1: b1e62d504c022d9df327cbeb68f0df3f0c4a2050
-SHA256: 7a5bf1412e61d5175e041883e1d69825d5223a501b39915c8f065c65253e5b89
-SHA512: b0572df9d50d0fdc2134de7bdd33dbbd446986aca22a71c74b0b0caf260443bca37eb3c8e5a75b5274f0c087005724e643425011c935c33a9056f58da782f1c9
-
-Package: abseil-cpp
-Architecture: aarch64
-Installed-Size: 8776
-Maintainer: @termux
-Version: 20250814.1
-Homepage: https://abseil.io/
-Depends: libc++
-Conflicts: libgrpc (<< 1.52.0-1)
-Description: Abseil C++ Common Libraries
-Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
-Size: 1117064
-MD5Sum: 359041ccd86e576d3142412029d6f837
-SHA1: 7d19cde26d527d0b7692addef783329aa87a0507
-SHA256: b4aafb8f7c73397bfdc4832a2712ce20306c5194ef4f4891f632d0e1b4fe66ae
-SHA512: 8c96168e9989c9385723e1376ea9846f0964180a7444770e18cecb7e22378158af61f6a102671ede9108f7c2ce728840afe75e7369d6a0c297808ec054c61b9a
-
-Package: aom-tools
-Architecture: aarch64
-Installed-Size: 860
-Maintainer: @termux
-Version: 3.14.1
-Homepage: https://aomedia.org/
-Depends: libc++, libaom (= 3.14.1)
-Description: Command-line tools using AOMedia library
-Filename: dists/uncode/main/binary-aarch64/aom-tools_3.14.1_aarch64.deb
-Size: 202452
-MD5Sum: 861f5f342b4d118b154fb86cba8fd901
-SHA1: 5e8eab5ee429e101bc2fd0db9ae437aed8af6555
-SHA256: 371eef21cadc45d0460d08f62c8614d35f5b515a6b52b586e01f1df2b40c8be4
-SHA512: 153c79dcca0c6457501db2cdebf06102bfb9764072b9d8c449d98ae949e48761be6e011dce2a594ec9c26547c7c7ae4835c9f4edd18c3b730c6f8fabaca7e06b
-
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -56,524 +10,387 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 896
-MD5Sum: b34b5aeba71e953a645c3ae038d1fc00
-SHA1: a5c1e21712106b116b0c4edcfced3d34948ce21d
-SHA256: 872edd535803e9ad3a2466fb94f4f8a8596343b97b7d8b73a404e04dfe3462de
-SHA512: 51d8b8df3a6e221848f65ae460d257c8001fbf8358646a7b4e3859ef285134104214791fc765dad7d40ee735316f85d4079de38148b9fb0a9bc0c3a38ddf46c0
+Size: 892
+MD5Sum: 92be1a90a95f4a7ce9097395c5f22818
+SHA1: 6f2059d443f2bf9d1da61bba2ef96f4c5f70baa1
+SHA256: 133dd53bd5351485300cbdb298c7926bc92b982e20aa246596903a6913e2f7c1
+SHA512: 533e35c7bea94bed54af651d13e00057e9c1ea5030e34efb136edc9c9853e89a7e56581d002d008d3fb8979e2eca0e726fa25998455c541e23e4f6dec07220fa
 
-Package: lazygit
+Package: libblosc-static
 Architecture: aarch64
-Installed-Size: 20048
-Maintainer: Krishna kanhaiya @kcubeterm
-Version: 0.62.2
-Homepage: https://github.com/jesseduffield/lazygit
-Recommends: git
-Suggests: diff-so-fancy
-Description: Simple terminal UI for git commands
-Filename: dists/uncode/main/binary-aarch64/lazygit_0.62.2_aarch64.deb
-Size: 4577344
-MD5Sum: 13ddd16d6c840b1d33255e3bc46d4f0f
-SHA1: 5ce4176ac64c1cb8eaa210af862809eedbdd655c
-SHA256: a472775fd894b1a5e00d0119040ba8286f91a7b16d68a5d5b6e30c67858ca98a
-SHA512: bccd0337ff028f730fe8654b9005f000d119f6661024374beb2c66ad423a45f5f6c9d9aca33bc671becc566668fb6e39cd1d2afb81134f39665cfe0bbbd5ebf6
-
-Package: lcal
-Architecture: aarch64
-Installed-Size: 108
+Installed-Size: 1072
 Maintainer: @termux
-Version: 2.1.0-1
-Homepage: https://pcal.sourceforge.net/
-Description: A multi-platform program which generates PostScript lunar calendars in a yearly format
-Filename: dists/uncode/main/binary-aarch64/lcal_2.1.0-1_aarch64.deb
-Size: 22196
-MD5Sum: cd0373b9e14cea7ef823cca9006ddf8f
-SHA1: ad2e7720669fa4ce4529389d6a5758e36d869466
-SHA256: 68ef64355feff233551127a866284d84f20247d4022f20d267f4cba909e023b8
-SHA512: 01c2e17ff677634b65930d98f0f66257e498d27bad565242cea8e8bf21797e87ebb89faae4303ca0791d64026a22cbec6a615613092b6fd2d3e1e076f8f5c2f0
+Version: 1.21.6-2
+Homepage: https://www.blosc.org
+Depends: libblosc (= 1.21.6-2)
+Description: Static libraries for libblosc
+Filename: dists/uncode/main/binary-aarch64/libblosc-static_1.21.6-2_aarch64.deb
+Size: 304716
+MD5Sum: 8d0f013dc46183807fc7d2182ac15db8
+SHA1: cbdb5db5ac002a1656c6c14c7273c185fe526b86
+SHA256: 82f17d79563b3a87f27cd321c68aa99073f1712eb883f958b3f5925092019194
+SHA512: 1d4d8a013bfd797bafa963eaed55d7f146890023969fb169d76bcdb087a13f5ab1046eab620ffe24cc67c86f0895ff4d670ebbf6ae29f0b00492ce7c429bddee
 
-Package: lego
+Package: libblosc
 Architecture: aarch64
-Installed-Size: 71396
-Maintainer: Izumi Sena Sora <info@unordinary.eu.org>
-Version: 5.2.2
-Homepage: https://github.com/go-acme/lego
-Description: Let's Encrypt/ACME client and library written in Go
-Filename: dists/uncode/main/binary-aarch64/lego_5.2.2_aarch64.deb
-Size: 13065440
-MD5Sum: 5bfa28969701f66b23fa3002b7612e9b
-SHA1: b8dee980434a1dfdb4f02b2cf87b536b2fc2a42e
-SHA256: 39017c3cd0a8f418db32c91fc688aaaa8b42afc5b90c143829987ed7ac8a7b6b
-SHA512: 65f804009e43cb69d027825bc35a9ea2c4b0e56a3c0410de411a5a5ea54f40d793b6d4167044199ecfd90cb8d64a33d21f33bfb88175d17bab6cb9f1907fbdb6
-
-Package: leptonica-static
-Architecture: aarch64
-Installed-Size: 4392
+Installed-Size: 920
 Maintainer: @termux
-Version: 1.87.0
-Homepage: http://www.leptonica.com/
-Depends: leptonica (= 1.87.0)
-Description: Static libraries for leptonica
-Filename: dists/uncode/main/binary-aarch64/leptonica-static_1.87.0_aarch64.deb
-Size: 963304
-MD5Sum: 1ed4704787c45782a21e80e06964123b
-SHA1: 35f9b67da1f98e4247f00559253c318f1a5aa8c5
-SHA256: 5a691216eff167e28ea6de916da3fc202bd687c04417b005495701dc0265ca00
-SHA512: cb731f775a8adf0d224e907c565d60218d258dd3330d6789053f57296766001c98b1a25cf50e9a5b65f236204acc39e70251cc92af414c8937483987ab767519
+Version: 1.21.6-2
+Homepage: https://www.blosc.org
+Depends: liblz4, libsnappy, zlib, zstd
+Description: A blocking, shuffling and loss-less compression library
+Filename: dists/uncode/main/binary-aarch64/libblosc_1.21.6-2_aarch64.deb
+Size: 289328
+MD5Sum: ef3fccd36fb6668429706540a618b4ca
+SHA1: 6715cddd3530ae8f4a53cb64dcdcb10fb135ed6f
+SHA256: 61b5f33da29b27ee75408ca1c29e82ea40776b1a8d133943babecbc6af96d70a
+SHA512: 3d042319368355a58d1b21221035b06f28c7a299e556e8fa8486ba4efbd46a2683373f7e94b53ac9b468324bd53afef90dc1a9edc2b081586f003fb98c0fdbb7
 
-Package: leptonica
+Package: libbullet
 Architecture: aarch64
-Installed-Size: 3020
+Installed-Size: 8016
 Maintainer: @termux
-Version: 1.87.0
-Homepage: http://www.leptonica.com/
-Breaks: leptonica-dev
-Depends: giflib, libjpeg-turbo, libpng, libtiff, libwebp, openjpeg, zlib
-Replaces: leptonica-dev
-Description: Library for image processing and image analysis
-Filename: dists/uncode/main/binary-aarch64/leptonica_1.87.0_aarch64.deb
-Size: 911736
-MD5Sum: f596d5526dfed95e7692c239f3d304fb
-SHA1: 95e3b86c7a814b5b25fc9a204a2742c6fdf392b9
-SHA256: f4fea38f569150a31e2bdc14d4e21e6c400115ddccbc666a0c48595eaa09a9e6
-SHA512: bf8ac174650692c5607ae88a3316196c233a89ec330206312c101f9aee8af33782eb1155fa66b276c1a228649fa08bf2689b62a7d56e6f77a7847e7200a99cfb
+Version: 3.25-2
+Homepage: https://github.com/bulletphysics/bullet3
+Depends: libc++
+Description: SDK for real-time collision detection and multi-physics simulation for robotics, VR, etc
+Filename: dists/uncode/main/binary-aarch64/libbullet_3.25-2_aarch64.deb
+Size: 1342908
+MD5Sum: ddcdc0eeed48306c20584bad0507ba39
+SHA1: 20ec7a590b3d5ab083cfb33412eaa4361f30da3f
+SHA256: 06011fcd1d67ce8c2952b8bf51c80f5f10e99b54c2bd08d13147918aab163176
+SHA512: 72904d08cb469c62a88cdb1fba8c651aad9c12918048c29f4b579f4c4cef4bbf6f953d06b55b023123e27dc2ceccd59217932f4238c34c1d7c02cd187ae46d49
 
-Package: leveldb
+Package: libburn-static
 Architecture: aarch64
-Installed-Size: 420
+Installed-Size: 1876
 Maintainer: @termux
-Version: 1.23-4
-Homepage: https://github.com/google/leveldb
-Breaks: leveldb-dev
-Depends: libc++, libsnappy
-Replaces: leveldb-dev
-Description: Fast key-value storage library
-Filename: dists/uncode/main/binary-aarch64/leveldb_1.23-4_aarch64.deb
-Size: 109808
-MD5Sum: 3dd39fbc7a1cbf4a6a9f6e895be8964b
-SHA1: 588adb74c5a99fb24c9ee4af7edda56d1375a18d
-SHA256: 056aa6aea5b518bc8461669141a649064727287614d9038ff01edcc13ac4b533
-SHA512: 932009e7c08b2e2e21825cdc61e2e22ff429416992524fba5fa8f51cac8c38c9a044d53b063c4de475a49dffea6372afa097ca9036f1d87a034c6d60a4c9c6f3
+Version: 1.5.8
+Homepage: https://dev.lovelyhq.com/libburnia
+Depends: libburn (= 1.5.8)
+Description: Static libraries for libburn
+Filename: dists/uncode/main/binary-aarch64/libburn-static_1.5.8_aarch64.deb
+Size: 385504
+MD5Sum: ce7b08cf2129e07e8f1274946b9e8634
+SHA1: 55244c8475026849de4b7c00842a1158ce215099
+SHA256: 7e6cd7e3d613bd6d85954757cd2e8be9564121a8028a98c073a32e4cc71e6d57
+SHA512: cc7a3d4b1c433eb79cf80c77819d47fe651ec532bafece9c5b31d7b93a2afcc1c09ccc591f946e95837e54e2adf4b317312fe5e58dae3f1d1b8db9455838382b
 
-Package: lexbor
+Package: libburn
 Architecture: aarch64
-Installed-Size: 12332
+Installed-Size: 752
 Maintainer: @termux
-Version: 3.0.0
-Homepage: https://lexbor.com
-Description: Fast embeddable web browser engine written in C with no dependencies
-Filename: dists/uncode/main/binary-aarch64/lexbor_3.0.0_aarch64.deb
-Size: 959232
-MD5Sum: 7675c746a8cb3a69abf7bd328971d8dd
-SHA1: 8f44630e52e79815f33edaab491d0240743036be
-SHA256: 768f13f607a3485d1e9b08e8f5030eaf41a2770435fb9382c8d4322fadfa468c
-SHA512: 3a2c284b555167ea2877801d2de5ea828566459891c7e9232f572177cf1cb5778fac89182ece655249556a20ea043573c5d2a3e787b8591e34e4ee296d4c0115
+Version: 1.5.8
+Homepage: https://dev.lovelyhq.com/libburnia
+Breaks: libburn-dev
+Replaces: libburn-dev
+Description: Library for reading, mastering and writing optical discs
+Filename: dists/uncode/main/binary-aarch64/libburn_1.5.8_aarch64.deb
+Size: 249308
+MD5Sum: 0decae840a6888276654ec2522e424f0
+SHA1: 2e48e50fefde24cbbf75f8ce6d77640bbf03d4f7
+SHA256: f0209ac224d0fc253b101638bc65354629f1e056d57cea02b8b4c9490830eda2
+SHA512: a0c75ef42451a90186c368b278ec3c1eec44e0b295f2ab34ce304da612bd0e305f173478ebcac9264ebe93c0a1c2736e49e23a4e642b46f344c283e7ff4be024
 
-Package: lf
+Package: libcap-ng-static
 Architecture: aarch64
-Installed-Size: 6124
+Installed-Size: 68
 Maintainer: @termux
-Version: 41
-Homepage: https://github.com/gokcehan/lf
-Description: Terminal file manager
-Filename: dists/uncode/main/binary-aarch64/lf_41_aarch64.deb
-Size: 1683720
-MD5Sum: dfd5e54377d600685524eefc25186d94
-SHA1: a7f822225976ada1955d8655ff814030930cb924
-SHA256: 60578a75cef6932efcefae66b48b118dcc9c0e07513c2662648203612469b007
-SHA512: b1b0a7a84e2bd8d03a7e941e293ef0fb34c84e1c62dee47e5349c24e29d1e1fbc9cc5dc2376e0d867adf6a1e2b5204455aee9824d9394a9dbca14f2c561e2ce0
+Version: 2:0.9.3
+Homepage: https://people.redhat.com/sgrubb/libcap-ng/
+Depends: libcap-ng (= 2:0.9.3)
+Description: Static libraries for libcap-ng
+Filename: dists/uncode/main/binary-aarch64/libcap-ng-static_2:0.9.3_aarch64.deb
+Size: 9796
+MD5Sum: 0a1914956141e93aaafda1183dc46139
+SHA1: 58eef0e105009e8206862e30c47a79e9211a3600
+SHA256: 764bc6c05953a08014e77ff7775a2e53bed9ab8dfabdb14d9c3c3f8c7bb5b087
+SHA512: 558578366e51814ac866052202ff51097c879a409f40308054ccfafb2ccd41746a889a9f2f20369553e0b27880e0634ad5a068d3427be652efe0eee07498e986
 
-Package: lhasa-static
+Package: libcap-ng
 Architecture: aarch64
-Installed-Size: 124
+Installed-Size: 272
 Maintainer: @termux
-Version: 0.6.0
-Homepage: https://lhasa.soulsphere.org/
-Depends: lhasa (= 0.6.0)
-Description: Static libraries for lhasa
-Filename: dists/uncode/main/binary-aarch64/lhasa-static_0.6.0_aarch64.deb
-Size: 20092
-MD5Sum: ee82446ccb3dcb34ede4e237c3281dea
-SHA1: 2dfd978dd084d520b7a30b2032127732aedee170
-SHA256: 827b138c9efa03c5c632db1a37bbe21008d017aa3645718afa7968b663f1bd47
-SHA512: 9d6c29bcbaf147bc69838842cbeb95936ae7f1d25cbfba59c967d8c418d185f1e97dbafdc5df779b805e5353d5c1702161cb46dcfea02b1bc4f894dba1fd45d0
+Version: 2:0.9.3
+Homepage: https://people.redhat.com/sgrubb/libcap-ng/
+Description: Library making programming with POSIX capabilities easier than traditional libcap
+Filename: dists/uncode/main/binary-aarch64/libcap-ng_2:0.9.3_aarch64.deb
+Size: 38936
+MD5Sum: eabe999b5e9046a6183afd74599556a0
+SHA1: f6dcb6e62632eb3141a6654f435290d5f6904c0d
+SHA256: 52ea85c95def0ab39f3e87bb8a75dcb2dac7daa286dcd58e9b8f906331567b71
+SHA512: b43ce681680efa6636da7920fbfc8f03f2836fa289f847228165419624c9016bd7f27174ff8ac6d3a5a85a59169580f2db89f5e87c6a87862615e4a7933485d1
 
-Package: lhasa
-Architecture: aarch64
-Installed-Size: 188
-Maintainer: @termux
-Version: 0.6.0
-Homepage: https://lhasa.soulsphere.org/
-Breaks: lhasa-dev
-Replaces: lhasa-dev
-Description: LHA compressor/decompressor
-Filename: dists/uncode/main/binary-aarch64/lhasa_0.6.0_aarch64.deb
-Size: 34528
-MD5Sum: 8c7c36bf4492b45c2b1133091770d467
-SHA1: 79302f3b4189df1ca6f5f2b4c59a6a023883069d
-SHA256: 1fd7f4c36dd2253b948bb24f5608be6d80d751bed19a2d40b68edb4582f6d855
-SHA512: 20db239409fab6a243c17708b9da0e9a8b2d40fcd1ceb57a4216305b22f145006097aae58dcaa036c7d421b9b3b0d407becb9fd49a34147c29e700cdf79e9255
-
-Package: liba52-static
-Architecture: aarch64
-Installed-Size: 76
-Maintainer: @termux
-Version: 0.8.0-3
-Homepage: http://liba52.sourceforge.net/
-Depends: liba52 (= 0.8.0-3)
-Description: Static libraries for liba52
-Filename: dists/uncode/main/binary-aarch64/liba52-static_0.8.0-3_aarch64.deb
-Size: 15532
-MD5Sum: 3fe1e67708d6ce26be5223e1d01dc72d
-SHA1: b56c1c66a3ff8628a8bc14ef851dcb2e04764c16
-SHA256: 43dc8c47a2767d2478d3fadcf0f1f58d9b73e2118c1f97ef0a0d1afdedc9ec4e
-SHA512: f2127698e1046cce5e44fb0bd02e8c170478decf8c529839e90cc4e288e2655ace0b3a2c6f285b61e8f45c467c2488f8225ddf1de3a506e2a5f6d59625f1c9d9
-
-Package: liba52
-Architecture: aarch64
-Installed-Size: 104
-Maintainer: @termux
-Version: 0.8.0-3
-Homepage: http://liba52.sourceforge.net/
-Description: A free library for decoding ATSC A/52 streams
-Filename: dists/uncode/main/binary-aarch64/liba52_0.8.0-3_aarch64.deb
-Size: 15420
-MD5Sum: 6dddb6c5a830c41b1743ae76854c9416
-SHA1: 6d9c579d8512f7d47daa30a23973f2f093671e71
-SHA256: 48e4c50a80bf4c8284c7ffe25b4429d2bc946501c871a1b65171359b0d0c8177
-SHA512: 62ee997bc5703b1609df65c01dab0516c7af3e4e5f9eca9a1dfe4766efa492021a47fb1c5c00efdc72ea2cf77b86cc64403e4b0ef2c39f21b290e0a5b65b1948
-
-Package: libaml
-Architecture: aarch64
-Installed-Size: 100
-Maintainer: @termux
-Version: 1.0.0-1
-Homepage: https://github.com/any1/aml
-Description: Andri's Main Loop library
-Filename: dists/uncode/main/binary-aarch64/libaml_1.0.0-1_aarch64.deb
-Size: 11628
-MD5Sum: f0b0cd2b9572862237340c853a2d4c37
-SHA1: 5f1264933e03a4ba8b98f793e7b81e3f82d25565
-SHA256: d03c59390f32da7aff4bf50f3c403768fbe5a434ccb07a0a1aafcef21bdf22dc
-SHA512: 06209791d5926d288e1ea805b3a00151a695824d3a775201c9c00f02f24f9a6d7e706b791672e41be96cdba073a6779abcbaf897ab3ff238900c87ebdb6fe359
-
-Package: libandroid-complex-math-static
-Architecture: aarch64
-Installed-Size: 76
-Maintainer: @termux
-Version: 0.2
-Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libm/upstream-netbsd/lib/libm/complex
-Depends: libandroid-complex-math (= 0.2)
-Description: Static libraries for libandroid-complex-math
-Filename: dists/uncode/main/binary-aarch64/libandroid-complex-math-static_0.2_aarch64.deb
-Size: 6008
-MD5Sum: 0e9811cc4fdae5587014d5e3fde32e61
-SHA1: e90f85f6a56e94a29638728dc53fc9238507b3dd
-SHA256: c8807a400ba443c3e63a5f0df65feec714e7bb521b28b57dfd35f440d025a00f
-SHA512: 03a0d7eab783883765940b819b4fcc99fef94a98c8a480b809db094ce218f82072b19f22ff44bb0beacd6c276168fea4ac7e0f3c4f2f864e4302faa68a8fa0fe
-
-Package: libandroid-complex-math
-Architecture: aarch64
-Installed-Size: 64
-Maintainer: @termux
-Version: 0.2
-Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libm/upstream-netbsd/lib/libm/complex
-Description: A shared library providing libm complex math functions
-Filename: dists/uncode/main/binary-aarch64/libandroid-complex-math_0.2_aarch64.deb
-Size: 9688
-MD5Sum: 218acc66ab0400a2d788acfb8d124c66
-SHA1: 822a4fa0fd22039698e6cd72cdbd2b8c14dd1313
-SHA256: 508956fb2bd7c85556af9e5e592b89980fd38c974e86834447fae1f6e84b3ba4
-SHA512: 403d7b8a8da6e796a4410c3c0eaedb732e20cea09675fc435f04d736d860efe33216ab75555f08474c82d11ad3478e58cd970dae972bd452191a8295dec49c07
-
-Package: libandroid-execinfo-static
-Architecture: aarch64
-Installed-Size: 36
-Maintainer: @termux
-Version: 0.1-3
-Homepage: https://man7.org/linux/man-pages/man3/backtrace.3.html
-Depends: libandroid-execinfo (= 0.1-3)
-Description: Static libraries for libandroid-execinfo
-Filename: dists/uncode/main/binary-aarch64/libandroid-execinfo-static_0.1-3_aarch64.deb
-Size: 2400
-MD5Sum: fd1374249c617d8002e02332d4571f30
-SHA1: 78dc0cb236584b5606c3235de41a0fc97797b509
-SHA256: 81f805446986b6339bf88e84080eed031699878846c0db5721d6a2df7788cfb3
-SHA512: ae35677f650f72cf17d26b6b49e4ba924132b3987b994da0be47c897f1dcad46d15af3288bbbf8f149d4cd38d7025a8aabfc099390012dc9dea7b4c48973c172
-
-Package: libandroid-execinfo
+Package: libcap-static
 Architecture: aarch64
 Installed-Size: 88
 Maintainer: @termux
-Version: 0.1-3
-Homepage: https://man7.org/linux/man-pages/man3/backtrace.3.html
-Conflicts: libexecinfo
-Provides: libexecinfo
-Description: Shared library for the backtrace system function
-Filename: dists/uncode/main/binary-aarch64/libandroid-execinfo_0.1-3_aarch64.deb
-Size: 15220
-MD5Sum: 1d39e515203ffa280ab2bf5d04e1db8f
-SHA1: 5d1aaf348c12ad44c8b6f2579e72e650404011bf
-SHA256: 1551fa4cded01d43ba7d28b202ba08c8ff6924bea9dea29e5b0826120ea06f12
-SHA512: 58e9c982ae5b6766168592784021f35cebe2d3c28345f4eeddef7281ae548b1ff6bd99bdc2e1f688f9d0ae45229646f193620beb977dfe12a967a5a75d585bda
+Version: 2.69-1
+Homepage: https://sites.google.com/site/fullycapable/
+Depends: libcap (= 2.69-1)
+Description: Static libraries for libcap
+Filename: dists/uncode/main/binary-aarch64/libcap-static_2.69-1_aarch64.deb
+Size: 14984
+MD5Sum: 846b1c09c64c683448494850daa3e0e8
+SHA1: 9315d44d798f1e1aa7b8313624ae41bb2df1d33b
+SHA256: 43be0f82e69b3e51770c89bbfcc41d182d2190e6e7a71d3e2f80c133826095c0
+SHA512: 1a36d481486f9076c0e7c8094b3fdb81c1dd908fb3714a800c7376af74e7b53eb01504572fb5d19728f7022e919361c88d8ebb58cf8456071bb055715dff185d
 
-Package: libandroid-shmem-static
+Package: libcap
 Architecture: aarch64
-Installed-Size: 48
+Installed-Size: 544
 Maintainer: @termux
-Version: 0.7
-Homepage: https://github.com/termux/libandroid-shmem
-Depends: libandroid-shmem (= 0.7)
-Description: Static libraries for libandroid-shmem
-Filename: dists/uncode/main/binary-aarch64/libandroid-shmem-static_0.7_aarch64.deb
-Size: 6044
-MD5Sum: 76a0a8abc7e4addcd1152db361eb3169
-SHA1: d177e4229386c007d69fe93410c1c56582d20fed
-SHA256: 1fcaaaab23a6f970cd79087d61a8841e20bc84d657367330e32884f860224dc6
-SHA512: 200329484ed392d1f07bc0d6c0732c3612969426273945e109a158bd5eb154a8ad6a342909237f7c5c2e257abbe4c8e59c96f0a2b4a44ae56510f7a9e0fbbca4
+Version: 2.69-1
+Homepage: https://sites.google.com/site/fullycapable/
+Breaks: libcap-dev
+Depends: attr
+Replaces: libcap-dev
+Description: POSIX 1003.1e capabilities
+Filename: dists/uncode/main/binary-aarch64/libcap_2.69-1_aarch64.deb
+Size: 74320
+MD5Sum: 24e3f7a79eec4d6421df063a38d78c7f
+SHA1: 165622910a4dc544e1c4113a17b8fc15e2a00f15
+SHA256: 64542f3b8eb3039fa9a158b50488a51d79acd91933a5d4e47219b718021d0d80
+SHA512: 879ae6014058c1304c670ec70b3dc9ef03e35220af7636031ae9b1b99d47f759fd494d876167b851b0842e0db02b69e95cb3c9f1065360105dba78e471975d97
 
-Package: libandroid-shmem
+Package: libccd
 Architecture: aarch64
-Installed-Size: 72
-Maintainer: @termux
-Version: 0.7
-Homepage: https://github.com/termux/libandroid-shmem
-Breaks: libandroid-shmem-dev
-Replaces: libandroid-shmem-dev
-Description: System V shared memory emulation on Android using ashmem
-Filename: dists/uncode/main/binary-aarch64/libandroid-shmem_0.7_aarch64.deb
-Size: 7220
-MD5Sum: 1b8dbb30af608a746b3c6b362a7a5850
-SHA1: c2acf6a032bb660e20068ca3eedfc34b8418d737
-SHA256: b8120673e719cee6f47498a90c8194fc39fcb13be7a2fd89802cbba3dfbed80c
-SHA512: 5dc8696e8f1575ae378d2e596ba4cfa5ccff9b3d0881c6084ba4bbf0e86711c033bf16cf2873ca2fe93669f599a26f43c95793d32298ced3acadb456fe0d7942
+Installed-Size: 412
+Maintainer: Pooya Moradi <pvonmoradi@gmail.com>
+Version: 2.1-2
+Homepage: https://github.com/danfis/libccd
+Description: Library for collision detection between two convex shapes
+Filename: dists/uncode/main/binary-aarch64/libccd_2.1-2_aarch64.deb
+Size: 50628
+MD5Sum: 701dacb97c2a11c972cc16a77fdbf0fd
+SHA1: dda6cf772980c94ee47e30ef654e90fc894d3eaf
+SHA256: 866c88ab92537799be0878109ac57ee9f2cd8b2d995451efecac091f5f1f450b
+SHA512: cf94c6560b0e7a27e845924eb331b0cf32dc2ebb912aa1a2a5672381b182ae55b49615640377d953f55a910c6979c18f2a5fca0b95d21e4917a0c7564d59ca90
 
-Package: libandroid-stub
+Package: libcddb-static
 Architecture: aarch64
-Installed-Size: 120
+Installed-Size: 144
 Maintainer: @termux
-Version: 29-1
-Homepage: https://android.googlesource.com/platform/frameworks/base/+/main/native/android
-Conflicts: libandroid
-Replaces: libandroid
-Description: Stub libandroid.so for non-Android certified environment
-Filename: dists/uncode/main/binary-aarch64/libandroid-stub_29-1_aarch64.deb
-Size: 16244
-MD5Sum: c51441907669307294c7ed80abdb77f6
-SHA1: 02c954f382d09ac8cb7b9302a08c5b7ebfedf395
-SHA256: 9753562d256df42455392aa053b2d7f4017972c9c0dbd9fffb39c0e0522d97ab
-SHA512: 21b9734fee20d151c48be8aeb0a93e3e8c7bbcfaa0b7e57ecfbe3df19f64a1414f6063fb18541abfc6b8e44eb6a86198b27bb674993e924172eed32865b67ac9
+Version: 1.3.2-1
+Homepage: https://libcddb.sourceforge.net/
+Depends: libcddb (= 1.3.2-1)
+Description: Static libraries for libcddb
+Filename: dists/uncode/main/binary-aarch64/libcddb-static_1.3.2-1_aarch64.deb
+Size: 24368
+MD5Sum: e7a8965ed6dfb2e20d14e10fc1b5a610
+SHA1: 76c2ebdf0db0f6b451a8ab88869b0501ff467f6c
+SHA256: 286b168dfcd4ffd3166cb239d3b2c1cc560a08596090720dec9b62064a7b6992
+SHA512: 69dadef562c63d5ec510cf87c85fa9fc3c4ba0ce02c08af7acc98d001976aaa040289dfbc9cd309ff0ec6bf8e8ce6030405488b1a4e984bcd94b71b14f02f4cc
 
-Package: libandroid-sysv-semaphore-static
+Package: libcddb
 Architecture: aarch64
-Installed-Size: 32
+Installed-Size: 224
 Maintainer: @termux
-Version: 0.1-1
-Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libc/bionic/sys_sem.cpp
-Depends: libandroid-sysv-semaphore (= 0.1-1)
-Description: Static libraries for libandroid-sysv-semaphore
-Filename: dists/uncode/main/binary-aarch64/libandroid-sysv-semaphore-static_0.1-1_aarch64.deb
-Size: 1712
-MD5Sum: c8935351b2acbc6460cad3ee94652b3e
-SHA1: 7566253c4bde70820fe1b32ae792fc0d4fff75b6
-SHA256: 9a7be8fe837efd4d46c80c7d91cec7d7e7e7c9d109bcce03d600fbf8b6e3e195
-SHA512: 7c33b9b139738e5d4e4b02be18e258645786c2a610f0c95ca3fa0eb8afc1689f7636488134d3400b1dfb16d4639e64e646f2475e71f332fe3181851770924cb7
+Version: 1.3.2-1
+Homepage: https://libcddb.sourceforge.net/
+Depends: libiconv
+Description: A C library to access data on a CDDB server
+Filename: dists/uncode/main/binary-aarch64/libcddb_1.3.2-1_aarch64.deb
+Size: 38504
+MD5Sum: aced9891d8c1dfefb92a9e3188d671e4
+SHA1: 4819824d464fee1b6483cd4629cd59cd1658d4b3
+SHA256: 70ff45716b94faabd1b339ac917508c3b169e5d5d531fb31a8294f4e2e2c0a0b
+SHA512: 68e1eb29778465b994c9075170ecdc68d0feeda6c1b1a45d616bfb6da1dbb7bf5eec354ea0c834744eb8761ba6e1313754d9dd6c7c179ff24e575651feb0ec84
 
-Package: libandroid-sysv-semaphore
+Package: libchipmunk
 Architecture: aarch64
-Installed-Size: 64
+Installed-Size: 420
 Maintainer: @termux
-Version: 0.1-1
-Homepage: https://android.googlesource.com/platform/bionic/+/refs/heads/master/libc/bionic/sys_sem.cpp
-Description: A shared library providing System V semaphores
-Filename: dists/uncode/main/binary-aarch64/libandroid-sysv-semaphore_0.1-1_aarch64.deb
-Size: 3620
-MD5Sum: 47c06c92d4942b1a64bff6791ce26870
-SHA1: d05e9dbd960711930c8d2972bfd897c3d72ad88e
-SHA256: 9c6f9bf8c1b88e5124ec9913cbc115071f56e3f54093fb98aca2a3d9f3fd224c
-SHA512: 595b9004cb3aa010813c51e66001f1045a7ac14cc52dfdf6dd0c2195b28f7627fa3e90a364d039b9d53a95e751a245b53fc86d7cba4a60795230f6df3631acbc
+Version: 7.0.3-2
+Homepage: http://chipmunk2d.net
+Description: A fast and lightweight 2D game physics library
+Filename: dists/uncode/main/binary-aarch64/libchipmunk_7.0.3-2_aarch64.deb
+Size: 81744
+MD5Sum: b813437ee505c1a10c7a49e8ef9f77fb
+SHA1: 36fea956db9abe9f72d1f71378f01cbc740306a0
+SHA256: b0a8b80ff0b2065adf7ff1c99e039b5fdc60711769a0fb11370bdcdb228098a1
+SHA512: a0ceecae672056d7e26c6d44a7e23db0bc556d6594358f219c21131ab2c07cc5f83f57678e1abaf4ad04eae08b237340cef9e92addb7fe58785f3c103e3d8ac6
 
-Package: libandroid-utimes-static
+Package: libcln-static
 Architecture: aarch64
-Installed-Size: 32
+Installed-Size: 8460
 Maintainer: @termux
-Version: 0.4
-Homepage: https://github.com/termux/libandroid-utimes
-Depends: libandroid-utimes (= 0.4)
-Description: Static libraries for libandroid-utimes
-Filename: dists/uncode/main/binary-aarch64/libandroid-utimes-static_0.4_aarch64.deb
-Size: 1700
-MD5Sum: 5c0d806096b0f7bdcac9f97ec1165a15
-SHA1: 1ae1c61a03d35765b6c455fe8e81202e5f0d8a57
-SHA256: 613cdaff3445cc4b2ecf8c9a695859d3583ea75d5fc493828b3a26fc9a86db48
-SHA512: 56c82d9f58ea003f760482121774d34b2febd82e72c8af8f4d1ebd8b5473694c4ae7f013908d850f5a2362a9169d91c6ed334be31d4f9d44c19d56a1248ec770
+Version: 1.3.7-1
+Homepage: https://www.ginac.de/CLN/
+Depends: libcln (= 1.3.7-1)
+Description: Static libraries for libcln
+Filename: dists/uncode/main/binary-aarch64/libcln-static_1.3.7-1_aarch64.deb
+Size: 621708
+MD5Sum: ca8e0ebc5d9b333d8d44eaa13dd46246
+SHA1: b584d15662a01f4641bd17030a2af0b36829332b
+SHA256: c6426bd544520d7679d5d20f20f3402fb89c8c3cc48e5401d788272172195717
+SHA512: a0bae8c77adad49d1c4317982595c3b3f2eca4164967440fdfbffcf67d6e213458f8bf791eabaa4599bccd5d98b65c1a5565748dcfd6aa6263cff88500cac1d8
 
-Package: libandroid-utimes
+Package: libcln
 Architecture: aarch64
-Installed-Size: 52
+Installed-Size: 1976
 Maintainer: @termux
-Version: 0.4
-Homepage: https://github.com/termux/libandroid-utimes
-Description: futimes, futimesat and lutimes from bionic
-Filename: dists/uncode/main/binary-aarch64/libandroid-utimes_0.4_aarch64.deb
-Size: 3136
-MD5Sum: 8d1e98f02cb6c13a9c193bd11780af18
-SHA1: 7bec9d189352a4bca98968d2866552a6708f9b19
-SHA256: 57c83043ec2ee3a477b7294e76da5fea2b9305e941581d87b631bc4c931dd8a9
-SHA512: dfd5cae09f6b7b61a9e87903e9d3c03aab1ef82e96c2ab804fd66a3a99a3010cfb8ecfbafdb5980729f594e5205a61a360b49bab7632be3d7769cb4c9ad651cb
+Version: 1.3.7-1
+Homepage: https://www.ginac.de/CLN/
+Breaks: libcln-dev
+Depends: libc++, libgmp
+Replaces: libcln-dev
+Description: CLN is a library for efficient computations with all kinds of numbers in arbitrary precision
+Filename: dists/uncode/main/binary-aarch64/libcln_1.3.7-1_aarch64.deb
+Size: 406076
+MD5Sum: 212dfc33cae6455815451eb783e73d9f
+SHA1: c17af673077235764997f68e6cc2b7315babc2e0
+SHA256: 3e2b422bb20e2ebe5ea49152e4f5f8c51dac989f1f297cf792379a45f7e9a0b7
+SHA512: 7868bcba3cc96e0c514edfb146c60c6c044ffb09e53a68ea359f3cda06e7646235f80c5343f9355bd02d4251caa652b0fee7115fc7eb2e2b198860332b91767d
 
-Package: libaom-static
+Package: libconfig-static
 Architecture: aarch64
-Installed-Size: 8908
+Installed-Size: 264
 Maintainer: @termux
-Version: 3.14.1
-Homepage: https://aomedia.org/
-Depends: libaom (= 3.14.1)
-Description: Static libraries for libaom
-Filename: dists/uncode/main/binary-aarch64/libaom-static_3.14.1_aarch64.deb
-Size: 2209320
-MD5Sum: b5ecef0a58ac31c403cc8fcca0133d07
-SHA1: 4316208e0f9fd8d8f82955dd0eebc1a211593aca
-SHA256: bb54341494d1a6374a1986f5e31584b4efbbbfbf04cb1a423f066293142f2cd4
-SHA512: 0432a8cda0ee235d1773b78359e3c452f71958e83d43becb594bb1b10151ee60bc335bb9d6b57182fefd318352982c4d9ee5721d131e36e5cc5c3f39dbe7bccb
+Version: 1.8.2
+Homepage: https://github.com/hyperrealm/libconfig
+Depends: libconfig (= 1.8.2)
+Description: Static libraries for libconfig
+Filename: dists/uncode/main/binary-aarch64/libconfig-static_1.8.2_aarch64.deb
+Size: 31532
+MD5Sum: 6e555e99eb6c2e9014f0a785acd92ae9
+SHA1: 073f2462f83518c5edcad89fa7450f212b0ab1ba
+SHA256: 47d5a155e22cf10d1dd49f925a0605dd9b67126f8370bc60e9db0cfc798b57e4
+SHA512: 69363d47ad6c692cbda296a5cbdbafd0bb505dbee15f1efa61c767cc04f707be19471cf49cb1165e0b1f6989f615aac85932cff7d2bca67a1f110e1743af8f4e
 
-Package: libaom
+Package: libconfig
 Architecture: aarch64
-Installed-Size: 7120
+Installed-Size: 428
 Maintainer: @termux
-Version: 3.14.1
-Homepage: https://aomedia.org/
-Description: AV1 Video Codec Library
-Filename: dists/uncode/main/binary-aarch64/libaom_3.14.1_aarch64.deb
-Size: 2069092
-MD5Sum: eeda40487373caf8ff22a3d27def9d98
-SHA1: f7abaabdec5b9711c1105ae6f2ae4c578147ccd1
-SHA256: 0a81a0fec3b37e3d85f17430e81dc0c1735189046ec2ec695b115eb87dc21fb6
-SHA512: fee09af214837d3981fbfe3506ad66d14a80472b3abef4807f3b25cfc38ae6ba768eacbe8eb1aaf9f9cf9b1f2149efdd45d20dbefaf642ced0947ec94bf052b7
+Version: 1.8.2
+Homepage: https://github.com/hyperrealm/libconfig
+Breaks: libconfig-dev
+Depends: libc++
+Replaces: libconfig-dev
+Description: C/C++ Configuration File Library
+Filename: dists/uncode/main/binary-aarch64/libconfig_1.8.2_aarch64.deb
+Size: 76552
+MD5Sum: 6f5e289c002c578d64cc5404cef7b7e5
+SHA1: 57561cc90b47f80763321190090ea81f5aad1a82
+SHA256: 68c6d94f377e26e7dda133d850fd54680244bb56a371c44f16c6c305e63c9b37
+SHA512: 7b5e79a78186b253b5edd8764978daba84202941c4e38b6a4e02250a81faa9560ee778513190595e4f6033f0f577726efbd85f9ec2f7c980ed152e6b4a49cc51
 
-Package: libatomic-ops-static
+Package: libconfuse-static
 Architecture: aarch64
-Installed-Size: 48
+Installed-Size: 104
 Maintainer: @termux
-Version: 7.10.0
-Homepage: https://github.com/bdwgc/libatomic_ops
-Depends: libatomic-ops (= 7.10.0)
-Description: Static libraries for libatomic-ops
-Filename: dists/uncode/main/binary-aarch64/libatomic-ops-static_7.10.0_aarch64.deb
-Size: 4200
-MD5Sum: 575c15d82c8aceb6f55647272f30e5e3
-SHA1: 2dd10e162360eeda1335a28967270b9f4b04b624
-SHA256: c042a53bc018dcc43ee876c4578568ec4129d85b2c51767a495c372a5a533d09
-SHA512: 4226446807272594cd9eb831edfb84db74b1cfa2cd5d1368cccd74198c0913c4b93d82f8e136abba20fa212c7dcebeae49a07db8c498bcd772b4f53d9674a867
+Version: 3.3-1
+Homepage: https://github.com/martinh/libconfuse
+Depends: libconfuse (= 3.3-1)
+Description: Static libraries for libconfuse
+Filename: dists/uncode/main/binary-aarch64/libconfuse-static_3.3-1_aarch64.deb
+Size: 19752
+MD5Sum: 55f49729fb4c95e8ef797696227f0ede
+SHA1: 20097e04effe915ec3dda7674ff7cc08e72009a3
+SHA256: 24391dfc46660eedddaf2f4ab797ccecaa3d72c024cf50b26eaf97f039f2cd1e
+SHA512: 0572987389beadcf02354d88159ebf2f2f5606ca41f44c90ea6901ef506f38c88c4d73b2dcd586f76f09fd91ee974b3a63b395970da1b70e272418ee0c0c48e3
 
-Package: libatomic-ops
+Package: libconfuse
 Architecture: aarch64
-Installed-Size: 1032
+Installed-Size: 188
 Maintainer: @termux
-Version: 7.10.0
-Homepage: https://github.com/bdwgc/libatomic_ops
-Description: Provides semi-portable access to hardware-provided atomic memory update operations
-Filename: dists/uncode/main/binary-aarch64/libatomic-ops_7.10.0_aarch64.deb
-Size: 89344
-MD5Sum: 727dbd0ac32604235eddaa7ad1e44a1a
-SHA1: f0e84f5cb1719e73ab86fca532585ba2f14c33b9
-SHA256: 2d4f241ba39474e73e1f20228e2c6774428b8dc5ce36c02497ac0325b3482d2c
-SHA512: c6126d567d0cbe17918e853688b41b968a239b6889067a1b0a7942c6c254a727c67729d015feaedb820987e1106db7cde342ad9a2f3295b783ee1ddb90209705
+Version: 3.3-1
+Homepage: https://github.com/martinh/libconfuse
+Breaks: libconfuse-dev
+Replaces: libconfuse-dev
+Description: Small configuration file parser library for C
+Filename: dists/uncode/main/binary-aarch64/libconfuse_3.3-1_aarch64.deb
+Size: 34796
+MD5Sum: c5eaab269f479144db73afd92b2d4190
+SHA1: 1b62aab74a313a058b99f557e555481108bd00ff
+SHA256: fd5d1f2086ba4d2be6b7c7a5e2a537579ae7da147245dcf8967f27352d2691d0
+SHA512: 7498b50f87397ed5a9098e2e5650ed97a0ec37257da163ec3ce7dbb7290ce784097fea9c3d19767d3fb71e0fd4f81b66f8d6b9973fb8eca239defe2dc8b44044
 
-Package: libprotobuf
+Package: libcpufeatures
 Architecture: aarch64
-Installed-Size: 8840
+Installed-Size: 332
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Depends: abseil-cpp, libc++, zlib
-Conflicts: protobuf-static
-Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Description: Protocol buffers C++ library
-Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
-Size: 1337056
-MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
-SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
-SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
-SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
+Version: 0.11.0
+Homepage: https://github.com/google/cpu_features
+Description: A cross-platform C library to retrieve CPU features (such as available instructions) at runtime
+Filename: dists/uncode/main/binary-aarch64/libcpufeatures_0.11.0_aarch64.deb
+Size: 28192
+MD5Sum: 782a3ee83350fc7afee953ad1268ad04
+SHA1: cc8a6a58fa1399169b79612f89af8041189a4333
+SHA256: 8fbc3a19877f16bad82bb524a23c44048845bde88decf16cb83249808c1e5b5a
+SHA512: fa2ec169d1a946ffc0416b439796d47ec7a39f366ac6a5a08a3df7f24b87a292435a0a782186ffeb57befc12b663b43970074a22748949a8af774e9a59b5b158
 
-Package: libtiff-static
+Package: libcue
 Architecture: aarch64
-Installed-Size: 696
+Installed-Size: 108
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Static libraries for libtiff
-Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
-Size: 135260
-MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
-SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
-SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
-SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+Version: 2.3.0-1
+Homepage: https://github.com/lipnitsk/libcue/
+Breaks: libcue-dev
+Replaces: libcue-dev
+Description: CUE Sheet Parser Library
+Filename: dists/uncode/main/binary-aarch64/libcue_2.3.0-1_aarch64.deb
+Size: 17444
+MD5Sum: 5b993084b1b115285a24121887feee2a
+SHA1: 1660ae4a06d33c2f3b2429ade3203f4eab9d74fc
+SHA256: 4a001f351b26e5b3f4e6a430591803dac7d24cf63873d545f7b2e11db3550c7d
+SHA512: 182591ccefec7b2d32666ae9270b8ab5b378ecd133b7f43de3dd4eb746f25dade01d9415e62c96ca57b14ad435f232ad405ad0ed1879e64b945359c81df45da0
 
-Package: libtiff-utils
+Package: libcunit-static
 Architecture: aarch64
-Installed-Size: 800
+Installed-Size: 140
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Tools for working with tiff files
-Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
-Size: 255964
-MD5Sum: a0a56110c08879f75be05ad601a6e6cc
-SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
-SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
-SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+Version: 2.1.3-1
+Homepage: https://sourceforge.net/projects/cunit/
+Depends: libcunit (= 2.1.3-1)
+Description: Static libraries for libcunit
+Filename: dists/uncode/main/binary-aarch64/libcunit-static_2.1.3-1_aarch64.deb
+Size: 22400
+MD5Sum: 88b162bfaa08985d8c4540b858ddbdd3
+SHA1: c3c55d8d90f34ddfff64962e9d25a2a333a9406f
+SHA256: 018af677e2aac925e66299633cd6d4a3a182d7514172bbf6c0d67bc6ebf257ec
+SHA512: f555bcc97038bbf6c15736c3800c3c52f6023832ed669bce2a232ae540bc5adb9b45d84e63764e3a82d4222e8c657201f47c46961624f8ed920c3db073216a32
 
-Package: libtiff
+Package: libcunit
 Architecture: aarch64
-Installed-Size: 6416
+Installed-Size: 548
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Breaks: libtiff-dev
-Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
-Replaces: libtiff-dev
-Description: Support for the Tag Image File Format (TIFF) for storing image data
-Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
-Size: 821104
-MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
-SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
-SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
-SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+Version: 2.1.3-1
+Homepage: https://sourceforge.net/projects/cunit/
+Description: C Unit Testing Framework
+Filename: dists/uncode/main/binary-aarch64/libcunit_2.1.3-1_aarch64.deb
+Size: 68260
+MD5Sum: 398bb462a569377dcb6c25b0e22efc3a
+SHA1: 2c4d333f6a155a80c684afbe51400600e48b6e4b
+SHA256: b4b52c8bc9f3502cf6069284df02a299442469907aa44a3a5218e02e4bcb5c44
+SHA512: 102a3dcd6e79034c5211149dc9a912d3693ea0d5134e85fdf4cce8dd37fd68eb7395fe19261b71eba4a94bfbb8c6a57781411b162e138b17b385e65b214ee8a8
 
-Package: libwebp
+Package: libdaemon-static
 Architecture: aarch64
-Installed-Size: 1204
+Installed-Size: 76
 Maintainer: @termux
-Version: 1.6.0-1
-Homepage: https://github.com/webmproject/libwebp
-Breaks: libwebp-dev
-Depends: giflib, libjpeg-turbo, libpng, libtiff, zlib
-Replaces: libwebp-dev
-Description: Library to encode and decode images in WebP format
-Filename: dists/uncode/main/binary-aarch64/libwebp_1.6.0-1_aarch64.deb
-Size: 316332
-MD5Sum: 9b9fcbd86892116bcb2e21849f8cd812
-SHA1: c03562f9e4f332cf3535a514889582843cca2c43
-SHA256: 71c73669a5a814785cecbb4fc72dffe3d56c4827b227ce4fb2d53258f65b679b
-SHA512: 07e27f3e843886792fdc6597817f5bc284fa0d1b0c6dfdc16e8c2eb090130a351b1de3a1efb090cc904c9dd09012c47e6e05448f0c0e5b2bf20d5010772a1c88
+Version: 0.14-1
+Homepage: https://0pointer.de/lennart/projects/libdaemon/
+Depends: libdaemon (= 0.14-1)
+Description: Static libraries for libdaemon
+Filename: dists/uncode/main/binary-aarch64/libdaemon-static_0.14-1_aarch64.deb
+Size: 10548
+MD5Sum: 6cccd9d39cc162b08020d7db2c2b3c7b
+SHA1: b49e5a5836cf7917d0bb6032ddefccd899e0bfae
+SHA256: 34ff07a3514e64199d93112b2bf7f2909028e32f251987ca54b92cfa6d8b26f2
+SHA512: 14d18aed637a21610916ec393a52d672e5b7b8cacd393a5bbbf7a73e9d9ac04c4fcdb9a6b2c44027a7c494c65fcb2a1f6fc138ebce59dc1b44b752ade362251a
 
-Package: protobuf
+Package: libdaemon
 Architecture: aarch64
-Installed-Size: 5748
+Installed-Size: 136
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Depends: libprotobuf (= 2:33.1-1)
-Description: Compiler for protocol buffer definition files
-Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
-Size: 1154160
-MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
-SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
-SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
-SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
+Version: 0.14-1
+Homepage: https://0pointer.de/lennart/projects/libdaemon/
+Description: A lightweight C library that eases the writing of UNIX daemons
+Filename: dists/uncode/main/binary-aarch64/libdaemon_0.14-1_aarch64.deb
+Size: 16956
+MD5Sum: 5a7046179577f4ab14c04c966295f056
+SHA1: c05860d3acbff0ca35d542f9135f062b65fc4142
+SHA256: a131996b2059faaf62e9d17774fd87553f06f63e05cfb87bb30b30fbca5ef779
+SHA512: 324007037959dcd11b17620e3529895064531184dbb4b51772700297cbe2512184bcd542f9730769ba69a09da83c1ac534758d76664827e305812a8886ed8dd0
 
