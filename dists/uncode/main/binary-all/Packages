@@ -1,14 +1,16 @@
-Package: kainjow-mustache
+Package: libglvnd-dev
 Architecture: all
-Installed-Size: 88
+Installed-Size: 2248
 Maintainer: @termux
-Version: 4.1
-Homepage: https://github.com/kainjow/Mustache
-Description: Mustache implementation for modern C++
-Filename: dists/uncode/main/binary-all/kainjow-mustache_4.1_all.deb
-Size: 8300
-MD5Sum: d44f9541b26770cd0ec2b0cda89c0844
-SHA1: 850f145921454798474df4cb507a098e617c584e
-SHA256: 7eac781ee773482833d8dc3fa7a6f7e02893e881b85c2dbbfd0009c4850c5aac
-SHA512: dd26da378098767ab122b6ca7ac420516ff65a0b785ba2c1b915dd79eb6f1a663188a680fc63d965d671634b561366805e02f3120258373c4c4393a8155418ff
+Version: 1.7.0-1
+Homepage: https://gitlab.freedesktop.org/glvnd/libglvnd
+Breaks: mesa (<< 22.3.3-2), mesa-dev (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Replaces: mesa (<< 22.3.3-2), mesa-dev (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Description: GLVND's OpenGL headers
+Filename: dists/uncode/main/binary-all/libglvnd-dev_1.7.0-1_all.deb
+Size: 141672
+MD5Sum: c4fa22b2297ab9c7b314cd125034be79
+SHA1: b71b06abd1708e11965b7c7950979d417cc191f4
+SHA256: fce86426b41f29255608aae4595062ff23eaf9681dc7642edb089ab22931939e
+SHA512: 6c7378a724219a4824cdfc930e238992db3644550fcf44087b634af78b4c0051fc4908ed072bf924245c004aede8d45ef4cbdce6221985272190f11647bf24b2
 
