@@ -1,15 +1,14 @@
-Package: libregexp-assemble-perl
+Package: libspice-protocol
 Architecture: all
-Installed-Size: 200
+Installed-Size: 180
 Maintainer: @termux
-Version: 0.38-8
-Homepage: https://metacpan.org/pod/Regexp::Assemble
-Depends: perl
-Description: Perl module to merge several regular expressions
-Filename: dists/uncode/main/binary-all/libregexp-assemble-perl_0.38-8_all.deb
-Size: 52340
-MD5Sum: 97cebc358dcb6393c1c64ba3bf3a9b1f
-SHA1: b2bbb6856ee5c2e9b9223a3ccf9fc60466617ed4
-SHA256: 9275376682f1d13edac8eb72c5124423bb3e81728c1eb471e966081ec382a59f
-SHA512: 4b9cebbfad969e9d462f57d8047ca9ba4b4ae1f529f47d7811114e353a4a36d052487a7b547b9101ae311a0aa5407b1989df3aa04fea493615a0f4c27326c542
+Version: 0.14.5
+Homepage: https://www.spice-space.org/
+Description: SPICE protocol headers
+Filename: dists/uncode/main/binary-all/libspice-protocol_0.14.5_all.deb
+Size: 18500
+MD5Sum: 139f8bf33fa6948fc48325968fc36c7e
+SHA1: 908cfbe1523df595e26344c60739c7c2a5bf5204
+SHA256: 960e236eeda68fc1444cda5c4c66fff159c3963f0c392d641935b5b2a6f25021
+SHA512: 6c22db12a76a0515a5ef1aebc90f568555f4cd66155125074d3e96ce70eee1c8d49ce23992a159f26a491c0b172ef9dec8a01ced999cb2bebc80b3d78a37ab69
 

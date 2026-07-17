@@ -1,18 +1,19 @@
-Package: abseil-cpp
+Package: c-ares
 Architecture: aarch64
-Installed-Size: 8776
+Installed-Size: 1100
 Maintainer: @termux
-Version: 20250814.1
-Homepage: https://abseil.io/
-Depends: libc++
-Conflicts: libgrpc (<< 1.52.0-1)
-Description: Abseil C++ Common Libraries
-Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
-Size: 1117052
-MD5Sum: a99612704b914c5ac9e7827a865c1741
-SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
-SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
-SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
+Version: 1.34.6
+Homepage: https://c-ares.org/
+Breaks: c-ares-dev
+Depends: resolv-conf
+Replaces: c-ares-dev
+Description: Library for asynchronous DNS requests (including name resolves)
+Filename: dists/uncode/main/binary-aarch64/c-ares_1.34.6_aarch64.deb
+Size: 192452
+MD5Sum: 8bdf24d283f4f276fc12478b9a0b89a3
+SHA1: 60c6a183d0dc6aa6eb4f93229a7175c87512f9ae
+SHA256: 6cd16a7496b1a237184cbe4ef048db07529e481e837780c84b964b3d12dbe8b9
+SHA512: ea51626f16891611cd6e24763ad4139df918ad4dfa692f1c285d364bda4b143c90a5cb737992a881c8f4ce8dd51c929b36971735355cdcadbd330529c6847509
 
 Package: hello
 Version: 8.7.1-1
@@ -27,535 +28,247 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: bb11f6939b7fbab479d877bbc7a0a9b7
-SHA1: 8a50db3346ff3d4321cf4ecda5497c287c319065
-SHA256: a4c4f053079a31a87eb652e88b560990bb64fc091ce46272f42e90d4aff81dec
-SHA512: 49d3855d49f4026588bee59ae22fd2c7a0eec535ceabb7ffd82ff57d8fff3241b42ae4c53d28cc90769a938d3ee6dde14846918262f20f539f608b9a709f8250
+MD5Sum: bdda9461a41df672aad49b5954ae098b
+SHA1: 3481238f92e60f762037aa12679178e0fefbc258
+SHA256: fe1ace06ec02e19abe68a10412b6c8910afb6e192a62a055f2939a3817bcdd65
+SHA512: eaabc2fa38184a833ef22d0cabf0768eaa6e448b34203d448ebbb02a2641a3b83f072fda63b960a09c4c8c615834d0f63ab2490b8c4d865b19584fca2e2c99fe
 
-Package: librav1e-static
+Package: libsoxr
 Architecture: aarch64
-Installed-Size: 81908
+Installed-Size: 1100
 Maintainer: @termux
-Version: 0.8.1
-Homepage: https://github.com/xiph/rav1e/
-Depends: librav1e (= 0.8.1)
-Description: Static libraries for librav1e
-Filename: dists/uncode/main/binary-aarch64/librav1e-static_0.8.1_aarch64.deb
-Size: 8209388
-MD5Sum: 1d5b4a23f420ce6c6de7fb80bf83d4ee
-SHA1: 99118d82d3ded06ac6ec1df4a28e3b9b0b66ddf5
-SHA256: 1ca6c01b2350ed39f2b692985cff51fc303f058f6b946167b3094ae233a2d71d
-SHA512: c2d42f3737b4a89debfc8a44257a2fa2f454a94dfb7be8190d03867312654028b0b71951ed70466ea9005b2ca62f938d5ac1f3da9260cf80179421c79c7c878c
+Version: 0.1.3-8
+Homepage: https://sourceforge.net/projects/soxr/
+Breaks: libsoxr-dev
+Replaces: libsoxr-dev
+Description: High quality, one-dimensional sample-rate conversion library
+Filename: dists/uncode/main/binary-aarch64/libsoxr_0.1.3-8_aarch64.deb
+Size: 288604
+MD5Sum: 051cf5d96a6e94acde1e566e7da003c5
+SHA1: 9fe309bee16f17102bb8ffa28717e98f254180ad
+SHA256: 235e6db4d79ea92b8fb820b505b94a9882b6b6942f2ef990faf989d3f2b72fd4
+SHA512: 403319d67363b77f38f48106993e379c8b894cc07540c84264a65831d25366dcdbd3c2933bc8ca025e0b55d5ffe9588a4d39ee6bf8b15fd1d81fd1ca085eba3c
 
-Package: librav1e
+Package: libspatialindex
 Architecture: aarch64
-Installed-Size: 2292
+Installed-Size: 1360
 Maintainer: @termux
-Version: 0.8.1
-Homepage: https://github.com/xiph/rav1e/
-Description: An AV1 encoder library focused on speed and safety
-Filename: dists/uncode/main/binary-aarch64/librav1e_0.8.1_aarch64.deb
-Size: 692852
-MD5Sum: 1bdae2f980d11101777c254aed0081fe
-SHA1: e196ac65c6ad825cc42ad8b4bde0e9c0131e5110
-SHA256: 1fdf3bfd886e2e7033a9555c34bc77e6c06c4dd43264de89b80363b6850defc4
-SHA512: 98f0db235a9f930ace41c8b0584bae2b98886564b6127148bd555aec242172fbd1b9c39a89e0eca654d79310137551038a402f8d90fa0f0a79faa312405d6989
+Version: 2.1.0-1
+Homepage: https://libspatialindex.github.io
+Depends: libc++
+Description: C++ implementation of R*-tree, an MVR-tree and a TPR-tree with C API
+Filename: dists/uncode/main/binary-aarch64/libspatialindex_2.1.0-1_aarch64.deb
+Size: 248288
+MD5Sum: 02c5405e1e7933aa5a88e21500c7358c
+SHA1: 2180a9562c110405e0e3f5feca127f881977a9a5
+SHA256: a9ad93d519e7fb0ba0f7c209f9e48e354e6a553abac908da699483a1b05ac5ca
+SHA512: a835c32d260889f296693c635cc4b7922bfb68ae1f980372c07d1fbf502bb8918ac6e3bd326dce31b5260f8399552e5f3f993a650af26e8b7fbebf3d7c3d2dce
 
-Package: libraw-static
+Package: libspeex-static
 Architecture: aarch64
-Installed-Size: 3580
+Installed-Size: 188
 Maintainer: @termux
-Version: 0.22.1
-Homepage: https://www.libraw.org/
-Depends: libraw (= 0.22.1)
-Description: Static libraries for libraw
-Filename: dists/uncode/main/binary-aarch64/libraw-static_0.22.1_aarch64.deb
-Size: 351704
-MD5Sum: 085246c368c9919a4584e9e7d67802aa
-SHA1: e54853e3ae842a21ba0cbc13f9eb360e1831a492
-SHA256: 71dd5851a8da774427bcef5108df243f656470e51d1c749c7fcf54fc4550e1e3
-SHA512: a08adb6148e13ae43abc0a6b844317658b11c953848e25a22af54a6102c5c881d78543e4e79c0530f0acd286a8ff6c815718695cb6c0919ea79489237ab7ad6d
+Version: 1.2.1-1
+Homepage: https://www.speex.org/
+Depends: libspeex (= 1.2.1-1)
+Description: Static libraries for libspeex
+Filename: dists/uncode/main/binary-aarch64/libspeex-static_1.2.1-1_aarch64.deb
+Size: 47768
+MD5Sum: 80ef2b5e66cba8007e5d56a88723d990
+SHA1: 627a707aaddf88a503b9908b9bf9a776018478aa
+SHA256: 5e9da97506c225394a18a3c7bd3670cb3d61d20f1e4af2074d6b84d441f59210
+SHA512: 4ecd10623dc6636c7a21aa9642e667859bc9ee1a75c4da3349b6869ae9aa543b931aa6aba1c840383e8ede25506e5ad673b62ddb74ee37bbdde3092e1a6f13fb
 
-Package: libraw
+Package: libspeex
 Architecture: aarch64
-Installed-Size: 2836
+Installed-Size: 632
 Maintainer: @termux
-Version: 0.22.1
-Homepage: https://www.libraw.org/
-Depends: libc++, libjasper, libjpeg-turbo, littlecms, zlib
-Description: Library for reading RAW files from digital cameras
-Filename: dists/uncode/main/binary-aarch64/libraw_0.22.1_aarch64.deb
-Size: 415204
-MD5Sum: 95a35dfec43bfdb2da047d059008a17f
-SHA1: 115e340374e875d7f07fc85a038d3f9dcdd02f8c
-SHA256: 6dfe343753c88cbe4274816dd937ea4b97ed1955e68afb50f9dd660d08e3396e
-SHA512: b9e865c7180a3e60045e7d52402ae33964fefb458b2b2fb744f0b7b9ff884857bcc480f7aabfc3413350251239adbdb7c21080a71c4ffaa27fba593f4eb7da09
+Version: 1.2.1-1
+Homepage: https://www.speex.org/
+Description: A patent-free, Open Source/Free Software voice codec
+Filename: dists/uncode/main/binary-aarch64/libspeex_1.2.1-1_aarch64.deb
+Size: 460256
+MD5Sum: da130d26bcab9af9d86920f288870385
+SHA1: 7262bc6ce14afaffd6f870ce9c5121044e6d1202
+SHA256: f96cb935d83e19d83f0b0c0fb0cb9c47469d3a9f4c04f37f787e60a6027dd9a7
+SHA512: 093b9f26e8b783aac980548b0091934cad20be942568dd01081b731c15a716dc3c4a07b23c36cfa4962b3f79583c20c10011dd15fce382ad33e822176e96fae7
 
-Package: libre2
+Package: libstemmer-static
 Architecture: aarch64
-Installed-Size: 624
+Installed-Size: 1844
 Maintainer: @termux
-Version: 2025-11-05-1
-Homepage: https://github.com/google/re2
-Depends: abseil-cpp, libc++
-Description: A regular expression library
-Filename: dists/uncode/main/binary-aarch64/libre2_2025-11-05-1_aarch64.deb
-Size: 165544
-MD5Sum: 7cc83401a06cad417c093f88f1b65091
-SHA1: 0fbf58c7bbecf64e726fba62e061cb39f0f08b21
-SHA256: 1987f03c0a5b2e0e09ba471534e7bc026d8a7e1e86c6d1e8b16211dd6fdd7557
-SHA512: 251860c811f88340ceaf725b4764eda80675eca6799a2dbded4fe8ee219074d6fccea0e83041454afa063f8289cccc92cf31195c12e0c4eb5da3b057a5abdeed
+Version: 3.0.1
+Homepage: https://snowballstem.org/
+Depends: libstemmer (= 3.0.1)
+Description: Static libraries for libstemmer
+Filename: dists/uncode/main/binary-aarch64/libstemmer-static_3.0.1_aarch64.deb
+Size: 175324
+MD5Sum: be656d6fe875e5e1705fe04ec2cd7e8c
+SHA1: c57d614cc48a20a17acf0d95bfa0ab65f61f02be
+SHA256: 433734477bfe608da2b406c31a9dcb0a401df5b9a16a5024a1929c11c0b3d3a1
+SHA512: 905cd41aeacaefd32866bc20d2eddba88b1d39a82c87dc80a0578117d37a102721eb55ebf77d16406ed61a13e3ea8a9a94ca665d7b3cd3558079bbd00032222b
 
-Package: libresolv-wrapper
+Package: libstemmer
+Architecture: aarch64
+Installed-Size: 1156
+Maintainer: @termux
+Version: 3.0.1
+Homepage: https://snowballstem.org/
+Description: Snowball compiler and stemming algorithms
+Filename: dists/uncode/main/binary-aarch64/libstemmer_3.0.1_aarch64.deb
+Size: 101008
+MD5Sum: feacb9f3cbff3876b18fa2d406890259
+SHA1: 434bab511f18374fdc98e37adc635df53ad4de21
+SHA256: 45d813f88d4ac642e4d75bf92bf1da04227aa36b085052234a27c7f98c3dabfa
+SHA512: 8b22aa43aa6589040ea9288b0500085fd2da1413f202297ad585fbee89fd9f3c426f584011bc4cca0d2fc64d500fa0f47e9f8720def5d17a841f891074f6a5db
+
+Package: libt3config
+Architecture: aarch64
+Installed-Size: 204
+Maintainer: @termux
+Version: 1.0.0-2
+Homepage: https://os.ghalkes.nl/t3/libt3config.html
+Description: A library for reading and writing configuration files
+Filename: dists/uncode/main/binary-aarch64/libt3config_1.0.0-2_aarch64.deb
+Size: 39196
+MD5Sum: 3c28ec91853f80eb46e64b0821956619
+SHA1: 72bdfa55edd6495d52e2be9afc8a1688705eb75d
+SHA256: 1109ac8f2780be49e5f5d24c1d5da72a9ef707fe564e96120c852774186ff511
+SHA512: 2da5a6ad01a945fac1aa2c5c07e8bb6d8ad945bf6e0ca0ba007d7688d0ec7d151690c8b54f198bef18d41efaae2ef1678b611c4ebfc92b553a66dd49c8e433f1
+
+Package: libtalloc-static
 Architecture: aarch64
 Installed-Size: 104
 Maintainer: @termux
-Version: 1.1.7-6
-Homepage: https://cwrap.org/resolv_wrapper.html
-Depends: resolv-conf
-Description: A wrapper for DNS name resolving or DNS faking
-Filename: dists/uncode/main/binary-aarch64/libresolv-wrapper_1.1.7-6_aarch64.deb
-Size: 11512
-MD5Sum: afcc9c9e368ec28cec7ab960dbb10e01
-SHA1: 204b3559843f9e7bfcc691bf97cd33568c4166b1
-SHA256: 71754aee55fa4eb1394c3ce8bfe8583e167d275a6747d5600051859068e4cd9e
-SHA512: a898d38da4a884c1f6802552bce65172ee714108ab2ff51287c6e88694ec3b2d5b2b0f81ae4900a27813154589fb63a1fb99e686727a216a3b996bbceb4ea797
+Version: 2.4.3
+Homepage: https://talloc.samba.org/talloc/doc/html/index.html
+Depends: libtalloc (= 2.4.3)
+Description: Static libraries for libtalloc
+Filename: dists/uncode/main/binary-aarch64/libtalloc-static_2.4.3_aarch64.deb
+Size: 11364
+MD5Sum: c1dde684a2d81701b4f48f5160fa4cd6
+SHA1: 4030e3f727f4077ad9828d6a1cd416e8cf24fcc3
+SHA256: f5997485bb954795a8a5c2f40d9ac847d75f15207350e672222ee66b4595c5e4
+SHA512: 7549853c573a782eed827ef996286457f542ad64e3a556072697a958947da21b6febe51e3ab05c3f4a53635010f92dce09328f79c7b52dca22026c19ef8a57b7
 
-Package: librinutils
+Package: libtalloc
 Architecture: aarch64
-Installed-Size: 132
+Installed-Size: 164
 Maintainer: @termux
-Version: 0.10.3
-Homepage: https://github.com/shlomif/rinutils
-Description: A C11 / gnu11 utilities C library
-Filename: dists/uncode/main/binary-aarch64/librinutils_0.10.3_aarch64.deb
-Size: 6120
-MD5Sum: 8c71da180d2adc4be5611b98c798420b
-SHA1: c6c037b258119e32d839446dc29ac5e00c82c49c
-SHA256: 546273468862d2fbd6ab8e7a59e87a119348ad05fde1948cc72192cdd617bc19
-SHA512: e00021501ec442058a321a68d70c3b69de57e30f8575a4ba3501570b2895cbdba098bfbefcfffd826e695ecfd8785af3d93533ebcfa45ca4c3a5f5cf6f65c859
+Version: 2.4.3
+Homepage: https://talloc.samba.org/talloc/doc/html/index.html
+Breaks: libtalloc-dev
+Replaces: libtalloc-dev
+Description: Hierarchical, reference counted memory pool system with destructors
+Filename: dists/uncode/main/binary-aarch64/libtalloc_2.4.3_aarch64.deb
+Size: 33132
+MD5Sum: 3bd0b79a9993bd71fbdfd8de8c5ecf6a
+SHA1: 96408a21d9fbbd3cdc70a5d723468185f445bb74
+SHA256: b30f77057f6adf5257291714dffbbf3d820ec63a5970612f4715efd801a235f4
+SHA512: 0739d199f23e41b2646669bd888b2036d41d498e1d39269e1df1e4769a06ff448f27eebf3dc242c367b4fc6ecd724f27c438e18ca1e09aa0f9d33b0cc4aa18e7
 
-Package: librnnoise-static
+Package: libtasn1-static
 Architecture: aarch64
-Installed-Size: 1472
+Installed-Size: 148
 Maintainer: @termux
-Version: 0.2-1
-Homepage: https://jmvalin.ca/demo/rnnoise/
-Depends: librnnoise (= 0.2-1)
-Description: Static libraries for librnnoise
-Filename: dists/uncode/main/binary-aarch64/librnnoise-static_0.2-1_aarch64.deb
-Size: 1189748
-MD5Sum: 5b0b4cbff280f9f4886053cd9ff93e05
-SHA1: 6b9dd184e432a2c641e7d4ea1b5830fc940efc76
-SHA256: 093ad837ec2fd30687d2326bf042ba779b0cbf644462f93b3eb327e50dd9f7af
-SHA512: 00987b99f5301483cb6cd20a44aba3bd5289cd7142f3fccf4bd5d4bcc18277d5e48e3519380c28e9c1fa1f300ac1f070c761b221f4626dbc8e92c88512c881b1
+Version: 4.21.0
+Homepage: https://www.gnu.org/software/libtasn1/
+Depends: libtasn1 (= 4.21.0)
+Description: Static libraries for libtasn1
+Filename: dists/uncode/main/binary-aarch64/libtasn1-static_4.21.0_aarch64.deb
+Size: 32496
+MD5Sum: 5beb9241a3f6f556010e24d53fbe39fa
+SHA1: 23f111094ac22926fcbd1bff29721764ed01d74b
+SHA256: ed0d527807d6063e95a1fb67611c3e35e74d4310d66858da7b09081df4a41624
+SHA512: 6158c7c97c7a2dbb8692259700089ef6ce062fccd77e084ed99ef936004bd3ae05d3f113747b3d63a29733a97f4e9a42dc033bd9c4cac4abefad95749d840659
 
-Package: librnnoise
+Package: libtasn1
 Architecture: aarch64
-Installed-Size: 1496
+Installed-Size: 472
 Maintainer: @termux
-Version: 0.2-1
-Homepage: https://jmvalin.ca/demo/rnnoise/
-Description: RNN-based noise suppression
-Filename: dists/uncode/main/binary-aarch64/librnnoise_0.2-1_aarch64.deb
-Size: 1193124
-MD5Sum: f65ed6e1628c74d30c032161fdfa3699
-SHA1: ff64e784fc32112aa5a222af2aba279abb2070a8
-SHA256: 7f8813ab2335920baa104b7a593a566554636a642b57910459528b045e1fc69c
-SHA512: ad624258a0ceef178efda1147faa67c1bce0fda55bca3d347e6dc4410f37b4d9e40287f63f2a9e8d8fdd444043283d0a140e48e1117cfd447f22b4ba6c78329d
+Version: 4.21.0
+Homepage: https://www.gnu.org/software/libtasn1/
+Description: This is GNU Libtasn1, a small ASN.1 library
+Filename: dists/uncode/main/binary-aarch64/libtasn1_4.21.0_aarch64.deb
+Size: 101384
+MD5Sum: 34c6b573ab3b319169c2c21bf8e6a19b
+SHA1: 295e0327323bfdca110fa743941d130adcac5781
+SHA256: 9e8f55b0afe500245674abafa6390a175b9f4816a1c5ed71272219ef227e9a8e
+SHA512: 7a974a9b8c18732145ce3eb46161738b1803181c7ffacc0aae8326896ce3ba96952702e17f19bc38b9fee75ac6686470712f8e4ff2c7b5fb6b67553e301763c2
 
-Package: librsync
+Package: libtbb
 Architecture: aarch64
-Installed-Size: 136
+Installed-Size: 2344
 Maintainer: @termux
-Version: 2.3.4-1
-Homepage: https://github.com/librsync/librsync
-Breaks: librsync-dev
-Depends: libbz2
-Replaces: librsync-dev
-Description: Remote delta-compression library
-Filename: dists/uncode/main/binary-aarch64/librsync_2.3.4-1_aarch64.deb
-Size: 27284
-MD5Sum: bb15682574a37329612030bbd4ae2aeb
-SHA1: 2d318263e365559eb77fffb02ab765e4037761e1
-SHA256: fca9a060e4ff9923a939cc2e6cacbcb477e476d8207aa5be88f3a4480e61f6d7
-SHA512: 4aca0b70d98dc5d3c95ac99674c70d1a363ebe814ed289f2d21e2775e580e6e77e5c7acb074459fa0a6fcc7ac9f770005e5b155a764a656c426a88bc1fb3984d
-
-Package: librtmidi
-Architecture: aarch64
-Installed-Size: 192
-Maintainer: @termux
-Version: 5.0.0-3
-Homepage: https://www.music.mcgill.ca/~gary/rtmidi/
+Version: 2023.0.0
+Homepage: https://uxlfoundation.github.io/oneTBB/
 Depends: libc++
-Description: A set of C++ classes that provides a common API for realtime MIDI input/output
-Filename: dists/uncode/main/binary-aarch64/librtmidi_5.0.0-3_aarch64.deb
-Size: 34424
-MD5Sum: 63269942473d771d48baa15364475ce5
-SHA1: a33ea02606be95018c6315570c078d31601d2ee3
-SHA256: 683de932d9efece7b0521de9ae87226b625957ad5a059843fd734c79eaddbecd
-SHA512: 7d02b627b77eae777901796a35383da950b6c38e66544601b48460e577a43f763d934af8cb5327f018dabbe7f4bbde04b9ce50fdfe98c8ab891ee37c18af89bd
+Description: oneAPI Threading Building Blocks
+Filename: dists/uncode/main/binary-aarch64/libtbb_2023.0.0_aarch64.deb
+Size: 297864
+MD5Sum: aced68f8a185271bc8296ba221ff6d30
+SHA1: 9db0886d64f16cdbf74849493103b90307e259cb
+SHA256: 9d7fa9516795d16590677b36be6176bc03959a6303598a83fa11297e9a8cc200
+SHA512: 959167db95b7abbcb2494ee6235c9dfcb3c166fb3ae0b4abd2ea1ac8ac6c5206e17e6b4eced0079cce984560aa0b5ed08d83e374a6769fe05f1504e045d56404
 
-Package: libsamplerate
+Package: libtd-static
 Architecture: aarch64
-Installed-Size: 1644
+Installed-Size: 1956
 Maintainer: @termux
-Version: 0.2.2-4
-Homepage: https://libsndfile.github.io/libsamplerate/
-Description: A library for performing sample rate conversion of audio data
-Filename: dists/uncode/main/binary-aarch64/libsamplerate_0.2.2-4_aarch64.deb
-Size: 973264
-MD5Sum: c775d84b8236792dded75b5aef6f1f7c
-SHA1: 8cf4a710b43210f17fb819128d929f483c7883ac
-SHA256: 37d049a10dc522e10df52390ebb286f61c6cecb873dfac8ee2c0ae0ccdd6c01e
-SHA512: f14a0acf6810e3f716885ea564933f225eca78e170a7548b38ef7ca61ba9cb95358a7eccc1cde1700a3edf00983ca2a1726cb4f95f273aeba3d5b2d0b73943ed
+Version: 1.8.50-1
+Homepage: https://core.telegram.org/tdlib/
+Depends: libtd (= 1.8.50-1)
+Description: Static libraries for libtd
+Filename: dists/uncode/main/binary-aarch64/libtd-static_1.8.50-1_aarch64.deb
+Size: 248400
+MD5Sum: a4739dae50249021838b9d079ea12a81
+SHA1: 719056be8e0ec7e2805bf3685e0409dfe6f9f4ad
+SHA256: c3a554d6a1ab664aa0fd2d8e1c8fe9847128f431ccc887c7de79c72dbb95ff11
+SHA512: c964011ab2d24946ef76ed9b0f89376fbc219eaf612c575dfc6a9c7225c8f3e836451832582af519548822bbf66eae309952e558483e0b21a76ffa30e120fc9c
 
-Package: libsasl-static
+Package: libtd
 Architecture: aarch64
-Installed-Size: 484
+Installed-Size: 36
 Maintainer: @termux
-Version: 2.1.28-2
-Homepage: https://www.cyrusimap.org/sasl/
-Depends: libsasl (= 2.1.28-2)
-Description: Static libraries for libsasl
-Filename: dists/uncode/main/binary-aarch64/libsasl-static_2.1.28-2_aarch64.deb
-Size: 67248
-MD5Sum: 899c6be7bc2ddfe35fa0d52c9d98ce5c
-SHA1: 5dd44ddabc2252da053a56f6a28c4f0981922122
-SHA256: d733b38ff0f3b8ea3feff0b624fb20277f00d62f758f7cc89f99021b0bf3cbbb
-SHA512: 0e4f283b295ea4bc8b90072447f10d865d00639a77667a86754f3d6419233b2c2d16d21e8510f68fcfffa6e09cf999468ba7444a82364d457a909a3de85cd90f
+Version: 1.8.50-1
+Homepage: https://core.telegram.org/tdlib/
+Depends: libc++, readline, openssl (>= 1.1.1), zlib
+Description: Library for building Telegram clients
+Filename: dists/uncode/main/binary-aarch64/libtd_1.8.50-1_aarch64.deb
+Size: 892
+MD5Sum: 89a62248b3c5a62c051d36af5dd1dbc5
+SHA1: 29888e5a6aad22c950b5c8a12e5385539565b75b
+SHA256: 8e5caa51e4aa57e0e76ab4d8e5d1da24684c725fa714fb7431a913b8e19b95b5
+SHA512: 22c4ca3d6b57d84f6d697bc2204ddd13b134b4bb7c3a42943277b0f0e81d6a90fdcec47c44efbcbf04023c62024a7afd24846210ef872afef36d217163c9fa27
 
-Package: libsasl
+Package: libtdb
 Architecture: aarch64
-Installed-Size: 580
+Installed-Size: 172
 Maintainer: @termux
-Version: 2.1.28-2
-Homepage: https://www.cyrusimap.org/sasl/
-Breaks: libsasl-dev
-Replaces: libsasl-dev
-Description: Cyrus SASL - authentication abstraction library
-Filename: dists/uncode/main/binary-aarch64/libsasl_2.1.28-2_aarch64.deb
-Size: 86508
-MD5Sum: d394ac7b01cc39a5d4c746108c80cac2
-SHA1: 5fd4fc1dc91be4ff301c177ce4a3e866a26b9f02
-SHA256: 47a8e527893cfbc3f56cea9b5a49242adcca1cc302f4c2335152c32262e0e874
-SHA512: abda7f84e50d1ea4a6427d8753d1942d11bae51242fb817ea1a16b886fa5255c2c3a28c71a28df802ca8227386ab1faadd81b28f1b2f57c2530a77210a22414d
+Version: 1.4.15
+Homepage: https://tdb.samba.org/
+Depends: libbsd
+Description: A trivial database system
+Filename: dists/uncode/main/binary-aarch64/libtdb_1.4.15_aarch64.deb
+Size: 39712
+MD5Sum: 1fab7833194e7a24c4b02587428158ae
+SHA1: 984faabca48a003a72198fbfab1ae9b0d795e107
+SHA256: 0c2a1e10ec59bc1ff45e8fa1c2311b8c300d303ad743fa076b1cb054da07a8a4
+SHA512: 320d12eb5b41048af10f2b4d13401b1480602278312ad4a763d1b592a3bcdb6ff995cc9b8ecc81db5cd0b452c87939881cb276cad44b723c20296f2b808d64a1
 
-Package: libsass-static
+Package: libthread-db
 Architecture: aarch64
-Installed-Size: 10356
+Installed-Size: 56
 Maintainer: @termux
-Version: 3.6.6-1
-Homepage: https://github.com/sass/libsass
-Depends: libsass (= 3.6.6-1)
-Description: Static libraries for libsass
-Filename: dists/uncode/main/binary-aarch64/libsass-static_3.6.6-1_aarch64.deb
-Size: 931060
-MD5Sum: 4c401022831838ae0a46a5fe0bd8d42c
-SHA1: 938d901d544a7e14146bda217dddccca6b747bdd
-SHA256: 2f2a1bad479a73162bb5e6766568c0302bcf4b145b8aa9133db314f73c66bebb
-SHA512: 75fb73cdc60fff91a602374b639bfe23bf9b161535d2458df06842baf9cf00c92aebabcba00dfaaf301e5f58e62dbb5cf20b9ca5a200c575d51c03cdbcf9330b
-
-Package: libsass
-Architecture: aarch64
-Installed-Size: 2668
-Maintainer: @termux
-Version: 3.6.6-1
-Homepage: https://github.com/sass/libsass
-Depends: libc++
-Description: Sass compiler written in C++
-Filename: dists/uncode/main/binary-aarch64/libsass_3.6.6-1_aarch64.deb
-Size: 525120
-MD5Sum: a487190cc7f3ade90a241430f74b13b0
-SHA1: 0186f158a68378c27e2be5cfa86189eb17f4db14
-SHA256: ad5bf3a44bfcba574a5e0b308e67518a36f16e0eded92a5844b1cc6748444815
-SHA512: fcd90d385067315fe6f7c09f4ad5aeda7db1da92709302768253e6010bf2b942400422e75a99bfba4604261b552d203559c5a8049c6b5b0951afa09e42f95fab
-
-Package: libseat
-Architecture: aarch64
-Installed-Size: 144
-Maintainer: @termux
-Version: 0.9.3
-Homepage: https://sr.ht/~kennylevinsen/seatd/
-Description: Reference implementation of a wayland compositor
-Filename: dists/uncode/main/binary-aarch64/libseat_0.9.3_aarch64.deb
-Size: 24428
-MD5Sum: 2afcbcb180a636664f2117e7b3631ddc
-SHA1: 8dbbe96caf011f1aa57d6d0e86f18ea0c8f42c66
-SHA256: 7bb990345d6ee0b04982ddbd1e07aea62a5cee4900b393e582e30dae7bf75f02
-SHA512: 01540693838fc87c306b215f63bb4b90745ca1fbb20bac62ae0d03dbf9b0acbf1570bf79fc5b7b74bf0995e4815be35638d9d978e0622ba9e1e590a708957d1b
-
-Package: libseccomp-static
-Architecture: aarch64
-Installed-Size: 296
-Maintainer: @termux
-Version: 2.6.0
-Homepage: https://github.com/seccomp/libseccomp
-Depends: libseccomp (= 2.6.0)
-Description: Static libraries for libseccomp
-Filename: dists/uncode/main/binary-aarch64/libseccomp-static_2.6.0_aarch64.deb
-Size: 45124
-MD5Sum: 55f9be8a588e9cfd5cb7423333faf169
-SHA1: 58a79dd5e20a0129a9866909d6760d7387ff0994
-SHA256: 3bc8a771c40ecabe7fee8d1512cd6622fb593b6553ca50c4d9bf773bd1545359
-SHA512: 7f92372c89406e9e0e565d368ed592ca4da8c3cbf0f9732767b43a32f81a05b9e39d826796fe54c98e10cbad56fcbe1af9207888e68886236ea954624fb088dc
-
-Package: libseccomp
-Architecture: aarch64
-Installed-Size: 448
-Maintainer: @termux
-Version: 2.6.0
-Homepage: https://github.com/seccomp/libseccomp
-Breaks: libseccomp-dev
-Replaces: libseccomp-dev
-Description: Enhanced seccomp library
-Filename: dists/uncode/main/binary-aarch64/libseccomp_2.6.0_aarch64.deb
-Size: 75592
-MD5Sum: 659f42d1647855452266d5188470eb77
-SHA1: a3864d2410f5a57ae6caa3c1ac1288302526ab0f
-SHA256: b611014c07864a03eea88be86829ce037ff8d89a80803570385cfb77a001721a
-SHA512: 34398172e80c8aef10f5c39e544db9582288928848d9fa15372731234fbde6effa72d356878792e44ec333fb728938d8c09bb85691bbc0c614a298142e015176
-
-Package: libsecp256k1-static
-Architecture: aarch64
-Installed-Size: 1268
-Maintainer: @termux
-Version: 1:0.7.1
-Homepage: https://github.com/bitcoin-core/secp256k1
-Depends: libsecp256k1 (= 1:0.7.1)
-Description: Static libraries for libsecp256k1
-Filename: dists/uncode/main/binary-aarch64/libsecp256k1-static_1:0.7.1_aarch64.deb
-Size: 1181688
-MD5Sum: e0fe8f50b0d9853378df2ab8418653e4
-SHA1: 65b0c5ccc896a2cd541e490cf964bbf017ae6211
-SHA256: 85e9819c6fc4409824c4054ad5ebb8e70efc5882778dfb93a1e9271a7339eb94
-SHA512: 9bddd3c657a4cf87bbda05096a66f59818ad7fae672b0442a8b7b41c7adcb4b1ebdce0e9cd143670ecd8830cbce9c2e613c08091a4095c1a62a8506e497c0661
-
-Package: libsecp256k1
-Architecture: aarch64
-Installed-Size: 1376
-Maintainer: @termux
-Version: 1:0.7.1
-Homepage: https://github.com/bitcoin-core/secp256k1
-Description: Optimized c library for ECDSA signatures and seret/public key operations on curve secp256k1
-Filename: dists/uncode/main/binary-aarch64/libsecp256k1_1:0.7.1_aarch64.deb
-Size: 1198500
-MD5Sum: 9b368b3ecbc91fe2d770842fd0853a46
-SHA1: c0678d6aa37be36d7c43a283d0c7518b5cfe20ea
-SHA256: 03854ec5f55733d04ecb5c721f05d2faeb0d22ae186bfe3a26df22dc44f91ae3
-SHA512: 318856b0a1894df2219472a4f226ee2cdacf470f70ce562003940a4151dc3302f2b620a170e9cae21791b8068512818bfbc1db01744ed898a446d9721172e1ef
-
-Package: libsfdo
-Architecture: aarch64
-Installed-Size: 196
-Maintainer: @termux
-Version: 0.1.4-1
-Homepage: https://gitlab.freedesktop.org/vyivel/libsfdo
-Description: A collection of libraries which implement some of the freedesktop.org specifications.
-Filename: dists/uncode/main/binary-aarch64/libsfdo_0.1.4-1_aarch64.deb
-Size: 31280
-MD5Sum: ce7d577c7b73c80f764bb416eb3be956
-SHA1: fa0b15690ea2c03a8a4efb4194b34b33b42a06ff
-SHA256: d0e07b18dff33087a5598c105f913f47bab5d185bfa46f361ae9d62acef75aed
-SHA512: d0274f0edf4f4a38b74e5aa05fa3202f1c7a1df27d6a2f624af01ae37b21579912f0b9570d91656e99f21511595d878b45d7e8ce7e0958c204f1e897f11cea77
-
-Package: libsigc++-2.0
-Architecture: aarch64
-Installed-Size: 1336
-Maintainer: @termux
-Version: 2.12.1-1
-Homepage: https://libsigcplusplus.github.io/libsigcplusplus/
-Depends: libc++
-Description: Implements a typesafe callback system for standard C++
-Filename: dists/uncode/main/binary-aarch64/libsigc++-2.0_2.12.1-1_aarch64.deb
-Size: 73364
-MD5Sum: ef4f4a6b2c8a8197ff3e45e7d01dcf18
-SHA1: 3c258398257ed0f0bf1035de8fb06c9cd8eb2549
-SHA256: 950a86d437a48295504b3a5b919770e52273efbef093479e244215d762228cfd
-SHA512: 07d2808d09b123811b593abd35b5223d299548f8b4a05f2e306f0ff7ee4476fdd6d15f77327840708aff0b90ff07df56ec08bf9442b76f3a1549d56af6d9c80e
-
-Package: libsigc++-3.0
-Architecture: aarch64
-Installed-Size: 468
-Maintainer: @termux
-Version: 3.6.0-2
-Homepage: https://libsigcplusplus.github.io/libsigcplusplus/
-Depends: libc++
-Description: Implements a typesafe callback system for standard C++
-Filename: dists/uncode/main/binary-aarch64/libsigc++-3.0_3.6.0-2_aarch64.deb
-Size: 56616
-MD5Sum: 10f73fb13bfa05ad1ec5f9a014081c13
-SHA1: 85b35574580fa2af916a1b1afed3b1f26eefd7db
-SHA256: 54119de7f304ed6f6c8b8e85f3ec9c0cd949147e1b85cd20cc74cab8eaf3cbf1
-SHA512: 795816bb9cddbb3247ca31332c87ccbcb4de6245218fd50bac998ad54298db42aba72e00c27b55b84fd2fb405a5e41f3b5546828abc1d34242a19cc546589d2c
-
-Package: libsignal-protocol-c
-Architecture: aarch64
-Installed-Size: 512
-Maintainer: Oliver Schmidhauser @Neo-Oli
-Version: 2.3.3-3
-Homepage: https://github.com/signalapp/libsignal-protocol-c
-Depends: openssl
-Description: Signal Protocol C Library
-Filename: dists/uncode/main/binary-aarch64/libsignal-protocol-c_2.3.3-3_aarch64.deb
-Size: 135064
-MD5Sum: 9791c7f460183d0a88803d6ff624aebe
-SHA1: a0838d0d88ec61b8bd9dd1946626a290113c0f56
-SHA256: 4cf66d485bd1e4ada849fd520a90651f6b1da4aad3e4bbf00716b93099e6df26
-SHA512: f6d025ae56a23bb10e1431b3db5ec6b8d95cc710f0300c9d40f71a533bb42f35d67e0f75eb70d7b48d03d8e7936d398babbf6ac9590f2efff19fab9484b2e6b1
-
-Package: libsigsegv-static
-Architecture: aarch64
-Installed-Size: 44
-Maintainer: @termux
-Version: 2.14-1
-Homepage: https://www.gnu.org/software/libsigsegv/
-Depends: libsigsegv (= 2.14-1)
-Description: Static libraries for libsigsegv
-Filename: dists/uncode/main/binary-aarch64/libsigsegv-static_2.14-1_aarch64.deb
-Size: 4720
-MD5Sum: c9cb2543b300c4faf32b97587558d4fa
-SHA1: 106c424dd072e5fa4188011b3862c35bc810240e
-SHA256: 41fae54bdc9dcb2f20c5f7cf772b25c32750e8f47425399577b1fc34156bac8a
-SHA512: 1483f5246a6bae7de87e80c26525d6458f00b8f6bf801733abb040d2ef9f461888d9322955ac3ac17e6acf102796136355094536eb4039a6440e84da796c5283
-
-Package: libsigsegv
-Architecture: aarch64
-Installed-Size: 68
-Maintainer: @termux
-Version: 2.14-1
-Homepage: https://www.gnu.org/software/libsigsegv/
-Breaks: libsigsegv-dev
-Replaces: libsigsegv-dev
-Description: GNU libsigsegv is a library for handling page faults in user mode
-Filename: dists/uncode/main/binary-aarch64/libsigsegv_2.14-1_aarch64.deb
-Size: 7660
-MD5Sum: 1314c4e38696d18f1dabb40c7a56b884
-SHA1: 1b0758eef5f11b4eb34ac766fb25dcba047dc251
-SHA256: f4b44c3e4cf898337f94e015c345601fcf1fe3a17a78a6977da8169eeb2b024c
-SHA512: b4b761327e6ab15c77432b73c8c4c85bd4d213a61717754169c1400990381a0ef2de80e6c49962877318522c03af0ef2f026f930ef303ee91d900267b4f91c8d
-
-Package: libsndfile-static
-Architecture: aarch64
-Installed-Size: 796
-Maintainer: @termux
-Version: 1.2.2-2
-Homepage: http://www.mega-nerd.com/libsndfile
-Depends: libsndfile (= 1.2.2-2)
-Description: Static libraries for libsndfile
-Filename: dists/uncode/main/binary-aarch64/libsndfile-static_1.2.2-2_aarch64.deb
-Size: 167972
-MD5Sum: d2bedbef5f295a4ddeb832d156ff9de7
-SHA1: 154a150323c726bee62ddba160d9abd51f5ff18e
-SHA256: d578c838696144f3683af772c323d5edbd1931283897df992d484815f245de90
-SHA512: 23a8c2ce6d2cfd40a39782eae0ec8ed224ae2444e7662002cb0bc8c9de37f0be9e19f3beff9322d564368f10aede7428876077dd86ad8aaf8e1a638b7d942bc0
-
-Package: libsndfile
-Architecture: aarch64
-Installed-Size: 676
-Maintainer: @termux
-Version: 1.2.2-2
-Homepage: http://www.mega-nerd.com/libsndfile
-Breaks: libsndfile-dev
-Depends: libflac, libmp3lame, libogg, libopus, libvorbis
-Replaces: libsndfile-dev
-Description: Library for reading/writing audio files
-Filename: dists/uncode/main/binary-aarch64/libsndfile_1.2.2-2_aarch64.deb
-Size: 201792
-MD5Sum: 8fd1ae7a90da4a84b2835dbee86a60cf
-SHA1: 99f71826e19e21b3178fabd16d0813e3382d45e5
-SHA256: 3a92bc9c35bc0981ca3b1f4f2d9189faddc2b2ddfa4e2bffef2c497d32d1adb8
-SHA512: 8e94b545334a341e8fc9f07e48b02be69efe31bcd5cdfd6650f94d418ecec0b459cd3b108a3e4cd2dc8f4734166368bda58c7bcd77c6784b968b703304e5af61
-
-Package: libsodium-static
-Architecture: aarch64
-Installed-Size: 648
-Maintainer: @termux
-Version: 1.0.22-1
-Homepage: https://libsodium.org/
-Depends: libsodium (= 1.0.22-1)
-Description: Static libraries for libsodium
-Filename: dists/uncode/main/binary-aarch64/libsodium-static_1.0.22-1_aarch64.deb
-Size: 150756
-MD5Sum: 95877870bba328c1a1457e2a52943c87
-SHA1: 6b7582bf3ad2ebba873d0a62721974b32abc8c2c
-SHA256: 8cdfbf36327baefe8d2c9abf1017920c071079a64be8c2c213a3766abba11a9a
-SHA512: c6160daef5bbb6670424574550c2da88962cca283ab41262c0399b85452fc094562587b8884278f6d5c846d25a4ad7e1b9383cd91211f238fa55378814406c1c
-
-Package: libsodium
-Architecture: aarch64
-Installed-Size: 724
-Maintainer: @termux
-Version: 1.0.22-1
-Homepage: https://libsodium.org/
-Breaks: libsodium-dev
-Replaces: libsodium-dev
-Description: Network communication, cryptography and signaturing library
-Filename: dists/uncode/main/binary-aarch64/libsodium_1.0.22-1_aarch64.deb
-Size: 150900
-MD5Sum: 56bc64627bec7da64a4a1a047235684d
-SHA1: 61435e6bf562a713f616291e0b1729ad018a584f
-SHA256: 8f057c0ef5e951563e2647051e2c378dcbdc4d7c23f8bf8e232bb42c57f3e8e1
-SHA512: d31cef3d2a8dc5fa177d9bb613d77dac19568561c852fbdef3d21b449bc64b6f4fc1f40f19b524d11203f00226723c65a57a187d738b8485191de53a6d718566
-
-Package: libsophia-static
-Architecture: aarch64
-Installed-Size: 2132
-Maintainer: @termux
-Version: 2.2-1
-Homepage: http://sophia.systems/
-Depends: libsophia (= 2.2-1)
-Description: Static libraries for libsophia
-Filename: dists/uncode/main/binary-aarch64/libsophia-static_2.2-1_aarch64.deb
-Size: 374716
-MD5Sum: c44a6aeb789be03dcc2bad508e1c311e
-SHA1: e4225e15c6e7122354b4b82c6f7d198efc28b4fe
-SHA256: 6492691d90b711c6701386be5cff53c5808254a841ba0b3684ed4962a55e5e15
-SHA512: 0e2941ba3e1170dbcf20bf150a1f9d05e8a235f8b2ebc6e1e2a72ce1905ed38fc82293630b3b6330312ee971ea5b203d49278aea87fd5323a98d0bb614b4ef57
-
-Package: libsophia
-Architecture: aarch64
-Installed-Size: 268
-Maintainer: @termux
-Version: 2.2-1
-Homepage: http://sophia.systems/
-Description: Advanced transactional MVCC key-value/row storage library
-Filename: dists/uncode/main/binary-aarch64/libsophia_2.2-1_aarch64.deb
-Size: 99476
-MD5Sum: 7368b5ebb130b22008347dfa06744cd2
-SHA1: a08053e3d3ecdbeec9f2e220c988ea3b44fc33a6
-SHA256: ec862836afdf5af840f278708245f2845ce408553827be582fc2e59ddcda5860
-SHA512: 5da67c4beef99e07b8d5ee27d7af5dded6b6c69fc637072eb2be8660ca39090cb3693fc57f4f3fbe7e6161eb0085c4a413be0df9eb6f15fe9cfcafe765dac373
-
-Package: libsoundtouch-static
-Architecture: aarch64
-Installed-Size: 696
-Maintainer: @termux
-Version: 2.3.3-1
-Homepage: https://www.surina.net/soundtouch/
-Depends: libsoundtouch (= 2.3.3-1)
-Description: Static libraries for libsoundtouch
-Filename: dists/uncode/main/binary-aarch64/libsoundtouch-static_2.3.3-1_aarch64.deb
-Size: 71276
-MD5Sum: 284ea6be3755154f20f3df72cdb33051
-SHA1: 89e7697cd6629923f9ccfbaf21d1d49fbbfc84c0
-SHA256: c70b0be617f9321b79cf5231b9589d1f299a8e051ca3f212968f9fefa5b50854
-SHA512: ed7e04136b70a57df7644840453aab3f2216644d9dc8386d158da11f0bc684fadde8ed406a3586eff084e8e27c9569ff4c4e51105cabef5abdd8c8027111278b
-
-Package: libsoundtouch
-Architecture: aarch64
-Installed-Size: 484
-Maintainer: @termux
-Version: 2.3.3-1
-Homepage: https://www.surina.net/soundtouch/
-Depends: libc++
-Description: An open-source audio processing library for changing the Tempo, Pitch and Playback Rates of audio streams or files
-Filename: dists/uncode/main/binary-aarch64/libsoundtouch_2.3.3-1_aarch64.deb
-Size: 94152
-MD5Sum: d9e1a61b44a4e7a0c7e561636d910f51
-SHA1: 4c2142a8089e6be9f6729658e3684581ca47aabd
-SHA256: 19ffcc8d4ab0c76f72c67b21870fce667a47ad64d9ee1050b46793f6a74bea24
-SHA512: 9471d1e2c5c5d008b033ac4f8f6c298c67e31cca611724a56618ddd343ca1fbf197c696ee1c244de8d6a8fadf4bbfab80f09c9d1c846a9bec5c0e4649acdbd36
+Version: 22-2
+Homepage: https://android.googlesource.com/platform/ndk/
+Description: Thread debugging library
+Filename: dists/uncode/main/binary-aarch64/libthread-db_22-2_aarch64.deb
+Size: 4264
+MD5Sum: e1a3058f677056139464e0adf187861b
+SHA1: 82a8ea5e9ba565cec4f022d96060cdde1f081806
+SHA256: cb32dcea7120ba3282bc5a502aa57928a1bee52db2e012fa5d4683b73c385f86
+SHA512: 550ddeb56ac91002de126a8d46494ee048fa8b0384fde25213689febd386ee01987dc3865288f0b3c0b457594300131204b0b4a9570d543457313d7bda59b79a
 
 Package: libtiff-static
 Architecture: aarch64
@@ -604,49 +317,178 @@ SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
 SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
 SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
 
-Package: libwebp
+Package: libtinyxml2
 Architecture: aarch64
-Installed-Size: 1204
+Installed-Size: 280
 Maintainer: @termux
-Version: 1.6.0-1
-Homepage: https://github.com/webmproject/libwebp
-Breaks: libwebp-dev
-Depends: giflib, libjpeg-turbo, libpng, libtiff, zlib
-Replaces: libwebp-dev
-Description: Library to encode and decode images in WebP format
-Filename: dists/uncode/main/binary-aarch64/libwebp_1.6.0-1_aarch64.deb
-Size: 316332
-MD5Sum: 9b9fcbd86892116bcb2e21849f8cd812
-SHA1: c03562f9e4f332cf3535a514889582843cca2c43
-SHA256: 71c73669a5a814785cecbb4fc72dffe3d56c4827b227ce4fb2d53258f65b679b
-SHA512: 07e27f3e843886792fdc6597817f5bc284fa0d1b0c6dfdc16e8c2eb090130a351b1de3a1efb090cc904c9dd09012c47e6e05448f0c0e5b2bf20d5010772a1c88
+Version: 11.0.0-1
+Homepage: http://www.grinninglizard.com/tinyxml2/
+Depends: libc++
+Description: A simple, small, efficient, C++ XML parser
+Filename: dists/uncode/main/binary-aarch64/libtinyxml2_11.0.0-1_aarch64.deb
+Size: 53752
+MD5Sum: 1b34589da54a98d615f37fb17977c362
+SHA1: f1e05eacb89a4fc3aff806f4543605db7fad17e0
+SHA256: 4e7c586896ebe9cab8db21b09355c79c531756e8a4620cc82363217228fe8703
+SHA512: 4f4bcb2a3a3f582d22261aecfa3dd8cd78c7d4c96d6db72311777f1f3cdb7639798228268468367f7ca3ec2f2f2de030bc0134910ad42d244ff19606c845e475
 
-Package: rav1e
+Package: libtinyxml
 Architecture: aarch64
-Installed-Size: 3252
+Installed-Size: 312
 Maintainer: @termux
-Version: 0.8.1
-Homepage: https://github.com/xiph/rav1e/
-Description: An AV1 encoder program focused on speed and safety
-Filename: dists/uncode/main/binary-aarch64/rav1e_0.8.1_aarch64.deb
-Size: 991060
-MD5Sum: 03cbb02d0f72e6c6aa8d88aa076c9049
-SHA1: 552b8727c738bde35e362ecb0261481f2b022891
-SHA256: 5f81abc4ac3a4c253b69e9ccaadd2342b8e3de13bb2fb207b01194c81335f600
-SHA512: 46b899f811c0f7a261497e9b9ac2decdfaad93e4fcd4a9a5da062160909789c519ffe87514c8f620efb030e58194c913597205e6cf1ef1700af8c851cd201f8e
+Version: 2.6.2-2
+Homepage: https://sourceforge.net/projects/tinyxml/
+Depends: libc++
+Description: A simple, small, C++ XML parser
+Filename: dists/uncode/main/binary-aarch64/libtinyxml_2.6.2-2_aarch64.deb
+Size: 76428
+MD5Sum: 2e4ad6db8849cb3e2ee130308b38eadb
+SHA1: a3454e9ffd29e4803763efdafb2dafad7fefdf6b
+SHA256: 2240055fed0bf801357fb2cba4fe95a0e6fa68ba64528694522ddb50337aff21
+SHA512: 44fabff9709ccc0d5bda8707cea7e0022bfd97aaa568759dec64a7b405f5474ea6240c46d7ed2e09d4efc0f616faa9e36c19c931d217263cbaff8119be80f507
 
-Package: rdiff
+Package: libtirpc-static
 Architecture: aarch64
-Installed-Size: 40
+Installed-Size: 384
 Maintainer: @termux
-Version: 2.3.4-1
-Homepage: https://github.com/librsync/librsync
-Depends: libpopt, librsync (= 2.3.4-1)
-Description: Remote incremental backup
-Filename: dists/uncode/main/binary-aarch64/rdiff_2.3.4-1_aarch64.deb
-Size: 2124
-MD5Sum: 0576cf6afbb41e37d6d087b7422677c0
-SHA1: 649cd719c826de8d5c3e7a2c7d92d39490f17a36
-SHA256: 02a8aaf938a31df5a7b0723f5938fe55d17a92b53f67c951aa2380cc9ab4b387
-SHA512: fffb19c9c1ce7deb80f8a91f53099ec90711ae5b1b4e7ed330ba50aa706729ed3efd7524b248876df160b2c929de54e3f631f38ded91caf43f8b36607dd3862a
+Version: 1.3.7-1
+Homepage: http://git.linux-nfs.org/?p=steved/libtirpc.git
+Depends: libtirpc (= 1.3.7-1)
+Description: Static libraries for libtirpc
+Filename: dists/uncode/main/binary-aarch64/libtirpc-static_1.3.7-1_aarch64.deb
+Size: 69496
+MD5Sum: 001e2b153739d721b494eee32e89448e
+SHA1: ecd7cbc09604ccd71a3c0ae3e5918dff31710cef
+SHA256: d63f9c85b4dfe170b5950120aa8ad60982bf7d70ab4271806f19fde7711001f4
+SHA512: ae623f917c9127403344c7c69d98c7047defc4f38700c7024bbc7f67aca6215da6dbe20f4071aba565fd38ff66f5861326b8b5e5d78f7e0a7fe247cf8bd1a862
+
+Package: libtirpc
+Architecture: aarch64
+Installed-Size: 548
+Maintainer: @termux
+Version: 1.3.7-1
+Homepage: http://git.linux-nfs.org/?p=steved/libtirpc.git
+Description: Transport Independent RPC library
+Filename: dists/uncode/main/binary-aarch64/libtirpc_1.3.7-1_aarch64.deb
+Size: 123980
+MD5Sum: 9a4d87d287d1633ad8764210330f9bb3
+SHA1: eb6b9355130362bf4f58fe68cac7ffcdf36585e3
+SHA256: 8d33d18206ef2e234b258c3a23fe563eff59ee8d0e16c6ee135244e0cf8ad293
+SHA512: 631eff55dbfdfe46bd950490347af1df864929efd44585ff9b372ca154bf15eead7fe9b541f2dff737ca4794a2b4d8c21286294ec9c854707763faeec7ddc12a
+
+Package: libtllist
+Architecture: aarch64
+Installed-Size: 92
+Maintainer: @termux
+Version: 1.1.0
+Homepage: https://codeberg.org/dnkl/fcft
+Description: A small font loading and glyph rasterization library
+Filename: dists/uncode/main/binary-aarch64/libtllist_1.1.0_aarch64.deb
+Size: 6576
+MD5Sum: 5d77e60a0957ec6b1964539ff165d9d4
+SHA1: 940c513cabb7061197c6659c2f6899ed4508bc8d
+SHA256: 85e390a3e3be0bc816b39103ff3cf4f9e0a6df483cb4e60659518dbfbc9bd56c
+SHA512: 321f1c3c588144d498b842de9a1f01094f6ad517389082bfabf177524642f9afb1b8d01e5cb27ec5fdd735fa8fd9fbc555ea4ac9b531ff7ab02104d5fc946400
+
+Package: libtomcrypt-static
+Architecture: aarch64
+Installed-Size: 1548
+Maintainer: @termux
+Version: 1.18.2-1
+Homepage: https://www.libtom.net/LibTomCrypt/
+Depends: libtomcrypt (= 1.18.2-1)
+Description: Static libraries for libtomcrypt
+Filename: dists/uncode/main/binary-aarch64/libtomcrypt-static_1.18.2-1_aarch64.deb
+Size: 311904
+MD5Sum: b71d3bdedee3e772bbe2a05d7e46d502
+SHA1: ca51be51f38b81dc8ce5b9520a7bf7ef71009f78
+SHA256: 6a7745520eece79f1e7c43b79ab212ec0055f76bd5876bf1a661109f2ee8a04c
+SHA512: cc592b38729466661c1664a770ad24ce8977a58a8ba11d1bfd3ad93ba109bb3a625d0880219c3d1cf055a628362120f8fcab65ad745c2d6485a6672296355f95
+
+Package: libtomcrypt
+Architecture: aarch64
+Installed-Size: 928
+Maintainer: @termux
+Version: 1.18.2-1
+Homepage: https://www.libtom.net/LibTomCrypt/
+Description: A fairly comprehensive, modular and portable cryptographic toolkit
+Filename: dists/uncode/main/binary-aarch64/libtomcrypt_1.18.2-1_aarch64.deb
+Size: 294564
+MD5Sum: 29b428b05c5190fe7785cc6719a49789
+SHA1: 333e36b4563dc5981b9b494535b138a260df22db
+SHA256: 3d805028d23dfc020fcbf0151f7b16c354d6e2bba97043483ed38d558e611a4b
+SHA512: baed775d583460fb1f9473c5e94665a7ab6e904623ab0d58ae3b7ce125286b066a758c31fb85b69e6d000ec4967a959bc9740a1793f6846c077c4d92bfb96032
+
+Package: libtommath-static
+Architecture: aarch64
+Installed-Size: 336
+Maintainer: @termux
+Version: 1.3.0
+Homepage: https://www.libtom.net/LibTomMath/
+Depends: libtommath (= 1.3.0)
+Description: Static libraries for libtommath
+Filename: dists/uncode/main/binary-aarch64/libtommath-static_1.3.0_aarch64.deb
+Size: 43172
+MD5Sum: 60442cca9a213fc205b13b4700a4b8c2
+SHA1: 8c8c406aaca62cff09f2d780b96642df47498ecd
+SHA256: 5feab4357c85bba3835e92fccad1c4dd39fabf2465b6523b0c982280c379b38c
+SHA512: d4d6d33ad5e93cc751188aedd1704b929341a14f035483ac3df78517b0991f6ad31f750127ac310c1cbd8ccaa056c73a89b2ed11696a0a3b046a8b1bbf0de146
+
+Package: libtommath
+Architecture: aarch64
+Installed-Size: 100
+Maintainer: @termux
+Version: 1.3.0
+Homepage: https://www.libtom.net/LibTomMath/
+Description: A free open source portable number theoretic multiple-precision integer library
+Filename: dists/uncode/main/binary-aarch64/libtommath_1.3.0_aarch64.deb
+Size: 10812
+MD5Sum: 976d16e6b0abaa3dc817d33ee8fe0522
+SHA1: 273f36a7c1b4aacd0d6d7d17e5b82a5bda3fb052
+SHA256: a37b32ed5e90b4801db7798b75c11137542dd00002c713079a62d35c25f75bfa
+SHA512: e2e3e36a4f002323da45377cc71afef9149948207adf174ba91b572eb058d3a63875b33e13965aa335896458fd03be0b90c5969839cd677e4c0d2dc28918f7af
+
+Package: speex-utils
+Architecture: aarch64
+Installed-Size: 24
+Maintainer: @termux
+Version: 1.2.1-1
+Homepage: https://www.speex.org/
+Depends: libogg, speexdsp, libspeex (= 1.2.1-1)
+Description: Speex command line tools
+Filename: dists/uncode/main/binary-aarch64/speex-utils_1.2.1-1_aarch64.deb
+Size: 792
+MD5Sum: abe7c0326d83f101743bdad1b3e5ffb2
+SHA1: 1eabb4308658903424b06c3d7fefefa09bad4e39
+SHA256: eaf9ae1d5bbd1679db1cc235fa86ee996a3471b077644e137980fd42311784c7
+SHA512: 2f7f1d4942a7052c696902b49b48402561bdab86fcd18ee476e97cd1a8e948ac627119d5414e1ac62edbec09cb33a0cb6b63557ceb12be9bc95202afb63205ec
+
+Package: stemwords
+Architecture: aarch64
+Installed-Size: 1136
+Maintainer: @termux
+Version: 3.0.1
+Homepage: https://snowballstem.org/
+Description: A command-line tool which uses libstemmer
+Filename: dists/uncode/main/binary-aarch64/stemwords_3.0.1_aarch64.deb
+Size: 100152
+MD5Sum: a2f42d2f142e8bb1b3064f11c18822f7
+SHA1: 55adce0fa1e47ff9e9af98e655d567b05288341b
+SHA256: feb99e31b7055b8e17d58aaff49d571eba879e49e84c4bd86daaf56fb0e69cda
+SHA512: 5635f1476308ae0077f345f8a25c1e04530f276d8c72bb82c658d35f14fff8a4bc8d65902776c77cd4226731df7e26eb7cc8b2051fd80f29daee05efe5c972b2
+
+Package: tdb-tools
+Architecture: aarch64
+Installed-Size: 104
+Maintainer: @termux
+Version: 1.4.15
+Homepage: https://tdb.samba.org/
+Depends: libtdb (= 1.4.15)
+Description: Tools for TDB
+Filename: dists/uncode/main/binary-aarch64/tdb-tools_1.4.15_aarch64.deb
+Size: 17736
+MD5Sum: 151c5914d0c1aca44ea575c677eef4da
+SHA1: bd38fc1df1f29b148a72e3d35b6c141253d907c9
+SHA256: 67ea63d145e74b6110f6066a064cb89f5083e057075e3e7fffc39b38f16e29cf
+SHA512: 5cf887cfcbb669118bd3837ee8703924412248c20b3848c07b721ae1d3ca65b8047f93f1353fed1f87a5c3cc9214c2ec08389ff5997c61353024ebc873b730db
 
