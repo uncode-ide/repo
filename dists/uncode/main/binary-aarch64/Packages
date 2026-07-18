@@ -1,19 +1,18 @@
-Package: c-ares
+Package: abseil-cpp
 Architecture: aarch64
-Installed-Size: 1100
+Installed-Size: 8776
 Maintainer: @termux
-Version: 1.34.6
-Homepage: https://c-ares.org/
-Breaks: c-ares-dev
-Depends: resolv-conf
-Replaces: c-ares-dev
-Description: Library for asynchronous DNS requests (including name resolves)
-Filename: dists/uncode/main/binary-aarch64/c-ares_1.34.6_aarch64.deb
-Size: 192452
-MD5Sum: 8bdf24d283f4f276fc12478b9a0b89a3
-SHA1: 60c6a183d0dc6aa6eb4f93229a7175c87512f9ae
-SHA256: 6cd16a7496b1a237184cbe4ef048db07529e481e837780c84b964b3d12dbe8b9
-SHA512: ea51626f16891611cd6e24763ad4139df918ad4dfa692f1c285d364bda4b143c90a5cb737992a881c8f4ce8dd51c929b36971735355cdcadbd330529c6847509
+Version: 20250814.1
+Homepage: https://abseil.io/
+Depends: libc++
+Conflicts: libgrpc (<< 1.52.0-1)
+Description: Abseil C++ Common Libraries
+Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
+Size: 1117052
+MD5Sum: a99612704b914c5ac9e7827a865c1741
+SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
+SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
+SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
 
 Package: hello
 Version: 8.7.1-1
@@ -28,247 +27,10 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: bdda9461a41df672aad49b5954ae098b
-SHA1: 3481238f92e60f762037aa12679178e0fefbc258
-SHA256: fe1ace06ec02e19abe68a10412b6c8910afb6e192a62a055f2939a3817bcdd65
-SHA512: eaabc2fa38184a833ef22d0cabf0768eaa6e448b34203d448ebbb02a2641a3b83f072fda63b960a09c4c8c615834d0f63ab2490b8c4d865b19584fca2e2c99fe
-
-Package: libsoxr
-Architecture: aarch64
-Installed-Size: 1100
-Maintainer: @termux
-Version: 0.1.3-8
-Homepage: https://sourceforge.net/projects/soxr/
-Breaks: libsoxr-dev
-Replaces: libsoxr-dev
-Description: High quality, one-dimensional sample-rate conversion library
-Filename: dists/uncode/main/binary-aarch64/libsoxr_0.1.3-8_aarch64.deb
-Size: 288604
-MD5Sum: 051cf5d96a6e94acde1e566e7da003c5
-SHA1: 9fe309bee16f17102bb8ffa28717e98f254180ad
-SHA256: 235e6db4d79ea92b8fb820b505b94a9882b6b6942f2ef990faf989d3f2b72fd4
-SHA512: 403319d67363b77f38f48106993e379c8b894cc07540c84264a65831d25366dcdbd3c2933bc8ca025e0b55d5ffe9588a4d39ee6bf8b15fd1d81fd1ca085eba3c
-
-Package: libspatialindex
-Architecture: aarch64
-Installed-Size: 1360
-Maintainer: @termux
-Version: 2.1.0-1
-Homepage: https://libspatialindex.github.io
-Depends: libc++
-Description: C++ implementation of R*-tree, an MVR-tree and a TPR-tree with C API
-Filename: dists/uncode/main/binary-aarch64/libspatialindex_2.1.0-1_aarch64.deb
-Size: 248288
-MD5Sum: 02c5405e1e7933aa5a88e21500c7358c
-SHA1: 2180a9562c110405e0e3f5feca127f881977a9a5
-SHA256: a9ad93d519e7fb0ba0f7c209f9e48e354e6a553abac908da699483a1b05ac5ca
-SHA512: a835c32d260889f296693c635cc4b7922bfb68ae1f980372c07d1fbf502bb8918ac6e3bd326dce31b5260f8399552e5f3f993a650af26e8b7fbebf3d7c3d2dce
-
-Package: libspeex-static
-Architecture: aarch64
-Installed-Size: 188
-Maintainer: @termux
-Version: 1.2.1-1
-Homepage: https://www.speex.org/
-Depends: libspeex (= 1.2.1-1)
-Description: Static libraries for libspeex
-Filename: dists/uncode/main/binary-aarch64/libspeex-static_1.2.1-1_aarch64.deb
-Size: 47768
-MD5Sum: 80ef2b5e66cba8007e5d56a88723d990
-SHA1: 627a707aaddf88a503b9908b9bf9a776018478aa
-SHA256: 5e9da97506c225394a18a3c7bd3670cb3d61d20f1e4af2074d6b84d441f59210
-SHA512: 4ecd10623dc6636c7a21aa9642e667859bc9ee1a75c4da3349b6869ae9aa543b931aa6aba1c840383e8ede25506e5ad673b62ddb74ee37bbdde3092e1a6f13fb
-
-Package: libspeex
-Architecture: aarch64
-Installed-Size: 632
-Maintainer: @termux
-Version: 1.2.1-1
-Homepage: https://www.speex.org/
-Description: A patent-free, Open Source/Free Software voice codec
-Filename: dists/uncode/main/binary-aarch64/libspeex_1.2.1-1_aarch64.deb
-Size: 460256
-MD5Sum: da130d26bcab9af9d86920f288870385
-SHA1: 7262bc6ce14afaffd6f870ce9c5121044e6d1202
-SHA256: f96cb935d83e19d83f0b0c0fb0cb9c47469d3a9f4c04f37f787e60a6027dd9a7
-SHA512: 093b9f26e8b783aac980548b0091934cad20be942568dd01081b731c15a716dc3c4a07b23c36cfa4962b3f79583c20c10011dd15fce382ad33e822176e96fae7
-
-Package: libstemmer-static
-Architecture: aarch64
-Installed-Size: 1844
-Maintainer: @termux
-Version: 3.0.1
-Homepage: https://snowballstem.org/
-Depends: libstemmer (= 3.0.1)
-Description: Static libraries for libstemmer
-Filename: dists/uncode/main/binary-aarch64/libstemmer-static_3.0.1_aarch64.deb
-Size: 175324
-MD5Sum: be656d6fe875e5e1705fe04ec2cd7e8c
-SHA1: c57d614cc48a20a17acf0d95bfa0ab65f61f02be
-SHA256: 433734477bfe608da2b406c31a9dcb0a401df5b9a16a5024a1929c11c0b3d3a1
-SHA512: 905cd41aeacaefd32866bc20d2eddba88b1d39a82c87dc80a0578117d37a102721eb55ebf77d16406ed61a13e3ea8a9a94ca665d7b3cd3558079bbd00032222b
-
-Package: libstemmer
-Architecture: aarch64
-Installed-Size: 1156
-Maintainer: @termux
-Version: 3.0.1
-Homepage: https://snowballstem.org/
-Description: Snowball compiler and stemming algorithms
-Filename: dists/uncode/main/binary-aarch64/libstemmer_3.0.1_aarch64.deb
-Size: 101008
-MD5Sum: feacb9f3cbff3876b18fa2d406890259
-SHA1: 434bab511f18374fdc98e37adc635df53ad4de21
-SHA256: 45d813f88d4ac642e4d75bf92bf1da04227aa36b085052234a27c7f98c3dabfa
-SHA512: 8b22aa43aa6589040ea9288b0500085fd2da1413f202297ad585fbee89fd9f3c426f584011bc4cca0d2fc64d500fa0f47e9f8720def5d17a841f891074f6a5db
-
-Package: libt3config
-Architecture: aarch64
-Installed-Size: 204
-Maintainer: @termux
-Version: 1.0.0-2
-Homepage: https://os.ghalkes.nl/t3/libt3config.html
-Description: A library for reading and writing configuration files
-Filename: dists/uncode/main/binary-aarch64/libt3config_1.0.0-2_aarch64.deb
-Size: 39196
-MD5Sum: 3c28ec91853f80eb46e64b0821956619
-SHA1: 72bdfa55edd6495d52e2be9afc8a1688705eb75d
-SHA256: 1109ac8f2780be49e5f5d24c1d5da72a9ef707fe564e96120c852774186ff511
-SHA512: 2da5a6ad01a945fac1aa2c5c07e8bb6d8ad945bf6e0ca0ba007d7688d0ec7d151690c8b54f198bef18d41efaae2ef1678b611c4ebfc92b553a66dd49c8e433f1
-
-Package: libtalloc-static
-Architecture: aarch64
-Installed-Size: 104
-Maintainer: @termux
-Version: 2.4.3
-Homepage: https://talloc.samba.org/talloc/doc/html/index.html
-Depends: libtalloc (= 2.4.3)
-Description: Static libraries for libtalloc
-Filename: dists/uncode/main/binary-aarch64/libtalloc-static_2.4.3_aarch64.deb
-Size: 11364
-MD5Sum: c1dde684a2d81701b4f48f5160fa4cd6
-SHA1: 4030e3f727f4077ad9828d6a1cd416e8cf24fcc3
-SHA256: f5997485bb954795a8a5c2f40d9ac847d75f15207350e672222ee66b4595c5e4
-SHA512: 7549853c573a782eed827ef996286457f542ad64e3a556072697a958947da21b6febe51e3ab05c3f4a53635010f92dce09328f79c7b52dca22026c19ef8a57b7
-
-Package: libtalloc
-Architecture: aarch64
-Installed-Size: 164
-Maintainer: @termux
-Version: 2.4.3
-Homepage: https://talloc.samba.org/talloc/doc/html/index.html
-Breaks: libtalloc-dev
-Replaces: libtalloc-dev
-Description: Hierarchical, reference counted memory pool system with destructors
-Filename: dists/uncode/main/binary-aarch64/libtalloc_2.4.3_aarch64.deb
-Size: 33132
-MD5Sum: 3bd0b79a9993bd71fbdfd8de8c5ecf6a
-SHA1: 96408a21d9fbbd3cdc70a5d723468185f445bb74
-SHA256: b30f77057f6adf5257291714dffbbf3d820ec63a5970612f4715efd801a235f4
-SHA512: 0739d199f23e41b2646669bd888b2036d41d498e1d39269e1df1e4769a06ff448f27eebf3dc242c367b4fc6ecd724f27c438e18ca1e09aa0f9d33b0cc4aa18e7
-
-Package: libtasn1-static
-Architecture: aarch64
-Installed-Size: 148
-Maintainer: @termux
-Version: 4.21.0
-Homepage: https://www.gnu.org/software/libtasn1/
-Depends: libtasn1 (= 4.21.0)
-Description: Static libraries for libtasn1
-Filename: dists/uncode/main/binary-aarch64/libtasn1-static_4.21.0_aarch64.deb
-Size: 32496
-MD5Sum: 5beb9241a3f6f556010e24d53fbe39fa
-SHA1: 23f111094ac22926fcbd1bff29721764ed01d74b
-SHA256: ed0d527807d6063e95a1fb67611c3e35e74d4310d66858da7b09081df4a41624
-SHA512: 6158c7c97c7a2dbb8692259700089ef6ce062fccd77e084ed99ef936004bd3ae05d3f113747b3d63a29733a97f4e9a42dc033bd9c4cac4abefad95749d840659
-
-Package: libtasn1
-Architecture: aarch64
-Installed-Size: 472
-Maintainer: @termux
-Version: 4.21.0
-Homepage: https://www.gnu.org/software/libtasn1/
-Description: This is GNU Libtasn1, a small ASN.1 library
-Filename: dists/uncode/main/binary-aarch64/libtasn1_4.21.0_aarch64.deb
-Size: 101384
-MD5Sum: 34c6b573ab3b319169c2c21bf8e6a19b
-SHA1: 295e0327323bfdca110fa743941d130adcac5781
-SHA256: 9e8f55b0afe500245674abafa6390a175b9f4816a1c5ed71272219ef227e9a8e
-SHA512: 7a974a9b8c18732145ce3eb46161738b1803181c7ffacc0aae8326896ce3ba96952702e17f19bc38b9fee75ac6686470712f8e4ff2c7b5fb6b67553e301763c2
-
-Package: libtbb
-Architecture: aarch64
-Installed-Size: 2344
-Maintainer: @termux
-Version: 2023.0.0
-Homepage: https://uxlfoundation.github.io/oneTBB/
-Depends: libc++
-Description: oneAPI Threading Building Blocks
-Filename: dists/uncode/main/binary-aarch64/libtbb_2023.0.0_aarch64.deb
-Size: 297864
-MD5Sum: aced68f8a185271bc8296ba221ff6d30
-SHA1: 9db0886d64f16cdbf74849493103b90307e259cb
-SHA256: 9d7fa9516795d16590677b36be6176bc03959a6303598a83fa11297e9a8cc200
-SHA512: 959167db95b7abbcb2494ee6235c9dfcb3c166fb3ae0b4abd2ea1ac8ac6c5206e17e6b4eced0079cce984560aa0b5ed08d83e374a6769fe05f1504e045d56404
-
-Package: libtd-static
-Architecture: aarch64
-Installed-Size: 1956
-Maintainer: @termux
-Version: 1.8.50-1
-Homepage: https://core.telegram.org/tdlib/
-Depends: libtd (= 1.8.50-1)
-Description: Static libraries for libtd
-Filename: dists/uncode/main/binary-aarch64/libtd-static_1.8.50-1_aarch64.deb
-Size: 248400
-MD5Sum: a4739dae50249021838b9d079ea12a81
-SHA1: 719056be8e0ec7e2805bf3685e0409dfe6f9f4ad
-SHA256: c3a554d6a1ab664aa0fd2d8e1c8fe9847128f431ccc887c7de79c72dbb95ff11
-SHA512: c964011ab2d24946ef76ed9b0f89376fbc219eaf612c575dfc6a9c7225c8f3e836451832582af519548822bbf66eae309952e558483e0b21a76ffa30e120fc9c
-
-Package: libtd
-Architecture: aarch64
-Installed-Size: 36
-Maintainer: @termux
-Version: 1.8.50-1
-Homepage: https://core.telegram.org/tdlib/
-Depends: libc++, readline, openssl (>= 1.1.1), zlib
-Description: Library for building Telegram clients
-Filename: dists/uncode/main/binary-aarch64/libtd_1.8.50-1_aarch64.deb
-Size: 892
-MD5Sum: 89a62248b3c5a62c051d36af5dd1dbc5
-SHA1: 29888e5a6aad22c950b5c8a12e5385539565b75b
-SHA256: 8e5caa51e4aa57e0e76ab4d8e5d1da24684c725fa714fb7431a913b8e19b95b5
-SHA512: 22c4ca3d6b57d84f6d697bc2204ddd13b134b4bb7c3a42943277b0f0e81d6a90fdcec47c44efbcbf04023c62024a7afd24846210ef872afef36d217163c9fa27
-
-Package: libtdb
-Architecture: aarch64
-Installed-Size: 172
-Maintainer: @termux
-Version: 1.4.15
-Homepage: https://tdb.samba.org/
-Depends: libbsd
-Description: A trivial database system
-Filename: dists/uncode/main/binary-aarch64/libtdb_1.4.15_aarch64.deb
-Size: 39712
-MD5Sum: 1fab7833194e7a24c4b02587428158ae
-SHA1: 984faabca48a003a72198fbfab1ae9b0d795e107
-SHA256: 0c2a1e10ec59bc1ff45e8fa1c2311b8c300d303ad743fa076b1cb054da07a8a4
-SHA512: 320d12eb5b41048af10f2b4d13401b1480602278312ad4a763d1b592a3bcdb6ff995cc9b8ecc81db5cd0b452c87939881cb276cad44b723c20296f2b808d64a1
-
-Package: libthread-db
-Architecture: aarch64
-Installed-Size: 56
-Maintainer: @termux
-Version: 22-2
-Homepage: https://android.googlesource.com/platform/ndk/
-Description: Thread debugging library
-Filename: dists/uncode/main/binary-aarch64/libthread-db_22-2_aarch64.deb
-Size: 4264
-MD5Sum: e1a3058f677056139464e0adf187861b
-SHA1: 82a8ea5e9ba565cec4f022d96060cdde1f081806
-SHA256: cb32dcea7120ba3282bc5a502aa57928a1bee52db2e012fa5d4683b73c385f86
-SHA512: 550ddeb56ac91002de126a8d46494ee048fa8b0384fde25213689febd386ee01987dc3865288f0b3c0b457594300131204b0b4a9570d543457313d7bda59b79a
+MD5Sum: 9e1b904b4f90c4f5f6573b084745a63b
+SHA1: 3c91ea33025d6140977e6ab26fc4ea987597bad5
+SHA256: ae8ff119fd129de7593a060762c6bc888d5752ca64563e5ea7e21c20615d62db
+SHA512: 0c49ec9836f1ae708e20c9e94089eec39005bf0c0c03ee29aa32ec7e75954532b1533ac0b1b6f1bb7603c66811c22060f648b6d44ecb870e3e828b2ee003fd49
 
 Package: libtiff-static
 Architecture: aarch64
@@ -317,178 +79,493 @@ SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
 SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
 SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
 
-Package: libtinyxml2
+Package: libtranscript
 Architecture: aarch64
-Installed-Size: 280
+Installed-Size: 3492
 Maintainer: @termux
-Version: 11.0.0-1
-Homepage: http://www.grinninglizard.com/tinyxml2/
+Version: 0.3.4-1
+Homepage: https://os.ghalkes.nl/libtranscript.html
+Description: A character-set conversion library
+Filename: dists/uncode/main/binary-aarch64/libtranscript_0.3.4-1_aarch64.deb
+Size: 870120
+MD5Sum: 0f1f8e5cd1870b2188799b91e11d9aac
+SHA1: 719660639543acc7da4729877dbce900d1ee39e4
+SHA256: b8d97ace871feec960110cd3c55d550611a984cbedb12fe003de43dd0ace0562
+SHA512: fa5409184a00d1232880a92334c075aae097fbf3b852c64a5f9e121f7e2714adf729e9dcf707123bc30b277ef52d9c2b2e6c712ecadcd4f735b18a563f2f7ce1
+
+Package: libtwolame-static
+Architecture: aarch64
+Installed-Size: 196
+Maintainer: @termux
+Version: 0.4.0-1
+Homepage: https://www.twolame.org/
+Depends: libtwolame (= 0.4.0-1)
+Description: Static libraries for libtwolame
+Filename: dists/uncode/main/binary-aarch64/libtwolame-static_0.4.0-1_aarch64.deb
+Size: 43052
+MD5Sum: 228484ced7ac2f74f360df20e5f35d59
+SHA1: cc4e4703762db4ad5f23b0d47582473409684e0c
+SHA256: 66736596edf65c86c72d2d9120493b624984b68e7fc70c0e010b03f0b95c540e
+SHA512: d92913ff2a79bd836135750b2f0ac39ef8c593f823684f748a23a66d5139e31041e91b03d310d4cd97b0a86949a4093a451de09df1f445b6a494973facbf57a5
+
+Package: libtwolame
+Architecture: aarch64
+Installed-Size: 268
+Maintainer: @termux
+Version: 0.4.0-1
+Homepage: https://www.twolame.org/
+Description: An optimised MPEG Audio Layer 2 (MP2) encoder
+Filename: dists/uncode/main/binary-aarch64/libtwolame_0.4.0-1_aarch64.deb
+Size: 60492
+MD5Sum: 2c7d7ccad67151e5708a1ee0aefbdfdc
+SHA1: 2cd7a5b718438193612d17ceb4ff221a2b7e24d3
+SHA256: 81b4fa23abeda35489d36ed9b812186d1c80a34ba7b5b3b678d92f8384936371
+SHA512: c4b316594fe0cb214dd762e64da6fb39e25a99fe28714c3e4f38730d6ce6802b6984772e007cf7764a2d3e72b7324b6f701e3eacd3cb7c2e2619c9e8e2d5f93e
+
+Package: libuber-h3
+Architecture: aarch64
+Installed-Size: 508
+Maintainer: @termux
+Version: 4.5.0
+Homepage: https://h3geo.org/
+Description: A hexagonal hierarchical geospatial indexing system
+Filename: dists/uncode/main/binary-aarch64/libuber-h3_4.5.0_aarch64.deb
+Size: 93084
+MD5Sum: 0f6029c3ace8c0afe40e044e7d59928d
+SHA1: f8279568244643c03d137d773333bcf89d567b52
+SHA256: 2bb7d3988683898fab370fb2203ab50c2790fde578395e310efa4be9a05e6e34
+SHA512: 07e28e32537583d9c024bb646740b24df63eb98bfbcc2664c7cae081bd214eaf68db6bbc926694143680d54a7490b8b3013dbf90980330a97fa0123fe5edfbea
+
+Package: libuchardet-static
+Architecture: aarch64
+Installed-Size: 380
+Maintainer: @termux
+Version: 0.0.8-2
+Homepage: https://www.freedesktop.org/wiki/Software/uchardet/
+Depends: libuchardet (= 0.0.8-2)
+Description: Static libraries for libuchardet
+Filename: dists/uncode/main/binary-aarch64/libuchardet-static_0.0.8-2_aarch64.deb
+Size: 75004
+MD5Sum: 969c94f71864449fe10491c655cfa58d
+SHA1: b37f4e27fc7646d7b9d927d1a0a3771681e6f4d8
+SHA256: cbcb5863b5a03c10bc8ac5e84be12cb0b1f8f23a8a00c9929cd990dc85b0c799
+SHA512: a71fd1af711d4cee6b798e672b56428fd4b86d8ceb8cfb174a608ff9103c07c820cf80a7b84e65be97f88959d1723a48593edeef9fdaaea6c69797a8035bcede
+
+Package: libuchardet
+Architecture: aarch64
+Installed-Size: 404
+Maintainer: @termux
+Version: 0.0.8-2
+Homepage: https://www.freedesktop.org/wiki/Software/uchardet/
 Depends: libc++
-Description: A simple, small, efficient, C++ XML parser
-Filename: dists/uncode/main/binary-aarch64/libtinyxml2_11.0.0-1_aarch64.deb
-Size: 53752
-MD5Sum: 1b34589da54a98d615f37fb17977c362
-SHA1: f1e05eacb89a4fc3aff806f4543605db7fad17e0
-SHA256: 4e7c586896ebe9cab8db21b09355c79c531756e8a4620cc82363217228fe8703
-SHA512: 4f4bcb2a3a3f582d22261aecfa3dd8cd78c7d4c96d6db72311777f1f3cdb7639798228268468367f7ca3ec2f2f2de030bc0134910ad42d244ff19606c845e475
+Description: An encoding detector library
+Filename: dists/uncode/main/binary-aarch64/libuchardet_0.0.8-2_aarch64.deb
+Size: 100076
+MD5Sum: 97f53c9078f28d87aa2bab7563c8ccbe
+SHA1: d07ecbd86d9bceca409f0836be3c60a2978662e5
+SHA256: 974fc7c11c1d46f9c0c9e80b2df61395f8248d9d3a1260891e7e2fb34ee31883
+SHA512: 18a11df832575e61396e0f795c04b44b0969f6d40575aa3277ddc220510e48a2fc4f62667a76eaac1e9f1eda52b7cc074b02bbb71b9a3170f5bb50aa37e7aa18
 
-Package: libtinyxml
+Package: libucontext-static
 Architecture: aarch64
-Installed-Size: 312
+Installed-Size: 48
 Maintainer: @termux
-Version: 2.6.2-2
-Homepage: https://sourceforge.net/projects/tinyxml/
-Depends: libc++
-Description: A simple, small, C++ XML parser
-Filename: dists/uncode/main/binary-aarch64/libtinyxml_2.6.2-2_aarch64.deb
-Size: 76428
-MD5Sum: 2e4ad6db8849cb3e2ee130308b38eadb
-SHA1: a3454e9ffd29e4803763efdafb2dafad7fefdf6b
-SHA256: 2240055fed0bf801357fb2cba4fe95a0e6fa68ba64528694522ddb50337aff21
-SHA512: 44fabff9709ccc0d5bda8707cea7e0022bfd97aaa568759dec64a7b405f5474ea6240c46d7ed2e09d4efc0f616faa9e36c19c931d217263cbaff8119be80f507
+Version: 1.5
+Homepage: https://github.com/kaniini/libucontext
+Depends: libucontext (= 1.5)
+Description: Static libraries for libucontext
+Filename: dists/uncode/main/binary-aarch64/libucontext-static_1.5_aarch64.deb
+Size: 4276
+MD5Sum: 8e83e428e5edc3b88a5fdc059038ff7d
+SHA1: 01a1016b4a9169f8a2e7464def94d6771a00d110
+SHA256: c23d115cd2775feaa1831b39bfbb59499d6b40b39ceafb04fd424fb8d3a67ce2
+SHA512: f5ff4c4f127185bdd5b1ebce7b352f13eaf2bc36830ce626dccea81763db465e4c60390ed14b12b447bff920335a8182543802a6e7337b74b6158b42964974a7
 
-Package: libtirpc-static
+Package: libucontext
 Architecture: aarch64
-Installed-Size: 384
+Installed-Size: 76
 Maintainer: @termux
-Version: 1.3.7-1
-Homepage: http://git.linux-nfs.org/?p=steved/libtirpc.git
-Depends: libtirpc (= 1.3.7-1)
-Description: Static libraries for libtirpc
-Filename: dists/uncode/main/binary-aarch64/libtirpc-static_1.3.7-1_aarch64.deb
-Size: 69496
-MD5Sum: 001e2b153739d721b494eee32e89448e
-SHA1: ecd7cbc09604ccd71a3c0ae3e5918dff31710cef
-SHA256: d63f9c85b4dfe170b5950120aa8ad60982bf7d70ab4271806f19fde7711001f4
-SHA512: ae623f917c9127403344c7c69d98c7047defc4f38700c7024bbc7f67aca6215da6dbe20f4071aba565fd38ff66f5861326b8b5e5d78f7e0a7fe247cf8bd1a862
+Version: 1.5
+Homepage: https://github.com/kaniini/libucontext
+Description: A library which provides the ucontext.h C API
+Filename: dists/uncode/main/binary-aarch64/libucontext_1.5_aarch64.deb
+Size: 3304
+MD5Sum: c9b0ebe077a58018230f1e0dd3c1e8d0
+SHA1: b577ac06dec681f5bbd873b259f1b3ba5fa89599
+SHA256: a37412801341fc38e803e54590ed8cc5a2fa32e2a16d03f2bf96201df2bd7fc8
+SHA512: 974b1a895ff7da2fc80818996d1541ecc55c8cc1f28d799304b743dae89522a8e8c97810a9e61239dc8cc1866adaf42558ae6cd620815632fd1b02c6a9611468
 
-Package: libtirpc
+Package: libudfread-static
 Architecture: aarch64
-Installed-Size: 548
+Installed-Size: 180
 Maintainer: @termux
-Version: 1.3.7-1
-Homepage: http://git.linux-nfs.org/?p=steved/libtirpc.git
-Description: Transport Independent RPC library
-Filename: dists/uncode/main/binary-aarch64/libtirpc_1.3.7-1_aarch64.deb
-Size: 123980
-MD5Sum: 9a4d87d287d1633ad8764210330f9bb3
-SHA1: eb6b9355130362bf4f58fe68cac7ffcdf36585e3
-SHA256: 8d33d18206ef2e234b258c3a23fe563eff59ee8d0e16c6ee135244e0cf8ad293
-SHA512: 631eff55dbfdfe46bd950490347af1df864929efd44585ff9b372ca154bf15eead7fe9b541f2dff737ca4794a2b4d8c21286294ec9c854707763faeec7ddc12a
+Version: 1.2.0
+Homepage: https://code.videolan.org/videolan/libudfread/
+Depends: libudfread (= 1.2.0)
+Description: Static libraries for libudfread
+Filename: dists/uncode/main/binary-aarch64/libudfread-static_1.2.0_aarch64.deb
+Size: 36196
+MD5Sum: 7b5225193abbd1b828be1538705c20d3
+SHA1: dd6efd38cbf1de28b5a095f55e90a3acc320c234
+SHA256: 7f7d9fbef30ccc44d46fcd74be0a406da2315a0989a6418926a7a81f640efa83
+SHA512: cc842b49749a69ee2184fea43c76e0bc9a1b72359900f42fec1a81189c4e680b71dd011b07b21663d36bee054379f9dfd283fecff66c43a685ff40556a66a77b
 
-Package: libtllist
-Architecture: aarch64
-Installed-Size: 92
-Maintainer: @termux
-Version: 1.1.0
-Homepage: https://codeberg.org/dnkl/fcft
-Description: A small font loading and glyph rasterization library
-Filename: dists/uncode/main/binary-aarch64/libtllist_1.1.0_aarch64.deb
-Size: 6576
-MD5Sum: 5d77e60a0957ec6b1964539ff165d9d4
-SHA1: 940c513cabb7061197c6659c2f6899ed4508bc8d
-SHA256: 85e390a3e3be0bc816b39103ff3cf4f9e0a6df483cb4e60659518dbfbc9bd56c
-SHA512: 321f1c3c588144d498b842de9a1f01094f6ad517389082bfabf177524642f9afb1b8d01e5cb27ec5fdd735fa8fd9fbc555ea4ac9b531ff7ab02104d5fc946400
-
-Package: libtomcrypt-static
-Architecture: aarch64
-Installed-Size: 1548
-Maintainer: @termux
-Version: 1.18.2-1
-Homepage: https://www.libtom.net/LibTomCrypt/
-Depends: libtomcrypt (= 1.18.2-1)
-Description: Static libraries for libtomcrypt
-Filename: dists/uncode/main/binary-aarch64/libtomcrypt-static_1.18.2-1_aarch64.deb
-Size: 311904
-MD5Sum: b71d3bdedee3e772bbe2a05d7e46d502
-SHA1: ca51be51f38b81dc8ce5b9520a7bf7ef71009f78
-SHA256: 6a7745520eece79f1e7c43b79ab212ec0055f76bd5876bf1a661109f2ee8a04c
-SHA512: cc592b38729466661c1664a770ad24ce8977a58a8ba11d1bfd3ad93ba109bb3a625d0880219c3d1cf055a628362120f8fcab65ad745c2d6485a6672296355f95
-
-Package: libtomcrypt
-Architecture: aarch64
-Installed-Size: 928
-Maintainer: @termux
-Version: 1.18.2-1
-Homepage: https://www.libtom.net/LibTomCrypt/
-Description: A fairly comprehensive, modular and portable cryptographic toolkit
-Filename: dists/uncode/main/binary-aarch64/libtomcrypt_1.18.2-1_aarch64.deb
-Size: 294564
-MD5Sum: 29b428b05c5190fe7785cc6719a49789
-SHA1: 333e36b4563dc5981b9b494535b138a260df22db
-SHA256: 3d805028d23dfc020fcbf0151f7b16c354d6e2bba97043483ed38d558e611a4b
-SHA512: baed775d583460fb1f9473c5e94665a7ab6e904623ab0d58ae3b7ce125286b066a758c31fb85b69e6d000ec4967a959bc9740a1793f6846c077c4d92bfb96032
-
-Package: libtommath-static
-Architecture: aarch64
-Installed-Size: 336
-Maintainer: @termux
-Version: 1.3.0
-Homepage: https://www.libtom.net/LibTomMath/
-Depends: libtommath (= 1.3.0)
-Description: Static libraries for libtommath
-Filename: dists/uncode/main/binary-aarch64/libtommath-static_1.3.0_aarch64.deb
-Size: 43172
-MD5Sum: 60442cca9a213fc205b13b4700a4b8c2
-SHA1: 8c8c406aaca62cff09f2d780b96642df47498ecd
-SHA256: 5feab4357c85bba3835e92fccad1c4dd39fabf2465b6523b0c982280c379b38c
-SHA512: d4d6d33ad5e93cc751188aedd1704b929341a14f035483ac3df78517b0991f6ad31f750127ac310c1cbd8ccaa056c73a89b2ed11696a0a3b046a8b1bbf0de146
-
-Package: libtommath
-Architecture: aarch64
-Installed-Size: 100
-Maintainer: @termux
-Version: 1.3.0
-Homepage: https://www.libtom.net/LibTomMath/
-Description: A free open source portable number theoretic multiple-precision integer library
-Filename: dists/uncode/main/binary-aarch64/libtommath_1.3.0_aarch64.deb
-Size: 10812
-MD5Sum: 976d16e6b0abaa3dc817d33ee8fe0522
-SHA1: 273f36a7c1b4aacd0d6d7d17e5b82a5bda3fb052
-SHA256: a37b32ed5e90b4801db7798b75c11137542dd00002c713079a62d35c25f75bfa
-SHA512: e2e3e36a4f002323da45377cc71afef9149948207adf174ba91b572eb058d3a63875b33e13965aa335896458fd03be0b90c5969839cd677e4c0d2dc28918f7af
-
-Package: speex-utils
-Architecture: aarch64
-Installed-Size: 24
-Maintainer: @termux
-Version: 1.2.1-1
-Homepage: https://www.speex.org/
-Depends: libogg, speexdsp, libspeex (= 1.2.1-1)
-Description: Speex command line tools
-Filename: dists/uncode/main/binary-aarch64/speex-utils_1.2.1-1_aarch64.deb
-Size: 792
-MD5Sum: abe7c0326d83f101743bdad1b3e5ffb2
-SHA1: 1eabb4308658903424b06c3d7fefefa09bad4e39
-SHA256: eaf9ae1d5bbd1679db1cc235fa86ee996a3471b077644e137980fd42311784c7
-SHA512: 2f7f1d4942a7052c696902b49b48402561bdab86fcd18ee476e97cd1a8e948ac627119d5414e1ac62edbec09cb33a0cb6b63557ceb12be9bc95202afb63205ec
-
-Package: stemwords
-Architecture: aarch64
-Installed-Size: 1136
-Maintainer: @termux
-Version: 3.0.1
-Homepage: https://snowballstem.org/
-Description: A command-line tool which uses libstemmer
-Filename: dists/uncode/main/binary-aarch64/stemwords_3.0.1_aarch64.deb
-Size: 100152
-MD5Sum: a2f42d2f142e8bb1b3064f11c18822f7
-SHA1: 55adce0fa1e47ff9e9af98e655d567b05288341b
-SHA256: feb99e31b7055b8e17d58aaff49d571eba879e49e84c4bd86daaf56fb0e69cda
-SHA512: 5635f1476308ae0077f345f8a25c1e04530f276d8c72bb82c658d35f14fff8a4bc8d65902776c77cd4226731df7e26eb7cc8b2051fd80f29daee05efe5c972b2
-
-Package: tdb-tools
+Package: libudfread
 Architecture: aarch64
 Installed-Size: 104
 Maintainer: @termux
-Version: 1.4.15
-Homepage: https://tdb.samba.org/
-Depends: libtdb (= 1.4.15)
-Description: Tools for TDB
-Filename: dists/uncode/main/binary-aarch64/tdb-tools_1.4.15_aarch64.deb
-Size: 17736
-MD5Sum: 151c5914d0c1aca44ea575c677eef4da
-SHA1: bd38fc1df1f29b148a72e3d35b6c141253d907c9
-SHA256: 67ea63d145e74b6110f6066a064cb89f5083e057075e3e7fffc39b38f16e29cf
-SHA512: 5cf887cfcbb669118bd3837ee8703924412248c20b3848c07b721ae1d3ca65b8047f93f1353fed1f87a5c3cc9214c2ec08389ff5997c61353024ebc873b730db
+Version: 1.2.0
+Homepage: https://code.videolan.org/videolan/libudfread/
+Description: A library for reading UDF
+Filename: dists/uncode/main/binary-aarch64/libudfread_1.2.0_aarch64.deb
+Size: 14948
+MD5Sum: 8f448b480ed53dbe7a2a54f9b0f8fa50
+SHA1: 060f01de1bdc27e59531ffdfc6d0669241944aab
+SHA256: 76456de72042b5e86e613fa05615f6130b2b3162e5dbfce94c1749cb5b185a9e
+SHA512: 21fbab8c2fd241a3ccd4c6062deab728158301c7c50362d50a3db04f3baf139dfdb1b4f11ebc6a5581c3c2dcf70782cc5e8c5a6ffd7cafd2bea1b1ffeefa370d
+
+Package: libunibilium
+Architecture: aarch64
+Installed-Size: 136
+Maintainer: @termux
+Version: 2.1.2-2
+Homepage: https://github.com/neovim/unibilium
+Breaks: libunibilium-dev
+Replaces: libunibilium-dev
+Description: Terminfo parsing library
+Filename: dists/uncode/main/binary-aarch64/libunibilium_2.1.2-2_aarch64.deb
+Size: 21840
+MD5Sum: d36d689b0f8d5a8a13698b910edaff9b
+SHA1: cdd4683a4abb1ea4f01d56c079a52d0d9159f8bd
+SHA256: f7b2d25b9a6f8abbde4808d672a25fa99aba271b3dff8b8ecac2136e9dafe47f
+SHA512: 46d16314119160f82514a302abcf9f63377166188cede5170b399e9733bfd7ecd8c715395c7136ce694e868ce60d962e65e3128bb572006494afdcb94906dc74
+
+Package: libunqlite
+Architecture: aarch64
+Installed-Size: 804
+Maintainer: @termux
+Version: 1.1.9-1
+Homepage: https://unqlite.org/
+Description: Transactional embedded database engine
+Filename: dists/uncode/main/binary-aarch64/libunqlite_1.1.9-1_aarch64.deb
+Size: 186944
+MD5Sum: b0a9876509e6b5608cafb33a21fcba9f
+SHA1: 141c65e19707bf223897b7308bfb7bd026c252da
+SHA256: 6bf10a376efcf2be75b5ffe5687608bf9f2be7cabad94f74be3f3edd0919c9b4
+SHA512: b03dcbc05f2c44ef257e170b4b4627e2f0ace62769b5ddb4dbfbee14de6968ebda4bc24076241f87c1c570c932465bec86e0d8c34e20bd02c890a0070b7c90ea
+
+Package: liburcu-static
+Architecture: aarch64
+Installed-Size: 436
+Maintainer: @termux
+Version: 0.15.6
+Homepage: https://liburcu.org/
+Depends: liburcu (= 0.15.6)
+Description: Static libraries for liburcu
+Filename: dists/uncode/main/binary-aarch64/liburcu-static_0.15.6_aarch64.deb
+Size: 44904
+MD5Sum: 9569911d9164774ec854162c9b91b386
+SHA1: 8c27291e32a3cbad41e75d2297f3b7541d1cb07c
+SHA256: 966ae1665de2fe6c112430b48d9b05b628fbf80470b9c42e067ebecab181d4e7
+SHA512: 6ed9e01af02a5c4d09aabf5ebb63689d6d6efd69407aba0c3df493da90fb789252c01644a3ab0d20c75ece494677b59d9565970e06d0b13d75793ce3f5a3be49
+
+Package: liburcu
+Architecture: aarch64
+Installed-Size: 1372
+Maintainer: @termux
+Version: 0.15.6
+Homepage: https://liburcu.org/
+Description: LGPLv2.1 userspace RCU (read-copy-update) library
+Filename: dists/uncode/main/binary-aarch64/liburcu_0.15.6_aarch64.deb
+Size: 121708
+MD5Sum: eaac08e4a10948e61b188017d5ac8961
+SHA1: dceffe373d4959b0a4c7176a535d63aa840857fc
+SHA256: 063ee0ab1ed19ed3bb377db6e4beb1e9d18e1bcdf6221fa1117883b9de3a7b27
+SHA512: 101543e5fb87d3f1c7f24c8e5bba136a03a4e2173edf3407a5df7c8c6ec3d98f17c52c775afabc3eec4bfe326f3b7af62b91c0928468f1124e252845576d4d7c
+
+Package: libusb-static
+Architecture: aarch64
+Installed-Size: 236
+Maintainer: @termux
+Version: 1.0.30
+Homepage: https://libusb.info/
+Depends: libusb (= 1.0.30)
+Description: Static libraries for libusb
+Filename: dists/uncode/main/binary-aarch64/libusb-static_1.0.30_aarch64.deb
+Size: 48068
+MD5Sum: 28503c5fcb79a6ab8aa92ababb739c48
+SHA1: cda6f4328025340425e398c1012243be016e59c8
+SHA256: b597108619a255d164fbf13352b5d1c70d55d687c04bfb55392b3a07475173ae
+SHA512: 94fb0cdb0f31f3a9b73a3d2a13a5b28bad5db3513f5e91d5620f6ef9ead3f472745f642cf8988959b4c244b69b3616268bb634dc713749940a3f4df1915a0ef7
+
+Package: libusb
+Architecture: aarch64
+Installed-Size: 256
+Maintainer: @termux
+Version: 1.0.30
+Homepage: https://libusb.info/
+Breaks: libusb-dev
+Replaces: libusb-dev
+Description: A C library that provides generic access to USB devices
+Filename: dists/uncode/main/binary-aarch64/libusb_1.0.30_aarch64.deb
+Size: 59916
+MD5Sum: 778835e23b369b98f4778391ed9fb1cc
+SHA1: 46d26f8f1091cdc29986b09f05c2bb3ae1d9c976
+SHA256: e118110aaea6af44df2b089c2aeeede65cc2e97898334becf82c6664fb077789
+SHA512: 310302c8eaa898640ed2586a030c74606b049f806f8286bb1e629ad4de8b03ac53c7826c5652bc16d2a07b881aa6baf5fd0b6952e5b4dd491e3691ca1c8a19d2
+
+Package: libuv-static
+Architecture: aarch64
+Installed-Size: 1572
+Maintainer: @termux
+Version: 1.52.1
+Homepage: https://libuv.org
+Depends: libuv (= 1.52.1)
+Description: Static libraries for libuv
+Filename: dists/uncode/main/binary-aarch64/libuv-static_1.52.1_aarch64.deb
+Size: 287092
+MD5Sum: 335ca59b22878aad22e6c4449a8a5b86
+SHA1: 3def0dfd643314612ab75fa04b309d12204f1212
+SHA256: e00554a37165e59a89c77b2c31e47d8c6b4c7cc9d17d61a2584efd5395ca1faf
+SHA512: e75ddd8c3295e417fbf2a2d894a9dd1227fb2114a2a270a852b49d2790e7bb377f569a7c22922b5cc9bfdd1b33541bab3afb53331305311bf616dddb89d1be4c
+
+Package: libuv
+Architecture: aarch64
+Installed-Size: 352
+Maintainer: @termux
+Version: 1.52.1
+Homepage: https://libuv.org
+Breaks: libuv-dev
+Replaces: libuv-dev
+Description: Support library with a focus on asynchronous I/O
+Filename: dists/uncode/main/binary-aarch64/libuv_1.52.1_aarch64.deb
+Size: 82332
+MD5Sum: 29e9468bd48c50be3c9053663d3ad2da
+SHA1: 5b0647321b842ad7dcb93814b00f78c320cbdf2f
+SHA256: 9056b43bb9ae748ee44eb12e251e6d8e4285b7c036f0e2c26f70280ebbceda75
+SHA512: f4f47e08d8979baaac8bbd31101233bb3643622d9fdc903a5901a5d5b894d3748b17a42f91f854527149dcf34ca6fe5e4d3419a849c8529001c992880f13c926
+
+Package: libvbisam-static
+Architecture: aarch64
+Installed-Size: 196
+Maintainer: @termux
+Version: 2.0-3
+Homepage: https://sourceforge.net/projects/vbisam/
+Depends: libvbisam (= 2.0-3)
+Description: Static libraries for libvbisam
+Filename: dists/uncode/main/binary-aarch64/libvbisam-static_2.0-3_aarch64.deb
+Size: 42904
+MD5Sum: c86880919612c6073513d7ae6eda1a48
+SHA1: 26af7bf511ec75755831609bb1437cc18472991b
+SHA256: 958210b6d16ca1ccbba9b0d4d3ec482e0565825525b29e2643d9dc4faf9fcaa9
+SHA512: ca1fd8c8e61d05e684a13d924c3876dbc950208a62f37684dbfca6907678c271c8c0649392c25056cc3c7d5b846efc7d9687cceb281d0c88eb203d77fc28c545
+
+Package: libvbisam
+Architecture: aarch64
+Installed-Size: 156
+Maintainer: @termux
+Version: 2.0-3
+Homepage: https://sourceforge.net/projects/vbisam/
+Description: A replacement for IBM's C-ISAM
+Filename: dists/uncode/main/binary-aarch64/libvbisam_2.0-3_aarch64.deb
+Size: 39112
+MD5Sum: a6fb8fbbdfa015f8166788ec692738b3
+SHA1: e3fc15c0c161840a479dd1946c6130428cf8e1b5
+SHA256: f4361b15abe56dcf5bd7576d688286c8a367612b82b052e0b6ae9d5cfb5e9435
+SHA512: bf304a585398eb90aff91dbe739fc2a26de5ba09f66c1195d892792d5e280700ac713e420b72367c5e3acc2155cdf3fa6de39551cee0268b1f78406fe3af663e
+
+Package: libvidstab
+Architecture: aarch64
+Installed-Size: 1012
+Maintainer: @termux
+Version: 1.1.1-3
+Homepage: https://github.com/georgmartius/vid.stab
+Description: video stabilization library
+Filename: dists/uncode/main/binary-aarch64/libvidstab_1.1.1-3_aarch64.deb
+Size: 263276
+MD5Sum: eab12025b3c704ca464bce39dcd5c611
+SHA1: 4db37e02dc8aadcd6a742f38cf524155981d075a
+SHA256: 4ed69726ce5aea8e25a46eecf3f108a97c112fea41253f6b274c8a482a4e27a3
+SHA512: 9cfb3ec7f1342073b66fd610ca54bcfd22f12c280e980aabe76a77c3dab8da2bb88dc25656bda20dc49a65bb29578a4216289f7709ddbda06cc3bc5a75151052
+
+Package: libvigra
+Architecture: aarch64
+Installed-Size: 7800
+Maintainer: @termux
+Version: 1.12.4
+Homepage: https://ukoethe.github.io/vigra/
+Depends: imath, libc++, libhdf5, libjpeg-turbo, libpng, libtiff, openexr, zlib
+Description: Computer vision library
+Filename: dists/uncode/main/binary-aarch64/libvigra_1.12.4_aarch64.deb
+Size: 887060
+MD5Sum: 04408bc1beb4c9c185da042799a2a0a2
+SHA1: 7e5d9041450e89ffed1a1aea48f944ebac1c91c6
+SHA256: 25907fac08915d60892cd127c90ddcd23c72bcec1a0fc2f7f35eb5003a0db496
+SHA512: 4094b45ce143e757497e349d8097365d3b84f0efe40bf4e52d36f5780a25cc8b4343955bb929a8f80bb22d2e71c433e852eedb2f836c501623e84b70b59fe760
+
+Package: libvo-amrwbenc-static
+Architecture: aarch64
+Installed-Size: 208
+Maintainer: @termux
+Version: 0.1.3-2
+Homepage: https://sourceforge.net/projects/opencore-amr/
+Depends: libvo-amrwbenc (= 0.1.3-2)
+Description: Static libraries for libvo-amrwbenc
+Filename: dists/uncode/main/binary-aarch64/libvo-amrwbenc-static_0.1.3-2_aarch64.deb
+Size: 58172
+MD5Sum: cee0dc809680cbb0a84bd7b5b723274a
+SHA1: 683dfecf21955db30707ab46fc18f909b2ebe4c3
+SHA256: 52d6c1ba8c1d7cf50a761dc63d084121e3139c4625a556b96c8aae94f0a4a18b
+SHA512: 6af2e792c548324377527a0c46e8b09cd879b86cfedd1d31ecfa3c69d4077b9fbf10810de69a79966b44e8158e09bdb41e07c8962e4aefa0eb1cdcd1fb1c3380
+
+Package: libvo-amrwbenc
+Architecture: aarch64
+Installed-Size: 160
+Maintainer: @termux
+Version: 0.1.3-2
+Homepage: https://sourceforge.net/projects/opencore-amr/
+Description: VisualOn AMR-WB encoder library
+Filename: dists/uncode/main/binary-aarch64/libvo-amrwbenc_0.1.3-2_aarch64.deb
+Size: 52304
+MD5Sum: 05040dc9e7c842217a4a0cb21d3757a1
+SHA1: 86917de8ec039e3d41c6d5ac5306b1a615841aac
+SHA256: 802c1e9b013830f206bfa8ec198867f63da45f7782b0c031354002a68b9328d2
+SHA512: a59e0fedee4c93cb7a03c1f02a7b2b648dc171b8008e49a8f1e78681b501e69e4d43b338d7fa22b0f40a9727fd46a5ce81efbe29e6e31da8ca6e5949484f4f29
+
+Package: libvoikko-static
+Architecture: aarch64
+Installed-Size: 1708
+Maintainer: @termux
+Version: 4.3.3-2
+Homepage: http://voikko.sourceforge.net
+Depends: libvoikko (= 4.3.3-2)
+Description: Static libraries for libvoikko
+Filename: dists/uncode/main/binary-aarch64/libvoikko-static_4.3.3-2_aarch64.deb
+Size: 177532
+MD5Sum: a53ec4a6fdb13aed5553018cd5dcbabc
+SHA1: 80d0ff902a0e1a2778f9b7c7061b28c3fead660e
+SHA256: 67b4d6adba179673b555f431df2df91e285ae3cb7ae82eb106098a9878e5dcf9
+SHA512: ba6f4312ffc193d74dde0738a9de677bd824ae40fbb5b005e537a4b276166f25e575bb7bce78671e61543f8320e9706775fda999b76c3dd158bb1badb56d61b3
+
+Package: libvoikko
+Architecture: aarch64
+Installed-Size: 616
+Maintainer: @termux
+Version: 4.3.3-2
+Homepage: http://voikko.sourceforge.net
+Depends: libc++
+Description: A spelling and grammar checker, hyphenator and collection of related linguistic data for Finnish language
+Filename: dists/uncode/main/binary-aarch64/libvoikko_4.3.3-2_aarch64.deb
+Size: 122596
+MD5Sum: 41f3e9c92a5956836debeedbb0691878
+SHA1: 964721d5524f30167383ad33e29bf471e3001bba
+SHA256: c65c42e7543d03b2b26ce3bdc2f51866afca46becfccc8bc7318b3717cd72aa1
+SHA512: 101830880c0b977cb43bbf19275901fe875f7bea2f4d00bb846f26b64eb73f7b63064a5d31de297cc77a1392e36f050cd72c14d9ca88285cb869268f0d7bca1e
+
+Package: libvpx-static
+Architecture: aarch64
+Installed-Size: 3304
+Maintainer: @termux
+Version: 1:1.16.0
+Homepage: https://www.webmproject.org
+Depends: libvpx (= 1:1.16.0)
+Description: Static libraries for libvpx
+Filename: dists/uncode/main/binary-aarch64/libvpx-static_1:1.16.0_aarch64.deb
+Size: 936928
+MD5Sum: f6e62eb243ba144ff04803d7a44e6a09
+SHA1: 5d63f3cb9cdeb87cc53c03f908bf5fbab0beb68f
+SHA256: 2caea8594f6ead56d510ff2c5e4308db997f67c7b033c80d4f7b30b3dce4f0c2
+SHA512: b8ae4b25e8667303272f35e7a78543df198de5dc786c84550764f913875b8b9232c9752a7825aad9eb078fec1c4c393fa43adc40db698fd995a6b304fd38e20a
+
+Package: libvpx
+Architecture: aarch64
+Installed-Size: 2428
+Maintainer: @termux
+Version: 1:1.16.0
+Homepage: https://www.webmproject.org
+Breaks: libvpx-dev
+Depends: libc++
+Replaces: libvpx-dev
+Description: VP8 & VP9 Codec SDK
+Filename: dists/uncode/main/binary-aarch64/libvpx_1:1.16.0_aarch64.deb
+Size: 864248
+MD5Sum: a595a08adf31ada33fd7cce54bd1f073
+SHA1: f669d7190d8a11815d8322ceb187f57818a27f22
+SHA256: 066cf8866337f2daabf6676a1e92d6bbfda9157bb17a023705a8b03450197566
+SHA512: 4a9cb8a8625638811acfb1d13b185150345ec74b8d1cbe0ef3a8fd12160c05fc46019179578cbad265b598a9ebf06fe7855a9af044cf6b1ac6da4a6cc1dd598d
+
+Package: libvterm
+Architecture: aarch64
+Installed-Size: 176
+Maintainer: @termux
+Version: 1:0.3.3-2
+Homepage: https://www.leonerd.org.uk/code/libvterm/
+Breaks: libvterm-dev
+Replaces: libvterm-dev
+Description: Terminal emulator library
+Filename: dists/uncode/main/binary-aarch64/libvterm_1:0.3.3-2_aarch64.deb
+Size: 33036
+MD5Sum: b2f327098366a4c51745a0bf4c2b1448
+SHA1: 8fe9981bcd2388fd63011147cbacc694db2416ea
+SHA256: 454e6d7e6579814d231e8fa624af551e2878efe20a909ee98488881a842e60c2
+SHA512: efefd65fc820a4e20dd520179625c2ffe4d6f0480958cdb003c19c77cc21f489a727c285f76c6c74295992520388840083ee6632d8853761c24859447a7da62a
+
+Package: libwebrtc-audio-processing
+Architecture: aarch64
+Installed-Size: 1544
+Maintainer: @termux
+Version: 1.3-4
+Homepage: https://www.freedesktop.org/software/pulseaudio/webrtc-audio-processing/
+Depends: libc++, abseil-cpp
+Description: A library containing the AudioProcessing module from the WebRTC project
+Filename: dists/uncode/main/binary-aarch64/libwebrtc-audio-processing_1.3-4_aarch64.deb
+Size: 408384
+MD5Sum: aab9cd3c251383226c26733a72c62e12
+SHA1: fa2d8ad49b708bc66b52f3fd536f330344218b74
+SHA256: aeee4e382c6a6554fdd3173c438add63101bd2f8b1a7fa9ca6748ca036d1db8a
+SHA512: 48fd2d51b2a16484e2ccbfe47d16356a02de693369bc7e7ffc1d22275c1466226ad2cf343bb74a9b901bf0614378aa5df809229c6827bc9df1af515a39a6e9c2
+
+Package: libwolfssl
+Architecture: aarch64
+Installed-Size: 5100
+Maintainer: @termux
+Version: 5.9.2
+Homepage: https://www.wolfssl.com/
+Description: A small, fast, portable implementation of TLS/SSL for embedded devices to the cloud
+Filename: dists/uncode/main/binary-aarch64/libwolfssl_5.9.2_aarch64.deb
+Size: 831068
+MD5Sum: f8c1a7049654e583e0feec81448fdf0e
+SHA1: 0a2d873e1c68692ef45328ef0f54b80667639c89
+SHA256: b39bccd109e868668875951219fb3a98cbadfcafdb3b68f583039ebf61ebcf88
+SHA512: a3c7f89d77c834bfd680f3b54192333897dc81317281429e04c643c535cadfed99664d8a76cbf35659d6611f1223662009cb5c77a18c60558edde2b2bd2b0bc1
+
+Package: twolame
+Architecture: aarch64
+Installed-Size: 40
+Maintainer: @termux
+Version: 0.4.0-1
+Homepage: https://www.twolame.org/
+Depends: libsndfile, libtwolame (= 0.4.0-1)
+Description: The frontend for libtwolame
+Filename: dists/uncode/main/binary-aarch64/twolame_0.4.0-1_aarch64.deb
+Size: 4180
+MD5Sum: a41569c6b2a4ac0016f0e5a73cda3419
+SHA1: 955f7a300802a2c05f182caf2516088a273f475a
+SHA256: 3311410d4eb405a40613ac1e45711b24c6414d61002cae0c10bf74d5b451f19c
+SHA512: 6d424612365eafd206b5b63d503d3c6a0a1cfe5ad5fead0926abd1ff4af3a20b4f449ce785caa88fa7c70676f4c71c7bd7ea3a366816869254463c890032e0e9
+
+Package: uchardet
+Architecture: aarch64
+Installed-Size: 52
+Maintainer: @termux
+Version: 0.0.8-2
+Homepage: https://www.freedesktop.org/wiki/Software/uchardet/
+Depends: libuchardet (= 0.0.8-2)
+Description: An encoding detector utility
+Filename: dists/uncode/main/binary-aarch64/uchardet_0.0.8-2_aarch64.deb
+Size: 3688
+MD5Sum: 55b3f946152f7fc99ff898b6b74b9644
+SHA1: f2b8e311eea8a69d9d156dbdc355dfa045639e7b
+SHA256: 6d30c9ec04d049f9427269cb21300a9688d7431c8889206d82ea7e53194c185d
+SHA512: 3342d2f4379e7cd77f7e4a754d2c64fc1df82db246210fffa6623dd90587715bad83fc59d3c56a08dc54731e19a5e849ce90d5a730e860f22e16867d18fcc553
 
