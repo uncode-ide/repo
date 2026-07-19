@@ -1,14 +1,18 @@
-Package: vulkan-headers
+Package: manpages
 Architecture: all
-Installed-Size: 40812
+Installed-Size: 18580
 Maintainer: @termux
-Version: 1.4.355
-Homepage: https://github.com/KhronosGroup/Vulkan-Headers
-Description: Vulkan Header files and API registry
-Filename: dists/uncode/main/binary-all/vulkan-headers_1.4.355_all.deb
-Size: 1900448
-MD5Sum: dd0715670c91273a893aa334b836ba26
-SHA1: 4d88260a28284c3f1a57f73af03f6c8608df6576
-SHA256: fda072120d444bbed904827cad6c1f0bb891538ffc92a5e73fbfc3386886462f
-SHA512: 6f489e276990a51af1e63d899323b64c067b11d5a49dd72bb717d2a81df33932777b75457c20fe5f4b2d8eec8137eafcecc231a98edaec4e6a69ff0f53f57154
+Version: 6.18
+Homepage: https://www.kernel.org/doc/man-pages/
+Depends: mandoc
+Conflicts: linux-man-pages
+Replaces: linux-man-pages
+Provides: linux-man-pages
+Description: Man pages for linux kernel and C library interfaces
+Filename: dists/uncode/main/binary-all/manpages_6.18_all.deb
+Size: 5695284
+MD5Sum: df3c1146591a1eb33c1e7e928d8fc1ba
+SHA1: ae36f188f59e1920dacc05028f4f5bb5d9463114
+SHA256: f839ce270583c107f112e89361a2da59ed5df41cb7e13de6c3b5cfa9884edb28
+SHA512: d4e3194380eac671014d55f7b37239707b3ef44fb06b9905082bfe37e1817f290a8a09df2d8a78f22f798197e15ddc02bf9cd9d79dc0bbfb499a7172af62fc83
 

@@ -11,294 +11,10 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: ec6a3aada244f576330c9d4ee6b78a23
-SHA1: c4ee6320311793c090185650af24eb8e8ef0f2ab
-SHA256: 3f573b9e6355b524c37a137155154f4360e81e668f6f280194708e17e0312f76
-SHA512: 6af6e312a704c58c2e4c15bf780df5b69905677cc9d636450e1a062d49469fe1e93297497816b18873deeb168ad30c36ad57680ec1ffd3b22160b66624171935
-
-Package: libtiff-static
-Architecture: aarch64
-Installed-Size: 696
-Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Static libraries for libtiff
-Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
-Size: 135260
-MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
-SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
-SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
-SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
-
-Package: libtiff-utils
-Architecture: aarch64
-Installed-Size: 800
-Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Tools for working with tiff files
-Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
-Size: 255964
-MD5Sum: a0a56110c08879f75be05ad601a6e6cc
-SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
-SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
-SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
-
-Package: libtiff
-Architecture: aarch64
-Installed-Size: 6416
-Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Breaks: libtiff-dev
-Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
-Replaces: libtiff-dev
-Description: Support for the Tag Image File Format (TIFF) for storing image data
-Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
-Size: 821104
-MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
-SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
-SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
-SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
-
-Package: libzix
-Architecture: aarch64
-Installed-Size: 216
-Maintainer: @termux
-Version: 0.6.2-1
-Homepage: https://drobilla.net/category/zix
-Description: lightweight C99 portability and data structure library
-Filename: dists/uncode/main/binary-aarch64/libzix_0.6.2-1_aarch64.deb
-Size: 36308
-MD5Sum: adc418bc406f11dda414760c117d33f8
-SHA1: f49f05c43ed3a53199e658bb6833fd93d0839afe
-SHA256: 6a171f04ab9390de1ecc78d4768ff77ac5c7e7e1966b3de4eb4efa2bd9ec201b
-SHA512: 6ff81207bbd87cb347d0a88b77c597a2e59802f1480cd985196e238c97f9b6fc9df81a6cb28c019ed93f1a4e4eebc192a6d9616a339dc85607ad866d416ea253
-
-Package: libzopfli
-Architecture: aarch64
-Installed-Size: 368
-Maintainer: @termux
-Version: 1.0.3-5
-Homepage: https://github.com/google/zopfli
-Breaks: libzopfli-dev
-Depends: libc++
-Replaces: libzopfli-dev
-Description: New zlib compatible compressor library
-Filename: dists/uncode/main/binary-aarch64/libzopfli_1.0.3-5_aarch64.deb
-Size: 117968
-MD5Sum: 3db2241ff141695906587e9268c52136
-SHA1: 8a08d196f5e71c0a241d73d2b93525644b01de82
-SHA256: 830a4f5e3da4c233cbd8ada8f5bff7c5a5bc9bc7ff4a7589997d81978ce8bcd7
-SHA512: f80ec8c59704ec3b6eb35f4782536ad54b61f25fef530d38312bf6431cf03bc64a9f4cb49fa5c18a2e7a0679dfc8bc9c3aa9a464059b9498fb66d4b7c9ff6004
-
-Package: libzxing-cpp
-Architecture: aarch64
-Installed-Size: 2192
-Maintainer: @termux
-Version: 3.0.2
-Homepage: https://github.com/zxing-cpp/zxing-cpp
-Depends: libc++
-Description: An open-source, multi-format 1D/2D barcode image processing library implemented in C++
-Filename: dists/uncode/main/binary-aarch64/libzxing-cpp_3.0.2_aarch64.deb
-Size: 762932
-MD5Sum: b9372ae79f28fa715f9b237d05bb77a4
-SHA1: d81ffcf2da543c97f7dd29140deba1545e9448f9
-SHA256: 09d940411ad134dfa63dd62b2da73589f57f5cbebc03cfaf10284f0b184a145b
-SHA512: d812fee59f87cc269bd4b003b051207aa9c846790923b06e7806e6908b8c7d765db197cee94e966e3b50154f05ae4370a0f15ba02af99376197cc4619665be95
-
-Package: lipl
-Architecture: aarch64
-Installed-Size: 1036
-Maintainer: @termux
-Version: 0.1.3-1
-Homepage: https://github.com/yxdunc/lipl
-Description: A command line tool that is similar to watch but has extended functions for commands outputing a number
-Filename: dists/uncode/main/binary-aarch64/lipl_0.1.3-1_aarch64.deb
-Size: 339952
-MD5Sum: 86afdace12fc025077d6e53a17caa796
-SHA1: d11ee6f4d29a3e6bf544da5f68cccd7a0ec1d886
-SHA256: ed15cf1cd14742a7d1675e10a6fb7b35d8aba53785e7be9e69d2d6cf8834e2fb
-SHA512: bc2f9d3984e45837850bc1eacc6e5fbc100223360d3f3d0a188926501d6b23824bae00c07026e808055cea9ec0e522cbc2bf8207208800956fd2141d7115b266
-
-Package: lit
-Architecture: aarch64
-Installed-Size: 736
-Maintainer: @termux
-Version: 3.8.5-3
-Homepage: https://luvit.io
-Depends: luvi
-Suggests: luvit
-Description: Toolkit for developing, sharing, and running luvit/lua programs and libraries.
-Filename: dists/uncode/main/binary-aarch64/lit_3.8.5-3_aarch64.deb
-Size: 174792
-MD5Sum: 6ea9961ab5613c1daaece9797110fd8b
-SHA1: f7bae3bc429a9db2b4214119767df85630d6b481
-SHA256: dec60070c381300292ee4b16ceb0a8a507b864565a6a2276754c58d6add9452a
-SHA512: e327f76a211d0a2c82932ac6bc9327e3b6042d578f1e3ed6a444bafadd08a13c67553436bc31fe40d13d6a5facc0e1f6aa8d6495734625f0f266005fa5c3a998
-
-Package: litespeedtest
-Architecture: aarch64
-Installed-Size: 20092
-Maintainer: @termux
-Version: 0.15.0-3
-Homepage: https://github.com/xxf098/LiteSpeedTest
-Depends: resolv-conf
-Description: A simple tool for batch test ss/ssr/v2ray/trojan servers
-Filename: dists/uncode/main/binary-aarch64/litespeedtest_0.15.0-3_aarch64.deb
-Size: 5494240
-MD5Sum: f41967065f0771d55ca1ef5d814cbdb8
-SHA1: 9b954831cc1180fe930e5bf5c979b67a36b7a5fc
-SHA256: 01d03e4d803674a9e850bfe4da7e31915564081d43e692fdfe19f3f32c30255d
-SHA512: 3d833d8e036ceba9764e6edbd79b5f282a94943ad275b3c6d48a89a425aa8184e9a61c5f978ee5ee975aa9ca83848237b271af012ec48e99448440660bfba328
-
-Package: littlecms-static
-Architecture: aarch64
-Installed-Size: 652
-Maintainer: @termux
-Version: 2.19.1
-Homepage: http://www.littlecms.com/
-Depends: littlecms (= 2.19.1)
-Description: Static libraries for littlecms
-Filename: dists/uncode/main/binary-aarch64/littlecms-static_2.19.1_aarch64.deb
-Size: 146464
-MD5Sum: 8c224dceeed3e245beb648966e8a8a3a
-SHA1: 94f1937d15a451c09dd155fbade32185674f8999
-SHA256: b21ca266c8590828cf3c45d3d704268f85cca7194651b48b45a8d92d7cabfabd
-SHA512: 235db2312e6f7ba1ef37194c5023cb733704b71bf3dae6fe96d2fd8296ac62b0b0c33d9bfa0e7d3d2fad7cea2b5bdcebc1837b11a0b4f0d215b66f78074561a2
-
-Package: littlecms-utils
-Architecture: aarch64
-Installed-Size: 152
-Maintainer: @termux
-Version: 2.19.1
-Homepage: http://www.littlecms.com/
-Depends: libjpeg-turbo, libtiff, littlecms (= 2.19.1)
-Description: Color management utilities
-Filename: dists/uncode/main/binary-aarch64/littlecms-utils_2.19.1_aarch64.deb
-Size: 29392
-MD5Sum: 6e9e5259c0ad7459dbbdd24f08adba8e
-SHA1: f8a6de1e9e1dc392595a15a405435bd2701c91df
-SHA256: 5e3bbc4e2188847e62f982129e776869753d87c07131f8ae23deb488b01b8351
-SHA512: 72a8fce034779a4c867314aab2d0fc28fed24cfcf7bfe880cbcf34135ad4cc04c74eedbe94d4dda9bf5dfac35e4594d77c8f87baaab37fa7eb0de7d43974120c
-
-Package: littlecms
-Architecture: aarch64
-Installed-Size: 540
-Maintainer: @termux
-Version: 2.19.1
-Homepage: http://www.littlecms.com/
-Breaks: littlecms-dev
-Replaces: littlecms-dev
-Description: Color management library
-Filename: dists/uncode/main/binary-aarch64/littlecms_2.19.1_aarch64.deb
-Size: 144348
-MD5Sum: 980e1fee224128fe762517b00afc05c7
-SHA1: 647266b5747ec1751007445f04ce10ffbb3c5ff6
-SHA256: 0063ca77a484e38e6636c3215899f090123404f1bc36b271b01a22198716eb32
-SHA512: 20482ba4a8bf19761959a74ab33e8dfb99e4ad90a7179f14ed0e5366f7f615bc1f0bcd9826e8b3c56ab92823da1361d152f6c5afa85299f1b8f3ea13e455f79f
-
-Package: locustdb
-Architecture: aarch64
-Installed-Size: 15124
-Maintainer: @termux
-Version: 0.4.6-2
-Homepage: https://github.com/cswinter/LocustDB
-Description: An experimental analytics database
-Filename: dists/uncode/main/binary-aarch64/locustdb_0.4.6-2_aarch64.deb
-Size: 3028276
-MD5Sum: f2a19d894d89c285018d3da35b560a8c
-SHA1: 448944bd5386ee37c5a62e7c315dcccff63bcf03
-SHA256: 454feb318ad6587f5e232813070be381c379ca07e52ab1de9f50f81a5b0170eb
-SHA512: f7787b7fdd0deb960eccc620d38ebe0f7f6fb56de4b4e178791a75037336e935ab1f51437dab7d1211ec5a6204d0839e7f569ae7f7968fbf3d9ede61ab2b2ee0
-
-Package: logo-ls
-Architecture: aarch64
-Installed-Size: 5828
-Maintainer: @termux
-Version: 2024.07.17-1
-Homepage: https://github.com/Yash-Handa/logo-ls
-Description: Modern ls command with vscode like File Icon and Git Integrations
-Filename: dists/uncode/main/binary-aarch64/logo-ls_2024.07.17-1_aarch64.deb
-Size: 1658620
-MD5Sum: e4ca3c09065942b18a65977dd47fdfdf
-SHA1: 1ce10a5d26f85b361499d20c4d382f4e05ecd877
-SHA256: 2e256c9fb7e679e59c34241f362d0f14bba1e6f966975db2ddf842f1074adf4b
-SHA512: 4f095e5e5b660226bf05f8d7102d3664193306d1ffac302ef02ac833f72aa1c6ec65ecaa72351552656aede013c4a3c2b78f39b2e22cea1b22671e554d48d061
-
-Package: loksh
-Architecture: aarch64
-Installed-Size: 332
-Maintainer: @termux
-Version: 7.9
-Homepage: https://github.com/dimkr/loksh
-Depends: ncurses
-Description: A Linux port of OpenBSD's ksh
-Filename: dists/uncode/main/binary-aarch64/loksh_7.9_aarch64.deb
-Size: 141468
-MD5Sum: 75830bb1d99e4a73ac8c1085e63516a5
-SHA1: 1152754d2182f59d02457298847ae0e5b3894f6c
-SHA256: 73869b8607420baf814063241215bd5ce3ba1c3a3ce39cd8552ae0115fbadded
-SHA512: fc58a863e9bf41ebb141847730c14cac27f01c97aae1eb22b3830d8adec43ecf73d5838e0df9763393c32939069d5f5374d8b69a44fa51ca14cd95aad108eb83
-
-Package: lowdown-static
-Architecture: aarch64
-Installed-Size: 476
-Maintainer: @flosnvjx
-Version: 3.0.1
-Homepage: https://kristaps.bsd.lv/lowdown
-Depends: lowdown (= 3.0.1)
-Description: Static libraries for lowdown
-Filename: dists/uncode/main/binary-aarch64/lowdown-static_3.0.1_aarch64.deb
-Size: 111324
-MD5Sum: b3bb5e154fee74f91d7cc058a33a2ca0
-SHA1: 64d75f4c469478f6d66432af1627c6962f99ac77
-SHA256: 1b29a6fe84b36b27c465829b3a57ea382b1f70c2eb84c4f1109caa4ff297223e
-SHA512: b799b8d5557e63298851674adbe6846be97e1ff88903eb5f4d972e1f3f4228302fc23a3ea7aae3a3de08b806b874f863375b7692422932957f17342ead19183b
-
-Package: lowdown
-Architecture: aarch64
-Installed-Size: 1080
-Maintainer: @flosnvjx
-Version: 3.0.1
-Homepage: https://kristaps.bsd.lv/lowdown
-Description: Markdown utilities and library (fork of hoedown -> sundown -> libsoldout)
-Filename: dists/uncode/main/binary-aarch64/lowdown_3.0.1_aarch64.deb
-Size: 199464
-MD5Sum: 96ef488584a82bff91726c5083f22862
-SHA1: 4e057fc32fde2ea194953336a233492ba8e97c75
-SHA256: 32fa3e1b58569275221a9ad12ad24db30d7a3666b69f0aab0a0fa0d9699ec05d
-SHA512: a7671511b3f5f7329e53b0f727564fe0b6b5019536562b777d3f57a06bf631b6a2654615973cebd530b5d3739f941ac3661511f3af460222004abfe5f3970c1c
-
-Package: lr
-Architecture: aarch64
-Installed-Size: 140
-Maintainer: @termux
-Version: 2.0.1-1
-Homepage: https://git.vuxu.org/lr/about/
-Description: list files, recursively, includes the best features of ls, find, stat and du
-Filename: dists/uncode/main/binary-aarch64/lr_2.0.1-1_aarch64.deb
-Size: 23764
-MD5Sum: 292b7d9ef73262a4795b47d32a19d8ee
-SHA1: 324772852149edc08ad9174da575e597c01a82ba
-SHA256: 21c16741dac02cb21751a70c2c934c8e919de9254c7df259d27283c283d40c90
-SHA512: d75b27aa385ba4548e3f12199f4dd84d7c1e010ef9bcfbf20885b929c7480cda5b1413539928f6cbeca2a73229fcce4db8450c0f90ed7b07d3e5075e510cb44c
-
-Package: lrzsz
-Architecture: aarch64
-Installed-Size: 164
-Maintainer: @termux
-Version: 0.12.21-rc1-2
-Homepage: https://ohse.de/uwe/software/lrzsz.html
-Description: Tools for zmodem/xmodem/ymodem file transfer
-Filename: dists/uncode/main/binary-aarch64/lrzsz_0.12.21-rc1-2_aarch64.deb
-Size: 44856
-MD5Sum: 32c551763ecb345d21757de9758f85b9
-SHA1: 59ad0ccd8b80a712ee08be7ab85585c41db92aaf
-SHA256: c355b0efb6d019db716d40edd98349c177a883ac04237015b3731b6aef6ef672
-SHA512: 926311a2bb5b670d58efb2aacaa195db5067df49b60cace4021c28e69a98d0c12db33537cb3f83bab442456d3d2106a58653d52da9d1964619bbd3642420284f
+MD5Sum: 5901088252915fb01813b653dd9ec672
+SHA1: b16b47b7703e43dff1e43aa4b107d658f1fe2b9f
+SHA256: 559ecc352f862b18f57b2092883cb527c08d459dd623ee43c8e9081530651765
+SHA512: 5c7d48f2b10d4ebf9958f852802937bc561bfd753bc573694492baafc2c87a91ab8147f042c609e40ffd128a089b181e2a3c280347f8c2eb705efb58f07f06bd
 
 Package: luajit-static
 Architecture: aarch64
@@ -331,18 +47,272 @@ SHA1: a357d75d7623f13634118686d0ca1d96ec724392
 SHA256: f7150a1bfca7fb866f164b1aa1d9522a7e7097dbb1e1ad4594ce0ea1a3007381
 SHA512: 21945649d78a76e34254f14ca406069380bfdcbad08a71875ec242f50e00255b3df0a258e62dd681b1a524344490d5f8576e9dd29449e093b7079828076bdbcb
 
-Package: zopfli
+Package: lunasvg
 Architecture: aarch64
-Installed-Size: 88
+Installed-Size: 768
 Maintainer: @termux
-Version: 1.0.3-5
-Homepage: https://github.com/google/zopfli
-Depends: libzopfli (= 1.0.3-5)
-Description: New zlib compatible compressor tools
-Filename: dists/uncode/main/binary-aarch64/zopfli_1.0.3-5_aarch64.deb
-Size: 22524
-MD5Sum: cf9c2d77f5d91af1edc7d1f16c9290e1
-SHA1: 1365c7b02a330e33c5e9578675348047643eb6b8
-SHA256: a2b99f5feee3ceb29139a6b60c91a769383bdbcd956070c84b4625ebc14ced37
-SHA512: 8605e774eab1037c1e7df402f87fd1d3f273905e0dec269119faac70b31caa219f238eb8ecf833cbee590f91eb2633ccdd77b5220ded7809053534a89aafec53
+Version: 3.5.0-1
+Homepage: https://github.com/sammycage/lunasvg
+Depends: libc++, plutovg
+Description: SVG rendering and manipulation library in C++
+Filename: dists/uncode/main/binary-aarch64/lunasvg_3.5.0-1_aarch64.deb
+Size: 202776
+MD5Sum: 1b3ea3150959499d287d980c40a995ed
+SHA1: 0176df45624a58f9d1d15a561721bd29509ecbd5
+SHA256: 316b02eb359b4c3cf66a8165c13ef02ab148a4986a8638b8d62dae582ad0f510
+SHA512: 077dcec405a8d73c7809c792d91b87c807402c5a0413d63adc1dd0cdfe5d0553c6c1f00c0059fea0e9d13802c10d41f33836dcd24e54104c76a79c7989b0dc6c
+
+Package: luvit
+Architecture: aarch64
+Installed-Size: 616
+Maintainer: @termux
+Version: 2.18.1-1
+Homepage: https://luvit.io
+Depends: luvi
+Suggests: lit
+Description: Asynchronous I/O for Lua
+Filename: dists/uncode/main/binary-aarch64/luvit_2.18.1-1_aarch64.deb
+Size: 167724
+MD5Sum: 9e560f7c62190d6aa856d2e5762212b8
+SHA1: 7d0fd3911327c6b0768fdf68dfdbd772f0e897e6
+SHA256: 6d3e001aebdccc8135e2b2fa24d84c9e6cc9adafc537183d9bc7e6a01164a85e
+SHA512: d57d29cfbd4b3d067280b133a173f3bc2a3b661ac28f12c66f52f945f2c263aca835afed533df4e98ff26e0e2d8f596d63263d7a0a0563e5b4d589dce05d3a86
+
+Package: lux
+Architecture: aarch64
+Installed-Size: 23720
+Maintainer: @flosnvjx
+Version: 0.24.1-2
+Homepage: https://github.com/iawia002/lux
+Recommends: ffmpeg
+Suggests: aria2
+Description: CLI tool to download videos from various websites
+Filename: dists/uncode/main/binary-aarch64/lux_0.24.1-2_aarch64.deb
+Size: 5584048
+MD5Sum: 4de3bcbbf31a529fe32d9f34b5a3e0a8
+SHA1: 4fe11876b79377d6bde7e4c534223b65dce4743c
+SHA256: dd02edb10f120935fa1f383801eff845a69688e0d8cdc3a76708bcbbbf083844
+SHA512: cce90855229ccbf1af0514304edbe7249fef3ff535e076b671c1250b9f062e7e57a5ca99698d0737a2b55f70465e5455b6f20aee1d93bbd26f313d2b0dce74c3
+
+Package: lychee
+Architecture: aarch64
+Installed-Size: 16752
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Version: 0.24.2
+Homepage: https://github.com/lycheeverse/lychee
+Depends: openssl, resolv-conf
+Description: A fast, async, resource-friendly link checker written in Rust
+Filename: dists/uncode/main/binary-aarch64/lychee_0.24.2_aarch64.deb
+Size: 4431720
+MD5Sum: 7ea0ffd155893292e3ae1abd3e1d5860
+SHA1: ff3f1bdc219a3d193d91240f97fec61a01788bdb
+SHA256: a1a62f91f7533dd767664f23a6af3d6ecf1bcb054097ee244f23fa49a7b51b8e
+SHA512: c652ea545f25d336125aba7926a2080291c96ecb0b3c38af7be636d2a4b97cc17754fcc293bf6d9f9fb09b5b9a4a9c8bd8742c1a1b5615f497fea426267d433d
+
+Package: lyrebird
+Architecture: aarch64
+Installed-Size: 17096
+Maintainer: @termux
+Version: 0.8.1
+Homepage: https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports
+Breaks: obfs4proxy
+Depends: tor
+Replaces: obfs4proxy
+Provides: obfs4proxy
+Description: A pluggable transport plugin for Tor
+Filename: dists/uncode/main/binary-aarch64/lyrebird_0.8.1_aarch64.deb
+Size: 4282352
+MD5Sum: 3bbd083ad5374bbca9ff2678110fb39f
+SHA1: 27356ee5e20fe8aa32416335751c61614eff9480
+SHA256: 39858071404162ae4925b6a41f8748f58f06ec04b4ed774a6cbea475c2966755
+SHA512: f7245e623056557c832419bbaf5ed950e41d89e1211a72314542850b335481367f31635638ee9b10af0fc2a1e9fa3042e38578e8a4ef6ce21434fa2b60566952
+
+Package: lzip
+Architecture: aarch64
+Installed-Size: 236
+Maintainer: @termux
+Version: 1.26
+Homepage: https://www.nongnu.org/lzip/
+Depends: libc++
+Description: Lossless data compressor similar to gzip and bzip2
+Filename: dists/uncode/main/binary-aarch64/lzip_1.26_aarch64.deb
+Size: 66872
+MD5Sum: b825303e98903d8c8b98560832ed1616
+SHA1: 4037f76d4df0b8799a740d0a5b32b8e19d9cc7f0
+SHA256: ca907d6e38d3a5ac63f4e3174bfff7ef98d514b78c4fb8bc6a3b7bb9178e5bca
+SHA512: 23be9bb27d44ad7e5bcab29038fc01d29532f70181eb150bcf1bd9787ae13dbd53d0e67339f77514ef4d9825628edc521d3664455df41fb96879cd0eae61bc20
+
+Package: lzlib-static
+Architecture: aarch64
+Installed-Size: 80
+Maintainer: @termux
+Version: 1.16
+Homepage: http://www.nongnu.org/lzip/lzlib.html
+Depends: lzlib (= 1.16)
+Description: Static libraries for lzlib
+Filename: dists/uncode/main/binary-aarch64/lzlib-static_1.16_aarch64.deb
+Size: 20272
+MD5Sum: 4e8a68cfa604eb9e3003d8d66fd62be7
+SHA1: 0004825f427808fb2ff387b633d5b685bb246da0
+SHA256: 8c1afde5ed5966367f4592cf608866fb547679dacad5734a8f0e1c7bd171231a
+SHA512: 1973aef0265f31d52363956181700db8256dcf486193322f59b44b6b2294c22a2f360ced7c970251ff1dde6d0a1e6a765531edada7053dcbb75ade11427a3421
+
+Package: lzlib
+Architecture: aarch64
+Installed-Size: 180
+Maintainer: @termux
+Version: 1.16
+Homepage: http://www.nongnu.org/lzip/lzlib.html
+Description: A library providing in-memory LZMA compression and decompression functions
+Filename: dists/uncode/main/binary-aarch64/lzlib_1.16_aarch64.deb
+Size: 40636
+MD5Sum: ba02723974bc9b2eb3b36d2b5d1d3c24
+SHA1: 54e7ecd13e682feeb2fc0c4e8603828885f2a40d
+SHA256: 516c37fc6b0f1cf00986da814b13e65cc3fcfdf2a35bca7a608cab6a4b92fd96
+SHA512: 397362efbcef47f5f7f618bf1a291bf9634e9e5aa71c39dc73d6f28c70be109b3bf5e39b9fd2d3c23b23f271cd3586172cc0c1473f6b3c4353c78ee65b5c0751
+
+Package: m4
+Architecture: aarch64
+Installed-Size: 672
+Maintainer: @termux
+Version: 1.4.19-5
+Homepage: https://www.gnu.org/software/m4/m4.html
+Description: Traditional Unix macro processor
+Filename: dists/uncode/main/binary-aarch64/m4_1.4.19-5_aarch64.deb
+Size: 191572
+MD5Sum: 9c65c13a1577822e678b9a4bbb5b92b9
+SHA1: bd1b5506bef5700a0f7f299646b912d64868a43e
+SHA256: 7219a6398a45ebd5a260058d22720239d540cebd2b91a84f451194791965eb09
+SHA512: c992aa5f9766077ae0d594f12dd8c43b85404148bbdea4babe282c5980f8e67088fbcc4f8fac97a19fabdf45eb90cebcc80238867a2c74694bcbdb252c16d9e0
+
+Package: macchina
+Architecture: aarch64
+Installed-Size: 1416
+Maintainer: @termux
+Version: 6.4.0-1
+Homepage: https://github.com/Macchina-CLI/macchina
+Description: A system information fetcher, with an emphasis on performance and minimalism.
+Filename: dists/uncode/main/binary-aarch64/macchina_6.4.0-1_aarch64.deb
+Size: 518136
+MD5Sum: 860c3acf4fec2384590d3d1ddd754242
+SHA1: 2e2487b0e0e2436da3205d27ab6cba13796716d4
+SHA256: 3c06d33e0671f806ba659a3cf208156f61f8b8f35e3f283ae42e84fdbf205454
+SHA512: 35b3fe16d16729459a168b568588a1feecf05557175fb73f85f41d084a2f79c2aee8ef6e7f22415ea1d5e697896b3067aa7f3e9d79a11d6d333c44f89c0ae65d
+
+Package: magic-wormhole-rs
+Architecture: aarch64
+Installed-Size: 9256
+Maintainer: @termux
+Version: 0.7.6-1
+Homepage: https://github.com/magic-wormhole/magic-wormhole.rs
+Description:  Rust implementation of Magic Wormhole, with new features and enhancements
+Filename: dists/uncode/main/binary-aarch64/magic-wormhole-rs_0.7.6-1_aarch64.deb
+Size: 2474456
+MD5Sum: 267437745ff23fe069d90f640268903a
+SHA1: ac7c14f3138420d5998dd173584df3929957bfff
+SHA256: 0237430142a29aee0c07b1bc288c89d1b75ef2551b5004c53b75605a98b8d8ee
+SHA512: 5f30581a425d265573e1ce7aaefc3a5905efca81e182ea8acc444ced806f644cc13f3cd719e562fd2893d1c4320c790d1e666323728cec43df36a38dae135d89
+
+Package: make
+Architecture: aarch64
+Installed-Size: 944
+Maintainer: @termux
+Version: 4.4.1-1
+Homepage: https://www.gnu.org/software/make/
+Breaks: make-dev
+Conflicts: make-guile
+Replaces: make-dev
+Description: Tool to control the generation of non-source files from source files
+Filename: dists/uncode/main/binary-aarch64/make_4.4.1-1_aarch64.deb
+Size: 240592
+MD5Sum: 336f0077858ec4ed4b1c5c958f68170d
+SHA1: 20f999962dfb2b671ea7be7f349db7f749972192
+SHA256: 9053a32ad8489650848b4939e5cc136eacfa23d4a1e387dd925f361459b6d8d9
+SHA512: 4e0e2e7ace48335d4722723b2615387fed6c8361d469d6839a27a8de1c539193ca7620aedc52a8dc7e245777a94f6981fce4ce43a8ab1a999f38c5a2b64aa1e0
+
+Package: mangal
+Architecture: aarch64
+Installed-Size: 27404
+Maintainer: @termux
+Version: 4.0.6-3
+Homepage: https://github.com/metafates/mangal
+Description: Cli manga downloader
+Filename: dists/uncode/main/binary-aarch64/mangal_4.0.6-3_aarch64.deb
+Size: 7842696
+MD5Sum: 4ede818208bb1f6845e66608359063fc
+SHA1: fa5b0da0e014b643a7b5a74d49ea854a40345626
+SHA256: 546e7e0297502c5e2b7025b7e971f3f168d90a64948997059d73580c76e53c39
+SHA512: 0154f47f485f3009055042938d03df34102aeb3a9ce50713275749bbae800ae36695e301286afa9d79b0cfb6498570c414a6ec36f59661934ebc7fb361e8d8c8
+
+Package: marisa
+Architecture: aarch64
+Installed-Size: 584
+Maintainer: @termux
+Version: 0.3.1-1
+Homepage: https://github.com/s-yata/marisa-trie
+Depends: libc++
+Description: Matching Algorithm with Recursively Implemented StorAge
+Filename: dists/uncode/main/binary-aarch64/marisa_0.3.1-1_aarch64.deb
+Size: 87108
+MD5Sum: c98d6d9dab0261423a03090a044099f1
+SHA1: 30fa599c2820db7d78daf550f5d753442edbca71
+SHA256: 32ce0bf998f4496e2fba5373bb31fe441618d4b8bab44bcb84562708ab029db4
+SHA512: 9cee5caf60a18717040bd9736efb265b1080b343b41e6631a14713487d77c3569d40fdc6f67f752f20431093864bcd4b6f33e661281bfe81c971468c633a7fe8
+
+Package: markdown-flashcards
+Architecture: aarch64
+Installed-Size: 2740
+Maintainer: @termux
+Version: 2.0.1
+Homepage: https://github.com/bttger/markdown-flashcards
+Description: Small CLI app to learn with flashcards and spaced repetition
+Filename: dists/uncode/main/binary-aarch64/markdown-flashcards_2.0.1_aarch64.deb
+Size: 789760
+MD5Sum: 840ea8d753fc76d35a13df57d2adab5e
+SHA1: ee04454bfcba3a2913255b21c99834b5bcdccede
+SHA256: 4ebb8540ed6b1d0867656ab32b0d6aac19c3369b0c398bd4266b9e1fdcc1109e
+SHA512: 3d68839ad280d093cc9c0729f3d4f04e6e8d72ef699d0971bf5b686f9cfdae6e977da1f63cc66b37aa36f20aba5b7aa44a14ede1d5774d9e5298092de7b1ae1b
+
+Package: matterbridge
+Architecture: aarch64
+Installed-Size: 64304
+Maintainer: @termux
+Version: 1.26.0-4
+Homepage: https://github.com/42wim/matterbridge
+Depends: libc++
+Description: A simple chat bridge
+Filename: dists/uncode/main/binary-aarch64/matterbridge_1.26.0-4_aarch64.deb
+Size: 11022144
+MD5Sum: a511b32af1b461cc9f06fdcadb956250
+SHA1: f0907c46ab51c93be1632a417c60794af76ee4c6
+SHA256: 9cdb3196d33442f0ce8e0a3b78108af3c184877a0c3a30b4b332b8994e4aea11
+SHA512: d02e81257dcd2de98737e8c8873bcff76757d4ef087b18ede28f575c3042d893b095fd3009d391f9ca5e962f50691e9671876b37aae20bac2beff519c736b899
+
+Package: matterircd
+Architecture: aarch64
+Installed-Size: 16380
+Maintainer: @termux
+Version: 0.30.0
+Homepage: https://github.com/42wim/matterircd
+Description: Connect to your mattermost or slack using your IRC-client of choice
+Filename: dists/uncode/main/binary-aarch64/matterircd_0.30.0_aarch64.deb
+Size: 4042160
+MD5Sum: 69ac1c939133535070a42f4f9a3a9034
+SHA1: b13e9ee15129f3fdb98fcdbe805d9d32316496ee
+SHA256: 13fc75abf0bb616474d711a884dda60cf70bf8c235878c9ad18bf82e7dbc3541
+SHA512: e9b8a8cbf5995fd83826c658ebd0119e5053435169067a3817340bf049ed16445cafa22ca188d8b6609995ceef66f29c3a3902384bec7686462cde119bbca3f0
+
+Package: matugen
+Architecture: aarch64
+Installed-Size: 7844
+Maintainer: @termux
+Version: 4.1.0
+Homepage: https://github.com/InioX/matugen
+Description: A material you color generation tool with templates
+Filename: dists/uncode/main/binary-aarch64/matugen_4.1.0_aarch64.deb
+Size: 2263428
+MD5Sum: b379acbcf4bd3ebb15468a4fd67323fd
+SHA1: 721a8f29c2cb85ccbad36786b050d05e2f803572
+SHA256: 66591a1cf81b05d4fbf6cce7a2447be2557e49fb036c303eea3fed7a10c24d64
+SHA512: 27287de7c3cc807386db8815a63fc48d631c9ed31eadb617f1c390920c57577b5bb93a15ef67ecd6933cdb5371af1456ca10e9911f411ed69d12b71c1a09aa2f
 
