@@ -11,294 +11,338 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: 6980427f0cb94639c32ad7462cce8410
-SHA1: 51aad83761b4f4a234c3969cce35952f5705176c
-SHA256: 61a368ffbc393a8ced79b5d76371a1a82cb8be402d3796df39b3167351263819
-SHA512: 82ac43e64a44ccbf92a93b1ab35c62efd37bf74450ac0ab1ebd64e11e7f7de1dbd3949960249ea84678754a738a00400d522945737a682060eddf25b48cd7905
+MD5Sum: ec6a3aada244f576330c9d4ee6b78a23
+SHA1: c4ee6320311793c090185650af24eb8e8ef0f2ab
+SHA256: 3f573b9e6355b524c37a137155154f4360e81e668f6f280194708e17e0312f76
+SHA512: 6af6e312a704c58c2e4c15bf780df5b69905677cc9d636450e1a062d49469fe1e93297497816b18873deeb168ad30c36ad57680ec1ffd3b22160b66624171935
 
-Package: libwren
+Package: libtiff-static
 Architecture: aarch64
-Installed-Size: 480
+Installed-Size: 696
 Maintainer: @termux
-Version: 0.4.0-4
-Homepage: https://wren.io/
-Breaks: wren-dev, wren (<< 0.3.0)
-Replaces: wren-dev, wren (<< 0.3.0)
-Description: Small, fast, class-based concurrent scripting language libraries
-Filename: dists/uncode/main/binary-aarch64/libwren_0.4.0-4_aarch64.deb
-Size: 76940
-MD5Sum: a0df8b98bda5f30d14200eb6fc0d9595
-SHA1: c90413889b0572c7f0f8b0b3d9687c525f02c1c8
-SHA256: 8502f175ff76951bba2220a5d7f2e2094e1f929dfe3a3ab88ec6c51cda340c2d
-SHA512: 8fc0d370ce08a7553bb6c8dd7b805ba1fd35d242c6bcfb4495d3b24327253b1df92aa9deef6310aa97fbae2610037426caa77e2171978ef86baf55d8c054af03
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Static libraries for libtiff
+Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
+Size: 135260
+MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
+SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
+SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
+SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
 
-Package: libwslay
+Package: libtiff-utils
+Architecture: aarch64
+Installed-Size: 800
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Tools for working with tiff files
+Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
+Size: 255964
+MD5Sum: a0a56110c08879f75be05ad601a6e6cc
+SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
+SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
+SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+
+Package: libtiff
+Architecture: aarch64
+Installed-Size: 6416
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Breaks: libtiff-dev
+Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
+Replaces: libtiff-dev
+Description: Support for the Tag Image File Format (TIFF) for storing image data
+Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
+Size: 821104
+MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
+SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
+SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
+SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+
+Package: libzix
 Architecture: aarch64
 Installed-Size: 216
 Maintainer: @termux
-Version: 1.1.1-2
-Homepage: https://github.com/tatsuhiro-t/wslay
-Provides: wslay
-Description: WebSocket library
-Filename: dists/uncode/main/binary-aarch64/libwslay_1.1.1-2_aarch64.deb
-Size: 37328
-MD5Sum: dc37385e183670b199e7931af76dd550
-SHA1: c662953fa70fd270bc997866c595c4404ab666dd
-SHA256: edd335d9fe9086cc5b0319f58e0cbd78e6fc05413ea8c23522643cfc1919b37e
-SHA512: 34e68644f5a030379c981079f296af0cf8129e584c3b4414730fa1277af2c2849f70ccf6f8df425643c72e79a446b72d0b51789c91e934a07e63222e6ede07ca
+Version: 0.6.2-1
+Homepage: https://drobilla.net/category/zix
+Description: lightweight C99 portability and data structure library
+Filename: dists/uncode/main/binary-aarch64/libzix_0.6.2-1_aarch64.deb
+Size: 36308
+MD5Sum: adc418bc406f11dda414760c117d33f8
+SHA1: f49f05c43ed3a53199e658bb6833fd93d0839afe
+SHA256: 6a171f04ab9390de1ecc78d4768ff77ac5c7e7e1966b3de4eb4efa2bd9ec201b
+SHA512: 6ff81207bbd87cb347d0a88b77c597a2e59802f1480cd985196e238c97f9b6fc9df81a6cb28c019ed93f1a4e4eebc192a6d9616a339dc85607ad866d416ea253
 
-Package: libx264-static
+Package: libzopfli
 Architecture: aarch64
-Installed-Size: 1852
+Installed-Size: 368
 Maintainer: @termux
-Version: 1:0.164.3191-1
-Homepage: https://www.videolan.org/developers/x264.html
-Depends: libx264 (= 1:0.164.3191-1)
-Description: Static libraries for libx264
-Filename: dists/uncode/main/binary-aarch64/libx264-static_1:0.164.3191-1_aarch64.deb
-Size: 435740
-MD5Sum: 1531c56c3ca35e8e81a95705eef874ba
-SHA1: 9e224aa7cefab0c426bc3af70e590045481bf47c
-SHA256: 2eb2382bcc366c86c717fd17aa31779557dce309ba34b253ab493dae056bd388
-SHA512: 3e336e6482d0c5d764551fce590558974e3686d417fcb28a5abd9ed7ae1e331d70d925d0fa4bd0c123a154f1bb919df26e695f577aba963bc56c7896da5553ed
-
-Package: libx264
-Architecture: aarch64
-Installed-Size: 1256
-Maintainer: @termux
-Version: 1:0.164.3191-1
-Homepage: https://www.videolan.org/developers/x264.html
-Breaks: libx264-dev
-Replaces: libx264-dev
-Description: Library for encoding video streams into the H.264/MPEG-4 AVC format
-Filename: dists/uncode/main/binary-aarch64/libx264_1:0.164.3191-1_aarch64.deb
-Size: 398028
-MD5Sum: 42be4cd306452c28e250129e7d7f68aa
-SHA1: fe8671ae6f38d334662d8b5b4d0e4af381a23197
-SHA256: 58bea0c478fd3bc0ae59b4035ce9c45262ba933d06d4b62e379239ffbd4ae699
-SHA512: 560b30e2a06963d231c5e1634b4324835ffeb61dc43fa63ced8796eddfbc5f00e3fd9aabc94d99d2016f51097ef88b53478cef6456eed3e198393142e1ad8936
-
-Package: libxcfun
-Architecture: aarch64
-Installed-Size: 6364
-Maintainer: @termux
-Version: 2.1.1-2
-Homepage: https://github.com/dftlibs/xcfun
+Version: 1.0.3-5
+Homepage: https://github.com/google/zopfli
+Breaks: libzopfli-dev
 Depends: libc++
-Description: A library of exchange-correlation functionals with arbitrary-order derivatives
-Filename: dists/uncode/main/binary-aarch64/libxcfun_2.1.1-2_aarch64.deb
-Size: 2021956
-MD5Sum: 9c4451edfcdc8a5168f8e86b0c2f9893
-SHA1: 745335992b77c2c1bd61555b1d4806b368bc89b5
-SHA256: bdfb73fd6807528c0c8218d9757ab052ca8d43c7a26ec78b6566094a099d99d2
-SHA512: 1fc742b8fcb05a90ce60ee8435772b02a733640570cb6515cebce70573c7351375dc087b3695203e42ee78fdfb3632f046858f839a8a1ad47acecfb8e81e7475
+Replaces: libzopfli-dev
+Description: New zlib compatible compressor library
+Filename: dists/uncode/main/binary-aarch64/libzopfli_1.0.3-5_aarch64.deb
+Size: 117968
+MD5Sum: 3db2241ff141695906587e9268c52136
+SHA1: 8a08d196f5e71c0a241d73d2b93525644b01de82
+SHA256: 830a4f5e3da4c233cbd8ada8f5bff7c5a5bc9bc7ff4a7589997d81978ce8bcd7
+SHA512: f80ec8c59704ec3b6eb35f4782536ad54b61f25fef530d38312bf6431cf03bc64a9f4cb49fa5c18a2e7a0679dfc8bc9c3aa9a464059b9498fb66d4b7c9ff6004
 
-Package: libxdg-basedir-static
+Package: libzxing-cpp
 Architecture: aarch64
-Installed-Size: 48
+Installed-Size: 2192
 Maintainer: @termux
-Version: 1.2.3-2
-Homepage: https://github.com/devnev/libxdg-basedir
-Depends: libxdg-basedir (= 1.2.3-2)
-Description: Static libraries for libxdg-basedir
-Filename: dists/uncode/main/binary-aarch64/libxdg-basedir-static_1.2.3-2_aarch64.deb
-Size: 4824
-MD5Sum: 91fe53b737e522b04ede11365f5fb47f
-SHA1: dbc9575db228bc87669ad74764bb9a4aae7df0df
-SHA256: 77a030b67943cb4419414572827444c730551a4773f5b8673982957ae4a78452
-SHA512: 657da547d9ad1def7fd2abf1e08149cd39ac8cee22161c3839a67f8d5fa0505ba166943dafc85c30c744bbc3802d4acc8c05aaf6528b99b0723670ea8727241c
+Version: 3.0.2
+Homepage: https://github.com/zxing-cpp/zxing-cpp
+Depends: libc++
+Description: An open-source, multi-format 1D/2D barcode image processing library implemented in C++
+Filename: dists/uncode/main/binary-aarch64/libzxing-cpp_3.0.2_aarch64.deb
+Size: 762932
+MD5Sum: b9372ae79f28fa715f9b237d05bb77a4
+SHA1: d81ffcf2da543c97f7dd29140deba1545e9448f9
+SHA256: 09d940411ad134dfa63dd62b2da73589f57f5cbebc03cfaf10284f0b184a145b
+SHA512: d812fee59f87cc269bd4b003b051207aa9c846790923b06e7806e6908b8c7d765db197cee94e966e3b50154f05ae4370a0f15ba02af99376197cc4619665be95
 
-Package: libxdg-basedir
+Package: lipl
 Architecture: aarch64
-Installed-Size: 84
+Installed-Size: 1036
 Maintainer: @termux
-Version: 1.2.3-2
-Homepage: https://github.com/devnev/libxdg-basedir
-Description: An implementation of the XDG Base Directory specifications
-Filename: dists/uncode/main/binary-aarch64/libxdg-basedir_1.2.3-2_aarch64.deb
-Size: 7460
-MD5Sum: 56aeff0793c4ed81440e6fb3c2be3afd
-SHA1: 742960650b80153693523fb3413ebab56ee3ba43
-SHA256: dc90ad605ca74567d69c6637365fe26b60e43bdc0b66a5eda6d49ddf69d24253
-SHA512: a022ec244a945d4c47d2e0ab1e830bb3fe8a642da1de12897590097028db9510e8eba500108f9cbc6a95c35bf21296d3595116fe6ff606a42c89e0f46a074a5a
+Version: 0.1.3-1
+Homepage: https://github.com/yxdunc/lipl
+Description: A command line tool that is similar to watch but has extended functions for commands outputing a number
+Filename: dists/uncode/main/binary-aarch64/lipl_0.1.3-1_aarch64.deb
+Size: 339952
+MD5Sum: 86afdace12fc025077d6e53a17caa796
+SHA1: d11ee6f4d29a3e6bf544da5f68cccd7a0ec1d886
+SHA256: ed15cf1cd14742a7d1675e10a6fb7b35d8aba53785e7be9e69d2d6cf8834e2fb
+SHA512: bc2f9d3984e45837850bc1eacc6e5fbc100223360d3f3d0a188926501d6b23824bae00c07026e808055cea9ec0e522cbc2bf8207208800956fd2141d7115b266
 
-Package: libxdrfile
+Package: lit
+Architecture: aarch64
+Installed-Size: 736
+Maintainer: @termux
+Version: 3.8.5-3
+Homepage: https://luvit.io
+Depends: luvi
+Suggests: luvit
+Description: Toolkit for developing, sharing, and running luvit/lua programs and libraries.
+Filename: dists/uncode/main/binary-aarch64/lit_3.8.5-3_aarch64.deb
+Size: 174792
+MD5Sum: 6ea9961ab5613c1daaece9797110fd8b
+SHA1: f7bae3bc429a9db2b4214119767df85630d6b481
+SHA256: dec60070c381300292ee4b16ceb0a8a507b864565a6a2276754c58d6add9452a
+SHA512: e327f76a211d0a2c82932ac6bc9327e3b6042d578f1e3ed6a444bafadd08a13c67553436bc31fe40d13d6a5facc0e1f6aa8d6495734625f0f266005fa5c3a998
+
+Package: litespeedtest
+Architecture: aarch64
+Installed-Size: 20092
+Maintainer: @termux
+Version: 0.15.0-3
+Homepage: https://github.com/xxf098/LiteSpeedTest
+Depends: resolv-conf
+Description: A simple tool for batch test ss/ssr/v2ray/trojan servers
+Filename: dists/uncode/main/binary-aarch64/litespeedtest_0.15.0-3_aarch64.deb
+Size: 5494240
+MD5Sum: f41967065f0771d55ca1ef5d814cbdb8
+SHA1: 9b954831cc1180fe930e5bf5c979b67a36b7a5fc
+SHA256: 01d03e4d803674a9e850bfe4da7e31915564081d43e692fdfe19f3f32c30255d
+SHA512: 3d833d8e036ceba9764e6edbd79b5f282a94943ad275b3c6d48a89a425aa8184e9a61c5f978ee5ee975aa9ca83848237b271af012ec48e99448440660bfba328
+
+Package: littlecms-static
+Architecture: aarch64
+Installed-Size: 652
+Maintainer: @termux
+Version: 2.19.1
+Homepage: http://www.littlecms.com/
+Depends: littlecms (= 2.19.1)
+Description: Static libraries for littlecms
+Filename: dists/uncode/main/binary-aarch64/littlecms-static_2.19.1_aarch64.deb
+Size: 146464
+MD5Sum: 8c224dceeed3e245beb648966e8a8a3a
+SHA1: 94f1937d15a451c09dd155fbade32185674f8999
+SHA256: b21ca266c8590828cf3c45d3d704268f85cca7194651b48b45a8d92d7cabfabd
+SHA512: 235db2312e6f7ba1ef37194c5023cb733704b71bf3dae6fe96d2fd8296ac62b0b0c33d9bfa0e7d3d2fad7cea2b5bdcebc1837b11a0b4f0d215b66f78074561a2
+
+Package: littlecms-utils
 Architecture: aarch64
 Installed-Size: 152
 Maintainer: @termux
-Version: 1.1.4-2
-Homepage: https://userguide.mdanalysis.org/stable/formats/reference/xtc.html
-Description: Library for reading and writing xtc, edr and trr files
-Filename: dists/uncode/main/binary-aarch64/libxdrfile_1.1.4-2_aarch64.deb
-Size: 22772
-MD5Sum: 90628a15a684fe758cad4e6d9c9d3c17
-SHA1: e64002460ec55667596b92618525049d736c854c
-SHA256: faa3163dc4dcba027c0bed0efa898e89cc6aa4e0ab1d2cf3537e2b8602322382
-SHA512: 32876a42d1a9c26c99762c74da624b4c0e9b04728df612fea132c75b16628795da15061332e36e44fddeb82a6bf28c4ba101a0c43a9e205d6012462f8a525a5e
+Version: 2.19.1
+Homepage: http://www.littlecms.com/
+Depends: libjpeg-turbo, libtiff, littlecms (= 2.19.1)
+Description: Color management utilities
+Filename: dists/uncode/main/binary-aarch64/littlecms-utils_2.19.1_aarch64.deb
+Size: 29392
+MD5Sum: 6e9e5259c0ad7459dbbdd24f08adba8e
+SHA1: f8a6de1e9e1dc392595a15a405435bd2701c91df
+SHA256: 5e3bbc4e2188847e62f982129e776869753d87c07131f8ae23deb488b01b8351
+SHA512: 72a8fce034779a4c867314aab2d0fc28fed24cfcf7bfe880cbcf34135ad4cc04c74eedbe94d4dda9bf5dfac35e4594d77c8f87baaab37fa7eb0de7d43974120c
 
-Package: libxls-static
+Package: littlecms
 Architecture: aarch64
-Installed-Size: 120
+Installed-Size: 540
 Maintainer: @termux
-Version: 1.6.3-2
-Homepage: https://github.com/libxls/libxls
-Depends: libxls (= 1.6.3-2)
-Description: Static libraries for libxls
-Filename: dists/uncode/main/binary-aarch64/libxls-static_1.6.3-2_aarch64.deb
-Size: 22032
-MD5Sum: c40411c8bd3e0751fd54624ed26ad85d
-SHA1: 81900b5e9f0be7ab6150a259fc5b912eb0d9dc73
-SHA256: 24cc726e6dabab1e44b67324d05c9616280be6da328f75db02dda5c644ad7593
-SHA512: 3c8f532e96c2a5b61daf7f22c1de9aa2db8ed4d6a44172016794c2b1bcd6b7704aea77ed80e42ff2c6fb648ae3900f69849e6256f20d9b9b6fa74f6e75cfab0e
+Version: 2.19.1
+Homepage: http://www.littlecms.com/
+Breaks: littlecms-dev
+Replaces: littlecms-dev
+Description: Color management library
+Filename: dists/uncode/main/binary-aarch64/littlecms_2.19.1_aarch64.deb
+Size: 144348
+MD5Sum: 980e1fee224128fe762517b00afc05c7
+SHA1: 647266b5747ec1751007445f04ce10ffbb3c5ff6
+SHA256: 0063ca77a484e38e6636c3215899f090123404f1bc36b271b01a22198716eb32
+SHA512: 20482ba4a8bf19761959a74ab33e8dfb99e4ad90a7179f14ed0e5366f7f615bc1f0bcd9826e8b3c56ab92823da1361d152f6c5afa85299f1b8f3ea13e455f79f
 
-Package: libxls2csv
+Package: locustdb
 Architecture: aarch64
-Installed-Size: 56
+Installed-Size: 15124
 Maintainer: @termux
-Version: 1.6.3-2
-Homepage: https://github.com/libxls/libxls
-Depends: libxls (= 1.6.3-2)
-Breaks: xls2csv
-Replaces: xls2csv
-Description: A command-line tool for converting XLS to CSV
-Filename: dists/uncode/main/binary-aarch64/libxls2csv_1.6.3-2_aarch64.deb
-Size: 4668
-MD5Sum: 6658a64b3dd3b7beb4bb5458b08fb203
-SHA1: fcf14be92e9cce4475b80a5313d8d92ba284c946
-SHA256: 864f6ebcff1c116db1a99e8bd809f1b3599ff37ab1bd327508bf063d4d4a6ca6
-SHA512: dcefcce128e03861a38c424282eb66ef32ef6ff4e2432b0296ba613ae23d94f45aaa88493c7d29a4837a00374e7983093d66c8a21de86eb42aba95afce273fd9
+Version: 0.4.6-2
+Homepage: https://github.com/cswinter/LocustDB
+Description: An experimental analytics database
+Filename: dists/uncode/main/binary-aarch64/locustdb_0.4.6-2_aarch64.deb
+Size: 3028276
+MD5Sum: f2a19d894d89c285018d3da35b560a8c
+SHA1: 448944bd5386ee37c5a62e7c315dcccff63bcf03
+SHA256: 454feb318ad6587f5e232813070be381c379ca07e52ab1de9f50f81a5b0170eb
+SHA512: f7787b7fdd0deb960eccc620d38ebe0f7f6fb56de4b4e178791a75037336e935ab1f51437dab7d1211ec5a6204d0839e7f569ae7f7968fbf3d9ede61ab2b2ee0
 
-Package: libxls
+Package: logo-ls
 Architecture: aarch64
-Installed-Size: 172
+Installed-Size: 5828
 Maintainer: @termux
-Version: 1.6.3-2
-Homepage: https://github.com/libxls/libxls
-Description: A C library for reading Excel files in the nasty old binary OLE format
-Filename: dists/uncode/main/binary-aarch64/libxls_1.6.3-2_aarch64.deb
-Size: 27868
-MD5Sum: 448a8a937322c8a006ee8c5a58658551
-SHA1: b67346cbbd940d20936896352c197ff9f4760e63
-SHA256: 83e3e3e963a6fc6c21845137f7da09fbc3f8282ec4c3833b4dfb707d2a517596
-SHA512: f6132464c9a28275ce3f34cb12add528c164da290d2d1ebdd45af09553f5dc0caf9e0cd1890167ab907cb00b9b2ab603b013839288e08569627bb10c0e246d36
+Version: 2024.07.17-1
+Homepage: https://github.com/Yash-Handa/logo-ls
+Description: Modern ls command with vscode like File Icon and Git Integrations
+Filename: dists/uncode/main/binary-aarch64/logo-ls_2024.07.17-1_aarch64.deb
+Size: 1658620
+MD5Sum: e4ca3c09065942b18a65977dd47fdfdf
+SHA1: 1ce10a5d26f85b361499d20c4d382f4e05ecd877
+SHA256: 2e256c9fb7e679e59c34241f362d0f14bba1e6f966975db2ddf842f1074adf4b
+SHA512: 4f095e5e5b660226bf05f8d7102d3664193306d1ffac302ef02ac833f72aa1c6ec65ecaa72351552656aede013c4a3c2b78f39b2e22cea1b22671e554d48d061
 
-Package: libxmp-static
+Package: loksh
 Architecture: aarch64
-Installed-Size: 1448
+Installed-Size: 332
 Maintainer: @termux
-Version: 4.7.0
-Homepage: https://github.com/libxmp/libxmp
-Depends: libxmp (= 4.7.0)
-Description: Static libraries for libxmp
-Filename: dists/uncode/main/binary-aarch64/libxmp-static_4.7.0_aarch64.deb
-Size: 330068
-MD5Sum: 33d8e95674a3ac862d1a5f6382e04db9
-SHA1: 13c76c89505079af038c058cd28bc97657d7adf2
-SHA256: acb93fedbcaab5f44a3d1f9b3398d8853b2a84b2a7c34dbfa5bc9aeb107c2179
-SHA512: 1a75306be24aa5facc1ec9d638362bcc046bf4448744a41a8b3fac651322dac05d0556c5fd3f5d209b6a87bead2da77be7dcafadb9f03cd6064c752286639096
+Version: 7.9
+Homepage: https://github.com/dimkr/loksh
+Depends: ncurses
+Description: A Linux port of OpenBSD's ksh
+Filename: dists/uncode/main/binary-aarch64/loksh_7.9_aarch64.deb
+Size: 141468
+MD5Sum: 75830bb1d99e4a73ac8c1085e63516a5
+SHA1: 1152754d2182f59d02457298847ae0e5b3894f6c
+SHA256: 73869b8607420baf814063241215bd5ce3ba1c3a3ce39cd8552ae0115fbadded
+SHA512: fc58a863e9bf41ebb141847730c14cac27f01c97aae1eb22b3830d8adec43ecf73d5838e0df9763393c32939069d5f5374d8b69a44fa51ca14cd95aad108eb83
 
-Package: libxmp
+Package: lowdown-static
 Architecture: aarch64
-Installed-Size: 876
-Maintainer: @termux
-Version: 4.7.0
-Homepage: https://github.com/libxmp/libxmp
-Description: Extended Module Player C Library that renders tracker and module music (MOD, S3M, IT, XM etc.)
-Filename: dists/uncode/main/binary-aarch64/libxmp_4.7.0_aarch64.deb
-Size: 298240
-MD5Sum: d934dfc4870485bd1ddbfb6f51942899
-SHA1: 6a637312f82bd9502cf198939ab40f5bc9a7d264
-SHA256: be5104784cb35c124b74e7c4e6451c2ea9523701f76519a3b7433f964e1c6adc
-SHA512: 5fca9ef783b2f5148cedc0797d189cf9062c76539b3f0558c2b48bd9d5a70b59258599530992dc5c37e19e0656969a5a7b1c8a6fb77870b5f5335286bf4c0e50
+Installed-Size: 476
+Maintainer: @flosnvjx
+Version: 3.0.1
+Homepage: https://kristaps.bsd.lv/lowdown
+Depends: lowdown (= 3.0.1)
+Description: Static libraries for lowdown
+Filename: dists/uncode/main/binary-aarch64/lowdown-static_3.0.1_aarch64.deb
+Size: 111324
+MD5Sum: b3bb5e154fee74f91d7cc058a33a2ca0
+SHA1: 64d75f4c469478f6d66432af1627c6962f99ac77
+SHA256: 1b29a6fe84b36b27c465829b3a57ea382b1f70c2eb84c4f1109caa4ff297223e
+SHA512: b799b8d5557e63298851674adbe6846be97e1ff88903eb5f4d972e1f3f4228302fc23a3ea7aae3a3de08b806b874f863375b7692422932957f17342ead19183b
 
-Package: libyaml-cpp
+Package: lowdown
 Architecture: aarch64
-Installed-Size: 636
-Maintainer: @termux
-Version: 0.9.0
-Homepage: https://github.com/jbeder/yaml-cpp
-Depends: libc++
-Description: A YAML parser and emitter in C++ matching the YAML 1.2 spec
-Filename: dists/uncode/main/binary-aarch64/libyaml-cpp_0.9.0_aarch64.deb
-Size: 122592
-MD5Sum: 1fec49992786cc513ab92e24aa774a49
-SHA1: 4bb2581954ceec56f6a4a2a14457f8925a80f792
-SHA256: ed0abd42cec60e02c5636088b0f793646befc21a07b82e0d6a69218b42047d47
-SHA512: e58e06a3875ddac778c07a6b472013df1ebeaab332e9bf21fe4f70fe5d90d9aedaa735f8b6166480d0d8166c051b721f559ce995510152a2d6c05784cfbb8c54
+Installed-Size: 1080
+Maintainer: @flosnvjx
+Version: 3.0.1
+Homepage: https://kristaps.bsd.lv/lowdown
+Description: Markdown utilities and library (fork of hoedown -> sundown -> libsoldout)
+Filename: dists/uncode/main/binary-aarch64/lowdown_3.0.1_aarch64.deb
+Size: 199464
+MD5Sum: 96ef488584a82bff91726c5083f22862
+SHA1: 4e057fc32fde2ea194953336a233492ba8e97c75
+SHA256: 32fa3e1b58569275221a9ad12ad24db30d7a3666b69f0aab0a0fa0d9699ec05d
+SHA512: a7671511b3f5f7329e53b0f727564fe0b6b5019536562b777d3f57a06bf631b6a2654615973cebd530b5d3739f941ac3661511f3af460222004abfe5f3970c1c
 
-Package: libyaml-static
+Package: lr
 Architecture: aarch64
-Installed-Size: 188
+Installed-Size: 140
 Maintainer: @termux
-Version: 0.2.5-5
-Homepage: https://pyyaml.org/wiki/LibYAML
-Depends: libyaml (= 0.2.5-5)
-Description: Static libraries for libyaml
-Filename: dists/uncode/main/binary-aarch64/libyaml-static_0.2.5-5_aarch64.deb
-Size: 42948
-MD5Sum: a7f3bcfe99c7a3190cf3bde40851755c
-SHA1: f2bcea3aedfbd0cb2c32106a201b7e6e4f66a342
-SHA256: 6d236268b15efd87c36d4b56fdca137229987b4cc82e4ef53066464e4b09d3e4
-SHA512: 69b60cf4d13d8bda88bec929897a6a483ddb03adfefe587935fbcfdde74336ad93179739dac3cfed7258879119a037ce69ec21ff5532c2b49f9c2b823fe1ee73
+Version: 2.0.1-1
+Homepage: https://git.vuxu.org/lr/about/
+Description: list files, recursively, includes the best features of ls, find, stat and du
+Filename: dists/uncode/main/binary-aarch64/lr_2.0.1-1_aarch64.deb
+Size: 23764
+MD5Sum: 292b7d9ef73262a4795b47d32a19d8ee
+SHA1: 324772852149edc08ad9174da575e597c01a82ba
+SHA256: 21c16741dac02cb21751a70c2c934c8e919de9254c7df259d27283c283d40c90
+SHA512: d75b27aa385ba4548e3f12199f4dd84d7c1e010ef9bcfbf20885b929c7480cda5b1413539928f6cbeca2a73229fcce4db8450c0f90ed7b07d3e5075e510cb44c
 
-Package: libyaml
+Package: lrzsz
 Architecture: aarch64
-Installed-Size: 208
+Installed-Size: 164
 Maintainer: @termux
-Version: 0.2.5-5
-Homepage: https://pyyaml.org/wiki/LibYAML
-Breaks: libyaml-dev
-Replaces: libyaml-dev
-Description: LibYAML is a YAML 1.1 parser and emitter written in C
-Filename: dists/uncode/main/binary-aarch64/libyaml_0.2.5-5_aarch64.deb
-Size: 46328
-MD5Sum: 248cfc6f7d6ead4c9113f00e55fca0b5
-SHA1: 0239cd02968226365e8983a7ece415c941ec37b9
-SHA256: 0dcb31117ff6d9f87d145928952b52d52758ffd1a15d9170916a7f2e6ea7eaaa
-SHA512: 44834afb8830fcc2d9a7796b64cea1a16f14665e05805042d71c6688ad9299778a11f0e3106ffa976f4ce7ddf6478c26a6bf9878e2da701e750aeb0e718b5e52
+Version: 0.12.21-rc1-2
+Homepage: https://ohse.de/uwe/software/lrzsz.html
+Description: Tools for zmodem/xmodem/ymodem file transfer
+Filename: dists/uncode/main/binary-aarch64/lrzsz_0.12.21-rc1-2_aarch64.deb
+Size: 44856
+MD5Sum: 32c551763ecb345d21757de9758f85b9
+SHA1: 59ad0ccd8b80a712ee08be7ab85585c41db92aaf
+SHA256: c355b0efb6d019db716d40edd98349c177a883ac04237015b3731b6aef6ef672
+SHA512: 926311a2bb5b670d58efb2aacaa195db5067df49b60cace4021c28e69a98d0c12db33537cb3f83bab442456d3d2106a58653d52da9d1964619bbd3642420284f
 
-Package: libzimg-static
+Package: luajit-static
 Architecture: aarch64
-Installed-Size: 1872
+Installed-Size: 680
 Maintainer: @termux
-Version: 3.0.6
-Homepage: https://github.com/sekrit-twc/zimg
-Depends: libzimg (= 3.0.6)
-Description: Static libraries for libzimg
-Filename: dists/uncode/main/binary-aarch64/libzimg-static_3.0.6_aarch64.deb
-Size: 215684
-MD5Sum: 5712879ef3665009d6653d2d0b6832e8
-SHA1: fe3eb504d7170a5b67126f26cbc8a7b1a2144719
-SHA256: eaf55e93f45b0dd663c53e3efe7372767b36b936b5ab79312fc90dd48282f1ac
-SHA512: 0ad4f596e21ac812748ce784c6d901de60fbd9d4cea22e7450a304a0bfe1fa10e7ed1131afc394c793e6d21ee7da91377024b9eb9c9dd87c3eb7dc3fae93ea13
+Version: 1:2.1.1780076327+gb925b3e
+Homepage: https://luajit.org/
+Depends: luajit (= 1:2.1.1780076327+gb925b3e)
+Description: Static libraries for luajit
+Filename: dists/uncode/main/binary-aarch64/luajit-static_1:2.1.1780076327+gb925b3e_aarch64.deb
+Size: 221360
+MD5Sum: 45108cc5e84caf516f136eaca4ede321
+SHA1: b76b2599a2ff722fc609c01240224313172cb135
+SHA256: 77a0357f794b9457803a26a5f70559e8d2bfd29a765120ae67f14d8b2d23ecaf
+SHA512: f48594a9089230cfeb8538a58ce706554a4bd2dd546dff41ea4b7e7353a13351343c234abaa53b1d735ed050a02fe0b7bc60b063a465ae9e8e6184f28be8594f
 
-Package: libzimg
+Package: luajit
 Architecture: aarch64
-Installed-Size: 576
+Installed-Size: 1336
 Maintainer: @termux
-Version: 3.0.6
-Homepage: https://github.com/sekrit-twc/zimg
-Depends: libc++
-Description: Scaling, colorspace conversion, and dithering library
-Filename: dists/uncode/main/binary-aarch64/libzimg_3.0.6_aarch64.deb
-Size: 140776
-MD5Sum: ac9c3c4f8b294b49003defc9024bb7ae
-SHA1: bf612590d14a16719f181b10969a7c0e8332d9a1
-SHA256: 9d1c3fbc92a67a12b627f8948f4a56534a3ee01bea59c87f154b36fe0c2f7a5a
-SHA512: 4b26b72134177f7cdab9e79e4d0bcb317d006a202d42265ddd35139fe0fd267c8d303424bf805d593c17dc059eb1c41e953858fa207f9e36ac9c57accf14a27b
+Version: 1:2.1.1780076327+gb925b3e
+Homepage: https://luajit.org/
+Breaks: libluajit-dev, libluajit
+Replaces: libluajit-dev, libluajit
+Description: Just-In-Time Compiler for Lua
+Filename: dists/uncode/main/binary-aarch64/luajit_1:2.1.1780076327+gb925b3e_aarch64.deb
+Size: 289512
+MD5Sum: b57dbef2efe4048c64636cba187c2007
+SHA1: a357d75d7623f13634118686d0ca1d96ec724392
+SHA256: f7150a1bfca7fb866f164b1aa1d9522a7e7097dbb1e1ad4594ce0ea1a3007381
+SHA512: 21945649d78a76e34254f14ca406069380bfdcbad08a71875ec242f50e00255b3df0a258e62dd681b1a524344490d5f8576e9dd29449e093b7079828076bdbcb
 
-Package: x264
+Package: zopfli
 Architecture: aarch64
-Installed-Size: 1272
+Installed-Size: 88
 Maintainer: @termux
-Version: 1:0.164.3191-1
-Homepage: https://www.videolan.org/developers/x264.html
-Depends: libx264 (= 1:0.164.3191-1)
-Description: Commandline video encoder for the H.264/MPEG-4 AVC format
-Filename: dists/uncode/main/binary-aarch64/x264_1:0.164.3191-1_aarch64.deb
-Size: 413492
-MD5Sum: add230a2b2cf555585c65b39caa80ada
-SHA1: 8fb91ee01b1daca81db02705caad59316b3a7598
-SHA256: 60f1a87277f93f09dbb4d42997e525494b6f9e381dfaad791b3541a4f0ca96c4
-SHA512: 5aba3a8f5221805ac4cd5962455b33f2875c7b684169209a9af78eeb824deedc6e59f85bd2361cc46d48f0a7ccf43493788d06497c12ae899b4c4f1de7fa8125
+Version: 1.0.3-5
+Homepage: https://github.com/google/zopfli
+Depends: libzopfli (= 1.0.3-5)
+Description: New zlib compatible compressor tools
+Filename: dists/uncode/main/binary-aarch64/zopfli_1.0.3-5_aarch64.deb
+Size: 22524
+MD5Sum: cf9c2d77f5d91af1edc7d1f16c9290e1
+SHA1: 1365c7b02a330e33c5e9578675348047643eb6b8
+SHA256: a2b99f5feee3ceb29139a6b60c91a769383bdbcd956070c84b4625ebc14ced37
+SHA512: 8605e774eab1037c1e7df402f87fd1d3f273905e0dec269119faac70b31caa219f238eb8ecf833cbee590f91eb2633ccdd77b5220ded7809053534a89aafec53
 

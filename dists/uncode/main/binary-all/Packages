@@ -1,14 +1,14 @@
-Package: libspice-protocol
+Package: vulkan-headers
 Architecture: all
-Installed-Size: 180
+Installed-Size: 40812
 Maintainer: @termux
-Version: 0.14.5
-Homepage: https://www.spice-space.org/
-Description: SPICE protocol headers
-Filename: dists/uncode/main/binary-all/libspice-protocol_0.14.5_all.deb
-Size: 18500
-MD5Sum: 139f8bf33fa6948fc48325968fc36c7e
-SHA1: 908cfbe1523df595e26344c60739c7c2a5bf5204
-SHA256: 960e236eeda68fc1444cda5c4c66fff159c3963f0c392d641935b5b2a6f25021
-SHA512: 6c22db12a76a0515a5ef1aebc90f568555f4cd66155125074d3e96ce70eee1c8d49ce23992a159f26a491c0b172ef9dec8a01ced999cb2bebc80b3d78a37ab69
+Version: 1.4.355
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
+Description: Vulkan Header files and API registry
+Filename: dists/uncode/main/binary-all/vulkan-headers_1.4.355_all.deb
+Size: 1900448
+MD5Sum: dd0715670c91273a893aa334b836ba26
+SHA1: 4d88260a28284c3f1a57f73af03f6c8608df6576
+SHA256: fda072120d444bbed904827cad6c1f0bb891538ffc92a5e73fbfc3386886462f
+SHA512: 6f489e276990a51af1e63d899323b64c067b11d5a49dd72bb717d2a81df33932777b75457c20fe5f4b2d8eec8137eafcecc231a98edaec4e6a69ff0f53f57154
 
