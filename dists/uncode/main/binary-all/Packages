@@ -1,18 +1,32 @@
-Package: manpages
+Package: mdds
 Architecture: all
-Installed-Size: 18580
+Installed-Size: 1272
 Maintainer: @termux
-Version: 6.18
-Homepage: https://www.kernel.org/doc/man-pages/
-Depends: mandoc
-Conflicts: linux-man-pages
-Replaces: linux-man-pages
-Provides: linux-man-pages
-Description: Man pages for linux kernel and C library interfaces
-Filename: dists/uncode/main/binary-all/manpages_6.18_all.deb
-Size: 5695284
-MD5Sum: df3c1146591a1eb33c1e7e928d8fc1ba
-SHA1: ae36f188f59e1920dacc05028f4f5bb5d9463114
-SHA256: f839ce270583c107f112e89361a2da59ed5df41cb7e13de6c3b5cfa9884edb28
-SHA512: d4e3194380eac671014d55f7b37239707b3ef44fb06b9905082bfe37e1817f290a8a09df2d8a78f22f798197e15ddc02bf9cd9d79dc0bbfb499a7172af62fc83
+Version: 3.2.1
+Homepage: https://gitlab.com/mdds/mdds
+Description: A collection of multi-dimensional data structures and indexing algorithms
+Filename: dists/uncode/main/binary-all/mdds_3.2.1_all.deb
+Size: 126624
+MD5Sum: 3eb9436d94bfd499d7b7b431c25c4776
+SHA1: d037483895323c9755bf45b782c5a3ecd8fca3b2
+SHA256: b3074fbb2253492f6776f97fdcb77e338c1252430f2d10ee0e035f47cf1bbc42
+SHA512: 5b382632f5fdc26fa1a8d361eb87dd76aeb80dae6905f4b8b662247b2d5c3cdcba77716128af123587dba6f7cb714fcb71adb019c816982bcecde6784cfa39c8
+
+Package: media-types
+Architecture: all
+Installed-Size: 120
+Maintainer: @termux
+Version: 14.0.0
+Homepage: https://pagure.io/mailcap
+Breaks: mime-support
+Conflicts: mutt (<< 1.8.3-1)
+Replaces: mime-support
+Provides: mime-support
+Description: List of standard media types and their usual file extension
+Filename: dists/uncode/main/binary-all/media-types_14.0.0_all.deb
+Size: 19672
+MD5Sum: 3a833137f0058eadc31ceb221dd30ebc
+SHA1: a7ea49bce3aabc21be7e76d9c5d1f587d00e5233
+SHA256: 31f32364eb6cf1963a31efac00b7e69476f5a3c04d745845da26814b2cf1d7c2
+SHA512: 373d393d96e841595994e44feb19141e030453ee10df37546decff89546eadc95717e8dd0bdb20d53a6ad087a54d49975f8164291c1e8bcfd840bbded9774c8c
 
