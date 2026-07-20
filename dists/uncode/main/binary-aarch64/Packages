@@ -1,19 +1,32 @@
-Package: c-ares
+Package: gecode-static
 Architecture: aarch64
-Installed-Size: 1100
+Installed-Size: 35976
 Maintainer: @termux
-Version: 1.34.6
-Homepage: https://c-ares.org/
-Breaks: c-ares-dev
-Depends: resolv-conf
-Replaces: c-ares-dev
-Description: Library for asynchronous DNS requests (including name resolves)
-Filename: dists/uncode/main/binary-aarch64/c-ares_1.34.6_aarch64.deb
-Size: 192452
-MD5Sum: 8bdf24d283f4f276fc12478b9a0b89a3
-SHA1: 60c6a183d0dc6aa6eb4f93229a7175c87512f9ae
-SHA256: 6cd16a7496b1a237184cbe4ef048db07529e481e837780c84b964b3d12dbe8b9
-SHA512: ea51626f16891611cd6e24763ad4139df918ad4dfa692f1c285d364bda4b143c90a5cb737992a881c8f4ce8dd51c929b36971735355cdcadbd330529c6847509
+Version: 6.2.0-1
+Homepage: https://github.com/Gecode/gecode
+Depends: gecode (= 6.2.0-1)
+Description: Static libraries for gecode
+Filename: dists/uncode/main/binary-aarch64/gecode-static_6.2.0-1_aarch64.deb
+Size: 2928680
+MD5Sum: ba52479aa6fbf11ed6d71023039afc9d
+SHA1: 12df74e3fe010a730b601b09d669f5f6ddadfb34
+SHA256: 0325e88044cb202c40bb68ac67a936fb10993a5a4ac2122d0b112cb004ab3209
+SHA512: 40ef9f43214c643383caf7ba3b6d2892e5875ef2f2dd1150bef363daf4c93e95eb0aafdf5226ae5820132e85cb0e6e8751679262789221b6d7c9652dc630b488
+
+Package: gecode
+Architecture: aarch64
+Installed-Size: 18024
+Maintainer: @termux
+Version: 6.2.0-1
+Homepage: https://github.com/Gecode/gecode
+Depends: libc++
+Description: Generic Constraint Development Environment
+Filename: dists/uncode/main/binary-aarch64/gecode_6.2.0-1_aarch64.deb
+Size: 2163584
+MD5Sum: eedb67078351ae4246120039b7650bcd
+SHA1: 16457b7e54800d9e0813755142422b2f3ce4e785
+SHA256: 3278d54f313c8681cd86b9157b63c7ae5edb2ba1de5c2108bdcbb38b3dc6a2ef
+SHA512: 7cd84f15c64627b376e24d5768a3fd2cc57959e087aed0d217c33cc57bb36431baae58f8bdacd6ee44204f56301ba3a972982bafc7eb4e04e78d86b6a47dab28
 
 Package: hello
 Version: 8.7.1-1
@@ -28,377 +41,139 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: 730b00faf3c22c41ebf8635210f0e50f
-SHA1: 333c0b12f81ed2191e839ab95233bd0e9b8bc318
-SHA256: 30f5b6b0d059fff3b50d719398e41714d1452b2e27a6adc3c9f753aa56bed71f
-SHA512: e4b7f11165bb95dc7cb5c0370e76e0ad47c030e12007bd5b25d58d150b4d94735d11fc249bd3c6b2ed78132fc13b7997974926ee4fade5ec80639f3e98797d64
+MD5Sum: 97ef0347ee0cbbd664ddcf1373c7dcd8
+SHA1: 5cb46e9276127eac301f299ac1e48818a02b3777
+SHA256: 1d0d88381dc3350e6b8799282c9daf3ecf752e2c5a0714fc8267f0a42b294692
+SHA512: a6ef6eebec15d94a4983bb6e8c0251de7d2324bc503f4d12eb77f7fc1928ce28a1698b9a27848d505f1ab7508aeeb7b6e544b97397c82f6d5f0d2b41c2bdf87c
 
-Package: mazter
+Package: miniflux
 Architecture: aarch64
-Installed-Size: 1156
+Installed-Size: 22116
 Maintainer: @termux
-Version: 2022.08.13-1
-Homepage: https://github.com/Canop/mazter
-Description: Mazes in your terminal
-Filename: dists/uncode/main/binary-aarch64/mazter_2022.08.13-1_aarch64.deb
-Size: 401196
-MD5Sum: ee4f007faa62215c88e744d62e1d6b90
-SHA1: af19bd3cc9dbe8815264eb63a5e63831d06d60d8
-SHA256: ddba59305b10dba2e44da57beb2fa134ad0cd7cd622238e477f62a1216d96760
-SHA512: 34730b6d2868e80fa3ce188bad7e0ff40e9e49086f7bd68109005c7b12a33a5873404e3a41579857e960f8ae13d053c62bdc6496c9d45ed20a9f53985939219c
+Version: 2.3.2
+Homepage: https://miniflux.app/
+Description: A minimalist and opinionated feed reader
+Filename: dists/uncode/main/binary-aarch64/miniflux_2.3.2_aarch64.deb
+Size: 5594880
+MD5Sum: e1102edae862607d167a36f4a2562072
+SHA1: 78e9605f65f7937926fe688a643ba438d7a52a11
+SHA256: 06bbc5b8cc2c63c9d9033e48162a5cf65f6db292a7f18e8348ae09570b40c1f9
+SHA512: 5620942df6831cf315571843851f11ee7dbe94bed7d26402e32d47cc1226d85272a37909c1904bbd5ef5106bfefe18324e1548d663d19b24a5c66de8d949ec3a
 
-Package: mbedtls-static
+Package: miniserve
 Architecture: aarch64
-Installed-Size: 36
+Installed-Size: 6756
 Maintainer: @termux
-Version: 3.6.4-2
-Homepage: https://www.trustedfirmware.org/projects/mbed-tls/
-Depends: mbedtls (= 3.6.4-2)
-Description: Static libraries for mbedtls
-Filename: dists/uncode/main/binary-aarch64/mbedtls-static_3.6.4-2_aarch64.deb
-Size: 1324
-MD5Sum: 97011581cddce8001cc9d38cfa48f878
-SHA1: 2dac2ec1f6d0137c006e77d3cede000c6bbbd5b1
-SHA256: df7626d1c96064cbc9d6fdc7a5fbe3f2e2ec405c14b2905ac339f85a0d8f8968
-SHA512: f87c25697e9f8e8867084684ed850be4149d252ee8059f729e45eb2ac266e3f1d719ae19c07ea77d8a17ac85066c65150989866a5b9788062e60d9532ca0bd0f
+Version: 0.35.0
+Homepage: https://github.com/svenstaro/miniserve
+Description: Tool to serve files and dirs over HTTP
+Filename: dists/uncode/main/binary-aarch64/miniserve_0.35.0_aarch64.deb
+Size: 2296736
+MD5Sum: ef0b8abf2eaf657e71068e3805c32254
+SHA1: e1a8096b7601b48cd320efee946407067110f51d
+SHA256: 43d220173eb69ee8252dffaccda12b3347dc354f0ab8ffc8d2bff18aa0db6ce5
+SHA512: 6af490401ed599bc83364ebc50aca5af25d64e12d42a076ee7de99d35dd1f8314bd4c9c569bcad8beea796573026e4b69fb7c555fb5da41a29a997c8269e3e88
 
-Package: mbedtls
+Package: miniupnpc-static
 Architecture: aarch64
-Installed-Size: 3568
+Installed-Size: 124
 Maintainer: @termux
-Version: 3.6.4-2
-Homepage: https://www.trustedfirmware.org/projects/mbed-tls/
-Breaks: mbedtls-dev
-Replaces: mbedtls-dev
-Description: Light-weight cryptographic and SSL/TLS library
-Filename: dists/uncode/main/binary-aarch64/mbedtls_3.6.4-2_aarch64.deb
-Size: 634896
-MD5Sum: 914cf5ac904ec7f9ce20a26f55d50254
-SHA1: 2e6b615dac05d4ffedca4bcfd410ed0f756b6872
-SHA256: beec3cba42e08b393e1b446655766376fd12e9737baf82e13fef70e0b658373b
-SHA512: 85860ef875b0ed5f26cec9d07e599df39611220f672acd3a5a11bd1b05b0ebead732ab235d1c6a628fb5584084c6d728da61e6f3de04274584e64e295145f0ee
+Version: 2.3.3-1
+Homepage: https://miniupnp.tuxfamily.org/
+Depends: miniupnpc (= 2.3.3-1)
+Description: Static libraries for miniupnpc
+Filename: dists/uncode/main/binary-aarch64/miniupnpc-static_2.3.3-1_aarch64.deb
+Size: 22552
+MD5Sum: 2f0d23037d5d6a762b3d7805439b2ba7
+SHA1: cd00d94bd902ed47d51042e3240ba76210f6d80a
+SHA256: 1eb8e5d51831f7b65be922e21bc66072c551dbe7abdcaa25ca2962bfd9bcf142
+SHA512: 1555f7858a23cf4fee36b27261bf714ecfceca29e9ba2962a9104862927c3a189054d582954574cfc3e0ed364588e2f27282cce7960d97130c437de32d1c45cd
 
-Package: mcfly
+Package: miniupnpc
 Architecture: aarch64
-Installed-Size: 3476
+Installed-Size: 392
 Maintainer: @termux
-Version: 0.9.4
-Homepage: https://github.com/cantino/mcfly
-Description: Replaces your default ctrl-r shell history search with an intelligent search engine
-Filename: dists/uncode/main/binary-aarch64/mcfly_0.9.4_aarch64.deb
-Size: 1301968
-MD5Sum: 7998c834a578c84329ae8a6df5849c94
-SHA1: a16ea8ee98665801ae575739a0887f37dd6d4ad7
-SHA256: 7d23d4b9a6bd5180c3a43169ddf5b171825786fa3f830469e3bbe1910e25f611
-SHA512: d415c4bab88cbaa8af1c6aabc81161965f69bbcc0b23b95ce3b724da15ec90bbf3d67cb3ee1c61e29728941e90b2db785b901cb8428bf884deccfdd6822911a2
+Version: 2.3.3-1
+Homepage: https://miniupnp.tuxfamily.org/
+Breaks: miniupnpc-dev
+Replaces: miniupnpc-dev
+Description: Small UPnP client library and tool to access Internet Gateway Devices
+Filename: dists/uncode/main/binary-aarch64/miniupnpc_2.3.3-1_aarch64.deb
+Size: 50824
+MD5Sum: 52a4f4bcd7e1493507250bdfeecf418f
+SHA1: 566fabbd11a5e2d4e02318da570eea854358d95d
+SHA256: 6a257d083c3c394ca25cc0c58e421e64a8d9e631a0d527db1e31139d9bbd69b0
+SHA512: 8a5b4c9c3e89eff3f539933a994f488fc3140d13ba250aee3cb9d1a4378bca62dbcca34f1e5b96fe43027249bffa2e8b5ac659fe2d3b2f2df7c2fe2f69349899
 
-Package: md4c
+Package: minizinc-static
 Architecture: aarch64
-Installed-Size: 320
+Installed-Size: 15424
 Maintainer: @termux
-Version: 0.5.3
-Homepage: https://github.com/mity/md4c
-Description: C Markdown parser
-Filename: dists/uncode/main/binary-aarch64/md4c_0.5.3_aarch64.deb
-Size: 64704
-MD5Sum: 35e17f70b8c1bc9250c4004b4336ddf0
-SHA1: 11059d7bf78d936a89e25a64c110e77e06d1b742
-SHA256: 732e546694e3b5ddc5a2adc8b0d5da5915f144fa5eb422a9334305adb496a8b0
-SHA512: 9fe532e1ecfcef1d3d5e92e071e81ef8517472df5b50a0dd0ac1c70802fe3663fe3f710a06a57a8a624b0b6b57fba9ee92ec370a11020564cf3291775655394c
+Version: 2.9.7
+Homepage: https://github.com/MiniZinc/libminizinc
+Depends: minizinc (= 2.9.7)
+Description: Static libraries for minizinc
+Filename: dists/uncode/main/binary-aarch64/minizinc-static_2.9.7_aarch64.deb
+Size: 1851176
+MD5Sum: f30510f73300009a4f124b01f1cdb37a
+SHA1: f78ea36f649fa950362425bfa8b277624eb3f4e1
+SHA256: af755828ee1bbdde09166397e20f2c0167b23b18ff742f9d87b3d0569a55d08c
+SHA512: e5bb4e51cc8d6540d81bb1b1fbbf97586c17e6cf9c477568ddbf7446a07e008b56f47adcbddf2cb640c701fdfaddbceb3d15f98ce2957b156aba918a7131e8ad
 
-Package: mdbook-auto-gen-summary
+Package: minizinc
 Architecture: aarch64
-Installed-Size: 7060
+Installed-Size: 23128
 Maintainer: @termux
-Version: 0.1.10
-Homepage: https://github.com/cococolanosugar/mdbook-auto-gen-summary
-Description: A preprocessor and cli tool for mdbook to auto generate summary
-Filename: dists/uncode/main/binary-aarch64/mdbook-auto-gen-summary_0.1.10_aarch64.deb
-Size: 2254340
-MD5Sum: 5fbc0721508192ff8118fbae783c2667
-SHA1: a42999eaeff81a3b9878b08b3fb322c5dbf2673d
-SHA256: 22b9e0ddb36f72f7bbcf59648500ced056fcc4ca1fe2209115519332655f4fee
-SHA512: 15c2465231518eb56378abb70b548b52083c2b988b01ab0de8e7c933fb188a4bca29f1f1eda352ee098b2a34bc6e9b5188fb393956608da160bfa4244f18325f
+Version: 2.9.7
+Homepage: https://github.com/MiniZinc/libminizinc
+Depends: libc++, zlib, gecode
+Description: A medium-level constraint modelling language
+Filename: dists/uncode/main/binary-aarch64/minizinc_2.9.7_aarch64.deb
+Size: 3875448
+MD5Sum: d9205158aad0ddff93c611d14f847c57
+SHA1: 4540e9ea08810ddf7c2ec757e773028a7312968a
+SHA256: c4f106c13f376964422297cbebfeec43d655cfec28ff1d8cbac656fd2428ff41
+SHA512: 7aef2bcba91cf925c73b789e93299705c2ccb3995ff97b3110478c4f9590ee58e08b339bf5c3eab365ec2903ff51bd0e613fc2798f9bff9b3b42c3ab105acae6
 
-Package: mdbook-cat-prep
+Package: mkbootimg
 Architecture: aarch64
-Installed-Size: 1464
+Installed-Size: 80
 Maintainer: @termux
-Version: 1.0.9
-Homepage: https://github.com/gjk-cat/cat-prep
-Description: A preprocessor for mdbook which provides teacher, subject, material and tag functionality
-Filename: dists/uncode/main/binary-aarch64/mdbook-cat-prep_1.0.9_aarch64.deb
-Size: 473616
-MD5Sum: a9fe69ddc8588540ea9d4284119ddb0d
-SHA1: b631fada3fcd03d7a7e48a24bb221e66c7882353
-SHA256: 340a3d27bbf30dedc00e4ac512f8838786bd3f87d19d2080bc5c38ac207e7949
-SHA512: bf2c22b05f7369730fbae95b5a26cde700c2ee5f026845a87a588ae20bbe7887ddf4ad58fa813731fa54d1dc333c3eb78a37f1ef3b85c1d77b5438f40e097a19
+Version: 2022.11.09-1
+Homepage: https://github.com/osm0sis/mkbootimg
+Description: Maintained fork with android's mkbootimg and unpackbootimg
+Filename: dists/uncode/main/binary-aarch64/mkbootimg_2022.11.09-1_aarch64.deb
+Size: 12196
+MD5Sum: 1fc0eeba0d508797c44c93c8020eb321
+SHA1: 984da4a8f61e10fef48010cb3b172552f5c3a640
+SHA256: 7300eeeb97dd38de30bf02ada21eec276105ad3624545446f895ce73fb504ff1
+SHA512: 27fee3fec707eab5abba207ee31ba6794d37d918fa0008094e01d33822603a3b63d57ea380258cb88edf42ee5286f2d30119866f42e8c0644548c80c3ae5caff
 
-Package: mdbook-epub
+Package: mksh
 Architecture: aarch64
-Installed-Size: 11404
+Installed-Size: 368
 Maintainer: @termux
-Version: 0.5.2
-Homepage: https://github.com/Michael-F-Bryan/mdbook-epub
-Description: An EPUB renderer for mdbook
-Filename: dists/uncode/main/binary-aarch64/mdbook-epub_0.5.2_aarch64.deb
-Size: 3577760
-MD5Sum: f2ca09bbb1a82544f1688f40c1b430ec
-SHA1: 9d92dc5bcda06ec09161a67ce064647c5621a164
-SHA256: b89ba638916627033960f3c4ff4e0dcf931c96d8f25df97d103a2954c04018af
-SHA512: c5f5b4b1e083ba3d0667daaead87eba043c4b71a60673542b1f76bc8abf4e28962b5c737b4bea76ba5451ad089981e175c80d4af02637700e164386df8738f4a
+Version: 59c-3
+Homepage: http://www.mirbsd.org/mksh.htm
+Description: The MirBSD Korn Shell - an enhanced version of the public domain ksh
+Filename: dists/uncode/main/binary-aarch64/mksh_59c-3_aarch64.deb
+Size: 170196
+MD5Sum: 627e20afbd920a71763262e9e47fab95
+SHA1: 2cc1b7863c8b8833cde66f27b50839bdd9429f9d
+SHA256: 2dea624be3c5a390d0a318f657a933c97598135f66516cf212bdb2c4d0425c80
+SHA512: 65ded4e42523669f5efbd1fd3ce2da00a36380116822a8bbe0792ff3530aca4d17bbdaf7e47ac1255ad267c6918c977a7b5aa490ef8f13396d2eb5c9ff5e8df0
 
-Package: mdbook-katex
-Architecture: aarch64
-Installed-Size: 3128
-Maintainer: @termux
-Version: 0.9.4-1
-Homepage: https://github.com/lzanini/mdbook-katex
-Description: A preprocessor for mdBook, pre-rendering LaTex equations to HTML at build time
-Filename: dists/uncode/main/binary-aarch64/mdbook-katex_0.9.4-1_aarch64.deb
-Size: 898728
-MD5Sum: e0bb9a7796594d49ca7ad98376263698
-SHA1: ddaacbae4a0e94d4d8b0aff24cdbcb76dd2fbcd9
-SHA256: b55859af38896277e8dc3d34d56bb86e2479d9909cf5cd2db4834432c85e953e
-SHA512: 9a0a0fbf365bd1676e5ae64fb3780aa1fa3d9543a2737ce385f31be32f1ac180f841bed36d34f6c4f2a1164854d2a0662c8f6752840f805a6d9b24d4b976087d
-
-Package: mdbook-mermaid
-Architecture: aarch64
-Installed-Size: 5948
-Maintainer: @termux
-Version: 0.17.0
-Homepage: https://github.com/badboy/mdbook-mermaid
-Description: A preprocessor for mdbook to add mermaid support
-Filename: dists/uncode/main/binary-aarch64/mdbook-mermaid_0.17.0_aarch64.deb
-Size: 1491028
-MD5Sum: 9da672176073a3a5545fa5400cf5c7d8
-SHA1: f4c6917aed4a0db4c8a19be3639ef75a624f5e8a
-SHA256: 85227e11a9ad85cb1479d0ca2b37539f87bbe8a08920ec2c9219073fbdb1cacd
-SHA512: a3ba173cbdf8d9dec85cef34bb6ac560fb72ceb59d038836c7efd807cc61066672d8bb7f99f908e35a5924146eccf3e775c56133a0345e1e606fd938c18d9f98
-
-Package: mdbook-open-on-gh
-Architecture: aarch64
-Installed-Size: 2640
-Maintainer: @termux
-Version: 3.0.0
-Homepage: https://github.com/badboy/mdbook-open-on-gh
-Description: A preprocessor for mdbook to add a open-on-github link on every page
-Filename: dists/uncode/main/binary-aarch64/mdbook-open-on-gh_3.0.0_aarch64.deb
-Size: 705144
-MD5Sum: cb0b239e5d68f79f7f1bf46ba5be3175
-SHA1: 051a661aedc58ba93fe778adb68d1f667aabd053
-SHA256: 05810b5409b93fb268804c44234bfa7b64ee9cf4ae80fc775f27ae667313bc31
-SHA512: e87194d5eee122b644a24134546dcc72981ccfc437d48d7df7739247069b43ccb0aca56fc96f8bbefbf169a08795f166e8e75eb7b71833c8d23bf4e59fc56a70
-
-Package: mdbook-pikchr
-Architecture: aarch64
-Installed-Size: 3124
-Maintainer: @termux
-Version: 0.2.0
-Homepage: https://github.com/podsvirov/mdbook-pikchr
-Description: A mdbook preprocessor to render pikchr code blocks as images in your book
-Filename: dists/uncode/main/binary-aarch64/mdbook-pikchr_0.2.0_aarch64.deb
-Size: 832560
-MD5Sum: 0ad54770930cd7b51d27096b162a6acf
-SHA1: 74078aec80f494fd11f9e5a9c7286a233a08abab
-SHA256: 1952b90a2f67a99d580d53ef1690806ea3ea99334402fb4407deb86f1107e8b0
-SHA512: b5eb1012cb03b3ecaa3eb3d2faaac83269817a778ee2e51bce62ce6d4155b5fff26ea4274ec51c60d65939a094edad760e281f9897591473e9f24403bdf01e4c
-
-Package: mdbook-presentation-preprocessor
-Architecture: aarch64
-Installed-Size: 2192
-Maintainer: @termux
-Version: 0.3.1-2
-Homepage: https://github.com/FreeMasen/mdbook-presentation-preprocessor
-Description: A preprocessor for utilizing an MDBook as slides for a presentation
-Filename: dists/uncode/main/binary-aarch64/mdbook-presentation-preprocessor_0.3.1-2_aarch64.deb
-Size: 582652
-MD5Sum: 8f7e36aa2ad2865f75f21f68111e9a41
-SHA1: ebf094ed575e101bc87a08090ad675eb6d7c80c6
-SHA256: f6407987ab347723c3cb59274171bc6a4a490cf0af59988c387623eef48a2624
-SHA512: fa358468656f394aee3400f72a0d10428ee92412d941cc500ef4faec3864a31c586cbde6ccd0ee78685b6212d54737bbd98ad9d452c04567114ed071e63ea122
-
-Package: mdbook-svgbob2
-Architecture: aarch64
-Installed-Size: 2064
-Maintainer: @termux
-Version: 0.3.0-1
-Homepage: https://github.com/matthiasbeyer/mdbook-svgbob2
-Description: Alternative mdbook preprocessor for svgbob
-Filename: dists/uncode/main/binary-aarch64/mdbook-svgbob2_0.3.0-1_aarch64.deb
-Size: 627188
-MD5Sum: cdaf6dfd5e9ae579e791794c0d0ca5eb
-SHA1: ec630dfa4d5838f9027007ecc6c17cbe45c332ad
-SHA256: bfe0897da4a6f111e69d2cea7cdb52a27579852845b57b3435e2db06f14f3ed5
-SHA512: 0ddb2bdb19326244d4b3ebabb39835ec962810b9482d65674d92b96292e7406088b9b34b953e52fd2f2307355710d15b833020684c45bbad117b0bbdedcb5ce1
-
-Package: mdbook-svgbob
-Architecture: aarch64
-Installed-Size: 3752
-Maintainer: @termux
-Version: 0.3.0
-Homepage: https://github.com/boozook/mdbook-svgbob
-Description: SvgBob mdbook preprocessor which swaps code-blocks with neat SVG
-Filename: dists/uncode/main/binary-aarch64/mdbook-svgbob_0.3.0_aarch64.deb
-Size: 1010060
-MD5Sum: 78c86bade4e7499b82933ecd2e3395e5
-SHA1: d0e6f4118b5e4c02a51fd3c9dd52b88280c89575
-SHA256: 8d58c1ee46541107477df78ba46fa28d6125c73c811e98905e10bc75b30a361c
-SHA512: 0084c426eac2cfd7bddbd6d0194aaa0b3b9ba8646ea8ba6a44ca23f1f7dd97705aac70055e068a927f3c77680a5d0c9fc88a5a6eed7b703c7c68f57e00f9ce8a
-
-Package: mdbook-tera
-Architecture: aarch64
-Installed-Size: 6372
-Maintainer: @termux
-Version: 0.5.1-1
-Homepage: https://github.com/avitex/mdbook-tera
-Description: Tera preprocessor for mdBook
-Filename: dists/uncode/main/binary-aarch64/mdbook-tera_0.5.1-1_aarch64.deb
-Size: 1134348
-MD5Sum: 162a82dbd51acdfbfb421882489e122c
-SHA1: f94c03934ae25ecff6c08587125d04062ecb0cb2
-SHA256: 771babc367b58b99e54e20a1eda1669d9e69792c59aca815694f56d1e58e140c
-SHA512: c3d5d5afcd034ca3fdea0a23a5a134e891e492ac17e25ccaa7512d85521ea5ff28d55cc92c887f3a130a96a4690aa9af1b2d53a8acb837c2f5c4e58cb3966702
-
-Package: mdbook-toc
-Architecture: aarch64
-Installed-Size: 1436
-Maintainer: @termux
-Version: 0.15.4
-Homepage: https://github.com/badboy/mdbook-toc
-Description: A preprocessor for mdbook to add inline Table of Contents support
-Filename: dists/uncode/main/binary-aarch64/mdbook-toc_0.15.4_aarch64.deb
-Size: 452232
-MD5Sum: ee77e9699e16afa31dfb2b820f928b35
-SHA1: 4c323e2b11f306813e9db14aafb1d62ff0310fde
-SHA256: ca9870e02f96c4d8a126b228ebf0b8360b1da84c15bfc863f2b3d087cd40e377
-SHA512: fc9db8061495d21d1da01bdf91ab01b3592ed540afd355c23e47b11ac20118536eb06ac1759acc92b06b000a1c31f240a9fa617c611fba0f7b8d4b8aeb17b8c8
-
-Package: mdbook
-Architecture: aarch64
-Installed-Size: 11492
-Maintainer: @termux
-Version: 0.5.3
-Homepage: https://rust-lang.github.io/mdBook/
-Description: Creates book from markdown files
-Filename: dists/uncode/main/binary-aarch64/mdbook_0.5.3_aarch64.deb
-Size: 3183076
-MD5Sum: 571f7b32e4da47522f8992bc46917678
-SHA1: edba376a0bac1ee27fc4d1b3e4df9e593933a55c
-SHA256: 1308ce74a8814de701cd7102e0accc4678891082282f91d141f3b14509e99991
-SHA512: aaf31fcee7a26fd9a1d3a440872f59a91ccb5d79df205a6c78c0592db189c4ce4bbe7bdf48b8871d79a2ef7c952c013e3638ef1d3e8b67ba6ff180d9edb38e69
-
-Package: mdns-scan
+Package: mktorrent
 Architecture: aarch64
 Installed-Size: 64
 Maintainer: @termux
-Version: 0.5-3
-Homepage: https://github.com/alteholz/mdns-scan
-Description: A tool for scanning for mDNS/DNS-SD services published on the local network
-Filename: dists/uncode/main/binary-aarch64/mdns-scan_0.5-3_aarch64.deb
-Size: 7700
-MD5Sum: 63fff0091a35e881eac89cfd0f2cab6d
-SHA1: 63039e1ebcb640472c5da31e58ea22451d9a3f06
-SHA256: ee9dcc760734ad28a5fc30e5309b97a588e065b12baa9dc659f48fc125bff1b6
-SHA512: c7d6faf106479de408be06865f7663e34516d2c4620493ed9c8725a718611b9b6e9a4f24a87fbb1f40a1144d40407cb28f865b84b060d95922621d866eaa4613
-
-Package: mediamtx
-Architecture: aarch64
-Installed-Size: 50024
-Maintainer: @termux
-Version: 1.19.2
-Homepage: https://github.com/bluenviron/mediamtx
-Description: Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy
-Filename: dists/uncode/main/binary-aarch64/mediamtx_1.19.2_aarch64.deb
-Size: 11619952
-MD5Sum: d1326c854d76372d02e3dca0822b87e5
-SHA1: 28cdd7ca03e70832a2577def54632ffbf81afe0d
-SHA256: 3dbdf74a36c45ab9ca8070df0f98f3dbff9fb555b94793335587ab5a70b88629
-SHA512: 707b74ecac24eada68878732c12ac20bf69de9a86026b7d488a60492b3cd1b8df1cb1db050f2b86a90390e0ddc44dcacb662fdf90346aecd2af668bf8ea52d4e
-
-Package: micro
-Architecture: aarch64
-Installed-Size: 13612
-Maintainer: @termux
-Version: 2.0.15-1
-Homepage: https://micro-editor.github.io/
-Description: Modern and intuitive terminal-based text editor
-Filename: dists/uncode/main/binary-aarch64/micro_2.0.15-1_aarch64.deb
-Size: 3672112
-MD5Sum: eab599874d8d0d19c568d0d25f6b6b35
-SHA1: c145d90a939e8c90b149a298ec1a74eeae9976fd
-SHA256: 78177cc94b687622927abac30aa6008ea9b04baa8d2c6a3fd6c3b1d756f025e2
-SHA512: 1e5453a21588ff9abf18b7515ec8eb0e2aeb2217b3bd022512f45a84041fb38301d161cb8b2b02400fe8084f7a1508d0cf66529c7d2bd2fe9388480dc072cc21
-
-Package: microsocks
-Architecture: aarch64
-Installed-Size: 60
-Maintainer: @termux
-Version: 1:1.0.5-1
-Homepage: https://github.com/rofl0r/microsocks
-Description: tiny, portable SOCKS5 server with very moderate resource usage
-Filename: dists/uncode/main/binary-aarch64/microsocks_1:1.0.5-1_aarch64.deb
-Size: 6932
-MD5Sum: 1faf7658fe37042055a22cd480f69471
-SHA1: b205e5287682df3fc37f5cff6efd248218e567a3
-SHA256: d5167bf0804caf23399bf744354a9c3258e1c5c0faebf9ff818a830156776eee
-SHA512: 1aa6a6edd6da37d3135a010cd7dafc826ac66279f3499bbfc474d05beccefe91e7d5c98606bef846793c4a1b3e1f9ae018348d77d95be9012af10db6349c62a2
-
-Package: miller
-Architecture: aarch64
-Installed-Size: 15540
-Maintainer: @termux
-Version: 6.19.0
-Homepage: https://miller.readthedocs.io/
-Description: Like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON
-Filename: dists/uncode/main/binary-aarch64/miller_6.19.0_aarch64.deb
-Size: 3532712
-MD5Sum: 23b7375bdf9a0a364730e4e0b68b8a5f
-SHA1: 4ee08989ac0d052b53230ccec92817c42c45d6ba
-SHA256: 49794496f75006429dfee385ddb1e0ffc093f089b29bb3e5adfd226428f8002e
-SHA512: d8b9b1f5560941c1a4423fa77e34b393330dcc562102b000d6f435d64bfee94c51861454697dfbf9a17b141a6b43db155be39a2fb54cf8e11f7c3287ce1d326e
-
-Package: mimetic-static
-Architecture: aarch64
-Installed-Size: 1672
-Maintainer: @termux
-Version: 0.9.8-2
-Homepage: https://www.codesink.org/mimetic_mime_library.html
-Depends: mimetic (= 0.9.8-2)
-Description: Static libraries for mimetic
-Filename: dists/uncode/main/binary-aarch64/mimetic-static_0.9.8-2_aarch64.deb
-Size: 152568
-MD5Sum: 099495944790917119e19d00e9a8213a
-SHA1: 5615a0eb72d73a573d8b69d7e4d195bdfb5c3cc7
-SHA256: 648e7792eee0925ee1e004011aa48d5e384c85341419e46823ebd81daf9d96b9
-SHA512: 0db5310da4b1bb3be6724a9ca37236d13adba5e24d4ea50accbf711be7adb14602fa9d886f902bb73b49e1afe1394755016d8f57eb22bc82650f05436e9a5f0a
-
-Package: mimetic
-Architecture: aarch64
-Installed-Size: 628
-Maintainer: @termux
-Version: 0.9.8-2
-Homepage: https://www.codesink.org/mimetic_mime_library.html
-Depends: libc++
-Description: A C++ Email library (MIME)
-Filename: dists/uncode/main/binary-aarch64/mimetic_0.9.8-2_aarch64.deb
-Size: 96364
-MD5Sum: 68297648d2b95e50cac470c72b4dae74
-SHA1: 0457ecfed53e645ca823ea4ba5676053878f1252
-SHA256: 60bb4ae08615ff5da77945dbaf2b9dbbb8a48e0e5052811321dc7d8dd8942e6a
-SHA512: abffa778613ba49b51a51a69bb9b9d7645c681c7605752efe41655358854b340e54d8095b67eb12249b0e4fcd0946e64710c76f861add2f59eb8825a2b2c8900
-
-Package: minesweeper
-Architecture: aarch64
-Installed-Size: 5612
-Maintainer: @termux
-Version: 0.3.1-4
-Homepage: https://github.com/benhsm/minesweeper
-Description: A simple terminal-based implementation of Minesweeper
-Filename: dists/uncode/main/binary-aarch64/minesweeper_0.3.1-4_aarch64.deb
-Size: 1620100
-MD5Sum: fcd6dd12bbf6af7a59f0178924acd465
-SHA1: dfd90b6891f1e7c1b6bd20dd0aef24e16022afc1
-SHA256: 3f1cce846a8c9d8cdce6bba1413bb5e6c0f8a5b07e4950a63b1c8a31d8b012ba
-SHA512: 9ea0b64d0f6e7152614c5c7f7160bc1fe116c802229177d096a6e089bab7d187a1fcdfc2104b07c570fd0bec50c7cd3aa23fc4c181426b38a957b9bef2e1c238
+Version: 1.1-p20210130-1
+Homepage: https://github.com/Rudde/mktorrent
+Description: command line utility to create BitTorrent metainfo files
+Filename: dists/uncode/main/binary-aarch64/mktorrent_1.1-p20210130-1_aarch64.deb
+Size: 11700
+MD5Sum: 001bb444f20ecc4e1ebb3273c2144557
+SHA1: b70a88b390c1106d2880869faecba65131096894
+SHA256: 8369087a39e9fa848c11953e5f47f2eeb7c17fd90a1e528f5852014354836cbc
+SHA512: 36b3adcefd655fde7e55461913180622583e3448cc21cfd2179a6be508b24a8fe9939cb4dd0ec8b8d66418076be4f9b46308df272b47f3a5b5cb96f3f3d0251f
 

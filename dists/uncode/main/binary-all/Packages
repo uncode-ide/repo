@@ -1,32 +1,29 @@
-Package: mdds
+Package: ca-certificates-java
 Architecture: all
-Installed-Size: 1272
+Installed-Size: 184
 Maintainer: @termux
-Version: 3.2.1
-Homepage: https://gitlab.com/mdds/mdds
-Description: A collection of multi-dimensional data structures and indexing algorithms
-Filename: dists/uncode/main/binary-all/mdds_3.2.1_all.deb
-Size: 126624
-MD5Sum: 3eb9436d94bfd499d7b7b431c25c4776
-SHA1: d037483895323c9755bf45b782c5a3ecd8fca3b2
-SHA256: b3074fbb2253492f6776f97fdcb77e338c1252430f2d10ee0e035f47cf1bbc42
-SHA512: 5b382632f5fdc26fa1a8d361eb87dd76aeb80dae6905f4b8b662247b2d5c3cdcba77716128af123587dba6f7cb714fcb71adb019c816982bcecde6784cfa39c8
+Version: 1:2026.05.14
+Homepage: https://curl.se/docs/caextract.html
+Depends: ca-certificates (= 1:2026.05.14)
+Description: Common CA certificates (java keystore format)
+Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
+Size: 96476
+MD5Sum: d35fe08c9eefe9b6d84a8056107ae934
+SHA1: 974f555861a83288a1d49c1f8b60fbc54ee5a449
+SHA256: 14a4f4936fb1c4ca7951e9ca7c2b1079e455a7869e8ed8d35e99f3e34ba612f1
+SHA512: 7ebf731546efc08cb70da357e1ff1206e47fec720be451badcfe5a4eb55b5e443da7e7ef7b2760400d861d922c30b5ada8aef9dad1ea4f2eb614863860bfc8e4
 
-Package: media-types
+Package: ca-certificates
 Architecture: all
-Installed-Size: 120
+Installed-Size: 232
 Maintainer: @termux
-Version: 14.0.0
-Homepage: https://pagure.io/mailcap
-Breaks: mime-support
-Conflicts: mutt (<< 1.8.3-1)
-Replaces: mime-support
-Provides: mime-support
-Description: List of standard media types and their usual file extension
-Filename: dists/uncode/main/binary-all/media-types_14.0.0_all.deb
-Size: 19672
-MD5Sum: 3a833137f0058eadc31ceb221dd30ebc
-SHA1: a7ea49bce3aabc21be7e76d9c5d1f587d00e5233
-SHA256: 31f32364eb6cf1963a31efac00b7e69476f5a3c04d745845da26814b2cf1d7c2
-SHA512: 373d393d96e841595994e44feb19141e030453ee10df37546decff89546eadc95717e8dd0bdb20d53a6ad087a54d49975f8164291c1e8bcfd840bbded9774c8c
+Version: 1:2026.05.14
+Homepage: https://curl.se/docs/caextract.html
+Description: Common CA certificates
+Filename: dists/uncode/main/binary-all/ca-certificates_1:2026.05.14_all.deb
+Size: 105752
+MD5Sum: 5a97e6c7c515b3e4a1c918d377bdbe2a
+SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
+SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
+SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
