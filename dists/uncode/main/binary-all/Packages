@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96496
-MD5Sum: af4ff9951e983af6cb71997b0d5db15d
-SHA1: 7205fe2c39c1349f03ca9da8682bde1e36e7e662
-SHA256: 06720ab323e170d2a78eee09032bc1c7f63b39456b623e747e5af14e0188bfdc
-SHA512: c55d21a294bbb0b7b6d3a2bc42712cd5e4ea1ffeb08115378cf28f379f7ad020726fedf9a1b6d134b533ecc980f6da0c27c927b6b0207fb1b8011e987c1df866
+Size: 96500
+MD5Sum: 3a7068bd8e913d5230d029643dfb9552
+SHA1: 830bcee700e9e77f004bdd359507b49873478f63
+SHA256: 9ddf72fbf59fdee5f595a5eecf1b4c561cd9ec1cd609e582e1a5a47fcb169cdf
+SHA512: 5aa224692d1920b659d795ed17466aa7f46dde355803cf737335987eaf6586f44aa032a26f6e41604471cee3adb388f0c3de4a5e81124e718d699ac677fdd996
 
 Package: ca-certificates
 Architecture: all
@@ -27,31 +27,19 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: mypaint-brushes
+Package: npm
 Architecture: all
-Installed-Size: 3836
-Maintainer: @termux
-Version: 2.0.2
-Homepage: https://github.com/mypaint/mypaint-brushes
-Description: MyPaint brushes
-Filename: dists/uncode/main/binary-all/mypaint-brushes_2.0.2_all.deb
-Size: 1479148
-MD5Sum: bb07203ed8c523a5fffc8582cdb1be3c
-SHA1: 64450d4a0300156d6c80262a22bee339de02f260
-SHA256: 016f29a8582fb5d8154b6be85c9a88de00ad4a4323b0ddc6a03b16ac86eab36f
-SHA512: 947a84c15d6d50e433f51b48bac62220353ae5791eaff9c021814ad71c39a75427693cdb7243e8d7dea672d35ab69dee3db7e75587b636bbdcead2ae0d23afe4
-
-Package: ndk-multilib
-Architecture: all
-Installed-Size: 361132
-Maintainer: @termux
-Version: 29-1
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-Description: Multilib binaries for cross-compilation
-Filename: dists/uncode/main/binary-all/ndk-multilib_29-1_all.deb
-Size: 63097796
-MD5Sum: 2c4e9a4e448a14165a2fa98e1a9bd49e
-SHA1: 767f88d86a34f188c511ec49ff66a29db43c9d97
-SHA256: 512cb09641a2882864b0764f627cfb36aab2c68c2f8e3a14dcb19d207e20e5e9
-SHA512: 7e47844646a70e5f198da38b106a0a0ead292be186c052e44b32c9760cc7b2d3e2f9774b1fa6003c86cb563a14994c01047e1eae3b7b343742c48bc9ed55a9d3
+Installed-Size: 18200
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Version: 11.18.0
+Homepage: https://docs.npmjs.com/cli/
+Depends: nodejs | nodejs-lts
+Conflicts: nodejs (<= 25.3.0), nodejs-lts (<= 24.13.0)
+Description: The package manager for JavaScript
+Filename: dists/uncode/main/binary-all/npm_11.18.0_all.deb
+Size: 2023872
+MD5Sum: 2f40c9fca81920cf37bd018f2140e198
+SHA1: 5f535e4c5e6379e1b85d24cc81f723aaac4a7f1a
+SHA256: e763da1c238d5277e102b7357870b65f3ab7238107eb6a072d78288be95de8d3
+SHA512: 3d74765acd834dd080465cfacbd2af9c3e2f72de819da2668d411bf59ce6f6cba892da564b05b54fcafd05f5afdaff903b44adda04144d05f4f7e60c079dee04
 

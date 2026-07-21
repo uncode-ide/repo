@@ -1,3 +1,49 @@
+Package: 7zip
+Architecture: aarch64
+Installed-Size: 2980
+Maintainer: @termux
+Version: 26.01
+Homepage: https://www.7-zip.org
+Description: 7-Zip file archiver with a high compression ratio
+Filename: dists/uncode/main/binary-aarch64/7zip_26.01_aarch64.deb
+Size: 885256
+MD5Sum: 5a69af5f1facb037b6aeb74632bce16b
+SHA1: 0fd19a67ed39e0a4d90ef1311dd1c07e8076940f
+SHA256: f8d958666149e89102ee4532e0b42137d9d1cfe28debd34e912f2ee20b88d246
+SHA512: c03467e4451565b73fbbe0cb2887f4e04afd39ae6fe68e41b7e57234f35accf093bb8448488d701fbe602bfe406cf20fea3c15a60b1ffa4093b303f8964757e0
+
+Package: blas-openblas
+Architecture: aarch64
+Installed-Size: 32
+Maintainer: @termux
+Version: 0.3.33
+Homepage: https://www.openblas.net
+Depends: libopenblas (= 0.3.33)
+Description: OpenBLAS symlinks for BLAS/CBLAS/LAPACK/LAPACKE
+Filename: dists/uncode/main/binary-aarch64/blas-openblas_0.3.33_aarch64.deb
+Size: 1008
+MD5Sum: 3fea01dc9c6f28fbc1f35a75ae078cec
+SHA1: a1f7962803f4fae98248577b69e8ca0f9bb61203
+SHA256: c40af47814218904a24ef082704b58fabfda1284b72176348b1201e0608f58a4
+SHA512: fe6b34556b32433aff205ae0a01d32d8af03241634cf9dd883b555506305a70d1ca80913b32ac673da1a5961b8a10630785715d3462ccd75986b9e17dff93dc1
+
+Package: c-ares
+Architecture: aarch64
+Installed-Size: 1100
+Maintainer: @termux
+Version: 1.34.6
+Homepage: https://c-ares.org/
+Breaks: c-ares-dev
+Depends: resolv-conf
+Replaces: c-ares-dev
+Description: Library for asynchronous DNS requests (including name resolves)
+Filename: dists/uncode/main/binary-aarch64/c-ares_1.34.6_aarch64.deb
+Size: 192452
+MD5Sum: 8bdf24d283f4f276fc12478b9a0b89a3
+SHA1: 60c6a183d0dc6aa6eb4f93229a7175c87512f9ae
+SHA256: 6cd16a7496b1a237184cbe4ef048db07529e481e837780c84b964b3d12dbe8b9
+SHA512: ea51626f16891611cd6e24763ad4139df918ad4dfa692f1c285d364bda4b143c90a5cb737992a881c8f4ce8dd51c929b36971735355cdcadbd330529c6847509
+
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -11,200 +57,227 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 892
-MD5Sum: 616f9203ada3c1b4d581bf91ba354fb3
-SHA1: 8a2962b12d5cf540cecc1337f4872ab4c1d4a662
-SHA256: babf20810b30d54954ca3c3c65c9f807ee7b0049643069cc60323ffffea0c4d6
-SHA512: 4f2b5b280b06fbb3362016c6426b747d727aac4ae628256ae36da453d6006580e6a01de775e69016f8d90776062e8ece9c0dd768909bd2127d38cdf61bf89440
+MD5Sum: 5b5672bcdbc473604a98f8d431b41f50
+SHA1: 3a5465502b3118eaec967710818bb4ad841fab73
+SHA256: 3e48996a96250828310be5950642ca2208ba69ad910007202c8813bd80f9bd40
+SHA512: ab2ca941c84249238063c81b96d2bcbd0688c3a8efb78b18287d91befcb6f84d7786d67eb20f5b236306e38fe2925e32a4f49e3e3b0e6d76b07891a1ce88539c
 
-Package: luajit-static
+Package: libopenblas-static
 Architecture: aarch64
-Installed-Size: 680
+Installed-Size: 23636
 Maintainer: @termux
-Version: 1:2.1.1780076327+gb925b3e
-Homepage: https://luajit.org/
-Depends: luajit (= 1:2.1.1780076327+gb925b3e)
-Description: Static libraries for luajit
-Filename: dists/uncode/main/binary-aarch64/luajit-static_1:2.1.1780076327+gb925b3e_aarch64.deb
-Size: 221360
-MD5Sum: 45108cc5e84caf516f136eaca4ede321
-SHA1: b76b2599a2ff722fc609c01240224313172cb135
-SHA256: 77a0357f794b9457803a26a5f70559e8d2bfd29a765120ae67f14d8b2d23ecaf
-SHA512: f48594a9089230cfeb8538a58ce706554a4bd2dd546dff41ea4b7e7353a13351343c234abaa53b1d735ed050a02fe0b7bc60b063a465ae9e8e6184f28be8594f
+Version: 0.3.33
+Homepage: https://www.openblas.net
+Depends: libopenblas (= 0.3.33)
+Description: Static libraries for libopenblas
+Filename: dists/uncode/main/binary-aarch64/libopenblas-static_0.3.33_aarch64.deb
+Size: 2600972
+MD5Sum: cb638a870b018c4c7b1f012147b9a9a7
+SHA1: 4c98128518376385d63dac25efd98f4395883657
+SHA256: be990e199222f23a2580132e8a2edcb4d2c5823fdfa79dc5a6addebb19aae4fe
+SHA512: fa0d6613d68dcadf2e5cca8b13e8ffe5d5b9561192afb97e09f7940c9d6b4c9b19f6d7d20811a76039f88854efa62dfb0d6fdd80b090e75c1f8d9a3fb127dd4d
 
-Package: luajit
+Package: libopenblas
 Architecture: aarch64
-Installed-Size: 1336
+Installed-Size: 11804
 Maintainer: @termux
-Version: 1:2.1.1780076327+gb925b3e
-Homepage: https://luajit.org/
-Breaks: libluajit-dev, libluajit
-Replaces: libluajit-dev, libluajit
-Description: Just-In-Time Compiler for Lua
-Filename: dists/uncode/main/binary-aarch64/luajit_1:2.1.1780076327+gb925b3e_aarch64.deb
-Size: 289512
-MD5Sum: b57dbef2efe4048c64636cba187c2007
-SHA1: a357d75d7623f13634118686d0ca1d96ec724392
-SHA256: f7150a1bfca7fb866f164b1aa1d9522a7e7097dbb1e1ad4594ce0ea1a3007381
-SHA512: 21945649d78a76e34254f14ca406069380bfdcbad08a71875ec242f50e00255b3df0a258e62dd681b1a524344490d5f8576e9dd29449e093b7079828076bdbcb
+Version: 0.3.33
+Homepage: https://www.openblas.net
+Description: An optimized BLAS library based on GotoBLAS2 1.13 BSD
+Filename: dists/uncode/main/binary-aarch64/libopenblas_0.3.33_aarch64.deb
+Size: 2580072
+MD5Sum: 40689f54fa5e5272bd6d9c5b2282ead4
+SHA1: f766e20923efe6229bd2a2d7acd0b9eaf8b76ecf
+SHA256: ef87d883c25c0f508e7a3fea13964148743e3368efac5109df8aa8e05f1159a1
+SHA512: ff5b0b31cf69d2aa98faf4c52f92d96792007ed4bf73cadf69b84522aadd53f19bdc10353e01983b9998dbb8a87ee0644ae50978317bad7be1b8cf643e9c8dc6
 
-Package: nali
+Package: libtiff-static
 Architecture: aarch64
-Installed-Size: 12600
+Installed-Size: 696
 Maintainer: @termux
-Version: 0.8.1-1
-Homepage: https://github.com/zu1k/nali
-Description: An offline tool for querying IP geographic information and CDN provider
-Filename: dists/uncode/main/binary-aarch64/nali_0.8.1-1_aarch64.deb
-Size: 3370852
-MD5Sum: 0406edcf37f819f6ec56e0777fe82839
-SHA1: 5b75aa3c8284796b285019feb4f36bc888d138a6
-SHA256: 7f97a78aea432dbf60665d93a2c35cc6df1fe16fddcd4a0377913346be066ca8
-SHA512: 022bee65aaececd09309516e5f46f8f077fcd6c61b98681d53d356557dea33920bbb2af693d3f35aabeebd771d9850ff222a4c9c0a676a49b5e1688b186f3418
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Static libraries for libtiff
+Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
+Size: 135260
+MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
+SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
+SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
+SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
 
-Package: nasm
+Package: libtiff-utils
 Architecture: aarch64
-Installed-Size: 3268
+Installed-Size: 800
 Maintainer: @termux
-Version: 2.16.03-1
-Homepage: https://nasm.us
-Description: A cross-platform x86 assembler with an Intel-like syntax
-Filename: dists/uncode/main/binary-aarch64/nasm_2.16.03-1_aarch64.deb
-Size: 298556
-MD5Sum: bd10feb499104566d2c9dc948768469c
-SHA1: 1d037ef0606e9fc7d9994bf50d1fa91998368195
-SHA256: 3a4cfe8a855109c88b42362b7c53827b85f353068538f0c18a0e251ab32b25c6
-SHA512: 1fefa38109f30e6a03490109fc6d8ade5d1196e6661e7d152f70836b699c15143280bc21dfbd43b67b89109b674d072d2a4d930aa15936df2379c476f60c5cec
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Tools for working with tiff files
+Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
+Size: 255964
+MD5Sum: a0a56110c08879f75be05ad601a6e6cc
+SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
+SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
+SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
 
-Package: natpmpc-static
+Package: libtiff
 Architecture: aarch64
-Installed-Size: 40
+Installed-Size: 6416
 Maintainer: @termux
-Version: 20230423-2
-Homepage: https://miniupnp.tuxfamily.org/libnatpmp.html
-Depends: natpmpc (= 20230423-2)
-Description: Static libraries for natpmpc
-Filename: dists/uncode/main/binary-aarch64/natpmpc-static_20230423-2_aarch64.deb
-Size: 3828
-MD5Sum: 66668c2da4d9f2181b3c47e6323c95af
-SHA1: 9fe505a6a80444244e7d2fbdba9c21581c3bcbe4
-SHA256: eeb5e80cf205640882970e41bc3f04b5c8c8dc5c1c84cd8133dd23a0507c7c6e
-SHA512: 707c9bedd692498f24ce9eb7a87adf47553e655ff9545d185df29a9dc1ba2e76b7f04784b8265395061a5f267dfb50cbf9f14c8393e2d4ce77d09c80d30091bf
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Breaks: libtiff-dev
+Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
+Replaces: libtiff-dev
+Description: Support for the Tag Image File Format (TIFF) for storing image data
+Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
+Size: 821104
+MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
+SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
+SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
+SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
 
-Package: natpmpc
+Package: nerdfix
 Architecture: aarch64
-Installed-Size: 88
-Maintainer: @termux
-Version: 20230423-2
-Homepage: https://miniupnp.tuxfamily.org/libnatpmp.html
-Description: Portable and fully compliant implementation of NAT-PMP
-Filename: dists/uncode/main/binary-aarch64/natpmpc_20230423-2_aarch64.deb
-Size: 9884
-MD5Sum: 79d177f1c9b0e1afdecbbc9dec09cf54
-SHA1: c52a52c5d41b32fe70f70d876220dd0cdf4c554f
-SHA256: a31d594399d16eb1d3cf1e55ab4603ae2c97189e8450d59f8f0f433f7203cd49
-SHA512: 33c55c8cf9bcabdbb1e673155906d015c7fe283ab634ef711ba36a52a1d06c0c9aec66886bd4f4663638a49432368e33b245e2f2e36a4687c0ead525c2c52568
-
-Package: ncdu2
-Architecture: aarch64
-Installed-Size: 836
+Installed-Size: 3824
 Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 2.9.2-1
-Homepage: https://dev.yorhel.nl/ncdu
-Description: Disk usage analyzer
-Filename: dists/uncode/main/binary-aarch64/ncdu2_2.9.2-1_aarch64.deb
-Size: 309212
-MD5Sum: 46e9050ec54f6e5b5f4eb0a7d6f81ecc
-SHA1: 4a8765d83f2060e5fef82ba7804deb7ef094cc0b
-SHA256: a772dfef8101314e5d1ae4e10e10c90724139bf191def17a59ee34a979293965
-SHA512: fdbd38685f14f7e276b8b594bcbe8e1a8d9c225623e188ba177a3586c862be90a788cdbd6ac121ddf03478305d6f0c84ab45e7163f2d2887f58a3ce00f10926f
+Version: 0.4.2-1
+Homepage: https://github.com/loichyan/nerdfix
+Description: nerdfix helps you to find/fix obsolete Nerd Font icons in your project.
+Filename: dists/uncode/main/binary-aarch64/nerdfix_0.4.2-1_aarch64.deb
+Size: 959604
+MD5Sum: 0e529c08e697b8b85fcf3334692768ff
+SHA1: 58e1732a473f2782c320c9113ea73196d6d62808
+SHA256: fd04d014fb9ade989a94a9741d8e0a434d4e4c0571feec8126a044a6aabf5421
+SHA512: bda91955cbf5d16888e57657e5005afb674a561dcf313e54abdce1bb1411a92e526036e71c8935f3131e82276f66a97ed687695a236a467b3ec3596917890257
 
-Package: ncftp
+Package: net-snmp-static
 Architecture: aarch64
-Installed-Size: 1236
+Installed-Size: 5100
 Maintainer: @termux
-Version: 3.3.0-1
-Homepage: https://www.ncftp.com/
-Depends: ncurses, resolv-conf
-Description: A free set of programs that use the File Transfer Protocol
-Filename: dists/uncode/main/binary-aarch64/ncftp_3.3.0-1_aarch64.deb
-Size: 216748
-MD5Sum: 119beb0638aa7f1efe17918acb5698e4
-SHA1: 1904a5048524146677e23f2226b9779ef3ab8c66
-SHA256: a8a7ad9acc145f9be1f892c5fa945e89690301eeff2f617e42b2fd724bcb659d
-SHA512: dd6c6627aa3f0c89326bc662e2e50461f765f09a092990d05c7ff3ee4216d9aea3ca0ea0ae88c275bd01fcc6631f9c39688a77bcc283671833ffa11bd4ad39ca
+Version: 5.9.5.2
+Homepage: http://www.net-snmp.org/
+Depends: net-snmp (= 5.9.5.2)
+Description: Static libraries for net-snmp
+Filename: dists/uncode/main/binary-aarch64/net-snmp-static_5.9.5.2_aarch64.deb
+Size: 813348
+MD5Sum: f8a8125310e1cbbe9f614fa4f8b5b339
+SHA1: fb7d1bbd338ce630a7d978c8ec8d1e475f3c462e
+SHA256: c0be45f9761b4707094a0e14de77dd749b28e8e326ff03b93f1e1d54ec32abab
+SHA512: 4924a96b6f2a3c4430b12641772259f6422c30b509ee288d3c35a475a80cff30b783b9a7188df521441d10b376dcfc6af8a28a987708359caee4660d5a356056
 
-Package: ncompress
+Package: net-snmp
 Architecture: aarch64
-Installed-Size: 72
+Installed-Size: 7556
 Maintainer: @termux
-Version: 5.0-1
-Homepage: https://github.com/vapier/ncompress
-Description: The classic unix compression utility which can handle the ancient .Z archive
-Filename: dists/uncode/main/binary-aarch64/ncompress_5.0-1_aarch64.deb
-Size: 11856
-MD5Sum: 512dd7d02b63ed742549b3a0cb34e7d3
-SHA1: 8bbf3a49d9915ac46879e6382582d29cc65c14d6
-SHA256: 2ebdf34621db9175df967544b1bfd2676b3943dff664bb174ac3fed39e329a18
-SHA512: 683b58b14d549930d9601957066e781d2a21e1c4b2535406d19e7094a126d23597a36d4551e6174213d3626bd6d675f602cabe3c62f782c55fa20f364560df9b
+Version: 5.9.5.2
+Homepage: http://www.net-snmp.org/
+Description: Various tools relating to the Simple Network Management Protocol
+Filename: dists/uncode/main/binary-aarch64/net-snmp_5.9.5.2_aarch64.deb
+Size: 1382360
+MD5Sum: a19f9d98d322bfe1261ec7e9c0574f4d
+SHA1: 08775f3b7194deaf0ac8c01f0b9f2074c92f5d3e
+SHA256: 617cc3dfc8160e34ca9eba7ba7cf104a2abb6015e4871f1c985e1ecf848f464d
+SHA512: 163988681e13dac016b428781e905b9c86b9ecb30b464256aa52b45393c7a8cf8c43c784787be182037a0f79533a6dac27756c001555287c9281bb0a156cb052
 
-Package: ndk-multilib-native-static
+Package: net-tools
 Architecture: aarch64
-Installed-Size: 64
+Installed-Size: 564
 Maintainer: @termux
-Version: 29-1
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-Depends: ndk-multilib-native-stubs, ndk-multilib (= 29-1)
-Description: Install native static libs from NDK
-Filename: dists/uncode/main/binary-aarch64/ndk-multilib-native-static_29-1_aarch64.deb
-Size: 952
-MD5Sum: 134a502c4776c3e63eda2e0fed51dd47
-SHA1: 01a967b3351af1f82fab7a133d5c5c7756862f96
-SHA256: 2e2138c0041db7bbf30658285092342609b8b84fb78e76862fd9afef67d395b2
-SHA512: 57e16fd6c2ff119691e3037844264d82a7c01268df4961062d6b715b8618350e4040c230a330e63b0aa273e4d2f6429df34ca03bbe19a8f7579b4fafce7a7cc5
+Version: 2.10.0-1
+Homepage: http://net-tools.sourceforge.net/
+Description: Configuration tools for Linux networking
+Filename: dists/uncode/main/binary-aarch64/net-tools_2.10.0-1_aarch64.deb
+Size: 118468
+MD5Sum: 91fb611f976b0080cc8e76527f2a4d3f
+SHA1: c0a3ecd9df3c8e22c71f3a70b703393347341158
+SHA256: c0740a46d9a52655e2581998ef5c05b22c12c6ac6b273012a084c136874e566e
+SHA512: 32e869429bc9b431b1c8bff11c86708f78be3efe0102a16478ee334d6fc1f2decb0baa158f3b0a3f09ca84c5d6a84005883f9806c605749ff593df7efd4766ba
 
-Package: ndk-multilib-native-stubs
+Package: netsed
 Architecture: aarch64
-Installed-Size: 72
+Installed-Size: 60
 Maintainer: @termux
-Version: 29-1
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-Depends: ndk-multilib (= 29-1)
-Description: Install native stubs for shared libs from NDK
-Filename: dists/uncode/main/binary-aarch64/ndk-multilib-native-stubs_29-1_aarch64.deb
-Size: 972
-MD5Sum: 71d5f8a74bd5cefbc886cc42c38409b7
-SHA1: 4800485f9a497c739ab5884bf73e9eb3ecc2fcdc
-SHA256: 1aae0988e7001ef10076a10ed73ca2d7c1f67e8c3bc497a1857725a29c638737
-SHA512: 88f06d07e6b39a064b969253da62acbb7704236dc06ed537180ac51924cfb70a5d58710804a78efb8712951aee17121dd92013e75048a87077f9d61af34005c1
+Version: 1.4
+Homepage: http://silicone.homelinux.org/projects/netsed/
+Description: Alter the contents of packets forwarded through network in real time
+Filename: dists/uncode/main/binary-aarch64/netsed_1.4_aarch64.deb
+Size: 8088
+MD5Sum: 3859e6f216f3c47f4af35e3017f0774c
+SHA1: f5480d35e59e482ffd16c0407842950c9427cfb0
+SHA256: 3c8b6cec932d702b1c8c8b6fa7615c2830b1a1f13c36bfaa0d1b4ae66b4ff8bd
+SHA512: 06f64c3478e1c801d1fda3a04c9201ad1340fed141b9bb18a4f11b2bcafc6ad50f7af2af9b02960858dc654a67851103ebfd210c48feb3d4ab05cc398005f1d6
 
-Package: nelua
+Package: netstandard-targeting-pack-2.1
 Architecture: aarch64
-Installed-Size: 2104
+Installed-Size: 4
+Maintainer: @truboxl
+Version: 9.0-3
+Homepage: https://dotnet.microsoft.com/en-us/
+Depends: netstandard-targeting-pack-2.1-9.0 | netstandard-targeting-pack-2.1-8.0
+Description: A metapackage for NETStandard.Library 2.1 Targeting Pack
+Filename: dists/uncode/main/binary-aarch64/netstandard-targeting-pack-2.1_9.0-3_aarch64.deb
+Size: 748
+MD5Sum: d3ae74eb5d5d48bf77d34d9436a2d4cf
+SHA1: f64f9d9fd37d763bf94523ff8c2503e741ecfac0
+SHA256: 7b06a12bfbf8575723b84587567c188300b823bd93fc0ab0cf978b0d584ba8d9
+SHA512: 8dd28b085fc8a8bc105cc3e186a4f458e1cf2dba109f015b60d06b36a4a29ac62ea8dbfa209c6043f03acb4e7db83bb6bfc3aed4254fee962a77f26db08b9e6c
+
+Package: nlohmann-json
+Architecture: aarch64
+Installed-Size: 1148
 Maintainer: @termux
-Version: 2024.01.13-1
-Homepage: https://nelua.io
-Suggests: gdb, sdl2
-Description: Minimal, efficient, statically-typed and meta-programmable systems programming language
-Filename: dists/uncode/main/binary-aarch64/nelua_2024.01.13-1_aarch64.deb
-Size: 386148
-MD5Sum: ef23417ce548f7e3a246f3a29ed22f2a
-SHA1: 63fc294b26bfb399fb3467256a43d792c2255bf0
-SHA256: b1223800378782fe9c99bd8fc5f8e2e3fff6cc2d55236b446568ba86908043c1
-SHA512: 04b55dedfc83ce7eb9fc9edab985510b6f59af3d468174aa58fca9ee2a248e603835b632147af1531f5ca07b49132bf4e811ce55a3dcd9ab45720362fcbbc893
+Version: 3.12.0
+Homepage: https://github.com/nlohmann/json
+Description: JSON for Modern C++
+Filename: dists/uncode/main/binary-aarch64/nlohmann-json_3.12.0_aarch64.deb
+Size: 113544
+MD5Sum: 04ab2aec2bd460120cd95c287b72fd14
+SHA1: 76b46415d6a30738309ed6d3e1bc3a53d1bf1dd2
+SHA256: 0d669115043ff77874a4b58716148d1d22cceb28bf1e88c8f5f8bd2e4df97c20
+SHA512: c7d6a3cfc2c5ca7f12e706c251d34ccd97522289c7db83e8d77a4cf6b5c739d3ed6b484bd30a187cb7e4a73da11b3077899ed8c561039de7199bdfe68467c0c7
 
-Package: tree-sitter
+Package: nlopt
 Architecture: aarch64
-Installed-Size: 8680
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.26.10
-Homepage: https://tree-sitter.github.io/
-Breaks: libtreesitter
-Replaces: libtreesitter
-Description: An incremental parsing system for programming tools
-Filename: dists/uncode/main/binary-aarch64/tree-sitter_0.26.10_aarch64.deb
-Size: 2408356
-MD5Sum: 9a45aed6a97143cadaa43c57d96d87e9
-SHA1: 261ca550105ad95b200c5d7007eeea4cf2c9e9d6
-SHA256: 9d8aa3f81d294d44e3cd1bc121df01cded68258fb02aa5de73eb899ea9ad40fe
-SHA512: 44d397f4627e49f0c763c836281cd7628c5ef73fffa4b5f410461b3a1fb727d9cb4ad471d7402e4b204135257c8eef3478baea08ee40cac1e46232aa99d6d0a4
+Installed-Size: 736
+Maintainer: @termux
+Version: 2.11.0
+Homepage: https://nlopt.readthedocs.io/
+Depends: libc++
+Description: Library for nonlinear optimization
+Filename: dists/uncode/main/binary-aarch64/nlopt_2.11.0_aarch64.deb
+Size: 254220
+MD5Sum: 94ab1e2a313ae2c9339607e113e358e3
+SHA1: b009fd655e3ce3982d5eae523737fa58c15f39a9
+SHA256: c206186d6463075abb58845077c9b286efa55760175c2c26ab26fb2fc1d4b587
+SHA512: 9ba1b95af69cd434babfebd0226be5cbde295c5b8b5db524db513bd20f530c63423dbacf8b39e28169f2e2078d9756acf81245174a8f5608c7f95a5d4b1c2f01
+
+Package: nyancat
+Architecture: aarch64
+Installed-Size: 104
+Maintainer: Oliver Schmidhauser @Neo-Oli
+Version: 1.5.2-1
+Homepage: http://nyancat.dakko.us
+Description: Nyancat in your terminal, rendered through ANSI escape sequences.
+Filename: dists/uncode/main/binary-aarch64/nyancat_1.5.2-1_aarch64.deb
+Size: 10520
+MD5Sum: c46b2504cb4ef3b64a28ca200a6055e4
+SHA1: bccaec501136dd5ee39e88d1808502f9e94451a8
+SHA256: de678cdc5955a2576dfe6d636b758eb5a1364a666ff7984353a4027b1947e43f
+SHA512: af2a71cb503417305e683a25f2e000afe11266a1780959e0978a6938386295839b61a8885bbfb32db23a26eb34d6067b18a2a54ba65cf504d284c224f612cdf4
+
+Package: ocl-icd
+Architecture: aarch64
+Installed-Size: 880
+Maintainer: @termux
+Version: 2.3.5
+Homepage: https://github.com/OCL-dev/ocl-icd
+Description: OpenCL ICD Loader
+Filename: dists/uncode/main/binary-aarch64/ocl-icd_2.3.5_aarch64.deb
+Size: 104892
+MD5Sum: c9fb245f8ac8e3aaf1e1dfc1e093cab9
+SHA1: a8a09bc66b923f815cc53daf36b5eab67b69454f
+SHA256: aa4cfc2861d86e66ca1a88c6f832000134d4e08d57fa0ee6b4f692db7c566fdc
+SHA512: cff1267b5402d3af7bf3d63e4019b453fa75d791a95d00d0f08b1e091c36ac3eb9cc742d33365ab5116a588423cf8efdbe9a2aaaef0ca546d5422f43a27fe191
 
