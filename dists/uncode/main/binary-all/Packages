@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96476
-MD5Sum: d35fe08c9eefe9b6d84a8056107ae934
-SHA1: 974f555861a83288a1d49c1f8b60fbc54ee5a449
-SHA256: 14a4f4936fb1c4ca7951e9ca7c2b1079e455a7869e8ed8d35e99f3e34ba612f1
-SHA512: 7ebf731546efc08cb70da357e1ff1206e47fec720be451badcfe5a4eb55b5e443da7e7ef7b2760400d861d922c30b5ada8aef9dad1ea4f2eb614863860bfc8e4
+Size: 96496
+MD5Sum: af4ff9951e983af6cb71997b0d5db15d
+SHA1: 7205fe2c39c1349f03ca9da8682bde1e36e7e662
+SHA256: 06720ab323e170d2a78eee09032bc1c7f63b39456b623e747e5af14e0188bfdc
+SHA512: c55d21a294bbb0b7b6d3a2bc42712cd5e4ea1ffeb08115378cf28f379f7ad020726fedf9a1b6d134b533ecc980f6da0c27c927b6b0207fb1b8011e987c1df866
 
 Package: ca-certificates
 Architecture: all
@@ -26,4 +26,32 @@ MD5Sum: 5a97e6c7c515b3e4a1c918d377bdbe2a
 SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
+
+Package: mypaint-brushes
+Architecture: all
+Installed-Size: 3836
+Maintainer: @termux
+Version: 2.0.2
+Homepage: https://github.com/mypaint/mypaint-brushes
+Description: MyPaint brushes
+Filename: dists/uncode/main/binary-all/mypaint-brushes_2.0.2_all.deb
+Size: 1479148
+MD5Sum: bb07203ed8c523a5fffc8582cdb1be3c
+SHA1: 64450d4a0300156d6c80262a22bee339de02f260
+SHA256: 016f29a8582fb5d8154b6be85c9a88de00ad4a4323b0ddc6a03b16ac86eab36f
+SHA512: 947a84c15d6d50e433f51b48bac62220353ae5791eaff9c021814ad71c39a75427693cdb7243e8d7dea672d35ab69dee3db7e75587b636bbdcead2ae0d23afe4
+
+Package: ndk-multilib
+Architecture: all
+Installed-Size: 361132
+Maintainer: @termux
+Version: 29-1
+Homepage: https://developer.android.com/tools/sdk/ndk/index.html
+Description: Multilib binaries for cross-compilation
+Filename: dists/uncode/main/binary-all/ndk-multilib_29-1_all.deb
+Size: 63097796
+MD5Sum: 2c4e9a4e448a14165a2fa98e1a9bd49e
+SHA1: 767f88d86a34f188c511ec49ff66a29db43c9d97
+SHA256: 512cb09641a2882864b0764f627cfb36aab2c68c2f8e3a14dcb19d207e20e5e9
+SHA512: 7e47844646a70e5f198da38b106a0a0ead292be186c052e44b32c9760cc7b2d3e2f9774b1fa6003c86cb563a14994c01047e1eae3b7b343742c48bc9ed55a9d3
 
