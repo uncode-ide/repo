@@ -1,19 +1,3 @@
-Package: abseil-cpp
-Architecture: aarch64
-Installed-Size: 8776
-Maintainer: @termux
-Version: 20250814.1
-Homepage: https://abseil.io/
-Depends: libc++
-Conflicts: libgrpc (<< 1.52.0-1)
-Description: Abseil C++ Common Libraries
-Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
-Size: 1117052
-MD5Sum: a99612704b914c5ac9e7827a865c1741
-SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
-SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
-SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
-
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -26,436 +10,290 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 892
-MD5Sum: 0c36c3c6b2d86437e4d97b2c683777a3
-SHA1: 6dc5c4688d6adfd4e93322544255581ef34dca97
-SHA256: 8631251a6fffc1c42913df9dbf42b3988f2aa1d7d50d22b1dce5c015ede4ec7f
-SHA512: b48cfe9a80af29e15a1888360e9b33a73ce3479c9d177b5bc42fe7c80c603edb053b686d062a9b09d8be8be9bb9a23744646d0f81888b473c0ef08d8fd60643b
+Size: 896
+MD5Sum: ab67b1f297ffd9125074b094d21d35dd
+SHA1: 4cc01cf466f26dc93f6240de947fb27be177fa23
+SHA256: 6e47f2c8d10301438df13f49cc94968caf1fc4bbcc55ff557211b126b07ae6bb
+SHA512: d99505d9741dd94d125ff4c4c362fafd813a98ecddec2588c9b5efe7d5c33a56536419f1169a9c8201073df66f44d1ffbbebafb5f5dca170800bd39176abf1dc
 
-Package: libprotobuf
+Package: libpcreposix
 Architecture: aarch64
-Installed-Size: 8840
+Installed-Size: 36
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Depends: abseil-cpp, libc++, zlib
-Conflicts: protobuf-static
-Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Description: Protocol buffers C++ library
-Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
-Size: 1337056
-MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
-SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
-SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
-SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
+Version: 8.45-2
+Homepage: https://www.pcre.org
+Depends: pcre (= 8.45-2)
+Description: Posix-compatible runtime libraries for libpcre
+Filename: dists/uncode/main/binary-aarch64/libpcreposix_8.45-2_aarch64.deb
+Size: 3344
+MD5Sum: 5973839a451f7207e6a0bde029b28928
+SHA1: b62bf78c17a7739e02025f6a3226742378f44acb
+SHA256: 027ad3f71face2cac04be59e992597f12b119ffeee0c17c15f45779ec527030d
+SHA512: 346e6882736bbb5d30b6f05f673290455beaa60657848f6aeca4280dcacfd887be4fcab33f7922c4447a7215a8cdd4e003cf934764c947cf387ef9eb11f120d8
 
-Package: libre2
+Package: orbiton
 Architecture: aarch64
-Installed-Size: 624
-Maintainer: @termux
-Version: 2025-11-05-1
-Homepage: https://github.com/google/re2
-Depends: abseil-cpp, libc++
-Description: A regular expression library
-Filename: dists/uncode/main/binary-aarch64/libre2_2025-11-05-1_aarch64.deb
-Size: 165544
-MD5Sum: 7cc83401a06cad417c093f88f1b65091
-SHA1: 0fbf58c7bbecf64e726fba62e061cb39f0f08b21
-SHA256: 1987f03c0a5b2e0e09ba471534e7bc026d8a7e1e86c6d1e8b16211dd6fdd7557
-SHA512: 251860c811f88340ceaf725b4764eda80675eca6799a2dbded4fe8ee219074d6fccea0e83041454afa063f8289cccc92cf31195c12e0c4eb5da3b057a5abdeed
+Installed-Size: 14080
+Maintainer: Alexander F. Rødseth <xyproto@archlinux.org>
+Version: 2.74.4-1
+Homepage: https://roboticoverlords.org/orbiton/
+Breaks: o, o-editor
+Replaces: o, o-editor
+Description: Small, fast and limited text editor
+Filename: dists/uncode/main/binary-aarch64/orbiton_2.74.4-1_aarch64.deb
+Size: 4335316
+MD5Sum: cad01296adba2472dbd0d157b19deb52
+SHA1: 92c6be588f9921fa68b1f7ea847a304a2c07e325
+SHA256: 5a50a3731c97351d4975cae7cffd0cd0150986a19457593c53bdad107cbd6425
+SHA512: 314d752871e1b693be3ed1f653f9fea5427acf7c6bcc9349bd10a9e0c0d39a3188fcb2a3149a784feccedcb0fc9768e62ba157bf497138bdeb6d88be29851eea
 
-Package: libtbb
+Package: ossp-uuid-static
 Architecture: aarch64
-Installed-Size: 2344
+Installed-Size: 100
 Maintainer: @termux
-Version: 2023.0.0
-Homepage: https://uxlfoundation.github.io/oneTBB/
+Version: 1.6.2-4
+Homepage: http://www.ossp.org/pkg/lib/uuid/
+Depends: ossp-uuid (= 1.6.2-4)
+Description: Static libraries for ossp-uuid
+Filename: dists/uncode/main/binary-aarch64/ossp-uuid-static_1.6.2-4_aarch64.deb
+Size: 18752
+MD5Sum: d9eb26466a527830d1c9c5efa963be28
+SHA1: d7d373dbc87384ecda686d8fea25dfa5741e8eb4
+SHA256: 18099e5a4af387a3190d5400068ebaa08f415b65b522f7d274cde8788cfe758c
+SHA512: 72bfb9af3e98d60d52c3c636da33d001c365f24c38edb1c8f54151e63d2475184a565274f14c8ab500d56d44166aeb393ea7d3158bfdc753b41890dc3b5e759f
+
+Package: ossp-uuid
+Architecture: aarch64
+Installed-Size: 140
+Maintainer: @termux
+Version: 1.6.2-4
+Homepage: http://www.ossp.org/pkg/lib/uuid/
+Breaks: ossp-uuid-dev
+Replaces: ossp-uuid-dev
+Description: ISO-C:1999 uuid generator supporting DCE 1.1, ISO/IEC 11578:1996 and RFC 4122.
+Filename: dists/uncode/main/binary-aarch64/ossp-uuid_1.6.2-4_aarch64.deb
+Size: 24804
+MD5Sum: 6c2d5cff035033f7ffd7ab6042678946
+SHA1: dca0849eddc9280cfc81dd76d0e277da30341ccf
+SHA256: a96141747c12f8f6fa0f47ff10e29400a85e3393847868bacc6e69cedc77f3ac
+SHA512: 34777337d810d1ef48cc05f213d9aaf282e46be9182a333b85352a8e52183660f4a61b3d1b5bd04004e2307ce29b80f7b7374f13569db69629b00d4aca6a0b1e
+
+Package: oxfmt
+Architecture: aarch64
+Installed-Size: 8332
+Maintainer: @termux
+Version: 1.72.0
+Homepage: https://oxc.rs/
+Description: Oxc JavaScript formatter
+Filename: dists/uncode/main/binary-aarch64/oxfmt_1.72.0_aarch64.deb
+Size: 2403864
+MD5Sum: 5ed32558f77bef54ad55ae0710b04703
+SHA1: f7c5b4fd19e7b2fb0b4913f83ede80ea67ba0acc
+SHA256: b8f8470dbe53507850f0418e7ca02da3c7bdf251be3264bf1d66545e40be9c40
+SHA512: 478165f6742faa2d443f88b34e0ff548bd7927b821d82908489cf300ed72ecfba859e1a301f938dafdc39fd99bb065be79bb3d2a2b984e28b8badd05ca5375a0
+
+Package: oxlint
+Architecture: aarch64
+Installed-Size: 18560
+Maintainer: @termux
+Version: 1.72.0
+Homepage: https://oxc.rs/
+Description: Oxc JavaScript linter
+Filename: dists/uncode/main/binary-aarch64/oxlint_1.72.0_aarch64.deb
+Size: 5094112
+MD5Sum: 0aaee2c1437c2229c1fdb75af95436ee
+SHA1: 6c6f2658226e58857dfc2a14856271b52f7f09ca
+SHA256: 3eee6fcb018ef74533143229f4ec4eb3b15c606a37a26d6900c63caa3f17cad5
+SHA512: 46f3012b100ab51f48a9cb61db6485769a527fc8a582144e1a03a7d7488e0e8f0a4098646977a1b4542320a56b290ef972b37ab748184f7cbbefd0dab590283f
+
+Package: paperkey
+Architecture: aarch64
+Installed-Size: 80
+Maintainer: @termux
+Version: 1.6-1
+Homepage: http://www.jabberwocky.com/software/paperkey/
+Description: Archive OpenPGP keys on paper
+Filename: dists/uncode/main/binary-aarch64/paperkey_1.6-1_aarch64.deb
+Size: 15584
+MD5Sum: f868b98530c3e0200087083e378b2b1a
+SHA1: c780f23b112609fa8aaa01a02676a48c2a9f2495
+SHA256: 8bc4b4623333c7259f4f3f182f0526259aa6ff5f0e01e86141762aec7a8bae44
+SHA512: 37e374003aab830115e3ab8bbd33d647afdb043de3c7a7c8bd099111a13436d7abebe3b0ed0c79de47df6332a73a4888217a1e08b66bc514b30b75b7b3d9852b
+
+Package: par2
+Architecture: aarch64
+Installed-Size: 976
+Maintainer: Oliver Schmidhauser @Neo-Oli
+Version: 1.2.0
+Homepage: https://github.com/Parchive/par2cmdline
 Depends: libc++
-Description: oneAPI Threading Building Blocks
-Filename: dists/uncode/main/binary-aarch64/libtbb_2023.0.0_aarch64.deb
-Size: 297864
-MD5Sum: aced68f8a185271bc8296ba221ff6d30
-SHA1: 9db0886d64f16cdbf74849493103b90307e259cb
-SHA256: 9d7fa9516795d16590677b36be6176bc03959a6303598a83fa11297e9a8cc200
-SHA512: 959167db95b7abbcb2494ee6235c9dfcb3c166fb3ae0b4abd2ea1ac8ac6c5206e17e6b4eced0079cce984560aa0b5ed08d83e374a6769fe05f1504e045d56404
+Description: par2cmdline is a PAR 2.0 compatible file verification and repair tool
+Filename: dists/uncode/main/binary-aarch64/par2_1.2.0_aarch64.deb
+Size: 281576
+MD5Sum: fc6c09a025e17441b6969b5c14ae2901
+SHA1: 7f7d872ed8c2de2d2a827b9149d64ba90be11bff
+SHA256: bcb5b20517cd17237755f23a9ffa3e95b8549626950905807120ee3a2f8ab168
+SHA512: 427ed3e883fa79b2e588b02da95a9be8263c681424533963ac17ece9bb416a8ecda85975c577fe311aa77331acc22166c552d7f4ab629a8a92cfc2d04539b806
 
-Package: libtiff-static
+Package: pari-static
 Architecture: aarch64
-Installed-Size: 696
+Installed-Size: 10888
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Static libraries for libtiff
-Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
-Size: 135260
-MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
-SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
-SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
-SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+Version: 2.17.4
+Homepage: https://pari.math.u-bordeaux.fr/
+Depends: pari (= 2.17.4)
+Description: Static libraries for pari
+Filename: dists/uncode/main/binary-aarch64/pari-static_2.17.4_aarch64.deb
+Size: 2421992
+MD5Sum: a2c5489f81b4c3a0acb504cf14e362b3
+SHA1: 640589946f6ec1e7ac77a3e8fd250fea6b695015
+SHA256: 43c8146db6e79bb1f55a814163026a7f6df99b293f1c924da83e0a57471f64c6
+SHA512: e1d203efd1b29351ae4fef3e8eb40fa911fe8926a22189fe65444ed34217bb98e58b6c232e1bfe064d6266555fa6c271ab599fb4126274768704e279dfab0222
 
-Package: libtiff-utils
+Package: pari
 Architecture: aarch64
-Installed-Size: 800
+Installed-Size: 16924
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Tools for working with tiff files
-Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
-Size: 255964
-MD5Sum: a0a56110c08879f75be05ad601a6e6cc
-SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
-SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
-SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+Version: 2.17.4
+Homepage: https://pari.math.u-bordeaux.fr/
+Depends: gzip, libgmp, readline
+Description: A computer algebra system designed for fast computations in number theory
+Filename: dists/uncode/main/binary-aarch64/pari_2.17.4_aarch64.deb
+Size: 4365016
+MD5Sum: 930eee447abeb0e3c6e1c389582be8e6
+SHA1: 600f3fb5e4e62940a73d91790d7b1a71ca6e9c03
+SHA256: d07bd341fc1000396835b975c8cd016bcac453249be058549a65e3e22085637c
+SHA512: 0cb7dded8801a46b83113e1c9cb1d20a9e12d08182c6bd95f8dcf1cf251f896d35a63002b4a5db8fbe3e45445ce6757f77a0125fda78129fd3fff511da7f4374
 
-Package: libtiff
+Package: passphrase2pgp
 Architecture: aarch64
-Installed-Size: 6416
+Installed-Size: 3620
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Breaks: libtiff-dev
-Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
-Replaces: libtiff-dev
-Description: Support for the Tag Image File Format (TIFF) for storing image data
-Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
-Size: 821104
-MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
-SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
-SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
-SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+Version: 1.3.0-3
+Homepage: https://github.com/skeeto/passphrase2pgp
+Description: Generate EdDSA/cv25519 private key in GnuPG/SSH format reproducibly per hash of user given passphrase
+Filename: dists/uncode/main/binary-aarch64/passphrase2pgp_1.3.0-3_aarch64.deb
+Size: 1120948
+MD5Sum: 916e04fad52b74b7c04c67d52e19aa62
+SHA1: b5cf64ec5af91c9c3cf86eb0afe16bda494cd89c
+SHA256: 128d6dbe4002400b5fbdf155edebfed235764c5aeab709a0feb184b28088afbc
+SHA512: 6b9d88757f383deb4ec6991cf6733fc39b0cfbb1501a83962f11b9defaa75495f0b14df246367f0246a1e06b8451ffcd1130420788d38323a9da3370c5de2ffc
 
-Package: luajit-static
+Package: pastel
 Architecture: aarch64
-Installed-Size: 680
+Installed-Size: 1156
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Version: 0.12.0
+Homepage: https://github.com/sharkdp/pastel
+Description: A command-line tool to generate, analyze, convert and manipulate colors
+Filename: dists/uncode/main/binary-aarch64/pastel_0.12.0_aarch64.deb
+Size: 385748
+MD5Sum: ca004917e617a2d50f1eb259803d6ba0
+SHA1: 9d5c96e57598d8fba4c91d066767e137e448cda1
+SHA256: 4596b4d44b0f929878067d06dd7941cca88468536f62176b5f3450a41abfbe65
+SHA512: 8c41775368e00d2106e5dfcfd311ee403a9776bb6269ee01463fefa6740babe14efdab68c8f958ca2e4291523c4028066788b4f99f087d89f7a1783656b2777d
+
+Package: patch
+Architecture: aarch64
+Installed-Size: 216
 Maintainer: @termux
-Version: 1:2.1.1780076327+gb925b3e
-Homepage: https://luajit.org/
-Depends: luajit (= 1:2.1.1780076327+gb925b3e)
-Description: Static libraries for luajit
-Filename: dists/uncode/main/binary-aarch64/luajit-static_1:2.1.1780076327+gb925b3e_aarch64.deb
-Size: 221360
-MD5Sum: 45108cc5e84caf516f136eaca4ede321
-SHA1: b76b2599a2ff722fc609c01240224313172cb135
-SHA256: 77a0357f794b9457803a26a5f70559e8d2bfd29a765120ae67f14d8b2d23ecaf
-SHA512: f48594a9089230cfeb8538a58ce706554a4bd2dd546dff41ea4b7e7353a13351343c234abaa53b1d735ed050a02fe0b7bc60b063a465ae9e8e6184f28be8594f
+Version: 2.8-1
+Homepage: https://savannah.gnu.org/projects/patch/
+Description: GNU patch which applies diff files to create patched files
+Filename: dists/uncode/main/binary-aarch64/patch_2.8-1_aarch64.deb
+Size: 73992
+MD5Sum: b4d4aa6b8deb68a41a122bf037a9c607
+SHA1: 811d0ba2877cd9900bc38de9e90376e488beae5d
+SHA256: d1f569ab0e1d0204a1075aa1820cf3f372035fd10a1f51257ce299791313d0c8
+SHA512: 19dc982266e4cd6f9aabc757cb94c2c2be6291c39130016b56020857492843168276c46943dd7d59450e17ea340a3fe5f08990ecf670b1e337f3e14cd62018ee
 
-Package: luajit
+Package: patchelf
 Architecture: aarch64
-Installed-Size: 1336
+Installed-Size: 332
 Maintainer: @termux
-Version: 1:2.1.1780076327+gb925b3e
-Homepage: https://luajit.org/
-Breaks: libluajit-dev, libluajit
-Replaces: libluajit-dev, libluajit
-Description: Just-In-Time Compiler for Lua
-Filename: dists/uncode/main/binary-aarch64/luajit_1:2.1.1780076327+gb925b3e_aarch64.deb
-Size: 289512
-MD5Sum: b57dbef2efe4048c64636cba187c2007
-SHA1: a357d75d7623f13634118686d0ca1d96ec724392
-SHA256: f7150a1bfca7fb866f164b1aa1d9522a7e7097dbb1e1ad4594ce0ea1a3007381
-SHA512: 21945649d78a76e34254f14ca406069380bfdcbad08a71875ec242f50e00255b3df0a258e62dd681b1a524344490d5f8576e9dd29449e093b7079828076bdbcb
-
-Package: octomap-static
-Architecture: aarch64
-Installed-Size: 840
-Maintainer: Pooya Moradi <pvonmoradi@gmail.com>
-Version: 1.10.0-1
-Homepage: https://github.com/OctoMap/octomap
-Depends: octomap (= 1.10.0-1)
-Description: Static libraries for octomap
-Filename: dists/uncode/main/binary-aarch64/octomap-static_1.10.0-1_aarch64.deb
-Size: 98164
-MD5Sum: 7d356d97f59ac75b9a5cf3df8920e9db
-SHA1: 8ff0d40677829f23f96825e75116b70d30e146da
-SHA256: ad722bc96639e5398d5e9036a10154573cb4b25a1723caa1f04f114b59d08b55
-SHA512: da2da46e76e11d9ce71a7fa172185c65a9d4675e5bccbb1ffe7f1e73dfb7d83657279bf57e1914cd31df3dd6c31a1f8832d4d9e732a7ed185b67892779fd562d
-
-Package: octomap
-Architecture: aarch64
-Installed-Size: 1356
-Maintainer: Pooya Moradi <pvonmoradi@gmail.com>
-Version: 1.10.0-1
-Homepage: https://github.com/OctoMap/octomap
+Version: 0.19.0
+Homepage: https://nixos.org/patchelf.html
 Depends: libc++
-Description: An efficient probabilistic 3D mapping framework based on octrees
-Filename: dists/uncode/main/binary-aarch64/octomap_1.10.0-1_aarch64.deb
-Size: 185268
-MD5Sum: 388953676e6d08a642543d35585503b2
-SHA1: 780df86991567d49813fdd94bc4edd8968dd789a
-SHA256: c97df0873aab9615f8713e2da3114483b8a3fe920ecbce31adff7512bda18f4a
-SHA512: a43b64746c125c38d66f9cb96dac823c34656b1a108b4ab3b6843a4c5fed8b33209e7c945b9c9db04dbf38ae8557e7d4456d00ee522a4134785b5082fa9f14ce
+Description: Utility to modify the dynamic linker and RPATH of ELF executables
+Filename: dists/uncode/main/binary-aarch64/patchelf_0.19.0_aarch64.deb
+Size: 83408
+MD5Sum: a2d28c29475002012c07c05cc0b015e7
+SHA1: bb13804677c5e4bef7a7a000530fff522c02e39f
+SHA256: df838092714e16cdcadc74862c619a0c5ccb9b967bab1d8684a13171c9c2ffc4
+SHA512: c86342e936f2a531c276b1c0c988c2908daa2c52eb959ffc9c2cfa2c1390d55b516958295edfd481bdd94f7674e10cbf01ddce22edd2d4dd5a3454178a7997af
 
-Package: oh-my-posh
+Package: pcal
 Architecture: aarch64
-Installed-Size: 19516
+Installed-Size: 364
 Maintainer: @termux
-Version: 29.20.0
-Homepage: https://ohmyposh.dev
-Description: A prompt theme engine for any shell.
-Filename: dists/uncode/main/binary-aarch64/oh-my-posh_29.20.0_aarch64.deb
-Size: 4767216
-MD5Sum: f155ef18931b080d8a05e90bbe31a354
-SHA1: 3be6d64315a53e679e8f013a7dd04fa8739257a7
-SHA256: b1b51a75ecd6680afe34db73e1174a32cfa4aac1544d600ec8ed51ef4418b196
-SHA512: af5fab3afee21c29a4e21f8d37ffca6fb6ff956c7cc4b14b98826887ab441548968415e792392930a6114322358f78059e8b9fd02955ed6fbbf76227ed0da777
+Version: 4.11.0-1
+Homepage: https://pcal.sourceforge.net/
+Description: A multi-platform program which generates annotated PostScript or HTML calendars in a monthly or yearly format
+Filename: dists/uncode/main/binary-aarch64/pcal_4.11.0-1_aarch64.deb
+Size: 114112
+MD5Sum: 671dd7f59f8e235d830a886623838fee
+SHA1: 3cf804e7cd030775152295c0c3760942b5c096d2
+SHA256: 999ed13af396d068f616b23fac828d0b92d061d6997980712e2adb0457f30bb3
+SHA512: ce861b9baeb17d681b862261d873dbc71da26645256043ed11bf08ffa62cfce109bd9234ca8470e4f5abc1d12a719e9557e26742178c4d9445744e7809d24fd3
 
-Package: okc-agents
+Package: pcre-static
 Architecture: aarch64
-Installed-Size: 3796
+Installed-Size: 528
 Maintainer: @termux
-Version: 0.1.2-2
-Homepage: https://github.com/DDoSolitary/okc-agents
-Description: OpenKeychain agents for GnuPG and OpenSSH
-Filename: dists/uncode/main/binary-aarch64/okc-agents_0.1.2-2_aarch64.deb
-Size: 751148
-MD5Sum: 1351a40a4404f111cf56f56d39b9fec2
-SHA1: a0cecbc1a0ec35c9556022dbbed8a06fa2bfb916
-SHA256: 2286fe76904fea3596c605b5e1fb26190809d91619b5edd666dccc2f3f58ccb4
-SHA512: 4e41c0d65ac8c6d2f5ed3a7ed0cec1d588d8f9ba2ef1df9142a3ef2e10e4920f8ce818266cf55d1ec2e5f4065f56d7a0c3417927b21a35f5ec4cf73a7f5d66b3
+Version: 8.45-2
+Homepage: https://www.pcre.org
+Depends: pcre (= 8.45-2)
+Description: Static libraries for pcre
+Filename: dists/uncode/main/binary-aarch64/pcre-static_8.45-2_aarch64.deb
+Size: 135072
+MD5Sum: 0eabd7f17b1445b03a34ff5cb2c50de2
+SHA1: 7bc460256d3cfe32a50b7474fc7c225c46e100f1
+SHA256: c7375bb41939ca51db0a21825ff0e8f7f1b5c86e6be15aac21ed56aeabb1a081
+SHA512: f92d8cbf1efac38193ed7d711178d5f53b67032733dced7e6868c65d3b6946e5df39346e2f83a14d426793b5d489805dc55f955c85effa8afeffb7b32a01e64e
 
-Package: onefetch
+Package: pcre
 Architecture: aarch64
-Installed-Size: 12392
+Installed-Size: 2704
 Maintainer: @termux
-Version: 2.27.1
-Homepage: https://onefetch.dev/
-Description: A command-line Git information tool written in Rust
-Filename: dists/uncode/main/binary-aarch64/onefetch_2.27.1_aarch64.deb
-Size: 4290376
-MD5Sum: 7de6517a0db7bad6e8eb8e4c3215f7ed
-SHA1: bcebd72c11c2f8e4833c050238226b22c82d95d0
-SHA256: 83fc586509b524b822b958d7e0da4fa4203949e135a4327bbc8a14e96bd48882
-SHA512: 450e17390c1678a66420d4f291e0a7aef8360ec4bf79030746d13f1d315af3a7807b4b791d05a3b82c954130e7368f4b58e9b6fda37a7508eb5ddf9fb7abca5b
-
-Package: onigmo-static
-Architecture: aarch64
-Installed-Size: 848
-Maintainer: @termux
-Version: 6.2.0-1
-Homepage: https://github.com/k-takata/Onigmo
-Depends: onigmo (= 6.2.0-1)
-Description: Static libraries for onigmo
-Filename: dists/uncode/main/binary-aarch64/onigmo-static_6.2.0-1_aarch64.deb
-Size: 125956
-MD5Sum: 15f381fbc11679661cb3ce98dcca64bf
-SHA1: cf3656e3a8f9e5260fbc3ea0833657445f082e63
-SHA256: 0415bc5c071dc414e910507a958d6d42335eae85350ea3536c9ee30edb0e5d34
-SHA512: b0e79dcce53b1d45ecb30aeaac0e1f61655a712bc0156aa238d3d17b3ebf4602c484da982602fbd480f20f0ef9ec3d70bfd9ea33fa3c0537e695f2777cf936a2
-
-Package: onigmo
-Architecture: aarch64
-Installed-Size: 732
-Maintainer: @termux
-Version: 6.2.0-1
-Homepage: https://github.com/k-takata/Onigmo
-Description: A regular expressions library forked from Oniguruma
-Filename: dists/uncode/main/binary-aarch64/onigmo_6.2.0-1_aarch64.deb
-Size: 120776
-MD5Sum: d070518e511368299631fd2cb6bc5a28
-SHA1: e145e756c97975139b4a57f92306086a04161502
-SHA256: 76263fe549f417d719502cfac57bd1e0d85d0dc35632db40dfbc80d225e13c07
-SHA512: 904e9b897b6b9bbd4b8022b3929b97019a0d5a2daa8875619b94fa45269f2ff88d1074ec092e9510bc7462ca400d0c7099185e989a62acd95fa2238a6dff6919
-
-Package: oniguruma-static
-Architecture: aarch64
-Installed-Size: 816
-Maintainer: @termux
-Version: 6.9.10-1
-Homepage: https://github.com/kkos/oniguruma
-Depends: oniguruma (= 6.9.10-1)
-Description: Static libraries for oniguruma
-Filename: dists/uncode/main/binary-aarch64/oniguruma-static_6.9.10-1_aarch64.deb
-Size: 143356
-MD5Sum: ee6ff0c57c3de9c8e7dcbec2c35b0e0f
-SHA1: 27b03a4b24eaf3e7500b7c40eec55049a0633cb9
-SHA256: 48e9d26f17851b9ae7e776a7cb3d230f1cf698d33807b04c054c97e168c0eaa1
-SHA512: 44240c4c85e59aab16a7097a0b752cb48d7d28d0aefc88e21b6fb7d549fabd2460f1ae278119ddc3d792f20cf1374998a5b16a3ca201ff2c84b9c3995a526aae
-
-Package: oniguruma
-Architecture: aarch64
-Installed-Size: 688
-Maintainer: @termux
-Version: 6.9.10-1
-Homepage: https://github.com/kkos/oniguruma
-Description: Regular expressions library
-Filename: dists/uncode/main/binary-aarch64/oniguruma_6.9.10-1_aarch64.deb
-Size: 136040
-MD5Sum: b3f86b34b92fdb78d67b10a32468acab
-SHA1: 437cfaece781a80df88030e6d4b8f84615e75f6a
-SHA256: 62bf56601a0777294b270eb61168155f730ea54cf6b03f877bc57f3d6dd144eb
-SHA512: 5e9b42510cd99738745f7ee1c5c98ddb97c3a25d8471c521a48f6544bbe870f46b214a5e8936340d417afc3948130d1b2a8fd9a1e53b5a2391e7a65680832fe2
-
-Package: openal-soft
-Architecture: aarch64
-Installed-Size: 2492
-Maintainer: @termux
-Version: 1.25.2-1
-Homepage: https://openal-soft.org/
-Breaks: openal-soft-dev
+Version: 8.45-2
+Homepage: https://www.pcre.org
+Breaks: pcre-dev
 Depends: libc++
-Replaces: openal-soft-dev
-Description: Software implementation of the OpenAL API
-Filename: dists/uncode/main/binary-aarch64/openal-soft_1.25.2-1_aarch64.deb
-Size: 665908
-MD5Sum: e393cc283d407d6a58a6afc6444ae788
-SHA1: 0c902c1e21fca2dad2922c14bdbbb4cdbf1bacb4
-SHA256: f0a2d32a14ba268e46ac1f344ab8bb91fe348e2e2dd69ae05aed4daff7e77f76
-SHA512: c28538c841e086093b210760fc0228f01f2b3b2ad590afcdd8e85281f06a08192f54e5de632ca10c3ef73d9b8e5c6a55a455110ad39d7a80e3408d7bf50020db
+Replaces: pcre-dev
+Description: Library implementing regular expression pattern matching using the same syntax and semantics as Perl 5
+Filename: dists/uncode/main/binary-aarch64/pcre_8.45-2_aarch64.deb
+Size: 649956
+MD5Sum: b03932120d4d052553025e95a037ea93
+SHA1: 1c10bd1917f8d599bf1cf8dadd2679f68ed28a01
+SHA256: 54e57813bfd91eeed6f38cb11a6baa10cf7c0b8feb1905e5d09ad9ad83472132
+SHA512: 6cc6a668b40232f2d643857ebbd97206164804030035be89d176bbfa0d16dfc7e00b95f5d20782931f8162a0ed9339c6e32838e9245a9d5a8b2536caf75668b6
 
-Package: opencl-vendor-driver
+Package: pcregrep
 Architecture: aarch64
-Installed-Size: 64
+Installed-Size: 88
 Maintainer: @termux
-Version: 0.3-1
-Homepage: https://termux.dev
-Recommends: llvm, ocl-icd, patchelf
-Description: OpenCL driver from system vendor
-Filename: dists/uncode/main/binary-aarch64/opencl-vendor-driver_0.3-1_aarch64.deb
-Size: 2592
-MD5Sum: 8a93082885590b0d7389375bb775c3ce
-SHA1: a8c9d2e15f4461bcd2be4703fc995f671a941c0d
-SHA256: 6fe3083528b3667717c768c573e37a5ce630c5b2a5f3880a9d316ec0286e196e
-SHA512: 9020227f6afe9be4e4aff4bdb5b1834fc2d682f3464a5fef70759297e07c063f9e0c543cfcb4c1a9f9174bd4c8ae4a2565c33b5f524decf868c0de8fab263374
+Version: 8.45-2
+Homepage: https://www.pcre.org
+Depends: pcre (= 8.45-2)
+Description: A grep with Perl-compatible regular expressions
+Filename: dists/uncode/main/binary-aarch64/pcregrep_8.45-2_aarch64.deb
+Size: 24764
+MD5Sum: 145542537591f1ffca8312e5d589ccb2
+SHA1: 77760afeb12df7e356ad5d4bc0b133ac444cfb10
+SHA256: 9102cf210c0870ad7783efef25a8a9607ad2f0cb0c55cfd29426465ea3b28d4e
+SHA512: db38380936aa18af49370a3918bc278e16898df39be51c67d849a5f0241efcbae11769fa35a131edab326c002c085b96f3ce49e0828137dcef0acc02d1de32f2
 
-Package: openexr
+Package: pdfcpu
 Architecture: aarch64
-Installed-Size: 4972
+Installed-Size: 13192
 Maintainer: @termux
-Version: 3.4.4
-Homepage: https://www.openexr.com/
-Depends: imath, libc++, zlib
-Conflicts: openexr2
-Replaces: openexr2
-Description: Provides the specification and reference implementation of the EXR file format
-Filename: dists/uncode/main/binary-aarch64/openexr_3.4.4_aarch64.deb
-Size: 903096
-MD5Sum: 22a7c2069a4d1f1ed529909c3f9a09b8
-SHA1: 4132d1cc4ee2a4856ecbd016ea8039cd4bb1ad79
-SHA256: 790611c99d5376338257a4d41b7c791bffc0370ed73e54d917a12c46faedee2a
-SHA512: 4167f10f7ef933c84bbca01b1b4eaa4620c7bbf8d34ae2f93c143c77bada6ac2b926bc68d2ae18c21bd92bafa0c4e89dbf35a84ce88bd8aca240bc3d3733264e
-
-Package: openh264
-Architecture: aarch64
-Installed-Size: 996
-Maintainer: @termux
-Version: 2.6.0-1
-Homepage: https://www.openh264.org/
-Depends: libc++
-Description: Codec library supporting H.264 encoding and decoding
-Filename: dists/uncode/main/binary-aarch64/openh264_2.6.0-1_aarch64.deb
-Size: 309568
-MD5Sum: f3d69ea435da89dcb30a7ee178e8169f
-SHA1: 4daedce274cd26d8fcf053a372c5ae344ccd71e1
-SHA256: cfaabc8356c7acc5fb1a676526dc1b0e368d1a8e7ced778ae995e6d538ff60df
-SHA512: dcddf677b7180200aece4efb4e9daf515e7ad020fb305184d97128cd6de66a8a3e10baaa5093bb15cd70613d685bc2705a9ab05b7fa9678dc4f1d0c889321b78
-
-Package: openjpeg-tools
-Architecture: aarch64
-Installed-Size: 256
-Maintainer: @termux
-Version: 2.5.4
-Homepage: https://www.openjpeg.org/
-Depends: libtiff, littlecms, libpng, openjpeg (= 2.5.4)
-Description: Command-line tools using the JPEG 2000 library
-Filename: dists/uncode/main/binary-aarch64/openjpeg-tools_2.5.4_aarch64.deb
-Size: 65692
-MD5Sum: 0c362fa7c28b563f3b524388ae8b86f7
-SHA1: 5de365c8035904473e1a9d6bbf12443b264e0b44
-SHA256: 3a899423bf2b2671bad0d0d1dadafdd76b657b3dd563c9e88fb03fb63c95a9de
-SHA512: 70e40b0887f5ec04bae1a1901781e18c323f0fdfec5de05be2c622d1b635f1491a10b5caf16b3754c92eb6c7e1c79abbf28e28bb0f54e02fd42d6b72130a33c6
-
-Package: openjpeg
-Architecture: aarch64
-Installed-Size: 516
-Maintainer: @termux
-Version: 2.5.4
-Homepage: https://www.openjpeg.org/
-Breaks: openjpeg-dev
-Replaces: openjpeg-dev
-Description: JPEG 2000 image compression library
-Filename: dists/uncode/main/binary-aarch64/openjpeg_2.5.4_aarch64.deb
-Size: 150688
-MD5Sum: 6eeead8ed916dff6376f23294e380355
-SHA1: a7a984d2eed5c9e1d50b29303fd92b17f226096d
-SHA256: b278190b130256a87666783067576767bd520d611acaaac996d3808c1a8d4044
-SHA512: b036c549d86921585b983a8027ded82c07947efd3ceeba49a69d80eab4478b99f171c83fbddb4aebdd5639405298a2833ce9bef3f47a0137439a2a60fbd9a833
-
-Package: openlist
-Architecture: aarch64
-Installed-Size: 128412
-Maintainer: 2096779623 <admin@utermux.dev>
-Version: 4.2.3
-Homepage: https://oplist.org/
-Conflicts: alist
-Replaces: alist
-Provides: alist
-Description: A file list program that supports multiple storage
-Filename: dists/uncode/main/binary-aarch64/openlist_4.2.3_aarch64.deb
-Size: 32260456
-MD5Sum: 279e0e03c96f7c6345027dd2a3a6118f
-SHA1: 1988802ff791d3cbbfd171fa8f18ec639f6049bb
-SHA256: 34e2ed4c14428e95f71195377249df89ffae2b7abeb92fa85e71d57e0174b003
-SHA512: a7644216fa0cb2eacb2bee11cec14d281f4e896d1e2d35b0f2faada8c4f0d63d0ed35cce06141a2bf880dbca2eaa89a73b02e22205afbd8096e4da1413e47ff1
-
-Package: openpgl
-Architecture: aarch64
-Installed-Size: 1620
-Maintainer: @termux
-Version: 0.7.1-1
-Homepage: http://www.openpgl.org/
-Depends: libc++, libtbb
-Description: Intel(R) Open Path Guiding Library
-Filename: dists/uncode/main/binary-aarch64/openpgl_0.7.1-1_aarch64.deb
-Size: 244288
-MD5Sum: 55d09fd073fc153c6d6806d8f6f91381
-SHA1: ef3de2eb75880c562d56be3d794970e6bb984d51
-SHA256: 4b83c9f63db78d9ebbfa5ad01ebfa6dc254b9295f85583bb95e8192ffdc34b77
-SHA512: 5790a37fc31d2f5d0faa5306a6aaeb12c357893b1e04af7dd1ab3addfd5c3efcc65a1c9cb642b937054140db15616e2130f8ce7814082ee6b1d323aff09ad12f
-
-Package: opentimelineio
-Architecture: aarch64
-Installed-Size: 1184
-Maintainer: @termux
-Version: 0.18.1
-Homepage: http://opentimeline.io/
-Depends: libc++
-Description: Open Source API and interchange format for editorial timeline information.
-Filename: dists/uncode/main/binary-aarch64/opentimelineio_0.18.1_aarch64.deb
-Size: 215668
-MD5Sum: 4748a3bdd22a03e2fc6937918aedc643
-SHA1: 8c2207f93add82dc672446b559393b74a1154187
-SHA256: b6e2c26ebcc4ec3454f71b2cea80d7974ab574c44775dd9fb4c062a5848bcb16
-SHA512: 4ea5e2b5b6daf5c92574822b20b83cee9c3335a93ed517f413a25c1696767052af2b321517e314950de96b8acdb5d5e3919d33892bce39600b74474dd93ad2d8
-
-Package: opkssh
-Architecture: aarch64
-Installed-Size: 14680
-Maintainer: @termux
-Version: 0.15.0
-Homepage: https://github.com/openpubkey/opkssh
-Description: Enables SSH to be used with OpenID Connect
-Filename: dists/uncode/main/binary-aarch64/opkssh_0.15.0_aarch64.deb
-Size: 3806332
-MD5Sum: c873c44da1e48ed591d588e4e8d18fde
-SHA1: cce0908c00830d5c02bf927770db30ee05b327e0
-SHA256: ba61597e35a909d509b880d6aa288e8720e5ae5919fadcbab7127f4795be132b
-SHA512: f7e8966f3a16453af3963697387594ef5d8e0c883fc163f6c5af927afcc1a5cea24a5461f0a34a7b3b4151f76f350730a6c163555a07143cf9517e7b769e41a7
-
-Package: protobuf
-Architecture: aarch64
-Installed-Size: 5748
-Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Depends: libprotobuf (= 2:33.1-1)
-Description: Compiler for protocol buffer definition files
-Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
-Size: 1154160
-MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
-SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
-SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
-SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
+Version: 0.13.0
+Homepage: https://pdfcpu.io
+Description: A PDF processor written in Go
+Filename: dists/uncode/main/binary-aarch64/pdfcpu_0.13.0_aarch64.deb
+Size: 3561552
+MD5Sum: 32533c5592ff310dd5e48e65f6bbcedf
+SHA1: 10ec231d3ddd65677ed96a6477a75c2f8e7d779a
+SHA256: a246eece094503751f7acad284e34fad4c0f3c060f6e280ffb00e75ad8b809e7
+SHA512: 8717bcc796a5343427779365a1eb8083f211b877a8ac031bc0bd8469534e8adc85353f3812995f7333c8afe6d32b91bab599d3cc10fd29fbe97de536ade77ca8
 
