@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96472
-MD5Sum: 10ea8f533d7447efc6fd3c9f50d85f6e
-SHA1: d81e8fced715010ee480e9ffc1c6bd2592d53da8
-SHA256: 61580ed2180d4d18d27a443e100d92838d7a405d164481b8074e6f7be59e112a
-SHA512: 7b0cff86b1337fe49e5794af2db72c33de3f95f5ef7a80977e7cc5466451e2135b530f7e9a5e8f8b29e3ccce52bb2997bdcae89c7a14b7d1a1282b1e28594656
+Size: 96480
+MD5Sum: 4b6ef535a1aa741ee8a825fce007aa04
+SHA1: 7acfa63270cba7e2558c91b6849062723096e344
+SHA256: 5b6b279f6c0b81f6aead6a19e2e5f639c0db37362ffade743586533607447a87
+SHA512: 1485175b12bbd7d33a802303fadf04772893fc67ce0a6eab7428c5a53075c8dbf5074b43b028eb646e4e9780cca368b633772cf7e4424b5731645c655e41c4e1
 
 Package: ca-certificates
 Architecture: all
@@ -27,31 +27,18 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: ovmf
+Package: perl-rename
 Architecture: all
-Installed-Size: 609292
+Installed-Size: 72
 Maintainer: @termux
-Version: 20231122-16.fc40-0
-Homepage: https://www.tianocore.org/
-Description: Open Virtual Machine Firmware
-Filename: dists/uncode/main/binary-all/ovmf_20231122-16.fc40-0_all.deb
-Size: 39481352
-MD5Sum: d0280a7098e8a9f2070b723982f970a1
-SHA1: f0b6a69382d5d93f5bf51163ec92527babda128a
-SHA256: 3dca451247cb41a7515c57cef93b1545834fce801013f4bd3ac8a55144551890
-SHA512: be4ae8ef1c8579d240aee825483faa351a76b6534ab4d244d429247da349d32f2801ec338ed3063a97ca4143a9c57f524ede3fbd667e5fe3518772ea00f6ee9d
-
-Package: pb
-Architecture: all
-Installed-Size: 60
-Maintainer: @termux
-Version: 2022.11.03-1
-Homepage: https://tildegit.org/tomasino/pb
-Description: A helper utility for using 0x0 pastebin services
-Filename: dists/uncode/main/binary-all/pb_2022.11.03-1_all.deb
-Size: 3548
-MD5Sum: 3a5ad41f432fdbcf5b4fdddbf8f39cba
-SHA1: e1977024f0d08abc7958b029a66180c9afb5ac1b
-SHA256: c45f07e39a8abc7dbb01eb901b1529bfbfc799b4f235aa8554ed9eb15f939a97
-SHA512: c01ccf68fc66d0d0b492577b308561ed2662dd6ffa4aa2649a0319f2763ff635b01e3770735853f731eef3b7c013f0b73e3a70a16b72ebea62e55a2f0e95fe8f
+Version: 1.14
+Homepage: https://search.cpan.org/~pederst/rename/
+Depends: perl
+Description: renames multiple files using perl expressions.
+Filename: dists/uncode/main/binary-all/perl-rename_1.14_all.deb
+Size: 9396
+MD5Sum: 4d00f14d8738956394140677c8afa902
+SHA1: 0156e0ca152fcf85d83a619fee464137b9c93e61
+SHA256: 91ebfed1dc3c739d37c7ea6414566b83a2c569a2a860fb84de5be34d2cf3222a
+SHA512: c992927a09758bf23e6d46a62f36d9dabf4656cc3767b7f79196bcea4139b4a9eca4c7d3111c4191f290b6b61b7fbecbc622c299db4f1043007924199e88a9a0
 
