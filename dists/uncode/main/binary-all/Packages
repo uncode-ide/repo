@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96480
-MD5Sum: 4b6ef535a1aa741ee8a825fce007aa04
-SHA1: 7acfa63270cba7e2558c91b6849062723096e344
-SHA256: 5b6b279f6c0b81f6aead6a19e2e5f639c0db37362ffade743586533607447a87
-SHA512: 1485175b12bbd7d33a802303fadf04772893fc67ce0a6eab7428c5a53075c8dbf5074b43b028eb646e4e9780cca368b633772cf7e4424b5731645c655e41c4e1
+Size: 96496
+MD5Sum: 13fea0d8db5965a235e13bb520d0daa6
+SHA1: d778ba8a0dfc9774460f70ffe8c1fbcc2d4c7bf7
+SHA256: 62f752034f3824ca5d785444528f8f0b9b37ef21cf1718786968d574b49ebef3
+SHA512: b0f7329b59bb53de007ce907abdb2314ff1e6d82cb184c6308b2ea0178997292f03542d49f97f0fa18c69778863092d061f3848b5f60da09fd0fc2126b001737
 
 Package: ca-certificates
 Architecture: all
@@ -27,18 +27,31 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: perl-rename
+Package: poppler-data
 Architecture: all
-Installed-Size: 72
+Installed-Size: 13196
 Maintainer: @termux
-Version: 1.14
-Homepage: https://search.cpan.org/~pederst/rename/
-Depends: perl
-Description: renames multiple files using perl expressions.
-Filename: dists/uncode/main/binary-all/perl-rename_1.14_all.deb
-Size: 9396
-MD5Sum: 4d00f14d8738956394140677c8afa902
-SHA1: 0156e0ca152fcf85d83a619fee464137b9c93e61
-SHA256: 91ebfed1dc3c739d37c7ea6414566b83a2c569a2a860fb84de5be34d2cf3222a
-SHA512: c992927a09758bf23e6d46a62f36d9dabf4656cc3767b7f79196bcea4139b4a9eca4c7d3111c4191f290b6b61b7fbecbc622c299db4f1043007924199e88a9a0
+Version: 0.4.12
+Homepage: https://poppler.freedesktop.org/
+Description: Consists of encoding files for use with poppler
+Filename: dists/uncode/main/binary-all/poppler-data_0.4.12_all.deb
+Size: 1579976
+MD5Sum: 3d3d99fcaa78bb5c52535339cb4d8268
+SHA1: df1f5f5b0ec340f8434e46d4be29d5a668087938
+SHA256: 2f181f2172f1681f4199e7a796cbcbb87b1b8f5b6c584db8a2837a093e85b125
+SHA512: eb6d808ba00c3ff38a61b6c33ef522afeba3661d5ff06d6546c99abc17a9c614ef6d28e7d457237fa6314bafe6c1ae254416b3463ca98cb120ab6fc9d0621a97
+
+Package: posixvala
+Architecture: all
+Installed-Size: 104
+Maintainer: @termux
+Version: 0.2
+Homepage: https://github.com/radare/posixvala
+Description: Aims to bring back the posix profile for Vala
+Filename: dists/uncode/main/binary-all/posixvala_0.2_all.deb
+Size: 4676
+MD5Sum: 435341aa8554125052b9a025f92cd11d
+SHA1: 7b1d42ddf1fb614600a94972d006d9356a39b23b
+SHA256: 34072320b9c83df32647d20a042252d927d0e9114b38a240cfeac19541430b38
+SHA512: 86c3676f3b1e107221fd156249bb683aa2c17a2c5f45f94dd7e5bdc61ce1bcf7f48c1031158885e97699a34484d800b604ecb44d0fbc9016ca9c8f23020d3407
 

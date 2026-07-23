@@ -1,51 +1,3 @@
-Package: abseil-cpp
-Architecture: aarch64
-Installed-Size: 8776
-Maintainer: @termux
-Version: 20250814.1
-Homepage: https://abseil.io/
-Depends: libc++
-Conflicts: libgrpc (<< 1.52.0-1)
-Description: Abseil C++ Common Libraries
-Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
-Size: 1117052
-MD5Sum: a99612704b914c5ac9e7827a865c1741
-SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
-SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
-SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
-
-Package: gflags-static
-Architecture: aarch64
-Installed-Size: 520
-Maintainer: @termux
-Version: 2.3.0
-Homepage: https://github.com/gflags/gflags
-Depends: gflags (= 2.3.0)
-Description: Static libraries for gflags
-Filename: dists/uncode/main/binary-aarch64/gflags-static_2.3.0_aarch64.deb
-Size: 60008
-MD5Sum: cfabb7f4594ba3244ab6b62adfc077a3
-SHA1: 77fefaa1fda9830b99012ac67856dc1d46260efa
-SHA256: e1ad5a1c77ace45309d23ce7645fd857a044e0d21fcfcc40b346a280f2192295
-SHA512: 5453f8b63bc3fb1cfbdc6f88b9b5fb93baeda073c831011dc5210b5647c729b989971bafca12b50b34bd4e2a7ccc448938445967438e6e6a2e5bbf0b7193d1b9
-
-Package: gflags
-Architecture: aarch64
-Installed-Size: 448
-Maintainer: @termux
-Version: 2.3.0
-Homepage: https://github.com/gflags/gflags
-Breaks: gflags-dev
-Depends: libc++
-Replaces: gflags-dev
-Description: A C++ library that implements commandline flags processing
-Filename: dists/uncode/main/binary-aarch64/gflags_2.3.0_aarch64.deb
-Size: 79416
-MD5Sum: 6ac64c7eb7ef19f4cfb0aa8b99aeb25f
-SHA1: 17b1a51d8594fa7fb8ff140cb81750b385f0c4a1
-SHA256: 91deea43f60bf48fbac6afd0f8a216544bb6a71b92f30374d0eaa09a251d4f23
-SHA512: 017bd43a9a100e52de7a69f7e14ea3b4d6132307a5fdac2b5366495f13db5e114ff71b3bae9d076e36986bee67e6f479ed9d1ebafddcc1b2bc7092313d7d268f
-
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -58,29 +10,11 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 896
-MD5Sum: 38fea95097005f450052993aaadde555
-SHA1: f43848062607aa6ac3584ed1e0f9c6a765c34ce1
-SHA256: 88640bb203de7b68c640a11321fd991cfa98f9e0fe9ed63dbada7fdedd0cfc4c
-SHA512: b5af0c9e9b8443a9488edbd5301ae5f2c83c6d7f626b671a65a413440bc421808693061c5ed2562ff168a56685fbb6dd6ce8bed76de8622674f4668d80c07acb
-
-Package: libprotobuf
-Architecture: aarch64
-Installed-Size: 8840
-Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Depends: abseil-cpp, libc++, zlib
-Conflicts: protobuf-static
-Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Description: Protocol buffers C++ library
-Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
-Size: 1337056
-MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
-SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
-SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
-SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
+Size: 900
+MD5Sum: 1b19dd60ef2d1190322d1c4bcfdaf103
+SHA1: 23a05d7ae3cb154863671872289bbfe22bd284d5
+SHA256: f29df7a750914d5787ba6d35b98be6d4ab3fbb244c1e4596131aade7d685674d
+SHA512: 8904931ff8747b22babe75dbc1223509e9fc2d6ef976ada68a6a458b1319bc76a43e8321c83fec7aea40343abbe10f7ebe90e472dbf335233511b4215f909b08
 
 Package: libtiff-static
 Architecture: aarch64
@@ -129,160 +63,188 @@ SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
 SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
 SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
 
-Package: peco
+Package: portaudio-static
 Architecture: aarch64
-Installed-Size: 4868
+Installed-Size: 264
 Maintainer: @termux
-Version: 0.6.0
-Homepage: https://github.com/peco/peco
-Description: Simplistic interactive filtering tool
-Filename: dists/uncode/main/binary-aarch64/peco_0.6.0_aarch64.deb
-Size: 1312068
-MD5Sum: e10ccce364234668add1f9640ea1098e
-SHA1: 3b292fd1cf543536fa0029be002139c9eb4f2d1c
-SHA256: 349ca4d41c1205f6d4395abdf650379ad5686327116adebbf62791dc61143f40
-SHA512: 267df1d6cdbe9b5962042b50d16fc3725a7732a49821b9e83e06a4827b5323c9cfcf0a813aac24ec5dbe888375130477c728442bdbe9dc7bb70c1265ebb9d02b
+Version: 19.07.00-3
+Homepage: https://www.portaudio.com/
+Depends: portaudio (= 19.07.00-3)
+Description: Static libraries for portaudio
+Filename: dists/uncode/main/binary-aarch64/portaudio-static_19.07.00-3_aarch64.deb
+Size: 40600
+MD5Sum: f2bf21e956921f49f75a692a2e46bfc3
+SHA1: 8c0cb5ffcfd45fc1554cbf62abb0b6399e5f6755
+SHA256: 9c8364d3b654d605d5d9b0f5b73b682f9eb5884db05979990338901b265af947
+SHA512: d13cac320fec59366e67ab45b0996eab68d4bad9194717d52e0857a9f3b523d7ecc2cdd5c401f5b13c03e35846cef73ba303fa1b9972b799ce6d88bb9845c0d5
 
-Package: pforth
+Package: portaudio
 Architecture: aarch64
-Installed-Size: 240
+Installed-Size: 328
 Maintainer: @termux
-Version: 1:2.0.1-1
-Homepage: https://www.softsynth.com/pforth/
-Description: Portable Forth in C
-Filename: dists/uncode/main/binary-aarch64/pforth_1:2.0.1-1_aarch64.deb
-Size: 40580
-MD5Sum: 143244afb8273031a459dbf6d59ed1de
-SHA1: 34ea94ad4095dda352d1079653226d13a3c17015
-SHA256: 076aea5eb3611b86b2629080db535ca7f3eda596315fb9efa709d6743003f97f
-SHA512: 8e3d751df5d7c73c98974f864925f3076bc0773f23847bb40c9c5441131cb03bbc29fe7d123015d03978053f16edde0620ebd1ef949e4a30701048aae233e1a3
-
-Package: photon-rss
-Architecture: aarch64
-Installed-Size: 14628
-Maintainer: @termux
-Version: 2023.02.02-3
-Homepage: https://git.sr.ht/~ghost08/photon
-Description: An RSS/Atom reader with the focus on speed, usability and a bit of unix philosophy
-Filename: dists/uncode/main/binary-aarch64/photon-rss_2023.02.02-3_aarch64.deb
-Size: 3897564
-MD5Sum: ae19a76716f1775c67e6b58b3f68d37c
-SHA1: 6e319a582077ac04c9f56c52cb148c7727003120
-SHA256: 3805e8b0b36a290671cfc59ce86e2b886fdfff061f71a2c0e320bf34637dfe54
-SHA512: 1bf7af777cae65fbc0be7967ccc359f4d2bb22607d7b60c21b86466f2d653e5af756195eec5968aa842af70f7b4bce0de41807e98ef8fed91a8691a376b988f9
-
-Package: picocom
-Architecture: aarch64
-Installed-Size: 152
-Maintainer: @termux
-Version: 2018.04.12-1
-Homepage: https://github.com/npat-efault/picocom
-Description: A minimal dumb-terminal emulation program
-Filename: dists/uncode/main/binary-aarch64/picocom_2018.04.12-1_aarch64.deb
-Size: 37020
-MD5Sum: 9e707f12324f529b0c9576f932dbf0ac
-SHA1: 32b9cd0922bbdb4306f2c4446176e23e4a4a2de6
-SHA256: 50d058e21f0a05a5bdc10103782f57b96d30008c063291b4ab793cba1d3358e0
-SHA512: 720310730147e91e45efda69e0757b2139ab88b8c7fa104fdac829a777096065558011c567626ca1e6c6302a4826ee57e07ff99dc67ac9107078c2354734fe7a
-
-Package: pingme
-Architecture: aarch64
-Installed-Size: 17540
-Maintainer: @termux
-Version: 0.2.7
-Homepage: https://github.com/kha7iq/pingme
-Description: A small utility which can be called from anywhere to send a message with particular information
-Filename: dists/uncode/main/binary-aarch64/pingme_0.2.7_aarch64.deb
-Size: 4221368
-MD5Sum: bdeb1400be3c6780d4a4346478c15b2c
-SHA1: 170ec3680bf6087fc27d5b126eda457a7b7175ff
-SHA256: cce198223718ab0cd02cf95255675fb8ee5e9dabb2f0a36e54b280f6e1515fef
-SHA512: 6c8c227e30389070658e3065942bdf9db65991ceef35753daebdcda38beb6334e44bb77777febc2ed063c122305ed3c77e2635fa79e307fca3e4ff40d84f40ca
-
-Package: pipebuffer
-Architecture: aarch64
-Installed-Size: 1216
-Maintainer: @termux
-Version: 0.0.git20211120-1
-Homepage: https://github.com/tfenne/pipebuffer
-Description: Arbitrary-sized in-memory buffer between pipelined programs (non-blocking mbuffer analogue for pipeline)
-Filename: dists/uncode/main/binary-aarch64/pipebuffer_0.0.git20211120-1_aarch64.deb
-Size: 391488
-MD5Sum: 1f4938b252976603c9db51b8f0609325
-SHA1: 90bf6a97c1eded7620177e8437865389247382ee
-SHA256: 15f2659dbf3b2fc32fc60b86e7057c3a2a12be4d262c34018a7e010daba63b87
-SHA512: 63f0a60376a92651dbab0a6abc91dea2afab548f6c084b75c2264a5e24dcb74e2b816ecc1df6f8ffe6a46ea815fcf2ce8ce8d2dcee2b556f468accf617aea7d7
-
-Package: pkgtop
-Architecture: aarch64
-Installed-Size: 2804
-Maintainer: @termux
-Version: 2.5.1
-Homepage: https://github.com/orhun/pkgtop
-Description: Interactive package manager and resource monitor
-Filename: dists/uncode/main/binary-aarch64/pkgtop_2.5.1_aarch64.deb
-Size: 803996
-MD5Sum: ad84a3298279a9e6db05813eb937620d
-SHA1: 886eaab5f6cbe72a8fc8ca92a7076d960cfba434
-SHA256: bdba97a0f36cb9e64a9fdc2f4612a02c801764ca9bfcae1e2dd9f4c09d461b4c
-SHA512: cf9622e647b0a7f6420b08fc5708eb803ea77f5205881b306179be69b4a1401d186a11cce12b774bd9a74b0fcd625a2ea313def12ee2bd3f1333c5bb39750c77
-
-Package: play-audio
-Architecture: aarch64
-Installed-Size: 64
-Maintainer: @termux
-Version: 0.6-2
-Homepage: https://github.com/termux/play-audio
+Version: 19.07.00-3
+Homepage: https://www.portaudio.com/
 Depends: libc++
-Description: Simple command line audio player for Android
-Filename: dists/uncode/main/binary-aarch64/play-audio_0.6-2_aarch64.deb
-Size: 4588
-MD5Sum: e094215191c3f56a59eb00a95564b6bb
-SHA1: cd151832a85ff4acf0a2734df791b07c0f03d38f
-SHA256: 5f5d1b643564080ae9bef4cc69ccca6e34ebc4742d0a7a330b140534741243db
-SHA512: 4d0d86e58b4eadf557662ef0aefdaf1d910f9c2835835b424a357b9a1f59540762db2a028a4e20210ca544c62a7999e79d09716fc2c5422ad92b0980032c1b55
+Description: A portable audio I/O library
+Filename: dists/uncode/main/binary-aarch64/portaudio_19.07.00-3_aarch64.deb
+Size: 61684
+MD5Sum: aae99bb3673192665e6616af49c0ed6e
+SHA1: f3f8d6f71c33041005b55fdda17369e7c9a47413
+SHA256: 9688fcb401816fd5c61945be93a128a92afb7a762c5fe1339f2e548ded5990dc
+SHA512: 8bc1400149e25503aff59e468fe93fd67f847afff7b9018c6079dab87123cbf8b97aab662dd7fff1d9f45d47b53dd3fbb9e73d6bd50e49d769de166a77998f99
 
-Package: plutovg
+Package: portmidi
 Architecture: aarch64
-Installed-Size: 448
+Installed-Size: 160
 Maintainer: @termux
-Version: 1.3.3
-Homepage: https://github.com/sammycage/plutovg
-Description: Tiny 2D vector graphics library in C
-Filename: dists/uncode/main/binary-aarch64/plutovg_1.3.3_aarch64.deb
-Size: 122372
-MD5Sum: 1743b3c1bdf5da9dacb26be2408bcf89
-SHA1: b9e8e00e3e1434df2c1257f8c9a46fb2082bb87a
-SHA256: 9cb85ff8b22f9ab79f719be964e90d92174309a22951dd7de341d12570ef0b10
-SHA512: 61e5e53be97df0943eb73eb000bfa87cc90285b0e6718cfbc9a979e21f901dae96fcda35db12e559d193fbe46ab6f1976539e548dab6c3da109b6f677e612dd3
+Version: 2.0.7
+Homepage: https://github.com/PortMidi/portmidi
+Description: A cross-platform MIDI input/output library
+Filename: dists/uncode/main/binary-aarch64/portmidi_2.0.7_aarch64.deb
+Size: 28432
+MD5Sum: 57f53a4e72f57235df7ae97a178b5528
+SHA1: a607199b2a50e3dc3ee4da27b1d4d9b53b6a897a
+SHA256: d81d952bb2bd6afadc1dbfafe998ba459bbd66cf1ba330eeaa6396c6455b98ac
+SHA512: 695465553608e2df05be95ec2d8f560723fd66ea992dede0cb38b9f3f7cd53ea4ba0e89adaa641f839b9345e36d92c7cd63e44598823ea44621d20b9b8c0e172
 
-Package: pocketbase
+Package: procs
 Architecture: aarch64
-Installed-Size: 32128
+Installed-Size: 5024
 Maintainer: @termux
-Version: 0.39.5
-Homepage: https://github.com/pocketbase/pocketbase
-Depends: resolv-conf
-Description: An open source Go backend
-Filename: dists/uncode/main/binary-aarch64/pocketbase_0.39.5_aarch64.deb
-Size: 8206828
-MD5Sum: 1a052090d7478e70545e8d89134bdd69
-SHA1: 556242b7aee42b2339b4653e989358098a6af4aa
-SHA256: c96d858b8805e3a43d507e3e111874c33d1f92ba1f55f9ecf364ec673c23d92b
-SHA512: 1da48e4ec972ba60280c7b4a790a65ab66e1d281fb082b91aa8d2334b071c77409a6b990070fb9b62bc2a2323b0278a69eaed87bcbd88760032c34ad805161ef
+Version: 0.14.12
+Homepage: https://github.com/dalance/procs
+Description: A modern replacement for ps
+Filename: dists/uncode/main/binary-aarch64/procs_0.14.12_aarch64.deb
+Size: 1432152
+MD5Sum: 3d1a3abb6b52c791161ed430b209b379
+SHA1: 04c6cb76040aa6efc96596e9f33651d3c769491d
+SHA256: 3801f5754d5b638b52881f5a3beb5d3b807acac3fec6abb939f824c755a3da37
+SHA512: 0f8e76829caa98c4974e0f61689571f14d0248482b8f2b8c09cd84b98104746e8fd1dfdd2d09cb29c7eea6830c9603d1949539a4f261316609ddc2a3c9789b1a
 
-Package: protobuf
+Package: prover9
 Architecture: aarch64
-Installed-Size: 5748
+Installed-Size: 9932
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Depends: libprotobuf (= 2:33.1-1)
-Description: Compiler for protocol buffer definition files
-Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
-Size: 1154160
-MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
-SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
-SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
-SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
+Version: 2009-11A-2
+Homepage: https://www.cs.unm.edu/~mccune/prover9/
+Description: An automated theorem prover for first-order and equational logic
+Filename: dists/uncode/main/binary-aarch64/prover9_2009-11A-2_aarch64.deb
+Size: 905288
+MD5Sum: a4a259a74c50f1a325118e553240b857
+SHA1: 407826bc65c8d51d6f7ec96ce7f9523798e34ba5
+SHA256: eeaac123f4938905db88c2dfc25256002def9b4657a8e6fff497f2094dcbb7db
+SHA512: 3884a76546468f7d29a7c8ca6a8e602734cc4388ac5fe1861d88646100848c6019e342b6fb080319527bd639dfce3e7cba14e0bb86c2b7d57f5e72ea9ed4850b
+
+Package: proxychains-ng
+Architecture: aarch64
+Installed-Size: 128
+Maintainer: @termux
+Version: 4.17-1
+Homepage: https://github.com/rofl0r/proxychains-ng
+Description: A hook preloader that allows to redirect TCP traffic of existing dynamically linked programs through one or more SOCKS or HTTP proxies
+Filename: dists/uncode/main/binary-aarch64/proxychains-ng_4.17-1_aarch64.deb
+Size: 24112
+MD5Sum: 475acd4133798c14f09c78f6a6c92217
+SHA1: b085f45a4f4f43491b5ce23bb4d8dd5243fcc5d1
+SHA256: adee5cbc73d6bb9b12e4d05484b73fa358518ed3a8c21d5b1116a38ba02bf4bc
+SHA512: 5e73bbe222b6ddff96be744ae57a3f928fba3b3669e3a72f788e88c13436ca99b098331cf82c00d690898d0669f8f4b8077824f2ecbb74a309e3c190231100a5
+
+Package: ptunnel-ng
+Architecture: aarch64
+Installed-Size: 96
+Maintainer: @termux
+Version: 1.43-1
+Homepage: https://github.com/lnslbrty/ptunnel-ng
+Description: Tunnel TCP connections through ICMP
+Filename: dists/uncode/main/binary-aarch64/ptunnel-ng_1.43-1_aarch64.deb
+Size: 20852
+MD5Sum: a4b7a34d8c1af27a7c2156ef4b5dd578
+SHA1: 592726389c2e0d7f4f1fa883c29eab202eb1323c
+SHA256: 710515bad1c52d72a25dd5bfd741e9d0138bc5764712a40e25115cfde21da989
+SHA512: bb0d1e9edf7490a877d7c1667e1fc933b17bfe140b9f91a53f95cbc552802cf1bc65f298c747a11062650752fe406d8ff4991957d256dcb3907d474ed9c4dc91
+
+Package: pueue
+Architecture: aarch64
+Installed-Size: 10480
+Maintainer: @stevenxxiu
+Version: 4.0.4
+Homepage: https://github.com/Nukesor/pueue
+Description: A command-line task management tool for sequential and parallel execution of long-running tasks
+Filename: dists/uncode/main/binary-aarch64/pueue_4.0.4_aarch64.deb
+Size: 2427840
+MD5Sum: e872bd6828a7393eee582239dd8130f5
+SHA1: 27b937f4d85f4e8a4f45d6d69e6b4ef94b4a82b6
+SHA256: b89d46997d3fe0f08632213af53049b7b8dc643fdd136e154d3c40487f3b2c14
+SHA512: 67344e65d87e2af0f982138b7a29bad7e11cebd7fc859ab1614c82aca31639df660b33582ddd783bc47494913c530856c1e8459c7064ae173be5137a9987719b
+
+Package: pup
+Architecture: aarch64
+Installed-Size: 3632
+Maintainer: Krishna kanhaiya @kcubeterm
+Version: 0.4.0-7
+Homepage: https://github.com/ericchiang/pup
+Description: command line tool for processing HTML
+Filename: dists/uncode/main/binary-aarch64/pup_0.4.0-7_aarch64.deb
+Size: 1093848
+MD5Sum: 88f91adbc9eb1cb613b2d0b8dc23c085
+SHA1: 8effd2a2153806a48f3ff1fb9aa06ac1a32121b5
+SHA256: 1c81039c5ed02eea48a5bebeb64ddba4a106b5265e0ba26ab0427255ad5dc456
+SHA512: 00bfbc3ebe59280a29e5bc0e4b150760e0783e60152d1f2ee8a2ab0ea9704413040ba142641f57a2e8cc1b05fcf52181173e276b381ee0d49ecbcea0358fa939
+
+Package: pv
+Architecture: aarch64
+Installed-Size: 732
+Maintainer: @termux
+Version: 1.11.0-1
+Homepage: https://www.ivarch.com/programs/pv.shtml
+Description: Terminal-based tool for monitoring the progress of data through a pipeline
+Filename: dists/uncode/main/binary-aarch64/pv_1.11.0-1_aarch64.deb
+Size: 252020
+MD5Sum: bc1be90b57f753ac1ded0368909b38a3
+SHA1: 829b01bc14dc6d8c8d5d0511debb0a5ad5e1ff65
+SHA256: b4cecf3da9a3b9d9283434821a9a819e9cd3665fbb8ad7eb56ee1fde076d9d4c
+SHA512: dbab73b7601e5831560f8ba830aeb7f65a3e59af470028ea6a9721fab7803a133dcffcbfde9dea8c9c7f1e8a05711d18fa4eab36f2ab0c1c394fd17b4965eb18
+
+Package: pwgen
+Architecture: aarch64
+Installed-Size: 76
+Maintainer: @termux
+Version: 2.08-2
+Homepage: http://pwgen.sourceforge.net/
+Description: Password generator which by default, unless given the '-s' option, generates memorable but insecure passwords
+Filename: dists/uncode/main/binary-aarch64/pwgen_2.08-2_aarch64.deb
+Size: 12096
+MD5Sum: f3e90b4a13256864356a5acffae64caf
+SHA1: 3c8214c75ccb54b6fa3ad3298e0e9c9a207f16cd
+SHA256: 69cc76e0bdbb60099ffc3cb41e18057356c51097b36d66a822aad25bee0be4e9
+SHA512: ec418ce149b992f4d409e514e61ed8691cd575d1515cf7d66452e68a19ae32a911b8a81f33995f66a5b88fa41ad6ef681f18c36efeff460ca61b2bcf99e3263b
+
+Package: pyrefly
+Architecture: aarch64
+Installed-Size: 21796
+Maintainer: @AhmadNaruto
+Version: 1.1.1
+Homepage: https://github.com/facebook/pyrefly.git
+Description: A fast type checker and language server for Python
+Filename: dists/uncode/main/binary-aarch64/pyrefly_1.1.1_aarch64.deb
+Size: 8770888
+MD5Sum: 220cc1493c9307856f9166c13f5b310a
+SHA1: 61e4ba07bde570f20e90f164912267a25e0108fc
+SHA256: bf81a2e7cb22932d3c48f0fb12381d9e0bf5a5266f876ba1db6e80d480880cea
+SHA512: f3e4e0681d0552e7302b324f7e57592c6608cbc0ea2500b4c9ed2685a6ee8c779201b273700848d923b51e4402a8e81ee6cb670bf22f5946bf60910790ea5759
+
+Package: pystring
+Architecture: aarch64
+Installed-Size: 168
+Maintainer: @termux
+Version: 1.1.4-1
+Homepage: https://github.com/imageworks/pystring
+Depends: libc++
+Description: C++ functions matching the interface and behavior of python string methods with std::string
+Filename: dists/uncode/main/binary-aarch64/pystring_1.1.4-1_aarch64.deb
+Size: 36132
+MD5Sum: 91887140475ad0f9c906537c5c271923
+SHA1: 05ca0335c2d7e6d16a87698e226cacad289699ab
+SHA256: 553a78e02232bbb177f2a08e6e7e1a29fbd8f5f645d9829e4a02f80a482ed72c
+SHA512: bb4e9a9c7bcfe55348a87bc09ef56b33044a8ee3de3264cb49260599da450465cd9e794d2eaf11c8b81f14362a0fac046171057abcce21b94e9f83e00e2cc92d
 
