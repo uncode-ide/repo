@@ -1,19 +1,3 @@
-Package: abseil-cpp
-Architecture: aarch64
-Installed-Size: 8776
-Maintainer: @termux
-Version: 20250814.1
-Homepage: https://abseil.io/
-Depends: libc++
-Conflicts: libgrpc (<< 1.52.0-1)
-Description: Abseil C++ Common Libraries
-Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
-Size: 1117052
-MD5Sum: a99612704b914c5ac9e7827a865c1741
-SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
-SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
-SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
-
 Package: blas-openblas
 Architecture: aarch64
 Installed-Size: 32
@@ -29,55 +13,6 @@ SHA1: a1f7962803f4fae98248577b69e8ca0f9bb61203
 SHA256: c40af47814218904a24ef082704b58fabfda1284b72176348b1201e0608f58a4
 SHA512: fe6b34556b32433aff205ae0a01d32d8af03241634cf9dd883b555506305a70d1ca80913b32ac673da1a5961b8a10630785715d3462ccd75986b9e17dff93dc1
 
-Package: c-ares
-Architecture: aarch64
-Installed-Size: 1100
-Maintainer: @termux
-Version: 1.34.6
-Homepage: https://c-ares.org/
-Breaks: c-ares-dev
-Depends: resolv-conf
-Replaces: c-ares-dev
-Description: Library for asynchronous DNS requests (including name resolves)
-Filename: dists/uncode/main/binary-aarch64/c-ares_1.34.6_aarch64.deb
-Size: 192452
-MD5Sum: 8bdf24d283f4f276fc12478b9a0b89a3
-SHA1: 60c6a183d0dc6aa6eb4f93229a7175c87512f9ae
-SHA256: 6cd16a7496b1a237184cbe4ef048db07529e481e837780c84b964b3d12dbe8b9
-SHA512: ea51626f16891611cd6e24763ad4139df918ad4dfa692f1c285d364bda4b143c90a5cb737992a881c8f4ce8dd51c929b36971735355cdcadbd330529c6847509
-
-Package: gflags-static
-Architecture: aarch64
-Installed-Size: 520
-Maintainer: @termux
-Version: 2.3.0
-Homepage: https://github.com/gflags/gflags
-Depends: gflags (= 2.3.0)
-Description: Static libraries for gflags
-Filename: dists/uncode/main/binary-aarch64/gflags-static_2.3.0_aarch64.deb
-Size: 60008
-MD5Sum: cfabb7f4594ba3244ab6b62adfc077a3
-SHA1: 77fefaa1fda9830b99012ac67856dc1d46260efa
-SHA256: e1ad5a1c77ace45309d23ce7645fd857a044e0d21fcfcc40b346a280f2192295
-SHA512: 5453f8b63bc3fb1cfbdc6f88b9b5fb93baeda073c831011dc5210b5647c729b989971bafca12b50b34bd4e2a7ccc448938445967438e6e6a2e5bbf0b7193d1b9
-
-Package: gflags
-Architecture: aarch64
-Installed-Size: 448
-Maintainer: @termux
-Version: 2.3.0
-Homepage: https://github.com/gflags/gflags
-Breaks: gflags-dev
-Depends: libc++
-Replaces: gflags-dev
-Description: A C++ library that implements commandline flags processing
-Filename: dists/uncode/main/binary-aarch64/gflags_2.3.0_aarch64.deb
-Size: 79416
-MD5Sum: 6ac64c7eb7ef19f4cfb0aa8b99aeb25f
-SHA1: 17b1a51d8594fa7fb8ff140cb81750b385f0c4a1
-SHA256: 91deea43f60bf48fbac6afd0f8a216544bb6a71b92f30374d0eaa09a251d4f23
-SHA512: 017bd43a9a100e52de7a69f7e14ea3b4d6132307a5fdac2b5366495f13db5e114ff71b3bae9d076e36986bee67e6f479ed9d1ebafddcc1b2bc7092313d7d268f
-
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -91,24 +26,10 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: 3562654d9e6d7c6b1b7ded2e53404c71
-SHA1: c2b7ea0edffc05a75c9f7e63e6918e48ba95a2ec
-SHA256: 6cc40cbab3039ff3828066e07344bcdc962dbd127d98d2fbb8a1a377730f9790
-SHA512: 4d0e2be0e29815e50f9a2cb55d581a208132bebd0f1b2dc9d21725c4ec41a64be41d9480bd726ba7e50d5400d45051ed6ec1d669e823f4ecabf9535439ad4da1
-
-Package: libdav1d
-Architecture: aarch64
-Installed-Size: 884
-Maintainer: @termux
-Version: 1.5.3
-Homepage: https://code.videolan.org/videolan/dav1d/
-Description: AV1 cross-platform decoder focused on speed and correctness
-Filename: dists/uncode/main/binary-aarch64/libdav1d_1.5.3_aarch64.deb
-Size: 290356
-MD5Sum: f42e1b2bf37672902e9fe7b6d3c54e38
-SHA1: 65de949ec2f0211d1007d6a0b5cec2ce735b054a
-SHA256: a412836f4ed63e0124487ba3c355a76e0bfaa4f2d6f60eca75b20c341e24e18a
-SHA512: 7ce62d1512f7d76abcfd7708ba92d47cb9b090ec05244cb68da6b5ed9697d5a17c7070ec23a27bb12965bc31984e6e9439f2a560a5f8a226547deb448c2efce9
+MD5Sum: 5dfa001c473229bf336b34996713068a
+SHA1: 1769deaaebff129f0a730b880ad1916e5348036d
+SHA256: 27a04432b22dc2709358d97054c845dae8237ae02ce2c8087fd2eca6775f9de7
+SHA512: def7d1028afe226cae7fd6a9636e803d577735b1768775cf5774635a35173417a4dbb98199344b19dc850526dc60d1f337b67c39ecfe567abbd7665941449c2c
 
 Package: libopenblas-static
 Architecture: aarch64
@@ -139,172 +60,282 @@ SHA1: f766e20923efe6229bd2a2d7acd0b9eaf8b76ecf
 SHA256: ef87d883c25c0f508e7a3fea13964148743e3368efac5109df8aa8e05f1159a1
 SHA512: ff5b0b31cf69d2aa98faf4c52f92d96792007ed4bf73cadf69b84522aadd53f19bdc10353e01983b9998dbb8a87ee0644ae50978317bad7be1b8cf643e9c8dc6
 
-Package: libprotobuf
+Package: qrupdate-ng
 Architecture: aarch64
-Installed-Size: 8840
+Installed-Size: 716
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Depends: abseil-cpp, libc++, zlib
-Conflicts: protobuf-static
-Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
-Description: Protocol buffers C++ library
-Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
-Size: 1337056
-MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
-SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
-SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
-SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
+Version: 2:1.1.5
+Homepage: https://github.com/mpimd-csc/qrupdate-ng
+Depends: libopenblas
+Description: A Library for Fast Updating of QR and Cholesky Decompositions.
+Filename: dists/uncode/main/binary-aarch64/qrupdate-ng_2:1.1.5_aarch64.deb
+Size: 154332
+MD5Sum: 06463f38059a88f928316368903832cb
+SHA1: 5dda208ae56601237b0cf61b17e83b6732bc814c
+SHA256: 6c2d9057ee47728b4c1397680a64c1357a9f3830740015659f5b2db450abba31
+SHA512: 954f933842bb1142b6b0f00e50d3468c215a7bbc99ec627ced40a4791a41ddb1a2dce368bf4fca7d32d903d9c12cbf017fd6718507729c26966440e38028d07e
 
-Package: libre2
+Package: quick-lint-js
 Architecture: aarch64
-Installed-Size: 624
+Installed-Size: 1080
 Maintainer: @termux
-Version: 2025-11-05-1
-Homepage: https://github.com/google/re2
-Depends: abseil-cpp, libc++
-Description: A regular expression library
-Filename: dists/uncode/main/binary-aarch64/libre2_2025-11-05-1_aarch64.deb
-Size: 165544
-MD5Sum: 7cc83401a06cad417c093f88f1b65091
-SHA1: 0fbf58c7bbecf64e726fba62e061cb39f0f08b21
-SHA256: 1987f03c0a5b2e0e09ba471534e7bc026d8a7e1e86c6d1e8b16211dd6fdd7557
-SHA512: 251860c811f88340ceaf725b4764eda80675eca6799a2dbded4fe8ee219074d6fccea0e83041454afa063f8289cccc92cf31195c12e0c4eb5da3b057a5abdeed
+Version: 3.2.0-1
+Homepage: https://quick-lint-js.com/
+Depends: libc++
+Description: Finds bugs in JavaScript programs
+Filename: dists/uncode/main/binary-aarch64/quick-lint-js_3.2.0-1_aarch64.deb
+Size: 246312
+MD5Sum: acc6a3dd4c3b8743eb8d7416ca0de596
+SHA1: 7ec95f72d3f7926753008a752333ec5c52d6cc07
+SHA256: 112eea9a1f91e18aa485178cfe01c7b48835f7eb619e1b1c980322326dd3217d
+SHA512: c18a30b2627673f5155ee913c9fb5f1a28c0259d170db5578b983d79332d4a96d72931ec911e4ef4926d6b3f5e03c665a9d5b8dc4107f7b602b74d58d6101a46
 
-Package: libtiff-static
+Package: quickjs-ng
 Architecture: aarch64
-Installed-Size: 696
+Installed-Size: 1484
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Static libraries for libtiff
-Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
-Size: 135260
-MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
-SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
-SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
-SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+Version: 0.15.1
+Homepage: https://quickjs-ng.github.io/quickjs/
+Conflicts: quickjs
+Replaces: quickjs
+Provides: quickjs
+Description: Embeddable JavaScript engine in C (NG fork)
+Filename: dists/uncode/main/binary-aarch64/quickjs-ng_0.15.1_aarch64.deb
+Size: 444156
+MD5Sum: 2ce292178ddecd1af4bd076e2d0bc3fe
+SHA1: 676d7449e49ee1492cf770a52528da7421a5c2b7
+SHA256: 716b83983bee67b11d8d53b16824bf0fce3a3976de98a51d6763dabf254acd64
+SHA512: 59bf49e71dbb8cc530439d030995559fd7a9093b15abb52ff6127ac4ed8ba453c88e5b0dfe3d94c3415d4ea706c1de6b4d21269cacf056240922bd0048e05787
 
-Package: libtiff-utils
+Package: rage
 Architecture: aarch64
-Installed-Size: 800
+Installed-Size: 7048
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Tools for working with tiff files
-Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
-Size: 255964
-MD5Sum: a0a56110c08879f75be05ad601a6e6cc
-SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
-SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
-SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+Version: 0.11.2
+Homepage: https://age-encryption.org/v1
+Description: A simple, secure and modern encryption tool
+Filename: dists/uncode/main/binary-aarch64/rage_0.11.2_aarch64.deb
+Size: 1297316
+MD5Sum: 0d4e1138faebe6e97bb83e52db33d7a3
+SHA1: f6c6422c9a08f44b8e2e301f31b111aa413a7310
+SHA256: 5a6146cb2297cd58c015e80702a2bc7907162fa0cda012231f5414c57c3e7bdb
+SHA512: dfb9d4c4b3da977ff724272d7aac54fca859a5e74ffa31bfa06dc111b8b2201821176b812d64dd791ffbe9dfbbcb661a70ab4d136014220b3b36f0643eb2b4d5
 
-Package: libtiff
+Package: railway-cli
 Architecture: aarch64
-Installed-Size: 6416
+Installed-Size: 11772
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Breaks: libtiff-dev
-Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
-Replaces: libtiff-dev
-Description: Support for the Tag Image File Format (TIFF) for storing image data
-Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
-Size: 821104
-MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
-SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
-SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
-SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+Version: 5.23.3
+Homepage: https://railway.app
+Description: This is the command line interface for Railway
+Filename: dists/uncode/main/binary-aarch64/railway-cli_5.23.3_aarch64.deb
+Size: 4508504
+MD5Sum: 7a27ed792217f1c2406589fc4ea6c41c
+SHA1: f2bdbd63046f1d5b3f924500602387926b0efe81
+SHA256: f79495d5341b4af5afa0cd9949da84a787624afc24a8b157642a8a877ea6882c
+SHA512: 95f8c48f4bb9811f74a5e31b41d704cfe6dbe86e91d9ec430feb4331696832957a91e1f582e731311e68788c5ae9245efde8d4d3a3d1b46f9cffa24379e12858
 
-Package: libwebp
+Package: range-v3
 Architecture: aarch64
-Installed-Size: 1204
+Installed-Size: 2796
 Maintainer: @termux
-Version: 1.6.0-1
-Homepage: https://github.com/webmproject/libwebp
-Breaks: libwebp-dev
-Depends: giflib, libjpeg-turbo, libpng, libtiff, zlib
-Replaces: libwebp-dev
-Description: Library to encode and decode images in WebP format
-Filename: dists/uncode/main/binary-aarch64/libwebp_1.6.0-1_aarch64.deb
-Size: 316332
-MD5Sum: 9b9fcbd86892116bcb2e21849f8cd812
-SHA1: c03562f9e4f332cf3535a514889582843cca2c43
-SHA256: 71c73669a5a814785cecbb4fc72dffe3d56c4827b227ce4fb2d53258f65b679b
-SHA512: 07e27f3e843886792fdc6597817f5bc284fa0d1b0c6dfdc16e8c2eb090130a351b1de3a1efb090cc904c9dd09012c47e6e05448f0c0e5b2bf20d5010772a1c88
+Version: 0.12.0
+Homepage: https://github.com/ericniebler/range-v3
+Description: Range library for C++14/17/20, basis for C++20's std::ranges
+Filename: dists/uncode/main/binary-aarch64/range-v3_0.12.0_aarch64.deb
+Size: 204000
+MD5Sum: e5ce09effb59fd24b2d8f5c8475bdb8c
+SHA1: 080957bc8064b496537e932f39dcc664e9de474f
+SHA256: 49b5846b89deb9964ce055973c7c1a0c223b096cfa157cf86dfcb5b3e74d1ed4
+SHA512: cd6d0793e9e16772dc69bb21f1e7dbafa1bb1eaa1a42bd4fc1ce5e22a2a4a2b380984dcde19cd1310957654accfdcb137d0c670d2ed0792ed3f12a10dd7f2a40
 
-Package: protobuf
+Package: ratt
 Architecture: aarch64
-Installed-Size: 5748
+Installed-Size: 10832
 Maintainer: @termux
-Version: 2:33.1-1
-Homepage: https://github.com/protocolbuffers/protobuf
-Depends: libprotobuf (= 2:33.1-1)
-Description: Compiler for protocol buffer definition files
-Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
-Size: 1154160
-MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
-SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
-SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
-SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
+Version: 2023.02.02-3
+Homepage: https://git.sr.ht/~ghost08/ratt
+Description: A tool for converting websites to rss/atom feeds
+Filename: dists/uncode/main/binary-aarch64/ratt_2023.02.02-3_aarch64.deb
+Size: 2924208
+MD5Sum: f6f4e6a0f16cd5577a4f8370ef3d868a
+SHA1: 82bd3e5237f6973490f7d0e2747a684d6c999ff1
+SHA256: d9a95600706bceeadf0850ea0c415f35a9d846c847a45b5a31e9ae50d64347f5
+SHA512: d0724f744d41755d2f3d320073c0a14a81ccb7b43f6a6fcfaa0363aaa96a490f9fcd1b6d7513ae1a873db6ac2a88807c7452207b4ddbe899f934d6698fb7c79a
 
-Package: q-dns-client
+Package: rbw
 Architecture: aarch64
-Installed-Size: 11452
-Maintainer: kay9925@outlook.com
-Version: 0.19.12
-Homepage: https://github.com/natesales/q
-Description: A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH
-Filename: dists/uncode/main/binary-aarch64/q-dns-client_0.19.12_aarch64.deb
-Size: 2950812
-MD5Sum: cf169c225522eedbe9cd7cddf0ebe264
-SHA1: 2de12b5eef54a1bd37f4713e4ccb297614629618
-SHA256: 4c3e7577c36dd896d3b0fae05a419b63adb51fa026508c43a4e38fb989ca7009
-SHA512: a8ddb715cd1241d0437412fa8eb70acfd83f766cdbc892efb44aaf01f8890a204a63bad83567f4f1800a741eab96d98ef4c0c62daa43ce8ed7235bf6da5cb564
-
-Package: qhull-static
-Architecture: aarch64
-Installed-Size: 1836
+Installed-Size: 14388
 Maintainer: @termux
-Version: 8.1-alpha3-2
-Homepage: http://www.qhull.org
-Depends: qhull (= 8.1-alpha3-2)
-Description: Static libraries for qhull
-Filename: dists/uncode/main/binary-aarch64/qhull-static_8.1-alpha3-2_aarch64.deb
-Size: 337040
-MD5Sum: 710164ec0ee59ba983243e12db39e0f3
-SHA1: fc2ed3415fbc9aa76fbe77a75aa8c700135124d9
-SHA256: a16f8cf415c42d5d147e8a8b029fe2edee671d37ef16cd312335a58262d44cc5
-SHA512: 325ce88611918f479cc38252738346eaca4940a7234e83a32b70cf84fb19937f1b2abb8926ecfeea1a9f1aaaef8abd28bdece35ad0c70a036b755d668a2d3271
+Version: 1.15.0
+Homepage: https://github.com/doy/rbw
+Depends: pinentry
+Description: An unofficial command line client for Bitwarden
+Filename: dists/uncode/main/binary-aarch64/rbw_1.15.0_aarch64.deb
+Size: 2917708
+MD5Sum: 531daace26f3d52968502e284b3e9837
+SHA1: da8afe06f47cb807a937a2623996ec36ad9dbc29
+SHA256: 39edc8c6b25d5dc5d02838d3e1b1660a00cd2b0136cc7efe6a94296a3b98f459
+SHA512: 20c93b9f653b20db542ba4be4d736dd4974b5cd85c069f287780fbb0edd7e0784b06a71e95c36f9cc8986420a79c5507de8d6a8acb4d927fc35b6036e95bce9b
 
-Package: qhull
+Package: rc
 Architecture: aarch64
-Installed-Size: 4636
+Installed-Size: 156
 Maintainer: @termux
-Version: 8.1-alpha3-2
-Homepage: http://www.qhull.org
-Description: Calculate convex hulls and related structures
-Filename: dists/uncode/main/binary-aarch64/qhull_8.1-alpha3-2_aarch64.deb
-Size: 648152
-MD5Sum: 6748789355ec417624555074c9acf654
-SHA1: cb13f662813ada238b8b7b3c2e042c1023b4a8a0
-SHA256: 784b913fe94e8579c96aa13dde8bc4c5273530078c92bade0bedfd3c31945f79
-SHA512: 3c92a7f83b4f4a8164e72c07d8c00d21f9376d069fdde6ab6bf2994d609d9a4b7639d439bb03efe8693dd9125a403bae9cbafa79ddf6eb0cd7c9da2313019ab4
+Version: 1.7.4-2
+Homepage: https://github.com/rakitzis/rc
+Breaks: rcshell
+Depends: readline
+Replaces: rcshell
+Description: An alternative implementation of the plan 9 rc shell
+Filename: dists/uncode/main/binary-aarch64/rc_1.7.4-2_aarch64.deb
+Size: 50180
+MD5Sum: 75c9a82291684c6e3a38d535bfea07d9
+SHA1: 1a69e5d00cf3c04f459eb048821487d9689702a2
+SHA256: 6ea1a8d1b1b1c3f2338f863dbb4655b0ffbbf6a88bfda762db9edde3e2ba0901
+SHA512: e3b94a0dc92cab93e61ed6086e463633a0cf9f654d64f843378017774d604ea37244eebfda4a48d63f7b6349dec8467a4a55f5514a7cd492c8bc9ab17ef3a39d
 
-Package: svt-av1
+Package: rclone
 Architecture: aarch64
-Installed-Size: 4188
+Installed-Size: 80732
 Maintainer: @termux
-Version: 4.1.0
-Homepage: https://gitlab.com/AOMediaCodec/SVT-AV1
-Description: Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
-Filename: dists/uncode/main/binary-aarch64/svt-av1_4.1.0_aarch64.deb
-Size: 1383432
-MD5Sum: b5f587aa4815f059ed234ad0b8f894a1
-SHA1: 04b294111887903a699de3fb535bab04b3d71fe6
-SHA256: 3fa26aa090dfe47672df74c82956d4967f440b3cdc5ffa633590c5efe125eaa3
-SHA512: 1409bee0da9a70ea0bf1124a6ccf916b12fe9bf5c4186168ea85c4ddeec45dc607f07633a9427d7b3df89cae3a91cdc3b7101838f5585ced698c73b340fd9a2e
+Version: 1.74.3
+Homepage: https://rclone.org/
+Description: rsync for cloud storage
+Filename: dists/uncode/main/binary-aarch64/rclone_1.74.3_aarch64.deb
+Size: 18169532
+MD5Sum: 9a186215f1a882dbb959c1a31f40d225
+SHA1: eafbd291e6b33ee400185c0e136faac9583ba4b5
+SHA256: 80acd6fcee08a3147d94d9c79eee812a1df17028c31c029f24432101d24600f4
+SHA512: d3fae0a919b4be9e3af87cfc6e36f5c84d4b774d8b0edaf7cebe915c4d8c75e1131a72c3bbba702caaf87e89f055c5724cc3fbea61fc939edb6dda32154756a5
+
+Package: rcs
+Architecture: aarch64
+Installed-Size: 680
+Maintainer: @termux
+Version: 5.10.1-1
+Homepage: https://www.gnu.org/s/rcs
+Depends: diffutils
+Description: The GNU Revision Control System
+Filename: dists/uncode/main/binary-aarch64/rcs_5.10.1-1_aarch64.deb
+Size: 166380
+MD5Sum: 065680193e06e479a17f98c905e67aae
+SHA1: c9ec204ad19993a574545504336fa573b98e2e39
+SHA256: 9ab29034f6b7812d070b6db42b6f9fe5a0918d45972d79179726771d01632c8c
+SHA512: 94457767ea921593f8a4f9cd6b7f95a62e4c3bb37d9a6a10883475b55a341f1e61ba655e7238d960150ef1f33221068dffcd80153dbdf6c1b38a5a09fce9cc0c
+
+Package: re2c
+Architecture: aarch64
+Installed-Size: 12912
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Version: 4.5.1
+Homepage: https://re2c.org/
+Depends: libc++
+Description: Lexer generator for C, C++ and Go.
+Filename: dists/uncode/main/binary-aarch64/re2c_4.5.1_aarch64.deb
+Size: 865916
+MD5Sum: ffa7caf8a70b0062f7a632adf413d434
+SHA1: 32e7fa73f204b1c05f4662bff4cd2165f42a36a5
+SHA256: e6c90b31179ad58af4d567a81aada05697b23684f5a5888ffe2a6289181112c6
+SHA512: a3852193482609ccb179e2dd60a1d06e6ca3bb754f8295d26693803ae985acd541fbcdcba50658f4418f3e148d11a2731466d38b1056826680452a798953b216
+
+Package: recutils-static
+Architecture: aarch64
+Installed-Size: 748
+Maintainer: @termux
+Version: 1.9-1
+Homepage: https://www.gnu.org/software/recutils/
+Depends: recutils (= 1.9-1)
+Description: Static libraries for recutils
+Filename: dists/uncode/main/binary-aarch64/recutils-static_1.9-1_aarch64.deb
+Size: 152268
+MD5Sum: 512ed851336117c3445b68eeed725ac3
+SHA1: 44dcdb5d8469920e60ccc00c3ebd0959b6cdf05b
+SHA256: 3a4fb226332bd4eaefe46b755cfc6ae90efe469c1787d0b8a6bb6275d5146121
+SHA512: 6f926bc7aa87edbe3590c81dcd24232b9095c0d25626e4f3934ebb1eba90967ad16915653cc0e74c7bf525925bcbc71f552be38c9314443f1bc67d8c1db72f07
+
+Package: recutils
+Architecture: aarch64
+Installed-Size: 1960
+Maintainer: @termux
+Version: 1.9-1
+Homepage: https://www.gnu.org/software/recutils/
+Description: Set of tools and libraries to access human-editable, plain text databases called recfiles
+Filename: dists/uncode/main/binary-aarch64/recutils_1.9-1_aarch64.deb
+Size: 281724
+MD5Sum: 6357f429faa8f5b2b334977399072a0b
+SHA1: e034ee276a8642293bb07cc33caaba098e307183
+SHA256: 83f5078059551865e618bb3e08598e2b845c208bcc6e98b9ff00e3e7454f998b
+SHA512: 7c62f5a22819dd7a63f8d6d22fd1229772aa6c36eeda4d3c93e6eb9b08f442c9ac7c0940dce9abb7e34a428981fa59ae88e8622ad912161f2d965d74eb252311
+
+Package: redir
+Architecture: aarch64
+Installed-Size: 84
+Maintainer: @termux
+Version: 3.3-3
+Homepage: https://github.com/troglobit/redir
+Description: TCP port redirector for UNIX
+Filename: dists/uncode/main/binary-aarch64/redir_3.3-3_aarch64.deb
+Size: 13732
+MD5Sum: eaa340d5246afc38c9391dc2dc63183b
+SHA1: fadf0de691f760dd8395b80bf680b5279dcbb2c6
+SHA256: 4ebf002f37fdecf56e63404229bae4b89903929988350e8e5be4f0ae80e67aa3
+SHA512: 9148bcd7b9355fe3c56a084f06672bd0d2b7efbf1cfc806d84666863e7db991bca4d3fbf18dc4c4a70fc94e85fe30297c5dcef5c75905e61fa42354f33c62371
+
+Package: resolv-conf
+Architecture: aarch64
+Installed-Size: 48
+Maintainer: @termux
+Version: 1.3
+Homepage: https://man7.org/linux/man-pages/man5/resolv.conf.5.html
+Description: Resolver configuration file
+Filename: dists/uncode/main/binary-aarch64/resolv-conf_1.3_aarch64.deb
+Size: 1024
+MD5Sum: 8978285c9f96f752a0a6e03c587b0bed
+SHA1: 7b5f4ef76d12581e82d0b6d167fc0ad02954eb55
+SHA256: 034ac92bedfe9e31426f0ae8fa8aea1d041e4b29b23bded79f7eb2b630fdf137
+SHA512: 0e61008b80761108a5c38d8089999d1b30b1154d93c50a8701ffacaf520fe103d7189a3620a3eb1c68abb1c6c2b7fb131343699b00b3d9758e33737f69b1b19a
+
+Package: restic-server
+Architecture: aarch64
+Installed-Size: 11832
+Maintainer: @termux
+Version: 0.14.0-1
+Homepage: https://restic.net/
+Description: Restic's REST backend API server
+Filename: dists/uncode/main/binary-aarch64/restic-server_0.14.0-1_aarch64.deb
+Size: 3054608
+MD5Sum: 52875bff96109e80e268f6e338e48bf5
+SHA1: 76f97bc10c73219ec16a6377e3f91f42f4551954
+SHA256: 108ef20d0afed654e735fa81919c6a3dc153c7d21a4b0b1d8c704b81b3316718
+SHA512: f1af1b8ec1cc39c3604da9d907554b254ce3e0b9fecf487838b4032a217cf1f2b86cea8ff2c5ad4f435b9c2578afb3fe7e0c0581ee6163aa7416cc4f1c9f7150
+
+Package: restic
+Architecture: aarch64
+Installed-Size: 44980
+Maintainer: @termux
+Version: 0.19.0
+Homepage: https://restic.net/
+Suggests: openssh, rclone, restic-server
+Description: Fast, secure, efficient backup program
+Filename: dists/uncode/main/binary-aarch64/restic_0.19.0_aarch64.deb
+Size: 9090228
+MD5Sum: f35c3c533ea00104e7028af633c40476
+SHA1: 9f89bc1d5653e60e4aff49597e031b9bd3cebb3f
+SHA256: 38405e933cf4b2db8322d3586d951c4de8361f4bbe94224b038bfb29588a60a8
+SHA512: 9271cba3048f6516c058983b853a62c3f33cdb3b2d7199c0e344654b23917afad708a14f67565ab6b16e2529acb753b9d6cc83ddda391228bc7898bf270e3ac7
+
+Package: restish
+Architecture: aarch64
+Installed-Size: 34048
+Maintainer: @termux
+Version: 2.3.0
+Homepage: https://github.com/rest-sh/restish
+Description: A CLI for interacting with REST-ish HTTP APIs
+Filename: dists/uncode/main/binary-aarch64/restish_2.3.0_aarch64.deb
+Size: 6943232
+MD5Sum: b31df589c51043906a3cbb817f533cfc
+SHA1: e15d2ed5031064d3346c6f2830e6e52dfe4c12e4
+SHA256: 8a99304c70d3b06f66ad85f915de61ad758d714f9eb4e09b44c58946dfcaa384
+SHA512: 883942998fa8300f5beba752875086b56e185a3f053d89773a03fceb1984cd92de2af051a11eac0c563fd8b2ba073455758e000da0e426616a399427c137fd58
 
