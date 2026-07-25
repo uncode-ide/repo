@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96492
-MD5Sum: 54ca36bd0eb5acf70a8b8bf238a68275
-SHA1: 0b607f267481f63824c3a4355efc39fd55569d00
-SHA256: 035b950687fec5c1112f02ff894cbc8675e82590f7542d4f8035896c7c727555
-SHA512: ddf159574aa1a9b3a3e78f042138ac68ec416752b816ca64910ef998074f3e6eac62d9c4c12d7deaef4eeb70c0c146aeb422fccae9ba8702a8be87bc977b9672
+Size: 96500
+MD5Sum: 515b8f664a70bc5eb0a61d2b905929f3
+SHA1: 3e1cd1167260130c2c35eb925527eee29f12a571
+SHA256: 45af88a5cd0d781835c320877ea20e7d46c4d81a4d369c5323a855abb5c28e6b
+SHA512: fd8b8253a4d97251241258e5db5772013f5016243e8c679005d89172fe340cdd2b4404dc3a0b2ea0433efa90eca4a82202b5945abda0b7277652072d1c82feb3
 
 Package: ca-certificates
 Architecture: all
@@ -27,32 +27,18 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: rabbitmq-server
+Package: root-repo
 Architecture: all
-Installed-Size: 65336
-Maintainer: @termux
-Version: 4.3.2
-Homepage: https://github.com/rabbitmq/rabbitmq-server
-Depends: erlang
-Description: Feature rich, multi-protocol messaging and streaming broker
-Filename: dists/uncode/main/binary-all/rabbitmq-server_4.3.2_all.deb
-Size: 30731556
-MD5Sum: a3aef79f1113a69cec361fc88f4d607d
-SHA1: c823c5ab5112523f6b838bb709358e0ec01e69bf
-SHA256: c4052a76ee62ccf7a33eaa07c00fac21bf4c452bb16af40ff992a58ec0711c9d
-SHA512: d19a9e2ccf5104ed74466dcd50852650570d474c7d77728e4fb4573ca85ca7c06ccdeb606fa867ad336c8f996784d65f991683ee2019ceb79a6fa21b37221c26
-
-Package: rapidjson
-Architecture: all
-Installed-Size: 896
-Maintainer: @termux
-Version: 1.1.0-7
-Homepage: https://github.com/Tencent/rapidjson/
-Description: Fast JSON parser/generator for C++ with SAX/DOM style API
-Filename: dists/uncode/main/binary-all/rapidjson_1.1.0-7_all.deb
-Size: 99612
-MD5Sum: a534b1c1c84b83b8ff9f942c23d29e4a
-SHA1: c67ed4fca0dd91fa836138248840c14d5cf54518
-SHA256: 9920968f0632c7e3352b46732513807ed0f567f0773292a6f300001252dedb16
-SHA512: ea6cdc89fade4e4e4a874b9ccb68adf81bbbd4ff655229f988cd9e3eb64de5951a4b6017bf69629e30c47b6d0baa074282d3cc399dab6634d8c44c333d7e971a
+Installed-Size: 52
+Maintainer: Henrik Grimler @Grimler91
+Version: 2.4-2
+Homepage: https://github.com/termux/termux-root-packages
+Depends: termux-keyring
+Description: Package repository containing programs for rooted devices
+Filename: dists/uncode/main/binary-all/root-repo_2.4-2_all.deb
+Size: 1224
+MD5Sum: 9ff2385f0c1edb6be93f8d8f4ef0f57c
+SHA1: fa5aaa76c24182c5c7c38dd6166ce151826d6ac1
+SHA256: 3a4a6bceea313dbc3d509121ba678143daefa16140487c0c5911f1b0b9368d7c
+SHA512: cc008b22fd2a590b989b3d2effe972a33cb1200e293b339e6b63a5acef6b3742801abfaf4c007769444eb68fff773db313a777099d5ce9658a829318bad04190
 
