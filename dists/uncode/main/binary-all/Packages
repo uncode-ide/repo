@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96500
-MD5Sum: 515b8f664a70bc5eb0a61d2b905929f3
-SHA1: 3e1cd1167260130c2c35eb925527eee29f12a571
-SHA256: 45af88a5cd0d781835c320877ea20e7d46c4d81a4d369c5323a855abb5c28e6b
-SHA512: fd8b8253a4d97251241258e5db5772013f5016243e8c679005d89172fe340cdd2b4404dc3a0b2ea0433efa90eca4a82202b5945abda0b7277652072d1c82feb3
+Size: 96492
+MD5Sum: 870e3dae3e9d967c42d7d5a1b67b01e1
+SHA1: 17d3a4bc9573dae0d85f5be38fb37fee3dbb7cb2
+SHA256: 6ed60b4c6b14b9d8e60214d6051347d5817225f67532b5f517950fffc0660a0d
+SHA512: abfe41112f48cf92b0fa37acc639864bef9e1757ba4929aacca12d64676446263b84f20dc8bc15346f2fffd0d4acc06b53c3b72ef5f05591777874c332be3812
 
 Package: ca-certificates
 Architecture: all
@@ -27,18 +27,17 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: root-repo
+Package: sensible-utils
 Architecture: all
-Installed-Size: 52
-Maintainer: Henrik Grimler @Grimler91
-Version: 2.4-2
-Homepage: https://github.com/termux/termux-root-packages
-Depends: termux-keyring
-Description: Package repository containing programs for rooted devices
-Filename: dists/uncode/main/binary-all/root-repo_2.4-2_all.deb
-Size: 1224
-MD5Sum: 9ff2385f0c1edb6be93f8d8f4ef0f57c
-SHA1: fa5aaa76c24182c5c7c38dd6166ce151826d6ac1
-SHA256: 3a4a6bceea313dbc3d509121ba678143daefa16140487c0c5911f1b0b9368d7c
-SHA512: cc008b22fd2a590b989b3d2effe972a33cb1200e293b339e6b63a5acef6b3742801abfaf4c007769444eb68fff773db313a777099d5ce9658a829318bad04190
+Installed-Size: 88
+Maintainer: @termux
+Version: 0.0.26
+Homepage: https://packages.debian.org/sid/sensible-utils
+Description: Small utilities used by programs to sensibly select and spawn an appropriate browser, editor, or pager
+Filename: dists/uncode/main/binary-all/sensible-utils_0.0.26_all.deb
+Size: 6028
+MD5Sum: d736239667c05e247df1aea3241a336f
+SHA1: 7b64a32c672475164d2fe65f5ad96dc7f16c4b33
+SHA256: f237bb770fb1f944f03a39ed5429c85408eb4bccd8c00dfcd84c700bc56ec389
+SHA512: b5734b0c6e101fa97823e53da461a5beac43cb5bf896eace305fc52471fcb44933bd51e701735c139d2b391e6b5baaa2105c6a218f47cd2a8ed89eb86dd456da
 
