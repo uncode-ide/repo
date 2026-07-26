@@ -10,248 +10,240 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 892
-MD5Sum: fa312e221561b45981c9c4d149799837
-SHA1: 5dd6d32bbc29b5916591f92b1742ebd9445868e3
-SHA256: 5854730e636c9ea3267e3864658aa2f3de6e3b1d580a1f41a37336dad90d84e5
-SHA512: 60bf8a2ab1b0889d898c312250c09a8aaa7510d8c34b8a73567eccf8bef5aea06753c35569d1628843597c193efe8c54d09fc505ac041c0c5363a21fee4dd7eb
+Size: 896
+MD5Sum: fe31b48c8188569b936ed833b26335ad
+SHA1: f443750dd90cde287f562a894d8d0b2ba85749ce
+SHA256: 64ae6a828bb0ef821bace8c3bf60699b2a3f173616a9eec2588f26a2514fe287
+SHA512: ffce9df684f36c6ee604d1a4e59a438dea1511464e8e6f0005af80fe876751db92b97fd3d726e490b4596ba31963dcfd2bdb47082e97a0f0dc31bef104324b36
 
-Package: scc
+Package: simdjson
 Architecture: aarch64
-Installed-Size: 4852
+Installed-Size: 7728
 Maintainer: @termux
-Version: 3.7.0-1
-Homepage: https://github.com/boyter/scc
-Description: Counts physical the lines of code, blank lines, comment lines, and physical lines of source code
-Filename: dists/uncode/main/binary-aarch64/scc_3.7.0-1_aarch64.deb
-Size: 1276168
-MD5Sum: 0f5e7e4baa518ed1991cc06ced07e5ca
-SHA1: 9c8063fdc493a0240f6c38db3975a8fbba639452
-SHA256: 56562933c87b0a9ec9f51de8ee652e80c2836c11bc76324c6f9650b3eacc1880
-SHA512: 9972997a23f90448815911e598d17cb3f4312dd964215bba3f3f1137943e55f39b025220f284614dbb1217d3198ff3afa5135102dea981a382e9cfcf9fda475c
+Version: 4.6.4
+Homepage: https://simdjson.org/
+Depends: libc++
+Description: A C++ library to see how fast we can parse JSON with complete validation
+Filename: dists/uncode/main/binary-aarch64/simdjson_4.6.4_aarch64.deb
+Size: 268392
+MD5Sum: 7c209a1af87c1e6ec265bc3d68e7995a
+SHA1: 0a319a9bdbe7624034bdd26515c4e2fdcf2a11c1
+SHA256: 7fb3d632308a34e73102fd0f6bfa73f27c2b77f2ac161798a28bb34e7015dff4
+SHA512: cc67a5c99b476e47808817a1851044afd48a0f3f4f1bdd9d0a3d5eece2ab9fcfc717b4cbabe5c0b14d23cc0f5d865a68a8726f7dc7f3ba938267591e38412ad8
 
-Package: scdoc
+Package: simh
 Architecture: aarch64
-Installed-Size: 92
+Installed-Size: 6644
+Maintainer: @termux
+Version: 1:3.12.5-1
+Homepage: http://simh.trailing-edge.com/
+Description: A collection of simulators for computer hardware and software from the past
+Filename: dists/uncode/main/binary-aarch64/simh_1:3.12.5-1_aarch64.deb
+Size: 1072408
+MD5Sum: b1c0f10fc58395fd440b310727a75cdd
+SHA1: c5f52781526f837f73429df6e8c8b990d41826bb
+SHA256: 705e73df248b5644f419f791e6f5d886193d60a6b71a3ea3483519b76ae12187
+SHA512: 98b1a84eb804425a033201809faadcb918d59bcc4224069c74720d54584a55b12db1e5348ed361de0c06ed0e2dfb704bdb6a133fb94ea2aedafbca42cdef68d6
+
+Package: simulavr
+Architecture: aarch64
+Installed-Size: 1924
+Maintainer: @termux
+Version: 1:1.1.0-3
+Homepage: https://www.nongnu.org/simulavr
+Depends: libc++
+Description: Simulator for Microchip AVR (formerly Atmel) microcontrollers
+Filename: dists/uncode/main/binary-aarch64/simulavr_1:1.1.0-3_aarch64.deb
+Size: 339268
+MD5Sum: 1f3b160ccc0dc4459b9e14504292096d
+SHA1: 919322f0c2f940ca7b54257ea3518f2a1ac43379
+SHA256: 8df9c50f2829cd4a346582bfc67f8af4900e2fc2dcb4fd0c3909245fc62a35cc
+SHA512: 069867c76a5b868e9882d621e01638224d29b1b1cbc11fdf15fe242989447b4cb4e751b8225051e874a86b90f397aa466d709c20abb568dac6d5f290cc0f56d6
+
+Package: sing-box
+Architecture: aarch64
+Installed-Size: 34688
+Maintainer: kay9925@outlook.com
+Version: 1.13.14
+Homepage: https://sing-box.sagernet.org
+Description: The universal proxy platform
+Filename: dists/uncode/main/binary-aarch64/sing-box_1.13.14_aarch64.deb
+Size: 8155468
+MD5Sum: ede27d9c940aa0677368837eb9eff06d
+SHA1: 0f4ea0546173516fd1e154723065e356d3bd4a88
+SHA256: b767b4127b5641809351c51531d21433952078372c47018d73f1c1ea55626278
+SHA512: 0683aba63af225e56d011c46f73776fe2ff5852025393692ea28ef7c6b1eff0e8a0c91d230bab2bbad3dbdf1e5ef990b0be9ff92d2de69a6d503d8d503d94714
+
+Package: skate
+Architecture: aarch64
+Installed-Size: 12668
+Maintainer: @termux
+Version: 1.0.1-1
+Homepage: https://github.com/charmbracelet/skate
+Description: A personal key-value store
+Filename: dists/uncode/main/binary-aarch64/skate_1.0.1-1_aarch64.deb
+Size: 3234352
+MD5Sum: 8ce932c939fd85bf9d662955a8911c26
+SHA1: 0ec5a7fadf8db8be9892ac972090bc732ba3f6cc
+SHA256: 61a10976fd25177981046f0438b3d707a8b4f8fc094ecc2077485b2e6c857808
+SHA512: fa89fc93ce227ad1dc10ed571eec6ab3bc3d7b82214cb78175759eb56796cfa6050c65df3bbf70bc4cc934790abee6421c4ff9f6cad9d280db8b75610bc6f153
+
+Package: slides
+Architecture: aarch64
+Installed-Size: 19348
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Version: 1.11.4
-Homepage: https://git.sr.ht/~sircmpwn/scdoc
-Description: Small man page generator
-Filename: dists/uncode/main/binary-aarch64/scdoc_1.11.4_aarch64.deb
-Size: 12088
-MD5Sum: 943d7aa6d8fac09d2dd4d7cce3b5a643
-SHA1: 61580874488a6fcd7f8c23c92a77b43b108b05f7
-SHA256: 9490491e09b2fe05663de764f22c1300acc5d9601a15a070afe00e9155d29e16
-SHA512: 6c211840d3c52d44c094df121f35a36e27c9c94ef4869df8ca3f5dc0f21afd5c4b59722e986c50e912c9b22eb83e1f301c713328ea8f4081bd4cc36c8a5931de
+Version: 0.9.0-5
+Homepage: https://github.com/maaslalani/slides
+Description: Slides in your terminal
+Filename: dists/uncode/main/binary-aarch64/slides_0.9.0-5_aarch64.deb
+Size: 4318856
+MD5Sum: 00e67d29388f9d9370c6c73d86bf7604
+SHA1: c934fb0e2515275927a3d06cf14112cde9353ae0
+SHA256: c486c0bc0b55650608635ff950dc939d5df27f1b9562ee20da09a7557f6a0f06
+SHA512: dc43d91e86ba373d6015c460b24314a815a6851e3bfd155b1358b1a0c3130c1859d3c3bf739e152fb6a1ebc8ad833961cba575b03124fc1f788eaf80168ac91d
 
-Package: scrub
+Package: snowflake-client
 Architecture: aarch64
-Installed-Size: 132
+Installed-Size: 16760
 Maintainer: @termux
-Version: 2.6.1-2
-Homepage: https://github.com/chaos/scrub
-Description: Iteratively writes patterns on files or disk devices to make retreiving the data more difficult
-Filename: dists/uncode/main/binary-aarch64/scrub_2.6.1-2_aarch64.deb
-Size: 20060
-MD5Sum: ae9fc9a2c4ec0fb7e5b251a44fad633d
-SHA1: fef019774184eccbbc979e3cd365d99baea2420b
-SHA256: b2e6fc45278e663d3283f53c6fd128d8455554800ccb693136cd40fb34b18558
-SHA512: f600c11508c68eea10b876b9cbdcfd4209913e21108620451385a14244eabb559da58ffe0942b370867fbf0d9b892702a102465b4b86ccc2c029bba16f23357c
+Version: 2.14.1
+Homepage: https://snowflake.torproject.org/
+Description: Pluggable Transport using WebRTC, inspired by Flashproxy (Client)
+Filename: dists/uncode/main/binary-aarch64/snowflake-client_2.14.1_aarch64.deb
+Size: 4174672
+MD5Sum: 3caeb2e713a1a2e6bc2484a77a2e9620
+SHA1: 23fa45724c55f700cf0c103a4441ffd3cfc15195
+SHA256: 48c1795dfb996e2bc41882716ff84720c0b09f000803740b7f00b9b26995ecf2
+SHA512: a635f8bd09beac0abbb272cb2f5edf78f956b9e8f76e764d94c689d1c31b53b04e079f7d5060568ce664635bfa412d3ba8a55067aad486a029d0a3f59eb9c770
 
-Package: sd
+Package: snowflake-proxy
 Architecture: aarch64
-Installed-Size: 2184
+Installed-Size: 16580
 Maintainer: @termux
-Version: 1.1.0
-Homepage: https://github.com/chmln/sd
-Description: An intuitive find & replace CLI
-Filename: dists/uncode/main/binary-aarch64/sd_1.1.0_aarch64.deb
-Size: 623544
-MD5Sum: a38afd08347211b6c7a117034e23dfc5
-SHA1: 42e3d31e8ec09a1c5e42a5eafc5f43faa4e1d7da
-SHA256: f93ec55bb8f0ade3f1a7a63f9139f63058600fbc7b95b51fc75d5e403dfccbcd
-SHA512: b81ec31d1cff88a3d8f184306f93953013511d9b5821334546a7706159c48317d6809db91f766646b76e592e2ab46cec64953e5a61e80802cd691bf0d14f0e0f
+Version: 2.14.1
+Homepage: https://snowflake.torproject.org/
+Description: Pluggable Transport using WebRTC, inspired by Flashproxy (Proxy)
+Filename: dists/uncode/main/binary-aarch64/snowflake-proxy_2.14.1_aarch64.deb
+Size: 4168320
+MD5Sum: 9621239883e91b9de2d97538ed4c292b
+SHA1: 6929a90ac9930c3dd44092872ded11555dec4a87
+SHA256: 4897be37edca1e89e829115b04e0b7ad599decf13c2581821a188675ccdedf6c
+SHA512: d35e7f474c3d920d01169651907ca994d56100e98c5ac8a1bceb453bf7187debfe4debb6f82a54ad1135563e160f0546f2bc447319d82261181b33c7b2ca17f4
 
-Package: seanime
+Package: snowflake
 Architecture: aarch64
-Installed-Size: 84172
+Installed-Size: 40
 Maintainer: @termux
-Version: 3.8.7
-Homepage: https://github.com/5rahim/seanime
-Description: Self-hosted anime and manga server for sea rovers.
-Filename: dists/uncode/main/binary-aarch64/seanime_3.8.7_aarch64.deb
-Size: 19865836
-MD5Sum: d7d1303a8ccad511f7723716dc5d2e28
-SHA1: b7e3a494669e0ceb0c623e6666a096b14ddfe3f4
-SHA256: ffe9737cbcafd6b1e23580cf8d02108f32cd194ae067e3d7003a1b32f606bf5f
-SHA512: aba824cf2a84d9eeb455a709df9d7a5360218f38a6a66d2417ce64a83d71772f43fb79aadfbbc47dc56f85354051faeabe7fbc847026e5c14b0627b05e1a0787
+Version: 2.14.1
+Homepage: https://snowflake.torproject.org/
+Description: Pluggable Transport using WebRTC, inspired by Flashproxy
+Filename: dists/uncode/main/binary-aarch64/snowflake_2.14.1_aarch64.deb
+Size: 1744
+MD5Sum: e8252c39f18a4209b496fe878c822431
+SHA1: 2932a091c7e72a298e34f7fdea0b69f2c45b264d
+SHA256: c100afaaf603bf6c6872e8b0e0e9656ebe31eeb60252284675a9edb5d43370e1
+SHA512: 1ebe062c0b57424d7354a43b00f8925f025a0c8a41d53b837304bcec8e94f85c5e62e6cc44177927b7a6a3022895c355de24ff58457f615096e74eea1df8e892
 
-Package: secure-delete
+Package: socat
 Architecture: aarch64
-Installed-Size: 128
+Installed-Size: 664
 Maintainer: @termux
-Version: 3.1-6
-Homepage: https://www.thc.org/
-Description: Secure file, disk, swap, memory erasure utilities
-Filename: dists/uncode/main/binary-aarch64/secure-delete_3.1-6_aarch64.deb
-Size: 19304
-MD5Sum: 4e3b203af5e025d3005dc12251b56d53
-SHA1: 1658a3f8b010569aa237519a9bc2151421cd047f
-SHA256: 20ecaece9567ec61b7ac2bb21b0156df34229955b335d3c11c7e5e94b72a97e7
-SHA512: 17f25c216bb3dd45d229ad422001d3c57a206edb02ad3762422fed6ba51989a542ae48f634404a81da618cb17a6e8f7249ce0ccb2ae065ee446eb480436bdb15
+Version: 1.8.1.3
+Homepage: http://www.dest-unreach.org/socat/
+Depends: openssl, readline
+Description: Relay for bidirectional data transfer between two independent data channels
+Filename: dists/uncode/main/binary-aarch64/socat_1.8.1.3_aarch64.deb
+Size: 183584
+MD5Sum: 102806137c2ec1eab9b5e7fe0978d81d
+SHA1: ce71fe4f69cda98521026f87c4c848680bc90617
+SHA256: 4e855ea8c192a619b21f4fcc07964af43b770449a5df5625e6e5382c3f74f986
+SHA512: 0bd5574edf52756a89a1fe5f51cd058b44d9674a4f56bd1ea8a10fa0a870efc3f840eb31fabc761284e7662ea626248fa2374fa6e0ddec52eaa6aafe5887f5ab
 
-Package: sendme
+Package: sops
 Architecture: aarch64
-Installed-Size: 9520
+Installed-Size: 53352
 Maintainer: @termux
-Version: 0.36.0
-Homepage: https://github.com/n0-computer/sendme
-Description: A tool to send files and directories, based on iroh
-Filename: dists/uncode/main/binary-aarch64/sendme_0.36.0_aarch64.deb
-Size: 3096324
-MD5Sum: be6d2c3e34cfe939fb38debb6d986148
-SHA1: 551309745f8bcaa6b7cf898a3eb43cacda06c3f5
-SHA256: d851623981ff54bddc789033370c048ce91079e727a3d8185ef81e8ff17b0fc3
-SHA512: 99c869cb638c2078f3d99182d29f7c416be06647722b224a0e9cddaea3b969c07ba1b2f3749070d20459575b1e098fa095130635e2a0e72e3fde489b6848125f
+Version: 3.13.2
+Homepage: https://github.com/getsops/sops
+Description: Simple and flexible tool for managing secrets
+Filename: dists/uncode/main/binary-aarch64/sops_3.13.2_aarch64.deb
+Size: 10176004
+MD5Sum: 3794963d42a1c3d816e245565ec03dc0
+SHA1: a8d711c670e4d0b9f10cb1cad57f74a42bcc43dd
+SHA256: 4f2e2ceca0414b94318842833b89014e2a7a42d0eed2bd964808fbdad6c4e943
+SHA512: c077cf0e2c05c622b7c308108feb1b76f6d878f100956aec54b346fc4065f8cc9176a2b0052f53a4ad1107c25f70703b437bc5f17986ad576b5325ffb21106b3
 
-Package: senpai
+Package: speedtest-go
 Architecture: aarch64
-Installed-Size: 9480
+Installed-Size: 8896
 Maintainer: @termux
-Version: 1:0.5.0
-Homepage: https://git.sr.ht/~delthas/senpai
-Description: An IRC client that works best with bouncers
-Filename: dists/uncode/main/binary-aarch64/senpai_1:0.5.0_aarch64.deb
-Size: 2573312
-MD5Sum: ee3b7b7d7f06692052c7579d2067dcb4
-SHA1: 198fef2d448dad976db5fc578f8e241667426dad
-SHA256: eb48db6ceb38256bac17c677cabe88cced8ff5c5ad7214dab0ec226e4e08828c
-SHA512: 997020018abfeabe471b5c1cb841c12715645d5689428a22db0bf7ad42a50528697506a46f041d31e20619594c0d77b66ed6e5f31f3b0cfa9e73d10431164780
+Version: 1.7.10-1
+Homepage: https://github.com/showwin/speedtest-go/
+Description: Command line interface to test internet speed using speedtest.net
+Filename: dists/uncode/main/binary-aarch64/speedtest-go_1.7.10-1_aarch64.deb
+Size: 2433176
+MD5Sum: 060f54883acc906723969b28443441f1
+SHA1: 5dd1936f7b7f80658cd3a2bbb0224766f086b2bf
+SHA256: 8bb4d5245970568ef27f4dc813cc175b3aa6e96086f1c4f03b1883b93a96beee
+SHA512: 04d8fc87ed94277dffda0ca2c2c72d843b45760aee4fb8e8c3100870105c396515920bb6c7cfa7fa3302fad85bdba18837c3e85f8ee327d66e4144b90cc19783
 
-Package: serd
+Package: speexdsp-static
 Architecture: aarch64
-Installed-Size: 208
+Installed-Size: 120
 Maintainer: @termux
-Version: 0.32.10
-Homepage: https://drobilla.net/software/serd.html
-Description: A lightweight C library for RDF syntax
-Filename: dists/uncode/main/binary-aarch64/serd_0.32.10_aarch64.deb
-Size: 42564
-MD5Sum: 8c68b3fc046aa9861cf6574f25bcf741
-SHA1: 1e0fc2cee0feff035c22d4707bf73429b3bdb409
-SHA256: cb62b9d933992a07572bdae92e38e4873552824c48a95d07514cc41b5e557d4c
-SHA512: 882a1150f57f112ea8838d11f15701ad9401babc932caef8b66a472d73a9f8363ab3eba2e3d80475d5ab04ba6e6ba2142ddc3fbbff6ec027e421e23856c8b091
+Version: 1.2.1-1
+Homepage: https://speex.org/
+Depends: speexdsp (= 1.2.1-1)
+Description: Static libraries for speexdsp
+Filename: dists/uncode/main/binary-aarch64/speexdsp-static_1.2.1-1_aarch64.deb
+Size: 32856
+MD5Sum: 6f105b11c3becc6a9947e8c9fad0dc29
+SHA1: 886db9bc47d01513c7832fae11f643a6c5e3d1b5
+SHA256: db914bfc43bd4377b43200ed07d6cab2b1df340f4ddb6e1924b40828e4412eac
+SHA512: 8e7f07c64ee743174079ab228c92fe56ab8f6a9b43aa17ffebec4d201137ca097bf2a572fc3e9c386cb1ee33df8ee93e965b5496ad545b6f803abcc5f4fff4ca
 
-Package: sftpgo
+Package: speexdsp
 Architecture: aarch64
-Installed-Size: 79184
+Installed-Size: 168
 Maintainer: @termux
-Version: 2.7.4
-Homepage: https://sftpgo.com/
-Description: Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDAV server
-Filename: dists/uncode/main/binary-aarch64/sftpgo_2.7.4_aarch64.deb
-Size: 15469808
-MD5Sum: 84b5d0011ad123331b53d4d8de645815
-SHA1: 639f492048ae291ce361f26d732b1da059ac9d5a
-SHA256: 639d5579616d29bfc0900622a8d87cc2713f9508da3c3a32a7b4b7b100dc14c4
-SHA512: 61fd52bfbf689dd8266d46656a825da281f8daf02e712701b23968611957e5a2b1949b40e502482b6c0e3c54205d00ab50cc6aeb34e8dc9cd3bec423da725c55
+Version: 1.2.1-1
+Homepage: https://speex.org/
+Breaks: speexdsp-dev
+Replaces: speexdsp-dev
+Description: Speex audio processing library
+Filename: dists/uncode/main/binary-aarch64/speexdsp_1.2.1-1_aarch64.deb
+Size: 37292
+MD5Sum: 209f960dfb780b9c6fa906ea1b453794
+SHA1: 21df587becdc63ba870de08e76a8a8d8906e0e3e
+SHA256: d817cd1e0038d6bbb385a758d515be336a9ae67ae85cd50b78c4457e3de579d5
+SHA512: 73c688f001df00a349cb5f83deb93f275fcf47a526728a0baec92f8e66b99714ed0ceaafe561e698fa085e509916b9dbf881d0a3c8e48140865d5fbdc5937e53
 
-Package: shell2http
+Package: spglib
 Architecture: aarch64
-Installed-Size: 6872
-Maintainer: Krishna kanhaiya @kcubeterm
-Version: 1.17.0-1
-Homepage: https://github.com/msoap/shell2http
-Description: Executing shell commands via HTTP server
-Filename: dists/uncode/main/binary-aarch64/shell2http_1.17.0-1_aarch64.deb
-Size: 1968884
-MD5Sum: 9783cbbf186375ac30d94a8f3e10f694
-SHA1: 431cb7849458172b2db5e11e584a5124e54820ab
-SHA256: f2edc21fbc2125ee1139919efc83ddc9f7f050cc83529aedde862e52e90871e9
-SHA512: ddd78b6d2f867e1c860dc0b85fc50c79b725d35a3bb093b5d4e4e9ad2cb1e60752cd8dcd100b4dbdd137898eb0155e7484960793257b082c5c6258fed22656b6
-
-Package: shellharden
-Architecture: aarch64
-Installed-Size: 408
+Installed-Size: 2720
 Maintainer: @termux
-Version: 4.3.2
-Homepage: https://github.com/anordal/shellharden
-Description: The corrective bash syntax highlighter
-Filename: dists/uncode/main/binary-aarch64/shellharden_4.3.2_aarch64.deb
-Size: 147088
-MD5Sum: e5af6d5d66d848435eabdf431ef6eec3
-SHA1: d3f7565134b5ebdc24a44d9dceabcb9f75c2dd60
-SHA256: a8b346e1708aea437b88c49751ebb0dd7aed3fed63a71b6fd1d8d76f4239f07d
-SHA512: a682274cd2b3739eef6ea97791d4dc472c0ac9a95d6319ea6fad24ac3983b380167362b014ffaac0f112e141e6b7e496217c326485f83dbacfbd8b6173704731
+Version: 2.7.0
+Homepage: https://spglib.github.io/spglib/index.html
+Description: C library for finding and handling crystal symmetries
+Filename: dists/uncode/main/binary-aarch64/spglib_2.7.0_aarch64.deb
+Size: 394684
+MD5Sum: f8e15bf52b6c35e2d63521249aa16ec9
+SHA1: 54ee283d348470665f8d6a7a29508bd84b9405fb
+SHA256: b64241107c642273cb7af37faf4065c0026ef2c96d4013f0f321660af4e7ceb5
+SHA512: 456ee842cd7b8ff2273734b2b54f3131f7fd46587f97d4522e2b623f4ca8a1a96dd754a650dbee45e60da9476c62f29ee0f3876e58de308308f1d07634202c57
 
-Package: shfmt
+Package: spirv-tools
 Architecture: aarch64
-Installed-Size: 3304
+Installed-Size: 39620
 Maintainer: @termux
-Version: 3.13.1
-Homepage: https://github.com/mvdan/sh
-Description: A shell parser and formatter
-Filename: dists/uncode/main/binary-aarch64/shfmt_3.13.1_aarch64.deb
-Size: 952452
-MD5Sum: fa038455b77dcdf0933989434c35c40c
-SHA1: d2c3d1fc01d65e47ba8f7d52523e86c532a1c9a6
-SHA256: 5ad766fbf80be26fc9de8a1fc445edaecbbceec430787341b2e51c796dca5e1c
-SHA512: 6fb9f4fde3c7f2a9c19f7a82c35596e6935354cd843e69378e8e806c38994bc626b85dd0d08fd6347763d253817c7f0fd29d77e1e35e90f7eb01fe295191bb82
-
-Package: shiori
-Architecture: aarch64
-Installed-Size: 41768
-Maintainer: Krishna Kanhaiya @kcubeterm
-Version: 1.8.0
-Homepage: https://github.com/go-shiori/shiori
-Description: Simple bookmark manager built with Go
-Filename: dists/uncode/main/binary-aarch64/shiori_1.8.0_aarch64.deb
-Size: 14017712
-MD5Sum: 3329624391db6f78af43d02acbe30ecb
-SHA1: 946c04f53ea4cf4168e4a5453918a621dc9a4274
-SHA256: 451e36b9ebd7dbf147078a2521784fc547cd00bfebe0f4ca360bf0f87bd56d1b
-SHA512: 14d8d162f991827729d3abc5d5f3aa828ec72568477b1b884422107f6129992833d2afbc69e2530a43b7421feb6bb6622f43f39cf9a1b9a6abd08968f05f9a6e
-
-Package: shntool
-Architecture: aarch64
-Installed-Size: 336
-Maintainer: @termux
-Version: 3.0.10-1
-Homepage: http://shnutils.freeshell.org/shntool/
-Description: A multi-purpose WAVE data processing and reporting utility
-Filename: dists/uncode/main/binary-aarch64/shntool_3.0.10-1_aarch64.deb
-Size: 58524
-MD5Sum: d648ebd9ad8c3d91296832e1bc400ebe
-SHA1: 97c3136e35b0f7a4e76a017239d32a44fcc6f1ac
-SHA256: 1b24fb1b2c0e5196be3d790c279c002091449ef6cd1dd7eb6639beeeca00d10a
-SHA512: 65e841b6d2e2cd3d3f8529302eec8d969570f397149212018e4d7294f33b1a7c2c023644f69cdf8718096b71ff032bb01487174adbd191434a3c6c14634becc6
-
-Package: shtool
-Architecture: aarch64
-Installed-Size: 516
-Maintainer: @termux
-Version: 2.0.8-9
-Homepage: http://www.gnu.org/software/shtool/
-Depends: perl
-Description: compilation of small but very stable and portable shell scripts into a single shell tool
-Filename: dists/uncode/main/binary-aarch64/shtool_2.0.8-9_aarch64.deb
-Size: 93168
-MD5Sum: 0c74e3a54d035ea5e2984d975f8921c7
-SHA1: c842ab2c0a27e897c0b939fdba0deac3c938d541
-SHA256: 51ed39af5dc72b387f1c3c2b1ba0f5aa4502fe1f1b81e63f61e0fe136395c608
-SHA512: 5008de112d14083db75d7639e520d663354b1c25df7b504bb4d019406d99d1e23a1852b0d3ee8c478c773aed2a02187309255b7c552406a5748d4fff583774c9
-
-Package: simde
-Architecture: aarch64
-Installed-Size: 9084
-Maintainer: @termux
-Version: 0.8.2
-Homepage: https://simd-everywhere.github.io/
-Description: Implementations of SIMD instructions for all systems
-Filename: dists/uncode/main/binary-aarch64/simde_0.8.2_aarch64.deb
-Size: 437972
-MD5Sum: 3ed5b634c0f01a117ae4a9c87b7ed809
-SHA1: e39cd31f4f3f252f3695fefcd6c9e26749049196
-SHA256: 24327af3eb04d21a0ab902061508d161d7c3e42cb1c2976bc17fc46bd2c42703
-SHA512: b5b3b3b82abda905524873d0142016015f95965a8f18daed1853962d6843cbe2b2492d88fb61a66a41819802997f88a46fb1c6398287865eb0eb54bfa46b5150
+Version: 1.4.350.1
+Homepage: https://github.com/KhronosGroup/SPIRV-Tools
+Depends: libc++
+Description: SPIR-V Tools
+Filename: dists/uncode/main/binary-aarch64/spirv-tools_1.4.350.1_aarch64.deb
+Size: 3993068
+MD5Sum: 65320c0c260df3ece1639e8518ac7170
+SHA1: adb004dc63fe7f96bf92cbc7ef9d153c22cd4957
+SHA256: 78231fe5db0a03986634a60512c7649d93be13054b68e325810ad91358262b5e
+SHA512: 1bb98a3c4b7d163e6878e0f9c5d633b605adfcf8e577c9eb75e312085010b71409d2d23ef975b5a31f648292ee5f4ca4b40232a8375c3a238320eb06a6496d00
 
