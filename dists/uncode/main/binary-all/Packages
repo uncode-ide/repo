@@ -8,10 +8,10 @@ Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
 Size: 96492
-MD5Sum: 49ee65d3e0489ea97f78c424de5c02ae
-SHA1: babbc2d72cc875e1874b5c6506219ca46badd185
-SHA256: 9c8056a87054d7cde75677a538262fd9c7900127250d64d5f23c6bf544a7789f
-SHA512: 3e0b6cd43a5e3d4eb5ec046294ceeb6e08772053fec6363bc4c5702e9a30067fbe2033457e53a8f8ec8dec3d0dc70c041b046bcdc7c3a55c78cd95382a2b643a
+MD5Sum: 7f534441820cb06d18bfa1369d2971d4
+SHA1: 876f0c9e1c82056d4c73eab95046bd0d1c8f6bed
+SHA256: e46a1979235686a6b4c4a2ec17d42c2c6f59388ab9da6681b7d7ed8f1db28593
+SHA512: 7ab3af2fce3aea1ac72ef4f3455a2afdd881e75aa445b2716404883d5ad68a348c2cb62c1efd4e3f274037100fe65e5e679789772a0c7c757ff48faa7a7a508c
 
 Package: ca-certificates
 Architecture: all
@@ -27,47 +27,76 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: slashtime
+Package: sse2neon
 Architecture: all
-Installed-Size: 52
+Installed-Size: 520
 Maintainer: @termux
-Version: 2023.01.04-1
-Homepage: https://github.com/istathar/slashtime
+Version: 1.9.1
+Homepage: https://github.com/DLTcollab/sse2neon
+Description: A C/C++ header file that converts Intel SSE intrinsics to Arm/Aarch64 NEON intrinsics
+Filename: dists/uncode/main/binary-all/sse2neon_1.9.1_all.deb
+Size: 61880
+MD5Sum: ef173378aa8d7b27a12f541ca1c4a3b4
+SHA1: d0465db0c9b96a9a147ef5a140fa4525ba003653
+SHA256: 1a0a3a4efa3dc2559946a0a6cf727d4e0844c71d3a16108b8c94f8fa92bcc601
+SHA512: 223f06715acf92cb02f57996b3c3fa5ba93ab91c13440809332b8db4b4e5241e35b77ae8477048455bcf9bb3accb797f571bc23f4afe1a276ee89a7fa712989e
+
+Package: stdman
+Architecture: all
+Installed-Size: 23104
+Maintainer: @termux
+Version: 2024.07.05
+Homepage: https://github.com/jeaye/stdman
+Depends: mandoc
+Description: Formatted C++23 stdlib man pages (cppreference)
+Filename: dists/uncode/main/binary-all/stdman_2024.07.05_all.deb
+Size: 4800052
+MD5Sum: ce49f50ca5cdeaf051b090fcbbff491f
+SHA1: 589c487ead37c2e8a9a954c63b7bc55d8cb33e37
+SHA256: 854778ca4b6af0a6fce1b0d00bce9cb4a26fdaf39648138f9bdd2040328fb644
+SHA512: ec9c48ca8f9c654bdd9990cee6a91f1463da5b1f45259252482f5e719595c8b45ed98d99838d25415623ac2edd0c410aa41dff2fbdb198e729229e33d8eb614d
+
+Package: stow
+Architecture: all
+Installed-Size: 860
+Maintainer: @termux
+Version: 2.4.1
+Homepage: https://www.gnu.org/software/stow/
 Depends: perl
-Description: A small program which displays the time in various places
-Filename: dists/uncode/main/binary-all/slashtime_2023.01.04-1_all.deb
-Size: 4064
-MD5Sum: 24e34d3aa5341a1e343e71c009f5e730
-SHA1: 4a0dd3d542318ffa0c9e8a8d5c6ebf41cebe961f
-SHA256: ee2b2e30b0bf744bab3ecc6b71d774b5a7e95ab20d896b18e394fc790bebded2
-SHA512: 01e4bfda3a770c505e67e275274a354985a901fc21e9a9632103531a9ac4bd019f4c0010c4218117d22bd0a6a9e89d853a12f5e9969dec9dbd5f715611dfc8c7
+Description: Tool for managing the installation of multiple software packages into a single directory
+Filename: dists/uncode/main/binary-all/stow_2.4.1_all.deb
+Size: 108312
+MD5Sum: 2c3c225a35f98254cdd1fad641e39f27
+SHA1: b79caf6310c4787c71eda955cf0f99533c039ee9
+SHA256: ed95bc9c00d963eb49e77ce339c1ae608f6d15cb7d35f3c9362ec8b441576674
+SHA512: ad09bdcb6982bde2ab9a0b0af088c5cc3c5754efc95182b86608631560e8437b44f856984584a435bc167822d9ab045290281c056b4352b0a2e386ff0c0427eb
 
-Package: snmptt
+Package: swaks
 Architecture: all
-Installed-Size: 388
+Installed-Size: 280
 Maintainer: @termux
-Version: 1.5
-Homepage: http://www.snmptt.org/
-Depends: net-snmp, perl
-Description: SNMP trap translator
-Filename: dists/uncode/main/binary-all/snmptt_1.5_all.deb
-Size: 53220
-MD5Sum: e3142302aada5942106382015323014d
-SHA1: 644dcca5ba69e468e5d81252095af0f7496514ee
-SHA256: 813b7a7aaf21f8374419dd9599151561e118f0cfb6464cdce2615df6671b0e6e
-SHA512: 579cb4402cec5881334aa2127e1798dd0266e26ec810a0afb8ad4babad1b9b8b7d7ad75951db8551361883dac007da1edbe21ccf4a173100ea3337d5a3e884bc
+Version: 20240103.0
+Homepage: http://jetmore.org/john/code/swaks/
+Depends: perl
+Description: Swiss Army Knife for SMTP
+Filename: dists/uncode/main/binary-all/swaks_20240103.0_all.deb
+Size: 58284
+MD5Sum: 8362a7bb1f1636eea98920a82abb233c
+SHA1: ee62a0d2bbc7a7d0a5087b89d49fa1ac6abe0c65
+SHA256: df27ac88026e15877bcb78b9112450c5e1a55c063706703db600164d9ccb912b
+SHA512: 938b5263b6bba352935d074dbc47a6ac5c055bdd09e27fc7ec159128aab6497063fade6796962257a7c0852c47e012b0f35e58d70bf3182a284916ec98bbcb6b
 
-Package: spirv-headers
+Package: vulkan-headers
 Architecture: all
-Installed-Size: 3796
+Installed-Size: 40812
 Maintainer: @termux
-Version: 1.4.350.1
-Homepage: https://github.com/KhronosGroup/SPIRV-Headers
-Description: SPIR-V Headers
-Filename: dists/uncode/main/binary-all/spirv-headers_1.4.350.1_all.deb
-Size: 163028
-MD5Sum: 3b9729347544cf3826b021f35916a974
-SHA1: fb73156ab7e32540fdeaffec66140f2519c19078
-SHA256: ef68d06dfd94a06fd66e562678dd382377e1180e12a82371a09db3a77e6506ee
-SHA512: 4aa880a9829315c2ea0ddc9309a01a491a90a6c8af3b3a2865d6e84d14701f6f5b2d61809baf307961970124c02b3004a6df82e8afdb8753f5f9b09ab1d9f8fc
+Version: 1.4.355
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
+Description: Vulkan Header files and API registry
+Filename: dists/uncode/main/binary-all/vulkan-headers_1.4.355_all.deb
+Size: 1900448
+MD5Sum: dd0715670c91273a893aa334b836ba26
+SHA1: 4d88260a28284c3f1a57f73af03f6c8608df6576
+SHA256: fda072120d444bbed904827cad6c1f0bb891538ffc92a5e73fbfc3386886462f
+SHA512: 6f489e276990a51af1e63d899323b64c067b11d5a49dd72bb717d2a81df33932777b75457c20fe5f4b2d8eec8137eafcecc231a98edaec4e6a69ff0f53f57154
 

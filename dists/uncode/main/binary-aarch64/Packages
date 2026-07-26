@@ -1,3 +1,18 @@
+Package: blas-openblas
+Architecture: aarch64
+Installed-Size: 32
+Maintainer: @termux
+Version: 0.3.33
+Homepage: https://www.openblas.net
+Depends: libopenblas (= 0.3.33)
+Description: OpenBLAS symlinks for BLAS/CBLAS/LAPACK/LAPACKE
+Filename: dists/uncode/main/binary-aarch64/blas-openblas_0.3.33_aarch64.deb
+Size: 1008
+MD5Sum: 3fea01dc9c6f28fbc1f35a75ae078cec
+SHA1: a1f7962803f4fae98248577b69e8ca0f9bb61203
+SHA256: c40af47814218904a24ef082704b58fabfda1284b72176348b1201e0608f58a4
+SHA512: fe6b34556b32433aff205ae0a01d32d8af03241634cf9dd883b555506305a70d1ca80913b32ac673da1a5961b8a10630785715d3462ccd75986b9e17dff93dc1
+
 Package: hello
 Version: 8.7.1-1
 Architecture: aarch64
@@ -11,239 +26,287 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: fe31b48c8188569b936ed833b26335ad
-SHA1: f443750dd90cde287f562a894d8d0b2ba85749ce
-SHA256: 64ae6a828bb0ef821bace8c3bf60699b2a3f173616a9eec2588f26a2514fe287
-SHA512: ffce9df684f36c6ee604d1a4e59a438dea1511464e8e6f0005af80fe876751db92b97fd3d726e490b4596ba31963dcfd2bdb47082e97a0f0dc31bef104324b36
+MD5Sum: accd0e61b6837aa38b463a2983a0192e
+SHA1: 90c19baf762f162fbd870a2e4782ed9098e590e3
+SHA256: 9243b5c3ca3103be7d98bf65aa0e36922a210f4ec7f01b93a6bb46c8a8d691b7
+SHA512: 569f6a3c3e0eb598e01ab10a25b101825650a980c8f37a3c084a0977d6040947016176d544ee9e7f9e9548c729031e22ebf1055ba694e28a544950fc246bee77
 
-Package: simdjson
+Package: libnghttp3-static
 Architecture: aarch64
-Installed-Size: 7728
+Installed-Size: 336
 Maintainer: @termux
-Version: 4.6.4
-Homepage: https://simdjson.org/
+Version: 1.17.0
+Homepage: https://nghttp2.org/nghttp3/
+Depends: libnghttp3 (= 1.17.0)
+Description: Static libraries for libnghttp3
+Filename: dists/uncode/main/binary-aarch64/libnghttp3-static_1.17.0_aarch64.deb
+Size: 63676
+MD5Sum: d2c0fa74c482af8ff81f85d5fe5c1cb8
+SHA1: aef9dfdb936f8b363cd053c0d63a5f14b8eaaf7c
+SHA256: 3475617832619d7f7d4316e78a0f87b64baf948c4f06e939b07e8b197440eee7
+SHA512: 8d36388d39861c9dc6823b49146530140ffcf6b99bb14983d9be7ca4991939ec01d99cdd6163d13b01e094df791e1504be29cf7d0aec59888b4acfef463eb01f
+
+Package: libnghttp3
+Architecture: aarch64
+Installed-Size: 340
+Maintainer: @termux
+Version: 1.17.0
+Homepage: https://nghttp2.org/nghttp3/
+Essential: yes
+Description: HTTP/3 library written in C
+Filename: dists/uncode/main/binary-aarch64/libnghttp3_1.17.0_aarch64.deb
+Size: 69132
+MD5Sum: 5d12177a82eb6b91a59adb974cc8c4bf
+SHA1: 36e196eff68cf5867c127747cebfee5c91009be6
+SHA256: f401429550b527a6738149bddb58ae70df3b79a386b14476193cae62ac06e4e0
+SHA512: a77c9c4d13c94dbbcad6c02b35ddd51319c6b60ccf1b2b385d40f8a062dc72639228065e448259a69db4638d8ed4d28fb9047da58d4aefd8934c75e08a930238
+
+Package: libopenblas-static
+Architecture: aarch64
+Installed-Size: 23636
+Maintainer: @termux
+Version: 0.3.33
+Homepage: https://www.openblas.net
+Depends: libopenblas (= 0.3.33)
+Description: Static libraries for libopenblas
+Filename: dists/uncode/main/binary-aarch64/libopenblas-static_0.3.33_aarch64.deb
+Size: 2600972
+MD5Sum: cb638a870b018c4c7b1f012147b9a9a7
+SHA1: 4c98128518376385d63dac25efd98f4395883657
+SHA256: be990e199222f23a2580132e8a2edcb4d2c5823fdfa79dc5a6addebb19aae4fe
+SHA512: fa0d6613d68dcadf2e5cca8b13e8ffe5d5b9561192afb97e09f7940c9d6b4c9b19f6d7d20811a76039f88854efa62dfb0d6fdd80b090e75c1f8d9a3fb127dd4d
+
+Package: libopenblas
+Architecture: aarch64
+Installed-Size: 11804
+Maintainer: @termux
+Version: 0.3.33
+Homepage: https://www.openblas.net
+Description: An optimized BLAS library based on GotoBLAS2 1.13 BSD
+Filename: dists/uncode/main/binary-aarch64/libopenblas_0.3.33_aarch64.deb
+Size: 2580072
+MD5Sum: 40689f54fa5e5272bd6d9c5b2282ead4
+SHA1: f766e20923efe6229bd2a2d7acd0b9eaf8b76ecf
+SHA256: ef87d883c25c0f508e7a3fea13964148743e3368efac5109df8aa8e05f1159a1
+SHA512: ff5b0b31cf69d2aa98faf4c52f92d96792007ed4bf73cadf69b84522aadd53f19bdc10353e01983b9998dbb8a87ee0644ae50978317bad7be1b8cf643e9c8dc6
+
+Package: libtiff-static
+Architecture: aarch64
+Installed-Size: 696
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Static libraries for libtiff
+Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
+Size: 135260
+MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
+SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
+SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
+SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+
+Package: libtiff-utils
+Architecture: aarch64
+Installed-Size: 800
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Depends: libtiff (= 4.7.1)
+Description: Tools for working with tiff files
+Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
+Size: 255964
+MD5Sum: a0a56110c08879f75be05ad601a6e6cc
+SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
+SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
+SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+
+Package: libtiff
+Architecture: aarch64
+Installed-Size: 6416
+Maintainer: @termux
+Version: 4.7.1
+Homepage: http://www.simplesystems.org/libtiff/
+Breaks: libtiff-dev
+Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
+Replaces: libtiff-dev
+Description: Support for the Tag Image File Format (TIFF) for storing image data
+Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
+Size: 821104
+MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
+SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
+SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
+SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+
+Package: ssdeep-static
+Architecture: aarch64
+Installed-Size: 52
+Maintainer: @termux
+Version: 2.14.1-2
+Homepage: https://ssdeep-project.github.io/ssdeep/
+Depends: ssdeep (= 2.14.1-2)
+Description: Static libraries for ssdeep
+Filename: dists/uncode/main/binary-aarch64/ssdeep-static_2.14.1-2_aarch64.deb
+Size: 7168
+MD5Sum: c817095e7bf24a8a08ddf13d3b2466a8
+SHA1: f74b507701edb51b0df5b160fbd4524c2b6151d4
+SHA256: 0457913448dab15c77ad97cba0ed24443a24ca15a6e5e789445ae79fa962319b
+SHA512: 468a15865c8b8c6d2af090c1f0b5537f7880f60bbc3fe77c1b696d7b4acb35c5fc5702271c5dc0e344dc59f014ac1977a759c11ede2cd21ae6d0aa6e848e0c52
+
+Package: ssdeep
+Architecture: aarch64
+Installed-Size: 156
+Maintainer: @termux
+Version: 2.14.1-2
+Homepage: https://ssdeep-project.github.io/ssdeep/
 Depends: libc++
-Description: A C++ library to see how fast we can parse JSON with complete validation
-Filename: dists/uncode/main/binary-aarch64/simdjson_4.6.4_aarch64.deb
-Size: 268392
-MD5Sum: 7c209a1af87c1e6ec265bc3d68e7995a
-SHA1: 0a319a9bdbe7624034bdd26515c4e2fdcf2a11c1
-SHA256: 7fb3d632308a34e73102fd0f6bfa73f27c2b77f2ac161798a28bb34e7015dff4
-SHA512: cc67a5c99b476e47808817a1851044afd48a0f3f4f1bdd9d0a3d5eece2ab9fcfc717b4cbabe5c0b14d23cc0f5d865a68a8726f7dc7f3ba938267591e38412ad8
+Description: A program for computing context triggered piecewise hashes (CTPH)
+Filename: dists/uncode/main/binary-aarch64/ssdeep_2.14.1-2_aarch64.deb
+Size: 34040
+MD5Sum: f50cc622afdb95f52ed2b5949de1b61d
+SHA1: b66ae662de635ec3fffd9b9d7c722d1eb7333757
+SHA256: ee4fb7d55bc0de33bef6a2ead55c9349b530363bbe48e75b7f79e6c1b634ef7a
+SHA512: 00cc62e95d6ac168c61d9e18a23462306fd80f4cbb6bde35ce29d866e4afb1579f88f463335f3e8703fcd1e061a2884831f276bc020e47c4b3322e442b04ca53
 
-Package: simh
+Package: sshpass
 Architecture: aarch64
-Installed-Size: 6644
+Installed-Size: 68
 Maintainer: @termux
-Version: 1:3.12.5-1
-Homepage: http://simh.trailing-edge.com/
-Description: A collection of simulators for computer hardware and software from the past
-Filename: dists/uncode/main/binary-aarch64/simh_1:3.12.5-1_aarch64.deb
-Size: 1072408
-MD5Sum: b1c0f10fc58395fd440b310727a75cdd
-SHA1: c5f52781526f837f73429df6e8c8b990d41826bb
-SHA256: 705e73df248b5644f419f791e6f5d886193d60a6b71a3ea3483519b76ae12187
-SHA512: 98b1a84eb804425a033201809faadcb918d59bcc4224069c74720d54584a55b12db1e5348ed361de0c06ed0e2dfb704bdb6a133fb94ea2aedafbca42cdef68d6
+Version: 1.10-1
+Homepage: https://sourceforge.net/projects/sshpass/
+Description: Noninteractive ssh password provider
+Filename: dists/uncode/main/binary-aarch64/sshpass_1.10-1_aarch64.deb
+Size: 8464
+MD5Sum: 036e20be9b55de9c99d10c37871508fc
+SHA1: 3a080aaae538d3dad1337f31b1ce4318ddb47923
+SHA256: c4ef11662728963aa43d1a3d61c9d2d39de0729681aef7526ed90d1cee15cf0a
+SHA512: fd7c925c6a0f8f4ad518cf50c14e072679566f4d56134a861d29fd96821f8303cbdc5d50f0d4bfb453978b702bc057279fe94407d9f8bc4a5796e3d2e0ac45e9
 
-Package: simulavr
+Package: starship
 Architecture: aarch64
-Installed-Size: 1924
+Installed-Size: 11456
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 1.26.0
+Homepage: https://starship.rs
+Suggests: nerdfix, taplo
+Description: A minimal, blazing fast, and extremely customizable prompt for any shell
+Filename: dists/uncode/main/binary-aarch64/starship_1.26.0_aarch64.deb
+Size: 3273396
+MD5Sum: 617f848c89b87a5dbd2d01ed4669b980
+SHA1: 4a4d74f7d968e29bf50b0b0c04377c82bc07f856
+SHA256: bd78136fd64df6d12d873880efcc2f1fc65a3dd7fd11bb06642eb7bc878dc6ad
+SHA512: 5de265f08de7613dfb6ba1f5600ea3923683c37f38b1d42740dd253e1274fd0555ce352c77bcb8c06532a3b941bc2195c44d2ca0ceee9f2f6d470820a31505cb
+
+Package: stb
+Architecture: aarch64
+Installed-Size: 1992
 Maintainer: @termux
-Version: 1:1.1.0-3
-Homepage: https://www.nongnu.org/simulavr
+Version: 0.0.0+g31c1ad37
+Homepage: https://github.com/nothings/stb
+Description: Single-file public domain (or MIT licensed) libraries for C/C++
+Filename: dists/uncode/main/binary-aarch64/stb_0.0.0+g31c1ad37_aarch64.deb
+Size: 347592
+MD5Sum: 17a9f7b55689c8cb26ff27358a9cb5ad
+SHA1: 4d93fd55bf2e416eb1ef34b66e3d000fc2e9dde3
+SHA256: c3efea6b58c01dc559eba4cded6f9d991d822d2ebd823f19cf10c75aefabfd11
+SHA512: 19f8fce7c0b1a28c1d6953e35ee26dfca9c285d5a11cc18ed1b71295ac571a6adc28e1f189a6017adf88a57ebd2b11c15c130fb5b600392f62a632e5b87887ea
+
+Package: stdoutisatty
+Architecture: aarch64
+Installed-Size: 68
+Maintainer: @flosnvjx
+Version: 1.0-1
+Homepage: https://github.com/lilydjwg/stdoutisatty
+Description: Patch the isatty() calls for colored output in pipeline
+Filename: dists/uncode/main/binary-aarch64/stdoutisatty_1.0-1_aarch64.deb
+Size: 4856
+MD5Sum: 13d801b768751968d3ae26a1ef9c9bbd
+SHA1: 2cb3ca7e7af6f9f2a0c11e8f3ed51330f748573d
+SHA256: 19158e3ac55b28e54aff2f40ad69a78cf31c73e0b365fd02d8b6cca8739f49ff
+SHA512: 063b62ddeb0cdf9728fc1812f36e86da014b170ea792f1766b21600d1760108daa5666be64fa5281e8f9eb6aa0e51201923cdbab755c8214d77548737b91d54c
+
+Package: stockfish
+Architecture: aarch64
+Installed-Size: 110368
+Maintainer: @termux
+Version: 18
+Homepage: https://stockfishchess.org/
 Depends: libc++
-Description: Simulator for Microchip AVR (formerly Atmel) microcontrollers
-Filename: dists/uncode/main/binary-aarch64/simulavr_1:1.1.0-3_aarch64.deb
-Size: 339268
-MD5Sum: 1f3b160ccc0dc4459b9e14504292096d
-SHA1: 919322f0c2f940ca7b54257ea3518f2a1ac43379
-SHA256: 8df9c50f2829cd4a346582bfc67f8af4900e2fc2dcb4fd0c3909245fc62a35cc
-SHA512: 069867c76a5b868e9882d621e01638224d29b1b1cbc11fdf15fe242989447b4cb4e751b8225051e874a86b90f397aa466d709c20abb568dac6d5f290cc0f56d6
+Description: Free and strong UCI chess engine
+Filename: dists/uncode/main/binary-aarch64/stockfish_18_aarch64.deb
+Size: 70899012
+MD5Sum: 0f4477a0d6e561bfe449298aafd923e7
+SHA1: 929de4f6dc5d6d21f0b3d8394631ecec935910d8
+SHA256: b33c9953568b0849e13cfb263a6be550a125f44a72d564f75135de03d96a2f73
+SHA512: 576078a570e7d891f857a518a4f9a7b4d968bad861c7fd1449cdce475b1800a57d5a6fb6c41bd839f23a54bee8a6ad71419e952417bfb8ccd122dc7a9d89f039
 
-Package: sing-box
+Package: storj-uplink
 Architecture: aarch64
-Installed-Size: 34688
-Maintainer: kay9925@outlook.com
-Version: 1.13.14
-Homepage: https://sing-box.sagernet.org
-Description: The universal proxy platform
-Filename: dists/uncode/main/binary-aarch64/sing-box_1.13.14_aarch64.deb
-Size: 8155468
-MD5Sum: ede27d9c940aa0677368837eb9eff06d
-SHA1: 0f4ea0546173516fd1e154723065e356d3bd4a88
-SHA256: b767b4127b5641809351c51531d21433952078372c47018d73f1c1ea55626278
-SHA512: 0683aba63af225e56d011c46f73776fe2ff5852025393692ea28ef7c6b1eff0e8a0c91d230bab2bbad3dbdf1e5ef990b0be9ff92d2de69a6d503d8d503d94714
-
-Package: skate
-Architecture: aarch64
-Installed-Size: 12668
+Installed-Size: 17700
 Maintainer: @termux
-Version: 1.0.1-1
-Homepage: https://github.com/charmbracelet/skate
-Description: A personal key-value store
-Filename: dists/uncode/main/binary-aarch64/skate_1.0.1-1_aarch64.deb
-Size: 3234352
-MD5Sum: 8ce932c939fd85bf9d662955a8911c26
-SHA1: 0ec5a7fadf8db8be9892ac972090bc732ba3f6cc
-SHA256: 61a10976fd25177981046f0438b3d707a8b4f8fc094ecc2077485b2e6c857808
-SHA512: fa89fc93ce227ad1dc10ed571eec6ab3bc3d7b82214cb78175759eb56796cfa6050c65df3bbf70bc4cc934790abee6421c4ff9f6cad9d280db8b75610bc6f153
+Version: 1.158.2
+Homepage: https://www.storj.io/integrations/uplink-cli
+Description: Storj DCS Uplink CLI
+Filename: dists/uncode/main/binary-aarch64/storj-uplink_1.158.2_aarch64.deb
+Size: 4296280
+MD5Sum: f95d5629743b32d180b73a4ac4554ed5
+SHA1: 3edbd915ad42f70782de2849c23563ba54287ccf
+SHA256: 307f760b40a84835852e12f83d14a7d24eeb473c5f8503c53ff6f97d4887bf3f
+SHA512: b0cafdd28a0aa56c987dd155129fe5d673f32771937046b2c0af40ccd515cf83be3572df3b72d750485eb481ccaf748931959411d47756a675232267ac259e83
 
-Package: slides
+Package: stylua
 Architecture: aarch64
-Installed-Size: 19348
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Version: 0.9.0-5
-Homepage: https://github.com/maaslalani/slides
-Description: Slides in your terminal
-Filename: dists/uncode/main/binary-aarch64/slides_0.9.0-5_aarch64.deb
-Size: 4318856
-MD5Sum: 00e67d29388f9d9370c6c73d86bf7604
-SHA1: c934fb0e2515275927a3d06cf14112cde9353ae0
-SHA256: c486c0bc0b55650608635ff950dc939d5df27f1b9562ee20da09a7557f6a0f06
-SHA512: dc43d91e86ba373d6015c460b24314a815a6851e3bfd155b1358b1a0c3130c1859d3c3bf739e152fb6a1ebc8ad833961cba575b03124fc1f788eaf80168ac91d
-
-Package: snowflake-client
-Architecture: aarch64
-Installed-Size: 16760
+Installed-Size: 6684
 Maintainer: @termux
-Version: 2.14.1
-Homepage: https://snowflake.torproject.org/
-Description: Pluggable Transport using WebRTC, inspired by Flashproxy (Client)
-Filename: dists/uncode/main/binary-aarch64/snowflake-client_2.14.1_aarch64.deb
-Size: 4174672
-MD5Sum: 3caeb2e713a1a2e6bc2484a77a2e9620
-SHA1: 23fa45724c55f700cf0c103a4441ffd3cfc15195
-SHA256: 48c1795dfb996e2bc41882716ff84720c0b09f000803740b7f00b9b26995ecf2
-SHA512: a635f8bd09beac0abbb272cb2f5edf78f956b9e8f76e764d94c689d1c31b53b04e079f7d5060568ce664635bfa412d3ba8a55067aad486a029d0a3f59eb9c770
+Version: 2.5.2
+Homepage: https://github.com/JohnnyMorganz/StyLua
+Description: An opinionated Lua code formatter
+Filename: dists/uncode/main/binary-aarch64/stylua_2.5.2_aarch64.deb
+Size: 1747340
+MD5Sum: 14f7a55b07d848a31de41725b273d2b2
+SHA1: 3b6f150c879ea741768beec25c5c0053ec47efab
+SHA256: c07e13698960714489af2c094f0370f9e9e2aa709323739c991e49d64a748d54
+SHA512: 59376397697db78e86f9abc10221474c63e3309337f08331a2dca736085538b9c564437452cc859608e86ac6b3e0122a0bdc25259c0f6128993fc687208f38fe
 
-Package: snowflake-proxy
+Package: sun
 Architecture: aarch64
-Installed-Size: 16580
+Installed-Size: 2664
 Maintainer: @termux
-Version: 2.14.1
-Homepage: https://snowflake.torproject.org/
-Description: Pluggable Transport using WebRTC, inspired by Flashproxy (Proxy)
-Filename: dists/uncode/main/binary-aarch64/snowflake-proxy_2.14.1_aarch64.deb
-Size: 4168320
-MD5Sum: 9621239883e91b9de2d97538ed4c292b
-SHA1: 6929a90ac9930c3dd44092872ded11555dec4a87
-SHA256: 4897be37edca1e89e829115b04e0b7ad599decf13c2581821a188675ccdedf6c
-SHA512: d35e7f474c3d920d01169651907ca994d56100e98c5ac8a1bceb453bf7187debfe4debb6f82a54ad1135563e160f0546f2bc447319d82261181b33c7b2ca17f4
+Version: 1.0.0-3
+Homepage: https://stand-up-notes.org
+Description: A very simple note taking cli app
+Filename: dists/uncode/main/binary-aarch64/sun_1.0.0-3_aarch64.deb
+Size: 761444
+MD5Sum: cd3b55878e13aa8765e374c390f793f7
+SHA1: 4b55b5596d223743f788738ad4906c8055ade8b8
+SHA256: fe8fa4382119347613a80131ef1b4140c07d99b620913ff3392e67d7ca21704e
+SHA512: 1b1d8365851aad171d383df35f90789dba4294542e322d36736c56d993202b3e926740d64db4044bfc5dde1c3a89c39c7d6afc0a0a342c1ce2b496a02ac2afc0
 
-Package: snowflake
+Package: surfraw
 Architecture: aarch64
-Installed-Size: 40
+Installed-Size: 684
 Maintainer: @termux
-Version: 2.14.1
-Homepage: https://snowflake.torproject.org/
-Description: Pluggable Transport using WebRTC, inspired by Flashproxy
-Filename: dists/uncode/main/binary-aarch64/snowflake_2.14.1_aarch64.deb
-Size: 1744
-MD5Sum: e8252c39f18a4209b496fe878c822431
-SHA1: 2932a091c7e72a298e34f7fdea0b69f2c45b264d
-SHA256: c100afaaf603bf6c6872e8b0e0e9656ebe31eeb60252284675a9edb5d43370e1
-SHA512: 1ebe062c0b57424d7354a43b00f8925f025a0c8a41d53b837304bcec8e94f85c5e62e6cc44177927b7a6a3022895c355de24ff58457f615096e74eea1df8e892
+Version: 2.3.0-10
+Homepage: https://gitlab.com/surfraw/Surfraw
+Depends: lynx, perl
+Description: Shell Users' Revolutionary Front Rage Against the Web
+Filename: dists/uncode/main/binary-aarch64/surfraw_2.3.0-10_aarch64.deb
+Size: 71992
+MD5Sum: b2d92344c540d1643c713cdfb822c4e3
+SHA1: 4a4f5c735b716099609c5e3a4fa764c12b0aab51
+SHA256: 8306c0fc4d3b2cb1eb21f2e21b4d91fbf9f26a9b1b8ec2aaba1a322308ea276b
+SHA512: 532384bddd05bfded3d93091b8255ff39aac7688ab6cecd6caa6eb24dfc1a3d35865ecb195f876f4e6e468e71bcca294b0c9c71a5eb5ce17bce333adb3835cdc
 
-Package: socat
+Package: svt-av1
 Architecture: aarch64
-Installed-Size: 664
+Installed-Size: 4188
 Maintainer: @termux
-Version: 1.8.1.3
-Homepage: http://www.dest-unreach.org/socat/
-Depends: openssl, readline
-Description: Relay for bidirectional data transfer between two independent data channels
-Filename: dists/uncode/main/binary-aarch64/socat_1.8.1.3_aarch64.deb
-Size: 183584
-MD5Sum: 102806137c2ec1eab9b5e7fe0978d81d
-SHA1: ce71fe4f69cda98521026f87c4c848680bc90617
-SHA256: 4e855ea8c192a619b21f4fcc07964af43b770449a5df5625e6e5382c3f74f986
-SHA512: 0bd5574edf52756a89a1fe5f51cd058b44d9674a4f56bd1ea8a10fa0a870efc3f840eb31fabc761284e7662ea626248fa2374fa6e0ddec52eaa6aafe5887f5ab
-
-Package: sops
-Architecture: aarch64
-Installed-Size: 53352
-Maintainer: @termux
-Version: 3.13.2
-Homepage: https://github.com/getsops/sops
-Description: Simple and flexible tool for managing secrets
-Filename: dists/uncode/main/binary-aarch64/sops_3.13.2_aarch64.deb
-Size: 10176004
-MD5Sum: 3794963d42a1c3d816e245565ec03dc0
-SHA1: a8d711c670e4d0b9f10cb1cad57f74a42bcc43dd
-SHA256: 4f2e2ceca0414b94318842833b89014e2a7a42d0eed2bd964808fbdad6c4e943
-SHA512: c077cf0e2c05c622b7c308108feb1b76f6d878f100956aec54b346fc4065f8cc9176a2b0052f53a4ad1107c25f70703b437bc5f17986ad576b5325ffb21106b3
-
-Package: speedtest-go
-Architecture: aarch64
-Installed-Size: 8896
-Maintainer: @termux
-Version: 1.7.10-1
-Homepage: https://github.com/showwin/speedtest-go/
-Description: Command line interface to test internet speed using speedtest.net
-Filename: dists/uncode/main/binary-aarch64/speedtest-go_1.7.10-1_aarch64.deb
-Size: 2433176
-MD5Sum: 060f54883acc906723969b28443441f1
-SHA1: 5dd1936f7b7f80658cd3a2bbb0224766f086b2bf
-SHA256: 8bb4d5245970568ef27f4dc813cc175b3aa6e96086f1c4f03b1883b93a96beee
-SHA512: 04d8fc87ed94277dffda0ca2c2c72d843b45760aee4fb8e8c3100870105c396515920bb6c7cfa7fa3302fad85bdba18837c3e85f8ee327d66e4144b90cc19783
-
-Package: speexdsp-static
-Architecture: aarch64
-Installed-Size: 120
-Maintainer: @termux
-Version: 1.2.1-1
-Homepage: https://speex.org/
-Depends: speexdsp (= 1.2.1-1)
-Description: Static libraries for speexdsp
-Filename: dists/uncode/main/binary-aarch64/speexdsp-static_1.2.1-1_aarch64.deb
-Size: 32856
-MD5Sum: 6f105b11c3becc6a9947e8c9fad0dc29
-SHA1: 886db9bc47d01513c7832fae11f643a6c5e3d1b5
-SHA256: db914bfc43bd4377b43200ed07d6cab2b1df340f4ddb6e1924b40828e4412eac
-SHA512: 8e7f07c64ee743174079ab228c92fe56ab8f6a9b43aa17ffebec4d201137ca097bf2a572fc3e9c386cb1ee33df8ee93e965b5496ad545b6f803abcc5f4fff4ca
-
-Package: speexdsp
-Architecture: aarch64
-Installed-Size: 168
-Maintainer: @termux
-Version: 1.2.1-1
-Homepage: https://speex.org/
-Breaks: speexdsp-dev
-Replaces: speexdsp-dev
-Description: Speex audio processing library
-Filename: dists/uncode/main/binary-aarch64/speexdsp_1.2.1-1_aarch64.deb
-Size: 37292
-MD5Sum: 209f960dfb780b9c6fa906ea1b453794
-SHA1: 21df587becdc63ba870de08e76a8a8d8906e0e3e
-SHA256: d817cd1e0038d6bbb385a758d515be336a9ae67ae85cd50b78c4457e3de579d5
-SHA512: 73c688f001df00a349cb5f83deb93f275fcf47a526728a0baec92f8e66b99714ed0ceaafe561e698fa085e509916b9dbf881d0a3c8e48140865d5fbdc5937e53
-
-Package: spglib
-Architecture: aarch64
-Installed-Size: 2720
-Maintainer: @termux
-Version: 2.7.0
-Homepage: https://spglib.github.io/spglib/index.html
-Description: C library for finding and handling crystal symmetries
-Filename: dists/uncode/main/binary-aarch64/spglib_2.7.0_aarch64.deb
-Size: 394684
-MD5Sum: f8e15bf52b6c35e2d63521249aa16ec9
-SHA1: 54ee283d348470665f8d6a7a29508bd84b9405fb
-SHA256: b64241107c642273cb7af37faf4065c0026ef2c96d4013f0f321660af4e7ceb5
-SHA512: 456ee842cd7b8ff2273734b2b54f3131f7fd46587f97d4522e2b623f4ca8a1a96dd754a650dbee45e60da9476c62f29ee0f3876e58de308308f1d07634202c57
-
-Package: spirv-tools
-Architecture: aarch64
-Installed-Size: 39620
-Maintainer: @termux
-Version: 1.4.350.1
-Homepage: https://github.com/KhronosGroup/SPIRV-Tools
-Depends: libc++
-Description: SPIR-V Tools
-Filename: dists/uncode/main/binary-aarch64/spirv-tools_1.4.350.1_aarch64.deb
-Size: 3993068
-MD5Sum: 65320c0c260df3ece1639e8518ac7170
-SHA1: adb004dc63fe7f96bf92cbc7ef9d153c22cd4957
-SHA256: 78231fe5db0a03986634a60512c7649d93be13054b68e325810ad91358262b5e
-SHA512: 1bb98a3c4b7d163e6878e0f9c5d633b605adfcf8e577c9eb75e312085010b71409d2d23ef975b5a31f648292ee5f4ca4b40232a8375c3a238320eb06a6496d00
+Version: 4.1.0
+Homepage: https://gitlab.com/AOMediaCodec/SVT-AV1
+Description: Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
+Filename: dists/uncode/main/binary-aarch64/svt-av1_4.1.0_aarch64.deb
+Size: 1383432
+MD5Sum: b5f587aa4815f059ed234ad0b8f894a1
+SHA1: 04b294111887903a699de3fb535bab04b3d71fe6
+SHA256: 3fa26aa090dfe47672df74c82956d4967f440b3cdc5ffa633590c5efe125eaa3
+SHA512: 1409bee0da9a70ea0bf1124a6ccf916b12fe9bf5c4186168ea85c4ddeec45dc607f07633a9427d7b3df89cae3a91cdc3b7101838f5585ced698c73b340fd9a2e
 
