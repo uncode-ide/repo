@@ -1,17 +1,18 @@
-Package: blas-openblas
+Package: abseil-cpp
 Architecture: aarch64
-Installed-Size: 32
+Installed-Size: 8776
 Maintainer: @termux
-Version: 0.3.33
-Homepage: https://www.openblas.net
-Depends: libopenblas (= 0.3.33)
-Description: OpenBLAS symlinks for BLAS/CBLAS/LAPACK/LAPACKE
-Filename: dists/uncode/main/binary-aarch64/blas-openblas_0.3.33_aarch64.deb
-Size: 1008
-MD5Sum: 3fea01dc9c6f28fbc1f35a75ae078cec
-SHA1: a1f7962803f4fae98248577b69e8ca0f9bb61203
-SHA256: c40af47814218904a24ef082704b58fabfda1284b72176348b1201e0608f58a4
-SHA512: fe6b34556b32433aff205ae0a01d32d8af03241634cf9dd883b555506305a70d1ca80913b32ac673da1a5961b8a10630785715d3462ccd75986b9e17dff93dc1
+Version: 20250814.1
+Homepage: https://abseil.io/
+Depends: libc++
+Conflicts: libgrpc (<< 1.52.0-1)
+Description: Abseil C++ Common Libraries
+Filename: dists/uncode/main/binary-aarch64/abseil-cpp_20250814.1_aarch64.deb
+Size: 1117052
+MD5Sum: a99612704b914c5ac9e7827a865c1741
+SHA1: bfdd41dd97bb1c966907b4ea5f3cac6d2ee29b7a
+SHA256: cf0f2f44f15bdafdad6e891a706e7cbd39bba16c0cc13810ed08bcac3b783cf2
+SHA512: 664fecb964b7338b36293012ad175ebde45318a81a99211e1318c76824ca6b26e95d60beda277fcffa4e1d04f523fe2f35704631deaee660c8299c5674ce307b
 
 Package: hello
 Version: 8.7.1-1
@@ -25,11 +26,11 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 896
-MD5Sum: accd0e61b6837aa38b463a2983a0192e
-SHA1: 90c19baf762f162fbd870a2e4782ed9098e590e3
-SHA256: 9243b5c3ca3103be7d98bf65aa0e36922a210f4ec7f01b93a6bb46c8a8d691b7
-SHA512: 569f6a3c3e0eb598e01ab10a25b101825650a980c8f37a3c084a0977d6040947016176d544ee9e7f9e9548c729031e22ebf1055ba694e28a544950fc246bee77
+Size: 892
+MD5Sum: 816afb598e173e372ee0d8848e635c22
+SHA1: d754afe6af0bd8e3e0d2c0d4e8ea7af50f2614d4
+SHA256: 7f1fdbf6362ad307df5529e2eb49374ec199526ee44fb6935f2fb519c791144b
+SHA512: 03c0922fba9e4ab62173fdbd7373aeb58abe0ecf21f4550a60e1cb5a66b2dd8dae45f31cd47adbd887bb8d4b2e57f13cc9bd8d77034cbdd206b799e637b1aaee
 
 Package: libnghttp3-static
 Architecture: aarch64
@@ -61,252 +62,253 @@ SHA1: 36e196eff68cf5867c127747cebfee5c91009be6
 SHA256: f401429550b527a6738149bddb58ae70df3b79a386b14476193cae62ac06e4e0
 SHA512: a77c9c4d13c94dbbcad6c02b35ddd51319c6b60ccf1b2b385d40f8a062dc72639228065e448259a69db4638d8ed4d28fb9047da58d4aefd8934c75e08a930238
 
-Package: libopenblas-static
+Package: libprotobuf
 Architecture: aarch64
-Installed-Size: 23636
+Installed-Size: 8840
 Maintainer: @termux
-Version: 0.3.33
-Homepage: https://www.openblas.net
-Depends: libopenblas (= 0.3.33)
-Description: Static libraries for libopenblas
-Filename: dists/uncode/main/binary-aarch64/libopenblas-static_0.3.33_aarch64.deb
-Size: 2600972
-MD5Sum: cb638a870b018c4c7b1f012147b9a9a7
-SHA1: 4c98128518376385d63dac25efd98f4395883657
-SHA256: be990e199222f23a2580132e8a2edcb4d2c5823fdfa79dc5a6addebb19aae4fe
-SHA512: fa0d6613d68dcadf2e5cca8b13e8ffe5d5b9561192afb97e09f7940c9d6b4c9b19f6d7d20811a76039f88854efa62dfb0d6fdd80b090e75c1f8d9a3fb127dd4d
+Version: 2:33.1-1
+Homepage: https://github.com/protocolbuffers/protobuf
+Breaks: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Depends: abseil-cpp, libc++, zlib
+Conflicts: protobuf-static
+Replaces: libprotobuf-dev, protobuf-dev, protobuf-static, libutf8-range
+Description: Protocol buffers C++ library
+Filename: dists/uncode/main/binary-aarch64/libprotobuf_2:33.1-1_aarch64.deb
+Size: 1337056
+MD5Sum: a72cff74e14b1316bd3fc829bd8006e8
+SHA1: 5cecba39372a7eb5a8a162e972e73d36c2eb8b42
+SHA256: 03e09c954df54961d6c0d955336ac90ae75aa5cc51c4fedfc8158f8f04598283
+SHA512: 48b1c71bc57989d817630d66894de48b088c66e78f2a6f58826ffe546b1299486edb0266cd2de4ec9afd140aae223525a5470262df38b0dcb2e337d6886a2fd1
 
-Package: libopenblas
+Package: protobuf
 Architecture: aarch64
-Installed-Size: 11804
+Installed-Size: 5748
 Maintainer: @termux
-Version: 0.3.33
-Homepage: https://www.openblas.net
-Description: An optimized BLAS library based on GotoBLAS2 1.13 BSD
-Filename: dists/uncode/main/binary-aarch64/libopenblas_0.3.33_aarch64.deb
-Size: 2580072
-MD5Sum: 40689f54fa5e5272bd6d9c5b2282ead4
-SHA1: f766e20923efe6229bd2a2d7acd0b9eaf8b76ecf
-SHA256: ef87d883c25c0f508e7a3fea13964148743e3368efac5109df8aa8e05f1159a1
-SHA512: ff5b0b31cf69d2aa98faf4c52f92d96792007ed4bf73cadf69b84522aadd53f19bdc10353e01983b9998dbb8a87ee0644ae50978317bad7be1b8cf643e9c8dc6
+Version: 2:33.1-1
+Homepage: https://github.com/protocolbuffers/protobuf
+Depends: libprotobuf (= 2:33.1-1)
+Description: Compiler for protocol buffer definition files
+Filename: dists/uncode/main/binary-aarch64/protobuf_2:33.1-1_aarch64.deb
+Size: 1154160
+MD5Sum: 5b805cd1726e9c02c60f2b1b5db6d8de
+SHA1: f78f73b49b9d00a621fcea4d924252eaad073136
+SHA256: 53967a8bb82ffa7ac7b4abc0e853ce98966e4755efdfa23a1c485bbb238175a2
+SHA512: dbd62723201cb1f8f7bf37deb46c2cc7572fe46f95e85b25a665730f74bac5933feee75ab168ff0f6feafa6d90bf150ff8614e4312303e426ce5855006b6430d
 
-Package: libtiff-static
+Package: syncthing
 Architecture: aarch64
-Installed-Size: 696
+Installed-Size: 27272
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Static libraries for libtiff
-Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
-Size: 135260
-MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
-SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
-SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
-SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+Version: 2.1.1
+Homepage: https://syncthing.net/
+Description: Decentralized file synchronization
+Filename: dists/uncode/main/binary-aarch64/syncthing_2.1.1_aarch64.deb
+Size: 8446852
+MD5Sum: c68abdc584ee6f884dee27dcd30a4f48
+SHA1: 27fc9726471c5c976dc3a393a4f995293b95df6b
+SHA256: 84e92657daf2522532d6ef438e2933d0ca73fcf8b64db94b3665da93d1b1f548
+SHA512: b59d20476ad7d8a98665fe14c5306c9e5bf0b54ed35bfdfc7dff53e4cad8f34f26a4d9c0f01bc0ede8a7ad968823e7af2d6be75e1c1810dc705cff4f89d170cc
 
-Package: libtiff-utils
+Package: ta-lib-static
 Architecture: aarch64
-Installed-Size: 800
+Installed-Size: 1160
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Tools for working with tiff files
-Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
-Size: 255964
-MD5Sum: a0a56110c08879f75be05ad601a6e6cc
-SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
-SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
-SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+Version: 0.5.0
+Homepage: https://ta-lib.org/
+Depends: ta-lib (= 0.5.0)
+Description: Static libraries for ta-lib
+Filename: dists/uncode/main/binary-aarch64/ta-lib-static_0.5.0_aarch64.deb
+Size: 151280
+MD5Sum: d37ebe309095b449fae9db0349d4d6ad
+SHA1: 401467251103039383ecdc1ec48888b63ba77107
+SHA256: 99b7ee1c15f0829f8ac70c0b81424c5e7f116e8b9b6080e846919fa221a2e39a
+SHA512: b538d41756604618997afbe2fb2f13be6cf5dbb057966de46b339d17ecfb252d6c12ed60e155cd654b134338d96b5821193fa6d450d0a08694e64660786e336f
 
-Package: libtiff
+Package: ta-lib
 Architecture: aarch64
-Installed-Size: 6416
+Installed-Size: 1016
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Breaks: libtiff-dev
-Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
-Replaces: libtiff-dev
-Description: Support for the Tag Image File Format (TIFF) for storing image data
-Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
-Size: 821104
-MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
-SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
-SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
-SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+Version: 0.5.0
+Homepage: https://ta-lib.org/
+Breaks: talib
+Replaces: talib
+Description: Technical analysis library with indicators like ADX
+Filename: dists/uncode/main/binary-aarch64/ta-lib_0.5.0_aarch64.deb
+Size: 150740
+MD5Sum: 50d612832204248499882a1df9559c6e
+SHA1: d0032e3e340eb72b0fa9bd2f7711a1876528e2ea
+SHA256: 5855d047a46e1a5867028ec296a7a872980e599266d4436c18099979b22fabdf
+SHA512: 37c6bd237d770136330b388d159e5b626cf52a7f6103d31c1d2f9b6308d5d78a307ddaefa41b7cc0bafbc6d1993d561ec104ed9a26f18d1c3f86d16c2eee5f9d
 
-Package: ssdeep-static
+Package: task-spooler
 Architecture: aarch64
-Installed-Size: 52
+Installed-Size: 112
 Maintainer: @termux
-Version: 2.14.1-2
-Homepage: https://ssdeep-project.github.io/ssdeep/
-Depends: ssdeep (= 2.14.1-2)
-Description: Static libraries for ssdeep
-Filename: dists/uncode/main/binary-aarch64/ssdeep-static_2.14.1-2_aarch64.deb
-Size: 7168
-MD5Sum: c817095e7bf24a8a08ddf13d3b2466a8
-SHA1: f74b507701edb51b0df5b160fbd4524c2b6151d4
-SHA256: 0457913448dab15c77ad97cba0ed24443a24ca15a6e5e789445ae79fa962319b
-SHA512: 468a15865c8b8c6d2af090c1f0b5537f7880f60bbc3fe77c1b696d7b4acb35c5fc5702271c5dc0e344dc59f014ac1977a759c11ede2cd21ae6d0aa6e848e0c52
+Version: 1:1.0.3-1
+Homepage: https://vicerveza.homeunix.net/~viric/soft/ts/
+Description: Task spooler is a Unix batch system where the tasks spooled run one after the other
+Filename: dists/uncode/main/binary-aarch64/task-spooler_1:1.0.3-1_aarch64.deb
+Size: 25352
+MD5Sum: b99ca810ffca311567970d6b4a7001d9
+SHA1: 1943bd9820e3536e4abc9c9635cad49ecbe61b8e
+SHA256: 765cbcc16c33bc584cb2dfc508369ea897d0534b397c20352c23370ed3b228c6
+SHA512: c4221c0c16e0d586821d2702c3067616dab05d87b2c8f512509694d1542be6f1f7de2a1c357f3a544bdd10612a7df3d263f45a0d0bd4f463804a9713ec33ecd1
 
-Package: ssdeep
+Package: tdl
 Architecture: aarch64
-Installed-Size: 156
+Installed-Size: 52512
 Maintainer: @termux
-Version: 2.14.1-2
-Homepage: https://ssdeep-project.github.io/ssdeep/
+Version: 0.20.3
+Homepage: https://docs.iyear.me/tdl/
+Description: Telegram downloader/tools written in Golang
+Filename: dists/uncode/main/binary-aarch64/tdl_0.20.3_aarch64.deb
+Size: 9012980
+MD5Sum: 10de816fc5be96d4c1bd90623e0e9605
+SHA1: 174433c78c28be0ede554b2c4f100fc55f1a7b28
+SHA256: a18a5bfb74a375fd08397da61e5761f01a7d17a74eb46b09825ca3d859f768c8
+SHA512: f52b59e370a92ff5d898803f698bf8919aa5f7e587de610009081654b9420854ccbed559912cb031951c065fc8ecf73f7d5d6498848edd89f79f7da3773a2316
+
+Package: tea
+Architecture: aarch64
+Installed-Size: 28588
+Maintainer: @termux
+Version: 0.14.2
+Homepage: https://gitea.com/gitea/tea
+Description: The official CLI for Gitea
+Filename: dists/uncode/main/binary-aarch64/tea_0.14.2_aarch64.deb
+Size: 5967132
+MD5Sum: e25307eb9665a1587c07b94fd90bbde5
+SHA1: 41c28b03ab776ef33c2886783b45866f01943c27
+SHA256: 8002eefeb47182aabbadcb7de4d5fccdc6309d936234c7ff82b978d8e92fc775
+SHA512: 063c115a83c2e1ea7a4c78fe734ad0f1f595434770778328a2e7893b0cd92736d3cbeb18add8acf7f09a951278acda76bc317e642b2232ca18c79f3111310b67
+
+Package: tealdeer
+Architecture: aarch64
+Installed-Size: 2784
+Maintainer: @termux
+Version: 1.8.1
+Homepage: https://tealdeer-rs.github.io/tealdeer/
+Description: A very fast implementation of tldr in Rust
+Filename: dists/uncode/main/binary-aarch64/tealdeer_1.8.1_aarch64.deb
+Size: 1144192
+MD5Sum: c915e82e09beda6b3f601f1908aa6842
+SHA1: db47237cc005713af57724289141af864036b8d6
+SHA256: 9cc9fd98bae8776f5c721df80d83c7760282f191166cfd7dbe4534d8b2684832
+SHA512: 0b069b74e447780bfedceae8d546e1e01b5f26b1fd4a5bab3cfe9c9d7d7b787987fafd3aa9d00e74c7056fb68d0c086aabce0923d97bab810ea0352a2b576e89
+
+Package: teleport-tsh
+Architecture: aarch64
+Installed-Size: 132376
+Maintainer: @termux
+Version: 18.9.2
+Homepage: https://github.com/gravitational/teleport
+Description: Secure Access for Developers that doesn't get in the way
+Filename: dists/uncode/main/binary-aarch64/teleport-tsh_18.9.2_aarch64.deb
+Size: 22178364
+MD5Sum: 120b46d73753a771f571b7ef12b591c4
+SHA1: 3517fa0f2b2991743534090e8166c3545b5346c8
+SHA256: 2227a8a29775a15fdf47b4cabeb1794af890ee778aa111be6d2e6ced61b62577
+SHA512: 823a5106d7da4fa1e8ba2a1492d88f05a9dc2bd7e34f07fcf35fa1484215e5703e76b95c78feac10ec945f9714e27253038d9bf1c7851c303518364b3259a0d4
+
+Package: tere
+Architecture: aarch64
+Installed-Size: 2364
+Maintainer: @termux
+Version: 1.6.0-1
+Homepage: https://github.com/mgunyho/tere
+Description: Terminal file explorer written in rust
+Filename: dists/uncode/main/binary-aarch64/tere_1.6.0-1_aarch64.deb
+Size: 708120
+MD5Sum: ee7303543556cbd481b2587af619d3f9
+SHA1: 804c2c8471eb7339edaa66a9c9929e59bedf1bb4
+SHA256: 7ef8d36f106f03d8528d05c419654c9b3c59a591047967ae4102318439f7d833
+SHA512: 3bb5c9317c3eaf66bbd4900489c0b9b1d5fb54acf8dd33cc49cc857ed4e4baba7ac47bef3ad8359fa1422c5936d3f1d5bd98ff52d7499dab47d08be1bbbc9610
+
+Package: termimage
+Architecture: aarch64
+Installed-Size: 2504
+Maintainer: @termux
+Version: 1.2.1-1
+Homepage: https://github.com/nabijaczleweli/termimage
+Description: Terminal image viewer
+Filename: dists/uncode/main/binary-aarch64/termimage_1.2.1-1_aarch64.deb
+Size: 772356
+MD5Sum: 99b62ce83f0de61daab465bfd63d7a6e
+SHA1: 4ef65883776c96793031d51403ac05312f2aa437
+SHA256: 82aae8c2d0131ee468402d0b3a753398af0c2d8790b6ba98ec0c9a680c0ad7c6
+SHA512: 3df4e375ec8fbcb52fa77df9a4d668e3b6857885a49aa78b96a97005101893193dec65ebd803c929e617fd7c9a93321861f20125f59196bb49490ee57088b612
+
+Package: termux-am-socket
+Architecture: aarch64
+Installed-Size: 88
+Maintainer: @termux
+Version: 1.5.0-1
+Homepage: https://github.com/termux/termux-am-socket
 Depends: libc++
-Description: A program for computing context triggered piecewise hashes (CTPH)
-Filename: dists/uncode/main/binary-aarch64/ssdeep_2.14.1-2_aarch64.deb
-Size: 34040
-MD5Sum: f50cc622afdb95f52ed2b5949de1b61d
-SHA1: b66ae662de635ec3fffd9b9d7c722d1eb7333757
-SHA256: ee4fb7d55bc0de33bef6a2ead55c9349b530363bbe48e75b7f79e6c1b634ef7a
-SHA512: 00cc62e95d6ac168c61d9e18a23462306fd80f4cbb6bde35ce29d866e4afb1579f88f463335f3e8703fcd1e061a2884831f276bc020e47c4b3322e442b04ca53
+Description: A faster version of am with less features that only works while Termux is running
+Filename: dists/uncode/main/binary-aarch64/termux-am-socket_1.5.0-1_aarch64.deb
+Size: 16400
+MD5Sum: ec3d8bb3f57cd933345d2d7d85ca30ed
+SHA1: d93a4974ab883f01bbd81dadde7936b5487a6c89
+SHA256: 85788bb3d6f2db9846945e40509978d83712aaf05b02349676df73520a5cc4b2
+SHA512: 62774467504d0f29a15f0ecb0e9b78d370cd8e3b5d3c8490f167b0d9ece05ceb67c09631434e8e118d9535a629d6b4872301c8f68188fa50bf99769374366885
 
-Package: sshpass
+Package: termux-elf-cleaner
 Architecture: aarch64
-Installed-Size: 68
+Installed-Size: 88
 Maintainer: @termux
-Version: 1.10-1
-Homepage: https://sourceforge.net/projects/sshpass/
-Description: Noninteractive ssh password provider
-Filename: dists/uncode/main/binary-aarch64/sshpass_1.10-1_aarch64.deb
-Size: 8464
-MD5Sum: 036e20be9b55de9c99d10c37871508fc
-SHA1: 3a080aaae538d3dad1337f31b1ce4318ddb47923
-SHA256: c4ef11662728963aa43d1a3d61c9d2d39de0729681aef7526ed90d1cee15cf0a
-SHA512: fd7c925c6a0f8f4ad518cf50c14e072679566f4d56134a861d29fd96821f8303cbdc5d50f0d4bfb453978b702bc057279fe94407d9f8bc4a5796e3d2e0ac45e9
-
-Package: starship
-Architecture: aarch64
-Installed-Size: 11456
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 1.26.0
-Homepage: https://starship.rs
-Suggests: nerdfix, taplo
-Description: A minimal, blazing fast, and extremely customizable prompt for any shell
-Filename: dists/uncode/main/binary-aarch64/starship_1.26.0_aarch64.deb
-Size: 3273396
-MD5Sum: 617f848c89b87a5dbd2d01ed4669b980
-SHA1: 4a4d74f7d968e29bf50b0b0c04377c82bc07f856
-SHA256: bd78136fd64df6d12d873880efcc2f1fc65a3dd7fd11bb06642eb7bc878dc6ad
-SHA512: 5de265f08de7613dfb6ba1f5600ea3923683c37f38b1d42740dd253e1274fd0555ce352c77bcb8c06532a3b941bc2195c44d2ca0ceee9f2f6d470820a31505cb
-
-Package: stb
-Architecture: aarch64
-Installed-Size: 1992
-Maintainer: @termux
-Version: 0.0.0+g31c1ad37
-Homepage: https://github.com/nothings/stb
-Description: Single-file public domain (or MIT licensed) libraries for C/C++
-Filename: dists/uncode/main/binary-aarch64/stb_0.0.0+g31c1ad37_aarch64.deb
-Size: 347592
-MD5Sum: 17a9f7b55689c8cb26ff27358a9cb5ad
-SHA1: 4d93fd55bf2e416eb1ef34b66e3d000fc2e9dde3
-SHA256: c3efea6b58c01dc559eba4cded6f9d991d822d2ebd823f19cf10c75aefabfd11
-SHA512: 19f8fce7c0b1a28c1d6953e35ee26dfca9c285d5a11cc18ed1b71295ac571a6adc28e1f189a6017adf88a57ebd2b11c15c130fb5b600392f62a632e5b87887ea
-
-Package: stdoutisatty
-Architecture: aarch64
-Installed-Size: 68
-Maintainer: @flosnvjx
-Version: 1.0-1
-Homepage: https://github.com/lilydjwg/stdoutisatty
-Description: Patch the isatty() calls for colored output in pipeline
-Filename: dists/uncode/main/binary-aarch64/stdoutisatty_1.0-1_aarch64.deb
-Size: 4856
-MD5Sum: 13d801b768751968d3ae26a1ef9c9bbd
-SHA1: 2cb3ca7e7af6f9f2a0c11e8f3ed51330f748573d
-SHA256: 19158e3ac55b28e54aff2f40ad69a78cf31c73e0b365fd02d8b6cca8739f49ff
-SHA512: 063b62ddeb0cdf9728fc1812f36e86da014b170ea792f1766b21600d1760108daa5666be64fa5281e8f9eb6aa0e51201923cdbab755c8214d77548737b91d54c
-
-Package: stockfish
-Architecture: aarch64
-Installed-Size: 110368
-Maintainer: @termux
-Version: 18
-Homepage: https://stockfishchess.org/
+Version: 3.0.1-1
+Homepage: https://github.com/termux/termux-elf-cleaner
 Depends: libc++
-Description: Free and strong UCI chess engine
-Filename: dists/uncode/main/binary-aarch64/stockfish_18_aarch64.deb
-Size: 70899012
-MD5Sum: 0f4477a0d6e561bfe449298aafd923e7
-SHA1: 929de4f6dc5d6d21f0b3d8394631ecec935910d8
-SHA256: b33c9953568b0849e13cfb263a6be550a125f44a72d564f75135de03d96a2f73
-SHA512: 576078a570e7d891f857a518a4f9a7b4d968bad861c7fd1449cdce475b1800a57d5a6fb6c41bd839f23a54bee8a6ad71419e952417bfb8ccd122dc7a9d89f039
+Description: Cleaner of ELF files for Android
+Filename: dists/uncode/main/binary-aarch64/termux-elf-cleaner_3.0.1-1_aarch64.deb
+Size: 18072
+MD5Sum: 9e112b1041e9bdc9773cb49e662903d6
+SHA1: f7da0e191e0db7a50caa1d2cfd94f737ea562c66
+SHA256: d85ebbb0f47e9f8a243b9e9188c5f700a13411ce51c9653669b005cc85fe70c5
+SHA512: ab2f631ec7568b4d1545967c3907909d01b627f383488b1512d42f67bbd3efa4a01e5f1c9bb854ba2e594d9abc89dc3e5b95c47dc45800933d49dbe7d7a430b8
 
-Package: storj-uplink
+Package: termux-gui-bash
 Architecture: aarch64
-Installed-Size: 17700
-Maintainer: @termux
-Version: 1.158.2
-Homepage: https://www.storj.io/integrations/uplink-cli
-Description: Storj DCS Uplink CLI
-Filename: dists/uncode/main/binary-aarch64/storj-uplink_1.158.2_aarch64.deb
-Size: 4296280
-MD5Sum: f95d5629743b32d180b73a4ac4554ed5
-SHA1: 3edbd915ad42f70782de2849c23563ba54287ccf
-SHA256: 307f760b40a84835852e12f83d14a7d24eeb473c5f8503c53ff6f97d4887bf3f
-SHA512: b0cafdd28a0aa56c987dd155129fe5d673f32771937046b2c0af40ccd515cf83be3572df3b72d750485eb481ccaf748931959411d47756a675232267ac259e83
+Installed-Size: 132
+Maintainer: @tareksander
+Version: 0.1.2-1
+Homepage: https://github.com/tareksander/termux-gui-bash
+Depends: jq
+Description: A bash library for Termux:GUI
+Filename: dists/uncode/main/binary-aarch64/termux-gui-bash_0.1.2-1_aarch64.deb
+Size: 66980
+MD5Sum: 124d85a7aa979b1fcfd461b4a8ab6c51
+SHA1: 15cd8b4884ba13d61e256ba198ef630eb6ad9b03
+SHA256: 4e060fede49e5e2c9944492920343898318ab2882d46924cc308d7b145c36962
+SHA512: b28c7dedfad726a1501b1452a3b4c2badb1fe189e97797604c340d2b04d8a0d1073bf85f7832e345a78c9a3d37bce32e053ef9f7d7d0d872324cf2f52323cca3
 
-Package: stylua
+Package: termux-gui-c
 Architecture: aarch64
-Installed-Size: 6684
-Maintainer: @termux
-Version: 2.5.2
-Homepage: https://github.com/JohnnyMorganz/StyLua
-Description: An opinionated Lua code formatter
-Filename: dists/uncode/main/binary-aarch64/stylua_2.5.2_aarch64.deb
-Size: 1747340
-MD5Sum: 14f7a55b07d848a31de41725b273d2b2
-SHA1: 3b6f150c879ea741768beec25c5c0053ec47efab
-SHA256: c07e13698960714489af2c094f0370f9e9e2aa709323739c991e49d64a748d54
-SHA512: 59376397697db78e86f9abc10221474c63e3309337f08331a2dca736085538b9c564437452cc859608e86ac6b3e0122a0bdc25259c0f6128993fc687208f38fe
+Installed-Size: 2116
+Maintainer: @tareksander
+Version: 0.1.3-6
+Homepage: https://github.com/tareksander/termux-gui-c-bindings
+Depends: abseil-cpp, libc++, libandroid-stub, libprotobuf
+Description: A C library for the Termux:GUI plugin
+Filename: dists/uncode/main/binary-aarch64/termux-gui-c_0.1.3-6_aarch64.deb
+Size: 284124
+MD5Sum: 401e3bbebebda6528098c84167a9c19b
+SHA1: 6a55ba307fdb78179ee66a63ea09e6d2ed8abea1
+SHA256: 0ebc66bf496239ad03a12228987f833dd49600a315c864c01192b51d6e44506a
+SHA512: f13eba90ffc3d4c7ed32f1007c5b5451f7cc7b5483efe8b2e94c48849dde0dd22969c967b2c30d72545194a7c112bed805e2d34fe5be39b6db6d9cdd5a94b0a8
 
-Package: sun
+Package: teseq
 Architecture: aarch64
-Installed-Size: 2664
+Installed-Size: 236
 Maintainer: @termux
-Version: 1.0.0-3
-Homepage: https://stand-up-notes.org
-Description: A very simple note taking cli app
-Filename: dists/uncode/main/binary-aarch64/sun_1.0.0-3_aarch64.deb
-Size: 761444
-MD5Sum: cd3b55878e13aa8765e374c390f793f7
-SHA1: 4b55b5596d223743f788738ad4906c8055ade8b8
-SHA256: fe8fa4382119347613a80131ef1b4140c07d99b620913ff3392e67d7ca21704e
-SHA512: 1b1d8365851aad171d383df35f90789dba4294542e322d36736c56d993202b3e926740d64db4044bfc5dde1c3a89c39c7d6afc0a0a342c1ce2b496a02ac2afc0
-
-Package: surfraw
-Architecture: aarch64
-Installed-Size: 684
-Maintainer: @termux
-Version: 2.3.0-10
-Homepage: https://gitlab.com/surfraw/Surfraw
-Depends: lynx, perl
-Description: Shell Users' Revolutionary Front Rage Against the Web
-Filename: dists/uncode/main/binary-aarch64/surfraw_2.3.0-10_aarch64.deb
-Size: 71992
-MD5Sum: b2d92344c540d1643c713cdfb822c4e3
-SHA1: 4a4f5c735b716099609c5e3a4fa764c12b0aab51
-SHA256: 8306c0fc4d3b2cb1eb21f2e21b4d91fbf9f26a9b1b8ec2aaba1a322308ea276b
-SHA512: 532384bddd05bfded3d93091b8255ff39aac7688ab6cecd6caa6eb24dfc1a3d35865ecb195f876f4e6e468e71bcca294b0c9c71a5eb5ce17bce333adb3835cdc
-
-Package: svt-av1
-Architecture: aarch64
-Installed-Size: 4188
-Maintainer: @termux
-Version: 4.1.0
-Homepage: https://gitlab.com/AOMediaCodec/SVT-AV1
-Description: Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
-Filename: dists/uncode/main/binary-aarch64/svt-av1_4.1.0_aarch64.deb
-Size: 1383432
-MD5Sum: b5f587aa4815f059ed234ad0b8f894a1
-SHA1: 04b294111887903a699de3fb535bab04b3d71fe6
-SHA256: 3fa26aa090dfe47672df74c82956d4967f440b3cdc5ffa633590c5efe125eaa3
-SHA512: 1409bee0da9a70ea0bf1124a6ccf916b12fe9bf5c4186168ea85c4ddeec45dc607f07633a9427d7b3df89cae3a91cdc3b7101838f5585ced698c73b340fd9a2e
+Version: 1.1.1-2
+Homepage: https://www.gnu.org/software/teseq/
+Description: Tool for analyzing control characters and terminal control sequences
+Filename: dists/uncode/main/binary-aarch64/teseq_1.1.1-2_aarch64.deb
+Size: 49524
+MD5Sum: 3182e86da86b6af8bfebad2530520a96
+SHA1: 2b68c47734075364bf3ddcc4f3ac879f82ddf13d
+SHA256: c782bed950aa16b1f4e0b0550e322cc1ae611a4a77aaa159a7f5142d4655283f
+SHA512: 27d28efa40e0ba1e4cb8d258bcfd563563ee02358535e8b034d01b60f4e46faba5467669313d19938652935d5a8fa38b92caf4796bdd586afbc2ae872f019d75
 
