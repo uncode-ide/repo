@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96496
-MD5Sum: 14ddc587a00f1bfc8080768154f76f83
-SHA1: 89255dfef45984f93cc41af6f0d01bed0c9f2b71
-SHA256: 36a3d3ee0d3ba882d56baa38fd31b89798ebe49c5f5f1da4711803236a81ca65
-SHA512: 0f6143b63cebeb699a12d6c52f1f8444342b8a7b87ae2737a805b9481bf0e45a3840f96a7a05cc8dd423e629237d76dc8517a6e2bd2c72ac0c1e4dade95fba90
+Size: 96484
+MD5Sum: 8b3799f38b1ff50c3e86d9a5cd693e0b
+SHA1: 9ce6307d17447f99e4ff02c2c5a61ad1ccbc511e
+SHA256: b7b48eba57a004fc17e3b1dd2818dd71302c7d9862c31132c6d2daa90d5514c1
+SHA512: 399e5c2f42a70a19b4ac2576ab11c245b636486c0de74fc71a0ff99f245e298855c3d297d624862d1c6ff3fa541affb762e819b55f972004f6c98049194c715a
 
 Package: ca-certificates
 Architecture: all
@@ -27,34 +27,32 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: tcllib
+Package: tex-gyre
 Architecture: all
-Installed-Size: 15124
+Installed-Size: 4816
 Maintainer: @termux
-Version: 2.0
-Homepage: https://core.tcl-lang.org/tcllib/
-Depends: tcl
-Recommends: resolv-conf
-Description: Tcl Standard Library
-Filename: dists/uncode/main/binary-all/tcllib_2.0_all.deb
-Size: 3631108
-MD5Sum: 90db6ab295c2864a8f05e766ce821f94
-SHA1: 48595c6e998836e1fc7a75b62e92ab9580d12e9f
-SHA256: 0bcf94a7245c7f944bc29c7bd5c80c6a03bd59d82ffb4052efc50886b0c75193
-SHA512: cfe22ebf992d07c536a18278502389fa41cc5e68a91dfa029e198227c2433d2a72476e5ff22f0c4c05891b693be12c081229a29a68636cb279e38ed85a5728d0
+Version: 2.501-2
+Homepage: https://www.gust.org.pl/projects/e-foundry/tex-gyre/
+Description: The TeX Gyre (TG) Collection of Fonts
+Filename: dists/uncode/main/binary-all/tex-gyre_2.501-2_all.deb
+Size: 1531456
+MD5Sum: 920cc7bc39bf6442af8248c4a0e659bf
+SHA1: ff46bd31db818b01fbba6c5c03cfb38a80db25c7
+SHA256: 910dd75a077822495f485482966fce3733ee851961e9ff43a693ee89c0df8d3c
+SHA512: cd93442a441c84df3adbd741443de8d937127bc6be4e1bb3d47635d5baf9348d0bde45f364f18cc4d409079ef0751f79de4294d74684c1cb64f4e25d1a608382
 
-Package: termux-keyring
+Package: update-info-dir
 Architecture: all
-Installed-Size: 192
+Installed-Size: 48
 Maintainer: @termux
-Version: 3.13
-Homepage: https://github.com/termux
-Essential: yes
-Description: GPG public keys for the official Termux repositories
-Filename: dists/uncode/main/binary-all/termux-keyring_3.13_all.deb
-Size: 39816
-MD5Sum: 3f7f73069a32a49fa82f8782d11da62e
-SHA1: 6c3b3455065159b1428a3431e182eca605a2b44d
-SHA256: 6f2ad21ce0196c1b9e5e41aec38546a047916b01dda10eaae5b514aac6ef137b
-SHA512: 4058d0fd22f7410b337efdfb95f036e622751cc47a4d8903480cfa12655a1bcd16533497e880765ace3cfc40aafd3e5ee7cea662a91bf20706577fc15758eb56
+Version: 7.3
+Homepage: https://www.gnu.org/software/texinfo/
+Depends: texinfo (= 7.3)
+Description: Update or create index file from all installed info files in directory
+Filename: dists/uncode/main/binary-all/update-info-dir_7.3_all.deb
+Size: 2480
+MD5Sum: 38fbd317efa3b33c3ada85a84d9e7065
+SHA1: 8c93b74acbb7a515e7aeb2127e4460e092840a9f
+SHA256: a0ea666969f73a85803d5c7489d80cfda5fc68b30c96a5b35bbe088cd2908a7b
+SHA512: 1abea84a083c76b689964cff71bd261d474e5a1abb05426c871478ee9d201aed6dee61c7188ed8349bee538cf28a0ad03b9a5a53ebcf1763abde806bde98cf9c
 

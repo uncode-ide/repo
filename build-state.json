@@ -1,8 +1,8 @@
 {
   "version": "2.0",
   "initialized_at": "2026-07-04T09:54:50.166607+00:00",
-  "last_run": "2026-07-27T13:26:33.196923+00:00",
-  "run_count": 45,
+  "last_run": "2026-07-27T16:07:48.663323+00:00",
+  "run_count": 46,
   "total_packages": 2146,
   "chunk_size": 40,
   "built": [
@@ -861,7 +861,14 @@
     "termux-gui-bash",
     "termux-gui-c",
     "termux-keyring",
-    "teseq"
+    "teseq",
+    "tex-gyre",
+    "texinfo",
+    "texlab",
+    "tgpt",
+    "time",
+    "timidity++",
+    "tin-summer"
   ],
   "failed": [
     "libandroid-selinux",
@@ -1833,25 +1840,16 @@
     "termux-gui-package",
     "termux-gui-pm",
     "termux-services",
-    "tesseract"
-  ],
-  "pending": [
+    "tesseract",
     "testssl.sh",
-    "tex-gyre",
-    "texinfo",
-    "texlab",
     "texlive-bin",
     "texlive-installer",
-    "tgpt",
     "thrift",
     "tidy",
     "tig",
     "tilde",
-    "time",
     "timewarrior",
     "timg",
-    "timidity++",
-    "tin-summer",
     "tintin++",
     "tinyfugue",
     "tinygo",
@@ -1875,7 +1873,9 @@
     "tracepath",
     "traceroute",
     "translate-shell",
-    "transmission",
+    "transmission"
+  ],
+  "pending": [
     "tree",
     "tree-sitter",
     "tree-sitter-bash",
