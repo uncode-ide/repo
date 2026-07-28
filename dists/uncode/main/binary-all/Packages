@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96484
-MD5Sum: 8b3799f38b1ff50c3e86d9a5cd693e0b
-SHA1: 9ce6307d17447f99e4ff02c2c5a61ad1ccbc511e
-SHA256: b7b48eba57a004fc17e3b1dd2818dd71302c7d9862c31132c6d2daa90d5514c1
-SHA512: 399e5c2f42a70a19b4ac2576ab11c245b636486c0de74fc71a0ff99f245e298855c3d297d624862d1c6ff3fa541affb762e819b55f972004f6c98049194c715a
+Size: 96476
+MD5Sum: 7731162e6691d816321ee7474d7638b2
+SHA1: 3b0ec7d04e51ff6b2342eb2745c525e1935cacf7
+SHA256: 1ad8b14a93519acac66ac334446ecf9e6df496578f727084f47f63299d19471b
+SHA512: 0fb9a7b71662f258b97dd915b14d022533c96c570994e2e3c0232ad3d2e3fcbe564cdba70bcea7d15f494a5cbda5b4ccedaae563047b556893891a4835cec1d7
 
 Package: ca-certificates
 Architecture: all
@@ -27,32 +27,75 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: tex-gyre
+Package: tree-sitter-parsers
 Architecture: all
-Installed-Size: 4816
-Maintainer: @termux
-Version: 2.501-2
-Homepage: https://www.gust.org.pl/projects/e-foundry/tex-gyre/
-Description: The TeX Gyre (TG) Collection of Fonts
-Filename: dists/uncode/main/binary-all/tex-gyre_2.501-2_all.deb
-Size: 1531456
-MD5Sum: 920cc7bc39bf6442af8248c4a0e659bf
-SHA1: ff46bd31db818b01fbba6c5c03cfb38a80db25c7
-SHA256: 910dd75a077822495f485482966fce3733ee851961e9ff43a693ee89c0df8d3c
-SHA512: cd93442a441c84df3adbd741443de8d937127bc6be4e1bb3d47635d5baf9348d0bde45f364f18cc4d409079ef0751f79de4294d74684c1cb64f4e25d1a608382
+Installed-Size: 4
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.26
+Homepage: https://github.com/termux/termux-packages
+Depends: tree-sitter-c, tree-sitter-lua, tree-sitter-markdown, tree-sitter-query, tree-sitter-vimdoc, tree-sitter-vim
+Recommends: tree-sitter-bash, tree-sitter-css, tree-sitter-go, tree-sitter-html, tree-sitter-latex, tree-sitter-java, tree-sitter-javascript, tree-sitter-json, tree-sitter-python, tree-sitter-regex, tree-sitter-rust, tree-sitter-sql, tree-sitter-toml, tree-sitter-xml, tree-sitter-yaml
+Description: A metapackage that provides commonly used treesitter parsers
+Filename: dists/uncode/main/binary-all/tree-sitter-parsers_0.26_all.deb
+Size: 840
+MD5Sum: 44f3aca16e2ee1241939504f3606c042
+SHA1: fe619d46cabdf78bbfca568491b143cb26edc154
+SHA256: b390121486618396814e6c64ab4a45fa3c1a0bd5dd4199b2579367e70ebe7d95
+SHA512: 1d4ae850334a3a8e72da522acd051338ecb149d2602c01317de89c78c925c261b0e0c03054a73723404276e823945c5d42b16e9bea2b44d9a351f068c40dd531
 
-Package: update-info-dir
+Package: tsu
 Architecture: all
-Installed-Size: 48
+Installed-Size: 52
 Maintainer: @termux
-Version: 7.3
-Homepage: https://www.gnu.org/software/texinfo/
-Depends: texinfo (= 7.3)
-Description: Update or create index file from all installed info files in directory
-Filename: dists/uncode/main/binary-all/update-info-dir_7.3_all.deb
-Size: 2480
-MD5Sum: 38fbd317efa3b33c3ada85a84d9e7065
-SHA1: 8c93b74acbb7a515e7aeb2127e4460e092840a9f
-SHA256: a0ea666969f73a85803d5c7489d80cfda5fc68b30c96a5b35bbe088cd2908a7b
-SHA512: 1abea84a083c76b689964cff71bd261d474e5a1abb05426c871478ee9d201aed6dee61c7188ed8349bee538cf28a0ad03b9a5a53ebcf1763abde806bde98cf9c
+Version: 8.6.0-1
+Homepage: https://github.com/cswl/tsu
+Description: A su wrapper for Termux
+Filename: dists/uncode/main/binary-all/tsu_8.6.0-1_all.deb
+Size: 4404
+MD5Sum: 5e9e64c50043cd7035e47f27f5c96e6e
+SHA1: 36da6e71adfef891d5a53b9b72cbaa538b0eb6f4
+SHA256: 04afd89b5caccfdb3dd33946fe9fc6c0c0ebbb60b78231ad4f04031a24825d85
+SHA512: 7fdc6902aebe204a53edd69c50017d543ac4affeb7b52136fd50ce9d4a1386a356646e8510799456b1649d1c0f160863019909569415f4a202ac31c3954cf3d9
+
+Package: ttf-dejavu
+Architecture: all
+Installed-Size: 10108
+Maintainer: @termux
+Version: 2.37-8
+Homepage: https://dejavu-fonts.github.io/
+Description: Font family based on the Bitstream Vera Fonts with a wider range of characters
+Filename: dists/uncode/main/binary-all/ttf-dejavu_2.37-8_all.deb
+Size: 2460040
+MD5Sum: 7668082947f9411629ecc11edb9480a1
+SHA1: dde01be24b1e781ee4bf1e294c0ce94606903f3b
+SHA256: bb430f11f5bdd5179678999afa6f2e83cd02eefc66cf95522bd1cef7ef4d70b9
+SHA512: 7f3352cd23924bab45091cbf31eec3891d0597c93739885655695ceed470cb9e3f7cc19b11c11178c447ba400309fedff8be551ba366ca73f93c28784b5bfb60
+
+Package: ttf-jetbrains-mono
+Architecture: all
+Installed-Size: 7724
+Maintainer: @termux
+Version: 2.304
+Homepage: https://www.jetbrains.com/lp/mono/
+Description: A free and open-source typeface for developers
+Filename: dists/uncode/main/binary-all/ttf-jetbrains-mono_2.304_all.deb
+Size: 734984
+MD5Sum: 4a2bbad0a41a768c170007efad157eab
+SHA1: 1fff0e18c2cb5db83fa0ec5c20c08972986699c4
+SHA256: 9bf69dea624639881af663edbf7fd154455ac244d5f21fdad81b4e953ee04770
+SHA512: c068a40dc0bc5741b8c3036f26fd2fdc9731428717a2ead7e4be404729984ce8f4975ed29d1a53ee30406f389f2e97b50de39eaedc270f5e1a83fa0ca4a9e20c
+
+Package: ttf-nerd-fonts-symbols
+Architecture: all
+Installed-Size: 4944
+Maintainer: @termux
+Version: 3.4.0
+Homepage: https://www.nerdfonts.com/
+Description: Symbols-only font containing the Nerd Font icons
+Filename: dists/uncode/main/binary-all/ttf-nerd-fonts-symbols_3.4.0_all.deb
+Size: 2260168
+MD5Sum: b1fdb5d7e1687f32b29b03526f5b0f9a
+SHA1: b342e98777385f7d4a73dab2a5a41d2575a137f0
+SHA256: e6a452b225818722eab739bbfdfc23b8f7ded064d9031891438cf57651c6cb4b
+SHA512: 826ccaf6fd9f1e922924f0767198b865593d18ea6fcc6e1d487b8852b4eb10338571afd62790b687cb7ce86fecdb9357d66e8b6309d0a6c2e6348da1ae783075
 
