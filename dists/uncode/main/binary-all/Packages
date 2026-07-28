@@ -8,10 +8,10 @@ Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
 Size: 96476
-MD5Sum: 7731162e6691d816321ee7474d7638b2
-SHA1: 3b0ec7d04e51ff6b2342eb2745c525e1935cacf7
-SHA256: 1ad8b14a93519acac66ac334446ecf9e6df496578f727084f47f63299d19471b
-SHA512: 0fb9a7b71662f258b97dd915b14d022533c96c570994e2e3c0232ad3d2e3fcbe564cdba70bcea7d15f494a5cbda5b4ccedaae563047b556893891a4835cec1d7
+MD5Sum: 4830f2d2422d3c03dfbf44483268269e
+SHA1: 168a5e97f6dd1ded9e6f1cb580f21c5666ab6893
+SHA256: 5af80cc069a2e5e3a33ac9f7f41051e793bc366a278fcd0ed3b323141622252a
+SHA512: aba01200f22473f124c8e10f0058184fa71334c22ea6f54bbc2f37954050d4e7238902e696327a39acf2381ef4edbe6fd9b2cb33f47972f6d0804bf62d8e0a59
 
 Package: ca-certificates
 Architecture: all
@@ -27,75 +27,73 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: tree-sitter-parsers
+Package: tur-repo
 Architecture: all
-Installed-Size: 4
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.26
-Homepage: https://github.com/termux/termux-packages
-Depends: tree-sitter-c, tree-sitter-lua, tree-sitter-markdown, tree-sitter-query, tree-sitter-vimdoc, tree-sitter-vim
-Recommends: tree-sitter-bash, tree-sitter-css, tree-sitter-go, tree-sitter-html, tree-sitter-latex, tree-sitter-java, tree-sitter-javascript, tree-sitter-json, tree-sitter-python, tree-sitter-regex, tree-sitter-rust, tree-sitter-sql, tree-sitter-toml, tree-sitter-xml, tree-sitter-yaml
-Description: A metapackage that provides commonly used treesitter parsers
-Filename: dists/uncode/main/binary-all/tree-sitter-parsers_0.26_all.deb
-Size: 840
-MD5Sum: 44f3aca16e2ee1241939504f3606c042
-SHA1: fe619d46cabdf78bbfca568491b143cb26edc154
-SHA256: b390121486618396814e6c64ab4a45fa3c1a0bd5dd4199b2579367e70ebe7d95
-SHA512: 1d4ae850334a3a8e72da522acd051338ecb149d2602c01317de89c78c925c261b0e0c03054a73723404276e823945c5d42b16e9bea2b44d9a351f068c40dd531
+Installed-Size: 60
+Maintainer: @termux-user-repository
+Version: 1.0.1
+Homepage: https://github.com/termux-user-repository/tur
+Description: A single and trusted place for all unofficial/less popular termux packages
+Filename: dists/uncode/main/binary-all/tur-repo_1.0.1_all.deb
+Size: 2904
+MD5Sum: 769f517aa9bd0a1b9f6527d9c04cb7d7
+SHA1: bd97a61f8d26267345f2576289580c14530b8369
+SHA256: d2cfaec310629427fb5a5f391dafe94a9d097db8169e35871fe624ef057f2d26
+SHA512: 356c39bd6fa7ad4c954a7c14ca3b142d440fbc247b95819bbb438d0d2c10cf101b4ab4fc8551f1ac5eb49d439298522104c623c955ba44e99f4c12b7037c4fe1
 
-Package: tsu
+Package: unicode-cldr
 Architecture: all
-Installed-Size: 52
+Installed-Size: 291456
 Maintainer: @termux
-Version: 8.6.0-1
-Homepage: https://github.com/cswl/tsu
-Description: A su wrapper for Termux
-Filename: dists/uncode/main/binary-all/tsu_8.6.0-1_all.deb
-Size: 4404
-MD5Sum: 5e9e64c50043cd7035e47f27f5c96e6e
-SHA1: 36da6e71adfef891d5a53b9b72cbaa538b0eb6f4
-SHA256: 04afd89b5caccfdb3dd33946fe9fc6c0c0ebbb60b78231ad4f04031a24825d85
-SHA512: 7fdc6902aebe204a53edd69c50017d543ac4affeb7b52136fd50ce9d4a1386a356646e8510799456b1649d1c0f160863019909569415f4a202ac31c3954cf3d9
+Version: 48.1
+Homepage: http://cldr.unicode.org/
+Description: Unicode Common Locale Data Repository
+Filename: dists/uncode/main/binary-all/unicode-cldr_48.1_all.deb
+Size: 21066304
+MD5Sum: d1b51fc11c8ccd81520654aa7f75f8e9
+SHA1: 47cc90177be8d2892d85115c05cba74fc696c334
+SHA256: 631fd5b48fec0aa88783361cbbfe1cca8fe3d5a2918ec27fbf4ff63a307398b4
+SHA512: e79043a0418a2187dd2867b3b080ccfc3995f0ffe4c540d7f8675400c282b32e8a96b28e75861ea29e205babb6f24dfaeae8ded447c70dcbcd97b11f079dd2ce
 
-Package: ttf-dejavu
+Package: unicode-emoji
 Architecture: all
-Installed-Size: 10108
+Installed-Size: 1176
 Maintainer: @termux
-Version: 2.37-8
-Homepage: https://dejavu-fonts.github.io/
-Description: Font family based on the Bitstream Vera Fonts with a wider range of characters
-Filename: dists/uncode/main/binary-all/ttf-dejavu_2.37-8_all.deb
-Size: 2460040
-MD5Sum: 7668082947f9411629ecc11edb9480a1
-SHA1: dde01be24b1e781ee4bf1e294c0ce94606903f3b
-SHA256: bb430f11f5bdd5179678999afa6f2e83cd02eefc66cf95522bd1cef7ef4d70b9
-SHA512: 7f3352cd23924bab45091cbf31eec3891d0597c93739885655695ceed470cb9e3f7cc19b11c11178c447ba400309fedff8be551ba366ca73f93c28784b5bfb60
+Version: 17.0.0
+Homepage: https://unicode.org/emoji/
+Description: Unicode Emoji Data Files
+Filename: dists/uncode/main/binary-all/unicode-emoji_17.0.0_all.deb
+Size: 74808
+MD5Sum: bde7f6415a1b05b132bdd4ea1cc72245
+SHA1: 8ebf73b8a2beaa674be62d930386f172cc23fc60
+SHA256: 882c1261e35f3258b525a4473265e012064f300f77f1ad14718b3867b19fb2fa
+SHA512: 0b291ccc259afa8c383679ec0ed7f3c8198d7cedc15aaf2eff559251367b0afeea96c1b075944a1d9a39d8f334b1c9ac953e5a25666762709645fa5d34492020
 
-Package: ttf-jetbrains-mono
+Package: utf8cpp
 Architecture: all
-Installed-Size: 7724
+Installed-Size: 144
 Maintainer: @termux
-Version: 2.304
-Homepage: https://www.jetbrains.com/lp/mono/
-Description: A free and open-source typeface for developers
-Filename: dists/uncode/main/binary-all/ttf-jetbrains-mono_2.304_all.deb
-Size: 734984
-MD5Sum: 4a2bbad0a41a768c170007efad157eab
-SHA1: 1fff0e18c2cb5db83fa0ec5c20c08972986699c4
-SHA256: 9bf69dea624639881af663edbf7fd154455ac244d5f21fdad81b4e953ee04770
-SHA512: c068a40dc0bc5741b8c3036f26fd2fdc9731428717a2ead7e4be404729984ce8f4975ed29d1a53ee30406f389f2e97b50de39eaedc270f5e1a83fa0ca4a9e20c
+Version: 1:4.1.1
+Homepage: https://github.com/nemtrif/utfcpp
+Description: UTF8-CPP: UTF-8 with C++ in a Portable Way
+Filename: dists/uncode/main/binary-all/utf8cpp_1:4.1.1_all.deb
+Size: 10508
+MD5Sum: 7c448e0f855e240d76b5ce462e0b327b
+SHA1: 976fb5b927f4a98febbb6feff0b58e54fd5e6703
+SHA256: 554aa1d00335e0afc49b54ab73693617a0e00e5db2c8904772e4665081c85547
+SHA512: 1c27b1da68b72787b3e6acaee719b070ac9a825801db936b47e116fc69db3e3d58c7215b76c9c34bfddecb0e0aa9a7b336c2011f5ffe026ee1363df2b890bd81
 
-Package: ttf-nerd-fonts-symbols
+Package: uthash
 Architecture: all
-Installed-Size: 4944
+Installed-Size: 252
 Maintainer: @termux
-Version: 3.4.0
-Homepage: https://www.nerdfonts.com/
-Description: Symbols-only font containing the Nerd Font icons
-Filename: dists/uncode/main/binary-all/ttf-nerd-fonts-symbols_3.4.0_all.deb
-Size: 2260168
-MD5Sum: b1fdb5d7e1687f32b29b03526f5b0f9a
-SHA1: b342e98777385f7d4a73dab2a5a41d2575a137f0
-SHA256: e6a452b225818722eab739bbfdfc23b8f7ded064d9031891438cf57651c6cb4b
-SHA512: 826ccaf6fd9f1e922924f0767198b865593d18ea6fcc6e1d487b8852b4eb10338571afd62790b687cb7ce86fecdb9357d66e8b6309d0a6c2e6348da1ae783075
+Version: 2.4.0
+Homepage: https://troydhanson.github.io/uthash/
+Description: C preprocessor implementations of a hash table and a linked list
+Filename: dists/uncode/main/binary-all/uthash_2.4.0_all.deb
+Size: 20212
+MD5Sum: a1267bba6ceaf2b686b04663faf45a66
+SHA1: c04dd12473508ba7e17c4c8de6298c138044f240
+SHA256: 11a7618ab7ebbdaff0572f2bba243836d77e802c20a63555f1eea803e451efd6
+SHA512: 8591940bca361d35380420ac2e35df3b1bc0c287c3a253681c6c6f1fbc71bcc84975d20071eb74e2e073a2dab9e094d049cfab88647c67e5859137a1ea17d3a0
 

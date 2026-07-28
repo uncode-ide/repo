@@ -11,10 +11,10 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 892
-MD5Sum: da439630ce84a1d7922780ac3e086dd1
-SHA1: 6efae169f7531d222866bcfbe2ac18d96d1a153d
-SHA256: d5ed62ebd01bc30063e1b700993945deeade23e43e4afecb4e7847c2e781a8fa
-SHA512: c4459dae90444c8c746e492742f09f1fc4b9c02034f2cf8884e6044b58b05ca315635189e68ec797c5cfcc83ea9fe8497a01f98a365191e948e1601c91f989ff
+MD5Sum: 9dc63b1ba614ccd1da1fa7af76319585
+SHA1: c4d74ddde16d186f90491c9e7785d965f00c007e
+SHA256: 6817229879b2612dd1e9907f5a9bc0f19a3fceac5f7dab1a2f6197892fedaa0f
+SHA512: af4ad8d46776ea243dd6c6ca25d8c0f7f922f5913f92e46418a0f7fbd220e0e227424d6184d34dde5a7410b78f6154cccf0af442dcbf273a2f3869e38ea5dd27
 
 Package: libnghttp3-static
 Architecture: aarch64
@@ -46,399 +46,265 @@ SHA1: 36e196eff68cf5867c127747cebfee5c91009be6
 SHA256: f401429550b527a6738149bddb58ae70df3b79a386b14476193cae62ac06e4e0
 SHA512: a77c9c4d13c94dbbcad6c02b35ddd51319c6b60ccf1b2b385d40f8a062dc72639228065e448259a69db4638d8ed4d28fb9047da58d4aefd8934c75e08a930238
 
-Package: tree-sitter-bash
-Architecture: aarch64
-Installed-Size: 1428
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.25.1-1
-Homepage: https://github.com/tree-sitter/tree-sitter-bash
-Description: Bash grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-bash_0.25.1-1_aarch64.deb
-Size: 125704
-MD5Sum: b1281dc265ad9560b2ef3a83d40b6dd7
-SHA1: 8ef0b2fe325ba03c5cf3b77470fc47385d5d84af
-SHA256: 7b82d9cff3601acb970f851f1698316ffad9c98cfe8b462f4786fdef2eca36cb
-SHA512: 3e774fb2962ccdc69983b53188be0b11ea462e419dd9c40d5167493957b66c1776bbec54f09c05169eef16e05cd60d7a6bb90c3168be30a3a2e24d117080ec96
-
-Package: tree-sitter-c
-Architecture: aarch64
-Installed-Size: 716
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.24.2
-Homepage: https://github.com/tree-sitter/tree-sitter-c
-Description: C grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-c_0.24.2_aarch64.deb
-Size: 49320
-MD5Sum: e135f656ae1c1eb76cad67557b6df57a
-SHA1: 1993bc5bc3f10438b3a5298a2328f19ceb371591
-SHA256: ea8a97e4637b1a704692cd10ed9b21880f46e3861626139295a29ef7f2f9bfa7
-SHA512: 6f52982005ad89e9e1d0a24cd16ed4c9e2d8eb8b7e1649dddcf8eea729247c7bb9819009c84c8bba8cbfa4ced226f54811a1894b3a17ae4196ad7528f901cfbb
-
-Package: tree-sitter-css
-Architecture: aarch64
-Installed-Size: 220
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.25.0-1
-Homepage: https://github.com/tree-sitter/tree-sitter-css
-Description: CSS grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-css_0.25.0-1_aarch64.deb
-Size: 18952
-MD5Sum: 9c1e5ef43eae1593294c6b556f9f4ae9
-SHA1: 3f39324674b7a33f65bbcb8ae45fa521477b2ca9
-SHA256: 3463daad17a116c615582c16fd58eb0338bd7fb8ef363ea2dec12686c5cdb543
-SHA512: c7252bfcc293ee14dffc33f0d2ad2fa45d7081359ce72a046c6d1b84027c3dd5953aed0de07a7135adf08b10b5dbd1605d71bcf6a5674e710f23cd16deec1880
-
-Package: tree-sitter-go
-Architecture: aarch64
-Installed-Size: 308
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.25.0-1
-Homepage: https://github.com/tree-sitter/tree-sitter-go
-Description: Golang grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-go_0.25.0-1_aarch64.deb
-Size: 29900
-MD5Sum: 11a9d44368babe22cea93e6c60bb1dfb
-SHA1: a82012196aa77dbebbd64f647f44cd6eb226b2cc
-SHA256: 0f60510cb6dc6194ecf77ed10a0e99914c323ffe9aa8dc88a8a4bf25b1eaa6dd
-SHA512: 14f91a306597dc60d6cd8e484b39f9a263e5915e9b94bbe38320d0e46891cc536c16eec531f46659108fcafa4358d8e5128c7cc1ed1d6432cbdf697e9170a971
-
-Package: tree-sitter-html
-Architecture: aarch64
-Installed-Size: 112
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.23.2-1
-Homepage: https://github.com/tree-sitter/tree-sitter-html
-Description: HTML grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-html_0.23.2-1_aarch64.deb
-Size: 9568
-MD5Sum: 872a80b715d73af620d38aa11af18d52
-SHA1: ef0e3e9a1fd540a448abf90eed170d723e756c72
-SHA256: f4d11b44467dfd74dfae120b6d85755d38ebba784fb898988ef3328d9c3cf748
-SHA512: 747ed9554659c105183de8fb11c8156f807bdbed6d3246da9e71eb375d48178716cdfd356c0956f761f7ccbc8208986e190a057ea104fd9bc301ce37041c6306
-
-Package: tree-sitter-java
-Architecture: aarch64
-Installed-Size: 500
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.23.5-1
-Homepage: https://github.com/tree-sitter/tree-sitter-java
-Description: Java grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-java_0.23.5-1_aarch64.deb
-Size: 37420
-MD5Sum: 67de10ded56fd383610d4188cfd1c42b
-SHA1: d3d8bcd64e97cf401417d8f0b6f853907c09803f
-SHA256: 801db52307c9a0f5f6e3c610c4f35ee2ebc271264702878e09ede9de0a06a4a1
-SHA512: a64aa5b8aeedbdb8adcfba9ae09d7c0237b2a00bd38e1d5d1b878dbb8c50f0b2a9e1c4763c30d2bff028325f2d5af4456f7445a0d578590abb6e46ae6cebe417
-
-Package: tree-sitter-javascript
-Architecture: aarch64
-Installed-Size: 512
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.25.0-1
-Homepage: https://github.com/tree-sitter/tree-sitter-javascript
-Description: JavaScript grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-javascript_0.25.0-1_aarch64.deb
-Size: 39988
-MD5Sum: c9762f6a2e294398c922d0431998bfa0
-SHA1: d77917f9e579cc1c60379d0f481d676a0a49e862
-SHA256: 57e9f22785402bc204966528108506359fddc3654bdafd61945202b3854c3389
-SHA512: a87774d417d813056344685d3e22b8b5f56706bb2595730e4cb982ce5deaa01a1c1ddadb18a5f01fe38d639e447b137d9b949cf59ab6c5d393a4ed5bb8feac29
-
-Package: tree-sitter-json
+Package: ttyrec
 Architecture: aarch64
 Installed-Size: 96
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.24.8-1
-Homepage: https://github.com/tree-sitter/tree-sitter-json
-Description: JSON grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-json_0.24.8-1_aarch64.deb
-Size: 4860
-MD5Sum: e25e2998b96592e6b58fc246ccad9410
-SHA1: 001d21b8e267380e365771531a4900bc43085611
-SHA256: 62e755de4cc5f5adee0efacbe52e44297ab82fc173c37a39de0316f453bb36a0
-SHA512: 14071b03b48f8d58ba52deb64ec326ea0d9c9dee8f3cf09c492c3558a513d07f94fdad6e63d59346ad8ee58f5be19713939a4d9413960f52e56c41531be6cf34
-
-Package: tree-sitter-latex
-Architecture: aarch64
-Installed-Size: 3624
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.6.0-1
-Homepage: https://github.com/latex-lsp/tree-sitter-latex
-Description: LaTeX grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-latex_0.6.0-1_aarch64.deb
-Size: 94880
-MD5Sum: 7bb6e14be24449669d89405e5cb9c64c
-SHA1: afac2e1c0cc2d70fd08ee07bcc2d1cc4b02b4acd
-SHA256: 8ff3904459220cb6cdb2fd373567f7798cbce4b7ad958ba30b4c70922773b3ab
-SHA512: 2054c2be4a8366fc90e17ffa4c014635537155fa903b8c5b213026cbd56c4899a4b475801371a02a5716848b049a690a2a274be06678d85431b9619e134b0df6
-
-Package: tree-sitter-lua
-Architecture: aarch64
-Installed-Size: 156
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.5.0-1
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-lua
-Description: Lua grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-lua_0.5.0-1_aarch64.deb
-Size: 13992
-MD5Sum: b0da440d534ee3e8ba4a7cde2ee6b43e
-SHA1: e3ea3adaf49b69d2188c5b4a7fc3143a99b1bf64
-SHA256: e71feb9a10ea3ddfa143a354b2a8753ad6896ff44ea57d5d06944d51ef818c64
-SHA512: e71787ca26ca89d920ac27c64da65fd32a739c110f6f9f2fc99a0540aa87f83833f217f581a9dbca7f11c8c6a3e21b534d5d3c20016ee4ec59660cb1d86ee153
-
-Package: tree-sitter-markdown
-Architecture: aarch64
-Installed-Size: 812
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.5.3-1
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-markdown
-Description: Markdown grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-markdown_0.5.3-1_aarch64.deb
-Size: 87640
-MD5Sum: b6d61a2d01d22322853a7a82c100ac03
-SHA1: c46d069ea3257ac97aef7b03f21d70a59668e054
-SHA256: 9dd7ac1ac14013a0c1678c1a6f70577d1774870c2b23dddc40b3cef0fe5bc5fe
-SHA512: 1010a9d073e5017c92048e0629b5a32dcc9ecb725263b98b2a6186967f07d5e81e26b54669a1a7b825452b94f53cbd40707992d2b927be67296be9959c9bc1aa
-
-Package: tree-sitter-python
-Architecture: aarch64
-Installed-Size: 544
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.25.0-1
-Homepage: https://github.com/tree-sitter/tree-sitter-python
-Description: Python grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-python_0.25.0-1_aarch64.deb
-Size: 49384
-MD5Sum: 8d87cc608206dd4bab675aa8aaaf702a
-SHA1: 034a1b46e2f1fc0e62b26b2290885f6b8b44be0a
-SHA256: a15328ca4f4ea3e0dddb3e6af294d3a80631cee80e2ae6815039a0134646e4c3
-SHA512: 9cb02300e9c3a03f761a3ff87b0d9b11fc4c2bd249b5e2e4fea0dd3253555e6ec275466f186eca63a10ff75028e613a72ada6689913f9427c61d0fff72eb8e98
-
-Package: tree-sitter-query
-Architecture: aarch64
-Installed-Size: 112
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.8.0-2
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-query
-Description: TS query grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-query_0.8.0-2_aarch64.deb
-Size: 6392
-MD5Sum: b4688409d7f06338f93fb8ab3112d4c4
-SHA1: e24d8f3ac9cb3432d1ce184e19a876d732946558
-SHA256: f24d6e6cffeac1413042d93539d9bb61027d9ff66c68a6c318cd74c43a9008eb
-SHA512: 48480ba66cecfcdbda9c750a5d405004608ec9cde0f25035c7269a178b6586a24ff56ae47c3128ebac623eba4f485b80ce646d151cf438f6d51ba766375285c9
-
-Package: tree-sitter-regex
-Architecture: aarch64
-Installed-Size: 112
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.25.0-1
-Homepage: https://github.com/tree-sitter/tree-sitter-regex
-Description: RegEx grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-regex_0.25.0-1_aarch64.deb
-Size: 7760
-MD5Sum: ee873ae6afec1b9191f2931eea6d3e0b
-SHA1: 41ae0033500ad8de4a0f14595100e9579be6282e
-SHA256: 5b7148c73530f842cfcd88e868132103ad08da61784c590c18f6514090cbfc88
-SHA512: 11b3d17838de25e848dcea01a4ca1b01481ed5176cfe3428e2c127bb18bbec1e32c019f02d9cf3073bace2297dcee39daf77cb6140eac8cf36daf0637d58f1d0
-
-Package: tree-sitter-rust
-Architecture: aarch64
-Installed-Size: 1184
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.24.2-1
-Homepage: https://github.com/tree-sitter/tree-sitter-rust
-Description: Rust grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-rust_0.24.2-1_aarch64.deb
-Size: 76944
-MD5Sum: 5c342ee39aba991d3cf1ba8f718b829d
-SHA1: 2a6548a96838f386d684bfaf131d915a877b6b4e
-SHA256: 9540ca427471993ee4608fcf3429cac6675ae9a880a5ffeec691c36beb270d91
-SHA512: 7ef2f907f5e92a8d2558727fce9ab260baec0d6a7acb0f1beb5ac9037a48d7fda6ffc5cc87b72a90e4d7c6daacf41d287450993d8d34054a1f521adde229b51c
-
-Package: tree-sitter-sql
-Architecture: aarch64
-Installed-Size: 2512
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.3.11-1
-Homepage: https://github.com/derekstride/tree-sitter-sql
-Description: SQL grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-sql_0.3.11-1_aarch64.deb
-Size: 212368
-MD5Sum: fb5e8a7b9c947b75b766015c9fcd24cc
-SHA1: 73f750067b6a2314a0a5d66c7ea606295f268c2a
-SHA256: 5a4cd2b34c469bdb78133dee2cec78c637433eeb0062ff852d949b2559b10b08
-SHA512: c57e88c1a265356581df5ebb4ace31ce7345c3f1a5f6fbc763bb4a79e65440923173588dbbf7c5060a28b9b7c0bf2859790e5e58b673a65fc8a54da7d5ac72c4
-
-Package: tree-sitter-toml
-Architecture: aarch64
-Installed-Size: 112
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.7.0-1
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-toml
-Description: TOML grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-toml_0.7.0-1_aarch64.deb
-Size: 9572
-MD5Sum: e5b736a3d0b0237966d0e1464ca0cd8e
-SHA1: b5f3af2f015bf8f6405e5639dd2d648e7ef28c0c
-SHA256: fed7f84eb0af7f45985a5aa037409e262e39f168600b03e43e1f74f8a446c856
-SHA512: 064ee08a425c91b9635ca063ccf25344de4bf45161c24516fe4804648c5a09492f9a4bf4d8318d1ce447ad61c96edf66f9b0c3a93496efab39d57c9b3842349f
-
-Package: tree-sitter-vim
-Architecture: aarch64
-Installed-Size: 1320
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.8.1-1
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-vim
-Description: Vimscript grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-vim_0.8.1-1_aarch64.deb
-Size: 111744
-MD5Sum: 37292a11f7af064d37aa25dc8ee5f3cb
-SHA1: 053c13469bfd53d795d18e833c270ba3c2642636
-SHA256: cff603f2d9c0433b28044ca089da435efc1347dfa9d7279145561fff7105d2d9
-SHA512: badd3c31a12781f6ef1eb91d0ea3534ad3072574d6c3e902abc47dbc47b65a1b4de8880f19e04e92983f066576f0ebbd05bebe132a13de25a4ab191f6b0c7f40
-
-Package: tree-sitter-vimdoc
-Architecture: aarch64
-Installed-Size: 304
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 4.1.0-2
-Homepage: https://github.com/neovim/tree-sitter-vimdoc
-Description: Tree-sitter parser for Vim help files
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-vimdoc_4.1.0-2_aarch64.deb
-Size: 21176
-MD5Sum: 82cbdc582520a002f04fa0ae70ef6b28
-SHA1: 84903591af153babb0b77af41d5df48441c1f92c
-SHA256: 0e0d6178d3f059b8f3bd26538682c1120f8d08eaf12ad760157ebb71a94d3f27
-SHA512: d487f373b36cd4fc9a4e47bc5392200b8a5b19a6b9b638c425edce731ba4469aa8ffc12d0a844be9a125b1796f3d9712dd2e7ae6112251bca69260272e8f0db5
-
-Package: tree-sitter-xml
-Architecture: aarch64
-Installed-Size: 140
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.7.0-1
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-xml
-Description: XML grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-xml_0.7.0-1_aarch64.deb
-Size: 15984
-MD5Sum: f1a16bee60cd2afe1e60ec9b2f3d4064
-SHA1: da1ba048eebec61e7a082256481e6a2776251cb4
-SHA256: 2d39819d05d4929f954949e054611dceccf95060bc49da931782c4100d83fc07
-SHA512: 3f3b417f4ee7f2a82477f6841e3fbb50ff8b233989c4137aa945c4a6e33e796dae62778ea812c6e66fe0b41475e86c743109ace82033105f1acb85a416364e42
-
-Package: tree-sitter-yaml
-Architecture: aarch64
-Installed-Size: 276
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.7.2-1
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-yaml
-Description: YAML grammar for tree-sitter
-Filename: dists/uncode/main/binary-aarch64/tree-sitter-yaml_0.7.2-1_aarch64.deb
-Size: 28640
-MD5Sum: 8e5b5adaf9cad6876221fa3f6eca08fb
-SHA1: ffdf9d5d4f03384f1fb853ead3c284ac7aed36fd
-SHA256: ef84f42c6ec6bc575338476a4bddcd4c35e3296719a83ab1ad935ce2c94e9423
-SHA512: 4b9ee01997146883448a105ab134f4751dacf0e606d34d3f8d1adce1ea668b86f0929c9f29ae34ea05b56ee230db50fe37a475f4ce4b507694996a301bfa2657
-
-Package: tree-sitter
-Architecture: aarch64
-Installed-Size: 8680
-Maintainer: Joshua Kahn <tom@termux.dev>
-Version: 0.26.10
-Homepage: https://tree-sitter.github.io/
-Breaks: libtreesitter
-Replaces: libtreesitter
-Description: An incremental parsing system for programming tools
-Filename: dists/uncode/main/binary-aarch64/tree-sitter_0.26.10_aarch64.deb
-Size: 2408356
-MD5Sum: 9a45aed6a97143cadaa43c57d96d87e9
-SHA1: 261ca550105ad95b200c5d7007eeea4cf2c9e9d6
-SHA256: 9d8aa3f81d294d44e3cd1bc121df01cded68258fb02aa5de73eb899ea9ad40fe
-SHA512: 44d397f4627e49f0c763c836281cd7628c5ef73fffa4b5f410461b3a1fb727d9cb4ad471d7402e4b204135257c8eef3478baea08ee40cac1e46232aa99d6d0a4
-
-Package: trojan-go
-Architecture: aarch64
-Installed-Size: 16276
 Maintainer: @termux
-Version: 0.10.6-4
-Homepage: https://p4gefau1t.github.io/trojan-go
-Description: A Trojan proxy written in Go. An unidentifiable mechanism that helps you bypass GFW
-Filename: dists/uncode/main/binary-aarch64/trojan-go_0.10.6-4_aarch64.deb
-Size: 4090068
-MD5Sum: baf8f4c342866c33a4f0d83884114096
-SHA1: 81dcfa29363e7afc99c3e95b2a339a5ef9756707
-SHA256: 4401e1ec7708789c9404266765f619d5e2b8616f7d1886899de2761b80d0ad99
-SHA512: d4b32a232c0546972d7b9fe9b78786ef2bab1c692595490673d08d2f2d0821abe5eaf5a53e11fe024cc1f6f9be9b339f212c01d4f8bff93bc7d0a419597fc509
+Version: 1.0.8-8
+Homepage: http://0xcc.net/ttyrec/
+Description: Terminal recorder and player
+Filename: dists/uncode/main/binary-aarch64/ttyrec_1.0.8-8_aarch64.deb
+Size: 10740
+MD5Sum: 3550ddd4df110366d6e15bd4d76a6977
+SHA1: f6cd0605de2ab146a365ac728aa7a3397d524ceb
+SHA256: 488d5e56f971bcd10004fa58f0ebf5808769e40eecb12b403651fac905714d77
+SHA512: 95550d9f448e737f9cd342655804894282713bfe3372f036344a5182c1f1de76f6c6047f5d19110af308920cfb876be700435d0046b3ec349962d240c9810f03
 
-Package: trzsz-go
+Package: turbo
 Architecture: aarch64
-Installed-Size: 16628
+Installed-Size: 45244
+Maintainer: @xingguangcuican6666
+Version: 2.10.0
+Homepage: https://turborepo.dev/
+Description: High-performance build system for JS/TS
+Filename: dists/uncode/main/binary-aarch64/turbo_2.10.0_aarch64.deb
+Size: 10666384
+MD5Sum: b6a06cedb4b5969400b3d75d8713a458
+SHA1: 4d93023de23bcafee9616c6bf62d2d3bb9529f66
+SHA256: c65449a47ebb848e2041402e1baf53d802e3faaf2ae3db7d40e0cf4802620419
+SHA512: 852131531bbcf749a60d71ea7bf5cfef7e562edbc96492ab9e84bc2db0d0fc48d4ba0d19054f2d919c1f9b8b2980568ac02d7bb19518a8c3b7c606b51ee288ed
+
+Package: turbopack
+Architecture: aarch64
+Installed-Size: 118984
 Maintainer: @termux
-Version: 1.2.0
-Homepage: https://trzsz.github.io/
-Recommends: trzsz-ssh
-Description: A simple file transfer tools, similar to lrzsz ( rz / sz )
-Filename: dists/uncode/main/binary-aarch64/trzsz-go_1.2.0_aarch64.deb
-Size: 2741716
-MD5Sum: 3ca6acc08125706ce5aee55c71cc6f1c
-SHA1: e75ebbf606f4e765eefc157672a1851e1c75b3ac
-SHA256: 40d803d71aa892fe5da92f167cb088bc32753e8fac9b85cccbe280f312fee532
-SHA512: 61ee79c6afe6481072d7e9600de4487553e721c179eaa950af4e77878318417b1a51537b99df822eaa7a4378afb723d0ac19c2f5620c1cea722748684f83d3fa
+Version: 16.2.10
+Homepage: https://nextjs.org/
+Depends: ca-certificates
+Description: Rust-based incremental compilation engine and bundler for Next.js
+Filename: dists/uncode/main/binary-aarch64/turbopack_16.2.10_aarch64.deb
+Size: 23612976
+MD5Sum: a89dbb3ec62a2eaea928b2f371284257
+SHA1: c6b887123dc9a6763d60a26454331b90f11d649a
+SHA256: d82408a30cb1cd7f39ab79525a981602b481f0e19857623313cc9045cc08e4a9
+SHA512: b53e72c84bbc0d79dae2deb355203757bcaf3e131081c3a21eec6bb83e20f0d75395ca9f2a3bf4937c6f36701551792ac157dc2193fb7defb39471378e6c223f
 
-Package: trzsz-ssh
+Package: tut
 Architecture: aarch64
-Installed-Size: 20632
+Installed-Size: 11964
 Maintainer: @termux
-Version: 0.1.25
-Homepage: https://trzsz.github.io/ssh
-Recommends: trzsz-go
-Description: An openssh client alternative
-Filename: dists/uncode/main/binary-aarch64/trzsz-ssh_0.1.25_aarch64.deb
-Size: 5050796
-MD5Sum: 303c93c6f9512eec00126e754850c7a3
-SHA1: 54b92ef1f4789e8d3e13868e1f9c586bed93ae46
-SHA256: 90ea2337cab66f858e4ebab129f44c20572f7fe58b432bbfd2812f6dbe006e4b
-SHA512: f93858f0c74a6c4561ea8d3b00b0335be74ae4406f57e1b422614a2496ff176da6995f53b5a29383a97c9b8fdaa846be75f874ac440b0442a02601b78ab15a67
+Version: 2.0.1-3
+Homepage: https://github.com/RasmusLindroth/tut
+Description: A TUI for Mastodon with vim inspired keys
+Filename: dists/uncode/main/binary-aarch64/tut_2.0.1-3_aarch64.deb
+Size: 3105664
+MD5Sum: 1a18cb9df897ff865e5b34699d36a847
+SHA1: ad796547bb8466bd996b3c5a06577000c7be84bf
+SHA256: f89b62be41e18326069fe9e0c1096b06b0e70a456fdc4fb304e56950b5cb4927
+SHA512: bffd70a4dbcdf4829d31557372c7bec034b073ba4489c4d3680d49608048fe2912aaad6394cdf15e4472829e0ac959973f32dbb95cd64e1795fba1f1208c9ef0
 
-Package: tsocks
+Package: tweego
 Architecture: aarch64
-Installed-Size: 112
-Maintainer: Oliver Schmidhauser @Neo-Oli
-Version: 1.8beta5-5
-Homepage: http://tsocks.sf.net
-Description: transparent network access through a SOCKS 4 or 5 proxy
-Filename: dists/uncode/main/binary-aarch64/tsocks_1.8beta5-5_aarch64.deb
-Size: 19728
-MD5Sum: d3e614adc92584b000c50b4454f9b16b
-SHA1: f1678746bfa7e6c095cfe8c7da3ccf78ff81fe05
-SHA256: dc3419573bb3726491391c8fe8b763cbc62a53392e09ce5f81751044f8cf487b
-SHA512: 8191371866b67df9b29bf5a44442a85a0ad03d55c000064905d86a4d289b8292666ecc1993a92d6287a8929c2df88d5bde37a354a4df98290bb1c850b85804b4
+Installed-Size: 3688
+Maintainer: @termux
+Version: 2.1.1-4
+Homepage: https://bitbucket.org/tmedwards/tweego
+Description: A free command line compiler for Twine/Twee story formats
+Filename: dists/uncode/main/binary-aarch64/tweego_2.1.1-4_aarch64.deb
+Size: 1049792
+MD5Sum: b34417d6022e0b0078b3f6d563efbfbc
+SHA1: 4cd447dd64ee572cef9124c52ac9b7d25989e8ab
+SHA256: 98a5bd45c663f6d17924c64134cf1a9377f29a92b28ff843b5b77b1cc80708de
+SHA512: 4bab1bc7b5b29595632b09e2f16fec29fe6dc76486381ac0aad26ad662fe2c5eaecebb84f2c7ee057f1ef43bd66faab544d063c336388d76620586e986b8e854
 
-Package: ttyc
+Package: ty
 Architecture: aarch64
-Installed-Size: 7540
+Installed-Size: 23276
+Maintainer: @termux
+Version: 0.0.55
+Homepage: https://github.com/astral-sh/ty
+Description: An extremely fast Python type checker and language server, written in Rust
+Filename: dists/uncode/main/binary-aarch64/ty_0.0.55_aarch64.deb
+Size: 7591312
+MD5Sum: ac3cee4f58ff7672e4fb0053989004e0
+SHA1: 6e8b06ed85c2707734164aee1e6a890c37ba5015
+SHA256: 7d613dd7269215214b32614aaa4895085486ba6c6bd7f71bce1cb1aadd44b8dd
+SHA512: 87bb53753c1fe55cadd84fd4e71f12ebe7c53f0af479fab2e2b2031cd272dab768e565d64e91d99f0caff022459a593578a12dd190a4bf6cd1b36a5f62707817
+
+Package: typstfmt
+Architecture: aarch64
+Installed-Size: 2692
+Maintainer: @termux
+Version: 0.2.10-1
+Homepage: https://github.com/astrale-sharp/typstfmt
+Description: basic formatter for the Typst language
+Filename: dists/uncode/main/binary-aarch64/typstfmt_0.2.10-1_aarch64.deb
+Size: 719628
+MD5Sum: 6fda2e30688d4f5ab104d2e3e7e6bc8e
+SHA1: bb65914f57f41ecc49635f40f4b9d93445d53aec
+SHA256: 40b5e8ecc95591f7c3020aa1f55bad4646c38b25df482cd0a5391f1df380636b
+SHA512: 4540169c66fd60d908b5c166fd650d5c9d0ad8c59be7aefa05c0452423c169bff666e461d02544abe11c4757d534ed75642492a623509a1b519af8447f56ea69
+
+Package: udftools
+Architecture: aarch64
+Installed-Size: 436
+Maintainer: @termux
+Version: 2.3-1
+Homepage: https://github.com/pali/udftools
+Depends: readline
+Description: Linux tools for UDF filesystems and DVD/CD-R(W) drives
+Filename: dists/uncode/main/binary-aarch64/udftools_2.3-1_aarch64.deb
+Size: 108920
+MD5Sum: 14caa0abe252517d9e3387ebccac6be1
+SHA1: b5c136b2cdbe44dae80055ebbbef44a84f675cf7
+SHA256: ae66b23ecef8ba323aee5fd3ac2646e0471f8d5237277fd72465baa1f4016c8b
+SHA512: 96580fb5f9fd5b79b2a1e1790a5e3615e3ab51bda973c635e60b2227ea693d0cd2f043f6325997052e1388cd49aae5c200467b13aa3f562e6ab0365129a2f1e1
+
+Package: ugrep
+Architecture: aarch64
+Installed-Size: 2844
+Maintainer: @termux
+Version: 7.8.2
+Homepage: https://github.com/Genivia/ugrep
+Depends: brotli, libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
+Description: A faster, user-friendly and compatible grep replacement
+Filename: dists/uncode/main/binary-aarch64/ugrep_7.8.2_aarch64.deb
+Size: 307640
+MD5Sum: 27b919d91485b6b3a662c0334658b394
+SHA1: 936cc936a2b4fd5c69b7c377ed0a3f6cccc1964d
+SHA256: 137cffc600c19d2e79063120af791a1f059b5e2b1cd110547f3ec91784fffaac
+SHA512: aa81818bf9a9218bc9a4cde62cf4bd7e626838a614eb61771485c19fb230d11255af3bdd2a0f3af7393f9cdcc2f4fa5e91db8a12ea3b6ddc895df89ffb2d9de5
+
+Package: unicorn-static
+Architecture: aarch64
+Installed-Size: 29180
+Maintainer: @termux
+Version: 2.1.4
+Homepage: https://www.unicorn-engine.org/
+Depends: unicorn (= 2.1.4)
+Description: Static libraries for unicorn
+Filename: dists/uncode/main/binary-aarch64/unicorn-static_2.1.4_aarch64.deb
+Size: 2399996
+MD5Sum: ad9cf0e0f27df52cf5cefb5bc645e6d4
+SHA1: 6251c874e0026aff9bfaa03acc9ed139ffdd0d69
+SHA256: 054a9389a30ee74f198011946b0be5716b5de111df8011fa32cd2e13b6995c03
+SHA512: 3d547a53610dbe52afd5f5aea07048592b758ff26b756ec4ebf6c7dd65461de59754a4749654c1036aa7736c92c4673e741ca3567b7ee2ba0eb362c0583a8fd0
+
+Package: unicorn
+Architecture: aarch64
+Installed-Size: 19616
+Maintainer: @termux
+Version: 2.1.4
+Homepage: https://www.unicorn-engine.org/
+Breaks: unicorn-dev
+Replaces: unicorn-dev
+Description: Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework
+Filename: dists/uncode/main/binary-aarch64/unicorn_2.1.4_aarch64.deb
+Size: 2560036
+MD5Sum: 7b2a241ecfb31e47d90a4ddc540ebdb8
+SHA1: bd32162281c850e6813b4026809a0c233eda97c7
+SHA256: 315f7490225be088531b0c0f1a3def37ec9355e29ade969aeb73dcb72faa2d38
+SHA512: 52559be54464815aa1504ea633ccd9ac20c8a6d20177b00e161cd70440588bf289d1b8f3febb7509673fe53144fbc96c505ade5be173fc21f61a3135bcd6730b
+
+Package: unifdef
+Architecture: aarch64
+Installed-Size: 92
+Maintainer: @termux
+Version: 2.12-1
+Homepage: http://dotat.at/prog/unifdef/
+Description: Remove #ifdef'ed lines
+Filename: dists/uncode/main/binary-aarch64/unifdef_2.12-1_aarch64.deb
+Size: 16272
+MD5Sum: 10e0ac893b49b21afd096eb357a6428b
+SHA1: 1af3bef9e0fb976925fcb20d0950c98c8bf5a9ce
+SHA256: 010da3b3e72d479dc7ae76a18f9ec0aff0481beaf00ee66bc9287346cf71dd96
+SHA512: 2c2c7833afeae9163c70bd8a0d4f8321cb55bb73c9b534a0a804c48461a277688565202f6e99960c390ffc5d531009372474d4bf43bcffc28f9cdbd96989db91
+
+Package: up
+Architecture: aarch64
+Installed-Size: 3180
 Maintainer: @termux
 Version: 0.4-4
-Homepage: https://github.com/Depau/ttyc
-Description: ttyd protocol client
-Filename: dists/uncode/main/binary-aarch64/ttyc_0.4-4_aarch64.deb
-Size: 2149692
-MD5Sum: b0833957e5866d435203d0a0f6f72d45
-SHA1: aa01b8c61a96eb6e1da417792c2fd6f3d92ee370
-SHA256: fb919c0fb2f4edc5c432c4a96c9d2addc031f802a1493c12a00ab2484bd5e9bc
-SHA512: 67578325b07cc6152163ac942ddf596d12e8fd4995363144b80e6adb8ae9065ef706ff2c77e978a3703546fc98e076c71d4b8c6e732c82258dd92258fde7d042
+Homepage: https://github.com/akavel/up
+Description: Helps interactively and incrementally explore textual data in Linux
+Filename: dists/uncode/main/binary-aarch64/up_0.4-4_aarch64.deb
+Size: 901280
+MD5Sum: 4c354a3d9a577bb6d50727f8929aec8b
+SHA1: 28361a7ab9b6f5dca982d8c39132c314ea58964d
+SHA256: 7baba169d0a2c597ab06cef1747add853479f41145fb36ace6fa18d074dcd28d
+SHA512: e68c82d6cd16ef8fe7674a447442a47dcb8b28c4fc5028db57171992fd47fd4222a1df759961e03a773e698b8b55515985f8c99d9ce0248370d02ac8896ca7b3
 
-Package: ttyper
+Package: upx
 Architecture: aarch64
-Installed-Size: 1716
+Installed-Size: 3140
 Maintainer: @termux
-Version: 1.6.0-1
-Homepage: https://github.com/max-niederman/ttyper
-Description: Terminal-based typing test
-Filename: dists/uncode/main/binary-aarch64/ttyper_1.6.0-1_aarch64.deb
-Size: 584868
-MD5Sum: e85e47bc368d687df3e19f7d04a8382b
-SHA1: 5243d40f944f999c2e5865c7d5d8f404227d706a
-SHA256: 7e4e74e44649036a9cdbd17cba898e202a6969208124e7f4c0caf4aa4ca6517b
-SHA512: 09de7bd333f68f8649197cd579b76de676c44aaa2feb16a7f8a933c79b6efdb3e7af63658a9784f945ebf58994f8ce8aa12ca1caf076e48a3f0b9cb55afe9b22
+Version: 5.2.0
+Homepage: https://upx.github.io/
+Depends: libc++
+Description: the Ultimate Packer for eXecutables
+Filename: dists/uncode/main/binary-aarch64/upx_5.2.0_aarch64.deb
+Size: 663504
+MD5Sum: 89dd1c810d615018e5f20d5daa586050
+SHA1: 46f6cffec18ff5f39541cd9e2c6527f9990a7b8e
+SHA256: 9f4ab3063e73d81366008bfed50333245276aebb293ceb863705236ae8d2ef62
+SHA512: e77150913aa74bd9c64693ac16fe762072f99581fc66bce5abc46768375f75b3f3286c88e72cd67d27cbd6515217b1c5abfc28c45baa094a88d2709bb4e41fa3
+
+Package: usql
+Architecture: aarch64
+Installed-Size: 154992
+Maintainer: @flipee
+Version: 0.21.4
+Homepage: https://github.com/xo/usql
+Description: A universal command-line interface for SQL databases
+Filename: dists/uncode/main/binary-aarch64/usql_0.21.4_aarch64.deb
+Size: 26852064
+MD5Sum: 085524118e7f74c07421108a1bf71ee1
+SHA1: f82054e6f0aadbc56ce8b0da32312ce7a3638458
+SHA256: aac59da39bfbffa387d8a809fcf1b70f77696905a1a8bc6173caa59b3a33a4d8
+SHA512: 3abe3f3f79a73e0e18ba3934be90e0ad380c61eeea1566ad7e62cd5dbfa4128dcc99ad5865cf98a7a5dcea65d75c561c6e1b5a895976a20ad51f13480b4a6033
+
+Package: utf8proc-static
+Architecture: aarch64
+Installed-Size: 372
+Maintainer: @termux
+Version: 2.11.3
+Homepage: https://github.com/JuliaLang/utf8proc
+Depends: utf8proc (= 2.11.3)
+Description: Static libraries for utf8proc
+Filename: dists/uncode/main/binary-aarch64/utf8proc-static_2.11.3_aarch64.deb
+Size: 48864
+MD5Sum: 547e0faffc1af1f134dddf28a78039a8
+SHA1: bee9ec129a159fbd6f235681b83ded61b41778ad
+SHA256: 1249e4c0a8115d17b6bfdf065e58c0e1f86cfd64ab40ef440541ad00a3c692b9
+SHA512: 44e2aacc069a990849cbdae0025ea369d581c055b3e86a1f9150b64330f0e4696c30cd76943f3999d83782cbc4891faaf0d614f475155ffeac452d9ac21982ef
+
+Package: utf8proc
+Architecture: aarch64
+Installed-Size: 440
+Maintainer: @termux
+Version: 2.11.3
+Homepage: https://github.com/JuliaLang/utf8proc
+Breaks: utf8proc-dev
+Replaces: utf8proc-dev
+Description: Library for processing UTF-8 Unicode data
+Filename: dists/uncode/main/binary-aarch64/utf8proc_2.11.3_aarch64.deb
+Size: 59264
+MD5Sum: f4bf096b5bc20f44b16c42312ca9e8c6
+SHA1: 48bba309de9000c2b6f874f4334b85f8b5b0c38e
+SHA256: 411d892e847d0556f0310b922c90e8ed34cbabda3388ac5f4037d98cbbded9c1
+SHA512: 0afb669d5a6daae0b1121feba0905c1ab90a7434cc00e112a89e993e79c10f576548d6b98818680c92dd571c2e1d12a9813beb8bff45688cb3a2b2fcc20d3adf
+
+Package: uucp
+Architecture: aarch64
+Installed-Size: 1528
+Maintainer: @termux
+Version: 1.07-2
+Homepage: https://www.airs.com/ian/uucp.html
+Description: The standard UUCP package of the Free Software Foundation
+Filename: dists/uncode/main/binary-aarch64/uucp_1.07-2_aarch64.deb
+Size: 315448
+MD5Sum: 61ff8f8b13cc6fe630a3904733744560
+SHA1: ff326d6550b64274da817789acd98b8a366126f8
+SHA256: 51ece6264a3234c457e84f3f396d75ac6e91a5230a4af5fe52593fe73b486dc9
+SHA512: 3ce6a58bd59f20d1335f7026f13f88fa5cd22c76ea316406c019bd3ece53a424eafc162b5076364d69d97dc9cd8228a2ed9d0bb592001b55c9342f5875d475ef
 
