@@ -10,72 +10,11 @@ Description: A Example package.
  .
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
-Size: 892
-MD5Sum: ac5b4da11da4d38749a9b3a0138da723
-SHA1: 4b8b9c53efc18e46b2a6fa9c80825b374126bfc7
-SHA256: 9a8cb679f6bf0bbc299aac7e62eab156428d10c227d587cac5a568e33ac7515a
-SHA512: b173409d7f23998f4038786f746089bff031e881d506c035c7e9d3c74917b9ee87a0bc21afc4064c9465a464c7b21042729f0ab67d3eda0c77fb07cdc36f815e
-
-Package: libnghttp3-static
-Architecture: aarch64
-Installed-Size: 336
-Maintainer: @termux
-Version: 1.17.0
-Homepage: https://nghttp2.org/nghttp3/
-Depends: libnghttp3 (= 1.17.0)
-Description: Static libraries for libnghttp3
-Filename: dists/uncode/main/binary-aarch64/libnghttp3-static_1.17.0_aarch64.deb
-Size: 63676
-MD5Sum: d2c0fa74c482af8ff81f85d5fe5c1cb8
-SHA1: aef9dfdb936f8b363cd053c0d63a5f14b8eaaf7c
-SHA256: 3475617832619d7f7d4316e78a0f87b64baf948c4f06e939b07e8b197440eee7
-SHA512: 8d36388d39861c9dc6823b49146530140ffcf6b99bb14983d9be7ca4991939ec01d99cdd6163d13b01e094df791e1504be29cf7d0aec59888b4acfef463eb01f
-
-Package: libnghttp3
-Architecture: aarch64
-Installed-Size: 340
-Maintainer: @termux
-Version: 1.17.0
-Homepage: https://nghttp2.org/nghttp3/
-Essential: yes
-Description: HTTP/3 library written in C
-Filename: dists/uncode/main/binary-aarch64/libnghttp3_1.17.0_aarch64.deb
-Size: 69132
-MD5Sum: 5d12177a82eb6b91a59adb974cc8c4bf
-SHA1: 36e196eff68cf5867c127747cebfee5c91009be6
-SHA256: f401429550b527a6738149bddb58ae70df3b79a386b14476193cae62ac06e4e0
-SHA512: a77c9c4d13c94dbbcad6c02b35ddd51319c6b60ccf1b2b385d40f8a062dc72639228065e448259a69db4638d8ed4d28fb9047da58d4aefd8934c75e08a930238
-
-Package: luajit-static
-Architecture: aarch64
-Installed-Size: 680
-Maintainer: @termux
-Version: 1:2.1.1780076327+gb925b3e
-Homepage: https://luajit.org/
-Depends: luajit (= 1:2.1.1780076327+gb925b3e)
-Description: Static libraries for luajit
-Filename: dists/uncode/main/binary-aarch64/luajit-static_1:2.1.1780076327+gb925b3e_aarch64.deb
-Size: 221360
-MD5Sum: 45108cc5e84caf516f136eaca4ede321
-SHA1: b76b2599a2ff722fc609c01240224313172cb135
-SHA256: 77a0357f794b9457803a26a5f70559e8d2bfd29a765120ae67f14d8b2d23ecaf
-SHA512: f48594a9089230cfeb8538a58ce706554a4bd2dd546dff41ea4b7e7353a13351343c234abaa53b1d735ed050a02fe0b7bc60b063a465ae9e8e6184f28be8594f
-
-Package: luajit
-Architecture: aarch64
-Installed-Size: 1336
-Maintainer: @termux
-Version: 1:2.1.1780076327+gb925b3e
-Homepage: https://luajit.org/
-Breaks: libluajit-dev, libluajit
-Replaces: libluajit-dev, libluajit
-Description: Just-In-Time Compiler for Lua
-Filename: dists/uncode/main/binary-aarch64/luajit_1:2.1.1780076327+gb925b3e_aarch64.deb
-Size: 289512
-MD5Sum: b57dbef2efe4048c64636cba187c2007
-SHA1: a357d75d7623f13634118686d0ca1d96ec724392
-SHA256: f7150a1bfca7fb866f164b1aa1d9522a7e7097dbb1e1ad4594ce0ea1a3007381
-SHA512: 21945649d78a76e34254f14ca406069380bfdcbad08a71875ec242f50e00255b3df0a258e62dd681b1a524344490d5f8576e9dd29449e093b7079828076bdbcb
+Size: 896
+MD5Sum: 6605cc666c19aa2ad84cd78ab1c74ce7
+SHA1: 4924f4fc3973608ca4186a634b8fd8fdf9296896
+SHA256: 5fb3ec6e8b5a20db0e313cac7352a422c492d61a5e6aec8658600aaa0259ff91
+SHA512: 4fad844a8e402ffe6f1910c0d165d34280cfb5c0fe6486b90f9cedc1c78eb3cb78e6e255747a007f722be1fa94622c67187ad6b31406ce6744aed4eaeaf4e976
 
 Package: tcl
 Architecture: aarch64
@@ -94,205 +33,48 @@ SHA1: 1fa746c3fbd01da5e44dd2ba2030611a208d0ec0
 SHA256: 140f77a6c5c6833b9cba2a668db0587b983b83163dc083d4eff2fed785e9a8b9
 SHA512: 809ddba3e4470b8e472141bb0050248ac35eaf9dc91389f68cb7003306935fcfe47d3f4cc45e21f3483e21f0b2a4a821ed257219824d2ea68e6756e5d1eb800b
 
-Package: v2ray
+Package: wabt
 Architecture: aarch64
-Installed-Size: 65012
+Installed-Size: 20352
 Maintainer: @termux
-Version: 5.49.0
-Homepage: https://www.v2fly.org/
-Description: A platform for building proxies to bypass network restrictions
-Filename: dists/uncode/main/binary-aarch64/v2ray_5.49.0_aarch64.deb
-Size: 11374792
-MD5Sum: 8c1fdfee252dce397e7d0a8adbe1133f
-SHA1: a2862c98b250772efbbed75fe3687376596b0380
-SHA256: b0cc8432efc412d268fdc8e4b343c6b4e4757a3fab4d7306f94004f143f76e4e
-SHA512: 5af5191f15ae87f4bc5a79644b64512fc694cc050158f2f83cd75ef8714e9046aff56de1a47b52fed2203951ed8daf651cc8b019594acd06efedd829c3181595
+Version: 1.0.41
+Homepage: https://github.com/WebAssembly/wabt
+Depends: libc++
+Description: The WebAssembly Binary Toolkit
+Filename: dists/uncode/main/binary-aarch64/wabt_1.0.41_aarch64.deb
+Size: 1479276
+MD5Sum: 57fada70cb09b0388a2a54396a2dd2fc
+SHA1: defd1649bb31eb233d67fed61a5d3ac377d7ba2e
+SHA256: fd8ff68b817990b63cda65ad2c1fc4975bd7c634be94d97209b15064edbdfac2
+SHA512: ff70c13d5fafa7c66a175ba831165293e8037b314fc775081bc398f84fbefd8ce04285c9f47cdbec070d977da7c5d8f8321a4bf8587d45865854a4ca61c52340
 
-Package: vale
+Package: wakatime-cli
 Architecture: aarch64
-Installed-Size: 41200
+Installed-Size: 19904
 Maintainer: @termux
-Version: 3.15.1
-Homepage: https://vale.sh
-Description: A syntax-aware linter for prose built with speed and extensibility in mind
-Filename: dists/uncode/main/binary-aarch64/vale_3.15.1_aarch64.deb
-Size: 7029104
-MD5Sum: de526a9abc265836a484f771bab36134
-SHA1: e8eada6378bcba04b35dd13cdce74dd51aac4153
-SHA256: 7a62e9c5d73c8e0ae9285cd392d70789f835d9d1afa28c203435376baf4f756e
-SHA512: d35c91eb3362992b8baf6f680feba5e3f9c36b8b678aaafdc4ddfc60f68aab39a6025580b24155a8dcea001143fd9215c92110c934bd29677c2f409b4180f1e7
+Version: 2.21.4
+Homepage: https://wakatime.com/plugins/
+Description: Command line interface used by all WakaTime text editor plugins
+Filename: dists/uncode/main/binary-aarch64/wakatime-cli_2.21.4_aarch64.deb
+Size: 5075252
+MD5Sum: 84f94836592a1df93f097381bdeb0824
+SHA1: 07f0856d2967bde10c4ddc17d2c3d566fbb772d6
+SHA256: 6237fe5a16a6fe778c8a0dad4cf832ef09d5333f88115c5eb80e0ccda1d683cc
+SHA512: 1d27befed95831310fdf85475388f6ca433e4a59af7569896d3e4e5d8a08f59654fb3b5ac8cdb1cbed3b04599eb99e76e949ff10a6870f6fdbf965c453b5619a
 
-Package: vde2-static
+Package: walk
 Architecture: aarch64
-Installed-Size: 184
+Installed-Size: 9800
 Maintainer: @termux
-Version: 2.3.3-6
-Homepage: https://github.com/virtualsquare/vde-2
-Depends: vde2 (= 2.3.3-6)
-Description: Static libraries for vde2
-Filename: dists/uncode/main/binary-aarch64/vde2-static_2.3.3-6_aarch64.deb
-Size: 22104
-MD5Sum: c22e97ac42fa8306a94ace16875a9119
-SHA1: 3b2d2b0d2421e8dc7d11a1fe432fc64d8cb921c4
-SHA256: f5845344276517a0e8ff7440bf3fd85722d5d84a562ca4f98d9507f7d01c2f6e
-SHA512: 3321fdf21d9c7abdc503feb1cd4a40fdea0c3579e9e8114b56a4cfe8eaca042bc07c853113569151d13889f3d86e68e68bb4c889a4554c5bda55b6dcc8504b5e
-
-Package: vde2
-Architecture: aarch64
-Installed-Size: 608
-Maintainer: @termux
-Version: 2.3.3-6
-Homepage: https://github.com/virtualsquare/vde-2
-Depends: libpcap, libwolfssl
-Description: Virtual Distributed Ethernet for emulators like qemu
-Filename: dists/uncode/main/binary-aarch64/vde2_2.3.3-6_aarch64.deb
-Size: 130188
-MD5Sum: e070a37f76717849dfac82bee0733d5e
-SHA1: f9258f66cdfa38d4eeb0257a62b49b1d3a8d6fa3
-SHA256: 75d0550dfdf6b2bbd00920d12369083a65c660ebd3f717ec88f218450495bea2
-SHA512: eb4b35ebc6bae349a10b2c5f21613e39fa242709288e4022b6d39fd1cd519b4e4c81382a8e7907020b0d21bfaa48646821b102182058bb75ac0454891038cb51
-
-Package: vegeta
-Architecture: aarch64
-Installed-Size: 12828
-Maintainer: @termux
-Version: 12.13.0
-Homepage: https://github.com/tsenart/vegeta
-Description: HTTP load testing tool
-Filename: dists/uncode/main/binary-aarch64/vegeta_12.13.0_aarch64.deb
-Size: 3295224
-MD5Sum: 3db9c54cd80220e460e4e587c758de00
-SHA1: 5ff970a8931eafcdc522e8986e59ec80bd4ca8d6
-SHA256: d14fb73dfbd5290854f632318ea5e6c167492b1f09f0d3d749b3da6b86d0c033
-SHA512: bf60e14027eec5585ae29e52dc80ada916c5d555a8d2137002aa4067890acc468c5a3450ce7e4e8d255a9dd8a6d3e5020693a3bf5224f10731de047963d02374
-
-Package: viddy
-Architecture: aarch64
-Installed-Size: 7104
-Maintainer: @termux
-Version: 1.3.1
-Homepage: https://github.com/sachaos/viddy
-Description: A modern watch command
-Filename: dists/uncode/main/binary-aarch64/viddy_1.3.1_aarch64.deb
-Size: 2019344
-MD5Sum: 752ca757d4c5830cddb5e72f953996ac
-SHA1: e4c32600e32136b9ea34d42d2db75c45303e8c86
-SHA256: 56d1207ab08f02110b6ed6aa000935222f1128c354229c167e46f21632b58a89
-SHA512: b05ef8bbf2ee2bd05d4efa73acd1fae44fadae45b1b33ace78e0cd7b81f7da7594291d25dd8e041cc6594dab2ffdc21c56ec2614d58c2d040db173cc2246c171
-
-Package: virglrenderer-android
-Architecture: aarch64
-Installed-Size: 4620
-Maintainer: @licy183
-Version: 1.3.0
-Homepage: https://virgil3d.github.io/
-Depends: angle-android
-Description: A virtual 3D GPU for use inside qemu virtual machines over OpenGLES libraries on Android
-Filename: dists/uncode/main/binary-aarch64/virglrenderer-android_1.3.0_aarch64.deb
-Size: 799772
-MD5Sum: 72c599d281170bc0b16cf4b63e43e229
-SHA1: 84761b5b752d77b1827ac2a1ce481dffd5af1d76
-SHA256: 851050ec54bd9aa0875a2873cd6c5e9e414e80352d053d3e21dcedeb7a462bbe
-SHA512: a20af2a55c9c22ff7b9b2c758fcac36bdc8a1831206adca6d74a29035cc83254c8bc622c4a505aefcb26f38b3d47c6f051607250bd4bf7919a762191e856b98e
-
-Package: virustotal-cli
-Architecture: aarch64
-Installed-Size: 11260
-Maintainer: @termux
-Version: 1.3.1
-Homepage: https://github.com/VirusTotal/vt-cli
-Breaks: vt-cli
-Replaces: vt-cli
-Description: Command line interface for VirusTotal
-Filename: dists/uncode/main/binary-aarch64/virustotal-cli_1.3.1_aarch64.deb
-Size: 3032196
-MD5Sum: 9a270f7f91b70752c8355ab0cf337c68
-SHA1: ebe4dcea690edddd2b79bd8765681a4fd684da64
-SHA256: a0e3f7931eff87aa0170a2ac47ca8547a6a2e3f05ab754719b0d65069e4edde4
-SHA512: 6add0d4ff119a29dc6e78f2eeb0a64f47c1f335a1b9b052dad8242688bf3d8fefacf5a67749a5e4380686b723fc9d58146fb38a50bb5b0ee435654ccf7626e43
-
-Package: vitetris
-Architecture: aarch64
-Installed-Size: 152
-Maintainer: @termux
-Version: 0.59.1-4
-Homepage: http://victornils.net/tetris/
-Depends: ncurses
-Description: Virtual terminal *tris clone
-Filename: dists/uncode/main/binary-aarch64/vitetris_0.59.1-4_aarch64.deb
-Size: 45892
-MD5Sum: 95a788d3ee1de1ac1ac05670e9249f4b
-SHA1: a63afb97dd070144aaac1028e227fa28103323ce
-SHA256: 8ff137e7b015c83ef69a7fdca5cc853979909e7bac36503cbf8ae25b28d5a086
-SHA512: 186cbd1aef96ccc06c364ce47d369bf9f9410d4c447b4b18cf327da8c6f6dd4e96ba90fcca82cbbce198e03060d3ca2c8caa60f9e42366739464c535f6b5745f
-
-Package: viu
-Architecture: aarch64
-Installed-Size: 3280
-Maintainer: @termux
-Version: 1.6.1
-Homepage: https://github.com/atanunq/viu
-Description: Terminal image viewer with native support for iTerm and Kitty
-Filename: dists/uncode/main/binary-aarch64/viu_1.6.1_aarch64.deb
-Size: 994768
-MD5Sum: 4e806df6be125240be5a10cac94ad2f3
-SHA1: c1948136f193a9fea82fceae44099fe637f554ea
-SHA256: 297c481fe66aec6e6d1db661663a121d2dc59f13873a717f3f0387d072403246
-SHA512: 22371a58959e3aefcff0f93ff55966adb74ef30637e64b709d675368f87c5aa4e2d95cd9c7cacadc0ebae1f105231c4ccd541b43a72ba08e2dc6eda3a4040088
-
-Package: vivid
-Architecture: aarch64
-Installed-Size: 896
-Maintainer: @termux
-Version: 0.11.1
-Homepage: https://github.com/sharkdp/vivid
-Description: A themeable LS_COLORS generator with a rich filetype datebase
-Filename: dists/uncode/main/binary-aarch64/vivid_0.11.1_aarch64.deb
-Size: 319140
-MD5Sum: 2aaaa79c181e64374cc7442c979076fa
-SHA1: 141782c21b935ad423f383370ce14f0cdd0bd373
-SHA256: c19e5bf9fbb1696c11553c17a3b76304ef80602c4a0dd44aaa5389abc20f2605
-SHA512: 59b14f145a05b80399bdeea5f13489a32def282ce9cad0ac95d50607ece510292d8cf278895f28425fec3eda2a90994690b69472b26d18a760b73610802d96c0
-
-Package: vttest
-Architecture: aarch64
-Installed-Size: 340
-Maintainer: @termux
-Version: 20251205
-Homepage: https://invisible-island.net/vttest/
-Description: Program for testing the VT100 compatibility of terminal emulators
-Filename: dists/uncode/main/binary-aarch64/vttest_20251205_aarch64.deb
-Size: 91960
-MD5Sum: 95fd8844216f535c2285e3e2224207eb
-SHA1: 4a50be2a3a13b37c7df53d1a655475aa95256f2f
-SHA256: 439e46853f3338a40e530f979d7df7d556a6d6f694422afc1e5a30fcc85a9705
-SHA512: 12b807227dc0046e9dc68c9fbce6559437656f71871e43ed81f5525722e1f5e5c4b001fae1df80b39b50aad235a09e594ba3ad34d4da91da4d1146273690c397
-
-Package: vulkan-loader-android
-Architecture: aarch64
-Installed-Size: 72
-Maintainer: @termux
-Version: 29
-Homepage: https://source.android.com/devices/graphics/arch-vulkan
-Description: Vulkan Loader for Android
-Filename: dists/uncode/main/binary-aarch64/vulkan-loader-android_29_aarch64.deb
-Size: 5012
-MD5Sum: d008280635a0e8c9e55be3edd004e55b
-SHA1: c0358a41d97915fc00ac9f1d84754a6bf50c5839
-SHA256: 2f9cce6c4cc421ceda0d626bc59497979fd7895cd4dfa96d1b7dee069062d4d0
-SHA512: 2c68e88196de8f3783dbdd8ed0609e67677ea69df05d03070de3032ca33ddbd8a46b9036133985731947f50cfeef0141d2889f148504e8ff042a0040c2257e12
-
-Package: vulkan-utility-libraries
-Architecture: aarch64
-Installed-Size: 8180
-Maintainer: @termux
-Version: 1.4.355
-Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
-Description: Utility Libraries for Vulkan
-Filename: dists/uncode/main/binary-aarch64/vulkan-utility-libraries_1.4.355_aarch64.deb
-Size: 626456
-MD5Sum: e6041c598e7ebab9c219b4e2e384d21d
-SHA1: da6962a50bd39134ac6fdcd41f959e64c36a95b9
-SHA256: 7f90bfaef88cb33910f5843a48bbfd866ea5cfee9b5d21865ceb67bbb6009bfd
-SHA512: 97347ea9556d48283bddeae306771973466335ac3aab0bcfe15ced741628ed787af42be62dd7bea7f98548731679b44bfd83c8ba16c70845c0fe3fe9e8e7b44e
+Version: 1.13.0
+Homepage: https://github.com/antonmedv/walk
+Breaks: llama (<< 1.4.0-2)
+Replaces: llama (<< 1.4.0-2)
+Description: A terminal file manager
+Filename: dists/uncode/main/binary-aarch64/walk_1.13.0_aarch64.deb
+Size: 2289840
+MD5Sum: 97b36650e35a4de46b0ef36a518b4a9d
+SHA1: 5289eecb00d69746ea51e320b0f921b3d0f95fc0
+SHA256: 47fc20966a8fb571a7e553c2d260d91292284a4b00b4978315a0f516df39c287
+SHA512: c6aa0f1370be403c05afc7bfe135c486d9785d0e5b5806b20c1d3ca3cd4230cdb7d16e4e9950a5eb4f9cb8220764444df611419f6ce5d0512f0c54438f12f4d8
 

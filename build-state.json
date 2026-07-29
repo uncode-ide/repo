@@ -1,8 +1,8 @@
 {
   "version": "2.0",
   "initialized_at": "2026-07-04T09:54:50.166607+00:00",
-  "last_run": "2026-07-29T04:55:47.655807+00:00",
-  "run_count": 49,
+  "last_run": "2026-07-29T15:46:43.812060+00:00",
+  "run_count": 50,
   "total_packages": 2146,
   "chunk_size": 40,
   "built": [
@@ -939,7 +939,10 @@
     "vulkan-icd",
     "vulkan-loader",
     "vulkan-loader-android",
-    "vulkan-utility-libraries"
+    "vulkan-utility-libraries",
+    "wabt",
+    "wakatime-cli",
+    "walk"
   ],
   "failed": [
     "libandroid-selinux",
@@ -1993,15 +1996,10 @@
     "vtm",
     "vulkan-extension-layer",
     "vulkan-loader-generic",
-    "vulkan-tools"
-  ],
-  "pending": [
+    "vulkan-tools",
     "vulkan-validation-layers",
     "vulkan-volk",
     "w3m",
-    "wabt",
-    "wakatime-cli",
-    "walk",
     "wallust",
     "wasi-libc",
     "wasm-component-ld",
@@ -2035,7 +2033,9 @@
     "wren",
     "wrk",
     "wtfutil",
-    "wuzz",
+    "wuzz"
+  ],
+  "pending": [
     "x11-repo",
     "xcb-proto",
     "xdelta3",

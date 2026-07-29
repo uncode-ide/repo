@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96496
-MD5Sum: b88cbbf4dcfd42d3aa9a6ab2504244f9
-SHA1: 0d655568e65380392731dbdfc03f074174a079f7
-SHA256: 75bfa08f6837f761b4f41b6e5feba967d8e06e7af9edff428b4bf76554d38a32
-SHA512: 2914597920ed1af36f15f326d47f6830b8c323d552a5f016ff9d9a66c34106a6e38a8895f819e60644bbc9eced9e7cd4b4762f6bc451c800397c4e0be27d6fac
+Size: 96500
+MD5Sum: f7926d03a00e81fa9f8fd1d1460e65c5
+SHA1: 1d6d5ccd6a197a65679608cac8f3015a76377f26
+SHA256: 0b5d86f30e72c6f119fb832070961ba6ab7b02ef5249e5540ffb9a0a899b79ac
+SHA512: c47650dddb43f30887bbe00be393ea7bf383141d609b4a2e449b0214dcfe9f31849a4b66e103376d4f962be063dd73e96ed6fde06603fc143d1f8883544f5578
 
 Package: ca-certificates
 Architecture: all
@@ -40,34 +40,4 @@ MD5Sum: dd0715670c91273a893aa334b836ba26
 SHA1: 4d88260a28284c3f1a57f73af03f6c8608df6576
 SHA256: fda072120d444bbed904827cad6c1f0bb891538ffc92a5e73fbfc3386886462f
 SHA512: 6f489e276990a51af1e63d899323b64c067b11d5a49dd72bb717d2a81df33932777b75457c20fe5f4b2d8eec8137eafcecc231a98edaec4e6a69ff0f53f57154
-
-Package: vulkan-icd
-Architecture: all
-Installed-Size: 4
-Maintainer: @termux
-Version: 0.1
-Homepage: https://github.com/termux/termux-packages
-Depends: mesa-vulkan-icd-swrast | mesa-vulkan-icd-freedreno | swiftshader
-Description: A metapackage that provides Vulkan ICDs
-Filename: dists/uncode/main/binary-all/vulkan-icd_0.1_all.deb
-Size: 736
-MD5Sum: 98db31fb77f044ca7343c633964fe55b
-SHA1: c14529a1e3f92dbc6f70dec3844d0adea28f0214
-SHA256: 109b1f24582c30d60866e7bd88d32c094277a5e11416d5e1b2d76889613f627a
-SHA512: d427e2ad243b23d4fdf8e73fa970b83ef465519df58a37ebe4eeff70a10808fb8ae278602270d02644d16d41b25cfbebfaeb42f60f0855ee451269faafe97fb7
-
-Package: vulkan-loader
-Architecture: all
-Installed-Size: 4
-Maintainer: @termux
-Version: 0.0.3
-Homepage: https://github.com/termux/termux-packages
-Depends: vulkan-loader-generic | vulkan-loader-android
-Description: A metapackage that provides vulkan loader library
-Filename: dists/uncode/main/binary-all/vulkan-loader_0.0.3_all.deb
-Size: 724
-MD5Sum: c654de58e2921b24319114366cf0b31e
-SHA1: 212567b0e4a01b11a7aab25dc10d11e31f80643c
-SHA256: 9df60e9e309362bae6c93047296949e49791be2f155639809dc321853a86e15a
-SHA512: dac67ab93d48cb516a30a970a8c9e5667dfd0c50e441be46750d621485e1e171114844bdb16aca5ca73d41a0c541d49b5f185a6f75345f9dec5c372f97eac459
 
