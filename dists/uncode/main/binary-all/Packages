@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96476
-MD5Sum: 4830f2d2422d3c03dfbf44483268269e
-SHA1: 168a5e97f6dd1ded9e6f1cb580f21c5666ab6893
-SHA256: 5af80cc069a2e5e3a33ac9f7f41051e793bc366a278fcd0ed3b323141622252a
-SHA512: aba01200f22473f124c8e10f0058184fa71334c22ea6f54bbc2f37954050d4e7238902e696327a39acf2381ef4edbe6fd9b2cb33f47972f6d0804bf62d8e0a59
+Size: 96496
+MD5Sum: b88cbbf4dcfd42d3aa9a6ab2504244f9
+SHA1: 0d655568e65380392731dbdfc03f074174a079f7
+SHA256: 75bfa08f6837f761b4f41b6e5feba967d8e06e7af9edff428b4bf76554d38a32
+SHA512: 2914597920ed1af36f15f326d47f6830b8c323d552a5f016ff9d9a66c34106a6e38a8895f819e60644bbc9eced9e7cd4b4762f6bc451c800397c4e0be27d6fac
 
 Package: ca-certificates
 Architecture: all
@@ -27,73 +27,47 @@ SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
 
-Package: tur-repo
+Package: vulkan-headers
 Architecture: all
-Installed-Size: 60
-Maintainer: @termux-user-repository
-Version: 1.0.1
-Homepage: https://github.com/termux-user-repository/tur
-Description: A single and trusted place for all unofficial/less popular termux packages
-Filename: dists/uncode/main/binary-all/tur-repo_1.0.1_all.deb
-Size: 2904
-MD5Sum: 769f517aa9bd0a1b9f6527d9c04cb7d7
-SHA1: bd97a61f8d26267345f2576289580c14530b8369
-SHA256: d2cfaec310629427fb5a5f391dafe94a9d097db8169e35871fe624ef057f2d26
-SHA512: 356c39bd6fa7ad4c954a7c14ca3b142d440fbc247b95819bbb438d0d2c10cf101b4ab4fc8551f1ac5eb49d439298522104c623c955ba44e99f4c12b7037c4fe1
-
-Package: unicode-cldr
-Architecture: all
-Installed-Size: 291456
+Installed-Size: 40812
 Maintainer: @termux
-Version: 48.1
-Homepage: http://cldr.unicode.org/
-Description: Unicode Common Locale Data Repository
-Filename: dists/uncode/main/binary-all/unicode-cldr_48.1_all.deb
-Size: 21066304
-MD5Sum: d1b51fc11c8ccd81520654aa7f75f8e9
-SHA1: 47cc90177be8d2892d85115c05cba74fc696c334
-SHA256: 631fd5b48fec0aa88783361cbbfe1cca8fe3d5a2918ec27fbf4ff63a307398b4
-SHA512: e79043a0418a2187dd2867b3b080ccfc3995f0ffe4c540d7f8675400c282b32e8a96b28e75861ea29e205babb6f24dfaeae8ded447c70dcbcd97b11f079dd2ce
+Version: 1.4.355
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
+Description: Vulkan Header files and API registry
+Filename: dists/uncode/main/binary-all/vulkan-headers_1.4.355_all.deb
+Size: 1900448
+MD5Sum: dd0715670c91273a893aa334b836ba26
+SHA1: 4d88260a28284c3f1a57f73af03f6c8608df6576
+SHA256: fda072120d444bbed904827cad6c1f0bb891538ffc92a5e73fbfc3386886462f
+SHA512: 6f489e276990a51af1e63d899323b64c067b11d5a49dd72bb717d2a81df33932777b75457c20fe5f4b2d8eec8137eafcecc231a98edaec4e6a69ff0f53f57154
 
-Package: unicode-emoji
+Package: vulkan-icd
 Architecture: all
-Installed-Size: 1176
+Installed-Size: 4
 Maintainer: @termux
-Version: 17.0.0
-Homepage: https://unicode.org/emoji/
-Description: Unicode Emoji Data Files
-Filename: dists/uncode/main/binary-all/unicode-emoji_17.0.0_all.deb
-Size: 74808
-MD5Sum: bde7f6415a1b05b132bdd4ea1cc72245
-SHA1: 8ebf73b8a2beaa674be62d930386f172cc23fc60
-SHA256: 882c1261e35f3258b525a4473265e012064f300f77f1ad14718b3867b19fb2fa
-SHA512: 0b291ccc259afa8c383679ec0ed7f3c8198d7cedc15aaf2eff559251367b0afeea96c1b075944a1d9a39d8f334b1c9ac953e5a25666762709645fa5d34492020
+Version: 0.1
+Homepage: https://github.com/termux/termux-packages
+Depends: mesa-vulkan-icd-swrast | mesa-vulkan-icd-freedreno | swiftshader
+Description: A metapackage that provides Vulkan ICDs
+Filename: dists/uncode/main/binary-all/vulkan-icd_0.1_all.deb
+Size: 736
+MD5Sum: 98db31fb77f044ca7343c633964fe55b
+SHA1: c14529a1e3f92dbc6f70dec3844d0adea28f0214
+SHA256: 109b1f24582c30d60866e7bd88d32c094277a5e11416d5e1b2d76889613f627a
+SHA512: d427e2ad243b23d4fdf8e73fa970b83ef465519df58a37ebe4eeff70a10808fb8ae278602270d02644d16d41b25cfbebfaeb42f60f0855ee451269faafe97fb7
 
-Package: utf8cpp
+Package: vulkan-loader
 Architecture: all
-Installed-Size: 144
+Installed-Size: 4
 Maintainer: @termux
-Version: 1:4.1.1
-Homepage: https://github.com/nemtrif/utfcpp
-Description: UTF8-CPP: UTF-8 with C++ in a Portable Way
-Filename: dists/uncode/main/binary-all/utf8cpp_1:4.1.1_all.deb
-Size: 10508
-MD5Sum: 7c448e0f855e240d76b5ce462e0b327b
-SHA1: 976fb5b927f4a98febbb6feff0b58e54fd5e6703
-SHA256: 554aa1d00335e0afc49b54ab73693617a0e00e5db2c8904772e4665081c85547
-SHA512: 1c27b1da68b72787b3e6acaee719b070ac9a825801db936b47e116fc69db3e3d58c7215b76c9c34bfddecb0e0aa9a7b336c2011f5ffe026ee1363df2b890bd81
-
-Package: uthash
-Architecture: all
-Installed-Size: 252
-Maintainer: @termux
-Version: 2.4.0
-Homepage: https://troydhanson.github.io/uthash/
-Description: C preprocessor implementations of a hash table and a linked list
-Filename: dists/uncode/main/binary-all/uthash_2.4.0_all.deb
-Size: 20212
-MD5Sum: a1267bba6ceaf2b686b04663faf45a66
-SHA1: c04dd12473508ba7e17c4c8de6298c138044f240
-SHA256: 11a7618ab7ebbdaff0572f2bba243836d77e802c20a63555f1eea803e451efd6
-SHA512: 8591940bca361d35380420ac2e35df3b1bc0c287c3a253681c6c6f1fbc71bcc84975d20071eb74e2e073a2dab9e094d049cfab88647c67e5859137a1ea17d3a0
+Version: 0.0.3
+Homepage: https://github.com/termux/termux-packages
+Depends: vulkan-loader-generic | vulkan-loader-android
+Description: A metapackage that provides vulkan loader library
+Filename: dists/uncode/main/binary-all/vulkan-loader_0.0.3_all.deb
+Size: 724
+MD5Sum: c654de58e2921b24319114366cf0b31e
+SHA1: 212567b0e4a01b11a7aab25dc10d11e31f80643c
+SHA256: 9df60e9e309362bae6c93047296949e49791be2f155639809dc321853a86e15a
+SHA512: dac67ab93d48cb516a30a970a8c9e5667dfd0c50e441be46750d621485e1e171114844bdb16aca5ca73d41a0c541d49b5f185a6f75345f9dec5c372f97eac459
 
