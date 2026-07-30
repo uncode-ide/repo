@@ -1,19 +1,121 @@
-Package: c-ares
+Package: attr-static
 Architecture: aarch64
-Installed-Size: 1100
+Installed-Size: 60
 Maintainer: @termux
-Version: 1.34.6
-Homepage: https://c-ares.org/
-Breaks: c-ares-dev
-Depends: resolv-conf
-Replaces: c-ares-dev
-Description: Library for asynchronous DNS requests (including name resolves)
-Filename: dists/uncode/main/binary-aarch64/c-ares_1.34.6_aarch64.deb
-Size: 192452
-MD5Sum: 8bdf24d283f4f276fc12478b9a0b89a3
-SHA1: 60c6a183d0dc6aa6eb4f93229a7175c87512f9ae
-SHA256: 6cd16a7496b1a237184cbe4ef048db07529e481e837780c84b964b3d12dbe8b9
-SHA512: ea51626f16891611cd6e24763ad4139df918ad4dfa692f1c285d364bda4b143c90a5cb737992a881c8f4ce8dd51c929b36971735355cdcadbd330529c6847509
+Version: 2.5.2-1
+Homepage: http://savannah.nongnu.org/projects/attr/
+Depends: attr (= 2.5.2-1)
+Description: Static libraries for attr
+Filename: dists/uncode/main/binary-aarch64/attr-static_2.5.2-1_aarch64.deb
+Size: 7048
+MD5Sum: 3244c9f27d52dba80799d8a71563af14
+SHA1: 46e0daf92db2792674523505db94c5ad29dbf15f
+SHA256: 0c77ec1816b47e116f09b5c229ddeda3a716a8408e41d64efb0d1fe885651283
+SHA512: 83c231b3ec4a25b90305080566be9f79cdc2e7296a45132e05cb5c05f69b64d738d5e671d3a1ba782ae10eaf964743ed28dde1a2871100fe8b9fe1c025837414
+
+Package: attr
+Architecture: aarch64
+Installed-Size: 256
+Maintainer: @termux
+Version: 2.5.2-1
+Homepage: http://savannah.nongnu.org/projects/attr/
+Breaks: attr-dev
+Replaces: attr-dev
+Description: Utilities for manipulating filesystem extended attributes
+Filename: dists/uncode/main/binary-aarch64/attr_2.5.2-1_aarch64.deb
+Size: 52596
+MD5Sum: 265997b78a18d59188ee87bd64deb119
+SHA1: 942ad7339edf15700a6711cb236b991504cd831a
+SHA256: 2b5fa0e544617855c21534d6b4139c85bf3afed275e976b571fdb75324b20fd9
+SHA512: e21f5ef7dabcfddcd59831ab2f20f447835d43515f21b1f22aca9dd03ef1123a752b34197cf3aa3e99bcdb64e9eb317763947b353b7c534526eb3796f55d5f09
+
+Package: authbind
+Architecture: aarch64
+Installed-Size: 108
+Maintainer: @termux
+Version: 2.2.0-1
+Homepage: https://www.chiark.greenend.org.uk/ucgi/~ian/git/authbind.git
+Description: Bind sockets to privileged ports without root
+Filename: dists/uncode/main/binary-aarch64/authbind_2.2.0-1_aarch64.deb
+Size: 14488
+MD5Sum: cf907f83cbe04428605699c79df861f2
+SHA1: dd6896e3fb33cf1b2b0304469bb7cf384d579cce
+SHA256: 55411beb14396cabfa3b479c82c8ef9368969f29c68fb2f59d35d538956be7bb
+SHA512: 3898698f31f9e79e046760127822a11cc993c855a5fbd352eb350392cf8365ff80637fbc42e6d2c998177c77c3fcbd067e6460412f1b40c1fb89f93becbe6453
+
+Package: avrdude
+Architecture: aarch64
+Installed-Size: 13840
+Maintainer: @termux
+Version: 8.1
+Homepage: https://avrdudes.github.io/avrdude/
+Depends: libusb
+Description: Software for programming Microchip (former Atmel) AVR Microcontrollers
+Filename: dists/uncode/main/binary-aarch64/avrdude_8.1_aarch64.deb
+Size: 1486204
+MD5Sum: d582ab27a4993e6f9010af9e9036686f
+SHA1: dec5ebc11462c868bb683c6006e9dbda1763a5d6
+SHA256: dae2640ca9fc0e57e1f291b5e65aa5289320967f76767d147409355cca33d103
+SHA512: b887ae5e361f041a220cf29caf96ba0b5f8137deea90a984c9a0fb8e8222a364644f3f4fbef318ece8de7aeda90e2a51102a6fb1032c0023f4c1945f274da85d
+
+Package: containerd
+Architecture: aarch64
+Installed-Size: 109548
+Maintainer: @termux
+Version: 1.6.21-5
+Homepage: https://containerd.io/
+Depends: runc
+Description: An open and reliable container runtime
+Filename: dists/uncode/main/binary-aarch64/containerd_1.6.21-5_aarch64.deb
+Size: 24831700
+MD5Sum: b49fd857c0c4cf581c1ae763762fa42f
+SHA1: 9e32df9812daf8da8112d67d8dfb692fa8ce1ad6
+SHA256: cd95ab6ef10da0f9151fb0b0e6c4d0fcadc7679b3841d392a38208195671e57b
+SHA512: 65bdb21e2c35f30734fb997cf70a635e36bc83b4c5f00171c6b640636c12c398e43bf90ab30ce43e09966ed3653f0924a5ca4d841d07f168708d165056b35dc6
+
+Package: dnsmasq
+Architecture: aarch64
+Installed-Size: 440
+Maintainer: @termux
+Version: 2.93
+Homepage: http://www.thekelleys.org.uk/dnsmasq/doc.html
+Description: Dnsmasq provides network infrastructure for small networks
+Filename: dists/uncode/main/binary-aarch64/dnsmasq_2.93_aarch64.deb
+Size: 192196
+MD5Sum: 83e22a4914a9eaee26e2541369531744
+SHA1: eb6fe94cb4f0934a419bbf185c7110488f06217f
+SHA256: 14a3d6672d7624175064343d4f786685c336b63c411bcd8d4bf294a25363e883
+SHA512: 77b6a735111ba6246e2080904c87b62be3a3d88d9af386be4a8a4dfb795cc0666b25675cb42f157fdfe195910685120bb6d5aae140e5cf40cd14da7ba9ea9c58
+
+Package: fio
+Architecture: aarch64
+Installed-Size: 1892
+Maintainer: @termux
+Version: 3.42
+Homepage: https://github.com/axboe/fio
+Depends: openssl, libandroid-shmem, libaio
+Suggests: python
+Description: Flexible I/O Tester
+Filename: dists/uncode/main/binary-aarch64/fio_3.42_aarch64.deb
+Size: 380252
+MD5Sum: e91f27a5e245a962dd2f1840b92a395c
+SHA1: d746497a35e35cd33cb3ec9f9994af4258039ea3
+SHA256: be1baa74fa9b888897df203c31f2592e9463ed49e051fbebc0ebddf12c00fc4a
+SHA512: 30cfa6373224107fd53a4461632859975f773474002d7a506ac78fbc20c590eaf6cf11ceee3016c6841ccebcb8c8194efd2dd2c8ede13434c652f3e783f71f53
+
+Package: hdparm
+Architecture: aarch64
+Installed-Size: 176
+Maintainer: @termux
+Version: 9.65-1
+Homepage: https://sourceforge.net/projects/hdparm/
+Description: Utility to get/set SATA/IDE device parameters
+Filename: dists/uncode/main/binary-aarch64/hdparm_9.65-1_aarch64.deb
+Size: 58608
+MD5Sum: 318282c63b81f0f34b1d38bdc7481d4c
+SHA1: aa7642870a97aa22d2f0501e2b2def784c3167a6
+SHA256: 8b5b0b3dc9be7816dba28ce61573d5a0628402ce5a3e2b4176464414397f1e27
+SHA512: 8389ebc67ecbddda307dacbbab0db4ea9b487d6652dee5caa62c38b751ab4c11e41073d58c01d570611d82061b90fe1eabacf7e2a4cfd3dc698010cc73bdf914
 
 Package: hello
 Version: 8.7.1-1
@@ -28,73 +130,39 @@ Description: A Example package.
  Repackaged for com.uncode.ide namespace.
 Filename: dists/uncode/main/binary-aarch64/hello_8.7.1-1_aarch64.deb
 Size: 896
-MD5Sum: 7e5896a510b06d0fcbef86eadfa6045f
-SHA1: ed0f3452b949ada053b361847c8adb2c60d732f8
-SHA256: da70d297369220221aa93bd52c43a3cd8d2866c0de60c14c249c029a5edf79ed
-SHA512: 352b0c582aaf16c96e60a1afe4293e31650154679ba74e7b48a9b82039aca027153d824c977c5e686ae62551413b6d24180b35c8aa84b7cbff4dfee2e0361102
+MD5Sum: 625c3917ece916a5747a91b9176d77ea
+SHA1: b7b6811a6a72d23f672d0eec64331d976e22bc9d
+SHA256: 90f0aee5c2abe809e52f56c31956a6a8474d4d7b44fa8b1022ddcbeffdc3422e
+SHA512: d41b6626b0f74a9aa9546fa1e744fe1871b258405b7d8a6d40242172bf2b966f35862bcc49ac38f41341b82f1527d0927f46636fa112332c742cb12824650830
 
-Package: libgcrypt-static
+Package: i2c-tools-static
 Architecture: aarch64
-Installed-Size: 1828
-Maintainer: @termux
-Version: 1.11.2-1
-Homepage: https://www.gnu.org/software/libgcrypt/
-Depends: libgcrypt (= 1.11.2-1)
-Description: Static libraries for libgcrypt
-Filename: dists/uncode/main/binary-aarch64/libgcrypt-static_1.11.2-1_aarch64.deb
-Size: 468356
-MD5Sum: 6682cdc5ba39dabdc488d8c8bf61f3ed
-SHA1: b4e3e4e55fcb36db3330615fbf91b39b4b6fd450
-SHA256: fd676899ced317fc72a0c8db97558155e7dbd1cf9203dc75b21adfb093f543a3
-SHA512: 742722fe0b37739f434ec9c865a351fa4c3b3013d483be8624912b158bb9fe989a6e5e5c3d0cd96b66a6648b4229a74375a7336a5d3c660089871c64b6661e70
+Installed-Size: 36
+Maintainer: Henrik Grimler @Grimler91
+Version: 4.4-1
+Homepage: https://i2c.wiki.kernel.org/index.php/I2C_Tools
+Depends: i2c-tools (= 4.4-1)
+Description: Static libraries for i2c-tools
+Filename: dists/uncode/main/binary-aarch64/i2c-tools-static_4.4-1_aarch64.deb
+Size: 2464
+MD5Sum: b1301ad2b156b1a43ee5ba60adc25893
+SHA1: 36bc3ef5f1ad4c4fee8f5bbe8221b7e2ce1cf02a
+SHA256: 13e34fd7c54076ea3176b38037f502eac6279c4949880136db883fc5a9eb29d2
+SHA512: 6de6cc94f418277edb62eb67d4bae36d09e09556496a1c01a9a37675d9d3367e877944e682b40ce2ae5bc6bc3a59e62a5198d44875d25146c08236392ca063c9
 
-Package: libgcrypt
+Package: i2c-tools
 Architecture: aarch64
-Installed-Size: 1648
-Maintainer: @termux
-Version: 1.11.2-1
-Homepage: https://www.gnu.org/software/libgcrypt/
-Breaks: libgcrypt-dev
-Depends: libgpg-error
-Replaces: libgcrypt-dev
-Description: General purpose cryptographic library based on the code from GnuPG
-Filename: dists/uncode/main/binary-aarch64/libgcrypt_1.11.2-1_aarch64.deb
-Size: 500080
-MD5Sum: 9fc373fe3e90e67cf09768ae6392c832
-SHA1: 2fc0a2cf9cafe1a7cf9701890af51256481f4ae7
-SHA256: dbe7831fdc55b22a1eac0a01da62ec0cb46b08c2a9e0f41c47550640cd22e1b5
-SHA512: ff22eeb5431abf133fde04bcb7309323c63ae6952a91c5f77eac18c580f99ae751c5db3a35fda1f9aa72f0ac4218bc570a51b36f1a032b389841150444b3e0ee
-
-Package: libgpg-error-static
-Architecture: aarch64
-Installed-Size: 304
-Maintainer: @termux
-Version: 1.58
-Homepage: https://www.gnupg.org/related_software/libgpg-error/
-Depends: libgpg-error (= 1.58)
-Description: Static libraries for libgpg-error
-Filename: dists/uncode/main/binary-aarch64/libgpg-error-static_1.58_aarch64.deb
-Size: 65900
-MD5Sum: d8259a6f4eab4ba4d23cfe21179bc886
-SHA1: 604863c317e00edd4470c8b9fbb22e5d18f25633
-SHA256: c15551503d4acc8107a0b42d56025023286e6efa962016a0f172f28513c6a7eb
-SHA512: a63eadc6565ada59992359a7106ffba2f9579233a07c0818c1508a047ee295da80590454249cda9fa85bcead54f509d6ad900c559b463e76d918e34abd4236f3
-
-Package: libgpg-error
-Architecture: aarch64
-Installed-Size: 604
-Maintainer: @termux
-Version: 1.58
-Homepage: https://www.gnupg.org/related_software/libgpg-error/
-Breaks: libgpg-error-dev
-Replaces: libgpg-error-dev
-Description: Small library that defines common error values for all GnuPG components
-Filename: dists/uncode/main/binary-aarch64/libgpg-error_1.58_aarch64.deb
-Size: 121244
-MD5Sum: 9c5bde2abbda038e6e988b874c3dc347
-SHA1: 9befd26ee867f8b527f22a901dd9f05aab8c2a6e
-SHA256: 4d1def41fadd57b23324ba08f2c510c6ae7d57c2cd35f210d9e31fed024dad00
-SHA512: 00cb981ced95372a53581189710bb80736031d40a03e895cb46472809cfd6ec31e5d213060b388f87e4ce49168162e8d64e3435cd4e171e3e24c6925dbf847c7
+Installed-Size: 364
+Maintainer: Henrik Grimler @Grimler91
+Version: 4.4-1
+Homepage: https://i2c.wiki.kernel.org/index.php/I2C_Tools
+Description: Tools for interacting with I2C devices
+Filename: dists/uncode/main/binary-aarch64/i2c-tools_4.4-1_aarch64.deb
+Size: 72852
+MD5Sum: adb0dbd0e4d5bc5f7183d6d3ff4fa2fc
+SHA1: 5a50baf13c7558e9d2cc368ff10cda3eccddf32d
+SHA256: 1c066efc24ed3ccf7974782527da45f3de8d068d0e3c392248db0f96e9bce013
+SHA512: 7947d0ed6cb5426185fab213cf760c2b92b070bbeeac8b5ca2730034aba99d7860219c5ff8dc7032aa4640e86a0fddcdd4ecd9756a5bb8fdc653bbc0fd9c8ff9
 
 Package: libnghttp2-static
 Architecture: aarch64
@@ -157,52 +225,65 @@ SHA1: 36e196eff68cf5867c127747cebfee5c91009be6
 SHA256: f401429550b527a6738149bddb58ae70df3b79a386b14476193cae62ac06e4e0
 SHA512: a77c9c4d13c94dbbcad6c02b35ddd51319c6b60ccf1b2b385d40f8a062dc72639228065e448259a69db4638d8ed4d28fb9047da58d4aefd8934c75e08a930238
 
-Package: libtiff-static
+Package: libsasl-static
 Architecture: aarch64
-Installed-Size: 696
+Installed-Size: 484
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Static libraries for libtiff
-Filename: dists/uncode/main/binary-aarch64/libtiff-static_4.7.1_aarch64.deb
-Size: 135260
-MD5Sum: 41fb0f12705252fecb678ca1dc4acdaf
-SHA1: 5fc2b524b5b230992d1858e5ae30aa7b1e10d6f8
-SHA256: ab3e76669a2a4683ee3e9f2494a5ba399ded2cddd4763c240d474fa72e8115d1
-SHA512: 8f4e14bfb1d4b07f13ba66c1c1f7a529e3490b426eb9352aa3366092c73190e1b80ebbd07e5e7f0beb766cde7ea35704ac431ddbbeba46d3ed1f1530ad6d8832
+Version: 2.1.28-2
+Homepage: https://www.cyrusimap.org/sasl/
+Depends: libsasl (= 2.1.28-2)
+Description: Static libraries for libsasl
+Filename: dists/uncode/main/binary-aarch64/libsasl-static_2.1.28-2_aarch64.deb
+Size: 67248
+MD5Sum: 899c6be7bc2ddfe35fa0d52c9d98ce5c
+SHA1: 5dd44ddabc2252da053a56f6a28c4f0981922122
+SHA256: d733b38ff0f3b8ea3feff0b624fb20277f00d62f758f7cc89f99021b0bf3cbbb
+SHA512: 0e4f283b295ea4bc8b90072447f10d865d00639a77667a86754f3d6419233b2c2d16d21e8510f68fcfffa6e09cf999468ba7444a82364d457a909a3de85cd90f
 
-Package: libtiff-utils
+Package: libsasl
 Architecture: aarch64
-Installed-Size: 800
+Installed-Size: 580
 Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Depends: libtiff (= 4.7.1)
-Description: Tools for working with tiff files
-Filename: dists/uncode/main/binary-aarch64/libtiff-utils_4.7.1_aarch64.deb
-Size: 255964
-MD5Sum: a0a56110c08879f75be05ad601a6e6cc
-SHA1: 8829188eb1b2182470e5cad7bc9c86078b55b553
-SHA256: 9e6cf9f9b051617ccfba47ca4ea3f22428f3a8ca0c61a2f4ac7d9ff61912f98e
-SHA512: 4321e3f29c4216e4e3fca434024babb26aaf45ce30b49e1125ca83a9e6ae7c9cae3d25ddbd222ff334bcbfb457252c3785f0ec88191f9eda28c4c5d774b58468
+Version: 2.1.28-2
+Homepage: https://www.cyrusimap.org/sasl/
+Breaks: libsasl-dev
+Replaces: libsasl-dev
+Description: Cyrus SASL - authentication abstraction library
+Filename: dists/uncode/main/binary-aarch64/libsasl_2.1.28-2_aarch64.deb
+Size: 86508
+MD5Sum: d394ac7b01cc39a5d4c746108c80cac2
+SHA1: 5fd4fc1dc91be4ff301c177ce4a3e866a26b9f02
+SHA256: 47a8e527893cfbc3f56cea9b5a49242adcca1cc302f4c2335152c32262e0e874
+SHA512: abda7f84e50d1ea4a6427d8753d1942d11bae51242fb817ea1a16b886fa5255c2c3a28c71a28df802ca8227386ab1faadd81b28f1b2f57c2530a77210a22414d
 
-Package: libtiff
+Package: lowdown-static
 Architecture: aarch64
-Installed-Size: 6416
-Maintainer: @termux
-Version: 4.7.1
-Homepage: http://www.simplesystems.org/libtiff/
-Breaks: libtiff-dev
-Depends: libc++, libjpeg-turbo, liblzma, zlib, zstd
-Replaces: libtiff-dev
-Description: Support for the Tag Image File Format (TIFF) for storing image data
-Filename: dists/uncode/main/binary-aarch64/libtiff_4.7.1_aarch64.deb
-Size: 821104
-MD5Sum: 9d53ae646a4b43402c26a6bca71893fd
-SHA1: 17b40a155aa03273867f86b4605d04b4228c7806
-SHA256: 40f29129d8703fb9ce6b5e92d56455ff839d7278aeba510cd68a50abfbc1c77f
-SHA512: 5d37dbd7e022d9270d9b7efc60111cfae7005d0ff90230213b3bfed2d50c6e42a6051a63769918eb4e3022d93f3e05d1071bf762961b2f6f2b7720f3aa683e5e
+Installed-Size: 476
+Maintainer: @flosnvjx
+Version: 3.0.1
+Homepage: https://kristaps.bsd.lv/lowdown
+Depends: lowdown (= 3.0.1)
+Description: Static libraries for lowdown
+Filename: dists/uncode/main/binary-aarch64/lowdown-static_3.0.1_aarch64.deb
+Size: 111324
+MD5Sum: b3bb5e154fee74f91d7cc058a33a2ca0
+SHA1: 64d75f4c469478f6d66432af1627c6962f99ac77
+SHA256: 1b29a6fe84b36b27c465829b3a57ea382b1f70c2eb84c4f1109caa4ff297223e
+SHA512: b799b8d5557e63298851674adbe6846be97e1ff88903eb5f4d972e1f3f4228302fc23a3ea7aae3a3de08b806b874f863375b7692422932957f17342ead19183b
+
+Package: lowdown
+Architecture: aarch64
+Installed-Size: 1080
+Maintainer: @flosnvjx
+Version: 3.0.1
+Homepage: https://kristaps.bsd.lv/lowdown
+Description: Markdown utilities and library (fork of hoedown -> sundown -> libsoldout)
+Filename: dists/uncode/main/binary-aarch64/lowdown_3.0.1_aarch64.deb
+Size: 199464
+MD5Sum: 96ef488584a82bff91726c5083f22862
+SHA1: 4e057fc32fde2ea194953336a233492ba8e97c75
+SHA256: 32fa3e1b58569275221a9ad12ad24db30d7a3666b69f0aab0a0fa0d9699ec05d
+SHA512: a7671511b3f5f7329e53b0f727564fe0b6b5019536562b777d3f57a06bf631b6a2654615973cebd530b5d3739f941ac3661511f3af460222004abfe5f3970c1c
 
 Package: tcl
 Architecture: aarch64
@@ -221,229 +302,132 @@ SHA1: 1fa746c3fbd01da5e44dd2ba2030611a208d0ec0
 SHA256: 140f77a6c5c6833b9cba2a668db0587b983b83163dc083d4eff2fed785e9a8b9
 SHA512: 809ddba3e4470b8e472141bb0050248ac35eaf9dc91389f68cb7003306935fcfe47d3f4cc45e21f3483e21f0b2a4a821ed257219824d2ea68e6756e5d1eb800b
 
-Package: xdelta3
+Package: zls
 Architecture: aarch64
-Installed-Size: 168
+Installed-Size: 3148
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 0.16.0
+Homepage: https://github.com/zigtools/zls
+Description: Zig language server
+Filename: dists/uncode/main/binary-aarch64/zls_0.16.0_aarch64.deb
+Size: 1037684
+MD5Sum: 4602dad078b1f2313d555d66a7d40cdb
+SHA1: f3c13e1f46eedf1533dd7f8d2356e82992c701fd
+SHA256: 525dd1870ebeb27491f0b3bd9211b4d17d99c61fdd2431021533c8da4b359d03
+SHA512: 63b2b0275fb7208645b58b300ad38f15c79c00302e40c0844bbeb9abfb9c8846a216af1fc92e6a765d4ca2a32107030ec540ed65823f047628331b53c0f22147
+
+Package: znc
+Architecture: aarch64
+Installed-Size: 8144
 Maintainer: @termux
-Version: 3.1.0-3
-Homepage: https://github.com/jmacd/xdelta
-Depends: liblzma
-Description: xdelta3 - VCDIFF (RFC 3284) binary diff tool
-Filename: dists/uncode/main/binary-aarch64/xdelta3_3.1.0-3_aarch64.deb
-Size: 52296
-MD5Sum: 1d582f8dfefa3599723fba972c73a816
-SHA1: 423ad68295d0de35bbcf925c4eaf1826d0b8ccb3
-SHA256: 02f00a02195b1137f3a4f7dc75a1198cbe8126371a560343305da89b6ce5b50f
-SHA512: 98f752012186bc3f3512669a8e01f7cfd90dbd66f616710a67967e70e774c8b1c1ecff2f7288828eed49120a985d10eb4a20194617c537f222470bd655eebc13
+Version: 1.10.2
+Homepage: https://znc.in/
+Depends: libc++, libicu, libsasl, openssl, zlib
+Description: An advanced IRC bouncer
+Filename: dists/uncode/main/binary-aarch64/znc_1.10.2_aarch64.deb
+Size: 1509084
+MD5Sum: c9e51b3b8855585f498ccf0cc5d28894
+SHA1: 24050ee80e7754cb4a33979e638aa7515c1b5249
+SHA256: ede9129b71e865c1f36407d03817239fbd8152cd67fd2e676cf9cf35bccaf87e
+SHA512: 9067a155f8966544cd617439761301536c3683f793767669ae0a0d404041fa79f88ed4b8ddb65edb89adfae70f7587a5c10073a4b883afa10122d7df4d0362b2
 
-Package: xh
+Package: zola
 Architecture: aarch64
-Installed-Size: 10144
+Installed-Size: 39720
 Maintainer: @termux
-Version: 0.26.1-1
-Homepage: https://github.com/ducaale/xh
-Description: A friendly and fast tool for sending HTTP requests
-Filename: dists/uncode/main/binary-aarch64/xh_0.26.1-1_aarch64.deb
-Size: 2953760
-MD5Sum: 4bf9b72b73b1f4c36369a55aebbf01c5
-SHA1: e6216a72e2eaab13b702891f6f0959ede8ee246a
-SHA256: 2d255491f0d12767a79fdc74d93dbf711c053a944a9a1a1e2ada3af5a6b135b2
-SHA512: 947c5650384df0d0f04b9e98b3b80c5cd0da8c4b06f557aafca1536187901a574a2fe3ce876c4add58a8a048aec51c44725de4643914aac5db06d5aa00435c0b
+Version: 0.22.1
+Homepage: https://github.com/getzola/zola
+Description: A fast static site generator in a single binary with everything built-in.
+Filename: dists/uncode/main/binary-aarch64/zola_0.22.1_aarch64.deb
+Size: 9164856
+MD5Sum: 0f7cdebf6410eb2be758cd025c0e3fa7
+SHA1: b667d86c07ba5493ccc03d547a59e6909a1eebd7
+SHA256: 3bc69c081261241d28586e125d2a20e241e2f996fb0258b29d1a2f43f20229e3
+SHA512: d39e650989d2517b006ac7aa5c48271fd4c5caf68487ba73317a74bae9e28e650d1537178b520f2b3dd75492e420a6ce4e9dc378e40a799ecb5e8307810de5e5
 
-Package: xmake
+Package: zoxide
 Architecture: aarch64
-Installed-Size: 15328
-Maintainer: Ruki Wang @waruqi
-Version: 3.0.9
-Homepage: https://xmake.io/
-Depends: ncurses
-Description: A cross-platform build utility based on Lua
-Filename: dists/uncode/main/binary-aarch64/xmake_3.0.9_aarch64.deb
-Size: 1097692
-MD5Sum: 785aeb7e41ece4cfdda7c5d89a275ec0
-SHA1: a0acf05d2a25c49f54990fe486c6a145fafb9092
-SHA256: 1e1349c0cfc3f85e138c84393a60cf75da817d2435935aeff5d95cff1a8eeaf7
-SHA512: 53f8e1a2754a27118e1a028efcf026f957e4b02ffc6ecc16760077c23c52613758db391b5e33e1469cc443ac1b94fd1e15e048389efad78c7b0c9898bfffde47
-
-Package: xvidcore-static
-Architecture: aarch64
-Installed-Size: 548
+Installed-Size: 1056
 Maintainer: @termux
-Version: 1.3.7-1
-Homepage: https://www.xvid.com/
-Depends: xvidcore (= 1.3.7-1)
-Description: Static libraries for xvidcore
-Filename: dists/uncode/main/binary-aarch64/xvidcore-static_1.3.7-1_aarch64.deb
-Size: 139388
-MD5Sum: 9990750ca99a19bc6f1945343cf6d97d
-SHA1: ce1e8371f280ffbe2f6ad1fd05740800e598f096
-SHA256: 8749cd68887c63fd5cca4546c40d9e4f21fb3086b21dd6526197a45ad08525f0
-SHA512: 348d88480e3dc495cd57f554fa8bfedd9d172f0af2d1c1562d66c0b4685fcae71f54688d2c8b89fcb4fa43730bb3643559bda1ce0d68afd36a9f5ad82c399fac
+Version: 0.9.9
+Homepage: https://github.com/ajeetdsouza/zoxide
+Description: A faster way to navigate your filesystem
+Filename: dists/uncode/main/binary-aarch64/zoxide_0.9.9_aarch64.deb
+Size: 354948
+MD5Sum: d31fc982db1d486d2dd48d19dbfbabb3
+SHA1: 83f1e90d917a61e21c3185fd27769b7db0a1e463
+SHA256: 5f9dba4d2741e5261e5ffc7f3994820d44403183bc630daa3148a6956e44d0f8
+SHA512: b07e23266432715928a8a6c4891c20914740151457d097edebe643a42724cd714aab8e9e8897036725af68d27d1e22fbe5005e9cccef79bcc3474d6287c3579b
 
-Package: xvidcore
+Package: zpaq
 Architecture: aarch64
 Installed-Size: 404
 Maintainer: @termux
-Version: 1.3.7-1
-Homepage: https://www.xvid.com/
-Breaks: xvidcore-dev
-Replaces: xvidcore-dev
-Description: High performance and high quality MPEG-4 library
-Filename: dists/uncode/main/binary-aarch64/xvidcore_1.3.7-1_aarch64.deb
-Size: 125948
-MD5Sum: cd0f7e54c7b39c3bf01873cf658cc029
-SHA1: f74304bddb008d2778b301f878b932831a5eb882
-SHA256: f41032e7d3b6e583706199cee9923e99c992b2d65c312c37ae990a1b4c9bbb01
-SHA512: 1bc69419d906c74483f539ec399f7e6a8d9f20bbac4b606eeaa3c75219fc1b2984a85190391a10dfb868a79cd2253f2e9a78f74d37ba062cdc41cdf9d80c8db8
-
-Package: xxhash-static
-Architecture: aarch64
-Installed-Size: 52
-Maintainer: @termux
-Version: 0.8.3-1
-Homepage: https://cyan4973.github.io/xxHash/
-Depends: xxhash (= 0.8.3-1)
-Description: Static libraries for xxhash
-Filename: dists/uncode/main/binary-aarch64/xxhash-static_0.8.3-1_aarch64.deb
-Size: 8536
-MD5Sum: 299387152d305a88bbe1b9a649b73fe9
-SHA1: dcc3654156f4e0e23f0313438dfe004bb66fccb9
-SHA256: 9aa532716bdbf0399d969dfaa7b1787363f94f55638c7255c86dd1fb27984be1
-SHA512: 9b1cbf32b539e77b660861cdec470c79d7995853134830a66e1e5e0bd3313bd78c0b50bd670c96c6bc3aacdca87bbe85e3393882377e5e6bc09fb824963c16aa
-
-Package: xxhash
-Architecture: aarch64
-Installed-Size: 408
-Maintainer: @termux
-Version: 0.8.3-1
-Homepage: https://cyan4973.github.io/xxHash/
-Description: Extremely fast non-cryptographic hash algorithm
-Filename: dists/uncode/main/binary-aarch64/xxhash_0.8.3-1_aarch64.deb
-Size: 76596
-MD5Sum: 16a58722596e38ada20673ba65be3039
-SHA1: 9a8949f38f660448ccfc279ba9bc10eb0853f79a
-SHA256: 9274e170d483c7e59df5ea04a42f5f9c700d7daba6452ef2b0d9abe80efac7ff
-SHA512: d69ead31f0ff6f45c266363d968326e849f59e4f6d072d2244bbedcece5e584dfc45741bcc579139cd59cc1b1ab48bd5a4951accf5122784078abead8ae6dd7c
-
-Package: yajl-static
-Architecture: aarch64
-Installed-Size: 88
-Maintainer: @termux
-Version: 2.1.0-8
-Homepage: https://lloyd.github.io/yajl/
-Depends: yajl (= 2.1.0-8)
-Description: Static libraries for yajl
-Filename: dists/uncode/main/binary-aarch64/yajl-static_2.1.0-8_aarch64.deb
-Size: 14368
-MD5Sum: 2e9877acb00ce3d3fa03c7bf8df807eb
-SHA1: 8d0ff37491afc3c911d47bf731b728556d8df379
-SHA256: ae92fc6611c0762370b03a2fe1b2621ea2e8e7b03fa536994e4dac19b79865c3
-SHA512: 49490326f5b5fe44e6981ab80cc98a38a9a1867cb0f98f5cfe07f6f88b00729cc16e01619a7fc37fb283d5fc688766108124b02a6af0808e228b53eebc22d686
-
-Package: yajl
-Architecture: aarch64
-Installed-Size: 192
-Maintainer: @termux
-Version: 2.1.0-8
-Homepage: https://lloyd.github.io/yajl/
-Breaks: yajl-dev
-Replaces: yajl-dev
-Description: Yet Another JSON Library
-Filename: dists/uncode/main/binary-aarch64/yajl_2.1.0-8_aarch64.deb
-Size: 25260
-MD5Sum: 3f71d8e88545d5608d32dbf458956696
-SHA1: 158fb936eb3efdba77a41935222275c8863eb252
-SHA256: fae7a01e9aeeee45bb74be210b99da9d8b904c1cf27922791db9379ade47ba7f
-SHA512: ad17bd17b4e112e4bf542606fd9f618bc4f8e83cae2852934f117df584c57bc03f0d9478beddf541c71440855c415d9bfe66a7c5d868220aadb8ca5227502297
-
-Package: yasm-static
-Architecture: aarch64
-Installed-Size: 1420
-Maintainer: @termux
-Version: 1.3.0-7
-Homepage: https://yasm.tortall.net/
-Depends: yasm (= 1.3.0-7)
-Description: Static libraries for yasm
-Filename: dists/uncode/main/binary-aarch64/yasm-static_1.3.0-7_aarch64.deb
-Size: 275704
-MD5Sum: 2118073ff37028e5682a141ddaa2d620
-SHA1: d377c23701afdaf7114bb446858e600f50d39179
-SHA256: 42c330c95d4b04415364f1d6f2f9405af53eea65e5a6101d1dabbef9289dbcaf
-SHA512: d3ddb27362c562789419557f92bdcdded90ff58b73e09047cb31604578654f65fa6981d1b98595737460ece12d0da0f729d99a041a2ce0efe66349e891b8d885
-
-Package: yasm
-Architecture: aarch64
-Installed-Size: 2872
-Maintainer: @termux
-Version: 1.3.0-7
-Homepage: https://yasm.tortall.net/
-Breaks: yasm-dev
-Depends: libiconv
-Replaces: yasm-dev
-Description: Assembler supporting the x86 and AMD64 instruction sets
-Filename: dists/uncode/main/binary-aarch64/yasm_1.3.0-7_aarch64.deb
-Size: 392428
-MD5Sum: b3829079154a1d6be2c2cea48a4f575b
-SHA1: dc9c96c9b9e5800478f11ccf7358e5d52a551456
-SHA256: 05bc74803e900e25576529a0e56e93d26cc9a8f3939d3a92664f0703cf079519
-SHA512: a347d1c30ef800e2a4c8241460a37352bdadedb110572140debea908065bee3935eeb95bfd83328553da99f95557378f41830b4a58cf3fcf22ef8d81042f06bd
-
-Package: yoga
-Architecture: aarch64
-Installed-Size: 524
-Maintainer: @termux
-Version: 3.2.1
-Homepage: https://www.yogalayout.dev/
+Version: 7.15-1
+Homepage: http://mattmahoney.net/dc/zpaq.html
 Depends: libc++
-Description: Embeddable layout engine targeting web standards
-Filename: dists/uncode/main/binary-aarch64/yoga_3.2.1_aarch64.deb
-Size: 74648
-MD5Sum: 18d5fe408ca3a26b7753ea1ef949dd08
-SHA1: f66535ed78ef6aa268edaf8d0f1ba9abc5eb1136
-SHA256: 064df25f133225dc7b5292bceacca737f222d67d8a61952738e7975994163662
-SHA512: 5764703ab80dc3bf6f6bd8d1b51dbe17c5da2cd4f9779f638764970c02252c6e9a23a39fa18e0af6d5584f6fb634c672c478ac88071426ec3a490cdb7d7d04de
+Description: Programmable file compressor, library and utilities. Based on the PAQ compression algorithm
+Filename: dists/uncode/main/binary-aarch64/zpaq_7.15-1_aarch64.deb
+Size: 150004
+MD5Sum: 3f6b82dcc2ed6db4b563a9492d78f37b
+SHA1: 3f87821b650f6753ec146c67c78493b2b75999f6
+SHA256: cec47de48d9d8e884176129f591c5bec5fde2f329ad02df13c6c2e735e3769b5
+SHA512: 2326e86a65c005b40a779f77da743b91a5df0a9849ff6f1a7b4bd25c8aff70517b8ed3fe5ebc1d5bc33e13d7995ed5659fa06336b4a69f8086b875744bca2fe6
 
-Package: youtubedr
+Package: zrok
 Architecture: aarch64
-Installed-Size: 16580
-Maintainer: Krishna kanhaiya @kcubeterm
-Version: 2.10.6
-Homepage: https://github.com/kkdai/youtube
-Description: Download youtube video in Golang
-Filename: dists/uncode/main/binary-aarch64/youtubedr_2.10.6_aarch64.deb
-Size: 4099368
-MD5Sum: b73e9fd453f3197be79d6973271b5c90
-SHA1: 7294615a85c83315e556d6bc6c27eee05b560b35
-SHA256: fca977126a3a2c798778488dd6d1cf46889a21d49a2f426b5464db11f493415a
-SHA512: ae1a6ad9a719164c1a2d3b82a4b015c5cfd0eb71011611bfac8de3c016b665380d93d102996eff132adb17d07025fefe88288cb58e17749cbb7f296975299ac4
+Installed-Size: 180056
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 1.1.11
+Homepage: https://zrok.io/
+Description: An open source sharing solution built on OpenZiti.
+Filename: dists/uncode/main/binary-aarch64/zrok_1.1.11_aarch64.deb
+Size: 37271200
+MD5Sum: a2bc803dd8d0ed2c2696528405f08024
+SHA1: 260542b1357ec697bb4f02d30426c9bc73e20eab
+SHA256: a4f1eb982f4cc888b585d1381e39253baf6ec64036c336f0b199de58308e93f6
+SHA512: cfdc88c0716da126b86af9f302805f1df0fdb08ef997f186604dc9bd9f9c2d16f11e9dc721a561b9ab6b5772ca1bf34c5bef375d3deceb223a4fc2882ca001c9
 
-Package: yq
+Package: zsync
 Architecture: aarch64
-Installed-Size: 13656
+Installed-Size: 8232
 Maintainer: @termux
-Version: 4.53.3
-Homepage: https://mikefarah.gitbook.io/yq/
-Replaces: xpup
-Description: A lightweight and portable command-line YAML, JSON and XML processor
-Filename: dists/uncode/main/binary-aarch64/yq_4.53.3_aarch64.deb
-Size: 3658272
-MD5Sum: d8ee299bce6df1cfac00161b64119737
-SHA1: 5ff53c6c1240dbd9abbf763059f196a4ffc7bfd8
-SHA256: b3efffc572548e44386e008c12a7cddd266674bb25ff5dbcbb8f9b47a476abbb
-SHA512: 2539360c2c0e8c02c199978bcf386fe3f11b9038483683336d69fa701409f1af0c3a38946bd6aadbdf86898a53d93f6cc4a258bb0d44a286408165b8e3783cea
+Version: 0.7.2
+Homepage: https://zsync.moria.org.uk/
+Description: A file transfer program to download files from remote web servers
+Filename: dists/uncode/main/binary-aarch64/zsync_0.7.2_aarch64.deb
+Size: 1999764
+MD5Sum: 687cc45bda3ea3eb875fcda8248698ed
+SHA1: d9980134b8d88c02dac7041fe1cb6f4735c2d733
+SHA256: 52c6d132f21819f4caa5ad0f407bd4f49b3c1dd01beaa8d411631e1690f66f0a
+SHA512: 0352205560f1002e03b53683e64a6b768dba2021cdec6e77c1a218d332f749eb086966abc7dacb1ca687015decd83d124f49585becde46fce6cb4155781db75d
 
-Package: z3
+Package: zzuf-static
 Architecture: aarch64
-Installed-Size: 46444
+Installed-Size: 420
 Maintainer: @termux
-Version: 4.16.0
-Homepage: https://github.com/Z3Prover/z3
-Depends: libc++
-Description: Z3 is a theorem prover from Microsoft Research
-Filename: dists/uncode/main/binary-aarch64/z3_4.16.0_aarch64.deb
-Size: 11519432
-MD5Sum: 2a80ac0ca142583fc34b919e37e0b2b3
-SHA1: 7348397de8a89a9dd3ff3ac6c674e1e8daa33988
-SHA256: ff783c4e62a7f11f9bb7c81618fb6045d582270523130d35a408376da0e108db
-SHA512: 10b1ae67a1e727082f8b807005175203e5af06dee098c696e555cf27a12316648c00a72c823d5351e9ff5084875c42ce3acacaa0d87da842ce2974d8130ce0f3
+Version: 2022.05.29-1
+Homepage: http://caca.zoy.org/wiki/zzuf
+Depends: zzuf (= 2022.05.29-1)
+Description: Static libraries for zzuf
+Filename: dists/uncode/main/binary-aarch64/zzuf-static_2022.05.29-1_aarch64.deb
+Size: 66596
+MD5Sum: 44d4d4ef1bb403f600958c8c06a3c9dc
+SHA1: 28e326af5aaa1c4e317f6da9043d3c10f9254422
+SHA256: 4f01893cccba8da73b1562ef96da7e07641dd79b1f0c0d2aa392a69a91292db7
+SHA512: 0839a1878034a0c1e81930cd593cfb74aeed5456d291b5194046c283577902ffae8b7dddea1acf37fc7278db6ef91a0fa6801a937e83aeb9caf36f8f71a1d13a
+
+Package: zzuf
+Architecture: aarch64
+Installed-Size: 204
+Maintainer: @termux
+Version: 2022.05.29-1
+Homepage: http://caca.zoy.org/wiki/zzuf
+Description: A transparent application input fuzzer
+Filename: dists/uncode/main/binary-aarch64/zzuf_2022.05.29-1_aarch64.deb
+Size: 49552
+MD5Sum: feaa33f2c97278febe37b1d66e0c9b5c
+SHA1: 693177b14aa8f5be31548f97c3f5f3486163c49b
+SHA256: a89c23ce4ae115051831c44a4a9668bee168f5dd5601d1aee97f52670efec5a4
+SHA512: 432d029ce1f212b8daf4cafd97358b04482b4e3514980c44b92a6408970288b0d0ab2fdd10f176ce9c2919fed4b046697344875042d1d7dbdfb3e2991c39c211
 
