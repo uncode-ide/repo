@@ -7,11 +7,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2026.05.14)
 Description: Common CA certificates (java keystore format)
 Filename: dists/uncode/main/binary-all/ca-certificates-java_1:2026.05.14_all.deb
-Size: 96488
-MD5Sum: 0b28996aa82ccb5f052e636e69f7c2dd
-SHA1: ede2f83522f4fea694106fe4925122e59abd7824
-SHA256: 87331f626f73cb8bda9ca1199d577a4798dafb05c79eebf5d240ed0d9a78b73c
-SHA512: 96af570f0287f4fe0dc9afd6bb338df23550ce733262373bd3c05bc8688f895d4ac095e1076e8cb1f8c0c7a1518865555a2a15434e4c6b56f34f1f45407734f1
+Size: 96504
+MD5Sum: 1447af487ae8c97bcb41673890bf32a3
+SHA1: cb4ec80775c084d4e1a7761521b595c2c8830ad6
+SHA256: 5340b726a17b02da1a8b0e6067001435eb36605b6753cdf52dfc1a73c93e10e6
+SHA512: a31f966206fb67b229822e1bc864b617c94c2c10d004f64325506f50e7725caee30d4840186ade6caba70eaea1993c45597873a8062fb84d8a7d94ace72a460d
 
 Package: ca-certificates
 Architecture: all
@@ -26,19 +26,4 @@ MD5Sum: 5a97e6c7c515b3e4a1c918d377bdbe2a
 SHA1: adce4aea5e57406c6adb68a6718eab3641185de2
 SHA256: 17e52acb7479163f86486c9348ca83011e1792b629dc3f7a147e273a8692ae55
 SHA512: 40ba61a281abe8bbfe563f59bcec6a3d507fd9a299cd8e42c3f62901aa729cc34d286d4940e1ce19b428e5b143e83e321a5eb66b22d2cb98b540c67ca4aaa808
-
-Package: vlan
-Architecture: all
-Installed-Size: 104
-Maintainer: @termux
-Version: 2.0.5
-Homepage: https://salsa.debian.org/debian/vlan
-Depends: iproute2
-Description: ifupdown integration for vlan configuration
-Filename: dists/uncode/main/binary-all/vlan_2.0.5_all.deb
-Size: 6248
-MD5Sum: 3383c3ef4c9bb003c851f20754d66d4e
-SHA1: 022bdc79b6f8f0e88988f39485611ba5a3013a90
-SHA256: 6d86257ddc7529ed38851678099043184aac073c06e204e4a136dfef47d8a66b
-SHA512: cb2f0f895ae39df59d31a2c1aa209171095c815ea2913a860ce9abcd2ad0f3c274a1abc9906df2db5a4a874a6dc7d940614c7bae63b5f140f08ac3ff05dc1a29
 
